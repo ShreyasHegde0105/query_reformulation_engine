@@ -1,0 +1,825 @@
+{
+  "domain": "Operations & Security",
+  "documents": [
+    {
+      "document_id": "SEC-POL-001",
+      "title": "Student ID Card Issuance, RFID Usage, and Replacement Policy",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Institutional Security Policy / Identity Credential Regulations",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students (UG, PG, Ph.D.)",
+        "Faculty and Administrative Staff",
+        "Campus Security Personnel",
+        "Finance and Accounts Office"
+      ],
+      "keywords": [
+        "student ID card policy",
+        "smart RFID credential",
+        "CampusPass turnstiles",
+        "lost ID replacement",
+        "duplicate ID fee Rs 500",
+        "48 hours replacement SLA",
+        "mandatory ID display",
+        "proxy attendance prohibited",
+        "POL-ID-CARD",
+        "PROC-ID-REPLACE",
+        "REL-009",
+        "SYS-PASS"
+      ],
+      "retrieval_signals": [
+        "how to get duplicate ID card",
+        "lost my college ID card what to do",
+        "student ID card replacement fee",
+        "ID card not scanning at gate turnstile",
+        "cost of duplicate smart card Demo University",
+        "deactivate lost RFID badge",
+        "can I enter campus without ID card",
+        "ID card proxy disciplinary penalty",
+        "lost student card PayVarsity receipt",
+        "how long to get duplicate ID card",
+        "lost id crd",
+        "campas pass not working",
+        "duplicat identity card",
+        "rfid gate error",
+        "lost ID + campus entry + replacement fee",
+        "RFID card + CampusPass + turnstile"
+      ],
+      "systems": [
+        "CampusPass",
+        "PayVarsity",
+        "ResolveDesk",
+        "LibNet",
+        "DormTrack"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "ID Card Section In-Charge",
+        "Security Duty Officer",
+        "Chief Finance Officer / Bursar",
+        "Dean of Student Welfare"
+      ],
+      "related_documents": [
+        "SEC-POL-002",
+        "SEC-POL-003",
+        "SEC-SOP-003",
+        "LIB-POL-001",
+        "HSTL-REG-001",
+        "FIN-POL-002",
+        "STU-POL-005",
+        "REL-009"
+      ],
+      "content": "1. STATUTORY MANDATE AND APPLICABILITY\nThis policy establishes mandatory operational protocols, credentials verification, physical turnstile privileges, loss declarations, and replacement workflows governing official Demo University Smart RFID Identity Cards. Issued by the Campus Safety, Vigilance and Security Department (DEPT-SEC) through the ID Card Issuance & Access Verification Section at the Main Entrance Gate Security Complex, these regulations apply to all registered undergraduate, postgraduate, and doctoral students, as well as teaching and non-teaching personnel.\n\n2. MANDATORY BADGE DISPLAY AND MULTI-FACILITY ACCESS (POL-ID-CARD)\n2.1 Mandatory Physical Display: Enrolled students and staff must visibly wear their authenticated Demo University smart RFID identity badge on an official university lanyard at all times while within university boundaries, academic complexes, dining halls, and transport networks.\n2.2 Multi-Facility Integration: The embedded MIFARE RFID chip functions as the master access token integrated with CampusPass (SYS-PASS):\n- Main gate speed gates and perimeter turnstiles;\n- Central Library entrance gates and automated RFID book checkout kiosks (LIB-POL-001);\n- Hostel residential perimeter turnstiles and biometric night gates (HSTL-REG-001);\n- Commuter transit verification terminals on university buses (TRANS-POL-001).\n2.3 Prohibition of Lending and Proxy Access: Lending, borrowing, or fabricating student ID badges to facilitate unauthorized campus entry, proxy classroom attendance on AttendEdge (POL-ATTEND), or fraudulent mess access is a severe breach of student discipline referred to the Proctorial Board (STU-POL-005).\n\n3. CONTROLLED POLYSEMY DISAMBIGUATION (ID)\nWithin the university documentation taxonomy, the acronym 'ID' represents two separate entities:\n3.1 Student Identity Card / Smart RFID Credential (ID under DEPT-SEC / SEC-POL-001): The tangible contactless credential used for physical gate access, identity verification, library circulation, and security checkpoints;\n3.2 Instructional Design (ID under DEPT-ACAD / ACAD-LMS-005): The academic pedagogical methodology governing syllabus chunking, digital rubric formulation, and online course modules within LearnSphere LMS.\n\n4. LOST ID CARD REPORTING AND REPLACEMENT WORKFLOW (PROC-ID-REPLACE / REL-009)\nStudents who lose or damage their RFID credential must execute the following five-step restoration protocol:\n4.1 Step 1 (Immediate Security Deactivation): The student logs into ResolveDesk (SYS-RESOLVE) and logs an urgent ticket under 'Security > Lost ID Card'. The CampusPass engine immediately blacklists the lost RFID chip serial number to prevent unauthorized facility ingress.\n4.2 Step 2 (Fee Settlement): The student pays the non-refundable duplicate card issuance fee of Rs. 500 online via PayVarsity (SYS-PAY) under the incidental fees schedule (FIN-POL-002) and saves the generated digital receipt.\n4.3 Step 3 (Identity Verification): The student presents the PayVarsity fee receipt along with a recognized government photo ID (Aadhaar, Passport, or Voter ID) at the Central Security Office (Main Entrance Gate).\n4.4 Step 4 (Card Printing and Encoding): Security personnel verify active enrollment in UniCampus ERP and print a new smart card encoded with a refreshed RFID chip serial number.\n4.5 Step 5 (System Synchronization and SLA): The new credential is issued within forty-eight (48) hours of fee payment. CampusPass automatically synchronizes the new RFID chip identifier with the LibNet library database, DormTrack hostel turnstiles, and TransPass commuter portals.\n\n5. DAMAGED AND DEFECTIVE CARDS\nCards experiencing natural chip failure or antenna degradation within six (6) months of initial admission are replaced free of charge upon physical inspection. Cards suffering visible physical abuse, punching, bending, or deliberate chip tampering incur the full Rs. 500 replacement charge."
+    },
+    {
+      "document_id": "SEC-POL-002",
+      "title": "Campus Traffic, Vehicle Registration, and Parking Regulations",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Campus Safety Regulation / Traffic Operations Policy",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Commuter Students",
+        "Faculty and Staff Vehicle Owners",
+        "Campus Security Personnel",
+        "Auxiliary Transport Drivers"
+      ],
+      "keywords": [
+        "campus traffic rules",
+        "vehicle registration",
+        "parking regulations",
+        "speed limit 25 kmph",
+        "RFID vehicle sticker",
+        "wheel clamping penalty",
+        "West Gate parking facility",
+        "first-year student vehicle restriction",
+        "CampusPass vehicle tracking",
+        "FIN-POL-002"
+      ],
+      "retrieval_signals": [
+        "campus speed limit Demo University",
+        "how to register bike for college parking",
+        "car parking permit for students",
+        "vehicle RFID sticker CampusPass",
+        "wheel clamping fine campus security",
+        "parking penalty 200 rupees 500 rupees",
+        "can first year students bring car to campus",
+        "overnight vehicle parking rules",
+        "parking pass application portal",
+        "traffic rules inside university",
+        "campas parking permit",
+        "vehecle registrashun",
+        "speed limt college",
+        "whel clamp fine",
+        "vehicle registration + CampusPass + parking sticker",
+        "traffic violation + wheel clamp + security"
+      ],
+      "systems": [
+        "CampusPass",
+        "PayVarsity",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "Traffic & Gate Control Supervisor",
+        "Campus Vigilance Officer",
+        "Transport Manager"
+      ],
+      "related_documents": [
+        "SEC-POL-001",
+        "SEC-POL-003",
+        "TRANS-POL-001",
+        "HSTL-REG-001",
+        "FIN-POL-002",
+        "STU-POL-005"
+      ],
+      "content": "1. PURPOSE AND JURISDICTION\nThis policy regulates vehicular movement, speed ceilings, motor vehicle safety standards, mandatory institutional registration, and designated parking zoning across all campus internal roadways, plazas, and auxiliary parking complexes of Demo University. It is enforced 24/7 by the Traffic & Gate Control Unit of the Campus Safety, Vigilance and Security Department (DEPT-SEC).\n\n2. CAMPUS SPEED CEILINGS AND TRAFFIC SAFETY NORMS\n2.1 Speed Limits: Motorized vehicles must strictly adhere to the following internal campus speed limits:\n- Campus Arterial Link Roads: Maximum twenty-five kilometers per hour (25 km/h);\n- Academic Core Zones, Hostels, and Pedestrian Walkways: Maximum fifteen kilometers per hour (15 km/h).\n2.2 Pedestrian Primacy: Pedestrians utilizing zebra crossings, sidewalks, and shared academic plazas maintain absolute right-of-way at all times.\n2.3 Mandatory Safety Gear: Operators and pillion riders of two-wheelers must wear certified protective helmets; drivers and passengers in four-wheelers must wear seatbelts. Operating vehicles while using mobile phones or under the influence of alcohol or contraband is strictly prohibited and results in immediate vehicle impoundment and disciplinary action under POL-DISCIPLINE.\n\n3. MANDATORY VEHICLE REGISTRATION AND RFID PASS PROVISIONING\n3.1 Online Registration: All commuter students, faculty, and regular staff operating motor vehicles on campus must register vehicle details (make, model, license plate, RC copy, insurance, and driving license) via CampusPass at https://id.demo.edu.internal/vehicle.\n3.2 RFID Windshield Tag: Upon document verification by the Security Office, an active RFID vehicle tag is affixed to the front windshield (or two-wheeler fork) within three (3) working days. The RFID tag enables automated barrier gate lifting at authorized campus entry portals.\n3.3 First-Year Undergraduate Vehicle Restriction: First-year undergraduate hostel resident students are strictly prohibited from maintaining four-wheel motorized vehicles on campus to prevent parking saturation and encourage pedestrian wellness.\n\n4. DESIGNATED PARKING ZONING AND ACCESS RESTRICTIONS\n4.1 West Gate Multi-Level Facility: Primary parking hub for day-scholar student four-wheelers and commuter two-wheelers;\n4.2 East Enclave Parking Bays: Designated strictly for hostel residents and residential faculty;\n4.3 Chanakya and Ramanujan Administrative Porches: Reserved exclusively for designated executive vehicles, emergency services, and official campus buses;\n4.4 Prohibited Zones: Parking in front of building fire exits, emergency hydrants, disability access ramps, delivery bays, or landscaped verges is strictly forbidden.\n\n5. VIOLATIONS, WHEEL CLAMPING, AND PENALTY SCHEDULE (FIN-POL-002)\nSecurity patrols enforce parking regulations using automated mobile license plate recognition and mechanical wheel clamps:\n5.1 First Violation (Improper Parking / Failure to Display Tag): Written warning and a monetary fine of Rs. 200 posted to PayVarsity;\n5.2 Second Violation (Overspeeding / Reckless Driving / Clamped Vehicle): Mandatory wheel-clamping, fine of Rs. 500, and requirement to execute a written undertaking at the Security Complex;\n5.3 Chronic Violations (Three or More Offenses): Total cancellation of campus vehicular access privileges for the remainder of the academic year, with vehicle trespass notices served to external gates."
+    },
+    {
+      "document_id": "SEC-POL-003",
+      "title": "Campus Event Security, Visitor Ingress, and Overnight Protocols",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Campus Security Policy / Visitor Access SOP",
+      "version": "2.6",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Student Event Organizers",
+        "Clubs and Societies (DEPT-SAC)",
+        "Campus Security Personnel",
+        "External Campus Visitors",
+        "Hostel Administration"
+      ],
+      "keywords": [
+        "event security",
+        "visitor ingress protocol",
+        "overnight stay protocol",
+        "CampusPass visitor QR code",
+        "hackathon overnight security",
+        "inter-college fest access",
+        "10 PM sound curfew",
+        "11 PM arena closure",
+        "REL-008",
+        "PROC-CLUB-EVENT",
+        "SYS-PASS"
+      ],
+      "retrieval_signals": [
+        "how to get visitor pass Demo University",
+        "outside college student entry for fest",
+        "overnight hackathon security permission",
+        "parent guest entry campus rules",
+        "visitor gate pass CampusPass",
+        "guest speaker security clearance",
+        "college fest sound system permission after 10 PM",
+        "can outside students stay overnight in hostel",
+        "event security check Main Gate",
+        "auditorium night event rules",
+        "visitr gate pass",
+        "overnite fest permisun",
+        "fest entry outsdier",
+        "hackathon night security",
+        "event security + visitor ingress + CampusPass",
+        "hackathon + overnight permission + security clearance"
+      ],
+      "systems": [
+        "CampusPass",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "Gate Security Inspector",
+        "Faculty Chair of Student Activities",
+        "Hostel Warden / Chief Warden",
+        "Student Activity Centre Lead"
+      ],
+      "related_documents": [
+        "SEC-POL-001",
+        "SEC-POL-002",
+        "SEC-SOP-001",
+        "SEC-SOP-003",
+        "SAC-POL-001",
+        "OPS-FAC-003",
+        "HSTL-POL-001",
+        "REL-008"
+      ],
+      "content": "1. PURPOSE AND REGULATORY REACH\nThis policy defines procedural safeguards, access verification, external visitor clearance, and overnight facility protocols governing public campus gatherings, inter-collegiate festivals, competitive hackathons, academic conferences, and institutional guest visits. Administered by the Campus Safety, Vigilance and Security Department (DEPT-SEC) in collaboration with the Clubs and Student Activities Council (DEPT-SAC) and Campus Operations (DEPT-OPS).\n\n2. GENERAL VISITOR INGRESS AND CAMPUSPASS REGISTRATION\n2.1 Main Gate Checkpoint: All non-university individuals\u2014including parents, alumni, guest lecturers, prospective students, and vendor contractors\u2014must access the campus exclusively through the Main Entrance Security Complex.\n2.2 Digital Registration: Visitors must present a valid government-issued photo identity document (Aadhaar, Passport, Driving License). Security personnel issue a dynamic digital QR Visitor Pass via CampusPass (SYS-PASS) specifying the designated host department, destination building, and validity duration.\n2.3 Escort and Departure: Visitors must remain within the authorized host sector and surrender their physical visitor badge at the gate reader upon departure; exit timestamps are recorded automatically.\n\n3. STUDENT FESTIVAL AND HACKATHON SECURITY PROTOCOLS (REL-008 / PROC-CLUB-EVENT)\nStudent organizations conducting technical or cultural fests requiring external participant entry must adhere to the following security provisions:\n3.1 Advance Security Vetting: Event organizers must submit the formal Event Sanction approval letter issued by SAC along with participant rosters to the Security Operations Centre at least ten (10) working days prior to the event.\n3.2 External Participant Screening: External collegiate participants must present authentic institutional ID cards alongside pre-registered digital entry QR passes generated on CampusPass. Unregistered spot entries are strictly prohibited.\n3.3 Night Operation and Curfew Limits: Open-air auditoriums, outdoor festival arenas, and cultural stages must cease public acoustic sound amplification strictly by 10:00 PM. Indoor competitive hackathons hosted in Turing Complex or Newton Hall may operate overnight provided participants remain within secured building perimeters.\n3.4 Overnight External Accommodation: Non-university participants are not permitted to reside in regular student hostel dormitories. Approved overnight guests must be lodged in designated hostel guest wings under Warden supervision, with daily room registers endorsed by Security.\n\n4. SECURITY VIGILANCE AND SURVEILLANCE COVERAGE\n4.1 Plainclothes Patrols: The Vigilance Squad deploys dedicated security marshals across major event venues, food courts, and transit corridors to prevent substance abuse, ragging infractions, or trespassing.\n4.2 Continuous CCTV Recording: High-definition security cameras monitor all entry turnstiles, event foyers, and perimeter gates 24/7; camera feeds are monitored in real time at the Security Operations Centre.\n4.3 Emergency Termination Authority: The Chief Security Officer (CSO) reserves statutory authority to suspend or terminate any event immediately in the event of severe disorder, physical altercation, fire hazard, or failure to comply with curfew mandates."
+    },
+    {
+      "document_id": "SEC-SOP-001",
+      "title": "Campus Emergency Evacuation and Fire Disaster Management Protocol",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Emergency Standard Operating Procedure / Safety Protocol",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Entire University Campus Community",
+        "Department Fire Wardens",
+        "Estate Site Engineers (DEPT-OPS)",
+        "Campus Health Centre Medical Team",
+        "Campus Security Personnel"
+      ],
+      "keywords": [
+        "emergency evacuation protocol",
+        "fire disaster management",
+        "designated assembly points",
+        "Security Control Room 24/7 hotline",
+        "fire alarm activation",
+        "no elevator usage fire",
+        "Assembly Area Alpha Beta Gamma",
+        "emergency triage Health Centre",
+        "semi-annual fire drill",
+        "OPS-EST-004"
+      ],
+      "retrieval_signals": [
+        "campus emergency phone number",
+        "fire alarm ringing what to do",
+        "campus fire emergency evacuation plan",
+        "emergency assembly points Demo University",
+        "where to run during fire alarm",
+        "security control room emergency contact",
+        "fire extinguisher locations academic blocks",
+        "medical emergency ambulance campus number",
+        "who leads building evacuation",
+        "campus disaster management protocol",
+        "fire emergancy number",
+        "evacuashun procedure",
+        "asembly points college",
+        "fire alram protocol",
+        "emergency evacuation + assembly point + fire",
+        "fire emergency + security control room + Health Centre"
+      ],
+      "systems": [
+        "CampusPass",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "Security Emergency Dispatcher",
+        "Director of Campus Operations",
+        "Senior Chief Medical Officer (ROLE-CMO)",
+        "Building Floor Safety Warden"
+      ],
+      "related_documents": [
+        "SEC-POL-001",
+        "SEC-POL-003",
+        "SEC-SOP-003",
+        "OPS-POL-001",
+        "OPS-EST-004",
+        "STU-MED-001"
+      ],
+      "content": "1. PURPOSE AND EMERGENCY SCOPE\nThis standard operating procedure establishes definitive operational directives, command hierarchies, evacuation pathways, communication chains, and assembly protocols for responding to major on-campus emergencies\u2014including structural fires, hazardous chemical leaks, laboratory explosions, natural disasters, or major infrastructure collapses. Enforced by DEPT-SEC in coordination with Campus Operations (DEPT-OPS) and the Campus Health Centre (DEPT-HEALTH).\n\n2. IMMEDIATE EMERGENCY DISCOVERY AND REPORTING\n2.1 Raising the Alarm: Any individual discovering a fire, smoke plume, or life-threatening hazard must immediately break the glass of the nearest Manual Call Point (MCP) fire alarm pull station located along corridor corridors and stairwell exits.\n2.2 Emergency Notification: Immediately contact the 24/7 Security Operations Centre Hotline (Extension 100 / Direct Campus Emergency Line: +91-XXXX-EMERG). State clearly:\n- Exact building name, floor number, and room/laboratory identifier;\n- Nature of the hazard (Electrical fire, Chemical spill, Structural failure);\n- Known human casualties or trapped personnel.\n2.3 Automated Alarm Transmission: Fire panel activation automatically triggers localized audible sirens, unlatches electromagnetic emergency exit doors, and notifies municipal fire dispatch.\n\n3. EVACUATION DIRECTIVES AND CODE OF CONDUCT\nUpon activation of the evacuation alarm, all building occupants must execute immediate, orderly evacuation:\n3.1 Cessation of Activity: Instructors, students, and staff must cease all laboratory apparatus, close chemical fume hoods, shut off primary gas valves, and leave personal baggage behind;\n3.2 Prohibition of Lifts/Elevators: Under no circumstances may elevators or freight lifts be utilized during a fire evacuation; all descent must occur via designated external fire escape stairwells;\n3.3 Orderly Movement: Move swiftly without running, pushing, or overtaking; assist individuals with physical disabilities or mobility impairments;\n3.4 Floor Safety Wardens: Appointed Department Safety Wardens sweep classrooms, restrooms, and research bays to ensure complete clearance before exiting last.\n\n4. DESIGNATED CAMPUS EMERGENCY ASSEMBLY POINTS\nEvacuees must proceed directly along marked exit pathways to designated open-air assembly zones:\n4.1 Assembly Area Alpha: Central Cricket Ground (For occupants of Ramanujan Block, Chanakya Bhavan, and Admin Wing);\n4.2 Assembly Area Beta: East Enclave Central Lawn (For occupants of all student residential hostels and East Dining Hall);\n4.3 Assembly Area Gamma: Student Activity Centre Plaza (For occupants of Turing Complex, Central Computing Centre, and Mechanical Workshops).\n\n5. INCIDENT COMMAND, HEADCOUNTS, AND MEDICAL TRIAGE\n5.1 Accountability Verification: Department Floor Wardens conduct rapid headcount reconciliations against active attendance rosters and report missing personnel to the Incident Commander (CSO) within ten (10) minutes of arrival.\n5.2 Emergency Medical Response: The Senior Chief Medical Officer (ROLE-CMO) coordinates emergency ambulance dispatch from the Campus Health Centre, establishing an on-site first-aid triage tent at the perimeter of the assembly area.\n5.3 All-Clear Authorization: Re-entry into evacuated buildings is strictly forbidden until the Chief Security Officer and Municipal Fire Chief formally declare an 'All-Clear' over the public address system.\n5.4 Mandatory Drills: Full-scale fire evacuation and disaster response drills are conducted semi-annually across all academic blocks and student residences."
+    },
+    {
+      "document_id": "SEC-SOP-003",
+      "title": "Campus Security Incident Reporting and Escalation SOP",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Standard Operating Procedure / Incident Response Protocol",
+      "version": "2.7",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students and Employees",
+        "Campus Security Officers",
+        "Proctorial Board Secretariat",
+        "Office of Student Welfare"
+      ],
+      "keywords": [
+        "Incident Report",
+        "IR security",
+        "incident reporting SOP",
+        "theft investigation",
+        "CCTV footage retrieval",
+        "30 days CCTV retention",
+        "security escalation tiers",
+        "Proctorial Board referral",
+        "police FIR protocol",
+        "ambiguous term IR",
+        "ResolveDesk",
+        "STU-POL-005"
+      ],
+      "retrieval_signals": [
+        "how to report theft on campus",
+        "stolen bicycle Main Gate security complaint",
+        "file an IR security Demo University",
+        "security incident report form",
+        "CCTV footage request security office",
+        "report physical fight in college",
+        "campus security incident escalation",
+        "stolen laptop in library report",
+        "who to call for ragging security response",
+        "lost property security office Chanakya bhavan",
+        "file an IR security",
+        "theft complant campus",
+        "securty incident report",
+        "cctv footage check",
+        "Incident Report + security + theft",
+        "IR + security complaint + CCTV"
+      ],
+      "systems": [
+        "CampusPass",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "Vigilance & Incident Response Squad Leader",
+        "CCTV Operations Controller",
+        "Dean of Student Welfare",
+        "Registrar"
+      ],
+      "related_documents": [
+        "SEC-POL-001",
+        "SEC-POL-003",
+        "SEC-SOP-001",
+        "STU-POL-004",
+        "STU-POL-005",
+        "LIB-POL-004",
+        "IRO-POL-001"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL SCOPE\nThis standard operating procedure defines formal reporting mechanisms, investigation protocols, CCTV evidentiary retrieval norms, severity classifications, and administrative escalation workflows for security incidents occurring within Demo University premises. Enforced by the Vigilance & Incident Response Squad of DEPT-SEC.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (IR)\nWithin Demo University systems and institutional documentation, the acronym 'IR' represents three entirely separate institutional concepts:\n2.1 Incident Report (IR under DEPT-SEC / SEC-SOP-003): The official security documentation logging theft, physical violence, unauthorized trespassing, substance abuse, vandalism, or campus safety breaches;\n2.2 Institutional Repository (IR under DEPT-LIB / LIB-POL-004): The digital research library archive maintaining dissertations, doctoral theses, and faculty scholarship;\n2.3 Office of International Relations (IR under DEPT-IRO / IRO-POL-001): The administrative division overseeing international student mobility, foreign semester exchanges, and global institutional MOUs.\n- Routing Disambiguation Rule: Searches concerning stolen items, property loss, physical harassment, or security guard responses map strictly to the Security Incident Report (SEC-SOP-003).\n\n3. INCIDENT CLASSIFICATION AND SEVERITY TIERS\nReported security incidents are categorized into three operational tiers:\n3.1 Tier 1 (Minor Operational Incidents): Misplaced personal items, unattended bicycle theft at external gates, minor parking scrapes, or perimeter noise complaints. Handled directly by Gate Security Duty Officers within twenty-four (24) hours.\n3.2 Tier 2 (Moderate Security Infractions): Forced room entry, theft of computing hardware or lab components, deliberate damage to estate fixtures, or unauthorized visitor access after hours. Preliminary enquiry completed within forty-eight (48) hours; investigative dossier forwarded to the Proctorial Board (STU-POL-005).\n3.3 Tier 3 (Critical / Major Offenses): Physical assault, possession or distribution of narcotics/alcohol, ragging incidents (STU-POL-004), weapon possession, or major estate sabotage. Demands instant physical restraint, interim campus suspension, and formal transmission of an FIR to local municipal police with Vice-Chancellor ratification.\n\n4. INCIDENT LODGING PROCEDURE VIA RESOLVEDESK\n4.1 Digital Submission: Aggrieved individuals or witnessing staff submit a 'Security Incident Report (IR)' on ResolveDesk at https://resolvedesk.demo.edu.internal under Category: Campus Security > Incident Report.\n4.2 Written In-Person Report: In emergency circumstances, complainants report in person to the 24/7 Security Operations Centre at the Main Gate Complex. A duty officer records the initial statement and generates an authenticated IR tracking number.\n\n5. CCTV SURVEILLANCE REVIEW AND EVIDENTIARY ARCHIVING\n5.1 Continuous Archiving: The Security Operations Centre maintains a secure 30-calendar-day rolling archive of all campus CCTV cameras (covering gates, corridors, parking lots, and building foyers).\n5.2 Access and Extraction Protocol: To protect individual privacy, direct viewing or extraction of CCTV recordings by students or unauthorized staff is strictly prohibited. Footage review requires a formal written request endorsed by the Chief Security Officer (CSO), Proctorial Board Chairperson, or Dean of Student Welfare.\n5.3 Evidentiary Preservation: When an IR involves ongoing disciplinary inquiries or criminal prosecution, relevant video segments are digitally extracted, watermarked, cryptographically hashed, and preserved in the secure evidence locker."
+    },
+    {
+      "document_id": "TRANS-POL-001",
+      "title": "Student Commuter Bus Services, Routes, and Fee Guidelines",
+      "department": "Campus Mobility and Transportation Unit",
+      "department_id": "DEPT-TRANS",
+      "document_type": "Auxiliary Transportation Policy / Commuter Service Guide",
+      "version": "3.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Commuter Day-Scholar Students",
+        "Faculty and Administrative Staff Commuters",
+        "Transport Fleet Supervisors",
+        "Finance and Accounts Office"
+      ],
+      "keywords": [
+        "commuter bus services",
+        "transport routes",
+        "bus fee guidelines",
+        "morning arrival 08:30 AM",
+        "evening departure 05:15 PM",
+        "TransPass portal",
+        "RFID bus pass integration",
+        "tiered transit fee zones",
+        "West Gate bus depot",
+        "REL-016",
+        "SYS-TRANS"
+      ],
+      "retrieval_signals": [
+        "college bus fees Demo University",
+        "bus route list and pickup points",
+        "how to apply for college bus pass",
+        "morning bus timing arrival 8:30 AM",
+        "evening bus departure timings",
+        "bus pass RFID smart card integration",
+        "commuter bus fee payment PayVarsity",
+        "which bus goes to central railway station",
+        "late evening library shuttle bus timing",
+        "rules for travel in college bus",
+        "colleg bus fee",
+        "bus rout list",
+        "transpass login",
+        "pickup point college bus",
+        "bus service + route schedule + commuter fee",
+        "bus pass + RFID card + TransPass"
+      ],
+      "systems": [
+        "TransPass",
+        "PayVarsity",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Transport Manager",
+        "Bus Route Scheduling In-Charge",
+        "Fleet Maintenance Depot Supervisor",
+        "Chief Finance Officer / Bursar",
+        "Security Gate Inspector"
+      ],
+      "related_documents": [
+        "TRANS-SOP-001",
+        "SEC-POL-001",
+        "SEC-POL-002",
+        "FIN-POL-001",
+        "FIN-POL-002",
+        "REL-016"
+      ],
+      "content": "1. PURPOSE AND MOBILITY MANDATE\nThis policy defines the operating schedules, commuter routes, boarding norms, fee assessment structures, and passenger codes of conduct governing the institutional bus fleet operated by the Campus Mobility and Transportation Unit (DEPT-TRANS). The service provides reliable, punctual, and secure daily transit for enrolled day-scholar students and university employees residing in outlying metropolitan sectors.\n\n2. FLEET NETWORK AND OPERATIONAL SCHEDULES\n2.1 Route Network: The university operates twelve (12) designated commuter bus routes (Routes 1 through 12) spanning key municipal transit hubs, residential suburbs, and metro interchange nodes.\n2.2 Morning Ingress Schedule: All commuter buses depart their respective originating terminal stops between 07:00 AM and 07:30 AM to ensure arrival at the West Gate Transportation Depot strictly by 08:30 AM, guaranteeing timely arrival before the 08:45 AM commencement of Period 1 academic lectures.\n2.3 Evening Egress Schedule: Standard evening commuter return fleets depart from the West Gate Depot at 05:15 PM following the conclusion of scheduled laboratory sessions.\n2.4 Extended Library Shuttle: A specialized night transit shuttle departs at 07:00 PM on working days to accommodate students and research scholars utilizing the Central Library and computing laboratories.\n\n3. COMMUTER FEE STRUCTURE AND PAYMENT MODES (FIN-POL-001)\n3.1 Distance-Tiered Fee Schedule: Annual commuter bus fees are categorized by radial distance zones:\n- Zone A (0 to 10 km from campus): Rs. 18,000 per academic year;\n- Zone B (11 to 20 km from campus): Rs. 24,000 per academic year;\n- Zone C (21 km and above): Rs. 30,000 per academic year.\n3.2 Payment Gateway: Bus fees must be settled via the PayVarsity financial portal (SYS-PAY) in full prior to semester commencement or in two equal semester installments.\n\n4. DIGITAL PASS ISSUANCE AND RFID INTEGRATION (REL-016)\n4.1 Integrated Smart Credential: Demo University operates a paperless transit boarding mechanism. Upon fee clearance, the TransPass engine syncs authorized route privileges directly to the student's Smart RFID ID Card in CampusPass (SEC-POL-001).\n4.2 Boarding Validation: Passengers tap their smart card against the handheld RFID validator terminal held by the bus conductor upon boarding. Cards displaying invalid route codes or unpaid fee flags are denied boarding.\n\n5. PASSENGER CODE OF CONDUCT AND DISCIPLINARY SANCTIONS\n5.1 Boarding Decorum: Students must board and alight strictly at their officially assigned route stop. Standing on footboards or distracting drivers while the vehicle is in motion is prohibited.\n5.2 Seat Reservation Prohibited: Reserving seats for friends by placing bags or notebooks is forbidden; seating is strictly on a first-come, first-served basis.\n5.3 Zero-Tolerance Misconduct: Any act of ragging (STU-POL-004), verbal abuse, vandalism to bus upholstery, or carrying hazardous substances on university transit leads to immediate confiscation of the bus pass without fee refund and disciplinary referral to the Proctorial Board."
+    },
+    {
+      "document_id": "TRANS-SOP-001",
+      "title": "Bus Pass Issuance, Route Change, and Refund Procedure",
+      "department": "Campus Mobility and Transportation Unit",
+      "department_id": "DEPT-TRANS",
+      "document_type": "Standard Operating Procedure / Transportation Service Workflow",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Commuter Students",
+        "Transport Staff and Route In-Charges",
+        "Finance Office Accounts Desk",
+        "Admissions Office"
+      ],
+      "keywords": [
+        "bus pass application procedure",
+        "route change workflow",
+        "transport refund policy",
+        "TransPass portal",
+        "PayVarsity bus pass fee",
+        "24 hour RFID activation SLA",
+        "cancellation refund rules",
+        "pickup point adjustment",
+        "REL-016",
+        "SYS-TRANS"
+      ],
+      "retrieval_signals": [
+        "how to apply for college bus pass TransPass",
+        "steps to get university bus pass",
+        "how to change college bus route",
+        "bus pickup point change request",
+        "college bus fee refund policy",
+        "cancel bus pass get money back",
+        "bus pass activation time 24 hours",
+        "bus pass card not scanning on route",
+        "change bus stop mid semester",
+        "transpass portal application guide",
+        "aply bus pass",
+        "bus pass refnd",
+        "change bus rout",
+        "transpass activashun",
+        "bus pass application + route change + TransPass",
+        "bus pass cancellation + refund + PayVarsity"
+      ],
+      "systems": [
+        "TransPass",
+        "PayVarsity",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Transport Manager",
+        "Bus Pass Section In-Charge",
+        "Accounts Officer (Transport Desk)",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "TRANS-POL-001",
+        "SEC-POL-001",
+        "FIN-POL-001",
+        "FIN-POL-004",
+        "REL-016"
+      ],
+      "content": "1. PURPOSE AND WORKFLOW SCOPE\nThis standard operating procedure delineates the step-by-step administrative procedures governing initial bus pass enrollment, route adjustments, pickup stop reassignments, pass cancellations, and prorated fee refunds for Demo University commuter transit. Enforced by DEPT-TRANS in coordination with Finance and Accounts (DEPT-FIN) and Security (DEPT-SEC).\n\n2. INITIAL BUS PASS ENROLLMENT WORKFLOW (REL-016)\nStudents seeking commuter bus services must execute the following four-step registration protocol:\n2.1 Step 1 (Portal Selection): Log in to the TransPass transit portal at https://transpass.demo.edu.internal using UniCampus ERP credentials. Navigate to 'New Bus Pass Application';\n2.2 Step 2 (Route and Stop Selection): Review the interactive route timetable; select the appropriate Route Number (Routes 1\u201312) and the exact morning/evening pickup stop nearest to the student's verified residence;\n2.3 Step 3 (Fee Payment): The system automatically computes the zonal fee. The student completes online payment through PayVarsity (SYS-PAY) via UPI, net banking, or debit card. An authenticated digital receipt is generated immediately;\n2.4 Step 4 (RFID Sync and SLA): Upon payment confirmation, TransPass transmits authorized transit credentials to CampusPass within twenty-four (24) working hours. The student's physical Smart RFID ID Card is activated automatically for handheld scanner tap-in on the selected route.\n\n3. ROUTE AND PICKUP STOP MODIFICATION WORKFLOW\nStudents relocating their residence mid-semester may request a route or stop adjustment:\n3.1 Eligibility: Route change requests are accepted only during the first ten (10) working days of each semester, or upon submission of an authenticated proof of residential address change (e.g., parental rental agreement);\n3.2 Application on TransPass: The student submits a 'Route Change Request' on TransPass specifying the current route, proposed new route, and requested pickup node;\n3.3 Differential Fee Adjustment: If transitioning to a higher fee zone, the difference must be cleared on PayVarsity within 48 hours; if moving to a lower fee zone, no mid-term differential refund is issued;\n3.4 Processing SLA: The updated route privilege is reprogrammed onto the RFID card within two (2) working days of supervisor sign-off.\n\n4. PASS CANCELLATION AND FEE REFUND NORMS (FIN-POL-004)\nIf a student relocates into campus residential hostels or withdraws from the university, bus pass refunds are processed under the following statutory refund tiers:\n4.1 Cancellation Prior to Class Commencement: Ninety percent (90%) refund of the assessed annual transport fee, with 10% retained as an administrative processing surcharge;\n4.2 Cancellation Within First 15 Calendar Days of Semester: Fifty percent (50%) refund of the assessed semester fee;\n4.3 Cancellation After 15 Calendar Days: Zero refund, except in cases of certified medical leaves of absence sanctioned by the Dean of Academic Affairs or formal institutional withdrawal (POL-TRANSFER-CERT);\n4.4 Refund Credit: Approved refunds are credited directly to the student's verified bank account registered in PayVarsity within fourteen (14) working days."
+    },
+    {
+      "document_id": "OPS-POL-001",
+      "title": "Campus Operations Estate Maintenance and Service Requests",
+      "department": "Campus Operations, Estate and Facilities Management",
+      "department_id": "DEPT-OPS",
+      "document_type": "Estate Operations Policy / Facilities Maintenance SOP",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Academic Departments",
+        "Hostel Wardens and Caretakers",
+        "Student Residents and Club Leads",
+        "Estate Maintenance Engineers",
+        "Housekeeping Personnel"
+      ],
+      "keywords": [
+        "estate maintenance policy",
+        "service request SOP",
+        "Campus Operations maintenance",
+        "civil electrical plumbing repairs",
+        "ResolveDesk maintenance tickets",
+        "maintenance SLA tiers",
+        "Central Utility Building",
+        "emergency utility outage",
+        "ambiguous term CO",
+        "OPS-EST-004"
+      ],
+      "retrieval_signals": [
+        "how to report broken bench in classroom",
+        "water leakage in department bathroom",
+        "campus operations maintenance request",
+        "ResolveDesk maintenance ticket categories",
+        "broken window repair lecture hall",
+        "electrical power cut in academic block who to call",
+        "contact campus operations estate office",
+        "maintenance SLA emergency 4 hours",
+        "plumbing complaint university",
+        "classroom fan not working complaint",
+        "campas operashuns",
+        "estate maintanence",
+        "classrom repair request",
+        "plumbng complaint college",
+        "maintenance request + ResolveDesk + Campus Operations",
+        "civil repair + plumbing + SLA"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of Campus Operations",
+        "Estate Site Engineer (ROLE-SE)",
+        "Civil Maintenance Superintendent",
+        "Electrical & HVAC Operations Lead",
+        "Housekeeping Supervisor"
+      ],
+      "related_documents": [
+        "OPS-FAC-003",
+        "OPS-FAC-005",
+        "OPS-EST-004",
+        "OPS-LAB-003",
+        "SEC-SOP-001",
+        "HSTL-REG-002"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nThis policy establishes standardized operational workflows, preventive inspection schedules, priority categorizations, and service-level agreements (SLAs) governing the physical upkeep, civil maintenance, electrical grid management, plumbing, and structural safety across all academic buildings, student activity zones, and auxiliary facilities of Demo University. Enforced by Campus Operations, Estate and Facilities Management (DEPT-OPS), headquartered in the Central Utility Building.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (CO)\nWithin university administrative nomenclature, the abbreviation 'CO' denotes two completely separate entities:\n2.1 Campus Operations (CO under DEPT-OPS / OPS-POL-001): The operational estate management department responsible for civil buildings, air-conditioning, electrical substations, water purification plants, classroom furniture, and facility repairs;\n2.2 Course Outcome (CO under DEPT-ACAD / ACAD-OBE-001): The measurable academic competency and skill benchmark mapped to syllabus units within the Outcome-Based Education (OBE) and NBA accreditation framework.\n- Query Disambiguation Rule: Inquiries regarding physical repairs, painting, broken desks, water leaks, or electrical issues refer strictly to Campus Operations (OPS-POL-001); inquiries regarding syllabus outcomes, Bloom's taxonomy levels, or exam mapping refer to Course Outcomes (ACAD-OBE-001).\n\n3. SERVICE REQUEST LODGING VIA RESOLVEDESK\nAll facility defects, breakdowns, and repair requisitions must be formally registered on ResolveDesk (SYS-RESOLVE) at https://resolvedesk.demo.edu.internal under Category: Campus Operations:\n3.1 Civil Maintenance: Broken floor tiles, masonry cracks, window pane replacements, door hardware, carpentry, and classroom desks;\n3.2 Plumbing and Sanitation: Restroom leaks, clogged drainage, overhead tank overflows, and drinking water dispenser filter replacements;\n3.3 Electrical Infrastructure: Power point failures, classroom lighting, ceiling fans, circuit breaker trips, and localized UPS backup faults;\n3.4 Housekeeping and Grounds: Waste collection, common area sanitization, tree pruning, and estate pest control.\n\n4. PRIORITY CLASSIFICATIONS AND SERVICE-LEVEL AGREEMENTS (SLAS)\nMaintenance requisitions are triaged into three response tiers:\n4.1 Tier 1 (Emergency Priority - 4-Hour Response SLA): Major electrical short circuits, burst primary water mains, sewer blockages, or hazardous structural ceiling collapses. Immediate dispatch of on-duty emergency technicians;\n4.2 Tier 2 (Urgent Priority - 24 to 48-Hour Response SLA): Classroom projection power faults, air-conditioning failure in active lecture halls, broken entrance door locks, or restroom fixture leaks;\n4.3 Tier 3 (Routine Priority - 5 Working Days SLA): Aesthetic touch-up painting, general carpentry adjustments, planned furniture reallocations, and routine landscaping.\n\n5. PREVENTIVE AUDITS AND ESCALATION PATHWAYS\nPreventive maintenance schedules (electrical substation overhauls, generator test runs, water tank chemical sterilizations) are executed during semester inter-sessions. Tickets exceeding statutory SLA windows automatically escalate to the Estate Site Engineer (OPS-EST-004) and Director of Campus Operations."
+    },
+    {
+      "document_id": "OPS-FAC-003",
+      "title": "Booking Policy for Conference Rooms and Seminar Halls",
+      "department": "Campus Operations, Estate and Facilities Management",
+      "department_id": "DEPT-OPS",
+      "document_type": "Facility Booking Policy / Space Allocation Regulations",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Academic Department Heads",
+        "Faculty Event Coordinators",
+        "Student Club Presidents (DEPT-SAC)",
+        "Campus Operations Facilities Staff",
+        "Campus Security and Vigilance"
+      ],
+      "keywords": [
+        "conference room booking",
+        "seminar hall reservation",
+        "Newton Auditorium allocation",
+        "CR booking policy",
+        "audiovisual setup",
+        "10 days advance fest booking",
+        "priority allocation hierarchy",
+        "ResolveDesk facility booking",
+        "ambiguous term CR",
+        "REL-008",
+        "OPS-FAC-005"
+      ],
+      "retrieval_signals": [
+        "how to book conference room CR Demo University",
+        "reserve seminar hall for department guest lecture",
+        "book Newton auditorium for college event",
+        "CR-2 booking Turing complex",
+        "seminar hall booking form ResolveDesk",
+        "audio visual setup request college auditorium",
+        "conference room booking cancellation policy",
+        "priority booking academic council auditorium",
+        "student club venue booking rules",
+        "how early can I book seminar hall",
+        "conferance room booking",
+        "seminar hal reservashun",
+        "auditorium booking college",
+        "book cr 2",
+        "conference room + seminar hall + ResolveDesk",
+        "auditorium allocation + SAC event sanction"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of Campus Operations",
+        "Classroom & Venue Allocation Officer",
+        "Audiovisual Technician",
+        "Faculty Club Mentor",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "OPS-POL-001",
+        "OPS-FAC-005",
+        "SEC-POL-003",
+        "SAC-POL-001",
+        "LIB-POL-003",
+        "REL-008"
+      ],
+      "content": "1. PURPOSE AND SPACE INVENTORY\nThis policy establishes reservation criteria, allocation hierarchies, technological provisions, cancelation timelines, and decorum standards governing institutional conference rooms, departmental seminar theaters, and major performance auditoriums administered by the Classroom Allocation Desk of Campus Operations (DEPT-OPS).\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (CR)\nWithin university administrative taxonomy, the acronym 'CR' possesses three distinct, non-overlapping meanings:\n2.1 Conference Room (CR under DEPT-OPS / OPS-FAC-003): The bookable institutional venue designed for committee meetings, guest symposiums, and administrative deliberations (e.g., CR-1, CR-2 in Turing Complex, Ramanujan Executive Hall);\n2.2 Class Representative (CR under DEPT-DSA / STU-LDR-001): The elected student representative serving as cohort liaison between students, course instructors, and academic departments;\n2.3 Course Registration (CR under DEPT-ACAD / ACAD-POL-001): The statutory academic process of enrolling in semester courses and electives on UniCampus ERP.\n- Cross-Domain Disambiguation Note: General institutional Conference Rooms (OPS-FAC-003) must not be confused with Library Discussion Cubicles (LIB-POL-003), which are bookable strictly for student study groups through LibNet.\n\n3. CAMPUS VENUE INVENTORY AND AMENITIES\n3.1 Conference Rooms (CR-1 to CR-6): Seating capacities of 20 to 50 persons, equipped with motorized projection screens, executive teleconference cameras, localized air conditioning (OPS-FAC-005), and interactive smartboards;\n3.2 Departmental Seminar Halls: Capacities of 100 to 150 tiered seats located in Ramanujan and Turing complexes, equipped with dual projection systems and wireless lapel microphones;\n3.3 Newton Central Auditorium: Premier 800-seat performance venue equipped with line-array acoustics, stage theatrical lighting, backstage green rooms, and dedicated 3-phase generator power.\n\n4. RESERVATION PROCEDURES AND TIMELINES (REL-008)\n4.1 Faculty and Academic Requisitions: Department Heads and faculty organizers must submit venue requisitions on ResolveDesk at least three (3) working days in advance;\n4.2 Student Club and Society Requisitions: Recognized student clubs must submit venue requests accompanied by the formal SAC Event Sanction letter (SAC-POL-001) at least ten (10) working days prior to the event;\n4.3 Priority Allocation Hierarchy: If scheduling conflicts emerge, space is allocated strictly under the following statutory hierarchy:\n- Statutory Apex Meetings (Executive Council, Academic Council, Board of Governors);\n- Centralized Examinations and University Placement Drives (DEPT-CDC / DEPT-EXAM);\n- Official University Conferences, Symposia, and Accreditation Audits;\n- Recognized Student Club Co-Curricular Competitions and Fests.\n\n5. USAGE NORMS, CLEANLINESS, AND DAMAGE RESTITUTION\n5.1 Consumables Restriction: Consuming meals, open beverages, or snacks inside auditoriums and conference rooms is strictly prohibited; refreshments must be served in designated outdoor foyers or dining courtyards;\n5.2 Audiovisual Handover: Authorized AV technicians conduct pre-event and post-event equipment diagnostics. Organizers are held financially responsible under POL-DISCIPLINE for any physical damage to projection optics, acoustic microphones, or stage equipment caused by negligence."
+    },
+    {
+      "document_id": "OPS-FAC-005",
+      "title": "Campus HVAC and Air-Conditioning Usage Norms",
+      "department": "Campus Operations, Estate and Facilities Management",
+      "department_id": "DEPT-OPS",
+      "document_type": "Facilities Operational Policy / Energy Conservation Guidelines",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Campus Occupants",
+        "HVAC Maintenance Engineers",
+        "Hostel Wardens",
+        "Laboratory In-Charges",
+        "Estate Energy Audit Cell"
+      ],
+      "keywords": [
+        "HVAC usage norms",
+        "air conditioning policy",
+        "standard setpoint 24 to 26 C",
+        "energy conservation guidelines",
+        "central chiller operating hours",
+        "hostel AC billing norms",
+        "prohibited personal heating cooling",
+        "ambiguous term AC",
+        "ResolveDesk HVAC",
+        "HSTL-REG-001",
+        "HSTL-POL-003"
+      ],
+      "retrieval_signals": [
+        "campus AC temperature policy",
+        "air conditioning thermostat rules Demo University",
+        "AC remote not working lecture hall",
+        "energy saving AC temperature 24 degrees",
+        "operating hours central air conditioning",
+        "hostel AC room extra electricity fee",
+        "can I bring room heater to hostel",
+        "report broken AC in classroom ResolveDesk",
+        "server room continuous 24 hour cooling",
+        "central chiller timings campus",
+        "air condishuning policy",
+        "ac temperatur rules",
+        "hostel ac charges",
+        "classrom ac not cooling",
+        "air conditioning + thermostat setpoint + energy conservation",
+        "HVAC maintenance + ResolveDesk ticket + Estate"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of Campus Operations",
+        "Electrical & HVAC Operations Lead",
+        "Energy Conservation Officer",
+        "Hostel Warden",
+        "IT Server Room Administrator"
+      ],
+      "related_documents": [
+        "OPS-POL-001",
+        "OPS-FAC-003",
+        "OPS-EST-004",
+        "IT-FAC-001",
+        "HSTL-REG-001",
+        "HSTL-POL-003"
+      ],
+      "content": "1. PURPOSE AND SUSTAINABILITY COMMITMENT\nThis policy establishes statutory environmental setpoints, operating schedules, preventive service routines, and electrical conservation mandates governing central heating, ventilation, and air-conditioning (HVAC) plant systems, variable refrigerant flow (VRF) units, and split air-conditioning equipment across all campuses of Demo University. Enforced by the Electrical & HVAC Operations Unit of DEPT-OPS.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (AC)\nWithin Demo University administrative documentation, the abbreviation 'AC' designates two completely different institutional concepts:\n2.1 Air Conditioning (AC under DEPT-OPS / OPS-FAC-005): The mechanical thermal comfort infrastructure, split units, ventilation blowers, and central chillers regulating building climate;\n2.2 Academic Council (AC under DEPT-ACAD / GOV-REG-002): The apex statutory academic body of the university approving all degree curricula, course regulations, examination criteria, and academic policies.\n- Disambiguation Rule: Text referencing temperature setpoints, thermostats, cooling ducts, compressors, or power bills refers to Air Conditioning (OPS-FAC-005); text referencing degree approvals, academic regulations, syllabus reforms, or standing committees refers to Academic Council (GOV-REG-002).\n\n3. MANDATORY STATUTORY TEMPERATURE SETPOINTS\nIn compliance with national energy efficiency directives and the university's environmental sustainability charter:\n3.1 Standard Temperature Band: Thermostats across all administrative offices, staff rooms, conference halls, and teaching lecture theaters must be maintained strictly between twenty-four degrees Celsius (24\u00b0C) and twenty-six degrees Celsius (26\u00b0C);\n3.2 Prohibition of Overcooling: Tampering with thermostat lockboxes or lowering room temperatures below 22\u00b0C is strictly forbidden;\n3.3 Doors and Windows Mandate: Exterior doors, corridor windows, and ventilation louvers must remain fully closed while air-conditioning systems are engaged to prevent thermal loss and compressor overload.\n\n4. OPERATING SCHEDULES ACROSS CAMPUS ZONES\n4.1 Academic and Administrative Blocks: Central HVAC chillers operate on scheduled lecture days from 08:30 AM to 05:30 PM. Units are shut down automatically overnight and on weekends, except for authorized special events (OPS-FAC-003);\n4.2 Continuous Mission-Critical Cooling: Data center server vaults (Turing Complex Server Room IT-SYS-001), high-performance computing clusters, and Central Library 24/7 digital hub maintain 24/7 dedicated precision air-conditioning with redundant backup chillers;\n4.3 Residential Hostels (Nilgiri AC Wing): Air-conditioning operates from 08:00 PM to 07:00 AM on weekdays and 01:00 PM to 05:00 PM on weekends. Enrolled residents pay authorized supplemental utility electricity fees via PayVarsity under HSTL-REG-001.\n\n5. PROHIBITED APPLIANCES AND BREAKDOWN REPORTING\n5.1 Prohibited Private Appliances: In accordance with HSTL-POL-003, private high-power electrical appliances\u2014including portable space heaters, immersion water rods, and personal air coolers\u2014are strictly banned in student dormitories due to electrical fire hazard;\n5.2 Maintenance Reporting: Compressor failures, unusual vibrating noises, water drippage, or refrigerant leaks must be logged immediately on ResolveDesk under Category: Campus Operations > HVAC for resolution within 24 hours."
+    },
+    {
+      "document_id": "OPS-EST-004",
+      "title": "Estate Site Engineer Inspection Duties",
+      "department": "Campus Operations, Estate and Facilities Management",
+      "department_id": "DEPT-OPS",
+      "document_type": "Operational Duty Charter / Estate Inspection Protocol",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Estate Site Engineers",
+        "Director of Campus Operations",
+        "Civil Maintenance Contractors",
+        "Building Safety Wardens",
+        "Chief Security Officer"
+      ],
+      "keywords": [
+        "Estate Site Engineer duties",
+        "civil structural inspections",
+        "campus infrastructure safety",
+        "monsoon inspection protocol",
+        "masonry and roofing audit",
+        "fire escape structural integrity",
+        "contractor quality assurance",
+        "ambiguous term SE",
+        "OPS-POL-001",
+        "SEC-SOP-001"
+      ],
+      "retrieval_signals": [
+        "Estate Site Engineer job responsibilities",
+        "who inspects campus building structural cracks",
+        "report ceiling plaster leakage to site engineer",
+        "contact SE for auditorium stage maintenance",
+        "routine civil maintenance inspection checklist",
+        "monsoon preparedness building safety audit",
+        "campus perimeter wall inspection",
+        "site engineer contact Central Utility Building",
+        "estate engineering inspection protocol",
+        "site engineer civil contractor supervision",
+        "site enginear duties",
+        "estate civil inspection",
+        "structural crack report",
+        "building saftey audit",
+        "Site Engineer + structural inspection + Campus Operations",
+        "civil engineering maintenance + safety audit"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Estate Site Engineer (ROLE-SE)",
+        "Director of Campus Operations",
+        "Civil Maintenance Assistant",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "OPS-POL-001",
+        "OPS-FAC-003",
+        "OPS-FAC-005",
+        "SEC-SOP-001",
+        "ACAD-CRS-005",
+        "EXAM-GUI-002"
+      ],
+      "content": "1. PURPOSE AND PROFESSIONAL CHARTER\nThis document establishes the statutory operational duties, routine inspection frequencies, quality-assurance guidelines, structural safety audit protocols, and emergency response responsibilities for Estate Site Engineers appointed within Campus Operations, Estate and Facilities Management (DEPT-OPS).\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (SE)\nWithin university administrative nomenclature, the abbreviation 'SE' denotes three distinct entities across engineering, examinations, and facilities:\n2.1 Site Engineer (SE under DEPT-OPS / OPS-EST-004): The full-time civil engineering professional responsible for structural safety, estate maintenance, contractor supervision, and physical building inspections;\n2.2 Software Engineering (SE under DEPT-CSE / ACAD-CRS-005): The undergraduate computer science course (CSE305) covering agile development methodologies and software lifecycle design;\n2.3 Semester Exam (SE under DEPT-EXAM / EXAM-GUI-002): The informal colloquial term used by students when querying Semester End Examinations (SEE).\n- Disambiguation Instruction: Searches mentioning structural repairs, ceiling cracks, roofing leaks, carpentry, concrete testing, or contractor oversight point exclusively to the Site Engineer (OPS-EST-004).\n\n3. ROUTINE CIVIL INFRASTRUCTURE INSPECTION DUTIES\nEstate Site Engineers execute structured daily, weekly, and monthly surveillance routines across the physical campus estate:\n3.1 Structural Integrity Monitoring: Inspecting foundations, load-bearing pillars, beams, expansion joints, and external brick masonry across Ramanujan Block, Chanakya Bhavan, Turing Complex, and Nilgiri Hostels for hairline cracks, water seepage, or structural fatigue;\n3.2 Roofing, Parapets, and Drainage: Conducting monthly pre-monsoon and post-monsoon audits of rooftop waterproofing membranes, rainwater drainage spouts, overhead water reservoir supports, and parapet railings;\n3.3 Fire Stairwells and Emergency Egress: Inspecting all external fire escape stairways, safety handrails, illuminated exit signage, and fire door hardware weekly to guarantee unhindered egress under SEC-SOP-001;\n3.4 Perimeter Security Enclosures: Auditing perimeter boundary walls, razor-wire security toppings, vehicle crash barriers, and stormwater culverts in coordination with Campus Security (DEPT-SEC).\n\n4. CONTRACTOR SUPERVISION AND QUALITY AUDITING\n4.1 Quality Compliance: Supervising civil, plumbing, painting, and carpentry contractors engaged in university repair or capital expansion projects; ensuring raw materials conform to national civil engineering codes;\n4.2 Measurement and Billing Verification: Reviewing contractor measurement sheets, conducting destructive/non-destructive material tests, and validating completion milestones before recommending fiscal sign-off to the Director of Campus Operations.\n\n5. EMERGENCY RESPONSE AND HAZARD REMEDIATION\nDuring severe weather emergencies (heavy monsoons, storms, or seismic tremors), Site Engineers form the immediate rapid-assessment team. If structural compromise or hazardous falling hazards are detected, the Site Engineer possesses statutory authority to cordon off affected wings, declare emergency closures, and mobilize emergency shoring teams."
+    },
+    {
+      "document_id": "OPS-LAB-003",
+      "title": "Engineering Laboratory Technical Staff Roster",
+      "department": "Campus Operations, Estate and Facilities Management",
+      "department_id": "DEPT-OPS",
+      "document_type": "Staff Operational Directory / Laboratory Technical Charter",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Laboratory Technical Assistants",
+        "Department Laboratory In-Charges",
+        "Engineering Course Instructors",
+        "Engineering Students (UG and PG)",
+        "Campus Operations Management"
+      ],
+      "keywords": [
+        "Technical Assistant roster",
+        "lab technician responsibilities",
+        "hardware lab maintenance",
+        "equipment calibration safety",
+        "workshop technician duties",
+        "personal protective equipment PPE",
+        "equipment damage report",
+        "ambiguous term TA",
+        "ROLE-TA-TECH",
+        "ACAD-LAB-001",
+        "REL-018"
+      ],
+      "retrieval_signals": [
+        "who is the lab TA for mechanical workshop",
+        "call lab technician for machine calibration",
+        "technical assistant signature on lab record",
+        "TA not opening mechanical lab who to contact",
+        "laboratory technical assistant duties Demo University",
+        "report broken lab instrument to technical staff",
+        "civil engineering lab technician contact",
+        "electrical lab TA equipment issue",
+        "safety goggles lab coat rules workshop",
+        "lab machine calibration schedule",
+        "lab tecnician roster",
+        "technical asistant duties",
+        "workshop ta signature",
+        "lab equipmnt calibration",
+        "Technical Assistant + laboratory maintenance + calibration",
+        "lab technician + equipment breakage + safety"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Technical Assistant (ROLE-TA-TECH)",
+        "Laboratory Faculty In-Charge",
+        "Head of Department (HOD)",
+        "Director of Campus Operations",
+        "Campus Safety Officer"
+      ],
+      "related_documents": [
+        "OPS-POL-001",
+        "OPS-EST-004",
+        "IT-STF-001",
+        "ACAD-POL-007",
+        "FIN-POL-006",
+        "REL-018"
+      ],
+      "content": "1. PURPOSE AND ORGANIZATIONAL MANDATE\nThis operational charter defines professional duties, laboratory safety enforcement, equipment calibration schedules, preventive maintenance responsibilities, and reporting hierarchies for full-time Technical Assistants (Lab Technicians) assigned to engineering and physical science testing facilities across Demo University. Administered jointly by Campus Operations (DEPT-OPS) and respective Academic Engineering Departments.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (TA)\nWithin the university nomenclature system, the abbreviation 'TA' corresponds to three distinct institutional concepts:\n2.1 Technical Assistant (TA under DEPT-OPS / OPS-LAB-003): The full-time permanent technical staff member responsible for maintaining hardware laboratories, machine tooling, instrument calibrations, and student workshop safety;\n2.2 Teaching Assistant (TA under DEPT-ACAD / ACAD-POL-007): The graduate M.Tech or Ph.D. scholar appointed to assist course professors with student tutorials, lab code grading, and remedial mentoring;\n2.3 Travel Allowance (TA under DEPT-FIN / FIN-POL-006): The financial reimbursement per diem granted to faculty and students for authorized official travel and academic conference deputation.\n- Disambiguation Note: Requests regarding machine repairs, workshop tools, component issuance, or lab technician signatures refer to the Technical Assistant (OPS-LAB-003).\n\n3. CORE OPERATIONAL DUTIES OF TECHNICAL ASSISTANTS\n3.1 Laboratory Readiness and Calibrations: Conducting pre-semester inspections, electrical machine testing, fluid mechanics sensor calibrations, surveying equipment servicing, and chemical reagent stock auditing before instructional classes begin;\n3.2 Student Supervision and PPE Enforcement: Enforcing mandatory laboratory safety protocols (ACAD-LAB-001)\u2014including the mandatory wearing of protective safety goggles, lab coats, and closed industrial footwear; operating primary emergency stop switches if hazards arise;\n3.3 Component Issuance and Inventory Control: Managing daily stock registers for hardware components, microcontrollers, measurement probes, and mechanical tooling; collecting component return sign-offs before the conclusion of each lab period;\n3.4 Equipment Damage and Breakage Logging (REL-018): If student equipment is accidentally shorted, dropped, or damaged, the Technical Assistant drafts a preliminary Equipment Incident Slip logging machine serial number, operating conditions, and student details for review by the Laboratory Faculty In-Charge.\n\n4. COORDINATION WITH CAMPUS OPERATIONS AND IT SERVICES\nTechnical Assistants liaise directly with Estate Site Engineers (OPS-EST-004) for industrial three-phase power repairs, plumbing compressor hookups, and specialized ventilation maintenance. For computing hardware labs, Technical Assistants coordinate with IT Hardware Specialists under IT-STF-001."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "total_rejected": 2,
+  "rejected_documents": [
+    {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "reasons": [
+        "[id] Duplicate document ID detected: 'POL-MEDICAL-LEAVE' appears 2 times across corpus"
+      ],
+      "document": {
+        "document_id": "POL-MEDICAL-LEAVE",
+        "title": "Medical Leave and Health Absence Policy",
+        "department": "Campus Health Centre",
+        "department_id": "DEPT-HEALTH",
+        "document_type": "Health & Attendance Policy / Clinical Absence Regulations",
+        "version": "3.0",
+        "effective_date": "2026-08-01",
+        "status": "Active",
+        "audience": [
+          "All Students Experiencing Medical Illness",
+          "Campus Health Centre Medical Team",
+          "Faculty Advisors",
+          "Dean of Academic Affairs"
+        ],
+        "keywords": [
+          "medical leave policy",
+          "health absence regulations",
+          "illness reporting 48 hours",
+          "medical certificate verification within 3 days",
+          "prolonged illness 20 days semester break",
+          "Health Centre endorsement slip",
+          "fraudulent medical certificate penalty",
+          "Senior Chief Medical Officer"
+        ],
+        "retrieval_signals": [
+          "medical leave policy Demo University",
+          "reporting health absence 48 hours rules",
+          "how to submit medical certificate for missing class",
+          "private clinic medical certificate verification health centre",
+          "prolonged illness 20 days semester break policy",
+          "penalty for fake medical certificate",
+          "medical leave rules students",
+          "medcal leav policy",
+          "sick leave student rules",
+          "Medical Leave Policy + Health Centre verification",
+          "attendance exemption + medical certificate endorsement"
+        ],
+        "systems": [
+          "HealthDesk",
+          "ResolveDesk",
+          "UniCampus ERP",
+          "AttendEdge"
+        ],
+        "roles": [
+          "Senior Chief Medical Officer (ROLE-CMO)",
+          "Campus Physician",
+          "Dean of Academic Affairs",
+          "Faculty Advisor / Mentor",
+          "Head of Department (HOD)"
+        ],
+        "related_documents": [
+          "STU-FRM-005",
+          "ACAD-POL-003",
+          "STU-MED-001",
+          "POL-ATTEND",
+          "REL-004"
+        ],
+        "content": "1. PURPOSE AND HEALTH MANDATE\nThis policy establishes clinical reporting timelines, medical certificate verification protocols, hospitalization leaves, and psychiatric accommodations for students experiencing acute or chronic medical conditions.\n\n2. REPORTING PROTOCOLS AND TIMELINES\n2.1 48-Hour Reporting Rule: Any illness causing student absence for three (3) or more consecutive working days must be reported to the Campus Health Centre and assigned Faculty Advisor within forty-eight (48) hours of symptom onset;\n2.2 3-Day Verification Rule: Medical certificates issued by external private hospitals or physicians must be presented in person to the Senior Chief Medical Officer (Health & Wellness Pavilion) within three (3) working days of resuming campus attendance;\n2.3 University Medical Verification Slip: Following clinical review, the Chief Medical Officer issues an official University Medical Verification Slip with a unique endorsement code;\n2.4 Prolonged Illness and Semester Break: If severe illness exceeds twenty (20) instructional working days, the student may petition the Dean of Academic Affairs for a formal medical semester break (leave of absence) without academic penalty.\n\n3. PENALTIES FOR FRAUDULENT CERTIFICATION\nFabricating, altering, or purchasing fraudulent medical certificates constitutes severe academic dishonesty. Offenders face immediate semester suspension and referral to the Disciplinary Committee."
+      }
+    },
+    {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "reasons": [
+        "[id] Duplicate document ID detected: 'POL-MEDICAL-LEAVE' appears 2 times across corpus"
+      ],
+      "document": {
+        "document_id": "POL-MEDICAL-LEAVE",
+        "title": "Medical Leave and Health Absence Policy",
+        "department": "Campus Health Centre",
+        "department_id": "DEPT-HEALTH",
+        "document_type": "Policy",
+        "version": "2.2",
+        "effective_date": "2026-08-01",
+        "status": "Active",
+        "audience": [
+          "All Students Experiencing Acute or Chronic Health Conditions",
+          "Faculty Advisors",
+          "Heads of Department",
+          "Senior Chief Medical Officer",
+          "Dean of Academic Affairs"
+        ],
+        "keywords": [
+          "medical leave",
+          "health absence",
+          "Medical Certificate",
+          "MC",
+          "Health Centre endorsement",
+          "hospitalization",
+          "3 consecutive days rule",
+          "48 hours reporting",
+          "3 days verification window",
+          "20 working days semester break",
+          "condonation 65% to 74.9%",
+          "Senior Medical Officer",
+          "HealthDesk",
+          "ResolveDesk"
+        ],
+        "retrieval_signals": [
+          "medical leave attendance",
+          "how to submit medical certificate for low attendance",
+          "medical leave certificate",
+          "where to submit MC for exam absence",
+          "can I get MC from outside private clinic approved",
+          "MC endorsement form at health centre",
+          "attendance shortage due to hospital admission",
+          "medical certificate submission deadline for exams",
+          "fever absent for 3 days medical leave procedure",
+          "hospitalized missed classes attendance condonation",
+          "prolonged illness semester break policy",
+          "fake medical certificate penalty",
+          "health centre verification slip",
+          "how many days medical leave allowed in college",
+          "medical leave reporting within 48 hours"
+        ],
+        "systems": [
+          "HealthDesk",
+          "ResolveDesk",
+          "UniCampus ERP",
+          "AttendEdge"
+        ],
+        "roles": [
+          "Senior Chief Medical Officer",
+          "Faculty Advisor / Mentor",
+          "Head of Department (HOD)",
+          "Dean of Academic Affairs",
+          "Dean of Student Welfare (DSW)"
+        ],
+        "related_documents": [
+          "STU-MED-001",
+          "POL-ATTEND",
+          "ACAD-POL-003",
+          "POL-DISCIPLINE",
+          "PROC-MED-COND"
+        ],
+        "content": "1. PURPOSE AND HEALTHCARE COMMITMENT\nDemo University recognizes that acute medical conditions, surgical emergencies, severe injuries, and chronic health challenges can temporarily disrupt academic continuity. This policy outlines statutory reporting protocols, medical certificate validation standards, health absence limits, and attendance condonation procedures.\n\n2. JURISDICTION AND ELIGIBILITY\nThis policy governs all undergraduate, postgraduate, and doctoral students experiencing genuine health emergencies that necessitate excused absence from lectures, practical laboratory sessions, or internal assessments.\n\n3. MANDATORY REPORTING TIMELINES AND CERTIFICATE ENDORSEMENT\n3.1 Acute Illness Threshold: Any illness or hospitalization resulting in absence for three or more consecutive working days must be formally notified to the Campus Health Centre and the candidate's Faculty Advisor within 48 hours of onset.\n3.2 External Medical Certificate Verification: Medical documentation issued by outside private hospitals, nursing homes, or medical practitioners must be presented in person by the student to the Senior Chief Medical Officer at the Campus Health Centre within three working days of resuming campus academic activities.\n3.3 Health Centre Endorsement: The Senior Medical Officer scrutinizes diagnostic records, lab investigation reports, and clinical discharge summaries. Upon authenticating bona fide medical necessity, an official University Medical Verification Slip bearing a unique digital endorsement code is generated in HealthDesk.\n\n4. ATTENDANCE CONDONATION AND EXAMINATION IMPLICATIONS (REL-004)\n4.1 Permissible Condonation Band: In strict conformity with institutional attendance policy POL-ATTEND, authenticated medical leave serves as the statutory foundation for attendance condonation strictly within the 65.0% to 74.9% range.\n4.2 Absolute Floor (65.0%): Absences reducing cumulative course attendance below 65.0% cannot be condoned under any medical ground. Candidates falling below 65.0% are detained ('W' or 'SA' grade) and must repeat the course.\n4.3 Submission via ResolveDesk: Endorsed medical verification slips must be uploaded to ResolveDesk under 'Medical Leave Submission' at least five working days prior to Semester End Examinations (SEE).\n\n5. PROLONGED MEDICAL LEAVE AND SEMESTER BREAK\n5.1 Severe Extended Illness: Where serious trauma, extensive surgery, contagious disease isolation, or psychiatric distress causes cumulative absence exceeding 20 working days in a semester, the student may petition for a formal Semester Break (Leave of Absence) without academic penalty.\n5.2 Resumption: Upon recovering and obtaining fitness certification ratified by the Senior Chief Medical Officer, the candidate re-enrolls in the respective semester during the subsequent academic cycle.\n\n6. INTEGRITY AND FABRICATION PENALTIES\nSubmission of falsified, forged, or purchased medical certificates constitutes a severe violation of campus ethics. Any case involving fabricated health records is summarily referred to the Proctorial Disciplinary Board, resulting in immediate one-semester academic suspension and permanent recording on the UniCampus ERP file."
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "min_content_length": 200,
+  "max_content_length": 50000,
+  "min_word_count": 30,
+  "max_word_count": 10000,
+  "max_whitespace_ratio": 0.35,
+  "max_repeated_ngram_ratio": 0.40,
+  "near_duplicate_threshold": 0.88,
+  "enable_near_duplicate_detection": true,
+  "fail_on_schema_error": true,
+  "remove_exact_duplicates": false,
+  "allowed_statuses": [
+    "Active",
+    "Draft",
+    "Deprecated",
+    "Archived",
+    "Under Review"
+  ],
+  "required_document_fields": [
+    "document_id",
+    "title",
+    "content",
+    "department",
+    "department_id",
+    "document_type"
+  ],
+  "required_metadata_fields": [
+    "version",
+    "effective_date",
+    "status",
+    "audience",
+    "keywords",
+    "retrieval_signals",
+    "systems",
+    "roles",
+    "related_documents"
+  ],
+  "world_model_path": "Data/demo_university_world_model.json",
+  "id_pattern": "^[A-Z0-9]+(-[A-Z0-9]+)+$",
+  "placeholder_patterns": [
+    "lorem ipsum",
+    "placeholder",
+    "sample text",
+    "todo:",
+    "tbd",
+    "\\[insert",
+    "<insert",
+    "xxx+",
+    "replace this"
+  ]
+}

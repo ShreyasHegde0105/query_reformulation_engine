@@ -1,0 +1,508 @@
+{
+  "domain": "Library and Knowledge Resources",
+  "documents": [
+    {
+      "document_id": "LIB-POL-001",
+      "title": "Central Library Borrowing Rules, Circulation Limits, and Fine Rates",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Institutional Policy / Circulation Regulations",
+      "version": "3.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Doctoral Research Scholars",
+        "Faculty Members",
+        "Library Circulation Desk Staff",
+        "Finance and Accounts Office"
+      ],
+      "keywords": [
+        "library borrowing policy",
+        "circulation limits",
+        "book loan periods",
+        "undergraduate 4 books 14 days",
+        "postgraduate 6 books 28 days",
+        "overdue fine Rs 5 per day",
+        "overdue fine Rs 10 per day",
+        "account lock threshold Rs 50",
+        "RFID self checkout",
+        "non-circulating reference collection",
+        "POL-LIBRARY",
+        "PROC-LIB-CIRCULATION",
+        "REL-006"
+      ],
+      "retrieval_signals": [
+        "how many books can I borrow from library",
+        "library book issue limit undergraduate",
+        "book return due date PG students",
+        "library fine rates per day",
+        "overdue book penalty Demo University",
+        "library fine 5 rupees 10 rupees",
+        "library card blocked fine exceeds 50",
+        "how to pay library fine",
+        "lost library book replacement cost",
+        "can I take reference books home",
+        "library no dues clearance graduation",
+        "library dues stopping exam hall ticket",
+        "libary fine",
+        "librry book issue",
+        "circulashun desk",
+        "overdue penlty",
+        "book return + fine + hall ticket",
+        "library dues + caution deposit refund"
+      ],
+      "systems": [
+        "LibNet",
+        "CampusPass",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Assistant Librarian (Circulation)",
+        "Circulation Desk In-Charge",
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "LIB-GUI-001",
+        "LIB-FAQ-001",
+        "LIB-POL-003",
+        "ACAD-SOP-001",
+        "FIN-POL-003",
+        "SEC-POL-001",
+        "REL-006"
+      ],
+      "content": "1. STATUTORY AUTHORITY AND SCOPE\nThis policy defines the governance, borrowing privileges, loan durations, overdue fine structures, renewal terms, and loss-of-material liabilities for the Central Library and Learning Resource Centre (DEPT-LIB) housed within the Valmiki Central Library Building at Demo University. These regulations apply equally to all registered undergraduate (UG) students, postgraduate (PG) students, doctoral research scholars, teaching faculty, and administrative staff.\n\n2. SMART CREDENTIALS AND CIRCULATION ELIGIBILITY\n2.1 RFID Identification Requirement: Physical access to the library stacks, automated RFID self-checkout kiosks, and manual circulation service counters requires a valid, active Demo University Smart RFID Identity Card issued under POL-ID-CARD and managed via CampusPass (SYS-PASS).\n- Entity Disambiguation Note: Student Smart RFID ID Cards (ID under SEC-POL-001 / CampusPass) must not be confused with Instructional Design (ID under ACAD-LMS-005 / LearnSphere LMS).\n2.2 Lending Restrictions: Lending, borrowing, or sharing student ID cards to perform proxy book checkouts is strictly prohibited and constitutes a disciplinary infraction referred to the Proctorial Committee (STU-POL-005).\n\n3. BORROWING QUOTAS AND LOAN DURATIONS (POL-LIBRARY)\nBorrowing entitlements are partitioned strictly according to academic user categories as registered in UniCampus ERP:\n3.1 Undergraduate (UG) Students: Entitled to borrow up to four (4) general circulation books simultaneously for a maximum duration of fourteen (14) calendar days.\n3.2 Postgraduate (PG) Students and Doctoral Scholars: Entitled to borrow up to six (6) general circulation books simultaneously for a maximum duration of twenty-eight (28) calendar days.\n3.3 Faculty Members: Entitled to borrow up to ten (10) volumes for a standard semester loan period of ninety (90) calendar days.\n3.4 Non-Circulating Reference Stacks: Rare manuscripts, encyclopedias, print periodicals, current journal issues, standards, course reserve textbooks, and reference hall materials are strictly non-circulating and cannot be removed from library premises under any circumstances.\n\n4. OVERDUE FINES AND ACCOUNT LOCKOUT THRESHOLDS (PROC-LIB-CIRCULATION)\n4.1 Tiered Overdue Fine Structure: Borrowers failing to return circulating materials by the specified due date incur progressive daily penalties:\n- Days 1 through 7 of Overdue: Rs. 5 per calendar day per overdue book.\n- Day 8 and Onward: Rs. 10 per calendar day per overdue book until the volume is physically checked in at the circulation counter.\n4.2 Automated Account Lockout: If a patron accumulates cumulative unpaid library fines exceeding Rs. 50, LibNet (SYS-LIB) automatically applies a borrowing lock to the patron profile. While locked, patrons cannot check out additional books, place online reservation holds, or renew active loans.\n4.3 Fine Settlement: Accrued library circulation fines may be settled instantly at the Circulation Counter using integrated PayVarsity POS terminals or online via the LibNet patron portal linked to PayVarsity (SYS-PAY).\n\n5. BOOK LOSS, DAMAGE, AND REPLACEMENT PROTOCOLS\nIf a borrowed book is lost, stolen, or mutilated, the borrower must immediately notify the Circulation Desk in writing. Borrowers must replace the lost volume with a brand-new copy of the identical or later edition within twenty-one (21) calendar days, accompanied by a non-refundable administrative processing fee of Rs. 100. If the book is out of print or unobtainable, the library assesses recovery charges equivalent to twice the current catalog market value or replacement cost determined by the University Chief Librarian.\n\n6. INSTITUTIONAL NO-DUES CLEARANCE AND INTER-DEPARTMENTAL DEPENDENCIES (REL-006)\nComplete clearance of all borrowed books and zero outstanding circulation fine balances in LibNet is mandatory for:\n- Generation of Semester End Examination (SEE) hall tickets on ExamShield;\n- Semester course registration approvals on UniCampus ERP;\n- Formal institutional No-Dues clearance for degree certificate issuance, Transfer Certificate (TC) release, and caution deposit refund under FIN-POL-003 and ACAD-SOP-001."
+    },
+    {
+      "document_id": "LIB-POL-002",
+      "title": "Digital Resource Access, Remote Proxy Usage, and E-Journal Guidelines",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Institutional Policy / Digital Services SOP",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students (UG, PG, Ph.D.)",
+        "Faculty and Teaching Assistants",
+        "Research Scholars and Postdocs",
+        "Digital Repository & E-Resource Hub Staff",
+        "IT Infrastructure Services"
+      ],
+      "keywords": [
+        "digital resources",
+        "remote proxy access",
+        "e-journal guidelines",
+        "LibNet proxy gateway",
+        "IEEE Xplore",
+        "ScienceDirect",
+        "ACM Digital Library",
+        "Scopus",
+        "SpringerLink",
+        "off-campus access",
+        "prohibited web scraping",
+        "SSO credentials",
+        "IT-POL-001",
+        "POL-LIBRARY"
+      ],
+      "retrieval_signals": [
+        "how to access IEEE papers from home",
+        "download ScienceDirect research articles off campus",
+        "LibNet proxy login off campus",
+        "ACM digital library student access",
+        "e-journal remote gateway Demo University",
+        "can I use university library proxy on mobile",
+        "library remote access not working",
+        "automated scraping IEEE prohibited",
+        "proxy account blocked bulk download",
+        "how to read Springer journals online",
+        "libnet off campus proxy",
+        "ieee downlod offcampas",
+        "remot proxy acess",
+        "sciencedirect free access student",
+        "e-journal + remote proxy + LibNet",
+        "IEEE access + campus credentials"
+      ],
+      "systems": [
+        "LibNet",
+        "UniCampus ERP",
+        "Campus Wi-Fi (802.1X)",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Digital Services Librarian",
+        "Director of IT Infrastructure",
+        "Research Scholar / Faculty Member"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-POL-004",
+        "LIB-GUI-001",
+        "LIB-FAQ-001",
+        "IT-POL-001",
+        "IT-POL-003",
+        "RES-POL-001"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nThis policy regulates authenticated access to subscription-based digital scholarly resources, licensed electronic journals, bibliographic databases, and remote proxy gateways provisioned by the Central Library and Learning Resource Centre (DEPT-LIB) in partnership with Information Technology Services (DEPT-IT).\n\n2. LICENSED ELECTRONIC SCHOLARLY COLLECTIONS\nDemo University subscribes to premier international peer-reviewed research databases to support undergraduate coursework, postgraduate dissertations, and sponsored doctoral research, including:\n- IEEE Xplore Digital Library (Electrical, Electronics, and Computer Science);\n- ScienceDirect / Elsevier (Engineering, Physical Sciences, Life Sciences);\n- ACM Digital Library (Computing Machinery and Software Systems);\n- SpringerLink, Scopus, and Web of Science (Multidisciplinary citation databases).\n\n3. ON-CAMPUS AND OFF-CAMPUS AUTHENTICATION MODES\n3.1 On-Campus IP Authentication: Users connected to the official university campus enterprise network\u2014either through 802.1X authenticated Wi-Fi (IT-SYS-005) or wired computing laboratory Ethernet ports\u2014receive seamless, automatic IP-authenticated access to all subscribed repositories without secondary login prompts.\n3.2 Off-Campus Remote Proxy Gateway: Authorized students, scholars, and faculty accessing resources outside campus premises must authenticate through the LibNet Off-Campus E-Journal Proxy Gateway accessible at: https://libnet.demo.edu.internal/opac. Off-campus access utilizes central Single Sign-On (SSO) credentials linked to the user's active UniCampus ERP account.\n\n4. ACCEPTABLE USE, DATA SECURITY, AND PROHIBITED PRACTICES (IT-POL-001)\nLicensed digital resources are governed by statutory copyright laws and publisher licensing agreements. The following conduct is strictly prohibited:\n4.1 Prohibition of Automated Scraping: Utilizing automated web scraping scripts, robotic crawlers, batch retrieval bots, offline download managers, or bulk extraction tools to download systematic volumes or entire journal issues is illegal.\n4.2 Credential Non-Transferability: User proxy credentials are strictly personal and confidential. Sharing login credentials with unauthorized off-campus acquaintances, commercial entities, or third-party academic networks is a serious breach of IT security.\n4.3 Commercial Exploitation: Distributing, selling, or republishing copyrighted content downloaded from university library subscriptions is strictly forbidden.\n\n5. AUDITING, ABUSE DETECTION, AND DISCIPLINARY SANCTIONS\n5.1 Automated Anomaly Monitoring: The LibNet proxy server continuously audits traffic patterns. Detection of abnormal spikes in retrieval volume, simultaneous logins from disparate geographic IPs, or bot signatures triggers an immediate automated suspension of the offending user profile.\n5.2 Incident Escalation: Suspicious activity generates a Security Incident Report (IR under SEC-SOP-003) transmitted to the Chief Security Officer and Director of IT Infrastructure. Reinstatement requires formal review and disciplinary clearance by the Proctorial Committee (STU-POL-005).\n- Entity Disambiguation Note: Security Incident Reports (IR under DEPT-SEC) must not be confused with the Institutional Repository (IR under LIB-POL-004) or the Office of International Relations (IRO-POL-001).\n\n6. TECHNICAL TROUBLESHOOTING AND ASSISTANCE\nPatrons encountering proxy authentication timeouts, SSL certificate validation errors, or publisher access blocks should submit a service ticket on ResolveDesk (SYS-RESOLVE) categorized under 'Library Services > E-Resource Proxy Gateway'."
+    },
+    {
+      "document_id": "LIB-POL-003",
+      "title": "Reference Hall, 24/7 Reading Room, and Discussion Cubicle Booking Rules",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Facility Operations Policy / Space Governance",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Research Scholars",
+        "Student Study Groups",
+        "Library Facilities Staff",
+        "Campus Security and Vigilance"
+      ],
+      "keywords": [
+        "reference hall rules",
+        "24/7 reading room",
+        "night study hall",
+        "discussion cubicle booking",
+        "Valmiki library building",
+        "RFID turnstile access",
+        "silence zone",
+        "group study rooms",
+        "exam season 24 hour access",
+        "CampusPass",
+        "LibNet cubicle reservation",
+        "POL-LIBRARY"
+      ],
+      "retrieval_signals": [
+        "is library reading room open 24 hours",
+        "where to study at night on campus",
+        "24/7 library reading hall timings",
+        "how to book library discussion cubicle",
+        "group study room reservation LibNet",
+        "reference section opening hours",
+        "library rules food and drinks allowed",
+        "charging sockets library study hall",
+        "night library entry rules hostel students",
+        "quiet study area Valmiki library",
+        "libary cubicle booking",
+        "24/7 reding room",
+        "discussun room library",
+        "night studdy hall",
+        "cubicle booking + study group + LibNet",
+        "24/7 reading hall + exam season + RFID"
+      ],
+      "systems": [
+        "LibNet",
+        "CampusPass",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Assistant Librarian (Reference)",
+        "Library Vigilance Officer",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-GUI-001",
+        "LIB-FAQ-001",
+        "IT-LAB-004",
+        "OPS-FAC-003",
+        "SEC-POL-001",
+        "HSTL-POL-001"
+      ],
+      "content": "1. PURPOSE AND FACILITY LAYOUT\nThis document regulates physical access, decorum, noise zoning, opening schedules, and collaborative workspace reservations across the Valmiki Central Library Building, comprising four floors, an 85,000+ print volume repository, dedicated periodicals halls, and specialized digital learning zones.\n\n2. REFERENCE HALL AND PERIODICALS SECTION\n2.1 Location and Operating Hours: The Reference Hall and Periodicals Reading Section occupy Floors 1 and 2, operating from 08:00 AM to 10:00 PM on all official working days.\n2.2 Strict In-House Consultation: Reference materials\u2014including encyclopedias, dictionaries, statistical yearbooks, current journals, bound archival volumes, and reserved course textbooks\u2014cannot be checked out or removed. Removing reference items from designated halls triggers anti-theft RFID gates and warrants immediate disciplinary referral.\n2.3 Non-Disturbance Mandate: Floors 1 and 2 are designated as Absolute Silence Zones. Cell phones must be switched off or placed in silent mode; voice calls, video streaming without headphones, and audible conversations are strictly forbidden.\n\n3. 24/7 NIGHT STUDY HALL AND EXAMINATION OPERATIONS\n3.1 Operating Schedule: To support academic preparation during sessional assessments and end-semester finals, the Ground Floor 24/7 Reading Room operates twenty-four (24) hours a day, seven (7) days a week throughout the academic semester.\n3.2 Biometric and RFID Access Security: Entry between 10:00 PM and 06:00 AM is restricted strictly to active students and researchers with valid RFID ID cards verified through CampusPass (SYS-PASS) speed gates at the library entrance.\n- Disambiguation Note on Hostel Curfew: Hostel resident students using the 24/7 Reading Room past the standard 10:00 PM curfew must log their night study location via DormTrack (SYS-DORM) in accordance with HSTL-POL-001; random night vigilance checks are conducted jointly by Security and Hostel Wardens.\n3.3 Physical Amenities: The 24/7 study zone provides high-speed enterprise Wi-Fi (802.1X), individual carrels with localized power sockets for laptops, ergonomic seating, and filtered drinking water dispensers.\n\n4. DISCUSSION CUBICLE AND GROUP STUDY ROOM BOOKING\n4.1 Purpose and Capacity: The library maintains ten (10) soundproof discussion cubicles on Floor 3 for collaborative academic projects, capstone group work, and research team deliberations. Cubicles accommodate groups of 3 to 8 registered students.\n- Cross-Domain Disambiguation Note: Library Discussion Cubicles (bookable via LibNet) must not be confused with Academic Conference Rooms (CR under OPS-FAC-003 / Campus Operations) or Student Activity Centre club meeting spaces (SAC-FAC-001).\n4.2 Reservation Procedure via LibNet OPAC: Study groups reserve cubicles up to 48 hours in advance through the LibNet portal:\n- Minimum Group Size: 3 students (valid student IDs must be entered during booking);\n- Maximum Slot Duration: Capped at two (2) continuous hours per group per day to ensure equitable access;\n- Check-In Grace Period: The lead applicant must report to the Floor 3 Helpdesk within fifteen (15) minutes of slot commencement; failure to check in releases the cubicle automatically to waitlisted groups.\n\n5. CODE OF CONDUCT AND AMENITIES USAGE\n5.1 Consumables Prohibition: Food, snacks, soft drinks, and open beverage containers are strictly prohibited inside all library halls; only spill-proof bottled water is permitted.\n5.2 Personal Belongings: Personal textbooks, notebooks, and laptops may be carried inside; personal bags, backpacks, and umbrellas must be deposited at the Ground Floor Property Counter against a brass token.\n5.3 Vandalism and Markings: Highlighting, underlining, defacing, or tearing pages from library books or damaging furniture, charging ports, or computing terminals results in a mandatory fine of Rs. 1,000 plus full repair or replacement costs under POL-DISCIPLINE."
+    },
+    {
+      "document_id": "LIB-POL-004",
+      "title": "Institutional Repository (IR) Submission and Archiving Policy",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Institutional Policy / Research Archiving SOP",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Doctoral Research Scholars",
+        "Master of Technology (M.Tech) Students",
+        "Master of Business Administration (MBA) Students",
+        "Undergraduate Capstone Project Teams",
+        "Faculty Researchers",
+        "Plagiarism & Thesis Verification Unit Staff"
+      ],
+      "keywords": [
+        "Institutional Repository",
+        "IR submission",
+        "digital thesis archiving",
+        "Turnitin similarity index",
+        "10 percent similarity threshold",
+        "E-Shodh Hub",
+        "M.Tech dissertation CSE580",
+        "PhD thesis archive",
+        "open access research",
+        "embargo guidelines",
+        "RES-ETH-001",
+        "PROG-PHD-ENG"
+      ],
+      "retrieval_signals": [
+        "how to upload thesis to institutional repository",
+        "upload master dissertation to IR",
+        "IR submission guidelines Demo University",
+        "thesis plagiarism check Turnitin library",
+        "maximum plagiarism allowed for M.Tech thesis",
+        "10 percent similarity limit PhD thesis",
+        "where to submit digital copy of dissertation",
+        "plagiarism verification slip library",
+        "patent pending thesis embargo request",
+        "faculty paper upload to IR",
+        "institutional repositry",
+        "turnitin plagarism check",
+        "thess upload IR",
+        "similarty index 10 percent",
+        "thesis upload + IR + Turnitin clearance",
+        "plagiarism check + Turnitin + LibNet"
+      ],
+      "systems": [
+        "LibNet",
+        "Turnitin / E-Shodh Hub",
+        "UniCampus ERP",
+        "ResTrack Portal"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Digital Repository In-Charge",
+        "Plagiarism Verification Officer",
+        "Dean of Research and Innovation",
+        "Research Supervisor / Faculty Guide"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-POL-002",
+        "RES-POL-001",
+        "RES-POL-002",
+        "RES-ETH-001",
+        "RES-IPR-001",
+        "REL-014"
+      ],
+      "content": "1. INSTITUTIONAL PURPOSE AND MANDATE\nThis policy establishes the statutory mandate, quality standards, plagiarism verification thresholds, and submission workflows for depositing scholarly intellectual assets into the Demo University Institutional Repository (IR). Managed by the Central Library (DEPT-LIB) through the LibNet Institutional Research Archive module, the repository preserves and disseminates the university's academic scholarship.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (IR)\nWithin the Demo University enterprise ecosystem, the term 'IR' possesses three distinct, non-overlapping meanings across departments:\n2.1 Institutional Repository (IR under DEPT-LIB / LIB-POL-004): The digital research archive preserving faculty publications, master dissertations, and doctoral theses;\n2.2 Office of International Relations (IR under DEPT-IRO / IRO-POL-001): The administrative division facilitating student semester exchange programs, foreign dual degrees, and international memoranda of understanding (MOUs);\n2.3 Incident Report (IR under DEPT-SEC / SEC-SOP-003): The security documentation protocol logging physical theft, safety infractions, or gate trespassing incidents on campus.\n\n3. MANDATORY DEPOSIT SCOPE AND COVERAGE\nDeposit in the Institutional Repository is an absolute prerequisite for degree completion and research sign-off across all academic programs:\n3.1 Doctoral Ph.D. Theses: Final approved Ph.D. dissertations submitted under PROG-PHD-ENG and RES-POL-001;\n3.2 Master Dissertations: M.Tech dissertation projects (e.g., CSE580 Phase I & II) and MBA master research theses;\n3.3 Undergraduate Capstone Projects: Outstanding B.Tech capstone project reports recommended by departmental project evaluation committees;\n3.4 Faculty Scholarly Works: Pre-prints, post-prints, conference proceedings, and peer-reviewed journal papers authored by Demo University faculty members.\n\n4. ANTI-PLAGIARISM VERIFICATION AND THRESHOLDS (RES-ETH-001)\nPrior to repository archiving, all dissertations and theses must undergo rigorous computerized similarity analysis administered by the Plagiarism & Thesis Verification Unit:\n4.1 Authorized Verification Engines: Similarity evaluation is performed exclusively using university-licensed Turnitin / E-Shodh Hub platforms.\n4.2 Permissible Similarity Index Ceiling: The overall similarity index must be strictly less than or equal to ten percent (<= 10%), excluding the candidate's own published papers, title pages, formal acknowledgments, and bibliographic references.\n4.3 Exclusion Filter Parameters: Quotes enclosed in quotation marks and generic string matches of fourteen (14) words or fewer are automatically excluded.\n4.4 Endorsement Slip: Upon confirming similarity <= 10%, the Plagiarism Verification Officer generates a digitally signed Turnitin Verification Certificate and endorsement slip counter-signed by the Research Supervisor.\n\n5. SUBMISSION WORKFLOW AND FILE FORMAT STANDARDS\n5.1 Digital Submission Format: Dissertations must be submitted in searchable PDF/A format (ISO 19005 compliant), accompanied by complete metadata (title, abstract, keywords, supervisor name, departmental affiliation, and research grant acknowledgment).\n5.2 Upload Protocol via LibNet: The scholar navigates to the LibNet Institutional Research Archive module, enters authenticated ERP credentials, attaches the PDF/A file, and uploads the Turnitin Verification Certificate.\n5.3 Library Archival Verification: The Digital Repository In-Charge inspects metadata accuracy within three (3) working days. Once verified, the digital repository receipt is transmitted automatically to UniCampus ERP and the Examination Cell, unblocking oral defense scheduling or graduation clearance.\n\n6. OPEN ACCESS AND EMBARGO PROVISIONS\n6.1 Standard Open Access: All archived works are made publicly discoverable via LibNet OPAC under open-access principles.\n6.2 Embargo Exceptions: If research findings are subject to an active patent application (RES-IPR-001), commercial sponsorship non-disclosure agreement, or journal publisher embargo, the supervisor and Dean of Research may request an embargo period of six (6) to twelve (12) months. During embargo, descriptive metadata is visible, but full-text access remains restricted to authenticated internal campus IPs."
+    },
+    {
+      "document_id": "LIB-GUI-001",
+      "title": "LibNet OPAC Search, Book Reservation, and Account Renewal Guide",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "User Manual / System Navigation Guide",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Research Scholars",
+        "Faculty Members",
+        "Administrative Staff"
+      ],
+      "keywords": [
+        "LibNet user guide",
+        "OPAC search tutorial",
+        "book reservation steps",
+        "online book renewal",
+        "account borrowing history",
+        "Dewey decimal shelf location",
+        "stack navigation",
+        "reservation hold 48 hours",
+        "RFID self kiosk instructions",
+        "SYS-LIB",
+        "PROC-LIB-CIRCULATION"
+      ],
+      "retrieval_signals": [
+        "how to use LibNet catalog",
+        "search books on OPAC Demo University",
+        "how to reserve a book on LibNet",
+        "online library book renewal guide",
+        "how to find book shelf location in library",
+        "LibNet student portal login steps",
+        "check borrowing history on LibNet",
+        "how to renew library books from hostel",
+        "reserve issued book library",
+        "OPAC catalog tutorial",
+        "libnet login guide",
+        "opac book serch",
+        "renew book online",
+        "how to hold book libnet",
+        "LibNet OPAC + book reservation",
+        "book renewal + online portal + due date"
+      ],
+      "systems": [
+        "LibNet",
+        "CampusPass",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Library Systems Administrator",
+        "Circulation Desk Assistant",
+        "All Library Patrons"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-POL-002",
+        "LIB-POL-003",
+        "LIB-FAQ-001",
+        "IT-SYS-001"
+      ],
+      "content": "1. OVERVIEW AND SYSTEM ACCESSIBILITY\nLibNet (SYS-LIB) is the Integrated Library Management System and Online Public Access Catalog (OPAC) of Demo University. It manages book cataloging, circulation status, fine ledgers, electronic resource links, and institutional repository access.\n- Student & Public OPAC URL: https://libnet.demo.edu.internal/opac\n- Library Staff Administrative URL: https://libnet.demo.edu.internal/staff\n\n2. CATALOG SEARCH MODES AND STACK DISCOVERY\n2.1 Basic Catalog Search: Users can query the repository by entering keywords, book titles, author surnames, or ISBNs in the primary LibNet search bar.\n2.2 Advanced Filtering Options: Search results can be filtered by publication year, department collection (e.g., Computer Science, Electrical, Mechanical, Management), language, and resource type (Print Book, E-Book, Bound Periodical, Dissertation).\n2.3 Interpreting Stack Availability and Shelf Locations:\n- Status 'Available': Indicates the volume is present on the shelf; the display shows the Floor Number, Stacks Aisle, and Dewey Decimal Call Number (e.g., Floor 2, Aisle 4B, Call No: 005.133 COR);\n- Status 'Issued': Displays current loan status and projected due date of return;\n- Status 'Reference Only': Restricted strictly to in-house reading room consultation;\n- Status 'On Reserve': Held temporarily at the circulation reserve counter for specific academic courses.\n\n3. BOOK RESERVATION AND HOLD PLACEMENT (PROC-LIB-CIRCULATION)\nWhen a required book is currently issued to another borrower, registered patrons can place an automated reservation hold:\n3.1 Hold Placement: Click 'Place Hold' on the catalog entry and authenticate using student ERP credentials;\n3.2 Queue Prioritization: Holds are queued strictly on a first-come, first-served basis;\n3.3 Return Alert and 48-Hour Collection Window: Upon physical return of the reserved book, LibNet dispatches an automated email/SMS alert to the reserving patron and places the volume in the 'Hold Shelf' at the Circulation Desk. The book is reserved exclusively for forty-eight (48) hours; if not collected within 48 hours, the hold expires and transfers to the next user in queue or returns to open circulation.\n\n4. ONLINE BOOK RENEWAL WORKFLOW\nPatrons may renew borrowed circulating items from any personal device without carrying books back to the library counter:\n4.1 Step 1: Log in to https://libnet.demo.edu.internal/opac using institutional Single Sign-On (SSO);\n4.2 Step 2: Navigate to 'My Account' > 'Current Checkouts';\n4.3 Step 3: Identify the book to extend and click 'Renew Selected';\n4.4 Conditions for Renewal Approval:\n- The renewal request must be submitted prior to the original due date;\n- No other patron has placed an active reservation hold on the item;\n- The patron's cumulative unpaid fine balance in LibNet does not exceed Rs. 50;\n- The book has not exceeded the maximum limit of two (2) consecutive online renewals.\n\n5. RFID SELF-CHECKOUT KIOSK OPERATING INSTRUCTIONS\nPatrons can borrow and return materials autonomously using self-service kiosks located in the Ground Floor Circulation Foyer:\n5.1 Tap Student ID: Place your Demo University Smart RFID ID card against the contactless reader on the kiosk console;\n5.2 Place Books on Reader Pad: Position up to four (4) books simultaneously on the RFID sensor surface;\n5.3 Verify Screen Display: Ensure all book titles, barcodes, and computed due dates appear correctly on the touchscreen display;\n5.4 Complete Checkout: Select 'Confirm Borrowing' and choose to print a paper receipt or send a digital receipt to your student email; the RFID security gate sensor is automatically deactivated for thirty (30) seconds to enable exit without alarm triggers."
+    },
+    {
+      "document_id": "LIB-FAQ-001",
+      "title": "Central Library Services, Off-Campus E-Access, and Book Bank FAQs",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Informational FAQ / Knowledgebase Directory",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students (UG and PG)",
+        "Prospective Students",
+        "Research Scholars",
+        "Faculty Members",
+        "Helpdesk Staff"
+      ],
+      "keywords": [
+        "library FAQs",
+        "frequently asked questions",
+        "book bank scheme",
+        "SC ST textbook facility",
+        "lost book procedure",
+        "library fine payment",
+        "weekend library timings",
+        "hall ticket hold library dues",
+        "LibNet password reset",
+        "POL-LIBRARY",
+        "REL-006"
+      ],
+      "retrieval_signals": [
+        "frequently asked questions central library",
+        "what is the book bank scheme Demo University",
+        "how to get free books from library book bank",
+        "who is eligible for library book bank",
+        "library timings on Saturday Sunday",
+        "how to unblock library card",
+        "why did library lock my hall ticket",
+        "can outside visitors use the university library",
+        "lost RFID card how to borrow books",
+        "reset LibNet password",
+        "book bank eligibility",
+        "librry timing sundays",
+        "unblock libnet card",
+        "bookbank schem",
+        "book bank + textbook assistance + semester",
+        "library dues + hall ticket + ExamShield"
+      ],
+      "systems": [
+        "LibNet",
+        "UniCampus ERP",
+        "CampusPass",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "University Chief Librarian",
+        "Circulation Desk Officer",
+        "Book Bank Coordinator",
+        "ResolveDesk Tier 1 Support Agent"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-POL-002",
+        "LIB-POL-003",
+        "LIB-POL-004",
+        "LIB-GUI-001",
+        "ACAD-SOP-001",
+        "REL-006"
+      ],
+      "content": "FREQUENTLY ASKED QUESTIONS: CENTRAL LIBRARY AND LEARNING RESOURCE CENTRE\n\nQ1: What are the standard operating hours of the Central Library?\nA: General Circulation Stacks, Book Issue Desks, and the Reference Hall operate from 08:00 AM to 10:00 PM on all official working days, and from 09:00 AM to 05:00 PM on Saturdays, Sundays, and notified university holidays. The Ground Floor 24/7 Reading Room remains open round-the-clock, 365 days a year, accessible via RFID card turnstiles (CampusPass).\n\nQ2: What is the borrowing quota and loan duration for undergraduate and postgraduate students?\nA: Under POL-LIBRARY:\n- Undergraduate (UG) Students: May borrow up to 4 books for 14 calendar days;\n- Postgraduate (PG) Students / Research Scholars: May borrow up to 6 books for 28 calendar days;\n- Faculty Members: May borrow up to 10 books for 90 days (semester loan).\n\nQ3: What are the overdue fine rates if I return a book late?\nA: Overdue fines are calculated automatically by LibNet at Rs. 5 per day per book for the first 7 days of delay, increasing to Rs. 10 per day per book from Day 8 onwards. If your unpaid fine balance exceeds Rs. 50, your library account is automatically locked, preventing further checkouts or renewals.\n\nQ4: What is the Book Bank Scheme and who is eligible to apply?\nA: The Book Bank is a specialized social and academic welfare service operated by the Central Library. It provides a complete set of required core engineering and management textbooks for the entire semester to eligible students:\n- Category A: Students belonging to SC/ST communities upon verification of category documentation;\n- Category B: Economically Weaker Section (EWS) students with verified family annual income below Rs. 2,50,000.\nBook Bank sets are issued during the first two weeks of every semester and must be returned within seven (7) days following the completion of Semester End Examinations (SEE).\n\nQ5: Why is my Semester End Exam hall ticket or course registration blocked due to library dues?\nA: Under institutional workflow REL-006 and POL-LIBRARY, complete clearance of all library obligations (zero outstanding overdue fines and complete return of circulating volumes) is mandatory. Uncleared fines or unreturned books trigger an automated financial/administrative hold flag in UniCampus ERP, blocking exam hall ticket downloads on ExamShield and preventing online course registration.\n\nQ6: How do I access IEEE Xplore, ScienceDirect, and ACM Digital Library from off-campus?\nA: Authenticate through the LibNet Off-Campus E-Journal Proxy Gateway at https://libnet.demo.edu.internal/opac using your standard UniCampus ERP Single Sign-On credentials. Automated crawling or sharing credentials with external parties is strictly prohibited under IT-POL-001.\n\nQ7: What should I do if I lose a borrowed library book?\nA: Report the loss immediately to the Circulation Desk to halt the accumulation of daily overdue fines. You must replace the book with a new copy of the same or later edition plus a Rs. 100 processing fee within 21 days. If out of print, you will be assessed replacement costs determined by the University Chief Librarian.\n\nQ8: What is the permissible plagiarism limit for master dissertations and Ph.D. theses?\nA: Under RES-ETH-001 and LIB-POL-004, the similarity index measured via Turnitin / E-Shodh Hub must be strictly less than or equal to ten percent (<= 10%), excluding bibliography and quoted phrases of fourteen words or fewer. A certified verification endorsement slip must accompany the digital upload to the Institutional Repository (IR)."
+    },
+    {
+      "document_id": "LIB-GOV-001",
+      "title": "Central Library Advisory Committee Constitution",
+      "department": "Central Library and Learning Resource Centre",
+      "department_id": "DEPT-LIB",
+      "document_type": "Governance Charter / Statutory Committee Bylaws",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "University Chief Librarian",
+        "Library Advisory Committee Members",
+        "Deans and Academic School Directors",
+        "Chief Finance Officer",
+        "Director of IT Infrastructure",
+        "Student Council Representatives"
+      ],
+      "keywords": [
+        "Library Committee",
+        "LC constitution",
+        "Library Advisory Committee",
+        "journal subscriptions",
+        "book procurement quota",
+        "annual acquisition budget",
+        "statutory governance",
+        "24/7 reading room expansion",
+        "DEPT-LIB governance",
+        "ambiguous term LC",
+        "GOV-REG-002"
+      ],
+      "retrieval_signals": [
+        "Central Library Advisory Committee",
+        "Library Committee LC constitution",
+        "who sits on the library committee",
+        "recommend new engineering books to LC",
+        "LC resolution on expanding 24-hour reading room",
+        "library advisory committee meeting schedule",
+        "journal subscription approval committee",
+        "how are library book budgets allocated",
+        "LC member secretary librarian",
+        "student representation on library committee",
+        "librry committe",
+        "LC constitushun",
+        "advisory comittee library",
+        "libary budget allocation",
+        "Library Committee + journal subscriptions",
+        "LC + book procurement + annual budget"
+      ],
+      "systems": [
+        "LibNet",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "University Chief Librarian (Member Secretary)",
+        "Committee Chairperson (Senior Professor)",
+        "Dean of Academic Affairs",
+        "Dean of Research and Innovation",
+        "Director of IT Infrastructure",
+        "Chief Finance Officer / Bursar",
+        "School Faculty Nominees",
+        "Postgraduate Student Representative"
+      ],
+      "related_documents": [
+        "LIB-POL-001",
+        "LIB-POL-002",
+        "LIB-POL-003",
+        "LIB-POL-004",
+        "GOV-REG-002",
+        "ADM-POL-004"
+      ],
+      "content": "1. STATUTORY CONSTITUTION AND MANDATE\nThe Central Library Advisory Committee (frequently designated as the Library Committee or 'LC') is a statutory academic governance body constituted under the authority of the Vice-Chancellor and Academic Council (GOV-REG-002). The committee advises the University Chief Librarian on institutional information policies, collection development strategies, electronic resource subscriptions, annual acquisition budget allocations, and physical facility development.\n\n2. CONTROLLED POLYSEMY DISAMBIGUATION (LC)\nWithin university administrative terminology, the abbreviation 'LC' signifies two distinct institutional constructs:\n2.1 Library Committee (LC under DEPT-LIB / LIB-GOV-001): The statutory advisory and supervisory body determining book acquisition quotas, journal database subscriptions, fine rates, and library facility rules;\n2.2 Leaving Certificate (LC under DEPT-ADM / ADM-POL-004): The official institutional discharge document and bonafide release certificate issued by the Admissions Office and Registrar upon graduation or program withdrawal.\n- Query Disambiguation Rule: Inquiries regarding discharge, migration, leaving college, or bonafide study termination refer to the Leaving Certificate (ADM-POL-004); inquiries concerning books, journal subscriptions, reading room expansions, or library governance refer to the Library Committee (LIB-GOV-001).\n\n3. COMMITTEE COMPOSITION AND MEMBERSHIP\nThe Library Advisory Committee comprises ten (10) members appointed for a two-year tenure:\n3.1 Chairperson: A senior full Professor appointed by the Vice-Chancellor upon recommendation of the Dean of Academic Affairs;\n3.2 Member Secretary: The University Chief Librarian (ROLE-LIB), serving as ex-officio executive convener;\n3.3 Faculty Representatives: One tenured faculty member nominated from each Academic School:\n- School of Computing and Data Sciences (SCH-SCDS);\n- School of Electrical and Electronics Engineering (SCH-SEEE);\n- School of Mechanical and Infrastructure Engineering (SCH-SMIE);\n- School of Management and Commerce (SCH-SMC);\n3.4 Administrative Ex-Officio Members:\n- Director of IT Infrastructure (DEPT-IT) to coordinate enterprise bandwidth and LibNet integration;\n- Chief Finance Officer / Bursar (DEPT-FIN) to oversee fiscal budget execution;\n3.5 Student Representatives: One nominated doctoral research scholar and one postgraduate student representative selected on academic merit to communicate patron requirements.\n\n4. POWERS, AUTHORITIES, AND ADVISORY FUNCTIONS\nThe Library Committee is empowered to:\n4.1 Electronic Database and Journal Allocations: Review and approve annual renewal proposals for high-value electronic research subscriptions (IEEE Xplore, ScienceDirect, ACM Digital Library, Scopus) based on usage metrics provided by LibNet;\n4.2 Departmental Book Procurement Grants: Formulate formulas for equitable distribution of book procurement funds across engineering and management departments;\n4.3 Circulation Policies and Fine Schedules: Formulate recommendations for modifying borrowing quotas, overdue fine rates, and account lockout thresholds under POL-LIBRARY;\n4.4 Infrastructure Expansion: Approve operational enhancements, including the allocation of 24/7 reading rooms, creation of digital discussion cubicles, and installation of automated RFID kiosks.\n\n5. MEETING CONVENING, QUORUM, AND RESOLUTIONS\n5.1 Meeting Frequency: The committee convenes at least once per academic semester (Ordinary Meetings in September and February). Extraordinary meetings may be convened by the Chairperson or Member Secretary to address urgent procurement deadlines.\n5.2 Quorum: A minimum of six (6) members, including the Chairperson, Member Secretary, and at least two Academic School faculty nominees, constitutes valid quorum.\n5.3 Minutes and Ratification: Committee proceedings and resolutions are drafted by the Member Secretary, circulated to members within ten (10) working days, and submitted to the Academic Council and Vice-Chancellor for statutory ratification."
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "domain": "Career and Placement",
+  "documents": [
+    {
+      "document_id": "PLC-POL-001",
+      "title": "Campus Recruitment Policy, CDC Registration, and One-Offer Norms",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Institutional Policy / Placement Regulations",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Pre-final and Final-Year Undergraduate Students",
+        "Postgraduate Students",
+        "Placement Officers",
+        "Department Heads of Department",
+        "Faculty Advisors"
+      ],
+      "keywords": [
+        "campus recruitment policy",
+        "CDC registration",
+        "One-Offer norm",
+        "placement eligibility",
+        "CGPA 6.5 cutoff",
+        "zero backlogs rule",
+        "CPTD 85% attendance",
+        "Dream company policy",
+        "CTC tiers",
+        "three drive debarment",
+        "POL-PLACEMENT-ELIG",
+        "REL-012"
+      ],
+      "retrieval_signals": [
+        "placement",
+        "placement eligibility",
+        "placement registration",
+        "CDC registration",
+        "can I sit for placement with backlog",
+        "minimum CGPA for placements",
+        "one offer policy",
+        "how many jobs can I get in campus placement",
+        "dream company eligibility",
+        "placement drive rules",
+        "missed interview debarred",
+        "placement registration not working",
+        "got placed can I apply for more companies",
+        "placemnt",
+        "placment registation",
+        "company drve",
+        "elgibility",
+        "placement eligibility + backlog",
+        "placement registration + resume"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Head of Department (HOD)",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "PLC-POL-002",
+        "PLC-POL-003",
+        "PLC-GUI-001",
+        "PLC-FAQ-001",
+        "ACAD-POL-008",
+        "POL-PLACEMENT-ELIG",
+        "REL-012"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL SCOPE\nThis policy defines the governance structure, academic eligibility thresholds, registration protocols, interview participation rules, and multiple-offer regulations governing campus recruitment drives conducted by the Career Development Centre (CDC) at Demo University. These regulations apply to all pre-final and final-year undergraduate and postgraduate students seeking on-campus employment.\n\n2. ACADEMIC AND TRAINING ELIGIBILITY CRITERIA (POL-PLACEMENT-ELIG)\nTo register on the CareerHub portal and participate in campus recruitment drives, students must fulfill all statutory eligibility benchmarks:\n2.1 Cumulative Academic Performance: The student must maintain a minimum aggregate of sixty percent (60%) or a Cumulative Grade Point Average (CGPA) of 6.50 across all completed semesters.\n2.2 Backlog Arrears Prohibition: The student must have zero active backlog arrears (no uncleared 'F' or 'I' grades in theory or laboratory coursework at the time of drive registration).\n2.3 Mandatory CPTD Training Attendance: Students must achieve a minimum attendance of eighty-five percent (85%) in pre-placement training modules, soft-skill bootcamps, and mock interview assessments administered by the Centre for Professional Training and Development (CPTD).\n2.4 Disciplinary Standing: Students with active disciplinary suspensions or sanctions recorded by the Proctorial Board are strictly disqualified from placement participation.\n\n3. ONE-STUDENT-ONE-JOB REGULATION AND CTC TIERS\nTo ensure equitable access to employment opportunities across the student body, Demo University enforces a strict 'One-Student-One-Job' policy governed by defined compensation tiers:\n3.1 Regular Tier (Core / Mass Recruitment): Encompasses employment offers with Cost to Company (CTC) up to Rs. 8.00 Lakhs Per Annum (LPA). Once a student receives a verified offer in this category, their profile is automatically locked from subsequent Regular Tier recruitment drives.\n3.2 Dream Tier Exception: A student holding a single Regular Tier offer remains eligible to participate in 'Dream Company' recruitment drives, defined strictly as corporate opportunities offering a CTC exceeding Rs. 12.00 Lakhs Per Annum (> Rs. 12 LPA).\n3.3 Offer Freeze: Upon securing a Dream Tier offer, the student's placement status is frozen, and they are ineligible for any further campus recruitment drives.\n\n4. INTERVIEW DISCIPLINE AND ABSENTEEISM SANCTIONS\n4.1 Mandatory Attendance: Registering for a company recruitment drive on CareerHub constitutes a formal commitment to appear for all scheduled selection stages (online tests, technical interviews, and HR discussions).\n4.2 Debarment Sanction: Unexcused absence from any scheduled assessment or interview round after registering for a company drive results in automatic debarment from the next three (3) consecutive placement drives for which the student is otherwise eligible (POL-PLACEMENT-ELIG).\n\n5. EARLY JOINING AND ACADEMIC CREDIT SUBSTITUTION (REL-012)\nStudents who secure verified campus placement offers requiring full-time corporate joining during the final (8th) academic semester may petition for academic credit conversion under ACAD-POL-008. The corporate capstone project substitutes for on-campus electives, subject to formal HOD recommendation and Dean of Academic Affairs sanction."
+    },
+    {
+      "document_id": "PLC-POL-002",
+      "title": "Student Internship Guidelines and Corporate Leave Regulations",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Institutional Policy / Internship Regulations",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "2nd, 3rd, and 4th-Year Undergraduate Students",
+        "Postgraduate Students",
+        "Faculty Advisors",
+        "Department Heads of Department",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "student internship guidelines",
+        "corporate leave regulations",
+        "summer internship",
+        "semester internship",
+        "CGPA 6.0 summer cutoff",
+        "CGPA 7.0 8th sem cutoff",
+        "mandatory NOC",
+        "corporate leave norms",
+        "academic credit transfer",
+        "POL-INTERNSHIP",
+        "REL-001"
+      ],
+      "retrieval_signals": [
+        "internship",
+        "internship guidelines",
+        "internship eligibility",
+        "summer internship rules",
+        "can I do internship in 3rd year",
+        "8th semester internship",
+        "internship leave rules",
+        "internship attendance exemption",
+        "CGPA required for internship",
+        "internship with backlog",
+        "internship form",
+        "intership",
+        "intrnship",
+        "internship + NOC",
+        "internship in 8th sem can I skip classes",
+        "internship OD"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Head of Department (HOD)",
+        "Faculty Advisor / Mentor",
+        "Dean of Academic Affairs",
+        "Dean of Student Affairs"
+      ],
+      "related_documents": [
+        "PLC-GUI-003",
+        "PLC-POL-001",
+        "ACAD-POL-004",
+        "ACAD-POL-008",
+        "POL-INTERNSHIP",
+        "REL-001"
+      ],
+      "content": "1. PURPOSE AND FRAMEWORK\nThis policy regulates student participation in corporate, industrial, and research internships, establishing clear academic eligibility prerequisites, approval workflows, corporate leave norms, and academic attendance adjustments at Demo University.\n\n2. INTERNSHIP CATEGORIES AND ELIGIBILITY THRESHOLDS (POL-INTERNSHIP)\n2.1 Summer Internships (Pre-Final Year):\n- Scope & Timing: Executed over a duration of six to eight (6–8) weeks during the official summer vacation following completion of the fourth (4th) academic semester.\n- Academic Benchmark: Requires a minimum cumulative CGPA of 6.00 and regular enrollment status.\n2.2 Semester-Long Internships (Final Year / 8th Semester):\n- Scope & Timing: Full-time corporate internships conducted across the eighth (8th) academic semester in lieu of classroom electives.\n- Academic Benchmark: Strictly restricted to students maintaining a minimum cumulative CGPA of 7.00 with zero active or uncleared backlogs.\n\n3. MANDATORY INSTITUTIONAL NO OBJECTION CERTIFICATE (NOC)\n3.1 Prior Sanction Obligation: Under POL-INTERNSHIP, no student is permitted to accept or commence an off-campus internship without obtaining a formal, digitally authenticated No Objection Certificate (NOC) from the Career Development Centre (CDC).\n3.2 Consequences of Unauthorized Internships: Unapproved off-campus internships will not receive academic credit substitution, and concurrent absence from scheduled university classes will be recorded as unexcused absence, exposing the student to attendance detention (POL-ATTEND).\n\n4. CORPORATE LEAVE AND ATTENDANCE EXEMPTIONS (REL-001)\n4.1 On-Duty (OD) Sanction Workflow: When an approved corporate internship overlaps with scheduled academic coursework, an official On-Duty (OD) attendance exemption is processed through a cross-department workflow:\n- CDC verifies corporate offer legitimacy and job description relevance.\n- The academic Head of Department (HOD) and Faculty Advisor evaluate the student's syllabus completion plan.\n- The Dean of Academic Affairs sanctions official OD status within autonomous academic credit limits.\n- The Department of Student Affairs (DSA) records the excused attendance status in AttendEdge.\n4.2 Corporate Conduct & Leave Norms: Interns must comply with the host organization's corporate work hours, non-disclosure agreements, and safety codes while submitting monthly progress logs to their assigned Faculty Advisor."
+    },
+    {
+      "document_id": "PLC-POL-003",
+      "title": "Recruiter Conduct Code, Campus Hiring Guidelines, and CTC Tiers",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Corporate Guidelines / Recruiter Policy",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Visiting Corporate Recruiters",
+        "Enterprise Talent Acquisition Managers",
+        "Placement Officers",
+        "Student Placement Coordinators"
+      ],
+      "keywords": [
+        "recruiter conduct code",
+        "campus hiring guidelines",
+        "CTC tiers",
+        "recruiter registration",
+        "Regular tier 8 LPA",
+        "Dream tier 12 LPA",
+        "job notification form",
+        "interview scheduling",
+        "offer letter release",
+        "non-poaching agreement",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "retrieval_signals": [
+        "recruiter",
+        "campus hiring guidelines",
+        "company registration for placement",
+        "how companies hire from college",
+        "CTC tiers college",
+        "dream package cutoff",
+        "job notification form",
+        "recruiter code of conduct",
+        "company coming placement",
+        "recruiter portal CareerHub",
+        "recruter",
+        "company drive scheduling",
+        "company shortlist policy"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Enterprise HR Recruiters"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-GUI-001",
+        "PLC-FAQ-001",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "content": "1. PURPOSE AND RECRUITER ENGAGEMENT SCOPE\nThis document defines the operational standards, scheduling protocols, compensation classifications, and ethical conduct code governing external enterprise employers and corporate recruiting partners visiting Demo University for on-campus talent acquisition.\n\n2. RECRUITER REGISTRATION AND JOB NOTIFICATION\n2.1 CareerHub Corporate Portal: Participating employers register through the enterprise portal at https://careerhub.demo.edu.internal/recruiter.\n2.2 Job Description Submission: Recruiters must submit a comprehensive Job Notification Form (JNF) at least ten (10) working days prior to the proposed drive date, explicitly detailing job profiles, work locations, base salary, fixed and variable components, gross Cost to Company (CTC), and branch eligibility filters.\n\n3. INSTITUTIONAL COMPENSATION TIERS AND SLOT ALLOCATION\nDemo University categorizes visiting recruitment partners into formal compensation tiers that dictate drive slot scheduling and candidate eligibility:\n3.1 Tier 1 — Regular Core Recruitment: CTC up to Rs. 8.00 Lakhs Per Annum. All registered students meeting basic academic eligibility (CGPA >= 6.50, zero backlogs) are permitted to compete.\n3.2 Tier 2 — Dream Company Recruitment: CTC strictly greater than Rs. 12.00 Lakhs Per Annum (> Rs. 12 LPA). Priority calendar slots during the early placement season are assigned to Dream Tier recruiters. Students already holding a Regular Tier offer are permitted to attempt Dream Tier drives.\n\n4. RECRUITER CODE OF ETHICAL CONDUCT\n4.1 Direct Hiring Prohibited: Corporate recruiters are strictly prohibited from issuing informal, verbal, or off-portal offers to students during campus visits. All selections must be officially routed through the CareerHub portal.\n4.2 Prompt Result Publishing: Employers must provide the verified shortlist and final select list to the Placement Officer within twenty-four (24) hours of concluding the on-campus interview process.\n4.3 Offer Integrity: Participating companies agree not to revoke released institutional placement offers or alter communicated compensation terms post-selection, except where a candidate fails to meet graduation degree requirements."
+    },
+    {
+      "document_id": "PLC-GUI-001",
+      "title": "CareerHub Portal Student Guide: Drive Registration and Resume Upload",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "User Guide / Portal Manual",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Pre-final and Final-Year Students",
+        "Placement Officers",
+        "CDC Helpdesk Staff",
+        "IT Helpdesk Engineers"
+      ],
+      "keywords": [
+        "CareerHub portal guide",
+        "drive registration",
+        "resume upload",
+        "student placement profile",
+        "SYS-CAREER",
+        "automated ERP sync",
+        "eligibility badge",
+        "interview slot scheduling",
+        "offer acceptance",
+        "portal troubleshooting",
+        "PROC-PLACEMENT-DRIVE"
+      ],
+      "retrieval_signals": [
+        "CareerHub",
+        "CareerHub guide",
+        "how to use CareerHub",
+        "CareerHub login",
+        "career hub",
+        "carrer hub",
+        "resume upload CareerHub",
+        "how to register for company drive",
+        "cannot upload resume on CareerHub",
+        "CareerHub showing not eligible",
+        "company application missing CareerHub",
+        "placement profile not updating",
+        "resum upload",
+        "job application + placement profile",
+        "slot scheduling interview"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-GUI-002",
+        "IT-SYS-001",
+        "PROC-PLACEMENT-DRIVE"
+      ],
+      "content": "1. SYSTEM ARCHITECTURE AND ACCESS PROTOCOLS\nCareerHub (System ID: SYS-CAREER) is the unified cloud platform managing the entire student campus recruitment lifecycle at Demo University. Students access the system at https://careerhub.demo.edu.internal using institutional Single Sign-On (SSO) credentials.\n\n2. STUDENT PLACEMENT PROFILE AND RESUME MANAGEMENT\n2.1 Automated Academic Record Sync: CareerHub pulls official cumulative CGPA, branch specialization, and backlog counts dynamically from the UniCampus ERP database. Academic data cannot be manually edited by students.\n2.2 Resume Upload Standards: Students must upload standardized resumes in PDF format (maximum file size: 2MB) conforming strictly to CDC typography and structural templates. Profiles without a verified master resume cannot register for company drives.\n\n3. DRIVE REGISTRATION WORKFLOW (PROC-PLACEMENT-DRIVE)\n3.1 Dashboard Notification: When an approved employer publishes a drive, eligible students see the opportunity listed with job description, CTC, work location, and application deadline.\n3.2 Eligibility Badges: The system automatically verifies candidate parameters against company criteria:\n- 'Eligible': Student meets CGPA, backlog, and CPTD attendance criteria.\n- 'Ineligible': Displays the precise restriction (e.g. 'CGPA below company threshold 7.00' or 'Active Backlog Arrears Present').\n3.3 Application Submission: Students click 'Apply Drive' before the published deadline; once submitted, withdrawals are not permitted without Placement Officer sign-off.\n\n4. SYSTEM TROUBLESHOOTING AND TECHNICAL SUPPORT (CHAL-06)\n4.1 Login / Credential Errors: Account lockouts resulting from password failures must be reset via Self-Service Password Reset (SSPR) under IT Services (IT-POL-002).\n4.2 Discrepant CGPA / Backlog Status: If newly cleared backlog results or updated semester CGPA have not updated on CareerHub, students submit an inquiry on ResolveDesk under 'Career Services > Profile Sync'; manual database re-indexing executes within twelve (12) hours.\n4.3 Selection Notification & Offer Acceptance: Shortlisted candidates receive automated SMS/email alerts regarding interview slot allocations. Placed students must digitally record offer acceptance on CareerHub within forty-eight (48) hours of result publication."
+    },
+    {
+      "document_id": "PLC-GUI-002",
+      "title": "Interview Code of Conduct, Professional Attire, and Disciplinary Rules",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Conduct Code / Operational Guidelines",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Registered Placement Candidates",
+        "Student Placement Coordinators",
+        "Interview Invigilators",
+        "Placement Officers"
+      ],
+      "keywords": [
+        "interview code of conduct",
+        "professional attire",
+        "placement disciplinary rules",
+        "interview attendance",
+        "Ramanujan Block interview suites",
+        "RFID smart card",
+        "unexcused absence",
+        "three drive debarment",
+        "malpractice in coding test",
+        "STU-POL-001",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "retrieval_signals": [
+        "interview dress code",
+        "placement attire",
+        "what to wear for company interview",
+        "interview code of conduct",
+        "missed interview consequence",
+        "debarred from placement drive",
+        "cheating in placement coding test",
+        "interview rules CDC",
+        "Ramanujan block interview room",
+        "placement ID card requirement",
+        "interview attendance fine"
+      ],
+      "systems": [
+        "CareerHub",
+        "CampusPass",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Dean of Student Welfare"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-GUI-001",
+        "STU-POL-001",
+        "EXAM-GUI-003",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis operational manual defines professional dress standards, interview venue decorum, assessment integrity, and disciplinary penalties enforced during all campus recruitment activities, pre-placement presentations, technical tests, and personal interviews.\n\n2. PROFESSIONAL ATTIRE STANDARDS\nAll candidates attending recruitment events in Ramanujan Block or Central Computing Centre must adhere strictly to formal professional attire:\n2.1 Formal Attire Requirements: Formal business suit or formal buttoned shirt with tailored trousers, formal leather shoes, and tie; or formal business Indian attire (formal salwar kameez / formal saree). Casual apparel (jeans, t-shirts, sports shoes, sandals) is strictly prohibited.\n2.2 Identification Credential: The official university RFID smart identity card (CampusPass) must be displayed prominently on the candidate's person at all times.\n\n3. INTERVIEW VENUE PROTOCOLS AND PUNCTUALITY\n3.1 Reporting Time: Shortlisted candidates must report to the Ramanujan Block Placement Holding Lounge at least thirty (30) minutes prior to their allotted assessment or interview slot.\n3.2 Mobile Devices: Mobile phones, smartwatches, and recording devices must be powered off and stowed during assessment and interview proceedings.\n\n4. DISCIPLINARY SANCTIONS AND DEBARMENT (POL-PLACEMENT-ELIG)\n4.1 Unexcused Absenteeism: Candidates who register for a company drive but fail to report for scheduled tests or interview rounds without prior authorized medical leave incur an immediate automatic debarment from the next three (3) consecutive recruitment drives.\n4.2 Academic Malpractice in Online Coding Assessments: Cheating, unauthorized code copying, or utilizing unapproved browser tabs during placement assessments in Central Computing Centre labs is classified as Level-2 Malpractice (EXAM-GUI-003), resulting in immediate, permanent revocation of all university placement privileges and referral to the Proctorial Board for disciplinary suspension."
+    },
+    {
+      "document_id": "PLC-GUI-003",
+      "title": "Procedure for Securing Internship NOC and Academic Credit Transfer",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Standard Operating Procedure / Workflow Guide",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students Securing Corporate Internships",
+        "Faculty Advisors",
+        "Department Heads of Department",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "internship NOC procedure",
+        "No Objection Certificate",
+        "academic credit transfer",
+        "PROC-INTERN-NOC",
+        "offer letter verification",
+        "HOD endorsement",
+        "8th semester project conversion",
+        "five-day NOC SLA",
+        "AttendEdge attendance adjustment",
+        "REL-001",
+        "REL-012"
+      ],
+      "retrieval_signals": [
+        "NOC",
+        "internship NOC",
+        "how to get NOC for internship",
+        "NOC application status",
+        "who signs internship NOC",
+        "how many days to get internship NOC",
+        "internship credit transfer",
+        "converting internship to academic credit",
+        "NOC form download CDC",
+        "plcement NOC",
+        "internship + NOC",
+        "NOC request not visible",
+        "corporate internship approval"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer",
+        "Head of Department (HOD)",
+        "Faculty Advisor / Mentor",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "PLC-POL-002",
+        "ACAD-POL-008",
+        "PROC-INTERN-NOC",
+        "REL-001",
+        "REL-012"
+      ],
+      "content": "1. PURPOSE AND WORKFLOW SCOPE\nThis Standard Operating Procedure establishes the step-by-step institutional workflow required for enrolled students to obtain an official No Objection Certificate (NOC) for off-campus corporate internships, and to secure formal academic credit transfer for final-year industry engagements.\n\n2. DEFINITION AND CONTROLLED AMBIGUITY DISAMBIGUATION\n2.1 No Objection Certificate (NOC): Refers strictly to the formal administrative certification issued by the Career Development Centre (CDC) and endorsed by Academic Affairs authorizing a student to pursue an off-campus corporate internship.\n- Cross-Domain Disambiguation Note: No Objection Certificate (NOC) under DEPT-CDC must not be confused with the Network Operations Centre (NOC under DEPT-IT / IT-OPS-002).\n\n3. STEP-BY-STEP INTERNSHIP NOC WORKFLOW (PROC-INTERN-NOC)\n3.1 Step 1 — Offer Upload: The student navigates to CareerHub > Internship Cell > 'Request NOC' and uploads the official corporate appointment letter specifying company name, internship start/end dates, monthly stipend, job description, and workplace location.\n3.2 Step 2 — Credential and Academic Vetting: The Placement Officer verifies company legitimacy and checks academic eligibility (CGPA >= 6.0 for summer internships; CGPA >= 7.0 with zero backlogs for 8th-semester internships).\n3.3 Step 3 — Department Academic Endorsement: The student's assigned Faculty Advisor and Head of Department (HOD) review the technical scope of the internship to ensure alignment with degree learning outcomes and absence of coursework conflicts.\n3.4 Step 4 — Institutional Sanction & Digital Issue: The Director of Placements and Corporate Relations grants final administrative sanction. CareerHub generates a digitally authenticated NOC bearing a verifiable cryptographic QR code within five (5) working days from submission.\n3.5 Step 5 — Corporate Submission & Archival: The student downloads the authenticated NOC for transmission to the employer and archives a signed copy on UniCampus ERP.\n\n4. ACADEMIC CREDIT SUBSTITUTION FOR 8TH SEMESTER (REL-012, ACAD-POL-008)\nStudents pursuing an approved full-semester internship during the 8th semester substitute on-campus electives with an Industry Capstone Project. Evaluation requires submitting bi-weekly employer progress logs, a formal mid-term technical report, and appearing for a final project viva voce conducted jointly by department faculty and external industry evaluators."
+    },
+    {
+      "document_id": "PLC-TRN-001",
+      "title": "CPTD Pre-Placement Training Bootcamps and Aptitude Readiness Modules",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Training Framework / Curriculum SOP",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "3rd-Year and Final-Year Students",
+        "CPTD Training Coordinators",
+        "Placement Officers",
+        "Academic Department HODs"
+      ],
+      "keywords": [
+        "CPTD pre-placement training",
+        "aptitude readiness modules",
+        "competitive coding bootcamps",
+        "soft skills workshops",
+        "mandatory 85% attendance",
+        "mock interview drills",
+        "placement readiness test",
+        "Training Coordinator",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "retrieval_signals": [
+        "CPTD",
+        "CPTD training",
+        "pre-placement training",
+        "aptitude training college",
+        "coding bootcamp placement",
+        "mock interview practice",
+        "CPTD attendance requirement",
+        "soft skills workshop CDC",
+        "training coordinator placement",
+        "TC contact training",
+        "placement preparation modules",
+        "aptitude test series CareerHub"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "CareerHub",
+        "Central Computing Centre (CC)"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Head of Training and Development",
+        "Training Coordinator (TC)",
+        "Placement Officer"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-GUI-001",
+        "POL-PLACEMENT-ELIG",
+        "IT-FAC-001"
+      ],
+      "content": "1. PURPOSE AND MANDATORY NATURE\nThis document outlines the operational structure, learning curriculum, testing benchmarks, and mandatory attendance requirements of the Pre-Placement Training Program administered jointly by the Career Development Centre (CDC) and the Centre for Professional Training and Development (CPTD).\n\n2. CONTROLLED AMBIGUITY DISAMBIGUATION\n2.1 Training Coordinator (TC): Refers strictly to the dedicated academic staff member within CPTD organizing technical bootcamps, coding drills, and industry-readiness workshops.\n- Cross-Domain Disambiguation Note: Training Coordinator (TC) under DEPT-CPTD / DEPT-CDC must not be confused with Transfer Certificate (TC under DEPT-ADM / ADM-POL-004).\n\n3. MODULAR TRAINING CURRICULUM\nThe pre-placement training framework comprises three foundational modules executed across the 5th, 6th, and 7th semesters:\n3.1 Module 1 — Quantitative Aptitude and Logical Reasoning: Delivered by the Language & Quantitative Aptitude Cell, covering numeric problem solving, spatial data interpretation, critical verbal reasoning, and speed mathematics.\n3.2 Module 2 — Advanced Competitive Coding and System Design: Conducted by the Competitive Coding Training Wing in Central Computing Centre labs, focusing on data structures, algorithmic complexity, SQL query optimization, and object-oriented design patterns.\n3.3 Module 3 — Professional Soft Skills and Interview Simulation: Focuses on corporate etiquette, resume crafting, group discussion strategy, and one-on-one simulated technical and HR mock interviews.\n\n4. ATTENDANCE THRESHOLDS AND PLACEMENT ELIGIBILITY (POL-PLACEMENT-ELIG)\n4.1 Mandatory 85% Benchmark: Under POL-PLACEMENT-ELIG, students must achieve a minimum cumulative attendance of eighty-five percent (85%) across all scheduled CPTD training sessions, coding tests, and mock interviews.\n4.2 Placement Blockade: Students whose CPTD attendance falls below eighty-five percent (< 85%) are automatically barred by CareerHub from registering for any campus recruitment drives until remedial training sessions and compensatory assessments are cleared."
+    },
+    {
+      "document_id": "PLC-FAQ-001",
+      "title": "Frequently Asked Questions Regarding Campus Placements and Dream Companies",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Institutional FAQ / Guidance Compendium",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Registered Students",
+        "Student Placement Representatives",
+        "Faculty Advisors",
+        "Parents and Guardians"
+      ],
+      "keywords": [
+        "placement FAQ",
+        "dream companies",
+        "campus recruitment questions",
+        "placement eligibility FAQ",
+        "one-offer rule FAQ",
+        "backlog placement rules",
+        "early joining FAQ",
+        "internship conversion",
+        "placement debarment rules",
+        "POL-PLACEMENT-ELIG",
+        "REL-012"
+      ],
+      "retrieval_signals": [
+        "placement FAQ",
+        "placement questions",
+        "how many offers can I get",
+        "what is a dream company",
+        "dream company cutoff CTC",
+        "can I apply for internship and placement together",
+        "what if company delays joining date",
+        "frequently asked questions placement",
+        "can backlog student get placed",
+        "placement rules and regulations FAQ",
+        "placement doubts CDC"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-POL-003",
+        "PLC-GUI-001",
+        "POL-PLACEMENT-ELIG",
+        "REL-012"
+      ],
+      "content": "1. PURPOSE AND SCOPE\nThis compendium addresses common student inquiries regarding campus recruitment eligibility, drive registrations, compensation tiers, multiple-offer rules, and interview obligations at Demo University.\n\n2. FREQUENTLY ASKED QUESTIONS AND OFFICIAL POLICIES\n\nQ1: What are the minimum academic eligibility requirements to register on CareerHub?\nA1: Students must possess a minimum cumulative aggregate of 60% (or CGPA >= 6.50) across completed semesters, zero active backlogs, and >= 85% attendance in CPTD pre-placement training modules (POL-PLACEMENT-ELIG).\n\nQ2: What is the 'One-Student-One-Job' rule, and how does the Dream Tier exception work?\nA2: Under PLC-POL-001, once a student receives an employment offer with CTC <= Rs. 8.00 LPA (Regular Tier), they are barred from competing in further Regular Tier drives. However, they remain eligible to participate in 'Dream Company' recruitment drives offering a CTC strictly greater than Rs. 12.00 LPA (> Rs. 12 LPA). Upon securing a Dream Tier offer, the candidate cannot participate in any subsequent campus recruitment drives.\n\nQ3: Can a student with uncleared backlogs register for campus placement drives?\nA3: No. Students with active 'F' grade backlog arrears are strictly disqualified from placement drive registrations. Upon clearing backlogs via supplementary exams or summer fast-track terms, student profiles are re-evaluated for subsequent drives.\n\nQ4: What are the penalties for missing a scheduled test or interview after registering for a company drive?\nA4: Unexcused absence from any stage of an applied recruitment drive results in automatic debarment from the next three (3) consecutive placement drives for which the student is otherwise eligible.\n\nQ5: Can placed students join their corporate employer early in the 8th semester?\nA5: Yes. Under REL-012 and ACAD-POL-008, final-year students with verified corporate joining dates in February may convert their on-campus coursework into an Industry Capstone Project, subject to HOD endorsement and Dean of Academic Affairs sanction.\n\nQ6: Where can students resolve discrepancies regarding their CareerHub profile or CGPA display?\nA6: Students must log a support ticket on ResolveDesk under 'Career Services > Profile Sync'. Discrepancies are reconciled with the UniCampus ERP academic ledger within twelve (12) hours."
+    },
+    {
+      "document_id": "PLC-STF-001",
+      "title": "Career Development Centre Staff Roles and Placement Officers",
+      "department": "Career Development Centre / Placement Office",
+      "department_id": "DEPT-CDC",
+      "document_type": "Administrative Charter / Staff Directory",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Corporate Recruiters",
+        "Academic Department Faculty",
+        "Administrative Officers"
+      ],
+      "keywords": [
+        "CDC staff roles",
+        "Placement Officer",
+        "PO responsibilities",
+        "Director of Placements",
+        "corporate outreach",
+        "campus placement operations",
+        "Ramanujan Block Career Wing",
+        "internship assessment wing",
+        "student placement coordinators",
+        "PLC-STF-001"
+      ],
+      "retrieval_signals": [
+        "PO",
+        "placement officer",
+        "PO contact",
+        "placement officer email",
+        "meet placement officer",
+        "who is the placement officer for CSE",
+        "CDC office location",
+        "where is placement cell located",
+        "director of placements contact",
+        "career development centre staff",
+        "placement coordinator contact",
+        "PO phone number CDC"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Placements and Corporate Relations",
+        "Placement Officer (PO)",
+        "Student Placement Coordinator"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-GUI-001",
+        "PLC-GUI-003",
+        "POL-PLACEMENT-ELIG"
+      ],
+      "content": "1. PURPOSE AND ADMINISTRATIVE CHARTER\nThis charter establishes the organizational hierarchy, functional responsibilities, officer designations, and counter service protocols of the Career Development Centre (CDC) at Demo University.\n\n2. DEFINITIONS AND CONTROLLED AMBIGUITY DISAMBIGUATION\n2.1 Placement Officer (PO): Refers strictly to the full-time administrative and faculty officer responsible for managing corporate recruiter relationships, scheduling on-campus recruitment drives, and verifying student placement eligibility.\n- Cross-Domain Disambiguation Note: Placement Officer (PO) under DEPT-CDC must not be confused with Program Outcomes (PO under DEPT-ACAD / ACAD-OBE-001 outcome-based education) or Purchase Orders (PO under DEPT-FIN / FIN-PRO-002).\n\n3. LEADERSHIP AND FUNCTIONAL DIVISIONS\n3.1 Director of Placements and Corporate Relations (ROLE-DIR-CDC): Executive head overseeing corporate Memorandums of Understanding (MOUs), annual recruitment calendars, high-value employer invitations, and placement policy enforcement.\n3.2 Placement Officers (PO): Designated branch-specific officers overseeing:\n- Computing and Software Recruitment (School of Computing and Data Sciences)\n- Electronics, Electrical, and Hardware Recruitment (School of Electrical Engineering)\n- Core Engineering Recruitment (School of Mechanical and Infrastructure Engineering)\n- Management and Business Analytics Recruitment (School of Management and Commerce)\n3.3 Specialized Operational Subunits:\n- Campus Placement Operations: Coordinates test scheduling, computer lab reservations, and interview suite allocations in Ramanujan Block.\n- Corporate Outreach & MOUs Cell: Engages prospective enterprise employers, negotiates CTC parameters, and arranges executive campus visits.\n- Internship Assessment Wing: Evaluates internship offers, validates work profiles, and issues verified digital No Objection Certificates (NOCs).\n- Student Placement Coordinators (Volunteers / CRs): Assist with on-ground candidate registration, company hospitality, and assessment invigilation.\n\n4. LOCATION AND COUNTER OPERATING HOURS\n4.1 Physical Location: Ramanujan Block, 1st Floor Career Wing.\n4.2 Service Hours: Monday through Friday, 09:00 to 17:30 IST. Formal student grievances regarding drive registrations, profile blocks, or recruiter queries are processed via ResolveDesk under 'Career Services'."
+    }
+  ]
+}

@@ -1,0 +1,1078 @@
+{
+  "domain": "Examination",
+  "documents": [
+    {
+      "document_id": "POL-CIE",
+      "title": "Continuous Internal Evaluation (CIE) Policy",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Policy",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Course Instructors / Professors",
+        "Teaching Assistants",
+        "Academic Program Coordinators",
+        "Heads of Department (HOD)",
+        "Controller of Examinations (COE)"
+      ],
+      "keywords": [
+        "Continuous Internal Evaluation",
+        "CIE",
+        "internal assessment",
+        "sessional marks",
+        "CIE 1",
+        "CIE 2",
+        "quizzes",
+        "assignments",
+        "40% weightage",
+        "50% weightage",
+        "40% minimum CIE",
+        "compensatory assessment",
+        "re-test",
+        "internal marks freezing",
+        "ExamShield Portal",
+        "LearnSphere LMS"
+      ],
+      "retrieval_signals": [
+        "what is the weightage of CIE in final grade",
+        "CIE 1 timetable for B.Tech 2nd year",
+        "missed CIE 2 exam due to fever what to do",
+        "CIE marks entry portal",
+        "minimum CIE marks required for SEE",
+        "compensatory CIE assessment eligibility",
+        "re-test for internal exam medical grounds",
+        "can I write compensatory test if I missed CIE 1",
+        "internal marks freezing date before SEE",
+        "CIE passing criteria",
+        "failed in internal exam what to do",
+        "IA 1 timetable for 4th semester",
+        "minimum IA marks required to write semester exam",
+        "IA marks re-totaling procedure",
+        "internal assessment marks display deadline",
+        "cie exam date",
+        "cie marks not showing in portal",
+        "compensatory internal exam application",
+        "cie passing marks",
+        "cie marks portal"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "LearnSphere LMS",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)",
+        "Academic Program Coordinator",
+        "Teaching Assistant (Graduate)"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-001",
+        "EXAM-SCH-003",
+        "ACAD-CRS-001",
+        "ACAD-POL-003",
+        "ACAD-POL-004"
+      ],
+      "content": "1. PURPOSE AND STATUTORY OBJECTIVES\nContinuous Internal Evaluation (CIE) forms the foundational diagnostic and formative assessment framework of Demo University. It ensures regular monitoring of student intellectual progress, active course comprehension, and consistent mastery of curriculum competencies throughout the academic semester. This policy establishes the official structure, weightage distribution, qualifying cutoffs, moderation standards, and compensatory mechanisms governing all sessional assessments.\n\n2. APPLICABILITY AND SCOPE\nThis policy applies comprehensively to all matriculated undergraduate (B.Tech) and postgraduate (M.Tech, MBA) students enrolled in credit-bearing coursework, as well as to all faculty instructors, teaching assistants, and departmental leadership administering academic modules.\n\n3. ASSESSMENT STRUCTURE AND WEIGHTAGE DISTRIBUTION\n3.1 Weightage Proportion: Continuous Internal Evaluation (CIE) accounts for 40% (or 50% in specialized postgraduate and curricular frameworks where statutory degree regulations explicitly mandate equal distribution) of the aggregate final grade for any registered course module.\n3.2 Component Elements: Sessional assessment comprises:\n  a) Centralized Written Internal Assessments: Two mandatory centralized written examinations (CIE 1 and CIE 2) scheduled across the semester, testing foundational and advanced syllabus units respectively.\n  b) Continuous Formative Measures: Regularly administered classroom quizzes, analytical coding problem sets, laboratory performance evaluations, term case studies, and structured home assignments recorded on LearnSphere LMS.\n3.3 Mark Moderation and Aggregation: Individual assessment scores are normalized by the Course Instructor according to approved departmental rubrics and collated within the ExamShield portal.\n\n4. QUALIFYING MINIMUM ELIGIBILITY CRITERIA\n4.1 Mandatory Qualifying Threshold: A registered student must secure a cumulative minimum of 40.0% of the maximum allocable CIE marks in every course module to be eligible to appear for the corresponding Semester End Examination (SEE).\n4.2 Sessional Ineligibility: Any student securing strictly less than 40.0% in aggregate CIE marks at the conclusion of instructional delivery is debarred from the Semester End Examination for that course. The student is assigned an ineligibility status on ExamShield and must re-register for the complete course during a subsequent regular academic semester or the fast-track summer term.\n\n5. COMPENSATORY ASSESSMENT (RE-TEST) PROVISIONS\n5.1 Strict Limitation: A single compensatory internal evaluation assessment (re-test) is sanctioned per course during an academic term solely for students who were prevented from attending CIE 1 or CIE 2 due to verified institutional exigencies.\n5.2 Sanctioned Grounds: Compensatory evaluation is restricted to:\n  a) Authenticated Medical Emergency: Acute hospitalization or physician-certified illness verified and endorsed by the Senior Chief Medical Officer of the Campus Health Centre.\n  b) Sanctioned Institutional Representation: Excused On-Duty (OD) absence approved by the Dean of Student Affairs for representing Demo University in statutory athletic tournaments, recognized technical symposiums, or accredited competitive events.\n5.3 Procedural Timeline: The formal application for compensatory examination must be logged on ResolveDesk within three calendar days of the missed assessment. Unexcused absence or personal travel without prior written administrative leave does not qualify for compensatory testing.\n5.4 Scoring Protocol: Marks attained in the approved compensatory examination directly replace the absent mark in the ExamShield ledger.\n\n6. INTERNAL MARKS DISPLAY, FREEZING, AND GRIEVANCE\n6.1 Pre-Examination Disclosure: All compiled CIE marks must be frozen on ExamShield and displayed to registered students at least five working days prior to the commencement of Semester End Examinations (SEE).\n6.2 Student Verification: Students are entitled to inspect evaluated internal test booklets, quiz scripts, and assignment rubrics. Any arithmetical summation discrepancy or administrative entry error must be brought to the notice of the Course Instructor and Academic Program Coordinator within 48 hours of score publication.\n6.3 Permanent Database Lock: Following the expiration of the 48-hour scrutiny window, the Head of Department and the Controller of Examinations formally freeze the CIE roster. Retroactive modification is prohibited without written authorization from the Dean of Academic Affairs."
+    },
+    {
+      "document_id": "POL-SEE",
+      "title": "Semester End Examination (SEE) and Evaluation Policy",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Policy",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Invigilators",
+        "Chief Superintendents",
+        "Academic Evaluators",
+        "Controller of Examinations (COE)"
+      ],
+      "keywords": [
+        "Semester End Examination",
+        "SEE",
+        "final examination",
+        "passing criteria",
+        "35% SEE minimum",
+        "40% aggregate minimum",
+        "hall ticket",
+        "Examination Admit Card",
+        "15 minute entry rule",
+        "reporting time",
+        "ExamShield Portal",
+        "barcode admit card",
+        "malpractice Level 2",
+        "attendance requirement 75%",
+        "fee clearance hold"
+      ],
+      "retrieval_signals": [
+        "SEE timetable December 2026",
+        "passing marks in SEE theory paper",
+        "SEE hall ticket download link",
+        "can I write SEE with 72% attendance",
+        "when will SE start this winter",
+        "is SE postponed due to rains",
+        "SE seating arrangement",
+        "what is the minimum mark to pass SEE",
+        "SEE entry timing",
+        "late entry to examination hall",
+        "hall ticket blocked due to fee dues",
+        "hall ticket blocked attendance below 75",
+        "can I write exam if I am 10 minutes late",
+        "SEE passing percentage aggregate",
+        "see exam date",
+        "see hall ticket",
+        "hall tikcet download",
+        "SEE regstration",
+        "exam admit card release date",
+        "hall ticket not generated on ExamShield"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "UniCampus ERP",
+        "PayVarsity",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar",
+        "Chief Superintendent of Examinations",
+        "Invigilator",
+        "Course Instructor / Professor"
+      ],
+      "related_documents": [
+        "POL-CIE",
+        "POL-ATTEND",
+        "POL-FEE-PAY",
+        "EXAM-GUI-002",
+        "EXAM-GUI-003",
+        "EXAM-NOT-001",
+        "EXAM-NOT-003",
+        "EXAM-NOT-004"
+      ],
+      "content": "1. PURPOSE AND REGULATORY MANDATE\nThe Semester End Examination (SEE) serves as the definitive summative evaluation metric of student academic performance, curriculum mastery, and professional competence at Demo University. Administered under the confidential oversight of the Examination Cell, this policy establishes procedural standards for examination conduct, candidate eligibility audits, passing cutoffs, hall ticket governance, and strict anti-malpractice protocols.\n\n2. JURISDICTION AND APPLICABLE AUDIENCE\nThis policy governs all regular and supplementary written theory examinations, practical laboratory assessments, and viva voce defenses across all autonomous degree programs offered by Demo University.\n\n3. EVALUATION WEIGHTAGE AND STATUTORY PASSING CRITERIA\n3.1 Summative Weightage: The Semester End Examination (SEE) accounts for 60% (or 50% where statutory program regulations establish an equal balance with continuous assessment) of the overall composite course grade.\n3.2 Minimum Passing Thresholds: To secure an academic pass grade in any enrolled credit-bearing course module, a candidate must simultaneously fulfill two mandatory numerical thresholds:\n  a) SEE Component Minimum: The candidate must obtain a minimum of 35.0% of the maximum marks allocated to the written SEE theory examination paper (or laboratory practical examination).\n  b) Course Aggregate Minimum: The candidate must obtain a minimum cumulative score of 40.0% in aggregate across both evaluation components (CIE + SEE combined).\n3.3 Grade Award: Failure to achieve either the 35.0% SEE paper minimum or the 40.0% cumulative aggregate result mandates the award of an 'F' (Fail) grade. The student must subsequently clear the course as an arrear through supplementary backlog examination or summer term re-registration.\n\n4. HALL TICKET GENERATION AND ELIGIBILITY PREREQUISITES\n4.1 Digital Credential Issuance: Hall tickets (Examination Admit Cards / SEE Entry Authorizations) are generated digitally via the ExamShield portal exactly seven calendar days prior to the commencement of examinations.\n4.2 Mandatory Eligibility Conditions: Automated system clearance for hall ticket download requires verification of three institutional criteria:\n  a) Financial Clearance: Zero outstanding tuition fees, hostel charges, or incidental administrative dues recorded in PayVarsity.\n  b) Attendance Threshold: Cumulative attendance of 75.0% or greater aggregated in AttendEdge, or a formal attendance condonation sanction (for attendance strictly between 65.0% and 74.9%) approved by the Dean of Academic Affairs.\n  c) Sessional Qualification: Achievement of at least 40.0% in aggregate Continuous Internal Evaluation (CIE) marks.\n4.3 Ineligibility Detention: Candidates failing any of the three prerequisites are automatically flagged on the detention roster. Admit cards are withheld, and admittance to the examination hall is strictly prohibited.\n\n5. EXAMINATION HALL ADMISSION AND TIMING RULES\n5.1 Credential Verification: Candidates must physically present two mandatory credentials at the examination hall portal: the digitally generated ExamShield Hall Ticket bearing an unscratched barcode and the physical Demo University RFID Smart ID badge.\n5.2 Strict 15-Minute Lateness Rule: Candidate entry into any examination venue closes strictly 15 minutes following the announced examination commencement timestamp. Invigilators and security personnel are statutorily prohibited from admitting any candidate arriving beyond this 15-minute grace window, irrespective of extenuating circumstance.\n5.3 Early Departure Restrictions: Candidates are prohibited from surrendering examination booklets or exiting the examination hall prior to the elapse of the first 60 minutes of the examination session.\n\n6. CONDUCT INTEGRITY AND MALPRACTICE CLASSIFICATION\n6.1 Prohibited Contraband: The unauthorized possession or usage of cellular mobile telephones, smartwatches, digital wristbands, wireless transceivers, programmable graphing calculators, or unauthorized printed or manuscript papers inside the examination venue constitutes Level-2 Examination Malpractice.\n6.2 Summary Seizure: Invigilators are mandated to immediately confiscate unauthorized contraband, seize the candidate's active answer booklet, compile a formal incident report, and transmit the case to the Proctorial Disciplinary Board for punitive inquiry."
+    },
+    {
+      "document_id": "POL-BACKLOG",
+      "title": "Backlog Arrears, Supplementary Exams, and Summer Term Policy",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Policy",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students with Active Backlogs",
+        "Graduating Seniors",
+        "Faculty Advisors",
+        "Academic Program Coordinators",
+        "Controller of Examinations (COE)"
+      ],
+      "keywords": [
+        "backlog policy",
+        "supplementary examination",
+        "arrears",
+        "grade F",
+        "grade improvement",
+        "fast-track summer semester",
+        "7-week summer term",
+        "2 course backlog maximum",
+        "degree completion limit",
+        "N+2 years",
+        "6 years B.Tech",
+        "4 years M.Tech",
+        "Rs 600 backlog fee",
+        "PayVarsity",
+        "ExamShield Portal"
+      ],
+      "retrieval_signals": [
+        "I failed a subject what now",
+        "can I write exam again",
+        "failed course next steps",
+        "KT exam date",
+        "KT registration process",
+        "how to register for backlog exam",
+        "backlog exam fee per paper",
+        "maximum years allowed to clear engineering degree",
+        "can I write backlog and regular exam in same semester",
+        "supplementary exam timetable",
+        "summer semester backlog registration",
+        "failed in supplementary exam what happens",
+        "N+2 years rule for engineering degree",
+        "maximum backlogs allowed in summer term",
+        "backlog exm fee",
+        "supple exam date",
+        "arrear paper registration",
+        "pay backlog fee on PayVarsity",
+        "failed in prerequisite backlog impact",
+        "supplementary hall ticket release"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Academic Affairs",
+        "Faculty Advisor / Mentor",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-002",
+        "EXAM-NOT-002",
+        "EXAM-NOT-005",
+        "ACAD-REG-001",
+        "POL-GRADUATION"
+      ],
+      "content": "1. PURPOSE AND REMEDIATION PRINCIPLES\nDemo University upholds rigorous learning standards while providing structured academic remediation pathways for students who fail to secure passing grades in curricular courses. This policy defines the statutory framework governing uncleared course arrears ('F' grades), the administration of supplementary examinations, fast-track summer terms, fee assessment structures, and outer degree completion limits.\n\n2. JURISDICTION AND DEFINITIONS\n2.1 Backlog / Arrear: Any registered credit course in which an enrolled student receives a final letter grade of 'F' (Fail) or 'I' (Incomplete) due to failure to meet the 35% SEE paper minimum or 40% aggregate course minimum.\n2.2 Supplementary Examination: A formal assessment conducted outside regular academic terms allowing eligible candidates to clear arrears without repeating complete semester instructional attendance.\n2.3 Fast-Track Summer Term: An intensive seven-week remedial instructional semester conducted during June-July enabling candidates to clear uncleared courses or address attendance detentions.\n\n3. SUPPLEMENTARY EXAMINATION SCHEDULING AND REGISTRATION\n3.1 Examination Cycles: Supplementary examinations are conducted immediately following the official declaration and publication of even-semester examination results on the ExamShield portal.\n3.2 Registration Timelines: Students must register for supplementary assessments via ExamShield within ten calendar days of regular result declaration. A late registration window of three days is available subject to an institutional late fine.\n3.3 Statutory Examination Fee: Candidates must remit a non-refundable backlog examination fee of Rs. 600 per paper directly via the PayVarsity financial gateway. Supplementary hall tickets are generated three days prior to examination dates upon fee reconciliation.\n\n4. FAST-TRACK SUMMER TERM REGULATIONS\n4.1 Term Structure: The fast-track summer semester operates across an intensive seven-week instructional calendar, compressing standard 15-week contact hours through doubled daily lecture schedules.\n4.2 Registration Ceiling: A student is permitted to register for a maximum of two backlog courses during any single summer term. Overloading beyond two courses is strictly prohibited by Academic Council mandate.\n4.3 Evaluation Components: Candidates enrolled in summer courses must fulfill full continuous internal evaluation (CIE) components and appear for the summer semester end examination (SEE).\n4.4 Detention Remediation: Students detained in a regular semester due to attendance falling strictly below 65.0% ('W' or 'SA' grade) may utilize the summer term to fulfill mandatory attendance contact hours and re-establish examination eligibility.\n\n5. DEGREE TIME-LIMIT AND PROGRESSION CONSTRAINTS\n5.1 Maximum Allowable Duration (N + 2 Years): Every candidate admitted to Demo University must successfully clear all prescribed graduation credit requirements within an absolute maximum window of N + 2 years, where N represents the statutory curriculum duration:\n  a) Undergraduate Four-Year B.Tech Programs: Maximum duration of 6 academic years.\n  b) Postgraduate Two-Year M.Tech and MBA Programs: Maximum duration of 4 academic years.\n5.2 Lapsing of Candidature: Students failing to clear all academic backlogs within the statutory N + 2 year limit forfeit their matriculation status. Degree conferment is summarily denied in accordance with Academic Regulations Committee norms.\n5.3 Consecutive Arrear Rule: A candidate who fails a supplementary examination is not granted additional immediate special re-examinations; the candidate must re-register for the complete course during regular academic terms or the next sanctioned summer session."
+    },
+    {
+      "document_id": "POL-REEVAL",
+      "title": "Answer Script Viewing, Re-Totalling, and Re-Evaluation Policy",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Policy",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Appearing in SEE",
+        "Academic Evaluators",
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar"
+      ],
+      "keywords": [
+        "re-evaluation policy",
+        "re-totalling",
+        "answer script viewing",
+        "digital script copy",
+        "within 7 days",
+        "Rs 300 re-totalling",
+        "Rs 1200 re-evaluation",
+        "independent evaluator",
+        "15% marks change",
+        "third evaluator",
+        "10% increase refund",
+        "50% refund",
+        "grade supersession",
+        "ExamShield Portal",
+        "PayVarsity"
+      ],
+      "retrieval_signals": [
+        "how to apply for paper re-evaluation",
+        "revaluation fee per subject",
+        "can I see my evaluated answer sheet",
+        "grade change timeline after revaluation",
+        "re-totalling fee Rs 300",
+        "re-evaluation fee Rs 1200",
+        "revaluation date",
+        "revalution date",
+        "reevaluation form",
+        "reval fee refund rules",
+        "can marks decrease after revaluation",
+        "third evaluator arbitration 15 percent",
+        "answer script digital copy application deadline",
+        "paper checking dispute",
+        "re-checking exam papers",
+        "apply for reval on ExamShield",
+        "re-totalling vs re-evaluation difference",
+        "how long does revaluation take",
+        "can I apply for reval without seeing answer script",
+        "reval grade revision in ERP"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar",
+        "Senior External Evaluator",
+        "Director of IT Infrastructure"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-004",
+        "STU-FRM-006"
+      ],
+      "content": "1. PURPOSE AND PRINCIPLES OF TRANSPARENCY\nDemo University guarantees transparent, fair, and accountable academic assessment. To ensure confidence in examination integrity, this policy establishes codified legal rights and administrative procedures permitting students to digitally inspect evaluated examination answer booklets, seek verification of arithmetical summation (re-totalling), and contest substantive grading through formal independent re-evaluation.\n\n2. APPLICABILITY AND SCOPE\nThis policy governs all theory-based written examination scripts evaluated under the purview of Semester End Examinations (SEE). Practical laboratory assessments, project viva voce evaluations, and continuous internal evaluations (CIE) are excluded from the provisions of this policy.\n\n3. DIGITAL ANSWER SCRIPT VIEWING\n3.1 Application Window: A student contesting an announced result may apply for digital viewing of their evaluated answer script via the ExamShield portal strictly within seven calendar days of formal result publication.\n3.2 Application Fee and Fulfillment: A non-refundable processing fee of Rs. 400 per paper must be remitted on PayVarsity. The Examination Cell digitizes the physical answer booklet from the confidential vault and provisions a secured, watermarked PDF copy accessible within the student's ExamShield profile.\n3.3 Instructor Consultation: Following script release, the candidate is advised to consult their Course Instructor or Faculty Advisor to evaluate whether bona fide academic discrepancies exist warranting further administrative review.\n\n4. ARITHMETIC RE-TOTALLING (MARKS VERIFICATION)\n4.1 Nature of Process: Re-totalling entails rigorous administrative verification that all attempted question sections have been evaluated and that sub-scores are arithmetically aggregated correctly on the cover ledger sheet. It does not entail qualitative re-assessment.\n4.2 Fee and Turnaround: Application for re-totalling incurs a statutory fee of Rs. 300 per paper payable on PayVarsity. Verification is completed and updated within three working days of receipt.\n\n5. FORMAL RE-EVALUATION REGULATIONS\n5.1 Submission Criteria: A student may petition for formal re-evaluation by submitting Form STU-FRM-006 on ExamShield within the notified deadline, remitting a statutory re-evaluation fee of Rs. 1,200 per paper via PayVarsity.\n5.2 Blind Evaluation Mechanism: The Examination Cell conceals the candidate's identity, original evaluator markings, and initial score tallies. The masked script is assigned to an independent senior external evaluator holding subject-matter expertise.\n5.3 Third Evaluator Arbitration: If the revised mark determined by the second evaluator differs by 15.0% or more (positive or negative) from the original awarded mark, the script is automatically referred to a third independent senior referee evaluator for final arbitration.\n5.4 Fee Refund Guarantee: If the final adjudicated re-evaluation score results in a net increase of 10.0% or greater over the original mark, a 50% refund of the re-evaluation fee (Rs. 600) is credited directly to the student's PayVarsity account.\n5.5 Grade Supersession Principle: The grade derived from the re-evaluation process permanently supersedes the earlier awarded grade, even in circumstances where the newly finalized score is numerically lower than the original mark. The revised score is published on ExamShield and updated in UniCampus ERP."
+    },
+    {
+      "document_id": "EXAM-GUI-001",
+      "title": "Regulations Governing Continuous Internal Evaluation (CIE) and Sessional Assessments",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Guidelines / Manual",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Registered Students",
+        "Course Instructors",
+        "Teaching Assistants",
+        "Academic Program Coordinators",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "CIE guidelines",
+        "sessional assessments",
+        "CIE 1 and CIE 2",
+        "internal assessment structure",
+        "quizzes and assignments",
+        "compensatory CIE workflow",
+        "re-test procedure",
+        "ResolveDesk retest",
+        "CIE marks entry",
+        "ExamShield portal",
+        "40% CIE passing threshold",
+        "freezing internal marks",
+        "5 working days display"
+      ],
+      "retrieval_signals": [
+        "CIE assessment guidelines",
+        "how are CIE marks calculated",
+        "sessional test schedule and rules",
+        "what if I am absent for CIE 1",
+        "compensatory CIE test request on ResolveDesk",
+        "who approves CIE re-test",
+        "internal marks moderation rules",
+        "minimum CIE required before semester exam",
+        "when do internal marks freeze on ExamShield",
+        "can teacher change internal marks after freezing",
+        "IA marks split theory and lab",
+        "missed internal exam medical certificate",
+        "CIE quiz weightage",
+        "compensatory exam question paper formulation",
+        "CIE discrepancy grievance"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "LearnSphere LMS",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Course Instructor / Professor",
+        "Academic Program Coordinator",
+        "Head of Department (HOD)",
+        "Teaching Assistant (Graduate)"
+      ],
+      "related_documents": [
+        "POL-CIE",
+        "POL-SEE",
+        "EXAM-SCH-003",
+        "ACAD-CRS-001",
+        "ACAD-POL-003",
+        "ACAD-POL-004"
+      ],
+      "content": "1. OPERATIONAL PURPOSE\nThis operational manual defines the standardized execution procedures for Continuous Internal Evaluation (CIE) and sessional assessments across all constituent engineering, sciences, and management departments of Demo University. It governs test scheduling, question formulation, grading rubrics, compensatory assessment workflows, and ledger freezing on enterprise assessment platforms.\n\n2. DIVISION OF SESSIONAL ASSESSMENT COMPONENTS\n2.1 Formal Weightage Allotment: Sessional evaluation accounts for 40% (or 50% under specific regulations) of the aggregate course evaluation. The internal component is structured into:\n  a) Centralized Internal Assessments (CIE 1 & CIE 2): Weighted at 50% of the total internal evaluation marks. CIE 1 evaluates units 1 and 2, conducted around instructional week 7; CIE 2 evaluates units 3 and 4, conducted around instructional week 13.\n  b) Continuous Quizzes and Assignments: Weighted at 30% of the internal score, comprising mandatory digital quizzes, case analysis reports, or programming problem sets administered on LearnSphere LMS.\n  c) Laboratory Performance / Active Seminar Rubrics: Weighted at 20% of the internal score, evaluating continuous experimental execution, lab record maintenance, and viva voce scrutiny.\n\n3. QUALIFYING MINIMUM AND DETENTION RULES\n3.1 Compulsory Qualifying Percentage: In strict alignment with institutional policy POL-CIE, candidates must secure an aggregate CIE score of at least 40.0% of the available sessional marks to qualify for Semester End Examination (SEE) seating.\n3.2 Detention Procedure: Course Instructors must finalize and audit internal rosters on ExamShield upon completion of instructional delivery. Candidates with scores below 40.0% are assigned detention status, blocking automated hall ticket release.\n\n4. COMPENSATORY ASSESSMENT WORKFLOW (PROC-CIE-COMP)\n4.1 Eligibility Limitations: Compensatory examinations (re-tests) are strictly limited to students who missed either CIE 1 or CIE 2 due to authenticated medical hospitalization or approved university On-Duty representation. Voluntary absenteeism or undocumented private leave is explicitly non-compensable.\n4.2 Procedural Execution Workflow:\n  a) Step 1: The candidate logs an official Compensatory Exam Request ticket on ResolveDesk within three calendar days of the missed test date, attaching certified medical discharge documents or DSA-endorsed OD letters.\n  b) Step 2: The Department Academic Program Coordinator verifies documentation validity and audits re-test eligibility.\n  c) Step 3: The Head of Department (HOD) approves the application and instructs the Course Coordinator to formulate an equivalent centralized compensatory question paper.\n  d) Step 4: The department issues a schedule specifying the date, time, and examination hall for centralized re-testing.\n  e) Step 5: Evaluated compensatory marks are uploaded directly to the ExamShield portal, permanently replacing the absent record.\n\n5. MARKS FREEZING, VERIFICATION, AND ESCALATION TIMELINES\n5.1 Publication and Display Window: All compiled sessional marks must be frozen and displayed to students on ExamShield at least five working days prior to the commencement of SEE.\n5.2 Discrepancy Resolution: Students are entitled to inspect evaluated physical answer booklets. In case of arithmetic discrepancies, the student must notify the Course Instructor within 48 hours. Following correction, the final departmental mark roster is frozen under the joint digital signatures of the Course Instructor, HOD, and the Controller of Examinations."
+    },
+    {
+      "document_id": "EXAM-GUI-002",
+      "title": "Semester End Examination (SEE) Conduct, Timing, and Room Protocol Manual",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Manual / Operational Guide",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Invigilators",
+        "Chief Superintendents",
+        "Department Exam Coordinators",
+        "Campus Security Officers"
+      ],
+      "keywords": [
+        "SEE conduct manual",
+        "exam hall timing",
+        "room protocol",
+        "15 minutes gate closure",
+        "admit card verification",
+        "barcode scanner",
+        "seating arrangement",
+        "RFID smart ID card",
+        "invigilator duties",
+        "answer booklet handling",
+        "permitted stationery",
+        "early exit restrictions",
+        "Newton Hall exam rooms",
+        "Turing Complex exam rooms"
+      ],
+      "retrieval_signals": [
+        "SEE conduct rules",
+        "exam hall reporting time",
+        "can I enter exam hall after 15 minutes",
+        "exam hall gate closes strictly 15 minutes",
+        "what to carry to SEE exam hall",
+        "where to find SEE seating allotment",
+        "seating arrangement room number lookup",
+        "when can I leave exam hall early",
+        "forgot ID card for semester exam",
+        "hall ticket barcode damaged",
+        "invigilator instructions for SEE",
+        "exam room allocation Newton Hall",
+        "Aryabhata wing exam halls",
+        "exam hall protocol and conduct",
+        "SEE room allotment check on ExamShield"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "CampusPass",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Chief Superintendent of Examinations",
+        "Invigilator",
+        "Chief Security Officer (CSO)",
+        "Hall Ticket & Scrutiny Counter Officer"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-NOT-001",
+        "EXAM-NOT-003",
+        "EXAM-NOT-004",
+        "EXAM-GUI-003",
+        "POL-ID-CARD"
+      ],
+      "content": "1. OPERATIONAL MANDATE\nThis manual prescribes the standardized operational protocols, invigilation duties, room allotment guidelines, and security procedures governing the administration of Semester End Examinations (SEE) across all testing centres at Demo University.\n\n2. EXAMINING CENTRES AND SEATING INFRASTRUCTURE\n2.1 Designated Facilities: Centralized written examinations are conducted in designated high-capacity examination halls within the North Academic Quadrant (Newton Hall, Turing Complex, Ramanujan Block) and Aryabhata Wing.\n2.2 Seating Allotment Matrices: Automated randomized seating allocations are generated by ExamShield to prevent contiguous seating of candidates from identical course sections. Daily room and seat allocations are published on ExamShield 24 hours prior to scheduled testing and posted on physical bulletin boards outside each testing block.\n\n3. REPORTING SCHEDULES AND STRICT 15-MINUTE ENTRY CLOSURE\n3.1 Session Operating Hours:\n  a) Morning Session: Examination duration from 09:30 AM to 12:30 PM. Candidates must report at testing centres by 09:00 AM.\n  b) Afternoon Session: Examination duration from 02:00 PM to 05:00 PM. Candidates must report at testing centres by 01:30 PM.\n3.2 Absolute Gate Closure: Candidate admission into examination halls terminates strictly 15 minutes after official commencement (09:45 AM for morning slots; 02:15 PM for afternoon slots). No candidate arriving beyond this 15-minute threshold shall be admitted under any circumstance. Security turnstiles and hall doors are locked at the 15-minute mark.\n\n4. ADMITTANCE CREDENTIALS AND VERIFICATION PROTOCOLS\n4.1 Compulsory Physical Documents: Candidates must visibly display two physical credentials throughout the examination:\n  a) Digital ExamShield Hall Ticket: Printed copy possessing an unscratched, scannable QR code and barcode.\n  b) Official RFID Smart Student ID Badge: Issued by Campus Security (DEPT-SEC).\n4.2 Barcode Scrutiny: Invigilators verify credentials using handheld ExamShield terminal scanners during the first 30 minutes of the examination.\n\n5. PERMITTED AND PROHIBITED ITEMS\n5.1 Allowed Equipment: Candidates may introduce blue or black ink pens, drafting pencils, erasers, non-programmable standard scientific calculators (when authorized on question papers), and transparent unlabelled water bottles.\n5.2 Prohibited Articles: Cellular telephones, smartwatches, wireless earpieces, digital media players, electronic storage drives, bags, and unauthorized loose papers are prohibited. Discovered items are confiscated, and the candidate is immediately cited for Level-2 Malpractice.\n\n6. ANSWER SCRIPT PROTOCOLS AND EARLY DEPARTURE RULES\n6.1 Barcoded Answer Booklets: Invigilators distribute 32-page standardized stitched answer booklets bearing unique pre-printed barcode serial numbers. Candidates must verify that page stitching is intact before writing.\n6.2 Departure Restrictions: No candidate is permitted to submit an answer booklet or vacate the examination venue during the initial 60 minutes of the examination session. In the event of a certified medical emergency, the candidate must be accompanied by an authorized campus health attendant."
+    },
+    {
+      "document_id": "EXAM-GUI-003",
+      "title": "Examination Malpractice Inquiry, Categorization, and Penalty Norms",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Manual / Disciplinary Guidelines",
+      "version": "2.6",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Invigilators",
+        "Proctorial Board Members",
+        "Dean of Student Welfare",
+        "Controller of Examinations (COE)"
+      ],
+      "keywords": [
+        "malpractice policy",
+        "examination malpractice",
+        "inquiry procedure",
+        "Level 1 malpractice",
+        "Level 2 malpractice",
+        "Level 3 malpractice",
+        "unauthorized material",
+        "chits",
+        "mobile phone confiscation",
+        "smartwatch",
+        "second answer booklet",
+        "Proctorial Disciplinary Committee",
+        "hearing notice",
+        "semester debarment",
+        "expulsion"
+      ],
+      "retrieval_signals": [
+        "caught with chit in exam what happens",
+        "malpractice hearing procedure",
+        "can I write other exams after being booked for malpractice",
+        "appeal against exam committee debarment",
+        "mobile phone caught in exam hall penalty",
+        "exam malpractice level 1 level 2 level 3",
+        "Proctorial Board exam malpractice summons",
+        "caught cheating in SEE",
+        "what does second answer booklet mean in malpractice",
+        "malpractice seizure report procedure",
+        "can university debar for cheating",
+        "malpractice CCTV evidence review",
+        "penalties for copying in exam",
+        "exam disciplinary committee hearing",
+        "malpractice grade F on transcript"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "CampusPass"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Student Welfare (DSW)",
+        "Proctorial Board / Disciplinary Committee",
+        "Chief Security Officer (CSO)",
+        "Chief Superintendent of Examinations",
+        "Invigilator"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-002",
+        "EXAM-NOT-004",
+        "POL-DISCIPLINE",
+        "STU-POL-005"
+      ],
+      "content": "1. PURPOSE AND JURISDICTIONAL CHARTER\nDemo University enforces zero tolerance against academic dishonesty, unauthorized communication, and unethical examination conduct. Jointly administered by the Examination Cell and the Office of Student Welfare, this manual establishes official categorizations of examination malpractice, on-site seizure protocols, Disciplinary Committee hearing frameworks, and statutory penalties.\n\n2. CATEGORIZATION OF MALPRACTICE INFRACTIONS\n2.1 Level 1 — Minor Procedural Non-Compliance:\n  a) Infractions: Possession of unauthorized unwritten paper or blank slips; communicating verbally or via gestures with peers; glancing at another candidate's booklet; refusing to occupy the assigned seat.\n  b) Prescribed Penalty: Written reprimand and cancellation of the specific paper. The candidate receives an 'F' grade in the course but remains eligible to write subsequent scheduled examinations.\n2.2 Level 2 — Substantive Academic Dishonesty:\n  a) Infractions: Possession or utilization of manuscript notes, formula chits, textbook clippings, or scribbled formulas on body parts or apparel; possession or operation of electronic devices (cellular phones, smartwatches, digital earphones, programmable calculators); copying from peer answer books.\n  b) Prescribed Penalty: Immediate cancellation of the current paper and comprehensive cancellation of all theory and laboratory examinations registered in the active semester. The candidate is awarded 'F' grades across all registered semester courses and debarred from subsequent papers.\n2.3 Level 3 — Gross Institutional Subversion and Collusion:\n  a) Infractions: Impersonation of another candidate; smuggling blank or written answer booklets outside the examination hall; tampering with barcoded cover sheets; attempting to bribe or physically threatening invigilation staff; organized electronic leakage.\n  b) Prescribed Penalty: Summary cancellation of the entire semester examination result, formal suspension or debarment from Demo University examinations for a period of one to two academic years, eviction from residential hostels, or permanent expulsion from the university.\n\n3. IMMEDIATE ON-SITE INCIDENT HANDLING AND SEIZURE WORKFLOW (REL-007)\n3.1 Seizure Protocol: The invigilator immediately confiscates all illicit materials and the candidate's active answer booklet. The confiscated items are signed by the candidate, invigilator, and Chief Superintendent.\n3.2 Second Answer Booklet Protocol: To prevent premature disruption of potential defense rights, the candidate is provided with a fresh, second answer booklet stamped 'Second Booklet - Malpractice Case' to complete the remaining examination period. No supplementary time is granted for time expended during seizure.\n3.3 Incident Dossier Compilation: The Chief Superintendent drafts a formal incident seizure report, attaches the confiscated evidence, compiles corroborating CCTV footage secured from Campus Security, withholds the candidate's examination result on ExamShield, and transmits the complete dossier to the Proctorial Board Secretariat.\n\n4. PROCTORIAL DISCIPLINARY BOARD HEARING PROCEDURES\n4.1 Notice of Summons: The Office of Student Welfare issues an official show-cause summons to the candidate via institutional email and ResolveDesk within three working days, specifying the infraction category and hearing date.\n4.2 In Camera Hearing: The student appears before the Proctorial Disciplinary Board, reviews the physical and digital CCTV evidence, and submits a signed written explanation.\n4.3 Order Promulgation: The Board formulates findings, and the Registrar ratifies the formal disciplinary order. Sanctions are recorded permanently in the UniCampus ERP academic file."
+    },
+    {
+      "document_id": "EXAM-GUI-004",
+      "title": "Procedure for Answer Script Viewing, Re-Totalling, and Re-Evaluation",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Standard Operating Procedure (SOP) / Guide",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Contesting Examination Grades",
+        "Course Instructors",
+        "Independent Evaluators",
+        "Controller of Examinations (COE)"
+      ],
+      "keywords": [
+        "answer script viewing procedure",
+        "re-totalling procedure",
+        "re-evaluation procedure",
+        "step-by-step reval",
+        "ExamShield portal",
+        "PayVarsity payment",
+        "Rs 400 script viewing",
+        "Rs 300 re-totalling",
+        "Rs 1200 re-evaluation",
+        "blind evaluation",
+        "third evaluator arbitration",
+        "50% refund",
+        "15 working days SLA",
+        "STU-FRM-006"
+      ],
+      "retrieval_signals": [
+        "step by step guide for paper re-evaluation",
+        "how to apply for answer script copy on ExamShield",
+        "answer script viewing fee payment on PayVarsity",
+        "re-totalling application process and SLA",
+        "how is blind re-evaluation conducted",
+        "when is third evaluator appointed",
+        "re-evaluation fee refund procedure",
+        "viewing evaluated answer script online",
+        "consulting professor before revaluation",
+        "re-evaluation marks entry in UniCampus ERP",
+        "reval turnaround time 15 days",
+        "can revaluation marks be lower than original",
+        "re-totalling arithmetic calculation check",
+        "form for answer script revaluation STU-FRM-006",
+        "how to contest exam grading"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar",
+        "Independent Senior Evaluator",
+        "Course Instructor / Professor",
+        "Director of IT Infrastructure"
+      ],
+      "related_documents": [
+        "POL-REEVAL",
+        "POL-SEE",
+        "STU-FRM-006"
+      ],
+      "content": "1. PROCEDURAL OBJECTIVE\nThis Standard Operating Procedure (SOP) governs the sequential workflow for requesting digital answer script viewing, arithmetic re-totalling, and formal blind re-evaluation. It establishes service level agreements (SLAs), operational responsibilities across participating departments, and grading arbitration standards.\n\n2. TRACK 1: DIGITAL ANSWER SCRIPT VIEWING WORKFLOW\n2.1 Application Step: Within seven calendar days of result publication on ExamShield, the student navigates to 'Examination Services > Answer Script Viewing', selects the contested course code, and remits the non-refundable fee of Rs. 400 per paper on PayVarsity.\n2.2 Processing Step: The Examination Cell retrieves the physical answer script from the confidential evaluation vaults in Chanakya Bhavan, scans all 32 pages, and uploads a watermarked, secure PDF copy to the student's ExamShield dashboard within five working days.\n2.3 Instructor Scrutiny: The candidate reviews the script in consultation with the Course Instructor or designated department evaluator to identify unassessed answers or evaluation discrepancies.\n\n3. TRACK 2: ARITHMETIC RE-TOTALLING (MARKS VERIFICATION)\n3.1 Application and Scope: If the inquiry is restricted to verifying summation arithmetic and ensuring no section was left ungraded, the candidate applies for Re-totalling, remitting Rs. 300 per paper via PayVarsity.\n3.2 Scrutiny SLA: The Examination Cell re-audits the marks sheet within three working days. Corrected totals are updated directly in UniCampus ERP without altering subjective scores.\n\n4. TRACK 3: FORMAL BLIND RE-EVALUATION WORKFLOW (PROC-REEVAL-APP / REL-010)\n4.1 Step 1 — Submission: Within five calendar days of receiving the digital answer script, the student submits formal Re-evaluation Application Form STU-FRM-006 on ExamShield, identifying specific questions contested and paying the statutory fee of Rs. 1,200 per paper via PayVarsity.\n4.2 Step 2 — Masking and Vault Processing: The Examination Cell Confidential Section digitally masks all original evaluator markings, rubric scores, total tables, and candidate identity attributes, generating an anonymized evaluation bundle.\n4.3 Step 3 — Independent Second Evaluation: The masked script is assigned to an independent senior external evaluator holding subject-matter expertise. The evaluator marks the script independently without reference to original scores.\n4.4 Step 4 — Third Evaluator Arbitration: If the revised score differs from the original mark by 15.0% or greater (positive or negative), the script is automatically routed to a third independent senior referee evaluator. The final score is computed as the average of the two closest marks.\n4.5 Step 5 — Fee Refund Execution: If the final score results in an increase of 10.0% or greater over the original mark, a 50% refund of the re-evaluation fee (Rs. 600) is credited to the student's PayVarsity account.\n4.6 Step 6 — Grade Supersession and Publication: The finalized re-evaluation mark permanently replaces the initial grade. Revised electronic grade sheets are published on ExamShield within 15 working days of the application deadline."
+    },
+    {
+      "document_id": "EXAM-GUI-005",
+      "title": "Examination Cell Counter Directory and Official Service Timings",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Directory / Service Guide",
+      "version": "1.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Graduating Seniors",
+        "Alumni",
+        "Faculty Advisors",
+        "Administrative Staff"
+      ],
+      "keywords": [
+        "Examination Cell counter directory",
+        "EC office hours",
+        "service timings",
+        "Chanakya Bhavan Wing B",
+        "Counter 1 Hall Tickets",
+        "Counter 2 Marks Cards",
+        "Counter 3 Re-evaluation",
+        "Counter 4 Transcripts",
+        "Counter 5 Backlogs",
+        "Controller of Examinations",
+        "working hours 9:30 AM to 4:30 PM",
+        "Saturday timings",
+        "contact directory"
+      ],
+      "retrieval_signals": [
+        "EC counter opening hours for marks card correction",
+        "submit medical certificate to EC",
+        "where is Examination Cell located",
+        "exam cell counter timings today",
+        "Counter 1 hall ticket scrutiny",
+        "provisional marks card collection desk",
+        "transcript attestation counter timing",
+        "COE office location Chanakya Bhavan",
+        "Examination Cell contact number",
+        "backlog exam counter hours",
+        "exam cell Saturday working hours",
+        "is exam cell open during lunch break",
+        "duplicate marks sheet counter",
+        "where to submit condonation slip in EC",
+        "EC service directory"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Additional Controller of Examinations",
+        "Scrutiny Officers",
+        "Marks Card Clerks",
+        "Transcript Attestation Officer"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "POL-CIE",
+        "POL-BACKLOG",
+        "POL-REEVAL",
+        "EXAM-GUI-002",
+        "EXAM-GUI-004"
+      ],
+      "content": "1. ADMINISTRATIVE LOCATION AND MISSION\nThe Examination Cell (DEPT-EXAM) operates from Chanakya Bhavan, Ground Floor, Secure Wing B. It serves as the primary regulatory hub for examination scheduling, candidate eligibility verification, transcript attestation, marks card issuance, and re-evaluation processing. This directory outlines designated physical service counters, operating windows, and staff escalation pathways.\n\n2. PHYSICAL COUNTER ALLOCATIONS AND JURISDICTIONS\n2.1 Counter 1 — Hall Ticket & Scrutiny Counter:\n  a) Services: Resolution of ExamShield hall ticket generation blockades, attendance condonation certificate verification, barcode replacement, and biometric identity clearance.\n  b) Lead Official: Scrutiny Officer.\n2.2 Counter 2 — Grading & Result Computation Cell:\n  a) Services: Distribution of official semester grade reports, provisional degree certificates, rectification of name/biographical errors on marks cards, and SGPA/CGPA verification.\n  b) Lead Official: Results Computation Superintendent.\n2.3 Counter 3 — Confidential Evaluation & Re-evaluation Desk:\n  a) Services: Physical intake of STU-FRM-006 re-evaluation applications, answer script viewing appointment tokens, re-totalling fee receipt verification, and grade revision receipts.\n  b) Lead Official: Evaluation Section Officer.\n2.4 Counter 4 — Official Transcript & Attestation Section:\n  a) Services: Submission of requests for official sealed transcripts for WES / overseas universities, degree verification attestation, and medium of instruction certificates.\n  b) Lead Official: Transcript Attestation Officer.\n2.5 Counter 5 — Supplementary & Remedial Examination Desk:\n  a) Services: Supplementary backlog examination registration inquiries, PayVarsity challan reconciliations, fast-track summer term exam forms, and special exam permissions.\n  b) Lead Official: Backlog Registration Coordinator.\n\n3. OFFICIAL WORKING WINDOWS AND SERVICE HOURS\n3.1 Regular Weekday Timings (Monday through Friday):\n  a) Morning Public Window: 09:30 AM to 01:00 PM.\n  b) Lunch Recess (Counters Closed): 01:00 PM to 02:00 PM.\n  c) Afternoon Public Window: 02:00 PM to 04:30 PM.\n3.2 Weekend Timings (Saturday):\n  a) Morning Session Only: 09:30 AM to 12:30 PM (Document collection, urgent hall ticket corrections, and token submissions only).\n3.3 Statutory Holidays: All counters remain closed on Sundays, national holidays, and official Demo University non-working days.\n\n4. ESCALATION PROTOCOLS AND CONTACT DIRECTORY\nIn the event of an unresolvable administrative dispute or system failure at counter level, candidates may appeal to the Office of the Additional Controller of Examinations (Room B-104) or schedule an appointment with the Controller of Examinations (Room B-101, Chanakya Bhavan) via ResolveDesk."
+    },
+    {
+      "document_id": "EXAM-NOT-001",
+      "title": "Official Notification: Fall Semester End Examination (SEE) Timetable",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Notice / Notification",
+      "version": "1.0",
+      "effective_date": "2026-11-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate B.Tech Students",
+        "All Postgraduate M.Tech and MBA Students",
+        "Faculty Invigilators",
+        "Department Heads"
+      ],
+      "keywords": [
+        "Fall SEE timetable 2026",
+        "exam schedule",
+        "Semester End Examination timetable",
+        "B.Tech examination dates",
+        "morning session 09:30 to 12:30",
+        "afternoon session 02:00 to 05:00",
+        "reporting time",
+        "15-minute gate closure",
+        "CSE201",
+        "ECE201",
+        "MEC201",
+        "CIV201",
+        "hall ticket barcode",
+        "Turing Complex",
+        "Newton Hall",
+        "Faraday Tower",
+        "Ramanujan Block"
+      ],
+      "retrieval_signals": [
+        "SEE timetable December 2026",
+        "SEE date",
+        "exam timetable",
+        "exam schedule Fall 2026",
+        "when does SEE exam start",
+        "B.Tech 3rd semester exam timetable",
+        "morning slot exam timing",
+        "afternoon slot exam timing",
+        "CSE201 exam date Fall 2026",
+        "ECE201 SEE date",
+        "SEE exam timetable download ExamShield",
+        "exam timetable 4th semester",
+        "exam timetable 3rd semester",
+        "exam timetable mechanical engineering",
+        "reporting time for morning exam"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Academic Affairs",
+        "Chief Superintendent of Examinations",
+        "Heads of Department (HOD)"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-002",
+        "EXAM-NOT-003",
+        "EXAM-NOT-004"
+      ],
+      "content": "1. STATUTORY ANNOUNCEMENT\nIn accordance with the Demo University Academic Regulations and powers vested under the Controller of Examinations, this official notification promulgates the final schedule and room matrix for the Fall Semester End Examinations (SEE) 2026 for all registered undergraduate (B.Tech) and postgraduate (M.Tech, MBA) candidates.\n\n2. DAILY TESTING SESSION SLOTS\nExaminations will be conducted in two centralized slots daily:\n2.1 Morning Session (Slot 1):\n  a) Operational Hours: 09:30 AM to 12:30 PM.\n  b) Reporting Timestamp: Candidates must report at designated testing blocks by 09:00 AM.\n  c) Strict Gate Closure: Testing hall entry gates close promptly at 09:45 AM per the mandatory 15-minute lateness rule.\n2.2 Afternoon Session (Slot 2):\n  a) Operational Hours: 02:00 PM to 05:00 PM.\n  b) Reporting Timestamp: Candidates must report at designated testing blocks by 01:30 PM.\n  c) Strict Gate Closure: Testing hall entry gates close promptly at 02:15 PM per the mandatory 15-minute lateness rule.\n\n3. REPRESENTATIVE COURSE TIMETABLE SCHEDULE (THIRD SEMESTER B.TECH)\n3.1 Computer Science and Engineering (DEPT-CSE):\n  - 02-Dec-2026 (Morning): CSE201 Data Structures and Algorithms (Credits: 4) — Turing Complex Halls T-201 to T-208.\n  - 05-Dec-2026 (Morning): CSE202 Object-Oriented Programming with Java (Credits: 3) — Turing Complex Halls T-201 to T-208.\n3.2 Electronics and Communication Engineering (DEPT-ECE):\n  - 02-Dec-2026 (Morning): ECE201 Digital Electronics and Logic Design (Credits: 4) — Faraday Tower Halls F-101 to F-106.\n  - 05-Dec-2026 (Morning): ECE204 Signals and Systems (Credits: 3) — Faraday Tower Halls F-101 to F-106.\n3.3 Mechanical Engineering (DEPT-MECH):\n  - 03-Dec-2026 (Morning): MEC201 Engineering Mechanics & Strength of Materials (Credits: 4) — Newton Hall N-101 to N-104.\n  - 06-Dec-2026 (Morning): MEC204 Thermodynamics and Heat Transfer (Credits: 4) — Newton Hall N-101 to N-104.\n3.4 Civil Engineering (DEPT-CIVIL):\n  - 03-Dec-2026 (Morning): CIV201 Surveying and Geomatics (Credits: 3) — Aryabhata Wing A-101 to A-103.\n  - 06-Dec-2026 (Morning): CIV205 Structural Analysis and Mechanics (Credits: 4) — Aryabhata Wing A-101 to A-103.\n\n4. MANDATORY CANDIDATE DIRECTIVES\n4.1 Essential Physical Documentation: Candidates must present a clean printed copy of their ExamShield Hall Ticket possessing an unscratched barcode, alongside their physical Demo University RFID Smart ID card.\n4.2 Electronic Contraband Prohibition: In strict compliance with EXAM-NOT-004, no cellular telephones, smartwatches, or unauthorized papers are permitted. Violation results in summary Level-2 Malpractice booking and semester paper cancellation."
+    },
+    {
+      "document_id": "EXAM-NOT-002",
+      "title": "Circular: Supplementary Backlog Examination Registration and Fee Deadlines",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Circular / Notification",
+      "version": "1.0",
+      "effective_date": "2026-06-10",
+      "status": "Active",
+      "audience": [
+        "Students with Active Course Arrears",
+        "Graduating Seniors",
+        "Faculty Advisors",
+        "Finance Office"
+      ],
+      "keywords": [
+        "supplementary exam circular",
+        "backlog exam registration",
+        "arrear fee deadline",
+        "Rs 600 per paper",
+        "late fee Rs 500",
+        "PayVarsity backlog payment",
+        "10 days registration window",
+        "supplementary hall ticket",
+        "even semester supplementary",
+        "N+2 completion limit",
+        "ExamShield backlog portal"
+      ],
+      "retrieval_signals": [
+        "KT exam date",
+        "backlog exam registration deadline",
+        "when does exam registration close",
+        "supplementary exam fee per subject",
+        "how to pay backlog fee on PayVarsity",
+        "late fee for supplementary exam registration",
+        "last date for backlog exam form",
+        "arrear exam registration circular",
+        "can final year student write supplementary exam",
+        "supplementary hall ticket release date",
+        "backlog exam date",
+        "KT registration last date",
+        "exm registration",
+        "backlog fee receipt download",
+        "register for failed subject exam"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar",
+        "Dean of Academic Affairs",
+        "Faculty Advisors"
+      ],
+      "related_documents": [
+        "POL-BACKLOG",
+        "POL-SEE",
+        "EXAM-GUI-002",
+        "EXAM-NOT-005"
+      ],
+      "content": "1. ADMINISTRATIVE NOTICE AND PURPOSE\nThis circular notifies all undergraduate and postgraduate students carrying uncleared course arrears ('F' or 'I' letter grades) of the opening of the official registration portal for the upcoming Supplementary Backlog Examinations. It establishes procedural steps, fee schedules, outer degree eligibility windows, and strict deadlines.\n\n2. ELIGIBILITY CRITERIA AND TIME-LIMIT AUDIT\n2.1 Eligibility: Open to all students possessing uncleared theory or laboratory backlogs from preceding semesters, provided their total period of enrollment does not exceed the statutory N + 2 year limit (maximum 6 years for B.Tech; maximum 4 years for M.Tech/MBA).\n2.2 Degree Audits: Candidates who have completed four years of study but carry backlogs must verify that their registration falls within their remaining two-year statutory extension.\n\n3. APPLICATION WINDOWS AND FEE STRUCTURE (PROC-BACKLOG-REG / REL-021)\n3.1 Normal Registration Window: Opens immediately on the day following even-semester result publication and closes strictly at 05:00 PM on the 10th calendar day thereafter.\n3.2 Extended Late Registration Window: Operates for three additional calendar days following the normal deadline, requiring payment of a mandatory late registration fine of Rs. 500 per candidate.\n3.3 Prescribed Examination Fee: The statutory examination fee is Rs. 600 per paper (theory or laboratory). All remittances must be completed through the integrated PayVarsity payment gateway.\n\n4. STEP-BY-STEP REGISTRATION PROCEDURE\n4.1 Step 1: Candidate logs into ExamShield (https://exams.demo.edu.internal/portal) using ERP credentials.\n4.2 Step 2: Navigate to 'Supplementary Exams' and review the auto-populated list of eligible uncleared subjects.\n4.3 Step 3: Select course codes to be attempted and submit the provisional examination basket.\n4.4 Step 4: Complete online fee payment on PayVarsity (Rs. 600 per subject plus applicable late fine).\n4.5 Step 5: Save and download the transaction receipt and Supplementary Registration Confirmation slip.\n\n5. HALL TICKET ISSUANCE AND VENUE NOTIFICATION\nThe Examination Cell allots examination dates, session slots, and seating allocations, releasing digital Supplementary Hall Tickets on ExamShield three days prior to the commencement of supplementary assessments."
+    },
+    {
+      "document_id": "EXAM-NOT-003",
+      "title": "Notice: Hall Ticket Release and Biometric Detention List on ExamShield",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Notice / Notification",
+      "version": "1.0",
+      "effective_date": "2026-11-20",
+      "status": "Active",
+      "audience": [
+        "All Students Appearing in SEE",
+        "Heads of Department",
+        "Faculty Advisors",
+        "Chief Finance Officer"
+      ],
+      "keywords": [
+        "hall ticket release notice",
+        "ExamShield admit card",
+        "biometric detention list",
+        "7 days before SEE",
+        "attendance shortage detention",
+        "below 75 percent",
+        "medical condonation unblocking",
+        "fee dues hold",
+        "CIE 40 percent cutoff",
+        "barcode admit card",
+        "ResolveDesk ticket",
+        "AttendEdge sync"
+      ],
+      "retrieval_signals": [
+        "SEE hall ticket",
+        "hall ticket not available",
+        "hall ticket download",
+        "hall ticket blocked attendance below 75",
+        "ERP blocking exam hall ticket due to unpaid fee",
+        "detention list for SEE",
+        "why is my hall ticket not showing on ExamShield",
+        "how to download exam admit card",
+        "hall ticket release date",
+        "attendance condonation approved but hall ticket blocked",
+        "fee paid but hall ticket not generated",
+        "hall tikcet",
+        "see hall ticket release",
+        "am I detained from semester exam",
+        "hall ticket barcode error"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "AttendEdge",
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar",
+        "Heads of Department (HOD)"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "POL-ATTEND",
+        "POL-CIE",
+        "EXAM-GUI-002",
+        "ACAD-POL-003"
+      ],
+      "content": "1. STATUTORY NOTICE AND ADMIT CARD ACTIVATION\nThe Examination Cell notifies all registered undergraduate and postgraduate students that digital Examination Admit Cards (Hall Tickets) for the upcoming Semester End Examinations (SEE) are active and available for download on the ExamShield portal exactly seven calendar days prior to examination commencement.\n\n2. AUTOMATED ELIGIBILITY AUDIT ENGINE (PROC-SEE-HALLTICKET)\nAdmit card generation is governed by an automated audit checking three statutory parameters:\n2.1 Financial Clearance: Total clearance of semester tuition, laboratory differentials, and hostel residential mess fees in PayVarsity. Candidates with outstanding balances reflect an automated 'FINANCIAL-HOLD' flag.\n2.2 Minimum Attendance Compliance: Cumulative recorded attendance of 75.0% or greater in AttendEdge, or an approved attendance condonation waiver (for attendance between 65.0% and 74.9%) sanctioned by the Dean of Academic Affairs.\n2.3 Sessional CIE Minimum: Attainment of at least 40.0% aggregate Continuous Internal Evaluation (CIE) marks published by respective academic departments.\n\n3. BIOMETRIC DETENTION ROSTER\n3.1 Detention Status: Candidates who fail to fulfill any of the three criteria are automatically placed on the Biometric Detention Roster on ExamShield. The portal displays the specific detention rationale ('DETENTION-ATTENDANCE', 'DETENTION-CIE', or 'HOLD-FINANCE').\n3.2 Statutory Prohibition: Detained students are debarred from the examination, awarded a 'W' (Withheld) or 'SA' (Shortage of Attendance) grade, and prohibited from entering testing halls.\n\n4. DEFICIENCY RESOLUTION AND UNBLOCKING PROCEDURES\n4.1 Financial Arrears: Candidates clearing pending fee dues on PayVarsity receive automated financial hold removals within two hours of transaction confirmation.\n4.2 Attendance Condonation: Approved attendance condonation orders must be endorsed by the Academic Affairs unit and transmitted to Exam Cell Counter 1 at least five working days before SEE commencement to facilitate manual portal unblocking.\n4.3 Physical Printing Directive: Eligible students must print their hall ticket on clear white A4 paper, ensuring the barcode is unsmudged, and preserve the document alongside their RFID Smart ID card throughout the examination schedule."
+    },
+    {
+      "document_id": "EXAM-NOT-004",
+      "title": "Instructions for SEE Candidates: Prohibited Electronic Devices in Exam Halls",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Instructional Notice / Advisory",
+      "version": "1.0",
+      "effective_date": "2026-11-15",
+      "status": "Active",
+      "audience": [
+        "All Students Appearing in SEE",
+        "Invigilators",
+        "Chief Superintendents",
+        "Campus Security Officers"
+      ],
+      "keywords": [
+        "prohibited devices notice",
+        "exam hall instructions",
+        "no mobile phones",
+        "smartwatches banned",
+        "Level 2 malpractice",
+        "permitted items",
+        "transparent pouch",
+        "non-programmable calculator",
+        "RFID smart card",
+        "bag storage disclaimer",
+        "security frisking",
+        "Proctorial Board referral"
+      ],
+      "retrieval_signals": [
+        "can I bring mobile phone to exam hall",
+        "prohibited items in SEE exam",
+        "is smartwatch allowed in exam",
+        "calculator allowed in semester exam",
+        "what happens if phone rings in exam hall",
+        "where to keep bags during exam",
+        "rules for scientific calculator in SEE",
+        "caught with electronic device in exam hall",
+        "instructions for exam candidates",
+        "permitted stationery in exam hall",
+        "security check before entering exam room",
+        "smart band banned in exam",
+        "digital watch in exam hall penalty",
+        "exam hall dress code and items",
+        "can invigilator confiscate phone"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "CampusPass"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Chief Superintendent of Examinations",
+        "Invigilator",
+        "Chief Security Officer (CSO)",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "EXAM-GUI-002",
+        "EXAM-GUI-003",
+        "POL-ID-CARD",
+        "POL-DISCIPLINE"
+      ],
+      "content": "1. DIRECTIVE OVERVIEW AND PURPOSE\nTo guarantee examination sanctity, prevent digital collusion, and eliminate unfair electronic advantage, the Examination Cell issues this mandatory directive specifying strictly prohibited electronic devices, approved stationary articles, and statutory penalties for non-compliance during Semester End Examinations.\n\n2. COMPREHENSIVE LIST OF PROHIBITED ELECTRONIC DEVICES\nCandidates are strictly prohibited from carrying, possessing, or operating any of the following items inside examination halls, lobbies, and contiguous washrooms:\n2.1 Communication Equipment: Cellular mobile phones, smartphones, feature handsets, walkie-talkies, and personal digital assistants (even if switched off, battery removed, or placed in flight mode).\n2.2 Wearable Electronics: Smartwatches, fitness trackers, Bluetooth-enabled digital bands, programmable wrist displays, and camera-equipped spectacles.\n2.3 Audio and Data Gadgets: Wireless earbuds, airpods, Bluetooth headsets, covert listening devices, USB pen drives, and portable memory storage units.\n2.4 Computational Hardware: Programmable scientific calculators, graphing computational units, digital diaries, and electronic reference tablets.\n2.5 Paper Materials: Textbooks, lecture slide printouts, handwritten chits, revision guides, scribbled formula papers, or marked calculator plastic lids.\n\n3. PERMITTED EXAMINATION EQUIPMENT\nCandidates may bring into the testing room only:\n3.1 Physical Credentials: Official ExamShield Hall Ticket with intact barcode and the Demo University RFID Smart ID card.\n3.2 Writing Instruments: Black and blue ballpoint pens, drafting pencils, pencil sharpeners, erasers, and plastic mathematical rulers contained inside a completely transparent, uncolored pencil pouch.\n3.3 Authorized Calculators: Standard non-programmable scientific calculators (such as Casio fx-991MS / fx-82MS or equivalent) strictly when the printed rubric on the examination question paper explicitly states 'Calculators Permitted'.\n3.4 Personal Hydration: One transparent, unlabelled, colorless water bottle.\n\n4. STATUTORY PENALTIES FOR PROHIBITED POSSESSION\n4.1 Automatic Level-2 Malpractice: The mere physical presence of a mobile telephone, smartwatch, or electronic gadget on a candidate's person, desk, or clothing—regardless of whether it was actively operated—constitutes Level-2 Examination Malpractice under EXAM-GUI-003.\n4.2 Immediate Sanctions: The invigilator will immediately confiscate the device, seize the active answer booklet, issue a second booklet, and compile a formal seizure dossier. Conviction results in summary cancellation of all examinations registered in the semester ('F' grades across all courses) and referral to the Proctorial Board.\n4.3 Personal Belongings Disclaimer: The university accepts no custodial liability for backpacks, electronic devices, or valuables left outside examination rooms."
+    },
+    {
+      "document_id": "EXAM-NOT-005",
+      "title": "Notification: Fast-Track Summer Term Examination Calendar and Regulations",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Notification / Calendar",
+      "version": "1.0",
+      "effective_date": "2026-05-15",
+      "status": "Active",
+      "audience": [
+        "Students with Active Backlogs",
+        "Students Detained for Attendance ('W'/'SA')",
+        "Academic Program Coordinators",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "Fast-Track Summer Term notification",
+        "summer semester calendar",
+        "remedial term",
+        "7-week intensive session",
+        "maximum 2 backlog courses",
+        "summer CIE schedule",
+        "summer SEE schedule",
+        "June-July term",
+        "summer registration fee",
+        "remedial passing criteria",
+        "mandatory attendance"
+      ],
+      "retrieval_signals": [
+        "fast-track summer term timetable",
+        "summer semester exam calendar",
+        "how many backlog courses can I register in summer",
+        "summer term registration deadline",
+        "summer term 7 weeks duration",
+        "detained student summer term registration",
+        "can I clear 3 backlogs in summer semester",
+        "summer term exam fee PayVarsity",
+        "summer term classes June July",
+        "summer CIE test schedule",
+        "fast track summer term passing marks",
+        "summer semester eligibility",
+        "fast track remedial course calendar",
+        "what happens if I fail summer exam",
+        "summer term results declaration"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "UniCampus ERP",
+        "PayVarsity",
+        "AttendEdge",
+        "LearnSphere LMS"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar",
+        "Academic Program Coordinators",
+        "Course Instructor / Professor"
+      ],
+      "related_documents": [
+        "POL-BACKLOG",
+        "POL-SEE",
+        "POL-ATTEND",
+        "EXAM-NOT-002",
+        "ACAD-REG-001"
+      ],
+      "content": "1. STATUTORY NOTIFICATION AND PURPOSE\nThis official notification promulgates the administrative regulations, academic timetable, and examination schedule for the intensive seven-week Fast-Track Summer Term 2026. Designed as an accelerated remedial bridge session, the summer term enables students with active backlogs ('F' grade) or attendance detentions ('W' or 'SA' grade) to fulfill curriculum contact hours and achieve academic progression.\n\n2. DURATION AND INSTRUCTIONAL STRUCTURE\n2.1 Calendar Horizon: The fast-track summer term runs for seven consecutive weeks from early June through late July.\n2.2 Condensed Instruction: Regular 15-week course curricula are condensed into daily intensive lecture and laboratory blocks, maintaining strict parity with statutory credit contact hour requirements (1 credit = 15 instructional contact hours).\n\n3. ELIGIBILITY CRITERIA AND REGISTRATION CEILINGS\n3.1 Permitted Cohorts: Open exclusively to enrolled students who have previously registered for and failed a course ('F' grade) or who were detained due to attendance falling below 65.0% ('W'/'SA' grade) during regular academic terms.\n3.2 Course Registration Limit: A student may register for a maximum of two backlog courses during the summer term. ERP blocks any registration attempting to enroll in a third course.\n3.3 Tuition and Examination Fee: Summer course tuition and examination fees must be remitted on PayVarsity during the notified enrollment window.\n\n4. SESSIONAL AND FINAL EXAMINATION CALENDAR\n4.1 Midterm Sessional Evaluation (Summer CIE): Administered at the conclusion of Instructional Week 4, testing foundational units and contributing 40% (or 50%) toward the summer grade.\n4.2 Final Semester End Examination (Summer SEE): Administered across the 7th instructional week (late July). All standard SEE passing criteria apply: candidates must secure a minimum of 35.0% in the summer SEE examination and a cumulative aggregate of 40.0% (CIE + SEE).\n\n5. NON-EXTENSION AND SUBSEQUENT REMEDIATION\nCandidates failing to secure a pass grade in a summer term course must re-register for the complete course during regular academic terms. No supplementary assessments are conducted for summer term failures."
+    },
+    {
+      "document_id": "EXAM-SCH-003",
+      "title": "Third Semester Midterm Examination Schedule",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Schedule / Timetable",
+      "version": "1.0",
+      "effective_date": "2026-09-15",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech 3rd Semester Students",
+        "Course Instructors",
+        "Invigilators",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "Third Semester Midterm Examination Schedule",
+        "CIE 1 timetable",
+        "3rd sem exam date",
+        "CSE201 DSA exam date",
+        "Data Structures exam",
+        "OOP Java exam CSE202",
+        "DELD ECE201",
+        "Signals Systems ECE204",
+        "EMSM MEC201",
+        "Thermodynamics MEC204",
+        "Surveying CIV201",
+        "Structural Analysis CIV205",
+        "midterm room allotment",
+        "Turing Complex",
+        "Faraday Tower",
+        "Newton Hall",
+        "Aryabhata Wing"
+      ],
+      "retrieval_signals": [
+        "DSA exam date and room allotment",
+        "third sem midterm examination schedule",
+        "CIE 1 timetable for B.Tech 2nd year",
+        "when is the DSA midterm exam",
+        "CSE201 exam date and timing",
+        "DSA lab exam schedule",
+        "midterm exam date for 3rd semester CSE",
+        "ECE 3rd sem CIE 1 timetable",
+        "mechanical 3rd semester midterm schedule",
+        "civil engineering 3rd sem exam timetable",
+        "midterm test reporting time",
+        "Turing complex exam room allotment",
+        "Faraday tower midterm seating",
+        "DSA exam room number",
+        "mid term timetable September 2026"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Academic Program Coordinator",
+        "Course Instructor / Professor",
+        "Head of Department (HOD) - Computer Science",
+        "Head of Department (HOD) - Electronics"
+      ],
+      "related_documents": [
+        "POL-CIE",
+        "EXAM-GUI-001",
+        "ACAD-CRS-001",
+        "ACAD-CRS-002",
+        "ACAD-CRS-007"
+      ],
+      "content": "1. EXECUTIVE DIRECTIVE AND PURPOSE\nThis operational schedule specifies the finalized dates, testing windows, course codes, and hall seating allocations for the centralized Third Semester Continuous Internal Assessment 1 (CIE 1 / Midterm Examination) for the Fall 2026 academic session. Administered by the Examination Cell in coordination with academic department coordinators, this schedule applies to all second-year B.Tech students.\n\n2. MIDTERM SESSIONAL TIMINGS AND GENERAL PROTOCOLS\n2.1 Standard Assessment Duration: Sessional written tests are 90 minutes in duration, scaled to 50 marks contributing toward the sessional CIE ledger.\n2.2 Daily Session Slots:\n  a) Morning Slot: 10:00 AM to 11:30 AM (Candidates seated by 09:45 AM).\n  b) Afternoon Slot: 02:30 PM to 04:00 PM (Candidates seated by 02:15 PM).\n2.3 Identity Requirement: Students must display their physical Demo University RFID Smart ID card. Classroom biometric edge terminals verify presence before papers are distributed.\n\n3. DETAILED DEPARTMENTAL MIDTERM TIMETABLES\n3.1 Department of Computer Science and Engineering (DEPT-CSE):\n  - 28-Sep-2026 (Morning, 10:00 AM - 11:30 AM): CSE201 Data Structures and Algorithms (DSA) (Credits: 4) — Turing Complex Rooms TC-201, TC-202, TC-301.\n  - 29-Sep-2026 (Morning, 10:00 AM - 11:30 AM): CSE202 Object-Oriented Programming with Java (OOP) (Credits: 3) — Turing Complex Rooms TC-201, TC-202, TC-301.\n3.2 Department of Electronics and Communication Engineering (DEPT-ECE):\n  - 28-Sep-2026 (Morning, 10:00 AM - 11:30 AM): ECE201 Digital Electronics and Logic Design (DELD) (Credits: 4) — Faraday Tower Rooms FT-101, FT-102, FT-201.\n  - 29-Sep-2026 (Morning, 10:00 AM - 11:30 AM): ECE204 Signals and Systems (SS) (Credits: 3) — Faraday Tower Rooms FT-101, FT-102, FT-201.\n3.3 Department of Mechanical Engineering (DEPT-MECH):\n  - 28-Sep-2026 (Afternoon, 02:30 PM - 04:00 PM): MEC201 Engineering Mechanics & Strength of Materials (EMSM) (Credits: 4) — Newton Hall Rooms NH-101, NH-102.\n  - 29-Sep-2026 (Afternoon, 02:30 PM - 04:00 PM): MEC204 Thermodynamics and Heat Transfer (THERMO) (Credits: 4) — Newton Hall Rooms NH-101, NH-102.\n3.4 Department of Civil Engineering (DEPT-CIVIL):\n  - 28-Sep-2026 (Afternoon, 02:30 PM - 04:00 PM): CIV201 Surveying and Geomatics (SURV) (Credits: 3) — Aryabhata Wing Rooms AW-101, AW-102.\n  - 29-Sep-2026 (Afternoon, 02:30 PM - 04:00 PM): CIV205 Structural Analysis and Mechanics (SA) (Credits: 4) — Aryabhata Wing Rooms AW-101, AW-102.\n\n4. POST-EXAMINATION SCRIPT EVALUATION AND GRIEVANCE\nCourse Instructors must complete evaluations and return marked midterm booklets to students within seven working days of assessment. Marks must be uploaded directly to ExamShield and LearnSphere LMS."
+    }
+  ]
+}

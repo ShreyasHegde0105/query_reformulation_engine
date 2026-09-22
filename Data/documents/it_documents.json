@@ -1,0 +1,905 @@
+{
+  "domain": "Information Technology",
+  "documents": [
+    {
+      "document_id": "IT-SYS-001",
+      "title": "UniCampus ERP Student Portal User Guide and Navigation Manual",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "User Guide / Navigation Manual",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Faculty Advisors",
+        "Administrative Officers"
+      ],
+      "keywords": [
+        "UniCampus ERP",
+        "ERP student portal",
+        "student lifecycle",
+        "course enrollment engine",
+        "fee ledger link",
+        "bonafide certificate generator",
+        "degree audit tracker",
+        "student bio-data registry",
+        "financial hold",
+        "single sign-on",
+        "portal navigation",
+        "ERP credentials"
+      ],
+      "retrieval_signals": [
+        "ERP login",
+        "ERP issue",
+        "ERP password not working",
+        "ERP not opening",
+        "erp logn",
+        "UniCampus ERP student login",
+        "how to login to ERP",
+        "ERP password reset self service",
+        "portal showing financial hold",
+        "ERP registration blocked financial hold",
+        "cannot login to ERP from hostel Wi-Fi",
+        "where is ERP student portal link",
+        "ERP biodata update",
+        "how to download bonafide from ERP",
+        "ERP degree audit tracker",
+        "ERP course enrollment not showing",
+        "financial hold removal on ERP",
+        "portal is stuck during course registration",
+        "UniCampus ERP guide",
+        "ERP system down"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Enterprise Systems Administrator",
+        "Faculty Advisor / Mentor",
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "IT-POL-002",
+        "POL-COURSE-REG",
+        "POL-BONAFIDE",
+        "PROC-COURSE-REG",
+        "REL-005"
+      ],
+      "content": "1. SYSTEM OVERVIEW AND ARCHITECTURE\nUniCampus ERP serves as the enterprise transactional backbone managing the complete student academic and administrative lifecycle at Demo University. Deployed across the university primary data center with automated cloud failover, the platform integrates student bio-data records, semester course registration engines, institutional fee ledger links, digital bonafide certificate generation, and automated graduation degree audit trackers.\n\n2. ACCESS PORTAL AND AUTHENTICATION\n2.1 Portal Uniform Resource Locator: Students access the student portal via authenticated intranet and secure web links at https://erp.demo.edu.internal/student. Staff and faculty access administrative consoles at https://erp.demo.edu.internal/faculty-admin.\n2.2 Single Sign-On Credentials: User authentication requires active institutional single-sign-on (SSO) credentials issued during initial enrollment by the Identity & Access Management Desk.\n\n3. CORE FUNCTIONAL MODULES\n3.1 Course Enrollment Engine: Operates during the notified Date of Registration (DOR) and Add/Drop windows. Displays core program courses, verifies prerequisite completions, validates credit limits (20 to 24 credits standard, overload up to 28 credits), and routes provisional baskets to Faculty Advisors for digital endorsement.\n3.2 Fee Ledger Link: Synchronizes student financial accounts with PayVarsity. Reflects real-time fee demands, scholarship credit ledger postings, and automated clearance statuses.\n3.3 Bonafide Certificate Generator: Enables self-service requests for authenticated study certificates, education loan fee structures, and passport transit endorsements featuring dynamic verification QR codes.\n3.4 Degree Audit Tracker: Continuously evaluates completed curriculum credits against statutory degree requirements (e.g., 160 credits for B.Tech), highlighting outstanding core, elective, or non-credit requirements.\n\n4. TROUBLESHOOTING FINANCIAL HOLDS AND SYSTEM INCIDENTS\n4.1 Financial Hold Resolution: An account flagged with 'FINANCIAL-HOLD' blocks course enrollment and examination hall ticket downloads. Students must identify the originating department ledger on PayVarsity (Tuition, Hostel Mess, or Library fine) and complete remittance. System clearance syncs within two hours.\n4.2 Credential Failures: Account lockouts resulting from five consecutive invalid password attempts require self-service password reset (SSPR) or logging a ticket on ResolveDesk under 'IT Services > ERP Account Support'."
+    },
+    {
+      "document_id": "IT-SYS-002",
+      "title": "LearnSphere LMS User Guide: Assignments, Quizzes, and Virtual Classrooms",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "User Guide / Manual",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Course Instructors / Professors",
+        "Teaching Assistants",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "LearnSphere LMS",
+        "LMS",
+        "assignment dropboxes",
+        "coding sandbox",
+        "internal assessment quizzes",
+        "course syllabi",
+        "lecture slide vault",
+        "discussion boards",
+        "upload limits",
+        "cloud SaaS",
+        "virtual classrooms",
+        "LMS troubleshooting"
+      ],
+      "retrieval_signals": [
+        "LMS issue",
+        "cannot upload assignment",
+        "LMS upload not working",
+        "LMS uplod",
+        "LearnSphere LMS student login",
+        "how to submit assignment in LMS",
+        "LMS video recording not playing",
+        "course not showing on my LMS dashboard",
+        "coding sandbox error LearnSphere",
+        "LMS quiz timer problem",
+        "LMS assignment deadline extension",
+        "LearnSphere portal URL",
+        "file size limit assignment upload LMS",
+        "LMS discussion board posting",
+        "lms login problem"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "POL-CIE",
+        "EXAM-GUI-001",
+        "ACAD-CRS-001"
+      ],
+      "content": "1. SYSTEM MANDATE AND SCOPE\nLearnSphere LMS constitutes Demo University's cloud-hosted academic learning management platform. Maintained by IT Services, LearnSphere provides digital pedagogical extensions for all credit-bearing lecture and laboratory courses, hosting course syllabi, lecture slides, assignment dropboxes, auto-graded coding environments, continuous assessment quizzes, and academic discussion forums.\n\n2. ACCESS ENDPOINTS AND DASHBOARD SYNCHRONIZATION\n2.1 Web Endpoints: Accessible to matriculated scholars at https://learn.demo.edu.internal and faculty instructors at https://learn.demo.edu.internal/instructor.\n2.2 Roster Synchronization: Enrolled course rosters synchronize automatically from UniCampus ERP overnight following Faculty Advisor registration approvals. Courses registered during Add/Drop reflect within 24 hours of approval.\n\n3. STUDENT SUBMISSION AND PARTICIPATION MODULES\n3.1 Assignment Dropboxes: Supports student document submissions subject to strict format constraints (PDF, DOCX, ZIP). Submissions are time-stamped upon receipt. Upload attempts beyond announced deadlines are locked unless instructor late-submission windows are active.\n3.2 Automated Coding Sandbox: Provides containerized execution sandboxes for engineering programming courses (DSA, OOP Java, Systems Programming), executing student code against test suites.\n3.3 Internal Assessment Quiz Engine: Houses continuous internal assessment quizzes contributing toward Continuous Internal Evaluation (CIE) ledgers.\n3.4 Discussion Boards: Secure interactive academic message threads between students, instructors, and graduate Teaching Assistants.\n\n4. TROUBLESHOOTING AND TECHNICAL SUPPORT\n4.1 Upload Failures: If a file submission fails, users must verify that file sizes remain within the 25 MB per-file threshold and that network timeouts are not occurring. If errors persist, students should capture error screenshots and submit an incident ticket via ResolveDesk under 'LMS Technical Support'.\n4.2 Missing Course Shells: If an officially enrolled course fails to populate on the LearnSphere dashboard 24 hours after ERP registration, the student must log a ResolveDesk ticket attaching their ERP course registration receipt."
+    },
+    {
+      "document_id": "IT-SYS-003",
+      "title": "ExamShield Portal Guide: Hall Ticket Download and Re-evaluation Filing",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-EXAM",
+      "document_type": "User Guide / System Manual",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Appearing in Examinations",
+        "Academic Evaluators",
+        "Examination Cell Staff",
+        "Invigilators"
+      ],
+      "keywords": [
+        "ExamShield Portal",
+        "hall ticket download",
+        "barcode verification",
+        "seating room allotment",
+        "CIE marks display",
+        "SEE timetable",
+        "re-evaluation filing",
+        "answer script viewing",
+        "supplementary exam registration",
+        "secure subnet Chanakya Bhavan",
+        "grade sheet publishing"
+      ],
+      "retrieval_signals": [
+        "ExamShield portal login",
+        "how to download hall ticket from ExamShield",
+        "ExamShield hall ticket barcode error",
+        "revaluation application ExamShield",
+        "check internal marks on ExamShield",
+        "view evaluated answer script ExamShield",
+        "ExamShield seating arrangement lookup",
+        "ExamShield portal URL",
+        "ExamShield system error during admit card download",
+        "supplementary registration on ExamShield",
+        "ExamShield portal not working",
+        "exam portal login issue",
+        "grade sheet download ExamShield",
+        "exam admit card portal Chanakya Bhavan",
+        "portl not wrking examshield"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Director of IT Infrastructure",
+        "Enterprise Systems Administrator",
+        "Chief Superintendent of Examinations"
+      ],
+      "related_documents": [
+        "POL-SEE",
+        "POL-CIE",
+        "POL-REEVAL",
+        "EXAM-GUI-002",
+        "EXAM-GUI-004",
+        "EXAM-NOT-003"
+      ],
+      "content": "1. INFRASTRUCTURE ARCHITECTURE AND HOSTING\nExamShield Portal operates within a dedicated, security-hardened server subnet situated in Chanakya Bhavan (Secure Wing B), administered under joint IT Services engineering and Examination Cell regulatory governance. The platform maintains air-gapped database mirrors during active testing and manages confidential assessment workflows.\n\n2. ACCESS SPECIFICATIONS AND USER DIRECTORY\n2.1 Access URLs: Candidates access student examination functions at https://exams.demo.edu.internal/portal. Faculty evaluators access grading consoles at https://exams.demo.edu.internal/evaluators.\n2.2 Single Sign-On Linkage: Authentication relies on unified enterprise student credentials synchronized with the Identity & Access Management directory.\n\n3. CORE FUNCTIONAL LIFECYCLE MODULES\n3.1 Sessional CIE Marks Freezing & Display: Sessional internal assessment scores uploaded by course instructors are displayed to students on ExamShield at least five working days before Semester End Examinations (SEE).\n3.2 Hall Ticket Generation & Barcode Engine: Exactly seven days prior to SEE, the system runs automated audits (checking AttendEdge attendance >= 75%, CIE >= 40%, and PayVarsity zero fee dues), issuing printable admit cards with scannable barcodes.\n3.3 Examination Seating Allotment: Generates randomized candidate room allotments 24 hours prior to each exam session across North Academic Quadrant and Aryabhata Wing halls.\n3.4 Answer Script Viewing and Re-evaluation Desk: Handles digital applications for scanned answer booklets (within 7 days of result declaration), re-totalling, and blind re-evaluation submissions.\n3.5 Supplementary Backlog Registration: Enables candidates with uncleared 'F' grades to enroll in supplementary examination sessions and pay fees through PayVarsity integration.\n\n4. SYSTEM SUPPORT AND TROUBLESHOOTING\nStudents encountering portal errors or barcode corruption during PDF rendering must log an urgent ticket on ResolveDesk under 'Examination Systems Support' or report to Counter 1 at the Examination Cell in Chanakya Bhavan."
+    },
+    {
+      "document_id": "IT-SYS-004",
+      "title": "ResolveDesk Ticketing User Guide: SLA Tiers and Ticket Escalation",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "User Guide / Helpdesk Manual",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "All Faculty and Technical Staff",
+        "Department Grievance Handlers",
+        "IT Support Engineers"
+      ],
+      "keywords": [
+        "ResolveDesk",
+        "helpdesk ticketing",
+        "IT incident logging",
+        "facilities work orders",
+        "academic grievance redressal",
+        "SLA tiers",
+        "ticket escalation",
+        "cross-department routing",
+        "attaching evidence",
+        "ticket tracking",
+        "helpdesk portal"
+      ],
+      "retrieval_signals": [
+        "how to use ResolveDesk",
+        "ResolveDesk ticket logging",
+        "log IT support ticket",
+        "ResolveDesk student helpdesk portal",
+        "track my complaint ResolveDesk",
+        "ResolveDesk SLA tiers 5 10 20 days",
+        "escalate ticket to level 2 committee",
+        "Wi-Fi complaint ResolveDesk",
+        "biometric glitch ticket ResolveDesk",
+        "attaching screenshot to ResolveDesk ticket",
+        "ResolveDesk ticket status pending",
+        "cannot login to ResolveDesk",
+        "how to report IT problem Demo University",
+        "omnichannel student helpdesk link",
+        "ResolveDesk agent escalation"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "ResolveDesk System Administrator",
+        "IT End-User Support Specialist",
+        "Dean of Student Welfare (DSW)",
+        "Department Grievance Officer"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "POL-GRIEVANCE",
+        "STU-GUI-001",
+        "PROC-GRIEVANCE-REDRESS"
+      ],
+      "content": "1. PLATFORM ARCHITECTURE AND FUNCTION\nResolveDesk functions as Demo University's centralized enterprise service management and omnichannel ticketing platform. Hosted within the private campus cloud, it routes technical IT incidents, classroom AV maintenance, facilities work orders, On-Duty pre-approvals, and formal student grievances to appropriate administrative units under strict statutory Service Level Agreements (SLAs).\n\n2. ACCESS AND CASE LOGGING WORKFLOW\n2.1 Portal Endpoint: Accessible via web and mobile interfaces at https://resolve.demo.edu.internal using university SSO credentials. Support staff access agent dashboards at https://resolve.demo.edu.internal/agent.\n2.2 Categorization Framework: Users select specialized queues:\n  - IT Services & Campus Networks (Wi-Fi, ERP, LMS, Lab PCs, biometrics).\n  - Campus Operations & Facilities (classroom electrical, air conditioning, plumbing).\n  - Academic Grievances & Attendance (sessional marks, grading, condonation).\n  - Student Affairs & Welfare (OD leave requests, club sanctions, hostel complaints).\n2.3 Docket Details and Attachments: Users specify affected assets (e.g., room number, terminal IP, transaction ID) and may attach diagnostic screenshots, logs, or documentation up to 10 MB (PDF, PNG, JPEG).\n\n3. SLA TIERS AND ESCALATION TIMELINES\n3.1 Standard SLA Framework:\n  - Tier 1 (Technical & Facilities Incidents): Target response within 24 hours; resolution within 48 to 72 hours.\n  - Tier 2 (Department Grievance - Level 1): Statutory resolution within 5 working days.\n  - Tier 3 (Central Grievance Committee - Level 2): Hearing and determination within 10 working days.\n  - Tier 4 (University Ombudsman - Level 3): Binding determination within 20 working days.\n3.2 Escalation Mechanism: If an assigned ticket breaches its resolution timeline or produces an unsatisfactory outcome, users may activate the 'Escalate' button within 48 hours to route the case to higher governance tiers."
+    },
+    {
+      "document_id": "IT-SYS-005",
+      "title": "Campus Wi-Fi Connectivity and 802.1X Device Authentication Setup Guide",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Technical Setup Guide",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Faculty and Staff",
+        "IT Network Support Engineers",
+        "Hostel Residents"
+      ],
+      "keywords": [
+        "campus Wi-Fi setup",
+        "802.1X authentication",
+        "WPA2 Enterprise",
+        "WPA3 Enterprise",
+        "DemoUniv-Secure",
+        "PEAP MSCHAPv2",
+        "wireless configuration",
+        "Wi-Fi certificate",
+        "captive portal",
+        "MAC address registration",
+        "hostel Wi-Fi",
+        "Wi-Fi troubleshooting"
+      ],
+      "retrieval_signals": [
+        "Wi-Fi problem",
+        "wifi dead",
+        "how to connect to campus Wi-Fi",
+        "DemoUniv-Secure Wi-Fi settings",
+        "802.1X configuration Android iPhone",
+        "Wi-Fi not connecting hostel",
+        "wify not working",
+        "wifi problm",
+        "campus Wi-Fi password",
+        "PEAP MSCHAPv2 settings Demo University",
+        "cannot connect laptop to college Wi-Fi",
+        "hostel Wi-Fi login error",
+        "Wi-Fi certificate installation",
+        "registered MAC address limit Wi-Fi",
+        "net is gone in Newton hall"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Network Operations Centre (NOC) Lead",
+        "IT End-User Support Specialist"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "IT-POL-003",
+        "IT-OPS-002"
+      ],
+      "content": "1. INFRASTRUCTURE OVERVIEW\nDemo University operates a high-density enterprise wireless network covering all academic blocks (Newton Hall, Turing Complex, Ramanujan Block, Aryabhata Wing, Faraday Tower), Valmiki Central Library, Student Activity Centre, and the East Residential Enclave (Cauvery, Nilgiri, Vindhya, Brahmaputra, Sarojini, Gargi). The network utilizes 802.1X authentication over WPA2/WPA3-Enterprise standards.\n\n2. NETWORK IDENTIFIERS (SSIDS)\n2.1 DemoUniv-Secure: Primary secured network for registered students, faculty, and administrative personnel, delivering encrypted access across academic and residential zones.\n2.2 DemoUniv-Guest: Bandwidth-throttled captive-portal network for official visitors, requiring temporary mobile OTP authorization provisioned via CampusPass.\n\n3. DEVICE CONFIGURATION PARAMETERS (802.1X)\nTo connect a personal computing device (laptop, smartphone, or tablet) to DemoUniv-Secure, users must configure the following standard network settings:\n  a) EAP Method: PEAP (Protected Extensible Authentication Protocol).\n  b) Phase 2 Inner Authentication: MSCHAPv2.\n  c) CA Certificate: Select 'Use system certificates' (Domain: demo.edu.internal) or select 'Do not validate' if prompted by legacy operating systems.\n  d) Identity: Enter full university enrollment number / student ID (e.g., `2024BCSE101`).\n  e) Anonymous Identity: Leave blank.\n  f) Password: Enter institutional single-sign-on (SSO) password.\n\n4. DEVICE LIMITS AND TROUBLESHOOTING\n4.1 Permitted Concurrency: Each matriculated student is permitted a maximum of two concurrently active MAC addresses registered on the RADIUS network directory.\n4.2 Troubleshooting IP and Lease Issues: If a device fails to acquire a DHCP lease, the user should forget the network profile, restart wireless radios, and reconnect. Persistent authentication failures or localized access point outages must be reported on ResolveDesk under 'Network & Wi-Fi Issues' specifying device MAC address and building room number."
+    },
+    {
+      "document_id": "IT-POL-001",
+      "title": "University Acceptable IT Use Policy, Computing Ethics, and Credential Security",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Policy",
+      "version": "2.6",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Faculty and Academic Staff",
+        "Technical Lab Staff",
+        "Administrative Officers"
+      ],
+      "keywords": [
+        "Acceptable IT Use Policy",
+        "AUP",
+        "computing ethics",
+        "credential security",
+        "prohibited network activities",
+        "torrenting ban",
+        "crypto-mining prohibition",
+        "unauthorized scanning",
+        "password sharing prohibited",
+        "bandwidth misuse",
+        "IT disciplinary referral",
+        "account deactivation"
+      ],
+      "retrieval_signals": [
+        "acceptable IT use policy Demo University",
+        "college Wi-Fi rules and restrictions",
+        "can I download torrents on college Wi-Fi",
+        "crypto mining on university servers penalty",
+        "sharing ERP password with friend violation",
+        "prohibited websites on campus network",
+        "hacking tools on lab computers policy",
+        "network bandwidth limits for students",
+        "account suspended for IT policy violation",
+        "cybersecurity ethics code for students",
+        "unauthorized software installation policy",
+        "VPN usage rules campus network",
+        "IT code of conduct Demo University",
+        "penalties for network misuse",
+        "credential sharing disciplinary action"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "LearnSphere LMS",
+        "CampusPass"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Enterprise Systems Administrator",
+        "Dean of Student Welfare (DSW)",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "IT-POL-002",
+        "IT-POL-003",
+        "POL-DISCIPLINE",
+        "STU-POL-001"
+      ],
+      "content": "1. PURPOSE AND POLICY MANDATE\nThis policy establishes mandatory operational guidelines, ethical standards, and legal compliance obligations governing the utilization of Demo University computing hardware, campus enterprise networks, wireless communications, enterprise software platforms, and digital identities.\n\n2. AUTHORIZED ACCESS AND CREDENTIAL INTEGRITY\n2.1 Personal and Non-Transferable Access: University computing accounts, LMS access credentials, and network access logins are strictly personal to the individual to whom they are provisioned. Sharing passwords or multi-factor authentication codes with peers, relatives, or external third parties is strictly prohibited.\n2.2 Individual Accountability: Account owners are held legally and administratively accountable for all network traffic, file transactions, and system requests originating under their provisioned credentials.\n\n3. EXPLICITLY PROHIBITED COMPUTING ACTIVITIES\nUsers connecting to university computing assets or network backbones are strictly forbidden from engaging in:\n  a) Network Reconnaissance and Intrusion: Port scanning, vulnerability probing, packet sniffing, packet injection, or running automated credential-stuffing scripts against internal or external subnets.\n  b) Copyright Infringement & Peer-to-Peer Transfers: Utilizing torrent clients, running unauthorized file-sharing hubs, or downloading copyrighted media, pirated textbooks, or unlicensed commercial software.\n  c) Unauthorized Resource Consumption: Deploying cryptocurrency mining software, hosting unauthorized public web servers, or running automated bots that degrade shared bandwidth.\n  d) Malicious Code Dissemination: Developing, propagating, or hosting malware, worms, trojans, ransomware, or phishing landing pages.\n\n4. ENFORCEMENT, SURVEILLANCE, AND DISCIPLINARY SANCTIONS\n4.1 Automated Network Isolation: The Network Operations Centre (NOC) employs automated intrusion detection systems. Detected severe policy violations trigger instantaneous MAC and account isolation.\n4.2 Disciplinary Actions: Violations of this policy incur immediate account revocation and referral to the Proctorial Board under POL-DISCIPLINE, resulting in fines, academic suspension, or expulsion."
+    },
+    {
+      "document_id": "IT-POL-002",
+      "title": "Password Lifecycle, Multi-Factor Authentication, and Account Reset Policy",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Policy / Security Standard",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Faculty and Staff",
+        "Identity & Access Management Desk",
+        "IT Helpdesk Personnel"
+      ],
+      "keywords": [
+        "password lifecycle",
+        "multi-factor authentication",
+        "MFA",
+        "password reset policy",
+        "account reset",
+        "SSPR",
+        "account lockout",
+        "five failed attempts",
+        "Identity & Access Management Desk",
+        "Turing Complex Basement",
+        "credential security",
+        "OTP verification"
+      ],
+      "retrieval_signals": [
+        "ERP password reset",
+        "how to reset college password",
+        "LMS password forgot",
+        "account locked five failed attempts",
+        "self service password reset SSPR",
+        "MFA setup Demo University",
+        "Identity and Access Management desk location",
+        "password reset in person Turing complex",
+        "OTP not coming for password reset",
+        "how often do passwords expire",
+        "change ERP password online",
+        "IT account unlock procedure",
+        "password complexity requirements",
+        "student portal password forgotten",
+        "reset single sign on password"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "LearnSphere LMS"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Enterprise Systems Administrator",
+        "IT End-User Support Specialist"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "IT-SYS-001",
+        "IT-SYS-004"
+      ],
+      "content": "1. PURPOSE AND SECURITY PRINCIPLES\nThis policy defines the standards governing user identity provisioning, password complexity, account lockout thresholds, multi-factor authentication (MFA) requirements, and verified account reset workflows across Demo University enterprise systems.\n\n2. PASSWORD COMPLEXITY AND LIFECYCLE RULES\n2.1 Complexity Standards: User passwords across UniCampus ERP, LearnSphere LMS, and network access accounts must possess:\n  a) Minimum length of 10 alphanumeric characters.\n  b) At least one uppercase letter, one lowercase letter, one numeric digit, and one special symbol.\n  c) Prohibition of easily guessable tokens, sequential numbers, or personal biographic elements (birthdates, student registration numbers).\n2.2 Lifecycle and Rotation: Passwords remain valid for 180 calendar days. Automated reminder notifications are dispatched via institutional email at 14, 7, and 1 day prior to expiration.\n\n3. ACCOUNT LOCKOUT AND DEFENSE THRESHOLDS\nTo mitigate brute-force credential guessing, user accounts are automatically locked upon five consecutive failed authentication attempts. Locked accounts remain suspended for a mandatory lockout window of 30 minutes before automatic retry is permitted.\n\n4. SELF-SERVICE AND PHYSICAL ACCOUNT RESET PROCEDURES\n4.1 Self-Service Password Reset (SSPR): Users who have registered an authenticated recovery mobile phone number or secondary email may initiate automated SSPR via the login portal, receiving a time-limited 6-digit OTP verification code.\n4.2 In-Person Identity Verification: Students unable to resolve account lockouts via SSPR must visit the Identity & Access Management Desk, located in Turing Complex, Ground Floor Basement Server Hub. Re-credentialing requires physical presentation of their official Demo University RFID Smart ID card.\n4.3 Remote Verification via ResolveDesk: Outstation students or scholars engaged in verified internships may log an account recovery ticket on ResolveDesk, attaching certified government photo identification to verify identity before credentials are regenerated."
+    },
+    {
+      "document_id": "IT-POL-003",
+      "title": "Campus Cybersecurity and Network Infrastructure Usage Policy",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Policy / Security Standard",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students and Faculty",
+        "Research Scholars",
+        "Student Club Technical Leads",
+        "Network Operations Centre Staff"
+      ],
+      "keywords": [
+        "cybersecurity policy",
+        "network infrastructure usage",
+        "firewall rules",
+        "port whitelisting",
+        "port 8080 unblock",
+        "SSH access",
+        "hackathon VM provisioning",
+        "LabServer Forge",
+        "prohibited rogue routers",
+        "unauthorized access points",
+        "cybersecurity monitoring",
+        "REL-022"
+      ],
+      "retrieval_signals": [
+        "cybersecurity policy Demo University",
+        "request server or GPU for hackathon",
+        "unblock port 8080 or SSH on hostel Wi-Fi for project",
+        "cloud VM provisioning for college club",
+        "can I connect router in hostel room",
+        "firewall blocking git push from lab",
+        "NSS firewall port unblock request",
+        "hackathon server infrastructure provisioning",
+        "LabServer Forge access request",
+        "network security guidelines research scholars",
+        "prohibition of rogue access points",
+        "packet sniffing penalty campus network",
+        "firewall policy student projects",
+        "cybersecurity whitelisting procedure",
+        "port 22 SSH blocked on campus Wi-Fi"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "LabServer Forge",
+        "CampusPass"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Network Operations Centre (NOC) Lead",
+        "Enterprise Systems Administrator",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "IT-POL-001",
+        "IT-SEC-003",
+        "IT-OPS-002",
+        "REL-022"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL SCOPE\nThis policy establishes security controls, perimeter firewall architectures, server virtualization provisioning norms, and network hygiene requirements protecting university digital infrastructure against cyber intrusions, external vulnerabilities, and unauthorized access.\n\n2. PERIMETER FIREWALL RULES AND TRAFFIC FILTERING\n2.1 Outbound & Inbound Controls: The university core firewall operates default-deny postures on non-standard incoming ports. Standard web protocols (HTTP/HTTPS) and verified academic traffic are permitted.\n2.2 Development Port Restrictions: Direct outbound access on development protocols (such as SSH on port 22, alternate HTTP on port 8080, database ports 3306/5432) from general student residential Wi-Fi subnets is restricted to prevent botnet propagation and unauthorized remote shells.\n\n3. TECHNICAL RESEARCH & HACKATHON SERVER PROVISIONING (REL-022)\n3.1 VM & GPU Provisioning: Student academic teams or chartered technical clubs organizing hackathons or conducting AI/cloud research may request dedicated virtual machines or GPU containers hosted on LabServer Forge.\n3.2 Application and Whitelisting Procedure: The student lead submits a technical request on ResolveDesk at least five working days prior to project initiation, specifying required CPU/RAM configurations, targeted inbound/outbound ports (e.g., 8080, 22), and receiving endorsement from the Department HOD. Network Security Services (NSS) validates security isolation and deploys temporary firewall whitelisting rules.\n\n4. PROHIBITED NETWORK HARDWARE\nConnecting personal Wi-Fi routers, unmanaged network switches, wireless repeaters, or unauthorized DHCP servers to hostel LAN wall jacks or academic ethernet ports is strictly prohibited. Detected rogue devices are blacklisted immediately via port-security shutdown on core switches."
+    },
+    {
+      "document_id": "IT-STF-001",
+      "title": "Hardware Lab Maintenance Responsibilities",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Operational Guide / Staff Charter",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Technical Assistants (Lab Technicians)",
+        "IT End-User Support Staff",
+        "Department Laboratory In-Charges",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "Technical Assistant",
+        "TA duties",
+        "hardware lab maintenance",
+        "workstation maintenance",
+        "peripheral checks",
+        "OS image deployment",
+        "cable management",
+        "machine calibration",
+        "lab technician responsibilities",
+        "escalation to NOC",
+        "ResolveDesk hardware work order"
+      ],
+      "retrieval_signals": [
+        "TA support",
+        "call the lab TA for machine calibration",
+        "TA not opening mechanical workshop",
+        "technical assistant signature on lab record",
+        "lab PC keyboard not working",
+        "who fixes broken computers in engineering labs",
+        "hardware lab maintenance responsibilities",
+        "Technical Assistant role in computer lab",
+        "lab technician contact details",
+        "computer lab monitor not turning on",
+        "mouse not working in Turing lab",
+        "OS image reinstallation lab PC",
+        "lab machine repair work order",
+        "technical assistant vs teaching assistant",
+        "lab equipment maintenance schedule"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Technical Assistant (Lab Technician)",
+        "Department Laboratory In-Charge",
+        "IT End-User Support Specialist",
+        "Director of IT Infrastructure"
+      ],
+      "related_documents": [
+        "IT-LAB-004",
+        "IT-FAC-001",
+        "ACAD-CRS-001"
+      ],
+      "content": "1. OPERATIONAL CHARTER AND MANDATE\nTechnical Assistants (TAs) are full-time technical staff members assigned across engineering and computing laboratories. Governed under IT Services and academic department oversight, this charter defines daily machine maintenance obligations, hardware health diagnostics, operating system image deployments, and escalation workflows.\n\n2. DAILY PRE-SESSION WORKSTATION AUDITS\n2.1 Morning Inspection: Prior to the commencement of morning academic laboratory sessions (08:30 AM), Technical Assistants must perform physical inspections of assigned lab bays:\n  - Verifying power supply continuity and surge protector operations.\n  - Auditing input peripherals (keyboards, optical mice) and display monitor cables.\n  - Ensuring network patch cords are seated and verifying local subnet connectivity.\n2.2 Operating System Image Integrity: Maintaining standardized dual-boot Linux and Windows workstation disk images, ensuring course software dependencies (compilers, IDEs, databases) remain uncorrupted.\n\n3. MAINTENANCE, LOGGING, AND REPAIR WORKFLOWS\n3.1 Minor Hardware Failures: TAs maintain emergency spares of keyboards, mice, network cables, and RAM modules. Defective peripherals are swapped immediately from lab stock.\n3.2 Major Hardware Breakdowns: Component failures involving motherboards, power supply units (PSUs), or network switches are logged within four hours on ResolveDesk under 'Hardware Support'.\n3.3 Equipment Safety & Calibration: Assisting faculty instructors with experimental test benches, ensuring adherence to electrical grounding standards, and supervising lab cleanliness.\n\n4. COGNITIVE DISAMBIGUATION NOTICE\nThis charter applies exclusively to full-time technical staff (Technical Assistants - TAs). Academic tutoring, grading, and tutorial duties are executed by graduate Teaching Assistants (TAs) governed under ACAD-POL-007."
+    },
+    {
+      "document_id": "IT-OPS-002",
+      "title": "Campus Network Operations Centre (NOC) Architecture and Escalations",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Operational Architecture & Escalation SOP",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Network Operations Engineers",
+        "IT Infrastructure Team",
+        "Campus Security Personnel",
+        "University Administrative Leadership"
+      ],
+      "keywords": [
+        "Network Operations Centre",
+        "NOC",
+        "network architecture",
+        "core switches",
+        "fiber optic backbone",
+        "ISP peering",
+        "network outage escalations",
+        "fiber cut response",
+        "bandwidth monitoring",
+        "maintenance window",
+        "Turing Complex Basement Hub"
+      ],
+      "retrieval_signals": [
+        "NOC contact",
+        "NOC contact details",
+        "Wi-Fi is down in Newton hall did NOC respond",
+        "NOC network outage maintenance announcement",
+        "campus internet completely down",
+        "Network Operations Centre location",
+        "NOC escalation procedure",
+        "fiber optic cable cut on campus",
+        "core switch failure network downtime",
+        "NOC phone number emergency",
+        "campus network outage report",
+        "scheduled internet maintenance window NOC",
+        "NOC vs No Objection Certificate",
+        "network backbone failure Demo University",
+        "internet speed slow NOC alert"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Network Operations Centre (NOC) Lead",
+        "Network Infrastructure Engineer",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "IT-SYS-005",
+        "IT-POL-003",
+        "IT-SEC-003"
+      ],
+      "content": "1. MISSION AND PHYSICAL INFRASTRUCTURE\nThe Network Operations Centre (NOC) operates from the Central Server Hub in the Turing Complex Ground Floor Basement. Acting as the nerve center for campus telecommunications and enterprise networking, the NOC manages core layer-3 routing switches, distribution fiber trunks, enterprise wireless controllers, and dual redundant tier-1 Internet Service Provider (ISP) gateway links.\n\n2. CAMPUS BACKBONE TOPOLOGY\n2.1 Optical Fiber Trunking: High-capacity multi-gigabit optical fiber rings interconnect the North Academic Quadrant, South Research Hub, Central Administration, and East Residential Enclave.\n2.2 Redundant Core Routing: The core routing architecture employs automated failover protocol switching, ensuring uninterrupted network operations in the event of primary link or distribution switch failures.\n\n3. INCIDENT MONITORING AND ESCALATION PROTOCOLS\n3.1 24/7 Telemetry Monitoring: NOC monitoring consoles continuously poll distribution switches, access points, and server virtual machines. Link state down alerts trigger instantaneous technician dispatch.\n3.2 Incident Severity Tiers:\n  - Severity 1 (Campus-Wide Outage / Core Link Down): NOC Lead mobilizes emergency response within 15 minutes. Escalation to Director of IT Infrastructure within 30 minutes.\n  - Severity 2 (Block-Level / Distribution Trunk Failure): On-site diagnosis within 45 minutes; restoration within 2 to 4 hours.\n  - Severity 3 (Isolated Access Point / Floor Switch Failure): Resolution scheduled within standard working hours (SLA: 24 hours).\n\n4. MAINTENANCE WINDOWS AND CAMPUS ADVISORIES\nScheduled firmware updates, core routing table revisions, and disruptive infrastructure upgrades are conducted exclusively during designated maintenance windows (Sundays between 01:00 AM and 05:00 AM). The NOC publishes advance maintenance advisories via institutional email at least 48 hours prior to scheduled disruptions."
+    },
+    {
+      "document_id": "IT-LAB-004",
+      "title": "Computer Laboratory Acceptable Use and Hardware Security",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Laboratory Rules / Safety Manual",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Utilizing Computer Labs",
+        "Technical Assistants",
+        "Course Instructors",
+        "Department Lab In-Charges"
+      ],
+      "keywords": [
+        "computer lab rules",
+        "Lab PC",
+        "hardware security",
+        "desktop personal computer",
+        "unauthorized software installation ban",
+        "peripheral theft prevention",
+        "USB port security",
+        "machine damage fine",
+        "reboot hygiene",
+        "Turing Complex labs",
+        "Faraday Tower labs"
+      ],
+      "retrieval_signals": [
+        "computer lab rules",
+        "PC not working",
+        "computer issue",
+        "lab PC keyboard not working",
+        "software installation on lab PC for project",
+        "can I install games on college lab computer",
+        "computer lab PC dead",
+        "monitor displaying no signal lab PC",
+        "USB drive not working on lab computer",
+        "eating food inside computer lab fine",
+        "lab desktop shutdown policy",
+        "stolen mouse from computer lab",
+        "how to report faulty lab computer",
+        "computer lab dress code and hours",
+        "PC hardware issue in Turing lab"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Technical Assistant (Lab Technician)",
+        "Department Laboratory In-Charge",
+        "IT End-User Support Specialist",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "IT-STF-001",
+        "IT-FAC-001",
+        "IT-POL-001",
+        "POL-DISCIPLINE"
+      ],
+      "content": "1. REGULATORY PURPOSE\nThis operational manual defines user protocols, hardware security standards, and ethical operating rules for desktop personal computers (Lab PCs) installed across departmental computing suites and software studios in the Turing Complex, Faraday Tower, Newton Hall, and Ramanujan Block.\n\n2. GENERAL OPERATING HYGIENE AND ENTRY RULES\n2.1 Environmental Preservation: Eating meals, consuming snacks, or bringing open beverage containers into computer laboratories is strictly forbidden. Sealed water bottles must remain stored inside personal backpacks.\n2.2 Identification Display: Students must visibly wear their official Demo University RFID Smart ID card while inside laboratory facilities and present credentials upon request by Technical Assistants.\n\n3. COMPUTING INTEGRITY AND PERMITTED USE\n3.1 Prohibition of Unauthorized Software: Students are strictly forbidden from downloading, executing, or installing personal software, gaming clients, cryptocurrency miners, or unlicensed executables onto Lab PCs. Workstations run standardized centralized images; local administrator privileges are not provisioned to students.\n3.2 Peripheral Protection: Removing, disconnecting, or swapping system peripherals (monitors, keyboards, mice, power cords, HDMI cables) between workstations without permission from the Technical Assistant is prohibited.\n3.3 Data Storage & Reboot Hygiene: Local hard drives are purged during automated nightly reboots. Students must store coursework and project files on institutional cloud storage or course repository accounts.\n\n4. HARDWARE VANDALISM AND PUNITIVE MEASURES\nDefacing computer casings, prying off keyboard keycaps, or intentionally damaging internal components constitutes property destruction under POL-DISCIPLINE. Infractions incur 100% replacement restitution billed via PayVarsity and referral to the Proctorial Board for disciplinary suspension."
+    },
+    {
+      "document_id": "IT-SEC-003",
+      "title": "Campus Network Security Services (NSS) and Firewall Configuration",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Technical Security Standard",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Network Security Engineers",
+        "NOC Staff",
+        "Research Project Leads",
+        "Faculty Advisors"
+      ],
+      "keywords": [
+        "Network Security Services",
+        "NSS",
+        "firewall configuration",
+        "threat management",
+        "port filtering",
+        "academic whitelisting",
+        "port 8080 unblock",
+        "SSH access",
+        "intrusion prevention",
+        "content filtering",
+        "NSS ticket ResolveDesk"
+      ],
+      "retrieval_signals": [
+        "NSS firewall",
+        "NSS blocked access to GitHub repository from lab",
+        "request NSS firewall port unblock for research",
+        "NSS contact IT department",
+        "firewall configuration Demo University",
+        "unblock port on college network",
+        "NSS security rules",
+        "academic repository blocked by college firewall",
+        "firewall exception request procedure",
+        "NSS vs National Service Scheme",
+        "how to bypass college firewall legally",
+        "intrusion prevention system alert campus",
+        "network security services team location",
+        "port 8080 blocked in hostel Wi-Fi NSS",
+        "cyber security firewall ticket"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Network Operations Centre (NOC) Lead",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "IT-POL-003",
+        "IT-OPS-002",
+        "REL-022"
+      ],
+      "content": "1. MISSION AND MANDATE\nNetwork Security Services (NSS) operates as the specialized cybersecurity and threat defense division within IT Services. Stationed within the Turing Complex Central Server Hub, NSS manages campus perimeter next-generation firewalls, intrusion prevention systems (IPS), web content filtering gateways, and secure virtual private network (VPN) tunnels.\n\n2. CONTENT FILTERING AND PORT GOVERNANCE\n2.1 Statutory Filtering Categories: The perimeter gateway blocks access to known malicious domains, phishing hosts, gambling portals, peer-to-peer torrent trackers, and explicit content networks in compliance with national cyber regulations.\n2.2 Default Closed Port Architecture: To safeguard student devices against external network probes, non-standard outbound and inbound ports (including telnet, raw database listeners, and unencrypted file transfer ports) are closed by default across residential and general campus Wi-Fi subnets.\n\n3. RESEARCH AND ACADEMIC WHITELISTING PROCEDURE\n3.1 Legitimate Academic Exceptions: Faculty members, research scholars, and students conducting verified capstone projects who require access to blocked academic repositories, remote research instruments, or specialized development ports (such as SSH on port 22 or web services on port 8080) may request formal firewall whitelisting.\n3.2 Application Workflow: The applicant submits an official 'Firewall Whitelisting Exception' ticket on ResolveDesk, attaching a project abstract endorsed by their Course Instructor or HOD. NSS reviews the technical specification, validates source/destination IP addresses, and implements policy exceptions within two working days.\n\n4. DISAMBIGUATION NOTICE\nThis technical security standard applies to Network Security Services (NSS) within IT Services. The National Service Scheme (NSS) community volunteer organization operates independently under Clubs and Student Activities (DEPT-SAC)."
+    },
+    {
+      "document_id": "IT-FAC-001",
+      "title": "Central Computing Centre (CC) Operating Hours and Machine Allotment",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Facility Guide / Policy",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Research Scholars",
+        "Technical Assistants",
+        "Faculty Members"
+      ],
+      "keywords": [
+        "Central Computing Centre",
+        "CC operating hours",
+        "machine allotment",
+        "Turing Complex CC",
+        "Linux workstations",
+        "overnight exam access",
+        "24-hour computing",
+        "RFID smart card login",
+        "programming contest venue",
+        "CC rules and decorum"
+      ],
+      "retrieval_signals": [
+        "CC computer lab",
+        "is CC open overnight during semester exams",
+        "how to log in to Linux workstation in CC",
+        "Central Computing Centre timings",
+        "CC opening hours Turing complex",
+        "where is Central Computing Centre located",
+        "book CC workstation for project",
+        "CC lab open on Sunday",
+        "Linux terminal access CC",
+        "overnight computer lab permission exams",
+        "CC machine reservation policy",
+        "Central Computing Centre rules",
+        "CC vs Course Coordinator",
+        "coding practice lab Turing complex",
+        "computer centre helpdesk"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "Technical Assistant (Lab Technician)",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "IT-LAB-004",
+        "IT-STF-001",
+        "IT-POL-001",
+        "POL-SEE"
+      ],
+      "content": "1. FACILITY OVERVIEW AND LOCATION\nThe Central Computing Centre (CC) is situated on the Ground and First Floors of the Turing Complex. Serving as the premier centralized high-performance computing facility at Demo University, the CC houses over 400 networked multi-core desktop workstations configured with standardized Linux (Ubuntu LTS) and Windows development environments.\n\n2. OPERATING HOURS AND CALENDAR\n2.1 Standard Operating Hours (Academic Terms):\n  - Monday through Friday: 08:00 AM to 10:00 PM.\n  - Saturday: 09:00 AM to 06:00 PM.\n  - Sunday: Closed for system maintenance and image patching.\n2.2 Extended 24-Hour Examination Access: During the two weeks preceding and throughout active Semester End Examinations (SEE), the CC operates continuously on a 24-hour schedule to support student preparation and coding revision.\n\n3. MACHINE ALLOTMENT AND ACCESS PROTOCOLS\n3.1 Smart ID Authentication: Admittance requires physical swiping of the student's Demo University RFID Smart ID card at turnstiles linked to CampusPass. Workstation login requires active university SSO credentials.\n3.2 Open-Access Seating: Workstations operate on a first-come, first-served basis during open lab hours, except during scheduled departmental practical assessments or sanctioned coding competitions.\n3.3 Reservation for Contests & Hackathons: Student clubs organizing technical hackathons may reserve blocks of workstations via ResolveDesk at least five working days in advance with SAC sanction.\n\n4. DISAMBIGUATION NOTICE\nThis facility guide governs the physical Central Computing Centre (CC). The academic role of Course Coordinator (CC) refers to senior faculty overseeing multi-section curriculum delivery under DEPT-ACAD."
+    },
+    {
+      "document_id": "IT-SOP-004",
+      "title": "Biometric and RFID Hardware Troubleshooting Protocol",
+      "department": "Information Technology Services",
+      "department_id": "DEPT-IT",
+      "document_type": "Standard Operating Procedure (SOP)",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "IT Hardware Support Engineers",
+        "Technical Assistants",
+        "Course Instructors",
+        "Academic Affairs Administrators"
+      ],
+      "keywords": [
+        "biometric troubleshooting",
+        "RFID hardware protocol",
+        "IoT edge terminal",
+        "AttendEdge sync error",
+        "attendance glitch",
+        "raw timestamp audit",
+        "classroom terminal failure",
+        "retroactive database patch",
+        "48-hour sync rule",
+        "ResolveDesk attendance ticket",
+        "REL-017"
+      ],
+      "retrieval_signals": [
+        "biometric machine didn't record my attendance",
+        "attendance showing absent even though I was in class",
+        "how to rectify biometric error with teacher",
+        "ResolveDesk ticket for attendance glitch",
+        "biometric terminal sync delay",
+        "RFID card not scanning in classroom",
+        "AttendEdge attendance not updating on phone",
+        "biometrc not wrking",
+        "attendnce not updting",
+        "classroom biometric machine offline",
+        "retroactive attendance correction IT",
+        "edge terminal hardware troubleshooting",
+        "biometric fingerprint sensor error",
+        "attendance glitch CSE301",
+        "hardware sync log audit AttendEdge"
+      ],
+      "systems": [
+        "AttendEdge",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Director of IT Infrastructure",
+        "IT End-User Support Specialist",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "IT-SYS-004",
+        "POL-ATTEND",
+        "ACAD-POL-004",
+        "REL-017"
+      ],
+      "content": "1. PURPOSE AND WORKFLOW SCOPE\nThis Standard Operating Procedure defines the systematic diagnostic steps, audit verification protocols, and database rectification workflows required to resolve classroom IoT biometric edge terminal synchronization failures, RFID card-read errors, and AttendEdge attendance discrepancies.\n\n2. TERMINAL HARDWARE ARCHITECTURE\nClassroom attendance edge units located at lecture hall doors capture RFID card proximity taps and biometric scans, caching raw timestamp logs locally before synchronizing across campus networks to the central AttendEdge database.\n\n3. DISCREPANCY RECTIFICATION WORKFLOW (REL-017)\nWhen an edge terminal fails to synchronize attendance data (causing registered students to reflect as absent despite physical attendance), the following multi-department workflow is enforced:\n3.1 Step 1 — Ticket Logging: Within 48 hours of the incident, the student logs an 'Attendance Biometric Glitch' ticket on ResolveDesk, specifying course code, date, lecture time slot, and classroom door number.\n3.2 Step 2 — IT Telemetry & Raw Log Audit: An IT Services support technician extracts local diagnostic logs from the specific classroom IoT terminal, checking for hardware crash dumps, buffer overflow, or network timeout records to verify physical presence timestamps.\n3.3 Step 3 — Faculty Physical Reconciliation: The Course Instructor cross-verifies manual classroom notes or signature rosters to corroborate physical classroom presence.\n3.4 Step 4 — Academic Authorization: The Head of Department and Dean of Academic Affairs review the joint technical and faculty report, authorizing a retroactive database patch.\n3.5 Step 5 — Database Patch & Sync: IT Services applies the authorized attendance adjustment in AttendEdge, updating cumulative attendance percentages within 24 hours."
+    }
+  ]
+}

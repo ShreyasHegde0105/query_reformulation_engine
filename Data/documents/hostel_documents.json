@@ -1,0 +1,722 @@
+{
+  "domain": "Hostel",
+  "documents": [
+    {
+      "document_id": "POL-HOSTEL-ALLOC",
+      "title": "Student Residential Housing and Hostel Allocation Policy",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Policy",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Hostel Resident Students",
+        "Incoming First-Year Students",
+        "Residential Wardens",
+        "Chief Warden of Hostels"
+      ],
+      "keywords": [
+        "hostel allocation",
+        "residential housing",
+        "room allotment",
+        "Cauvery Hall",
+        "Sarojini Hall",
+        "Nilgiri Hall",
+        "CGPA lottery",
+        "DormTrack allotment",
+        "room transfer medical grounds",
+        "mandatory mess subscription",
+        "unauthorized guest fine",
+        "Rs 5000 fine subletting",
+        "PayVarsity hostel fee"
+      ],
+      "retrieval_signals": [
+        "hostel room allocation",
+        "how to apply for hostel room",
+        "room allocation criteria for first year",
+        "hostel allotment lottery DormTrack",
+        "hostel room change on medical grounds",
+        "can I change hostel room mid semester",
+        "single room allotment procedure in hostel",
+        "fee difference for changing from 4-sharing to 2-sharing",
+        "cauvery hall room allotment",
+        "sarojini hall first year hostel",
+        "unauthorized guest in hostel room fine",
+        "hostel bed subletting penalty Rs 5000",
+        "hostel room allocation date",
+        "confirm hostel seat within 48 hours",
+        "mandatory mess subscription hostel"
+      ],
+      "systems": [
+        "DormTrack",
+        "PayVarsity",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Residential Warden",
+        "Hostel Caretaker",
+        "Chief Finance Officer / Bursar",
+        "Senior Chief Medical Officer"
+      ],
+      "related_documents": [
+        "HSTL-REG-001",
+        "HSTL-POL-001",
+        "HSTL-POL-002",
+        "POL-MEDICAL-LEAVE",
+        "PROC-HOSTEL-ALLOT",
+        "REL-020"
+      ],
+      "content": "1. PURPOSE AND RESIDENTIAL PRINCIPLES\nHostel Administration and Residence Life (DEPT-HSTL) provides safe, inclusive, and conducive residential communities for enrolled scholars across the East Residential Enclave. Operating from the East Enclave Administrative Annex (Nilgiri Ground Floor), this policy defines room allocation priorities, occupancy tiers, fee confirmation timelines, room transfer restrictions, and occupancy regulations.\n\n2. RESIDENTIAL INFRASTRUCTURE AND OCCUPANCY TIERS\n2.1 Residence Towers: Student residential accommodation is distributed across six designated residence halls: Cauvery, Nilgiri, Vindhya, Brahmaputra, Sarojini, and Gargi.\n2.2 Room Configurations: Accommodation options comprise Single, Twin-Sharing, and 4-Sharing room layouts, available in standard Non-AC and select Air-Conditioned (AC) configurations in Nilgiri Hall.\n\n3. ALLOCATION PRIORITIES AND ALLOTMENT MATRIX (PROC-HOSTEL-ALLOT)\n3.1 Freshmen Priority: First-year outstation undergraduate students receive institutional priority room allotment in Cauvery Hall (male students) and Sarojini Hall (female students) to support safe campus integration.\n3.2 Senior Cohort Allocation: Senior undergraduate and postgraduate students select room configurations through an automated merit-cum-preference lottery executed on DormTrack, ranked by cumulative CGPA.\n3.3 Mandatory Confirmation Window: Allocated students must remit semester room rent and mess advance on PayVarsity within 48 hours of allotment notice. Failure to complete fee payment results in automated revocation of the room allotment.\n\n4. ROOM TRANSFER RESTRICTIONS AND HEALTHCARE EXCEPTIONS (REL-020)\n4.1 Mid-Semester Transfers Prohibited: Room transfers during the active academic semester are strictly prohibited to maintain administrative stability.\n4.2 Medical Exemption Workflow: Room reassignment petitions on certified chronic medical grounds (such as severe respiratory disorders or physical mobility impairments) require prior clinical evaluation and written endorsement from the Senior Chief Medical Officer at the Campus Health Centre. Reallocation is subject to vacancy, with applicable fee differentials adjusted via PayVarsity.\n\n5. MANDATORY MESS AND CONDUCT PROHIBITIONS\n5.1 Compulsory Mess Subscription: Subscription to the hostel dining mess system is mandatory for every residential occupant; opting out while residing on campus is not permitted.\n5.2 Subletting and Unauthorized Guests: Subletting hostel beds, transferring room keys, or hosting unauthorized overnight visitors without prior written warden sanction incurs an immediate statutory fine of Rs. 5,000 and forfeiture of residential privileges."
+    },
+    {
+      "document_id": "POL-HOSTEL-LEAVE",
+      "title": "Hostel Gate Pass, Curfew, and Overnight Leave Policy",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Policy",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Hostel Resident Students",
+        "Residential Wardens",
+        "Hostel Caretakers",
+        "Chief Security Officer",
+        "Parent Guardians"
+      ],
+      "keywords": [
+        "hostel curfew",
+        "gate pass",
+        "night out leave",
+        "overnight leave",
+        "outstation leave",
+        "curfew 9:30 PM",
+        "weekend curfew 10:30 PM",
+        "day out pass 9:00 PM",
+        "DormTrack gate pass",
+        "parent OTP consent",
+        "24 hours advance notice",
+        "10:00 PM roll call",
+        "3 curfew violations eviction",
+        "CampusPass turnstiles"
+      ],
+      "retrieval_signals": [
+        "hostel curfew timing",
+        "night out leave application",
+        "how to apply for night out",
+        "gate pass for hostel students",
+        "hostel gate pass DormTrack",
+        "overnight leave parent OTP approval",
+        "can I stay outside hostel tonight",
+        "weekend outstation leave procedure",
+        "curfew time weekdays and weekends",
+        "what happens if I miss 10 PM roll call",
+        "hostel entry closed after 9:30 PM",
+        "day out pass timing up to 9 PM",
+        "3 curfew violations hostel eviction",
+        "hostel curfiew timing",
+        "nightout pass DormTrack"
+      ],
+      "systems": [
+        "DormTrack",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Residential Warden",
+        "Resident Assistant (RA)",
+        "Chief Security Officer (CSO)",
+        "Parent / Guardian"
+      ],
+      "related_documents": [
+        "HSTL-POL-001",
+        "HSTL-REG-003",
+        "HSTL-REG-004",
+        "POL-DISCIPLINE",
+        "PROC-HOSTEL-GATEPASS"
+      ],
+      "content": "1. PURPOSE AND RESIDENTIAL SAFETY\nThis policy establishes security regulations, evening curfew hours, electronic gate-pass procedures, and parental verification protocols to safeguard student welfare across all campus residence halls.\n\n2. STATUTORY CURFEW HOURS AND ROLL CALL\n2.1 Mandatory Night Curfew: All residential students must swipe inside their designated hostel turnstiles by:\n  a) Weekdays (Monday through Friday): 09:30 PM.\n  b) Weekends (Saturday and Sunday): 10:30 PM.\n2.2 Turnstile Enforcement: Biometric and RFID turnstiles integrated with CampusPass automatically log entry timestamps. Arrivals beyond curfew are flagged as unexcused lateness.\n2.3 Nightly Roll Call (10:00 PM): Floor Resident Assistants (RAs) and Caretakers conduct a physical floor roll call at 10:00 PM nightly. Unreported absence triggers an automated SMS alert to registered parent/guardian mobile numbers and notification to the Proctorial Board.\n\n3. DAY OUT PASS REGULATIONS\nStudents exiting campus for local day outings (shopping, dining, personal errands) may generate an automated Day Out Pass via the DormTrack mobile portal. Day passes permit off-campus leave up to 09:00 PM without requiring parental OTP, provided the student returns and swipes through campus turnstiles before 09:00 PM.\n\n4. OVERNIGHT LEAVE AND OUTSTATION GATE PASS WORKFLOW (PROC-HOSTEL-GATEPASS)\n4.1 Twenty-Four Hour Advance Request: Requests to stay overnight outside campus or travel outstation must be logged on DormTrack at least 24 hours prior to scheduled departure, specifying destination address and travel dates.\n4.2 Mandatory Parent OTP Verification: DormTrack dispatches an automated SMS containing a 6-digit one-time password (OTP) to the registered mobile number of the student's parent/guardian. The request cannot proceed without verified parental OTP input.\n4.3 Warden Authorization and Dynamic QR Issuance: Upon reviewing parental consent, the Residential Warden issues digital authorization, generating a time-limited dynamic QR gate pass on the student's mobile application.\n4.4 Gate Ingress/Egress: The candidate scans the QR pass at Main Gate security turnstiles, recording exit and return timestamps in CampusPass.\n\n5. CURFEW INFRACTIONS AND RESIDENCY CANCELLATION\nRepeated unauthorized absence or curfew violations incur progressive disciplinary sanctions. Accruing three or more unexcused curfew infractions results in immediate cancellation of hostel residency privileges, mandatory room vacation, and forfeiture of residential deposits."
+    },
+    {
+      "document_id": "HSTL-REG-001",
+      "title": "Hostel Admission, Room Allotment Matrix, Fee Structure, and Mess Rules",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Regulations / Handbook",
+      "version": "2.6",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Enrolled Resident Students",
+        "Prospective Hostel Applicants",
+        "Hostel Wardens",
+        "Finance Office"
+      ],
+      "keywords": [
+        "hostel admission regulations",
+        "room allotment matrix",
+        "hostel fee structure",
+        "caution deposit",
+        "mess advance",
+        "PayVarsity hostel dues",
+        "DormTrack room selection",
+        "single twin 4-sharing",
+        "AC room fee",
+        "financial hold ERP",
+        "room check-in inventory",
+        "mess rules"
+      ],
+      "retrieval_signals": [
+        "hostel admission guidelines",
+        "hostel fees structure Demo University",
+        "hostel mess dues payment PayVarsity",
+        "room allotment matrix DormTrack",
+        "hostel caution deposit amount",
+        "ERP registration blocked due to hostel dues",
+        "cannot register courses hostel financial hold",
+        "how to pay hostel mess charges",
+        "check-in day hostel room inventory",
+        "twin sharing vs 4 sharing room fees",
+        "hostel admission eligibility",
+        "hostel fee payment deadline",
+        "dormitory room booking portal",
+        "hostel dues clearance slip",
+        "mess rules and meal timings"
+      ],
+      "systems": [
+        "DormTrack",
+        "PayVarsity",
+        "UniCampus ERP",
+        "CampusPass"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Chief Finance Officer / Bursar",
+        "Residential Warden",
+        "Hostel Caretaker"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-ALLOC",
+        "POL-FEE-PAY",
+        "HSTL-POL-002",
+        "HSTL-POL-004",
+        "REL-005"
+      ],
+      "content": "1. REGULATORY FRAMEWORK\nThese regulations govern the annual admission process, room allotment matrices, fee payment schedules, room inventory verification, and mandatory mess subscriptions for student residences at Demo University.\n\n2. ROOM ALLOTMENT MATRIX AND OCCUPANCY OPTIONS\n2.1 Room Categories: Accommodation options within the six residence towers include:\n  a) 4-Sharing Standard Room: Common bath facilities (Cauvery, Vindhya, Brahmaputra, Sarojini, Gargi).\n  b) Twin-Sharing Standard Room: Common or attached bath facilities.\n  c) Single Room: Reserved primarily for senior postgraduate (M.Tech/MBA) and Ph.D. research scholars.\n  d) Air-Conditioned (AC) Rooms: Available in Nilgiri Hall with supplemental metered power charges.\n2.2 Inventory Verification: On check-in day, the student and caretaker inspect room assets (bed, mattress, study desk, chair, wardrobe, electrical fixtures), signing an asset condition log.\n\n3. FEE STRUCTURE AND PAYMENT SCHEDULE\n3.1 Mandatory Components: Hostel fees comprise three mandatory items:\n  a) Semester Room Rent (determined by room category).\n  b) Semester Mess Advance.\n  c) Refundable Institutional Hostel Caution Deposit (payable at initial admission).\n3.2 PayVarsity Remittance: All dues must be remitted online via PayVarsity. Cash payments are prohibited.\n\n4. FINANCIAL HOLDS AND COURSE REGISTRATION IMPACT (REL-005)\n4.1 Default Consequences: Non-payment of hostel room rent or mess charges beyond notified billing deadlines triggers an automated financial hold flag in UniCampus ERP.\n4.2 Academic Blockade: Students with active hostel financial holds are blocked from completing semester course registration and cannot download Semester End Examination (SEE) hall tickets until accounts are reconciled.\n\n5. GENERAL MESS GOVERNANCE\nResidential occupants must take all meals in their assigned hostel mess facility. Food cannot be removed from dining commons to individual bedrooms except during certified medical illness."
+    },
+    {
+      "document_id": "HSTL-REG-002",
+      "title": "Hostel Operations Division Maintenance SOP and Grievance Logging",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Standard Operating Procedure (SOP)",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Hostel Residents",
+        "Hostel Caretakers",
+        "Estate Maintenance Engineers",
+        "Hostel Operations Division Staff"
+      ],
+      "keywords": [
+        "Hostel Operations Division",
+        "HOD maintenance",
+        "facilities maintenance",
+        "plumbing repairs",
+        "geyser maintenance",
+        "electrical repair",
+        "carpentry work order",
+        "ResolveDesk hostel maintenance",
+        "maintenance SLA",
+        "routine room inspection",
+        "pest control"
+      ],
+      "retrieval_signals": [
+        "complain to HOD about hot water geyser",
+        "HOD hostel room inspection timing",
+        "hostel room maintenance complaint",
+        "hot water not coming in hostel shower",
+        "water leakage in hostel bathroom",
+        "broken study chair replacement hostel",
+        "room fan not working hostel repair",
+        "ResolveDesk ticket for hostel plumbing",
+        "hostel operations division contact",
+        "geyser repair turnaround time hostel",
+        "pest control schedule in hostels",
+        "electrical socket sparking in room",
+        "hostel caretaker complaint desk",
+        "cleanliness issue in hostel washrooms",
+        "HOD maintenance supervisor phone"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "DormTrack"
+      ],
+      "roles": [
+        "Hostel Operations Division (HOD) Supervisor",
+        "Hostel Caretaker",
+        "Director of Campus Operations",
+        "Residential Warden"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-ALLOC",
+        "OPS-POL-001",
+        "HSTL-REG-003",
+        "STU-GUI-001"
+      ],
+      "content": "1. OPERATIONAL PURPOSE\nHostel Operations Division (HOD)—a specialized subunit of Hostel Administration—maintains physical civil infrastructure, plumbing installations, sanitary fixtures, electrical grids, hot water geysers, and room furniture across all six residence halls. This SOP defines reporting workflows, service-level agreements (SLAs), and routine inspection schedules.\n\n2. MAINTENANCE CATEGORIES AND WORKFLOWS\n2.1 Reporting Mechanism: Residents experiencing facility malfunctions must log maintenance requests via the 'Hostel Maintenance' portal on ResolveDesk or submit work orders to the Caretaker Desk.\n2.2 Maintenance Scope:\n  a) Plumbing & Water Supply: Clogged drains, leaking taps, unheated geysers, drinking water purifiers.\n  b) Electrical Infrastructure: Tripped circuit breakers, non-functional ceiling fans, faulty power sockets, fluorescent tube replacement.\n  c) Carpentry & Masonry: Loose door hinges, wardrobe lock repairs, broken window catches, plaster peeling.\n\n3. SERVICE LEVEL AGREEMENTS (SLAS)\n3.1 Emergency Faults (SLA: 4 Hours): Sparking electrical sockets, active pipe burst, or total block power outage.\n3.2 Urgent Plumbing & Hot Water (SLA: 24 Hours): Malfunctioning bathroom geysers or non-functional water cooler stations.\n3.3 General Carpentry & Furniture (SLA: 48 Hours): Study desk adjustments, wardrobe latch repair, or mattress replacement.\n\n4. PERIODIC PREVENTIVE SERVICES\n4.1 Routine Inspections: The Hostel Operations Division conducts bi-monthly routine room inspections of electrical wiring, window safety latches, and plumbing conduits.\n4.2 Sanitation and Pest Control: Mandatory chemical pest control treatments and water tank cleanings are conducted quarterly across all blocks."
+    },
+    {
+      "document_id": "HSTL-REG-003",
+      "title": "Student Resident Code of Conduct, Silence Hours, and Room Inspections",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Regulations / Resident Code",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Hostel Residents",
+        "Residential Wardens",
+        "Resident Assistants (RAs)",
+        "Chief Security Officer"
+      ],
+      "keywords": [
+        "resident code of conduct",
+        "silence hours 11 PM to 6 AM",
+        "room inspection",
+        "substance prohibition",
+        "contraband search",
+        "subletting Rs 5000 fine",
+        "unauthorized guests",
+        "ragging zero tolerance",
+        "hostel misconduct",
+        "Proctorial Board referral"
+      ],
+      "retrieval_signals": [
+        "hostel resident rules and regulations",
+        "silence hours in hostel",
+        "can wardens inspect hostel room unannounced",
+        "playing loud music in hostel penalty",
+        "alcohol in hostel room punishment",
+        "fine for keeping outside guest in room",
+        "hostel room surprise inspection",
+        "smoking in hostel balcony fine",
+        "hostel disciplinary action Demo University",
+        "damage to hostel common room TV",
+        "ragging complaint in hostel block",
+        "cooking inside hostel room penalty",
+        "keeping pets in hostel rooms",
+        "disciplinary eviction from hostel",
+        "warden room check rights"
+      ],
+      "systems": [
+        "DormTrack",
+        "CampusPass",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Residential Warden",
+        "Resident Assistant (RA)",
+        "Chief Security Officer (CSO)",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-ALLOC",
+        "POL-DISCIPLINE",
+        "POL-ANTI-RAGGING",
+        "STU-POL-005"
+      ],
+      "content": "1. CONDUCT MANDATE AND ETHICAL NORMS\nResidential life at Demo University requires adherence to community standards, mutual courtesy, and physical safety. This code regulates behavioral discipline, silence hours, room inspections, and punitive sanctions for non-compliance.\n\n2. SILENCE HOURS AND RESIDENTIAL QUIETUDE\n2.1 Prescribed Silence Hours: Mandatory silence hours are observed across all residence halls daily from 11:00 PM to 06:00 AM.\n2.2 Noise Prohibitions: Playing loud musical instruments, operating high-volume audio speakers, shouting in corridors, or conducting rowdy gatherings during silence hours is strictly prohibited to ensure uninterrupted study and sleep.\n\n3. CONTRABAND AND STRICT BEHAVIORAL PROHIBITIONS\n3.1 Prohibited Substances: Possession, consumption, or storage of alcohol, tobacco products, e-cigarettes, narcotics, or dangerous contraband is strictly forbidden. Discovered contraband results in immediate hostel eviction and referral to the Proctorial Board for academic suspension.\n3.2 Unauthorized Overnight Guests: Permitting outside friends, day-scholar students, or unauthorized visitors to stay overnight in hostel rooms is forbidden and incurs an immediate fine of Rs. 5,000 per occupant and potential eviction.\n\n4. WARDEN SURPRISE ROOM INSPECTIONS\n4.1 Inspection Authority: Residential Wardens, accompanied by Hostel Caretakers or Security Vigilance Officers, possess legal statutory authority to conduct unannounced room inspections to verify health, cleanliness, and contraband absence.\n4.2 Search Protocol: In female residence halls (Sarojini and Gargi), inspections are conducted exclusively by female wardens or female security personnel.\n\n5. DISCIPLINARY ESCALATION\nSevere misconduct, vandalism, fighting, or ragging in residential blocks triggers instant suspension of residency and referral to the Dean of Student Welfare under POL-DISCIPLINE."
+    },
+    {
+      "document_id": "HSTL-REG-004",
+      "title": "Residence Hall Leadership and Resident Assistant (RA) Duties",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Charter / Operational Guidelines",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Resident Assistants (RAs)",
+        "Hostel Residents",
+        "Residential Wardens",
+        "Chief Warden of Hostels"
+      ],
+      "keywords": [
+        "Resident Assistant",
+        "RA duties",
+        "floor leadership",
+        "10:00 PM roll call",
+        "attendance check",
+        "hostel mentoring",
+        "junior support",
+        "maintenance reporting",
+        "curfew monitoring",
+        "RA eligibility",
+        "DormTrack roll call"
+      ],
+      "retrieval_signals": [
+        "who is the RA for my hostel floor",
+        "how to become a Resident Assistant",
+        "RA duties and responsibilities hostel",
+        "who is the RA for Cauvery Hall 3rd floor",
+        "report water leakage to floor RA",
+        "RA sign-off for night roll call",
+        "10 PM hostel attendance roll call RA",
+        "hostel resident assistant selection criteria",
+        "can an undergraduate be an RA",
+        "RA scholarship or room rent waiver",
+        "complaint against floor RA",
+        "junior student mentoring by RA",
+        "RA night curfew inspection",
+        "residence hall student leadership",
+        "RA role Demo University"
+      ],
+      "systems": [
+        "DormTrack",
+        "CampusPass",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Resident Assistant (RA)",
+        "Residential Warden",
+        "Hostel Caretaker",
+        "Chief Warden of Hostels"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-LEAVE",
+        "HSTL-POL-001",
+        "HSTL-REG-003",
+        "STU-POL-002"
+      ],
+      "content": "1. PURPOSE AND RESIDENTIAL LEADERSHIP\nThe Resident Assistant (RA) system establishes student peer leadership across all residential blocks at Demo University. Senior student residents appointed as RAs serve as operational liaisons between floor occupants, caretakers, and residential wardens, ensuring safety, maintaining decorum, and supporting freshmen integration.\n\n2. ELIGIBILITY AND SELECTION CRITERIA\n2.1 Academic Merit: Minimum cumulative CGPA of 7.50 with zero uncleared backlogs.\n2.2 Residential Standing: Minimum of one year of prior on-campus residency with an exemplary conduct record (zero disciplinary citations or curfew infractions).\n2.3 Selection: Selected annually in July through structured interviews conducted by the Chief Warden of Hostels.\n\n3. CORE OPERATIONAL RESPONSIBILITIES\n3.1 Nightly Roll Call (10:00 PM): Conducting the compulsory physical attendance check across assigned floor rooms at 10:00 PM nightly, logging present/absent statuses via the DormTrack mobile terminal.\n3.2 Curfew Monitoring: Reporting unauthorized absences, late arrivals, or room overcrowding to the Residential Warden.\n3.3 Facility Liaison: Collating floor maintenance issues (lighting, geysers, washrooms) and expediting resolution with the Hostel Operations Division (HOD).\n3.4 Junior Mentorship & Anti-Ragging Vigilance: Assisting first-year residents with campus orientation and acting as front-line vigilance observers against covert bullying or ragging rituals.\n\n4. HONORARIUM AND TENURE\nAppointed RAs serve a tenure of one academic year and receive a 50% concession on semester hostel room rent credited via PayVarsity."
+    },
+    {
+      "document_id": "HSTL-POL-001",
+      "title": "Hostel Gate Pass, Night Out Leave, and Weekend Outstation Policy",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Policy / Operational Guidelines",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Hostel Resident Students",
+        "Residential Wardens",
+        "Security Gate Staff",
+        "Parent Guardians"
+      ],
+      "keywords": [
+        "gate pass policy",
+        "night out leave",
+        "weekend outstation pass",
+        "DormTrack gate pass",
+        "parent OTP consent",
+        "24-hour advance submission",
+        "dynamic QR code pass",
+        "CampusPass turnstiles",
+        "curfew violation tracking",
+        "night out limits",
+        "unauthorized absence SMS"
+      ],
+      "retrieval_signals": [
+        "how to apply for night out",
+        "night out pass DormTrack",
+        "weekend gate pass procedure",
+        "hostel outstation leave form",
+        "parent OTP not received for night out",
+        "how many night outs allowed per month",
+        "qr code gate pass main gate turnstile",
+        "going home for weekend hostel permission",
+        "gate pass application deadline 24 hours",
+        "can warden reject night out request",
+        "late entry gate pass penalty",
+        "emergency outstation pass on short notice",
+        "DormTrack digital gate pass generation",
+        "turnstile scan exit timestamp CampusPass",
+        "hostel outstation approval workflow"
+      ],
+      "systems": [
+        "DormTrack",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Residential Warden",
+        "Chief Security Officer (CSO)",
+        "Chief Warden of Hostels",
+        "Parent / Guardian"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-LEAVE",
+        "HSTL-REG-003",
+        "HSTL-REG-004",
+        "PROC-HOSTEL-GATEPASS"
+      ],
+      "content": "1. OPERATIONAL PURPOSE\nThis operational policy details the step-by-step digital mechanisms, authorization tiers, and security verification procedures required for residential students leaving campus for day trips, overnight stays, or weekend outstation travel.\n\n2. PASS CATEGORIES AND USAGE NORMS\n2.1 Category A — Day Outing Pass:\n  - Permitted Hours: 06:00 AM to 09:00 PM on any day.\n  - Authorization: Auto-generated via DormTrack upon self-declaration. Does not require parental OTP.\n  - Condition: Resident must return and swipe through campus turnstiles before 09:00 PM.\n2.2 Category B — Night Out / Local Overnight Pass:\n  - Scope: Staying overnight with local guardians or approved local accommodation.\n  - Condition: Requires 24-hour advance application on DormTrack and verified parental OTP.\n2.3 Category C — Weekend Outstation Travel Pass:\n  - Scope: Traveling to hometown or out-of-town locations over weekends or official university holidays.\n  - Condition: Requires 24-hour advance application, destination details, transit itinerary, and verified parental OTP.\n\n3. DIGITAL STEP-BY-STEP WORKFLOW (PROC-HOSTEL-GATEPASS)\n3.1 Application: Student logs into DormTrack, creates leave request, enters travel details, and clicks 'Request Parent Verification'.\n3.2 Parental OTP: DormTrack sends an automated SMS with a 6-digit OTP to the registered mobile number of the parent/guardian. The parent provides the OTP to confirm consent.\n3.3 Warden Digital Review: The Residential Warden audits leave history and approves the request, generating a dynamic QR pass.\n3.4 Main Gate Scanning: The student scans the QR pass at Main Gate turnstiles; exit and return timestamps are logged in CampusPass.\n\n4. IRREGULARITIES AND LOCKS\nFailure to swipe back inside campus upon pass expiration triggers an automated alert to parents and blocks subsequent gate-pass generation on DormTrack."
+    },
+    {
+      "document_id": "HSTL-POL-002",
+      "title": "Hostel Dining Commons, Mess Committee, and Diet Change Regulations",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Regulations / Dining Manual",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Hostel Residents",
+        "Student Mess Committee",
+        "Catering Contractors",
+        "Chief Warden of Hostels"
+      ],
+      "keywords": [
+        "dining commons",
+        "hostel mess",
+        "mess committee",
+        "diet change regulations",
+        "veg non-veg switcher",
+        "DormTrack mess plan",
+        "meal timings",
+        "hygiene audits",
+        "mess rebate rules",
+        "food quality inspection"
+      ],
+      "retrieval_signals": [
+        "hostel mess timings",
+        "how to change mess from veg to non veg",
+        "mess rebate for vacation",
+        "diet change deadline DormTrack",
+        "complaint about hostel mess food",
+        "student mess committee members",
+        "central dining commons rules",
+        "mess bill deduction for outstation leave",
+        "can day scholars eat in hostel mess",
+        "hostel food hygiene inspection",
+        "weekend special dinner timings",
+        "mess card scanning at dining hall",
+        "dining hall dress code and conduct",
+        "switching mess between hostels",
+        "catering vendor contract complaint"
+      ],
+      "systems": [
+        "DormTrack",
+        "PayVarsity",
+        "CampusPass"
+      ],
+      "roles": [
+        "Catering & Mess Supervisory Board Head",
+        "Student Mess Committee Chair",
+        "Hostel Caretaker",
+        "Chief Warden of Hostels"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-ALLOC",
+        "HSTL-REG-001",
+        "HSTL-REG-003",
+        "RESOLVE-DESK-GUIDE"
+      ],
+      "content": "1. PURPOSE AND DINING GOVERNANCE\nDemo University operates the Central Dining Commons and six dedicated hostel mess facilities (Cauvery, Nilgiri, Vindhya, Brahmaputra, Sarojini, and Gargi) serving nutritious, hygienic, and well-balanced meals. These regulations govern meal service timings, dietary switching, mess rebates, and student oversight.\n\n2. MEAL SCHEDULES AND ACCESS PROTOCOLS\n2.1 Standard Meal Timings:\n  a) Breakfast: 07:30 AM to 09:15 AM.\n  b) Lunch: 12:15 PM to 02:00 PM.\n  c) Evening Snacks: 05:00 PM to 06:15 PM.\n  d) Dinner: 07:30 PM to 09:15 PM.\n2.2 Access Validation: Students validate entrance to dining halls by tapping their RFID Smart ID card on turnstiles connected to DormTrack/CampusPass.\n\n3. DIET SWITCHING (VEG / NON-VEG / SPECIAL DIET)\n3.1 Digital Switcher Module: Students may change meal plans (Vegetarian, Non-Vegetarian, or Jain/Special Diet) via the Diet Switcher module on DormTrack.\n3.2 Monthly Cutoff: Diet switch requests must be submitted before the 25th calendar day of the preceding month to enable catering inventory planning.\n\n4. STUDENT MESS COMMITTEE AND HYGIENE INSPECTIONS\n4.1 Committee Mandate: A Student Mess Committee comprising elected student representatives from each block inspects raw food supplies, monitors kitchen hygiene, and reviews weekly menus alongside the Catering & Mess Supervisory Board.\n4.2 Grievance Escalation: Food quality or hygiene complaints are logged on ResolveDesk and reviewed weekly by the Chief Warden."
+    },
+    {
+      "document_id": "HSTL-POL-003",
+      "title": "Prohibition of Electrical Appliances and Fire Safety in Student Hostels",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Policy / Safety Directive",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Hostel Residents",
+        "Residential Wardens",
+        "Hostel Caretakers",
+        "Campus Safety Officers"
+      ],
+      "keywords": [
+        "prohibited electrical appliances",
+        "hostel fire safety",
+        "immersion water heaters",
+        "electric cooking stoves",
+        "hotplates",
+        "electric iron ban",
+        "unauthorized appliances fine",
+        "appliance confiscation",
+        "smoke detectors",
+        "fire drills",
+        "electrical circuit safety"
+      ],
+      "retrieval_signals": [
+        "are kettles allowed in hostel room",
+        "prohibited electrical appliances in hostel",
+        "can I use electric iron in hostel room",
+        "immersion rod heater fine hostel",
+        "cooking inside hostel room penalty",
+        "electric hotplate confiscated by warden",
+        "hostel fire safety rules Demo University",
+        "smoke alarm in hostel bedroom",
+        "fine for keeping electric kettle in room",
+        "permitted electrical devices in hostel",
+        "can I use hair dryer in hostel",
+        "hostel fire evacuation drill",
+        "electrical overloading in hostel block",
+        "appliance confiscation return policy",
+        "heater prohibition in residence halls"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP",
+        "DormTrack"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Campus Fire & Safety Officer",
+        "Residential Warden",
+        "Hostel Caretaker"
+      ],
+      "related_documents": [
+        "HSTL-REG-003",
+        "POL-DISCIPLINE",
+        "SEC-SOP-001"
+      ],
+      "content": "1. PURPOSE AND FIRE SAFETY MANDATE\nTo eliminate electrical fire hazards, prevent distribution grid overload, and guarantee life safety across residential blocks, this directive establishes strict prohibitions regarding high-wattage personal electrical appliances in hostel rooms.\n\n2. COMPREHENSIVE LIST OF PROHIBITED ELECTRICAL APPLIANCES\nResidents are strictly forbidden from introducing, keeping, or operating any of the following items in bedrooms or common lounges:\n  a) Immersion water heating rods and unsealed heating coils.\n  b) Electric cooking stoves, induction cooktops, and hotplates.\n  c) High-power electric room space heaters.\n  d) Electric clothing irons (ironing facilities are provided in designated laundry rooms).\n  e) Personal refrigerators, microwaves, and toasters.\n\n3. PERMITTED ELECTRICAL DEVICES\nResidents are permitted to operate low-power personal computing and electronic gear:\n  a) Personal laptops, desktop computers, and tablets.\n  b) Smartphone and gadget chargers.\n  c) Low-wattage LED study lamps.\n  d) Low-wattage personal grooming devices (hair trimmers and standard hair dryers under 1000W).\n\n4. CONFISCATION, PENALTIES, AND DISCIPLINARY SANCTIONS\n4.1 Immediate Confiscation: Discovered prohibited appliances are confiscated immediately by Caretakers or Wardens and impounded until the end of the academic year.\n4.2 Mandatory Fines: First violation incurs an administrative fine of Rs. 2,500 charged to PayVarsity. Subsequent violations incur an Rs. 5,000 fine and referral to the Proctorial Board for residency revocation."
+    },
+    {
+      "document_id": "HSTL-POL-004",
+      "title": "Hostel Room Vacation, Inventory Clearance, and Key Handover Protocol",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Standard Operating Procedure (SOP)",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Seniors",
+        "Students Vacating Hostels",
+        "Hostel Caretakers",
+        "Finance Office"
+      ],
+      "keywords": [
+        "room vacation protocol",
+        "key handover",
+        "inventory clearance",
+        "hostel no dues",
+        "room damage assessment",
+        "caution deposit refund",
+        "DormTrack checkout",
+        "vacation inspection slip",
+        "end of semester checkout",
+        "hostel discharge"
+      ],
+      "retrieval_signals": [
+        "how to vacate hostel room",
+        "hostel room checkout procedure",
+        "key handover timing hostel caretaker",
+        "hostel no dues clearance for degree",
+        "hostel caution deposit refund steps",
+        "room damage deduction from deposit",
+        "vacating hostel at end of 8th semester",
+        "hostel inventory clearance form",
+        "DormTrack room checkout slip",
+        "moving out of hostel checklist",
+        "room vacation key submission deadline",
+        "dormitory vacation protocol",
+        "hostel discharge certificate",
+        "unreturned hostel room key fine",
+        "vacation inspection by caretaker"
+      ],
+      "systems": [
+        "DormTrack",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Hostel Caretaker",
+        "Residential Warden",
+        "Chief Warden of Hostels",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "HSTL-REG-001",
+        "ADM-SOP-001",
+        "FIN-POL-003",
+        "REL-006"
+      ],
+      "content": "1. PURPOSE AND PROCEDURAL SCOPE\nThis Standard Operating Procedure governs the end-of-semester and graduation checkout process for residential students vacating campus accommodation, ensuring physical inventory verification, assessment of room damages, key surrenders, and institutional No-Dues sign-offs.\n\n2. STEP-BY-STEP CHECKOUT AND HANDOVER WORKFLOW (REL-006)\n2.1 Advance Notice: Students vacating rooms permanently must submit a 'Room Vacation Notice' via DormTrack at least 7 working days prior to intended departure.\n2.2 Joint Physical Inventory Inspection: On the checkout date, the student and block caretaker conduct a joint inspection of the room, auditing furniture condition, wardrobe keys, window glass, and electrical fittings against the initial check-in inventory log.\n2.3 Damage Assessment: Missing fixtures or defaced walls are logged on a Room Damage Assessment Slip. Repair costs are billed to the student's ledger or deducted from the institutional caution deposit.\n2.4 Key Surrender: The resident surrenders all room and cupboard keys to the caretaker. Unreturned keys incur a lock-replacement charge of Rs. 1,000.\n\n3. DIGITAL NO-DUES CLEARANCE AND CAUTION DEPOSIT REFUND\nUpon successful inspection and key surrender, the Caretaker and Warden record digital checkout approval in DormTrack. This sign-off automatically clears the Hostel component of the university-wide No-Dues Clearance SOP (ADM-SOP-001), releasing caution deposit balances through PayVarsity."
+    },
+    {
+      "document_id": "HSTL-POL-005",
+      "title": "Off-Campus Student Housing & Verified PG Advisory",
+      "department": "Hostel Administration and Residence Life",
+      "department_id": "DEPT-HSTL",
+      "document_type": "Policy / Advisory Guide",
+      "version": "1.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Senior Undergraduate Students",
+        "Postgraduate Students (M.Tech/MBA)",
+        "Prospective PG Residents",
+        "Hostel Wardens",
+        "Parent Guardians"
+      ],
+      "keywords": [
+        "off-campus housing",
+        "paying guest",
+        "PG advisory",
+        "verified PG list",
+        "postgraduate housing",
+        "moving out of hostel",
+        "private accommodation",
+        "landlord verification",
+        "police tenant verification",
+        "parental consent PG",
+        "day scholar conversion"
+      ],
+      "retrieval_signals": [
+        "list of university-approved PGs near south gate",
+        "permission to vacate hostel and move to private PG",
+        "are outside PGs safe for first-year students",
+        "off campus student housing rules",
+        "moving from hostel to private flat",
+        "paying guest accommodation advisory",
+        "PG accommodation near Greenwood campus",
+        "can BTech seniors live in outside PG",
+        "parent consent letter to stay in PG",
+        "convert from hosteller to day scholar",
+        "private PG safety guidelines",
+        "verified PG list Student Welfare",
+        "police verification for off-campus rent",
+        "PG vs hostel comparison Demo University",
+        "living outside campus regulations"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "CampusPass"
+      ],
+      "roles": [
+        "Chief Warden of Hostels",
+        "Dean of Student Welfare (DSW)",
+        "Chief Security Officer (CSO)",
+        "Parent / Guardian"
+      ],
+      "related_documents": [
+        "POL-HOSTEL-ALLOC",
+        "HSTL-REG-001",
+        "HSTL-POL-004",
+        "STU-POL-001"
+      ],
+      "content": "1. PURPOSE AND HOUSING ADVISORY MANDATE\nWhile Demo University encourages residential life within on-campus hostels, senior undergraduate and postgraduate scholars may opt for off-campus private rental accommodations or Paying Guest (PG) facilities. This policy establishes eligibility conditions, safety advisory criteria, and transition protocols.\n\n2. ELIGIBILITY AND PERMISSION CRITERIA\n2.1 Freshmen Restriction: First-year undergraduate B.Tech students are required to reside in on-campus university hostels (Cauvery and Sarojini Halls) for safety, except local day scholars living with biological parents.\n2.2 Senior Cohort Eligibility: Second, third, and fourth-year undergraduate students, as well as postgraduate (M.Tech, MBA) and doctoral scholars, are permitted to move to off-campus private residences.\n2.3 Mandatory Parental Consent: Students transitioning from on-campus hostels to external private housing or PGs must submit an official written Parental Consent Affidavit countersigned by their guardian on UniCampus ERP.\n\n3. VERIFIED PG SAFETY ADVISORY GUIDELINES\nThe Office of Student Welfare and Campus Security maintain an informational Advisory Directory of nearby student rental facilities. Students seeking private accommodation are strongly advised to ensure:\n  a) Police Tenant Verification: Compliance by the property owner with local municipal and police tenant verification protocols.\n  b) Perimeter Security: Verification of working CCTV monitoring, secure biometric/key entry, and dedicated female wardens for female PG facilities.\n  c) Proximity to Transit: Selection of accommodations situated along university CNG commuter bus routes (TransPass network).\n\n4. STATUS UPDATE AND CAMPUS ACCESS TRANSITION\nUpon vacating campus hostels under HSTL-POL-004, the student's ERP classification transitions to 'Day Scholar'. Campus turnstile access permissions in CampusPass are updated to standard day-commuter operational hours (06:00 AM to 08:30 PM)."
+    }
+  ]
+}

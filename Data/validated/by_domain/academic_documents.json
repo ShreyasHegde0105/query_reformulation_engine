@@ -1,0 +1,1072 @@
+{
+  "domain": "Academic",
+  "documents": [
+    {
+      "document_id": "POL-ATTEND",
+      "title": "Mandatory Attendance and Condonation Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "All Doctoral Scholars",
+        "Course Instructors",
+        "Faculty Advisors",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "attendance percentage",
+        "75% requirement",
+        "attendance shortage",
+        "condonation",
+        "detention",
+        "Semester End Examination",
+        "SEE eligibility",
+        "AttendEdge",
+        "RFID classroom tap",
+        "biometric attendance",
+        "medical condonation",
+        "On-Duty",
+        "summer term re-registration"
+      ],
+      "retrieval_signals": [
+        "attendance shortage",
+        "attendance percentage",
+        "attendance condonation",
+        "what happens if my attendance is low",
+        "attendance short",
+        "attendance condonation rules",
+        "attenence sortage",
+        "prof detained me for attendance",
+        "can I write SEE with 72% attendance",
+        "detained for attendance",
+        "minimum attendance required for exam",
+        "mass bunk attendance impact",
+        "how to get attendance condoned",
+        "attendance below 65 percent",
+        "AttendEdge percentage discrepancy",
+        "medical leave attendance exemption"
+      ],
+      "systems": [
+        "AttendEdge",
+        "UniCampus ERP",
+        "ExamShield Portal",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Course Instructor / Professor",
+        "Faculty Advisor / Mentor",
+        "Senior Chief Medical Officer",
+        "Controller of Examinations (COE)"
+      ],
+      "related_documents": [
+        "ACAD-POL-003",
+        "ACAD-POL-004",
+        "ACAD-REG-001",
+        "EXAM-GUI-002",
+        "POL-SEE"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nDemo University maintains rigorous academic standards centered on active classroom instruction, collaborative studio inquiry, and continuous laboratory experimentation. Regular and punctual attendance in all scheduled instructional periods is fundamental to the learning lifecycle. This policy establishes the minimum quantifiable attendance standards, criteria for condonation of attendance shortages on authenticated grounds, and statutory consequences of academic detention.\n\n2. JURISDICTION AND SCOPE\nThis policy governs all matriculated students enrolled in undergraduate (B.Tech), postgraduate (M.Tech, MBA), and doctoral (Ph.D.) coursework across all schools and constituent departments within Demo University.\n\n3. MINIMUM PRESCRIBED ATTENDANCE THRESHOLD\n3.1 Mandatory Standard: Every enrolled student must maintain a minimum cumulative attendance of 75.0% in every registered lecture (theory), tutorial, and laboratory course component across the fifteen-week semester.\n3.2 Computation Principle: Attendance percentages are computed individually per course code as the ratio of total instructional sessions attended to total sessions conducted, as aggregated by the AttendEdge platform.\n3.3 Continuous Monitoring: Attendance registers are updated continuously. Students falling below 80.0% receive automated advisory notifications via UniCampus ERP and institutional email.\n\n4. CONDONATION OF ATTENDANCE SHORTAGE (65.0% TO 74.9%)\n4.1 Eligible Condonation Band: The Academic Council authorizes the Dean of Academic Affairs to exercise discretionary condonation solely for students whose cumulative attendance in a course falls strictly between 65.0% and 74.9%.\n4.2 Statutory Grounds for Condonation:\n  a) Authenticated Medical Grounds: Acute illness, surgical intervention, contagious disease quarantine, or severe trauma requiring documented hospitalization verified by the Campus Health Centre.\n  b) Sanctioned Institutional On-Duty (OD) Representation: Excused absence granted by the Department of Student Affairs for officially representing Demo University in approved inter-university athletic tournaments, national technical symposiums, or accredited competitive hackathons.\n4.3 Strict Limitation: Condonation is not a matter of right. Applications must be formally substantiated with verified institutional documentation uploaded to ResolveDesk at least five working days prior to the commencement of Semester End Examinations (SEE).\n\n5. ACADEMIC DETENTION (ATTENDANCE STRICTLY BELOW 65.0%)\n5.1 Absolute Prohibition: Students whose attendance in any registered course falls strictly below 65.0% at the close of instructional teaching are summarily detained from appearing in the Semester End Examination for that course.\n5.2 Non-Waivable Status: Neither departmental Heads of Department nor executive university leadership possess statutory authority to condone attendance below 65.0% under any circumstance, medical or otherwise.\n5.3 Academic Consequence: The student is awarded a 'W' (Withheld / Detention) grade or 'SA' (Shortage of Attendance) grade on the formal grade report. The student forfeits all Continuous Internal Evaluation (CIE) marks accrued for the semester.\n5.4 Remediation Pathway: Detained students must re-register for the complete course during a subsequent regular academic semester or during the intensive seven-week fast-track summer term, fulfilling full instructional attendance and internal assessment requirements.\n\n6. OPERATIONAL RECORDING AND DISPUTE RECTIFICATION\n6.1 Terminal Recording: Attendance data is captured via classroom RFID card readers and biometric edge terminals connected to AttendEdge.\n6.2 Invalidation of Proxy: Presenting credentials or tapping cards on behalf of another student constitutes a Level-2 disciplinary violation subject to Proctorial Board inquiry.\n6.3 Discrepancy Reconciliation: If an edge terminal experiences hardware or synchronization failure, the student must notify the course instructor within 48 hours. Retroactive adjustments require joint endorsement from the Course Instructor and the Head of Department before submission to the IT Services helpdesk.\n\n7. ESCALATION AND GOVERNANCE\nAppeals contesting administrative detention determinations must be addressed in writing to the Office of the Dean of Academic Affairs, located on the Second Floor, Wing A, Chanakya Bhavan, within three calendar days of detention roster publication."
+    },
+    {
+      "document_id": "POL-COURSE-REG",
+      "title": "Course Registration, Credit Limits, and Prerequisite Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.8",
+      "effective_date": "2026-07-15",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Faculty Advisors",
+        "Academic Program Coordinators",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "course registration",
+        "credit limits",
+        "prerequisite clearance",
+        "credit overload",
+        "credit underload",
+        "Date of Registration",
+        "DOR",
+        "UniCampus ERP",
+        "Faculty Advisor approval",
+        "financial hold",
+        "core courses",
+        "open electives"
+      ],
+      "retrieval_signals": [
+        "course registration process",
+        "how to register for courses in ERP",
+        "credit limits for B.Tech semester",
+        "can I overload credits",
+        "maximum credits allowed in a semester",
+        "minimum credits semester underload",
+        "prerequisite failed cannot register",
+        "CR window opening date",
+        "failed in prerequisite can I do CR for advanced subject",
+        "DOR deadline for course registration",
+        "ERP registration blocked financial hold",
+        "faculty advisor course registration sign off"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Academic Program Coordinator",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "ACAD-POL-001",
+        "ACAD-POL-005",
+        "ACAD-POL-006",
+        "ACAD-NOT-002",
+        "POL-ADD-DROP",
+        "POL-FEE-PAY"
+      ],
+      "content": "1. PURPOSE AND FRAMEWORK\nCourse enrollment at Demo University operates on a structured Choice-Based Credit System (CBCS). This policy specifies the procedural mechanics of semester enrollment, sets statutory minimum and maximum credit workloads, establishes strict prerequisite enforcement criteria, and defines advisor authorization protocols.\n\n2. SCOPE AND APPLICABILITY\nApplies to all matriculated undergraduate and postgraduate students seeking course enrollment during Autumn, Spring, or Summer terms.\n\n3. STATUTORY SEMESTER CREDIT LIMITS\n3.1 Standard Undergraduate Load: For Bachelor of Technology (B.Tech) degree programs, the standard full-time academic workload ranges between 20 and 24 academic credits per semester.\n3.2 Credit Overload Provision: Students exhibiting superior academic progression, defined as possessing a Cumulative Grade Point Average (CGPA) of 8.00 or higher with zero active arrears, may apply to overload up to a maximum ceiling of 28 credits. Overloading requires written recommendation from the Faculty Advisor and formal authorization from the Head of Department and Dean of Academic Affairs.\n3.3 Credit Underload Provision: Students placed on academic probation, possessing multiple uncleared backlogs, or exhibiting a CGPA below 5.50 are restricted to a remedial underload ceiling of 16 to 18 credits. This intentional constraint facilitates focused academic recovery.\n3.4 Postgraduate Workloads: Master of Technology (M.Tech) scholars maintain standard loads of 18 to 20 credits per semester; Master of Business Administration (MBA) students maintain 20 to 22 credits per semester.\n\n4. PREREQUISITE STRUCTURE AND STRICT VALIDATION\n4.1 Enforcement Mandate: Core and professional elective curricula feature rigorous prerequisite dependencies designed to guarantee foundational technical competency. The UniCampus ERP enrollment engine validates prerequisite clearance programmatically.\n4.2 Invalidation of Downstream Enrollment: A student who has received an 'F' (Fail), 'I' (Incomplete), or 'W' (Withheld/Detained) grade in a designated prerequisite course is strictly prohibited from registering for downstream dependent courses. For example, a student cannot register for Operating Systems (CSE301) without previously securing an evaluation grade in Data Structures and Algorithms (CSE201).\n4.3 Prerequisite Waiver Prohibited: Faculty advisors, program coordinators, and departmental leadership hold no authority to execute unilateral prerequisite overrides or manual enrollment bypasses.\n\n5. REGISTRATION WORKFLOW AND ADVISORY SIGN-OFF\n5.1 Digital Enrollment Window: Course registration takes place exclusively through UniCampus ERP during the designated Date of Registration (DOR) window announced by Academic Affairs.\n5.2 Faculty Advisor Endorsement: Provisional course baskets selected by students remain pending until formally audited and approved by the assigned Faculty Advisor. Advisors verify credit totals, prerequisite compliance, and timetable clash avoidance.\n5.3 Institutional Holds: Students with unliquidated tuition fee liabilities, hostel mess arrears, or unreturned library items encounter automated financial holds in UniCampus ERP, preventing enrollment until cleared.\n\n6. ADMINISTRATIVE ESCALATION\nCurricular enrollment queries must be directed to the respective Academic Program Coordinator or the Office of Academic Affairs, Chanakya Bhavan, Second Floor, Wing A."
+    },
+    {
+      "document_id": "POL-ADD-DROP",
+      "title": "Course Add/Drop and Course Withdrawal Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.4",
+      "effective_date": "2026-07-15",
+      "status": "Active",
+      "audience": [
+        "Undergraduate Students",
+        "Postgraduate Students",
+        "Faculty Advisors",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "add drop window",
+        "course withdrawal",
+        "elective change",
+        "section change",
+        "tenth working day deadline",
+        "W grade",
+        "tuition fee refund",
+        "credit ceiling",
+        "UniCampus ERP",
+        "LearnSphere LMS"
+      ],
+      "retrieval_signals": [
+        "when does add drop close",
+        "how to drop a subject in ERP",
+        "how to change elective after classes start",
+        "withdraw from course without GPA penalty",
+        "course add drop deadline",
+        "drop elective course refund",
+        "W grade on transcript meaning",
+        "eighth week course withdrawal",
+        "switch section of course in ERP"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "AttendEdge",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Faculty Advisor / Mentor",
+        "Course Instructor / Professor",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "POL-COURSE-REG",
+        "ACAD-POL-001",
+        "POL-FEE-REFUND",
+        "ACAD-REG-001"
+      ],
+      "content": "1. PURPOSE AND OBJECTIVES\nDemo University recognizes that pedagogical alignment, scheduling adjustments, or academic reassessments may necessitate revisions to a student's semester course profile following initial registration. This policy defines the statutory periods, operational procedures, and grading implications associated with adding, dropping, or withdrawing from instructional courses.\n\n2. SCOPE\nApplies to all registered undergraduate and postgraduate courses, including professional departmental electives and interdisciplinary open electives.\n\n3. THE OFFICIAL ADD/DROP WINDOW\n3.1 Operational Timeline: The formal Course Add/Drop window commences on Day 1 of instructional classes and terminates strictly at 5:00 PM on the tenth (10th) working day of the active academic semester.\n3.2 Permissible Modifications: Within this statutory ten-day window, students may:\n  a) Add elective courses, provided section enrollment quotas have not reached physical room capacities.\n  b) Drop previously registered elective courses without academic penalty.\n  c) Request class section re-allocations to resolve demonstrated timetable clashes.\n3.3 Credit Boundary Compliance: Any modification executed during the Add/Drop window must maintain the student's cumulative registration within the prescribed limits (minimum 20 credits, maximum 24 credits, or approved 28-credit overload).\n3.4 Grade Log Expunction: Courses dropped prior to the expiration of the tenth working day are completely expunged from the student's academic record, leaving zero transcript notation.\n\n4. FORMAL MID-SEMESTER COURSE WITHDRAWAL ('W' GRADE)\n4.1 Window of Withdrawal: Following the close of the Add/Drop window, a student may request formal withdrawal from a single theory course up to the final business day of the eighth (8th) instructional week of the semester.\n4.2 Mandatory Advisory Review: Withdrawal requests require formal consultation with and digital endorsement from the assigned Faculty Advisor and Course Instructor via UniCampus ERP.\n4.3 Transcript Notation: A successfully withdrawn course is assigned a permanent 'W' (Withdrawn) grade on the semester grade sheet. A 'W' grade carries zero grade points and does not factor into Semester Grade Point Average (SGPA) or Cumulative Grade Point Average (CGPA) calculations.\n4.4 Minimum Credit Constraint: A student is strictly prohibited from withdrawing from a course if such departure causes the student's total active credit load to fall below the mandatory 16-credit minimum underload floor.\n\n5. FINANCIAL AND TUITION RAMIFICATIONS\nElective courses dropped after the commencement of instructional classes, or courses vacated via formal mid-semester withdrawal ('W' grade), entitle the student to zero tuition fee refunds or adjustments. Differential laboratory fees remain non-refundable.\n\n6. SYSTEM SYNCHRONIZATION\nApproved add/drop transactions executed in UniCampus ERP trigger automated nocturnal updates to course rosters across LearnSphere LMS (restricting or provisioning student access) and AttendEdge (re-calibrating biometric attendance rosters).\n\n7. ADMINISTRATIVE CONTACT\nProcedural inquiries regarding Add/Drop authorizations should be escalated to the Curriculum Planning Cell within the Office of Academic Affairs, Chanakya Bhavan."
+    },
+    {
+      "document_id": "POL-GRADUATION",
+      "title": "Degree Award and Graduation Requirements Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Seniors",
+        "Postgraduate Candidates",
+        "Doctoral Scholars",
+        "Registrar Secretariat",
+        "Examination Cell"
+      ],
+      "keywords": [
+        "graduation requirements",
+        "degree conferment",
+        "credit clearance",
+        "minimum CGPA",
+        "160 credits B.Tech",
+        "84 credits MBA",
+        "72 credits M.Tech",
+        "non-credit mandatory courses",
+        "institutional no dues",
+        "convocation",
+        "time limit degree",
+        "N plus 2 years",
+        "provisional degree certificate"
+      ],
+      "retrieval_signals": [
+        "graduation requirements",
+        "how many credits to graduate B.Tech",
+        "minimum CGPA to get degree",
+        "maximum years allowed to clear engineering degree",
+        "convocation registration requirements",
+        "degree audit checklist ERP",
+        "provisional certificate collection timing",
+        "leaving college need caution deposit and TC",
+        "graduation no dues clearance",
+        "non credit course requirement for degree"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ExamShield Portal",
+        "PayVarsity",
+        "LibNet",
+        "DormTrack"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Controller of Examinations (COE)",
+        "University Registrar",
+        "Vice-Chancellor"
+      ],
+      "related_documents": [
+        "ACAD-POL-010",
+        "ACAD-REG-001",
+        "ACAD-REG-002",
+        "ADM-SOP-001",
+        "POL-BACKLOG"
+      ],
+      "content": "1. PURPOSE AND STATUTORY SCOPE\nThis policy defines the comprehensive statutory criteria mandated by the Academic Council and Board of Management of Demo University for the formal award and conferment of undergraduate, postgraduate, and doctoral degrees. Every graduating candidate must satisfy all curricular, quantitative, non-credit, and institutional clearance benchmarks herein established.\n\n2. QUANTITATIVE CREDIT AND RESIDENCY BENCHMARKS\n2.1 Credit Totals:\n  a) Bachelor of Technology (B.Tech): Satisfactory completion of a minimum of 160 earned academic credits across the eight-semester curricular structure.\n  b) Master of Business Administration (MBA): Satisfactory completion of a minimum of 84 earned academic credits across four semesters.\n  c) Master of Technology (M.Tech): Satisfactory completion of a minimum of 72 earned academic credits, including the successful defense of a 16-credit Master's Thesis.\n2.2 Minimum Cumulative Grade Point Average (CGPA):\n  a) Undergraduate Candidates: Must attain a final Cumulative Grade Point Average of not less than 5.00 on a 10.00-point relative grading scale.\n  b) Postgraduate Candidates: Must attain a final Cumulative Grade Point Average of not less than 6.00 on a 10.00-point relative grading scale.\n2.3 Arrear Clearance: Zero active backlogs. All courses carrying an 'F' (Fail) or 'I' (Incomplete) grade must be cleared through supplementary examinations or regular re-registration prior to degree audit freeze.\n\n3. MANDATORY NON-CREDIT AND AUDIT CLEARANCES\nCandidates must secure a formal 'P' (Satisfactory / Pass) grade in statutory institutional non-credit audit requirements, including:\n  a) Environmental Studies and Sustainability Governance.\n  b) Professional Ethics, Human Values, and Intellectual Property Norms.\n  c) Co-curricular, Physical Education, or National Service Scheme (NSS) social credits.\n\n4. STATUTORY DEGREE TIME LIMIT (N + 2 REGULATION)\nAll degree requirements must be fulfilled within the maximum allowable duration of N + 2 academic years, where N represents the standard program duration:\n  a) Four-year B.Tech programs must be completed within a maximum ceiling of six (6) consecutive academic years from initial matriculation.\n  b) Two-year postgraduate programs (MBA, M.Tech) must be completed within a maximum ceiling of four (4) consecutive academic years.\n  c) Candidates failing to clear all requirements within this window forfeit matriculation status, subject only to formal extraordinary review by the Senate Academic Committee.\n\n5. INSTITUTIONAL NO-DUES CLEARANCE AND DEGREE DISPATCH\n5.1 Digital Clearance Protocol: Degree conferment, provisional certificate release, and migration transcript dispatch are contingent upon 100% completion of the University No-Dues workflow in UniCampus ERP.\n5.2 Departmental Sign-offs Required:\n  a) Valmiki Central Library: Zero overdue books, inter-library loan settlements, or unpaid circulation fines.\n  b) Residential Hostels: Complete room vacation inspection, return of keys, and settlement of mess ledgers.\n  c) Academic Engineering Labs: Reconciliation of student hardware kits, equipment breakage assessments, and component returns.\n  d) Finance Office: Zero balance across tuition fee accounts, lab fees, and incidental fine ledgers.\n5.3 Convocation and In Absentia Conferment: Degrees are solemnly conferred at the Annual University Convocation. Graduands unable to attend may receive credentials via registered speed post following convocation upon fee settlement.\n\n6. ADMINISTRATIVE JURISDICTION\nThe degree audit is administered jointly by the Credit Transfer & Audit Section of Academic Affairs and the Confidential Evaluation Section of the Examination Cell, Chanakya Bhavan."
+    },
+    {
+      "document_id": "ACAD-POL-001",
+      "title": "Regulations on Course Registration, Add/Drop, and Credit Limits",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Regulation",
+      "version": "4.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Faculty Advisors",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "academic regulations",
+        "course registration regulations",
+        "add drop procedures",
+        "credit boundaries",
+        "overload authorization",
+        "underload criteria",
+        "prerequisite rules",
+        "UniCampus ERP enrollment",
+        "CR window",
+        "Faculty Advisor workflow"
+      ],
+      "retrieval_signals": [
+        "regulations on course registration",
+        "credit limit rules academic regulations",
+        "when does CR window open in ERP",
+        "course registration add drop procedure",
+        "can I register 28 credits in B.Tech",
+        "credit underload regulations for backlogs",
+        "rules for dropping elective course",
+        "faculty advisor course registration approval rules"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Academic Program Coordinator",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "POL-COURSE-REG",
+        "POL-ADD-DROP",
+        "ACAD-REG-001",
+        "ACAD-NOT-002"
+      ],
+      "content": "1. REGULATORY FOUNDATION\nPromulgated by the Academic Regulations Committee (ARC) under the authority of the Academic Council, this regulation details the statutory requirements governing student course registration (CR), elective selection, add/drop adjustments, and credit ceilings across all autonomous programs.\n\n2. CREDIT CEILING DEFINITIONS AND SCHOLASTIC TIERS\n2.1 Normal Workload Range: Every full-time undergraduate student must enroll in a minimum of 20 credits and a maximum of 24 credits per regular semester.\n2.2 Overload Eligibility: A student who has attained a cumulative CGPA >= 8.00 at the start of the semester and has no uncleared backlogs is classified as a Tier-1 Honors Eligible candidate. Such students may overload up to 28 credits to pursue minor specializations or accelerated graduation.\n2.3 Remediated Underload: Students on academic recovery (CGPA < 5.50 or >= 3 active backlogs) are placed on an enforced underload restriction of 16 to 18 credits. The Faculty Advisor must structure this curtailed curriculum to prioritize prerequisite backlog clearance.\n\n3. THE REGISTRATION (CR) PROCEDURE\n3.1 Pre-Registration Consultation: Prior to the formal Date of Registration (DOR), students must review their degree progression audit on UniCampus ERP and consult their assigned Faculty Advisor.\n3.2 Selection Basket: On the notified DOR date, students access the UniCampus ERP Course Enrollment Engine. Mandatory program core courses appear pre-populated. Students select desired program electives and open electives from unexhausted capacity pools.\n3.3 Advisor Scrutiny and Sign-off: The Faculty Advisor reviews the submission against prerequisite records. The advisor digitally approves the course basket in ERP, converting provisional registration into confirmed enrollment.\n\n4. ADD/DROP REGULATIONS\n4.1 Window: From Day 1 of classes until 5:00 PM on the 10th working day of the semester.\n4.2 Scope: Changes permitted only in elective courses. Dropping core courses is strictly prohibited.\n4.3 Verification of Seats: Elective addition is blocked dynamically if classroom capacity has been reached.\n4.4 Complete Removal: Courses dropped within the 10-day window leave zero trace on permanent grade sheets.\n\n5. DISAMBIGUATION ADVISORY\nIn administrative correspondence and academic notices, the acronym 'CR' refers strictly to 'Course Registration' as governed herein, and must not be conflated with the student leadership designation 'Class Representative' (ROLE-CR) or facilities reservation code 'Conference Room' (OPS-FAC-003).\n\n6. ENFORCEMENT AND QUERIES\nAdministered by the Course Registration Wing of Academic Affairs, Chanakya Bhavan, Second Floor, Wing A."
+    },
+    {
+      "document_id": "ACAD-POL-002",
+      "title": "Department Academic Governance and HOD Decision Authorities",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Heads of Department",
+        "Academic Program Coordinators",
+        "Faculty Members",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "department governance",
+        "HOD decision authorities",
+        "academic leadership",
+        "faculty workload allocation",
+        "attendance dispute resolution",
+        "elective branch balancing",
+        "internship sign-off",
+        "department curriculum committee",
+        "Board of Studies"
+      ],
+      "retrieval_signals": [
+        "department academic governance",
+        "HOD decision authority rules",
+        "how to meet CSE HOD",
+        "HOD signature for elective change",
+        "who approves prerequisite waiver in department",
+        "HOD powers in attendance condonation",
+        "HOD approval required for internship",
+        "departmental dispute resolution procedure"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "AttendEdge",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs",
+        "Academic Program Coordinator",
+        "Course Instructor / Professor",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "ACAD-POL-005",
+        "ACAD-POL-006",
+        "ACAD-REG-001",
+        "ACAD-POL-009"
+      ],
+      "content": "1. INSTITUTIONAL STATUTE AND OBJECTIVE\nAcademic departments form the operational bedrock of instructional delivery and discipline-specific scholarship at Demo University. This charter outlines the governance hierarchy, academic jurisdictions, administrative roles, and statutory decision authorities invested in the Head of Department (HOD).\n\n2. ACADEMIC HIERARCHY AND LEADERSHIP STRUCTURE\nEach academic department (CSE, ECE, MECH, CIVIL, MGMT) is led by a senior professor designated as Head of Department, appointed by the Vice-Chancellor for a three-year term. The HOD reports directly to the Dean of the respective School and the Dean of Academic Affairs.\n\n3. STATUTORY DECISION AUTHORITIES OF THE HOD\n3.1 Curricular and Instructional Oversight:\n  a) Allocates semester teaching assignments, lab instructional workloads, and tutorial duties across permanent and visiting faculty.\n  b) Convenes the Departmental Board of Studies (BOS) and Departmental Curriculum Planning Cell.\n  c) Approves minor syllabus course module re-sequencing and continuous assessment rubrics.\n3.2 Student Progression and Approvals:\n  a) Acts as the first escalation authority for contested Continuous Internal Evaluation (CIE) marks.\n  b) Reviews and endorses student applications for medical attendance condonation prior to transmission to Academic Affairs.\n  c) Authorizes department-level corporate internship NOC requests and 8th-semester industry project conversions.\n  d) Approves section capacity overrides and elective balancing during the Add/Drop window.\n3.3 Laboratory and Resource Governance:\n  a) Directs departmental lab technical staff, supervising maintenance of physical testing equipment and computing clusters.\n  b) Convenes laboratory damage inquiry panels to assess student accidental equipment breakage versus negligence.\n\n4. DISAMBIGUATION NOTICE\nThe institutional designation 'HOD' within this regulatory document refers exclusively to the academic 'Head of Department' (e.g., Turing Complex Floors 2\u20134 for CSE, Faraday Tower for ECE, Newton Hall for MECH). It must not be confused with the 'Hostel Operations Division' (DEPT-HSTL / HSTL-REG-002), which manages residence hall plumbing, mess facilities, and residential maintenance.\n\n5. CONTACT AND ACCREDITATION\nDepartmental office secretariats operate Monday through Friday, 9:00 AM to 5:00 PM. Administrative inquiries escalate to the Office of Academic Affairs, Chanakya Bhavan."
+    },
+    {
+      "document_id": "ACAD-POL-003",
+      "title": "Policy on Attendance Condonation on Medical Grounds",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "3.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Campus Health Centre Medical Staff",
+        "Faculty Advisors",
+        "Heads of Department",
+        "Examination Cell"
+      ],
+      "keywords": [
+        "medical condonation",
+        "medical certificate",
+        "MC",
+        "attendance exemption",
+        "hospitalization",
+        "Health Centre verification",
+        "65 percent condonation limit",
+        "hall ticket unblocking",
+        "Senior Chief Medical Officer",
+        "ExamShield detention waiver",
+        "AttendEdge medical slip"
+      ],
+      "retrieval_signals": [
+        "medical condonation policy",
+        "attendance condonation on medical grounds",
+        "medical certificate submission deadline for exams",
+        "can I get MC from outside private clinic approved",
+        "where to submit MC for exam absence",
+        "MC endorsement form at health centre",
+        "attendance shortage due to hospital admission",
+        "can I write exam with 68% attendance",
+        "hall ticket blocked attendance below 75",
+        "medical leave attendance exemption rules"
+      ],
+      "systems": [
+        "AttendEdge",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "ExamShield Portal",
+        "HealthDesk"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Senior Chief Medical Officer",
+        "Head of Department (HOD)",
+        "Controller of Examinations (COE)",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "POL-ATTEND",
+        "STU-MED-001",
+        "EXAM-GUI-002",
+        "STU-FRM-005",
+        "POL-SEE"
+      ],
+      "content": "1. PURPOSE AND REGULATORY FOUNDATION\nWhile Demo University enforces an uncompromised 75.0% baseline attendance threshold, the Academic Council recognizes that genuine acute health emergencies may impede classroom participation. This policy establishes the strict evidentiary criteria, medical verification workflows, and computational limits governing attendance condonation on medical grounds.\n\n2. CONDONABLE BAND AND NON-NEGOTIABLE LIMITS\n2.1 Permissible Condonation Range: Attendance condonation on certified medical grounds is restricted strictly to students whose aggregate course attendance falls within the 65.0% to 74.9% band.\n2.2 Absolute Sub-65% Bar: Any student whose attendance falls below 65.0%\u2014even if the student was hospitalized for the entire academic term\u2014is ineligible for condonation and is formally detained ('W'/'SA' grade). In cases of chronic prolonged illness exceeding 20 working days, students must seek a formal medical Leave of Absence (semester break) rather than examination condonation.\n\n3. DOCUMENTATION AND VERIFICATION PROCEDURE\n3.1 Inpatient / Outpatient Proof: The student must produce authentic clinical documentation, including hospital admission records, discharge summaries, laboratory diagnostic reports, and registered physician prescriptions.\n3.2 Mandatory Health Centre Endorsement: Medical certificates issued by external hospitals or private clinics are NOT accepted directly by academic departments. The student must present external certificates in person to the Senior Chief Medical Officer at the Campus Health Centre within three (3) working days of resuming academic attendance.\n3.3 Verification Slip: Upon clinical cross-examination and verification, the Chief Medical Officer issues an official University Medical Verification Slip bearing an authenticated QR validation code in HealthDesk.\n\n4. ADMINISTRATIVE WORKFLOW AND SYSTEM UNBLOCKING\n4.1 ResolveDesk Submission: The student logs an official 'Medical Condonation Request' on ResolveDesk, attaching the Health Centre Verification Slip and AttendEdge coursewise printout, at least five working days prior to SEE commencement.\n4.2 Departmental Concurrence: The Faculty Advisor and HOD verify lecture dates missed and provide digital concurrence in UniCampus ERP.\n4.3 Dean's Sanction: The Dean of Academic Affairs reviews the case. Upon sanction, the ERP database automatically waives the examination detention flag.\n4.4 Hall Ticket Generation: The ExamShield portal updates dynamically, permitting the student to download the semester examination hall ticket.\n\n5. TERMINOLOGY AND DISAMBIGUATION\nIn institutional forms and grievance tickets, the abbreviation 'MC' refers strictly to an authenticated 'Medical Certificate' issued or endorsed by the Health Centre for condonation purposes. It must not be confused with 'Management Committee' (MC), which designates the governing committee of student societies under SAC-GOV-002.\n\n6. FABRICATION AND PENAL SANCTIONS\nSubmission of fabricated, altered, or purchased medical certificates constitutes gross academic fraud. Cases are immediately referred to the Proctorial Board, resulting in mandatory semester expulsion.\n\n7. JURISDICTION\nAdministered jointly by the Campus Health Centre (Health & Wellness Pavilion) and Academic Affairs (Chanakya Bhavan)."
+    },
+    {
+      "document_id": "ACAD-POL-004",
+      "title": "On-Duty (OD) Sanction and Attendance Adjustment Regulations",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Regulation",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Dean of Student Affairs",
+        "Sports Officers",
+        "Club Mentors",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "On-Duty",
+        "OD sanction",
+        "attendance adjustment",
+        "sports OD",
+        "hackathon OD",
+        "inter-university competition",
+        "co-curricular absence",
+        "AttendEdge excused present",
+        "ten day OD limit",
+        "ResolveDesk OD form"
+      ],
+      "retrieval_signals": [
+        "on duty leave regulations",
+        "how to apply for OD for hackathon",
+        "did my sports OD get approved",
+        "maximum OD days allowed in a semester",
+        "OD form signature",
+        "can I get OD for an internship",
+        "will attendance be marked present for OD",
+        "OD limit exceeded due to corporate project",
+        "procedure for applying for co-curricular on-duty permissions"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "AttendEdge",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Dean of Student Affairs (DSA)",
+        "Head of Department (HOD)",
+        "Course Instructor / Professor",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "POL-ATTEND",
+        "POL-OD",
+        "STU-GUI-002",
+        "STU-FRM-004",
+        "ACAD-POL-008"
+      ],
+      "content": "1. STATUTORY INTENT AND SCOPE\nDemo University encourages student engagement in collegiate athletics, technical innovation contests, research symposiums, and leadership forums. The On-Duty (OD) regulatory framework ensures that bona fide institutional representation does not academically penalize students with respect to statutory attendance thresholds.\n\n2. ELIGIBLE CO-CURRICULAR ACTIVITIES\nOD status is granted solely for events formally sponsored or endorsed by Demo University:\n  a) Inter-university sporting tournaments sanctioned by the Department of Physical Education.\n  b) National or international technical symposiums, hackathons, and design challenges endorsed by the Dean of Student Affairs.\n  c) Approved student club outreach, cultural performances, or collegiate fests endorsed by the Clubs and Student Activities Council (SAC).\n  d) Academic delegations, paper presentations, and research symposium visits approved by the HOD.\n\n3. LIMITS AND ATTENDANCE CONSTRAINTS\n3.1 Semester Ceiling: A student may be sanctioned a cumulative maximum of ten (10) working days of On-Duty leave per academic semester across all courses.\n3.2 Minimum Class Attendance Safeguard: Approved OD days are factored into AttendEdge as 'Excused Present' (OD) sessions for the purpose of SEE eligibility computation. However, actual physical classroom presence must not drop below 60.0% regardless of the volume of OD approved.\n3.3 Non-Applicability to Personal Travel: OD is strictly non-claimable for family functions, unapproved company interviews, private commercial hackathons, or non-endorsed club activities.\n\n4. APPLICATION TIMELINE AND WORKFLOW\n4.1 Pre-Event Submission: Students must submit an official OD Application on ResolveDesk at least three (3) working days prior to the event, uploading the formal invitation brochure, schedule, and team selection endorsement from the faculty mentor.\n4.2 Multi-Tier Endorsement: The application routes digitally through the Faculty Mentor -> Head of Department -> Dean of Student Affairs (DSA) -> Dean of Academic Affairs.\n4.3 Post-Event Verification: Within five (5) working days of returning to campus, the student must upload the official Certificate of Participation / Performance to ResolveDesk.\n4.4 AttendEdge Database Patch: Upon final verification, AttendEdge automatically adjusts the student's attendance roster for the sanctioned dates from 'Absent' to 'Excused Present (OD)'.\n\n5. TERMINOLOGY DISAMBIGUATION\nIn academic correspondence and university portals, the abbreviation 'OD' refers strictly to 'On-Duty Attendance Exemption'. It must not be confused with the postgraduate management elective course module 'Organizational Development' (Course Code: MGT101 / ACAD-CRS-011) offered by the Department of Management Studies.\n\n6. SANCTIONS FOR MISUSE\nForging event invitations, misrepresenting personal trips as university representation, or producing bogus participation certificates results in immediate revocation of all historical OD credits, automatic course detention, and referral to the Proctorial Board."
+    },
+    {
+      "document_id": "ACAD-POL-005",
+      "title": "Roles and Responsibilities of Academic Program Coordinators",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Academic Program Coordinators",
+        "Course Coordinators",
+        "Heads of Department",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "program coordinator",
+        "PC",
+        "course coordinator",
+        "CC",
+        "timetable scheduling",
+        "section balancing",
+        "curriculum execution",
+        "prerequisite management",
+        "overload review",
+        "multi-section alignment",
+        "LearnSphere LMS setup"
+      ],
+      "retrieval_signals": [
+        "program coordinator responsibilities",
+        "who is the PC for B.Tech CSE",
+        "PC signature for credit overload permission",
+        "meet program coordinator for course exemption",
+        "course coordinator duties for multi-section courses",
+        "who is the CC for first year engineering mathematics",
+        "CC approval for common midterm paper",
+        "academic program management guidelines"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Academic Program Coordinator",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "ACAD-POL-001",
+        "ACAD-POL-002",
+        "ACAD-OBE-001",
+        "ACAD-POL-009"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nTo ensure seamless administrative execution of degree programs, cohesive curriculum alignment across multi-section cohorts, and strict adherence to autonomous regulations, Demo University establishes the executive academic leadership role of Academic Program Coordinator (PC) and Course Coordinator (CC).\n\n2. APPOINTMENT AND APPLICABILITY\nFor every accredited degree program (e.g., B.Tech Computer Science and Engineering, B.Tech Electronics, MBA), the Dean of Academic Affairs, in consultation with the respective HOD, appoints a senior Associate Professor or Professor as the Academic Program Coordinator for a two-year tenure.\n\n3. PROGRAM COORDINATOR (PC) CORE RESPONSIBILITIES\n3.1 Semester Academic Planning:\n  a) Constructs the master semester classroom and laboratory timetable, avoiding scheduling collisions among core subjects and program electives.\n  b) Sets class section enrollment quotas and monitors section balancing during the Course Registration and Add/Drop windows on UniCampus ERP.\n  c) Audits student prerequisite compliance across the program cohort, flagging structural progression anomalies to the HOD.\n3.2 Academic Petitions and Overloads:\n  a) Serves as the primary reviewing authority for student petitions seeking credit overloads (up to 28 credits) or structural underloads.\n  b) Reviews transfer credit evaluations and course exemptions for lateral-entry engineering students.\n3.3 Continuous Assessment Quality:\n  a) Monitors continuous internal assessment schedules, ensuring Continuous Internal Evaluation (CIE) marks are entered and frozen on ExamShield according to the statutory university calendar.\n\n4. COURSE COORDINATOR (CC) DUTIES IN MULTI-SECTION COURSES\nFor large courses delivered across multiple classroom sections (e.g., First-Year Engineering Mathematics, CSE201 Data Structures and Algorithms), a dedicated Course Coordinator is designated:\n  a) Formulates a unified instructional course syllabus and weekly lecture delivery roadmap.\n  b) Configures the master course repository on LearnSphere LMS, ensuring standardized assignment rubrics, coding sandboxes, and slide vaults.\n  c) Authors the common centralized midterm examination (CIE 1 and CIE 2) question papers in alignment with Outcome-Based Education (OBE) course outcome frameworks.\n\n5. DISAMBIGUATION ADVISORY\n5.1 The abbreviation 'PC' in academic contexts denotes strictly 'Academic Program Coordinator'. It must not be conflated with the disciplinary panel 'Proctorial Committee' (STU-POL-005) or computing hardware 'Personal Computer / Lab PC' (IT-LAB-004).\n5.2 The abbreviation 'CC' denotes 'Course Coordinator'. It must not be confused with the university computing facility 'Central Computing Centre' (IT-FAC-001) located in the basement of Turing Complex.\n\n6. ESCALATION\nProgrammatic disputes escalate to the Head of Department and the Office of the Dean of Academic Affairs, Chanakya Bhavan."
+    },
+    {
+      "document_id": "ACAD-POL-006",
+      "title": "Faculty Advisory System and Student Mentoring Guidelines",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.6",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Faculty Advisors",
+        "All Students",
+        "Heads of Department",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "faculty advisor",
+        "FA",
+        "student mentoring",
+        "mentorship system",
+        "academic counseling",
+        "ERP registration approval",
+        "attendance monitoring",
+        "parent teacher interaction",
+        "probation counseling"
+      ],
+      "retrieval_signals": [
+        "faculty advisory system guidelines",
+        "who is my assigned FA",
+        "FA approval needed for elective selection in ERP",
+        "my FA is on leave who signs my form",
+        "faculty mentor duties B.Tech",
+        "academic probation counseling FA",
+        "how to change assigned faculty advisor",
+        "parent meeting with faculty advisor"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "AttendEdge",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)",
+        "Course Instructor / Professor",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "POL-COURSE-REG",
+        "POL-ATTEND",
+        "ACAD-POL-001",
+        "STU-POL-003"
+      ],
+      "content": "1. PURPOSE AND MENTORSHIP PHILOSOPHY\nDemo University mandates the Faculty Advisory System to ensure every enrolled student receives personalized academic navigation, professional mentorship, and pastoral counseling throughout their institutional lifecycle. The system provides a formal bridge between individual students and the complex academic machinery.\n\n2. ALLOTMENT STRUCTURE AND RESIDENCY\n2.1 Cohort Assignment: Upon matriculation in their first semester, each undergraduate student is assigned a full-time faculty member who serves as their dedicated Faculty Advisor (FA) for the entire four-year program duration.\n2.2 Cohort Ratio: Faculty Advisors mentor a designated cohort of 20 to 30 students, maintaining consistent academic continuity across all eight semesters.\n\n3. STATUTORY DUTIES AND AUTHORITIES OF THE FACULTY ADVISOR\n3.1 Course Registration and Enrollment:\n  a) Audits the student's provisional course registration basket on UniCampus ERP prior to the start of each semester.\n  b) Verifies that core prerequisites have been cleared and that credit totals adhere strictly to statutory boundaries (20\u201324 normal, 28 overload, 16\u201318 underload).\n  c) Digitally approves course registration; provisional selections cannot convert to confirmed enrollment without FA sign-off.\n3.2 Academic Progress and Early Intervention:\n  a) Reviews Continuous Internal Evaluation (CIE) test scores following CIE 1 and CIE 2.\n  b) Conducts mandatory advisory sessions for students exhibiting attendance below 80% on AttendEdge or facing active backlog arrears.\n  c) Communicates with parents or guardians regarding critical academic probation or imminent detention risks.\n3.3 Verification of Formal Petitions:\n  a) Endorses student applications for medical attendance condonation, On-Duty leaves, internship No Objection Certificates (NOC), and formal course withdrawals.\n\n4. ADVISORY MEETINGS AND PROTOCOL\nFaculty Advisors maintain designated weekly office hours published on UniCampus ERP. Advisors conduct at least three formal cohort meetings per semester (commencement, post-midterms, and pre-SEE).\n\n5. DISAMBIGUATION ADVISORY\nIn all administrative communications, forms, and ERP modules, the abbreviation 'FA' designates strictly the 'Faculty Advisor / Mentor'. It must never be confused with 'Financial Aid' (FIN-SCH-001), which governs institutional scholarships, need-based fee concessions, and bursaries administered by the Finance and Accounts Office.\n\n6. GOVERNANCE AND ESCALATION\nIf an assigned Faculty Advisor takes extended medical or sabbatical leave, the HOD must designate an alternate interim advisor within 48 hours. Concerns regarding advisory support escalate to the Head of Department or the Office of Student Welfare."
+    },
+    {
+      "document_id": "ACAD-POL-007",
+      "title": "Graduate Teaching Assistantship (TA) Norms and Duties",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduate Teaching Assistants",
+        "M.Tech Students",
+        "Ph.D. Scholars",
+        "Course Instructors",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "teaching assistantship",
+        "TA",
+        "graduate assistant",
+        "tutorial instruction",
+        "lab code evaluation",
+        "assignment grading",
+        "teaching hours limit",
+        "TA office hours",
+        "LearnSphere LMS grading",
+        "academic support"
+      ],
+      "retrieval_signals": [
+        "teaching assistantship norms",
+        "how to apply for teaching assistantship in second year",
+        "contact details of TA for Operating Systems",
+        "TA office hours for tutoring",
+        "graduate TA workload hours per week",
+        "can M.Tech student work as TA",
+        "teaching assistant duties lab manual",
+        "TA stipend release academic affairs"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Teaching Assistant (Graduate)",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "ACAD-REG-002",
+        "ACAD-CRS-001",
+        "RES-POL-003",
+        "IT-SYS-002"
+      ],
+      "content": "1. PURPOSE AND SCHOLASTIC CHARTER\nTo foster instructional pedagogy among postgraduate scholars and provide rigorous tutorial and laboratory assistance to undergraduate cohorts, Demo University institutes the Graduate Teaching Assistantship (TA) framework. This policy governs appointment criteria, instructional duties, operational boundaries, and evaluation of Teaching Assistants.\n\n2. APPOINTMENT ELIGIBILITY AND WORKLOAD\n2.1 Eligibility: Full-time Master of Technology (M.Tech) students in their second year and registered Doctor of Philosophy (Ph.D.) research scholars with approved coursework completion are eligible to serve as Teaching Assistants.\n2.2 Maximum Weekly Workload: A Teaching Assistant must dedicate strictly 8 to 10 hours per week to instructional support duties. This workload is designed to prevent interference with personal dissertation research.\n\n3. INSTRUCTIONAL DUTIES AND BOUNDARIES\n3.1 Permissible TA Responsibilities:\n  a) Conducting practical laboratory sessions under the supervision of the primary Course Instructor.\n  b) Leading problem-solving tutorial classes in computing, mathematics, and engineering sciences.\n  c) Executing initial code evaluations and assignment assessments on LearnSphere LMS in strict adherence to instructor-provided grading rubrics.\n  d) Holding scheduled weekly TA office hours to mentor struggling undergraduate students.\n3.2 Prohibited Activities: Teaching Assistants are strictly prohibited from authoring formal semester examination question papers, grading confidential Semester End Examination (SEE) scripts, or assigning final letter grades.\n\n4. CODE OF ACADEMIC INTEGRITY\nTeaching Assistants occupy a position of academic trust. Demonstrating favoritism, disclosing assessment rubrics prematurely, or taking monetary compensation from students for private tutoring warrants immediate termination of the assistantship and referral to the Proctorial Board.\n\n5. DISAMBIGUATION ADVISORY\nThe abbreviation 'TA' possesses distinct institutional meanings across university divisions:\n  a) Academic Context (Herein): 'Teaching Assistant'\u2014a graduate student assisting faculty with course instruction and grading.\n  b) Technical Operations Context: 'Technical Assistant' (ROLE-TA-TECH / OPS-LAB-003 / IT-STF-001)\u2014a full-time permanent lab technician maintaining heavy engineering machinery, calibrating instrumentation, and supervising physical workshop safety.\n  c) Financial Context: 'Travel Allowance' (FIN-POL-006)\u2014monetary per diem reimbursement disbursed by the Finance Office for official outstation travel.\n\n6. ADMINISTRATIVE REPORTING\nTeaching Assistants report functionally to their assigned Course Instructor and administratively to the Head of Department, Chanakya Bhavan."
+    },
+    {
+      "document_id": "ACAD-POL-008",
+      "title": "Policy on Industry Internship-Based 8th Semester Projects",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.7",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Final Year B.Tech Students",
+        "Faculty Advisors",
+        "Project Guides",
+        "Career Development Centre",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "eighth semester internship",
+        "industry project",
+        "credit substitution",
+        "corporate capstone",
+        "internship NOC",
+        "remote evaluation",
+        "off-campus semester",
+        "early joining permission",
+        "full-time placement offer",
+        "capstone viva"
+      ],
+      "retrieval_signals": [
+        "8th sem internship policy",
+        "can I join company early in 8th sem",
+        "converting 8th sem courses into industry project",
+        "early joining permission letter from university",
+        "remote project viva for placed students",
+        "internship in 8th sem can I skip classes and get attendance",
+        "full time corporate internship credit transfer",
+        "CDC approval for 8th semester project off campus"
+      ],
+      "systems": [
+        "CareerHub",
+        "UniCampus ERP",
+        "ExamShield Portal"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Director of Placements and Corporate Relations",
+        "Head of Department (HOD)",
+        "Course Instructor / Project Guide",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "PLC-POL-001",
+        "PLC-POL-002",
+        "POL-INTERNSHIP",
+        "POL-GRADUATION",
+        "PLC-GUI-003"
+      ],
+      "content": "1. PURPOSE AND INDUSTRIAL IMMERSION MANDATE\nDemo University actively fosters deep enterprise integration by enabling qualified final-year undergraduate engineering candidates to spend their terminal eighth (8th) semester in full-time industrial residency. This policy defines the academic criteria, corporate approval workflows, credit conversion formulas, and remote examination mechanisms governing industry internship-based capstone projects.\n\n2. CANDIDATE ELIGIBILITY BENCHMARKS\nTo qualify for eighth-semester off-campus industrial credit substitution, a candidate must strictly satisfy the following criteria at the conclusion of the 7th semester:\n  a) Minimum cumulative CGPA >= 7.00 across all completed terms.\n  b) Zero uncleared backlog arrears from prior semesters.\n  c) Possession of a verified full-time employment or formal semester-long corporate internship offer secured through the Career Development Centre (CDC) or an accredited corporate sponsor.\n  d) Completion of all mandatory institutional non-credit audit requirements.\n\n3. CURRICULAR CREDIT CONVERSION MECHANISM\n3.1 Substitution Scheme: Eligible students substitute all on-campus Eighth Semester professional and open elective coursework (typically 12 to 16 credits) with a unified, comprehensive Corporate Industry Capstone Project.\n3.2 Dual Supervision: The candidate is supervised by an assigned Corporate Industry Mentor at the enterprise worksite and an internal Academic Faculty Supervisor appointed by the Head of Department.\n\n4. PROCEDURAL WORKFLOW AND INSTITUTIONAL APPROVALS\n4.1 Corporate Offer Vetting: The student submits the official corporate appointment letter, containing clear job descriptions, stipend details, and company mentor credentials, to CareerHub.\n4.2 Placement Office NOC: The Director of Placements and Corporate Relations verifies corporate credentials and generates an institutional No Objection Certificate (NOC).\n4.3 Academic Approval: The Department Curriculum Committee and HOD review the technical relevance of the corporate assignment, approving credit conversion in UniCampus ERP.\n4.4 Academic Sanction: The Dean of Academic Affairs executes the formal order granting the student off-campus semester status, exempting daily on-campus attendance rosters in AttendEdge.\n\n5. EVALUATION AND MILESTONE DEFENSE\n5.1 Monthly Progress Reviews: The student submits monthly progress deliverables and timesheets digitally signed by the industry mentor via LearnSphere LMS.\n5.2 Remote Viva Voce: Final evaluation of the capstone project is conducted at the close of the semester by a joint panel of internal senior faculty and an external examiner. Placed students stationed at outstation enterprise offices are permitted to defend their thesis via secure online video viva.\n\n6. INTER-DEPARTMENTAL GOVERNANCE\nThis cross-functional policy is coordinated jointly by the Career Development Centre (Ramanujan Block, First Floor) and the Office of the Dean of Academic Affairs (Chanakya Bhavan)."
+    },
+    {
+      "document_id": "ACAD-POL-009",
+      "title": "Curriculum Development Cell Charter and Course Revision Process",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Academic Council",
+        "Heads of Department",
+        "Board of Studies Members",
+        "Industry Advisory Board",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "curriculum development",
+        "course revision process",
+        "Board of Studies",
+        "Academic Council approval",
+        "syllabus update",
+        "Outcome-Based Education",
+        "Bloom's taxonomy",
+        "elective introduction",
+        "CDC academic committee"
+      ],
+      "retrieval_signals": [
+        "curriculum development cell charter",
+        "course revision process university",
+        "CDC minutes of meeting for syllabus revision",
+        "who is the chairman of CDC for CSE curriculum",
+        "how are new elective courses approved",
+        "Board of Studies syllabus update cycle",
+        "Academic Council curriculum approvals"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Academic Program Coordinator",
+        "Vice-Chancellor"
+      ],
+      "related_documents": [
+        "ACAD-OBE-001",
+        "ACAD-REG-001",
+        "ACAD-POL-002"
+      ],
+      "content": "1. STATUTORY CHARTER AND PURPOSE\nTo guarantee that academic curricula at Demo University continually reflect advancing engineering frontiers, industry technological shifts, and national accreditation standards, the Academic Council establishes the Curriculum Development Cell (CDC) within the Office of Academic Affairs.\n\n2. JURISDICTION AND SUBUNITS\nThe Curriculum Development Cell supervises the academic evolution of all undergraduate, postgraduate, and doctoral degree programs. It coordinates closely with departmental Boards of Studies (BOS) and the Internal Quality Assurance Cell (IQAC).\n\n3. THE COURSE REVISION LIFECYCLE\n3.1 Revision Interval: Every academic department must undergo a comprehensive curriculum review every two (2) academic years, with minor elective updates evaluated annually.\n3.2 Departmental Board of Studies (BOS): The BOS, chaired by the HOD and comprising departmental senior professors, external university subject-matter experts, and Industry Advisory Board representatives, formulates proposed syllabus revisions.\n3.3 Alignment with Outcome-Based Education: Every revised course must establish clear Course Outcomes (COs) mapped to the twelve national Program Outcomes (POs) in accordance with Bloom's Revised Taxonomy.\n3.4 Scrutiny by CDC: The central Curriculum Development Cell audits credit allocations, prerequisite matrices, and laboratory contact hours for interdisciplinary consistency.\n3.5 Final Sanction by Academic Council: Following CDC endorsement, revised curricula are presented by the Dean of Academic Affairs to the University Academic Council for statutory ratification.\n\n4. CRITICAL DISAMBIGUATION NOTICE\nThe abbreviation 'CDC' carries dual institutional meanings within Demo University:\n  a) Academic Governance Context (Herein): 'Curriculum Development Cell'\u2014the statutory academic body under the Dean of Academic Affairs responsible for syllabus design and course revisions.\n  b) Career & Placement Context: 'Career Development Centre' (DEPT-CDC / PLC-POL-001)\u2014the student placement office situated in Ramanujan Block responsible for corporate recruiting, campus job drives, and corporate internships.\nSearch queries concerning resumes, job interviews, or placement eligibility belong to the Career Development Centre, not the Curriculum Development Cell.\n\n5. RECORD ARCHIVING\nAll ratified course structures and syllabus files are deposited into the institutional vault and integrated into LearnSphere LMS and UniCampus ERP, administered from Chanakya Bhavan, 2nd Floor, Wing A."
+    },
+    {
+      "document_id": "ACAD-POL-010",
+      "title": "Graduation Requirements and Minimum CGPA Degree Standards",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Policy",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Graduating Candidates",
+        "Controller of Examinations",
+        "Dean of Academic Affairs",
+        "University Registrar"
+      ],
+      "keywords": [
+        "graduation requirements",
+        "minimum CGPA standards",
+        "degree eligibility",
+        "cumulative grade point average",
+        "B.Tech 160 credits",
+        "MBA 84 credits",
+        "M.Tech 72 credits",
+        "zero arrears",
+        "non-credit audit clearance",
+        "residency limit N plus 2"
+      ],
+      "retrieval_signals": [
+        "graduation requirements policy",
+        "minimum CGPA degree standards",
+        "CGPA required to pass engineering degree",
+        "what happens if CGPA is below 5.0 at graduation",
+        "total credits required to complete B.Tech",
+        "graduation clearance academic rules",
+        "maximum years to finish degree",
+        "degree audit checklist for graduating seniors"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ExamShield Portal",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Controller of Examinations (COE)",
+        "University Registrar",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "POL-GRADUATION",
+        "ACAD-REG-001",
+        "ACAD-REG-002",
+        "ADM-SOP-001"
+      ],
+      "content": "1. PURPOSE AND RIGOR\nThis regulation sets forth the definitive academic benchmarks, credit thresholds, cumulative grade distributions, and residency requirements that must be met by any student seeking conferment of a degree from Demo University.\n\n2. ACADEMIC MINIMA FOR DEGREE CONFERMENT\n2.1 Credit Criteria:\n  a) B.Tech: Successful completion of exactly 160 prescribed academic credits as structured in the program curriculum.\n  b) MBA: Successful completion of 84 prescribed academic credits.\n  c) M.Tech: Successful completion of 72 prescribed academic credits.\n2.2 Cumulative Grade Point Average (CGPA) Cutoffs:\n  a) For all Undergraduate degrees: A minimum terminal CGPA of 5.00 on a 10.00-point scale. Any student earning 160 credits whose CGPA is below 5.00 is ineligible for degree award and must register for grade improvement assessments in eligible courses.\n  b) For all Postgraduate degrees: A minimum terminal CGPA of 6.00 on a 10.00-point scale.\n2.3 Total Backlog Liquidation: Every registered course must be cleared with a passing letter grade (O, A+, A, B+, B, C, or P). Zero 'F' (Fail) or 'I' (Incomplete) grades can remain on the permanent record.\n\n3. STATUTORY NON-CREDIT COMPLETIONS\nStudents must secure an authenticated 'Pass' grade in statutory non-credit audit requirements, including Environmental Studies, Professional Ethics, and physical education/NSS social credits.\n\n4. DEGREE DURATION AND RESIDENCY\nUndergraduate degrees must be finished within a maximum span of N + 2 years (6 years for 4-year B.Tech); postgraduate degrees within 4 years. Candidates unable to satisfy these requirements within this window forfeit candidate status.\n\n5. RELATIONSHIP WITH INSTITUTIONAL DISCHARGE\nAcademic degree eligibility is verified through automated degree audit scripts on UniCampus ERP. Once academic eligibility is validated, the student must complete the University Institutional No-Dues clearance protocol (ADM-SOP-001) to obtain provisional certificates and transcripts.\n\n6. ADMINISTRATIVE AUTHORITY\nAdministered by the Credit Transfer & Audit Section, Office of Academic Affairs, Chanakya Bhavan, Second Floor, Wing A."
+    },
+    {
+      "document_id": "ACAD-REG-001",
+      "title": "General Academic Regulations for Autonomous Programs",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Regulation",
+      "version": "5.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Faculty Members",
+        "Heads of Department",
+        "Examination Cell",
+        "Academic Council"
+      ],
+      "keywords": [
+        "autonomous academic regulations",
+        "grading scale",
+        "SGPA calculation",
+        "CGPA calculation",
+        "letter grades",
+        "relative grading",
+        "75% attendance rule",
+        "CIE weightage 40%",
+        "SEE weightage 60%",
+        "fast track summer term",
+        "academic probation",
+        "maximum residency N plus 2"
+      ],
+      "retrieval_signals": [
+        "general academic regulations autonomous programs",
+        "UG course credit requirements",
+        "grading system relative curve formula",
+        "SGPA and CGPA calculation method",
+        "passing marks in SEE theory paper",
+        "ARC notification on maximum backlog credits allowed",
+        "fast track summer term regulations",
+        "letter grades grade points university",
+        "undergraduate academic calendar rules"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "AttendEdge",
+        "ExamShield Portal"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Controller of Examinations (COE)",
+        "Head of Department (HOD)",
+        "Vice-Chancellor"
+      ],
+      "related_documents": [
+        "POL-ATTEND",
+        "POL-COURSE-REG",
+        "POL-GRADUATION",
+        "EXAM-GUI-001",
+        "EXAM-GUI-002",
+        "POL-BACKLOG"
+      ],
+      "content": "1. LEGISLATIVE AUTHORITY AND APPLICABILITY\nEnacted by the Academic Council under the Demo University Charter, these General Academic Regulations govern all undergraduate autonomous programs leading to the degree of Bachelor of Technology (B.Tech). They supersede all prior departmental circulars.\n\n2. CURRICULAR STRUCTURE AND CREDIT SYSTEM\n2.1 Credit Metrics: One lecture hour per week across a 15-week semester equals 1 credit; two laboratory/practical hours per week equal 1 credit.\n2.2 Total Program Requirements: 160 credits distributed across Basic Sciences, Engineering Sciences, Humanities and Management, Program Core, Program Electives, Open Electives, and Capstone Projects.\n\n3. ATTENDANCE REQUIREMENTS\n3.1 Mandatory Standard: Minimum 75.0% attendance in every registered course. Absence condonation between 65.0% and 74.9% permitted strictly on medical/OD grounds.\n3.2 Detention: Attendance below 65.0% results in absolute detention ('W' grade), debarring the student from Semester End Examinations.\n\n4. CONTINUOUS AND SUMMATIVE ASSESSMENT STRUCTURE\n4.1 Assessment Split: Performance is evaluated via Continuous Internal Evaluation (CIE, 40% weightage) and Semester End Examination (SEE, 60% weightage).\n4.2 Minimum Passing Standards: A student must secure a minimum of 40% in aggregate CIE to be eligible for SEE. In SEE, the student must secure at least 35% in the written examination paper, with a minimum aggregate (CIE + SEE) of 40% to earn course credit.\n\n5. GRADING SCALE AND STATISTICAL COMPUTATIONS\n5.1 10-Point Relative Grading System: Grades are awarded on a 10-point scale: O (Outstanding, 10), A+ (Excellent, 9), A (Very Good, 8), B+ (Good, 7), B (Above Average, 6), C (Average, 5), P (Pass, 4), and F (Fail, 0).\n5.2 Relative Curve Mapping: Letter grades are determined using statistical normal curve distributions based on class mean and standard deviation.\n5.3 SGPA and CGPA Formulas: SGPA is the weighted sum of credit-grade products divided by total credits registered in the semester. CGPA is the cumulative weighted sum across all completed terms.\n\n6. BACKLOG CLEARANCE AND REMEDIAL SUMMER TERM\nStudents receiving an 'F' grade may attempt supplementary examinations or register for the 7-week Fast-Track Summer Term (maximum 2 courses).\n\n7. DISAMBIGUATION ADVISORY\n7.1 The abbreviation 'ARC' in this document designates the 'Academic Regulations Committee' which drafts credit rules, and must not be confused with the 'Anti-Ragging Cell' (STU-POL-004).\n7.2 The abbreviation 'UG' designates 'Undergraduate' academic degree programs, not the 'University Gymnasium' (SAC-FAC-002) in the Student Activity Centre.\n\n8. DEGREE TIME LIMIT\nMaximum allowable completion duration is N + 2 years (6 academic years for 4-year B.Tech)."
+    },
+    {
+      "document_id": "ACAD-REG-002",
+      "title": "Academic Regulations for Postgraduate Programs",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Regulation",
+      "version": "4.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Postgraduate Students",
+        "M.Tech Scholars",
+        "MBA Candidates",
+        "Postgraduate Faculty",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "postgraduate academic regulations",
+        "M.Tech credit rules",
+        "MBA regulations",
+        "PG thesis requirements",
+        "master dissertation",
+        "minimum CGPA 6.0",
+        "teaching assistantship requirement",
+        "passing marks PG",
+        "postgraduate residency"
+      ],
+      "retrieval_signals": [
+        "postgraduate academic regulations",
+        "academic regulations for postgraduate programs",
+        "PG course credit requirements",
+        "PG thesis submission deadline",
+        "minimum CGPA for M.Tech degree",
+        "MBA graduation credit requirements",
+        "PG stipend disbursement date",
+        "postgraduate examination passing criteria"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "ExamShield Portal",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Controller of Examinations (COE)",
+        "Dean, School of Computing",
+        "Dean, School of Management"
+      ],
+      "related_documents": [
+        "ACAD-REG-001",
+        "ACAD-POL-007",
+        "POL-GRADUATION",
+        "EXAM-GUI-002"
+      ],
+      "content": "1. STATUTORY JURISDICTION\nPromulgated by the Academic Council, this regulatory code governs all master's degree programs offered at Demo University, including Master of Technology (M.Tech in Software Engineering, 72 credits) and Master of Business Administration (MBA, 84 credits).\n\n2. ACADEMIC STANDING AND PROGRESSION\n2.1 Grading and Cutoffs: Postgraduate programs enforce higher scholastic thresholds than undergraduate tracks. The minimum passing grade in any course is 'C' (Grade Point 5). The minimum cumulative CGPA required for degree conferment is 6.00.\n2.2 Passing Standards: A student must secure a minimum of 50% aggregate (CIE + SEE) with at least 40% in the formal Semester End Examination theory paper.\n\n3. MASTER'S THESIS AND DISSERTATION REGULATIONS\n3.1 M.Tech Thesis: Every M.Tech candidate completes a 16-credit Dissertation across Semesters 3 and 4 (Course Code: CSE580). The thesis must produce an original technical contribution.\n3.2 Plagiarism Screening: Prior to defense submission, theses undergo mandatory similarity screening via Turnitin / E-Shodh Hub in the Valmiki Central Library; similarity indices exceeding 15% are rejected.\n3.3 External Defense: The dissertation is evaluated through a public defense and oral viva voce conducted by an external examiner appointed by the Controller of Examinations.\n\n4. MANDATORY TEACHING ASSISTANTSHIP (TA)\nAll regular postgraduate scholars receiving institutional stipends must serve as Graduate Teaching Assistants for 8 to 10 hours per week in undergraduate laboratories and tutorials (ACAD-POL-007).\n\n5. DISAMBIGUATION ADVISORY\nThe abbreviation 'PG' in this document refers strictly to 'Postgraduate' academic degree programs (M.Tech / MBA). It must never be confused with off-campus student rental housing 'Paying Guest Accommodation' (HSTL-POL-005).\n\n6. MAXIMUM RESIDENCY (N + 2)\nAll postgraduate program requirements must be cleared within a maximum ceiling of four (4) consecutive academic years (N + 2) from matriculation."
+    },
+    {
+      "document_id": "ACAD-NOT-002",
+      "title": "Fall Semester Date of Registration (DOR) and Late Fee Penalties",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Notice",
+      "version": "1.0",
+      "effective_date": "2026-07-20",
+      "status": "Active",
+      "audience": [
+        "All Returning Students",
+        "Faculty Advisors",
+        "Finance and Accounts Office",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "Date of Registration",
+        "DOR",
+        "late registration fine",
+        "Fall semester registration",
+        "enrollment deadlines",
+        "UniCampus ERP window",
+        "Faculty Advisor approval deadline",
+        "financial hold clearance",
+        "Rs 100 per day fine",
+        "Rs 250 per day late fee"
+      ],
+      "retrieval_signals": [
+        "what is the DOR for 4th semester",
+        "missed DOR date can I pay fine and register",
+        "when does registration close",
+        "fall semester date of registration",
+        "late fee for course registration ERP",
+        "course enrollment deadline fall 2026",
+        "last date to register subjects on ERP without fine",
+        "registration blocked due to fee due date"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "ACAD-POL-001",
+        "POL-COURSE-REG",
+        "POL-FEE-PAY",
+        "FIN-POL-001"
+      ],
+      "content": "DEMO UNIVERSITY \u2014 ACADEMIC AFFAIRS NOTIFICATION\nRef: DU/ACAD/NOT/2026/082\nDate of Issuance: July 20, 2026\n\nSUBJECT: STATUTORY DATE OF REGISTRATION (DOR) FOR FALL SEMESTER 2026 AND SCHEDULE OF LATE REGISTRATION PENALTIES\n\n1. NOTIFICATION OF SCHEDULE\nAll returning undergraduate and postgraduate students are hereby notified that the official Course Registration window for the Fall Semester 2026 on UniCampus ERP opens on August 1, 2026, at 9:00 AM and terminates strictly on the official Date of Registration (DOR), August 5, 2026, at 5:00 PM.\n\n2. PREREQUISITE AND CLEARANCE MANDATE\nPrior to accessing course selection on UniCampus ERP, students must ensure:\n  a) Liquidation of all tuition fee liabilities, hostel mess dues, and incidental fines on PayVarsity.\n  b) Verification of prerequisite clearances in the ERP student audit tab.\n  c) Scheduling of digital consultation with the assigned Faculty Advisor.\n\n3. LATE REGISTRATION PENALTY STRUCTURE\nStudents who fail to complete course selection and obtain Faculty Advisor sign-off prior to the DOR deadline of August 5, 2026, at 5:00 PM will be subjected to the following progressive late penalty tiers:\n  a) Tier 1 (August 6 to August 15, 2026): Registration permitted with an automated late fee of Rs. 100 per day.\n  b) Tier 2 (August 16 to September 4, 2026): Registration permitted with an escalated late fee of Rs. 250 per day, subject to personal written endorsement from the HOD.\n  c) Absolute Registration Cutoff (September 5, 2026): The UniCampus ERP course registration engine closes permanently for the Fall term. Students not registered by this date are declared non-matriculated for the semester and placed on mandatory semester break.\n\n4. DISAMBIGUATION ADVISORY\nIn official notices and academic calendars, the acronym 'DOR' designates strictly the 'Date of Registration'. It must not be confused with the administrative role 'Dean of Research' (ROLE-DEAN-RES / RES-OFF-001) or the quality audit process 'Department Operational Review' (IQAC-REV-003).\n\nBY ORDER OF THE DEAN OF ACADEMIC AFFAIRS\nChanakya Bhavan, Second Floor, Wing A"
+    },
+    {
+      "document_id": "ACAD-OBE-001",
+      "title": "Outcome-Based Education Manual: Mapping COs to POs",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Manual",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Faculty Instructors",
+        "Academic Program Coordinators",
+        "Heads of Department",
+        "Internal Quality Assurance Cell",
+        "Accreditation Auditors"
+      ],
+      "keywords": [
+        "Outcome Based Education",
+        "OBE",
+        "Course Outcomes",
+        "CO",
+        "Program Outcomes",
+        "PO",
+        "CO PO mapping",
+        "Bloom's taxonomy",
+        "attainment calculation",
+        "NBA accreditation",
+        "direct attainment",
+        "indirect attainment"
+      ],
+      "retrieval_signals": [
+        "outcome based education manual mapping COs to POs",
+        "what are the COs for Data Structures CSE201",
+        "how are CO attainment levels calculated for lab",
+        "program outcomes for mechanical engineering",
+        "where can I view the 12 graduate POs",
+        "Bloom's taxonomy action verbs course design",
+        "direct and indirect CO attainment rubrics",
+        "CO PO mapping matrix calculation"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Academic Program Coordinator",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "ACAD-POL-009",
+        "ACAD-REG-001",
+        "ACAD-CRS-001"
+      ],
+      "content": "1. PURPOSE AND ACCREDITATION FRAMEWORK\nDemo University structures all academic instruction under the Outcome-Based Education (OBE) paradigm in strict compliance with National Board of Accreditation (NBA) criteria and the international Washington Accord. This manual details the methodologies for formulating Course Outcomes (COs), mapping them to graduate Program Outcomes (POs), and computing quantitative attainment thresholds.\n\n2. THE 12 GRADUATE PROGRAM OUTCOMES (POs)\nAll engineering graduates across CSE, ECE, MECH, and CIVIL must demonstrate measurable competency across twelve foundational attributes:\n  PO1: Engineering Knowledge\n  PO2: Problem Analysis\n  PO3: Design / Development of Solutions\n  PO4: Conduct Investigations of Complex Problems\n  PO5: Modern Tool Usage\n  PO6: The Engineer and Society\n  PO7: Environment and Sustainability\n  PO8: Ethics and Human Values\n  PO9: Individual and Team Work\n  PO10: Communication Skills\n  PO11: Project Management and Finance\n  PO12: Life-long Learning\n\n3. FORMULATION OF COURSE OUTCOMES (COs)\nEvery course syllabus formulated at Demo University must define exactly 5 to 6 discrete, measurable Course Outcomes (COs). CO statements must utilize action verbs mapped to Bloom's Revised Taxonomy levels (Level 1: Remembering, Level 2: Understanding, Level 3: Applying, Level 4: Analyzing, Level 5: Evaluating, Level 6: Creating).\n\n4. CO-TO-PO MAPPING MATRIX AND ARTICULATION LEVELS\nCourse Instructors, in coordination with the Course Coordinator and Program Coordinator, establish a correlation matrix linking each Course Outcome to relevant Program Outcomes using standard articulation weights:\n  Level 1 (Slight / Low Correlation): Introductory exposure or conceptual touchpoint.\n  Level 2 (Moderate / Medium Correlation): Direct application through laboratory exercises or assignment tasks.\n  Level 3 (Substantial / High Correlation): Major course focus with intensive assessment in internal midterms and final examinations.\n\n5. QUANTITATIVE ATTAINMENT MEASUREMENT\n5.1 Direct Attainment (80% Weightage): Calculated from student performance in continuous internal assessments (CIE quizzes, midterms, coding assignments on LearnSphere LMS) and Semester End Examinations (SEE).\n5.2 Indirect Attainment (20% Weightage): Evaluated via end-of-semester Course End Surveys administered digitally through UniCampus ERP.\n5.3 Target Attainment Floor: Courses target 70% of enrolled students securing marks equal to or greater than the class benchmark score.\n\n6. TERMINOLOGY AND DISAMBIGUATION ADVISORY\n6.1 The abbreviation 'CO' in academic documentation designates 'Course Outcome' (pedagogical competency metric). It must not be confused with 'Campus Operations' (DEPT-OPS / OPS-POL-001), the facilities department responsible for building maintenance, power substations, and classroom air conditioning.\n6.2 The abbreviation 'PO' designates 'Program Outcome' (accreditation graduate attribute). It must not be confused with 'Placement Officer' (ROLE-PO / PLC-STF-001) in the Career Development Centre or 'Purchase Order' (FIN-PRO-002) in the Finance Office.\n\n7. INSTITUTIONAL JURISDICTION\nAdministered by the Internal Quality Assurance Cell (IQAC) and Curriculum Planning Cell, Chanakya Bhavan."
+    }
+  ]
+}

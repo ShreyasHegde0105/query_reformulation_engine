@@ -1,0 +1,1450 @@
+{
+  "domain": "Administrative Forms & General Administration",
+  "documents": [
+    {
+      "document_id": "STU-FRM-001",
+      "title": "Application Form: General Bonafide Student Certificate Request",
+      "department": "Academic Affairs & Admissions",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Administrative Application Form / Student Request Form",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students (UG, PG, Ph.D.)",
+        "Academic Counter Staff",
+        "Registrar Secretariat",
+        "Admissions Office"
+      ],
+      "keywords": [
+        "bonafide certificate form",
+        "proof of study request",
+        "general bonafide letter",
+        "passport bonafide verification",
+        "bus pass concession bonafide",
+        "2 working days SLA",
+        "QR code authenticated certificate",
+        "UniCampus ERP certificates",
+        "POL-BONAFIDE",
+        "PROC-BONAFIDE-REQ"
+      ],
+      "retrieval_signals": [
+        "how to get bonafide certificate",
+        "application form for general bonafide student certificate",
+        "bonafide certificate for passport application",
+        "bus pass bonafide request letter",
+        "where to apply for proof of study certificate",
+        "download bonafide form Demo University",
+        "bonafide certificate processing time 2 days",
+        "bonafied certficate",
+        "bona fied application",
+        "study certificate online apply",
+        "bonafide form + UniCampus ERP + proof of study",
+        "bonafide request + passport verification"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "University Registrar",
+        "Dean of Academic Affairs",
+        "Academic Counter Superintendent",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "STU-FRM-002",
+        "ACAD-SOP-002",
+        "POL-BONAFIDE",
+        "ADM-POL-004",
+        "REL-003"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis official application form is utilized by matriculated undergraduate, postgraduate, and doctoral students of Demo University to request a General Bonafide Student Certificate (Proof of Study). Administered jointly by Academic Affairs (DEPT-ACAD) and the Registrar's Office (DEPT-ADM), the certificate attests to active enrollment, academic degree program, current semester standing, and residential status for official statutory purposes—including passport applications, visa renewals, government welfare schemes, and public commuter transit concessions.\n\n2. ELIGIBILITY REQUIREMENTS (POL-BONAFIDE)\n2.1 Active Enrollment Status: The applicant must be currently enrolled with active matriculation status in UniCampus ERP;\n2.2 Fee Arrears Clearance: Zero total tuition fee defaults or outstanding financial hold flags on PayVarsity;\n2.3 Disciplinary Standing: Students undergoing active disciplinary suspension, debarment, or inquiries before the Proctorial Board (STU-POL-005) are strictly ineligible for bonafide certification.\n\n3. APPLICATION SUBMISSION PROCEDURE (PROC-BONAFIDE-REQ)\n3.1 Digital Submission Channel: Students initiate the request digitally via UniCampus ERP by navigating to: Student Services > Certificates > 'General Bonafide Certificate Request' (STU-FRM-001);\n3.2 Required Form Fields: Full Student Name, Roll / Registration Number, Degree Program & School, Current Semester, Date of Birth, Father's / Mother's Name, Permanent Home Address, and Explicit Purpose of Request (e.g., Regional Passport Office, Nationalised Bank, Transit Authority);\n3.3 Document Uploads: Where mandated by external authorities (such as passport appointment schedules or visa verification notices), an official requirement letter must be attached as a PDF.\n\n4. PROCESSING TIMELINE AND ISSUANCE SLA\n4.1 Standard SLA: General bonafide certificates are generated digitally within two (2) working days following submission;\n4.2 Digital Authentication: Certificates are issued as tamper-evident, digitally signed PDF documents bearing an official university seal, Registrar signature facsimile, and a unique verifiable dynamic QR code linked to the public UniCampus verification portal;\n4.3 Hard Copy Attestation: Where embossed physical ink stamps are required by foreign embassies or statutory bodies, students present the printed PDF at the Registrar Services Counter (Chanakya Bhavan, Ground Floor Visitor Hub) for embossing."
+    },
+    {
+      "document_id": "STU-FRM-002",
+      "title": "Application Form: Education Loan Fee Estimation Statement",
+      "department": "Academic Affairs & Finance Office",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Administrative Application Form / Financial Documentation Request",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students Seeking Bank Loans",
+        "Finance and Accounts Office Staff",
+        "Academic Counter Clerks",
+        "Nationalized and Commercial Bank Managers"
+      ],
+      "keywords": [
+        "education loan fee estimation form",
+        "bank loan fee structure letter",
+        "annual fee estimation statement",
+        "tuition and hostel fee breakdown",
+        "4 working days SLA",
+        "SBI education loan bonafide",
+        "certified institutional fee schedule",
+        "POL-BONAFIDE",
+        "REL-003",
+        "FIN-POL-001"
+      ],
+      "retrieval_signals": [
+        "how to get fee estimation letter for education loan",
+        "application form for education loan fee structure",
+        "bonafide certificate for SBI education loan",
+        "college fee schedule letter for bank loan",
+        "tuition and hostel fee estimation statement",
+        "fee structure bonafide processing time 4 days",
+        "bank loan quotation college format",
+        "edu loan fee estimashun",
+        "bonafide bank loan",
+        "fee structur letter",
+        "education loan + fee estimation + bank letter",
+        "loan bonafide + tuition breakdown + Finance Office"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Academic Affairs",
+        "Student Fee Accounts In-Charge",
+        "Registrar Secretariat"
+      ],
+      "related_documents": [
+        "STU-FRM-001",
+        "ACAD-SOP-002",
+        "POL-BONAFIDE",
+        "FIN-POL-001",
+        "REL-003"
+      ],
+      "content": "1. PURPOSE AND INTER-DEPARTMENTAL FUNCTION (REL-003)\nThis application form enables enrolled students to apply for an official, certified Education Loan Fee Estimation Statement and specialized institutional bonafide letter required by nationalized and commercial banks for loan sanctioning. This document acts as an operational bridge between Academic Affairs (DEPT-ACAD, verifying academic duration and credit residency) and Finance and Accounts (DEPT-FIN, providing certified fee schedules).\n\n2. SCOPE OF ESTIMATED FINANCIAL COMPONENTS\nThe resulting certified statement encapsulates complete, multi-year projected institutional expenditures across the remaining academic duration:\n- Annual Tuition Fees and Specialized Laboratory / Studio Charges;\n- Mandatory University Registration, Examination, and Convocation Fees;\n- Institutional Caution Deposits (Refundable under FIN-POL-003);\n- Standard Residential Hostel Accommodation and Dining Mess Fees (where applicable);\n- Standard Book Bank and Academic Resource Surcharges.\n\n3. APPLICATION AND SUBMISSION WORKFLOW\n3.1 Submission: The student accesses UniCampus ERP > Student Services > 'Education Loan Fee Estimation Request' (STU-FRM-002);\n3.2 Applicant Information: Student enters Lending Bank Name, Branch IFSC Code, Loan Account / File Number, and Residential Status (Day Scholar vs Hostel Resident);\n3.3 Supporting Attachments: Student uploads the official Bank Loan Sanction In-Principle Letter or Bank Fee Schedule Proforma.\n\n4. VERIFICATION WORKFLOW AND ISSUANCE SLA\n4.1 Multi-Stage Audit: Academic Affairs validates active progression and program duration (e.g., 4 years for B.Tech). Finance and Accounts reconciles fee ledgers and inserts official financial fee tables;\n4.2 Processing Timeline: Specialized fee estimation statements require four (4) working days from digital application;\n4.3 Issuance Format: Hard copy printed on official university security letterhead, jointly endorsed with wet-ink signatures and embossed seals of the Student Fee Accounts Officer (DEPT-FIN) and University Registrar (DEPT-ADM);\n4.4 Collection Point: Dispatched via Registrar Services Counter, Chanakya Bhavan, Ground Floor Visitor Hub."
+    },
+    {
+      "document_id": "STU-FRM-003",
+      "title": "Application Form: Transfer Certificate (TC) and Migration Certificate",
+      "department": "Admissions Office / Registrar Records",
+      "department_id": "DEPT-ADM",
+      "document_type": "Statutory Discharge Form / Departure Application",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Students",
+        "Withdrawing Students",
+        "Admissions Office Records Staff",
+        "Registrar Secretariat"
+      ],
+      "keywords": [
+        "Transfer Certificate application form",
+        "TC application form",
+        "Migration Certificate form",
+        "institutional discharge application",
+        "college leaving certificate form",
+        "7 working days dispatch SLA",
+        "No Dues prerequisite",
+        "POL-TRANSFER-CERT",
+        "PROC-TC-MIGRATION",
+        "REL-015"
+      ],
+      "retrieval_signals": [
+        "how to apply for TC after graduation",
+        "application form for transfer certificate and migration",
+        "download TC and migration form Demo University",
+        "get college leaving certificate",
+        "migration certificate application ERP",
+        "duplicate TC application procedure",
+        "transfer certificate dispatch timeline 7 days",
+        "apply tc migration",
+        "leavng certficate form",
+        "transfr certficate",
+        "TC application + Migration Certificate + No Dues",
+        "college withdrawal + TC request + Registrar"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Director of Admissions",
+        "University Registrar",
+        "Admissions Records Superintendent",
+        "Controller of Examinations (COE)"
+      ],
+      "related_documents": [
+        "ADM-POL-004",
+        "ADM-SOP-001",
+        "POL-TRANSFER-CERT",
+        "FIN-POL-003",
+        "REL-015"
+      ],
+      "content": "1. STATUTORY PURPOSE AND REGULATORY GOVERNANCE\nThis application form regulates the formal institutional discharge and statutory documentation issuance for students who have graduated, completed academic degree programs, or formally withdrawn from Demo University. Governed by POL-TRANSFER-CERT and PROC-TC-MIGRATION, this form initiates the processing and dispatch of the statutory Transfer Certificate (TC) and Inter-University Migration Certificate.\n\n2. CONTROLLED POLYSEMY DISAMBIGUATION (TC AND LC)\n2.1 Transfer Certificate (TC under DEPT-ADM / STU-FRM-003 / ADM-POL-004): The official discharge certificate detailing date of admission, date of leaving, academic conduct, and release from university jurisdiction. Must not be confused with 'Training Coordinator' (TC under DEPT-CPTD / CPTD-STF-001);\n2.2 Leaving Certificate (LC under DEPT-ADM / ADM-POL-004): The colloquial and regional statutory synonym for the institutional discharge document. Must not be confused with 'Library Committee' (LC under DEPT-LIB / LIB-GOV-001).\n\n3. MANDATORY PRE-CONDITIONS AND NO-DUES CLEARANCE (ADM-SOP-001)\nNo application for a Transfer Certificate or Migration Certificate can be processed until 100% completion of the University Institutional No-Dues Clearance workflow on UniCampus ERP:\n- Clearance of library book loans and circulation fines (DEPT-LIB);\n- Hostel room vacation sign-off and key surrender (DEPT-HSTL);\n- Engineering lab hardware component reconciliation (Academic Departments);\n- Full settlement of tuition and campus accounts ledgers (DEPT-FIN).\n\n4. APPLICATION PROCEDURE AND DISPATCH TIMELINE\n4.1 Online Form Lodging: Following No-Dues clearance, the applicant accesses UniCampus ERP > Student Services > 'TC & Migration Request' (STU-FRM-003);\n4.2 Applicant Submissions: Student enters Reason for Departure (Graduation / Admission to Another Institution / Personal Withdrawal), Destination University Name, and Verified Mailing Postal Address;\n4.3 Dispatch SLA: Certificates are signed by the Registrar, embossed with the official University Common Seal, and ready for physical collection or registered speed-post dispatch within seven (7) working days;\n4.4 Duplicate Certificate Norms: A duplicate TC is never issued routinely; applicants must submit an authenticated police non-traceable certificate and an attested notary affidavit."
+    },
+    {
+      "document_id": "STU-FRM-004",
+      "title": "Application Form: On-Duty (OD) Leave Sanction",
+      "department": "Department of Student Affairs",
+      "department_id": "DEPT-DSA",
+      "document_type": "Co-Curricular Absence Application / Attendance Adjustment Form",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Participating in Approved Events",
+        "Faculty Mentors and Sports Coaches",
+        "Dean of Student Affairs",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "On Duty application form",
+        "OD leave form",
+        "sports OD request",
+        "hackathon OD form",
+        "co-curricular absence sanction",
+        "maximum 10 days OD limit",
+        "AttendEdge excused present",
+        "POL-OD",
+        "PROC-OD-SANCTION"
+      ],
+      "retrieval_signals": [
+        "how to apply for OD form",
+        "download on duty leave application form Demo University",
+        "OD form for sports tournament",
+        "hackathon attendance on duty application",
+        "OD form signature workflow",
+        "submit OD form on ResolveDesk",
+        "maximum OD days application",
+        "on duty leav form",
+        "od aplicashun",
+        "sports od form",
+        "OD form + event invitation + ResolveDesk",
+        "On-Duty sanction + attendance adjustment + AttendEdge"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "AttendEdge",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Student Affairs (DSA)",
+        "Faculty Club Mentor / Sports Director",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs"
+      ],
+      "related_documents": [
+        "POL-OD",
+        "PROC-OD-SANCTION",
+        "ACAD-POL-004",
+        "STU-GUI-002",
+        "REL-001"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis form regulates the submission, multi-tiered administrative routing, and attendance adjustments for students officially deputed to represent Demo University in inter-collegiate sports, technical hackathons, cultural festivals, and academic conferences. Governed by POL-OD and PROC-OD-SANCTION.\n\n2. CONTROLLED POLYSEMY DISAMBIGUATION (OD)\nWithin university documentation, the acronym 'OD' denotes two completely different concepts:\n2.1 On-Duty Attendance Exemption (OD under DEPT-DSA / STU-FRM-004 / POL-OD): The official administrative process of excusing class absence for approved university representation;\n2.2 Organizational Development (OD under DEPT-MGMT / MGT-CRS-101): The core academic MBA management course module.\n\n3. STATUTORY LIMITS AND SUBMISSION RULES\n3.1 Ten-Day Semester Cap: A student is entitled to a maximum cumulative limit of ten (10) working days of On-Duty leave per academic semester across all courses;\n3.2 Pre-Event Submission SLA: Applications must be submitted on ResolveDesk (Category: Student Affairs > On-Duty Sanction) at least three (3) working days prior to departure;\n3.3 Mandatory Pre-Event Documentation: Official invitation brochure, match fixture/event schedule, and formal faculty endorsement letter;\n3.4 Post-Event Verification SLA: Within five (5) working days of returning to campus, the student must upload the verified Certificate of Participation or Merit Certificate;\n3.5 Attendance Adjustment: AttendEdge programmatically converts absent session stamps for sanctioned dates into 'Excused Present (OD)' for SEE hall ticket calculation."
+    },
+    {
+      "document_id": "STU-FRM-005",
+      "title": "Application Form: Attendance Shortage Medical Condonation",
+      "department": "Academic Affairs & Campus Health Centre",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Statutory Academic Condonation Form / Medical Exemption Request",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students with 65% to 74.9% Attendance",
+        "Campus Health Centre Medical Staff",
+        "Faculty Advisors",
+        "Heads of Department",
+        "Examination Cell"
+      ],
+      "keywords": [
+        "medical condonation form",
+        "attendance shortage application",
+        "65 to 74.9 percent condonation",
+        "medical certificate endorsement slip",
+        "hospitalization attendance exemption",
+        "hall ticket unblocking form",
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "PROC-ATTEND-COND",
+        "REL-004"
+      ],
+      "retrieval_signals": [
+        "medical condonation application form",
+        "form for attendance shortage condonation",
+        "how to apply for medical leave exam condonation",
+        "hospital admission attendance exemption form",
+        "medical condonation deadline 5 days before exam",
+        "Health Centre medical verification slip form",
+        "attendance shortage form 65 percent",
+        "medical condonashun form",
+        "attendence short form",
+        "mc condonation form",
+        "medical condonation form + Health Centre slip",
+        "attendance shortage + ExamShield hall ticket unblocking"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "AttendEdge",
+        "ExamShield Portal",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Senior Chief Medical Officer (ROLE-CMO)",
+        "Head of Department (HOD)",
+        "Faculty Advisor / Mentor",
+        "Controller of Examinations (COE)"
+      ],
+      "related_documents": [
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "PROC-ATTEND-COND",
+        "POL-MEDICAL-LEAVE",
+        "STU-MED-001",
+        "REL-004"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis form is utilized by enrolled students whose aggregate course attendance has fallen strictly within the condonable band (65.0% to 74.9%) due to authenticated severe illness, surgery, contagious quarantine, or hospitalization, seeking statutory attendance condonation to avoid exam detention. Governed by POL-ATTEND, ACAD-POL-003, and PROC-ATTEND-COND.\n\n2. STATUTORY BOUNDARIES AND ABSOLUTE NON-CONDONABILITY\n2.1 Condonable Range: Discretionary condonation by the Dean of Academic Affairs applies strictly to attendance between 65.0% and 74.9%;\n2.2 Sub-65% Prohibition: Attendance below 65.0% cannot be condoned under any circumstance; students with attendance < 65% are summarily detained ('W'/'SA' grade);\n2.3 Submission Deadline: This form and supporting medical proofs must be lodged on ResolveDesk at least five (5) working days prior to the commencement of Semester End Examinations.\n\n3. MANDATORY SUPPORTING DOCUMENTATION\n3.1 Clinical Proofs: Detailed hospital discharge summary, physician consultation notes, registered medical practitioner prescriptions, and diagnostic lab reports;\n3.2 Health Centre Verification Slip: Prior to lodging this form, the student must report in person to the Campus Health Centre within three (3) days of resuming classes. The Senior Chief Medical Officer examines documentation and issues an authenticated University Medical Verification Slip bearing a unique validation code;\n3.3 Endorsement Routing: Faculty Advisor and HOD review course attendance records on AttendEdge and digitally endorse the application;\n3.4 Detention Waiving: Dean's digital approval lifts the examination detention flag in UniCampus ERP, unblocking hall ticket downloads on ExamShield."
+    },
+    {
+      "document_id": "STU-FRM-006",
+      "title": "Application Form: SEE Answer Script Viewing and Re-evaluation",
+      "department": "Examination Cell",
+      "department_id": "DEPT-EXAM",
+      "document_type": "Examination Evaluation Appeal Form / Script Review Requisition",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students Contesting Exam Grades",
+        "Controller of Examinations Staff",
+        "Faculty Evaluators",
+        "Finance Office"
+      ],
+      "keywords": [
+        "re-evaluation application form",
+        "answer script viewing form",
+        "re-totalling application",
+        "revaluation fee Rs 1200",
+        "viewing fee Rs 400",
+        "retotalling fee Rs 300",
+        "15 working days SLA",
+        "ExamShield re-evaluation portal",
+        "POL-REEVAL",
+        "PROC-REEVAL-APP",
+        "REL-010"
+      ],
+      "retrieval_signals": [
+        "how to apply for paper re-evaluation",
+        "answer script viewing application form",
+        "revaluation form ExamShield",
+        "re-totalling fee application form",
+        "deadline to apply for answer sheet copy 7 days",
+        "re-evaluation fee 1200 rupees form",
+        "revaluation refund criteria form",
+        "revaluashun form",
+        "answer script vewing form",
+        "re-totalling form college",
+        "paper recheck form",
+        "re-evaluation form + ExamShield + PayVarsity",
+        "answer script viewing + re-totalling fee"
+      ],
+      "systems": [
+        "ExamShield Portal",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Controller of Examinations (COE)",
+        "Assistant Controller (Evaluation)",
+        "Course Evaluator / Senior Professor",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "POL-REEVAL",
+        "PROC-REEVAL-APP",
+        "EXAM-GUI-004",
+        "FIN-POL-002",
+        "REL-010"
+      ],
+      "content": "1. PURPOSE AND STATUTORY SCOPE\nThis application form enables candidates who appeared in Semester End Examinations (SEE) to formally inspect evaluated digital answer booklets, request arithmetic summation re-totalling, or petition for full blind academic re-evaluation. Governed by POL-REEVAL and PROC-REEVAL-APP.\n\n2. FEE SCHEDULE AND TIMELINES (FIN-POL-002)\n2.1 Answer Script Digital Viewing: Application lodged on ExamShield within seven (7) calendar days of result publication; fee of Rs. 400 per course script;\n2.2 Arithmetic Re-totalling: Application lodged within seven (7) days; fee of Rs. 300 per paper (processing SLA: 3 working days);\n2.3 Formal Academic Re-evaluation: Application lodged within seven (7) days of viewing the answer script; fee of Rs. 1,200 per paper (processing SLA: 15 working days).\n\n3. RE-EVALUATION WORKFLOW AND ARBITRATION NORMS (REL-010)\n3.1 Blind Re-assessment: Original evaluator markings and scores are digitally masked; the script is reassessed independently by an external senior examiner;\n3.2 15% Deviation Threshold: If the revised mark differs by >= 15% from the original score, the script is automatically referred to a third neutral senior evaluator for binding arbitration;\n3.3 Grade Finality: The grade finalized after re-evaluation supersedes the earlier grade, even if the resulting mark is lower;\n3.4 50% Fee Refund: If re-evaluation results in an upward mark revision of >= 10%, a 50% refund (Rs. 600) is credited to the student's PayVarsity account."
+    },
+    {
+      "document_id": "STU-FRM-007",
+      "title": "Application Form: Duplicate Student Identity Card Request",
+      "department": "Campus Safety, Vigilance and Security Department",
+      "department_id": "DEPT-SEC",
+      "document_type": "Security Credential Re-issuance Form / Identity Badge Application",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students with Lost or Damaged RFID Cards",
+        "Campus Security Personnel",
+        "Finance and Accounts Office",
+        "IT Identity and Access Management"
+      ],
+      "keywords": [
+        "duplicate ID card form",
+        "lost student ID application",
+        "RFID card replacement form",
+        "duplicate ID fee Rs 500",
+        "48 hours replacement SLA",
+        "ResolveDesk lost ID ticket",
+        "CampusPass deactivation",
+        "POL-ID-CARD",
+        "PROC-ID-REPLACE",
+        "REL-009"
+      ],
+      "retrieval_signals": [
+        "duplicate ID card application form",
+        "form for lost college ID card",
+        "replacement student ID form Demo University",
+        "duplicate smart card request form",
+        "lost ID card fee receipt submission",
+        "how to submit duplicate ID form",
+        "duplicate ID card 48 hours SLA",
+        "lost id crd form",
+        "duplicat id card",
+        "rfid replacement form",
+        "duplicate ID form + PayVarsity receipt + Security Office",
+        "lost ID card + CampusPass deactivation"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "PayVarsity",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Chief Security Officer (CSO)",
+        "ID Card Section In-Charge",
+        "Security Duty Officer",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "SEC-POL-001",
+        "POL-ID-CARD",
+        "PROC-ID-REPLACE",
+        "FIN-POL-002",
+        "REL-009"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis form is utilized by enrolled students to declare the loss, theft, severe physical defacement, or technical chip failure of their official Demo University Smart RFID Identity Card, and request duplicate credential printing and access re-provisioning. Governed by POL-ID-CARD, PROC-ID-REPLACE, and REL-009.\n\n2. REPLACEMENT PROCEDURE AND TIMELINE\n2.1 Loss Incident Logging: Student logs into ResolveDesk and submits this form under Category: Security > Lost ID Card. CampusPass immediately revokes the lost RFID chip serial number across all turnstiles;\n2.2 Fee Payment: Student remits the prescribed non-refundable replacement fee of Rs. 500 online via PayVarsity (FIN-POL-002);\n2.3 Physical Verification: Student presents the PayVarsity fee payment receipt and a recognized government photo identity card at the Central Security Office (Main Entrance Gate Security Complex);\n2.4 Re-issuance SLA: The duplicate Smart RFID card is printed, encoded, and handed over within forty-eight (48) hours of fee settlement;\n2.5 Automated Re-synchronization: CampusPass propagates the new RFID chip identifier to the Valmiki Central Library (LibNet), hostel biometric speed gates (DormTrack), and campus commuter buses (TransPass)."
+    },
+    {
+      "document_id": "ADM-SOP-001",
+      "title": "Comprehensive University Institutional No-Dues Clearance SOP",
+      "department": "Admissions Office / Registrar Records",
+      "department_id": "DEPT-ADM",
+      "document_type": "Institutional Standard Operating Procedure / Cross-Department Clearance",
+      "version": "3.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Final-Year Students",
+        "Withdrawing Students",
+        "Library Staff",
+        "Hostel Wardens",
+        "Department Lab Technicians",
+        "Finance Office Accounts Desk",
+        "Examination Cell"
+      ],
+      "keywords": [
+        "institutional no dues clearance SOP",
+        "graduation clearance procedure",
+        "five department clearance workflow",
+        "library no dues clearance",
+        "hostel room vacation signoff",
+        "lab breakage clearance",
+        "caution deposit refund release",
+        "degree certificate release",
+        "UniCampus ERP no dues",
+        "REL-006",
+        "FIN-POL-003",
+        "POL-GRADUATION"
+      ],
+      "retrieval_signals": [
+        "how to get no dues for degree",
+        "graduation no dues clearance procedure",
+        "leaving college need caution deposit and TC",
+        "library dues stopping degree certificate",
+        "hostel clearance for final year students",
+        "no dues workflow UniCampus ERP",
+        "caution deposit refund procedure after 8th semester",
+        "who signs no dues form",
+        "how many days for no dues clearance",
+        "no dues clearence sop",
+        "graduashun no dues",
+        "caution deposit no dues",
+        "institutional no dues + degree certificate + caution deposit",
+        "No Dues SOP + library + hostel + finance + lab"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LibNet",
+        "DormTrack",
+        "PayVarsity",
+        "ExamShield Portal"
+      ],
+      "roles": [
+        "University Registrar",
+        "Controller of Examinations (COE)",
+        "Chief Finance Officer / Bursar",
+        "University Chief Librarian",
+        "Chief Warden of Hostels",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "STU-FRM-003",
+        "ADM-POL-004",
+        "POL-TRANSFER-CERT",
+        "POL-GRADUATION",
+        "FIN-POL-003",
+        "LIB-POL-001",
+        "HSTL-REG-001",
+        "REL-006"
+      ],
+      "content": "1. PURPOSE AND INTER-DEPARTMENTAL SCOPE (REL-006)\nThis comprehensive Standard Operating Procedure establishes the mandatory institutional clearance protocol required of every student leaving Demo University—whether upon successful graduation or formal program withdrawal. Clearance verifies the total settlement of academic, residential, operational, and fiscal obligations across five distinct departments prior to releasing provisional degree certificates, sealed transcripts, Transfer Certificates (TC), and refundable caution deposits.\n\n2. FIVE-DEPARTMENT CLEARANCE SIGN-OFF MATRIX\nThe digital No-Dues clearance workflow is executed strictly through UniCampus ERP and requires sequential sign-offs across five operational divisions:\n2.1 Department 1: Central Library (DEPT-LIB / LIB-POL-001): Verifies the return of all circulating books, inter-library loans, and clearance of overdue fine ledgers on LibNet;\n2.2 Department 2: Hostel Administration (DEPT-HSTL / HSTL-REG-001): Conducts room inventory inspection, verifies room key surrender, and audits mess bill ledgers on DormTrack;\n2.3 Department 3: Parent Academic Department & Labs (DEPT-CSE, DEPT-ECE, etc.): Department lab in-charge verifies the return of all issued hardware development kits, microcontrollers, and clears accidental breakage slips (REL-018);\n2.4 Department 4: Campus Operations & Sports (DEPT-OPS / DEPT-SAC): Confirms return of athletic equipment and lockers at the Student Activity Centre;\n2.5 Department 5: Finance and Accounts Office (DEPT-FIN / FIN-POL-003): Audits entire multi-year fee ledger on PayVarsity, resolves outstanding tuition or transport arrears, authorizes the release of the refundable caution deposit, and issues final fiscal clearance.\n\n3. SEQUENTIAL DIGITAL WORKFLOW IN UNICAMPUS ERP\n3.1 Step 1 (Initiation): Student logs into UniCampus ERP > Student Services > 'Institutional No-Dues Clearance' during the designated graduation audit window (May-June);\n3.2 Step 2 (Automated Verification): ERP queries LibNet and DormTrack database APIs to identify outstanding liabilities;\n3.3 Step 3 (Departmental Queue Routing): Clearances route automatically to departmental dashboards for designated officer digital sign-off (SLA: 5 working days);\n3.4 Step 4 (Caution Deposit Credit): Finance Office initiates automated electronic fund transfer (NEFT) of the verified caution deposit (FIN-POL-003) to the student's verified bank account within fourteen (14) working days;\n3.5 Step 5 (Credential Release): Examination Cell generates official consolidated mark transcripts and provisional degree certificates; Admissions Office dispatches Transfer and Migration certificates."
+    },
+    {
+      "document_id": "ACAD-SOP-002",
+      "title": "Procedure for Requesting Bonafide Certificates and Proof of Study",
+      "department": "Academic Affairs & Admissions",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Standard Operating Procedure / Academic Documentation SOP",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Academic Counter Clerks",
+        "Faculty Advisors",
+        "Registrar Secretariat"
+      ],
+      "keywords": [
+        "bonafide certificate procedure",
+        "proof of study SOP",
+        "bonafide application workflow",
+        "education loan fee estimation letter",
+        "visa passport bonafide",
+        "2 to 4 working days SLA",
+        "UniCampus ERP certificates",
+        "POL-BONAFIDE",
+        "REL-003"
+      ],
+      "retrieval_signals": [
+        "how to get bonafide",
+        "procedure for requesting bonafide certificate",
+        "bonafide certificate for education loan SBI",
+        "where to collect stamped bonafide",
+        "fee estimation letter for passport application",
+        "steps to apply for bonafide letter on ERP",
+        "bonafide certificate processing time",
+        "how to get study certificate",
+        "bonafide procedur",
+        "aply for bonafide",
+        "bonafide letter procedure + UniCampus ERP",
+        "proof of study SOP + Registrar counter"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "PayVarsity"
+      ],
+      "roles": [
+        "University Registrar",
+        "Dean of Academic Affairs",
+        "Chief Finance Officer / Bursar",
+        "Academic Counter Officer"
+      ],
+      "related_documents": [
+        "STU-FRM-001",
+        "STU-FRM-002",
+        "POL-BONAFIDE",
+        "FIN-POL-001",
+        "REL-003"
+      ],
+      "content": "1. PURPOSE AND INTER-DEPARTMENTAL WORKFLOW (REL-003)\nThis standard operating procedure establishes the administrative protocols, verification hierarchies, and delivery channels for issuing official Bonafide Certificates and Proof of Study documentation. While students often make brief inquiries ('how to get bonafide'), the required operational workflow depends fundamentally on the intended purpose:\n1.1 General Study / Citizenship Proof: Requires active academic enrollment verification by Academic Affairs (DEPT-ACAD) and Registrar signature (DEPT-ADM);\n1.2 Bank Education Loan Letters: Requires certified multi-year annual institutional fee breakdowns formulated by the Finance and Accounts Office (DEPT-FIN).\n\n2. CATEGORIES AND SERVICE-LEVEL AGREEMENTS (SLAS)\n2.1 Category 1: General Bonafide Study Certificate (SLA: 2 Working Days): Issued for public bus transit concessions, regional passport office appointments, student software licenses, and competitive examination registrations;\n2.2 Category 2: Specialized Loan Fee Estimation Letter (SLA: 4 Working Days): Formulated for commercial bank educational loans, detailing institutional tuition, hostel fees, and caution deposits;\n2.3 Category 3: Visa / Embassy Sponsorship Attestation (SLA: 4 Working Days): Formulated for international student visa renewals or student travel visas requiring formal university sponsorship statements.\n\n3. APPLICATION PROCEDURE VIA UNICAMPUS ERP\n3.1 Digital Request Submission: Students log in to UniCampus ERP, navigate to Student Services > Certificates, select the appropriate certificate type, enter the specific recipient statutory authority, and upload prerequisite requirement letters;\n3.2 Automated System Auditing: The ERP engine validates active enrollment, verifies zero active disciplinary suspension flags, and checks for financial blocks on PayVarsity;\n3.3 Digital Certificate Generation: Approved general certificates are issued as downloadable PDF files bearing a secure, verifiable university cryptographic QR code;\n3.4 Embossed Wet-Ink Attestation: When wet-ink stamps or wax seals are demanded by foreign consulates or banks, students present the printed certificate at Counter 2, Chanakya Bhavan Visitor Hub."
+    },
+    {
+      "document_id": "ADM-POL-004",
+      "title": "Procedure for Withdrawal, Transfer Certificate (TC), and Migration",
+      "department": "Admissions Office / Registrar Records",
+      "department_id": "DEPT-ADM",
+      "document_type": "Institutional Discharge Policy / Student Departure SOP",
+      "version": "3.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Seniors",
+        "Withdrawing Students",
+        "Director of Admissions",
+        "University Registrar"
+      ],
+      "keywords": [
+        "Transfer Certificate procedure",
+        "TC issuance policy",
+        "Migration Certificate protocol",
+        "university withdrawal procedure",
+        "institutional discharge",
+        "7 working days SLA",
+        "No Dues clearance",
+        "duplicate TC affidavit",
+        "ambiguous term TC",
+        "ambiguous term LC",
+        "POL-TRANSFER-CERT",
+        "REL-015"
+      ],
+      "retrieval_signals": [
+        "how to apply for TC after graduation",
+        "procedure for withdrawal transfer certificate and migration",
+        "duplicate TC application form",
+        "no dues required for getting TC",
+        "how long does it take to issue LC",
+        "lost original LC duplicate application fee",
+        "difference between TC and Migration certificate",
+        "steps to cancel admission and get TC",
+        "migration certificate speed post delivery",
+        "tc migration procedure",
+        "colleg leaving certificate",
+        "tc leavng procedure",
+        "Transfer Certificate + Migration Certificate + Registrar",
+        "college withdrawal + TC + caution deposit refund"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Director of Admissions",
+        "University Registrar",
+        "Admissions Records Officer",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "STU-FRM-003",
+        "ADM-SOP-001",
+        "POL-TRANSFER-CERT",
+        "FIN-POL-003",
+        "FIN-POL-004",
+        "REL-015"
+      ],
+      "content": "1. PURPOSE AND STATUTORY REACH\nThis policy defines the official protocols governing voluntary student withdrawal, program terminations, graduation releases, and the issuance of statutory Transfer Certificates (TC) and Inter-University Migration Certificates. Promulgated by the Admissions Office and Registrar Secretariat (DEPT-ADM).\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (TC AND LC)\n2.1 Transfer Certificate (TC under DEPT-ADM / ADM-POL-004): The legal educational credential certifying academic release, enrollment duration, moral conduct, and non-liability. Must not be confused with 'Training Coordinator' (TC under DEPT-CPTD / CPTD-STF-001), the administrative staff coordinating corporate aptitude bootcamps;\n2.2 Leaving Certificate (LC under DEPT-ADM / ADM-POL-004): The regional statutory synonym for the Transfer Certificate issued upon course completion. Must not be confused with 'Library Committee' (LC under DEPT-LIB / LIB-GOV-001), the advisory body governing book procurement quotas and journal subscriptions.\n- Disambiguation Principle: Searches mentioning leaving college, migrating to another university, or duplicate school discharge refer to Transfer Certificate / Leaving Certificate (ADM-POL-004).\n\n3. MANDATORY INSTITUTIONAL CLEARANCE PREREQUISITE (ADM-SOP-001)\nUnder no circumstances may a Transfer Certificate or Migration Certificate be generated without 100% completion of the University No-Dues Clearance protocol in UniCampus ERP, verifying complete settlement across Library, Hostels, Department Labs, and Accounts.\n\n4. CERTIFICATE ISSUANCE AND DISPATCH TIMELINE (REL-015)\n4.1 Processing Timeline: Following successful No-Dues clearance and submission of STU-FRM-003, statutory certificates are prepared within seven (7) working days;\n4.2 Official Sealing: Certificates are formally signed by the University Registrar and embossed with the metal common seal;\n4.3 Delivery Methods: Graduating students may collect certificates in person at the Registrar Counter (Chanakya Bhavan) upon surrendering their student RFID smart card, or request delivery via registered speed post upon settling postal courier fees on PayVarsity;\n4.4 Duplicate Certificate Protocol: If an original TC or Migration Certificate is lost or destroyed, a duplicate can only be issued upon physical submission of an official police non-traceable report, an attested legal notary affidavit, and a duplicate fee of Rs. 1,000 paid via PayVarsity."
+    },
+    {
+      "document_id": "ADM-MED-001",
+      "title": "Media Interaction and PR Press Release Protocol",
+      "department": "Admissions and Media Relations Office",
+      "department_id": "DEPT-ADM",
+      "document_type": "Institutional Media Policy / Public Relations Guidelines",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "University Faculty and Staff",
+        "Student Club Presidents (DEPT-SAC)",
+        "Journalists and Media Representatives",
+        "Registrar Secretariat"
+      ],
+      "keywords": [
+        "media interaction policy",
+        "PR press release protocol",
+        "public relations office",
+        "official university spokesperson",
+        "fest media coverage",
+        "campus photography clearance",
+        "crisis communications",
+        "ambiguous term PR",
+        "DEPT-ADM media"
+      ],
+      "retrieval_signals": [
+        "contact PR office for fest press release",
+        "PR media coverage for hackathon",
+        "media interaction policy Demo University",
+        "who is the official university spokesperson",
+        "press release guidelines college event",
+        "media camera entry campus permission",
+        "how to publish event news in local newspaper",
+        "pr office contact",
+        "press relese guidelines",
+        "media relashuns college",
+        "Public Relations + press release + media coverage",
+        "media interaction protocol + official spokesperson"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Media Relations and Outreach",
+        "University Public Relations Officer (PRO)",
+        "Vice-Chancellor",
+        "Registrar"
+      ],
+      "related_documents": [
+        "SAC-POL-001",
+        "SEC-POL-003",
+        "RES-POL-002",
+        "GOV-ACT-001"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nThis protocol regulates external media engagement, journalism interactions, official press releases, photographic/video press clearances, and public statements representing Demo University. Administered by the Admissions and Media Relations Office (DEPT-ADM) to safeguard institutional brand integrity and ensure coordinated communication.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (PR)\nWithin university administrative nomenclature, the abbreviation 'PR' corresponds to two completely separate entities:\n2.1 Public Relations (PR under DEPT-ADM / ADM-MED-001): The administrative media relations cell responsible for journalism liaisons, university press releases, fest publicity, and media branding;\n2.2 Progress Report (PR under DEPT-RES / RES-POL-002): The semi-annual academic milestone evaluation and presentation submitted by doctoral Ph.D. scholars to their Doctoral Committee.\n- Query Disambiguation Rule: Inquiries concerning newspaper coverage, journalism queries, press kits, or campus fest publicity map strictly to Public Relations (ADM-MED-001); inquiries regarding Ph.D. seminar presentations or doctoral reviews map strictly to Progress Report (RES-POL-002).\n\n3. OFFICIAL SPOKESPERSON AND EXTERNAL STATEMENTS\n3.1 Authorized Spokesperson: Only the Vice-Chancellor, Registrar, or designated Public Relations Officer (PRO) is authorized to issue formal institutional statements, respond to journalistic inquiries, or address press conferences;\n3.2 Prohibition of Unauthorized Statements: Individual faculty members, students, club organizers, or staff are strictly prohibited from issuing official statements to print, broadcast, or online media on behalf of Demo University without written authorization from the Director of Media Relations.\n\n4. PRESS RELEASE WORKFLOW FOR CAMPUS EVENTS\n4.1 Advance Vetting: Student clubs and academic departments organizing major conferences, hackathons, or cultural fests seeking media publicity must draft a proposed press release and submit it via ResolveDesk to Media Relations at least five (5) working days prior to the event;\n4.2 Photographic and Camera Permissions: External television crews, photojournalists, and documentary filmmakers must obtain signed media gate passes from the PR Office, verified by Security (SEC-POL-003) at the Main Entrance Gate."
+    },
+    {
+      "document_id": "ADM-STF-002",
+      "title": "Administrative Office Hierarchy and Staff Designations",
+      "department": "Administrative Office / Registrar Secretariat",
+      "department_id": "DEPT-ADM",
+      "document_type": "Organizational Charter / Administrative Hierarchy Manual",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Administrative Staff",
+        "Enrolled Students and Faculty",
+        "Registrar Secretariat",
+        "Human Resources Office"
+      ],
+      "keywords": [
+        "administrative office hierarchy",
+        "Office Superintendent duties",
+        "OS administrative role",
+        "Chanakya Bhavan service counters",
+        "Registrar office designations",
+        "administrative counter timings",
+        "file movement protocol",
+        "ambiguous term OS",
+        "ROLE-REG"
+      ],
+      "retrieval_signals": [
+        "meet OS for signature on scholarship sanction letter",
+        "which desk does OS sit at in Chanakya Bhavan",
+        "administrative office hierarchy Demo University",
+        "office superintendent administrative duties",
+        "Registrar office staff designations",
+        "administrative counter opening hours Chanakya Bhavan",
+        "who signs administrative forms in registrar office",
+        "office superintendant contact",
+        "chanakya bhavan counter timing",
+        "administrative desk roles",
+        "Office Superintendent + Registrar Secretariat + Chanakya Bhavan",
+        "administrative hierarchy + service counter directory"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "University Registrar (ROLE-REG)",
+        "Deputy Registrar (Administration)",
+        "Office Superintendent (OS)",
+        "Administrative Assistant",
+        "Counter Services Clerk"
+      ],
+      "related_documents": [
+        "STU-FRM-001",
+        "ADM-POL-004",
+        "ACAD-CRS-003",
+        "HR-POL-003"
+      ],
+      "content": "1. PURPOSE AND ADMINISTRATIVE STRUCTURE\nThis document defines the organizational reporting hierarchy, staff designations, counter directory, and decision-making jurisdictions across the administrative offices of Demo University, headquartered in Chanakya Bhavan.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (OS)\nWithin university administrative nomenclature, the abbreviation 'OS' denotes two distinct entities:\n2.1 Office Superintendent (OS under DEPT-ADM / ADM-STF-002): The senior administrative officer supervising ministerial staff, counter services, file processing, document attestation, and certificate issuance in Chanakya Bhavan;\n2.2 Operating Systems (OS under DEPT-CSE / ACAD-CRS-003): The foundational undergraduate computer science course (CSE301) covering CPU scheduling, virtual memory, threads, and shell scripting.\n- Disambiguation Rule: Queries referencing counters, signatures on bonafide certificates, office desks, or administrative files map strictly to the Office Superintendent (ADM-STF-002).\n\n3. ADMINISTRATIVE DESK HIERARCHY AND FUNCTIONS\n3.1 University Registrar (ROLE-REG): Chief administrative and statutory executive; legal signatory for all university contracts, degrees, and regulatory affiliations;\n3.2 Deputy Registrar (Administration): Manages campus human resources, ministerial personnel allocation, and estate governance;\n3.3 Office Superintendent (OS): Floor in-charge of the Ground Floor Administrative Wing, Chanakya Bhavan. Supervises counter operations, verifies student certificate files, and certifies formal seal applications;\n3.4 Counter Services Staff: Front-facing clerks operating designated service counters (Counter 1: Admissions & Bonafide; Counter 2: Fees & Challans; Counter 3: Examinations & Mark Sheets; Counter 4: Degree & TC Dispatch).\n\n4. COUNTER OPERATING HOURS AND CITIZEN CHARTER\nService counters in Chanakya Bhavan operate Monday through Friday from 09:30 AM to 04:30 PM (lunch recess: 01:00 PM to 02:00 PM). Escalation of unresolved administrative delays routes to the Office Superintendent."
+    },
+    {
+      "document_id": "ADM-INT-001",
+      "title": "International Student Admissions, Visa Compliance, and FRRO Guidelines",
+      "department": "Admissions Office / International Wing",
+      "department_id": "DEPT-ADM",
+      "document_type": "International Admissions SOP / Statutory Visa Compliance Manual",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "International and Foreign National Students",
+        "International Admissions Officers",
+        "Hostel Wardens",
+        "Campus Security Personnel",
+        "Registrar Secretariat"
+      ],
+      "keywords": [
+        "international student admissions",
+        "visa extension letter",
+        "FRRO registration guidelines",
+        "police verification support",
+        "foreign student hostel bonafide",
+        "Form S compliance",
+        "student visa renewal procedure",
+        "REL-019",
+        "DEPT-ADM international"
+      ],
+      "retrieval_signals": [
+        "visa renewal letter for international students",
+        "FRRO registration documents needed from college",
+        "foreign student hostel bonafide certificate",
+        "international student admissions guidelines Demo University",
+        "student visa extension endorsement letter",
+        "police verification for foreign students college",
+        "Form S international student portal",
+        "visa extensun letter",
+        "frro registrasun",
+        "foreign student visa renewal",
+        "international student + FRRO registration + visa extension",
+        "visa compliance + police verification + foreign student"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "DormTrack",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Director of Admissions",
+        "International Student Advisor",
+        "University Registrar",
+        "Hostel Warden",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "STU-FRM-001",
+        "ADM-POL-004",
+        "HSTL-REG-001",
+        "SEC-POL-001",
+        "REL-019"
+      ],
+      "content": "1. PURPOSE AND STATUTORY COMPLIANCE (REL-019)\nThis manual establishes operational protocols, regulatory reporting mandates, and institutional support workflows for international foreign national students enrolled across degree programs at Demo University. Administered by the International Admissions Wing of DEPT-ADM to ensure full compliance with national immigration statutes and Foreigners Regional Registration Office (FRRO) directives.\n\n2. MANDATORY FRRO REGISTRATION (FORM S PROTOCOL)\n2.1 14-Day Mandatory Window: Every foreign national student holding a student visa must complete online registration on the government e-FRRO portal within fourteen (14) days of arrival in the country;\n2.2 Form S Submission: The International Student Advisor verifies passport credentials and submits digital institutional endorsement ('Form S') through the national immigration portal;\n2.3 Address Proof: The student is issued an official certified Residential Bonafide Certificate by Hostel Administration (DEPT-HSTL / DormTrack) validating on-campus dormitory residency.\n\n3. STUDENT VISA EXTENSION WORKFLOW\nStudents requiring visa renewals or extension endorsements must execute the following protocol at least sixty (60) days prior to visa expiration:\n3.1 Application on ERP: The student logs into UniCampus ERP > International Services > 'Visa Extension Recommendation';\n3.2 Academic Progression Clearance: Academic Affairs validates active academic progression, current semester attendance >= 75%, and zero pending disciplinary proceedings;\n3.3 Formal Recommendation Letter: The International Admissions Office prepares a formal institutional Visa Extension Recommendation Letter signed by the Registrar, detailing degree duration, anticipated graduation year, and financial bona fides;\n3.4 Police Liaison: The Campus Security Department (DEPT-SEC) assists local law enforcement and intelligence officers conducting mandatory statutory background checks."
+    },
+    {
+      "document_id": "POL-BONAFIDE",
+      "title": "Bonafide Student Certificate and Document Verification Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Institutional Policy / Certification Governance",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "Academic Counter Staff",
+        "Registrar Secretariat",
+        "Finance Office"
+      ],
+      "keywords": [
+        "bonafide certificate policy",
+        "proof of study policy",
+        "document verification regulations",
+        "digital bonafide with QR code",
+        "2 working days standard SLA",
+        "4 working days loan letter SLA",
+        "fee default blocks bonafide",
+        "disciplinary suspension blocks bonafide",
+        "UniCampus ERP certificates"
+      ],
+      "retrieval_signals": [
+        "bonafide student certificate policy",
+        "document verification policy Demo University",
+        "can student on suspension get bonafide",
+        "does fee due block bonafide certificate",
+        "bonafide certificate QR code verification",
+        "who is eligible for bonafide letter",
+        "bona fied certficate rules",
+        "bonafide verification policy",
+        "Bonafide Policy + document verification + UniCampus ERP",
+        "proof of study rules + fee default + suspension"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "University Registrar",
+        "Chief Finance Officer / Bursar",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "STU-FRM-001",
+        "STU-FRM-002",
+        "ACAD-SOP-002",
+        "FIN-POL-001",
+        "REL-003"
+      ],
+      "content": "1. STATUTORY MANDATE AND POLICY REACH\nPromulgated by the Academic Council, this policy regulates the eligibility criteria, issuance standards, verification protocols, and delivery channels for official Bonafide Student Certificates, Proof of Study letters, and institutional document endorsements at Demo University.\n\n2. STATUTORY ELIGIBILITY CONSTRAINTS\n2.1 Active Matriculation: Bonafide certification is issued exclusively to students maintaining active matriculated enrollment in good standing;\n2.2 Disciplinary Bar: Students facing active disciplinary suspension, debarment, or pending inquiries before the Proctorial Board (STU-POL-005) cannot be issued bonafide certificates;\n2.3 Financial Default Bar: Total default of semester tuition fees blocks the generation of bonafide letters until the financial hold is liquidated in PayVarsity.\n\n3. CLASSIFICATION OF CERTIFICATES AND PROCESSING SLAS\n3.1 Standard Bonafide Certificate (SLA: 2 Working Days): Attests to active study for transit passes, passport verification, or student concessions. Issued as a tamper-evident digital PDF with a cryptographic QR code;\n3.2 Specialized Financial Bonafide (SLA: 4 Working Days): Detailed fee structure letter formulated for bank education loans, containing certified tuition, hostel, and fee schedules verified by the Finance Office;\n3.3 Visa and Embassy Sponsorship Letters (SLA: 4 Working Days): Specialized endorsements for consular authorities.\n\n4. VERIFICATION INFRASTRUCTURE\nExternal statutory bodies (banks, embassies, police) verify issued certificates by scanning the embedded cryptographic QR code, which resolves securely to the university authentication engine."
+    },
+    {
+      "document_id": "POL-TRANSFER-CERT",
+      "title": "Transfer Certificate (TC), Migration, and Institutional Discharge Policy",
+      "department": "Admissions Office",
+      "department_id": "DEPT-ADM",
+      "document_type": "Institutional Policy / Departure Governance",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Students",
+        "Students Withdrawing from University",
+        "Director of Admissions",
+        "University Registrar"
+      ],
+      "keywords": [
+        "Transfer Certificate policy",
+        "TC discharge regulations",
+        "Migration Certificate policy",
+        "institutional discharge policy",
+        "mandatory No Dues clearance",
+        "7 working days dispatch SLA",
+        "duplicate TC police certificate",
+        "permanent student archiving"
+      ],
+      "retrieval_signals": [
+        "transfer certificate policy Demo University",
+        "migration certificate regulations",
+        "institutional discharge policy",
+        "TC issuance rules after graduation",
+        "mandatory no dues for TC release",
+        "duplicate TC rules police affidavit",
+        "can I get TC with pending library fines",
+        "transfer certficate policy",
+        "tc migration rules",
+        "Transfer Certificate Policy + institutional discharge",
+        "Migration Certificate + No Dues prerequisite"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Director of Admissions",
+        "University Registrar",
+        "Admissions Records In-Charge",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "STU-FRM-003",
+        "ADM-POL-004",
+        "ADM-SOP-001",
+        "FIN-POL-003",
+        "REL-015"
+      ],
+      "content": "1. STATUTORY PURPOSE\nThis policy governs the termination of student enrollment, permanent record archiving, and the issuance of statutory Transfer Certificates (TC) and Inter-University Migration Certificates upon graduation or withdrawal from Demo University.\n\n2. REGULATORY REQUIREMENTS AND STATUTORY CONTENTS\n2.1 Mandatory Contents: In accordance with statutory education regulations, the Transfer Certificate records: Student Full Legal Name, Enrollment Number, Date of Initial Admission, Date of Leaving, Academic Degree Program, General Moral Conduct, and Reason for Departure;\n2.2 Mandatory No-Dues Clearance: Application for TC and Migration must be accompanied by comprehensive institutional No-Dues clearance across Library, Hostels, Laboratories, and Accounts (ADM-SOP-001);\n2.3 Issuance Timeline: Transfer and Migration certificates are prepared, sealed by the Registrar, and dispatched within seven (7) working days following successful No-Dues verification.\n\n3. DUPLICATE CERTIFICATE PROTOCOL\nBecause a Transfer Certificate is a definitive legal departure instrument, duplicate copies are issued only in bona fide cases of loss or destruction upon submission of a formal police non-traceable report and a sworn notary affidavit."
+    },
+    {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "title": "Medical Leave and Health Absence Policy",
+      "department": "Campus Health Centre",
+      "department_id": "DEPT-HEALTH",
+      "document_type": "Health & Attendance Policy / Clinical Absence Regulations",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Experiencing Medical Illness",
+        "Campus Health Centre Medical Team",
+        "Faculty Advisors",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "medical leave policy",
+        "health absence regulations",
+        "illness reporting 48 hours",
+        "medical certificate verification within 3 days",
+        "prolonged illness 20 days semester break",
+        "Health Centre endorsement slip",
+        "fraudulent medical certificate penalty",
+        "Senior Chief Medical Officer"
+      ],
+      "retrieval_signals": [
+        "medical leave policy Demo University",
+        "reporting health absence 48 hours rules",
+        "how to submit medical certificate for missing class",
+        "private clinic medical certificate verification health centre",
+        "prolonged illness 20 days semester break policy",
+        "penalty for fake medical certificate",
+        "medical leave rules students",
+        "medcal leav policy",
+        "sick leave student rules",
+        "Medical Leave Policy + Health Centre verification",
+        "attendance exemption + medical certificate endorsement"
+      ],
+      "systems": [
+        "HealthDesk",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Senior Chief Medical Officer (ROLE-CMO)",
+        "Campus Physician",
+        "Dean of Academic Affairs",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "STU-FRM-005",
+        "ACAD-POL-003",
+        "STU-MED-001",
+        "POL-ATTEND",
+        "REL-004"
+      ],
+      "content": "1. PURPOSE AND HEALTH MANDATE\nThis policy establishes clinical reporting timelines, medical certificate verification protocols, hospitalization leaves, and psychiatric accommodations for students experiencing acute or chronic medical conditions.\n\n2. REPORTING PROTOCOLS AND TIMELINES\n2.1 48-Hour Reporting Rule: Any illness causing student absence for three (3) or more consecutive working days must be reported to the Campus Health Centre and assigned Faculty Advisor within forty-eight (48) hours of symptom onset;\n2.2 3-Day Verification Rule: Medical certificates issued by external private hospitals or physicians must be presented in person to the Senior Chief Medical Officer (Health & Wellness Pavilion) within three (3) working days of resuming campus attendance;\n2.3 University Medical Verification Slip: Following clinical review, the Chief Medical Officer issues an official University Medical Verification Slip with a unique endorsement code;\n2.4 Prolonged Illness and Semester Break: If severe illness exceeds twenty (20) instructional working days, the student may petition the Dean of Academic Affairs for a formal medical semester break (leave of absence) without academic penalty.\n\n3. PENALTIES FOR FRAUDULENT CERTIFICATION\nFabricating, altering, or purchasing fraudulent medical certificates constitutes severe academic dishonesty. Offenders face immediate semester suspension and referral to the Disciplinary Committee."
+    },
+    {
+      "document_id": "GOV-ACT-001",
+      "title": "Constitution and Powers of the Executive Council",
+      "department": "University Governance / Registrar Secretariat",
+      "department_id": "DEPT-ADM",
+      "document_type": "Statutory University Governance Act / Executive Board Charter",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Executive Council Members",
+        "Vice-Chancellor",
+        "Registrar",
+        "Deans of Schools",
+        "Chief Finance Officer"
+      ],
+      "keywords": [
+        "Executive Council constitution",
+        "EC powers and functions",
+        "apex governing body",
+        "Vice-Chancellor executive authority",
+        "statutory governance charter",
+        "annual university budget sanction",
+        "faculty appointment ratification",
+        "ambiguous term EC",
+        "ROLE-VC",
+        "ROLE-REG"
+      ],
+      "retrieval_signals": [
+        "Executive Council constitution Demo University",
+        "EC meeting resolutions regarding fee hike",
+        "who sits on the Executive Council",
+        "powers and functions of Executive Council",
+        "apex governing body of university",
+        "Vice-Chancellor Executive Council meetings",
+        "statutory governance charter college",
+        "executiv council constitution",
+        "ec powers university",
+        "governing body charter",
+        "Executive Council + statutory governance + Vice-Chancellor",
+        "EC resolutions + annual budget + Registrar"
+      ],
+      "systems": [
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Vice-Chancellor (ROLE-VC)",
+        "University Registrar (ROLE-REG)",
+        "Chief Finance Officer / Bursar (ROLE-CFO)",
+        "Dean of Academic Affairs",
+        "External Governing Board Nominees"
+      ],
+      "related_documents": [
+        "GOV-REG-002",
+        "EXAM-GUI-005",
+        "ECE-CRS-001",
+        "FIN-POL-001"
+      ],
+      "content": "1. STATUTORY CONSTITUTION AND JURISDICTION\nThe Executive Council (designated in institutional statutes as the 'EC') is the apex executive and governing authority of Demo University, constituted under the foundational University Charter. The Council oversees institutional management, capital property investments, annual revenue budgets, statutory appointments, and the enactment of university statutes.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (EC)\nWithin Demo University systems and communications, the abbreviation 'EC' possesses three completely distinct institutional meanings:\n2.1 Executive Council (EC under Governance / GOV-ACT-001): The apex governing board and policy-making tribunal chaired by the Vice-Chancellor;\n2.2 Examination Cell (EC under DEPT-EXAM / EXAM-GUI-005): The confidential evaluation and testing administration office headed by the Controller of Examinations;\n2.3 Electronics and Communication Engineering (EC under DEPT-ECE / ECE-CRS-001): The academic engineering department and degree branch.\n- Disambiguation Rule: Text referencing university-wide fiscal resolutions, statute amendments, or Board of Management directives refers to the Executive Council (GOV-ACT-001).\n\n3. COUNCIL COMPOSITION AND MEMBERSHIP\nThe Executive Council comprises:\n3.1 Chairperson: The Vice-Chancellor (ROLE-VC), presiding officer;\n3.2 Secretary: The University Registrar (ROLE-REG), ex-officio member-secretary;\n3.3 Academic Deans: Dean of Academic Affairs, Dean of Research, Dean of Student Welfare;\n3.4 Chief Finance Officer (ROLE-CFO): Financial advisor;\n3.5 External Nominees: Eminent educationalists, industrial leaders, and state government representatives.\n\n4. POWERS, AUTHORITIES, AND FUNCTIONS\nThe Executive Council possesses statutory powers to:\n- Ratify the annual fiscal budget, fee schedules (FIN-POL-001), and audited balance sheets;\n- Create academic departments, research centers, and professorial chairs;\n- Approve all major campus infrastructure investments and estate expansions;\n- Serve as the final appellate authority for severe employee and student disciplinary expulsions."
+    },
+    {
+      "document_id": "GOV-REG-002",
+      "title": "Academic Council Mandate and Standing Committee Powers",
+      "department": "Academic Affairs / Registrar Secretariat",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Statutory Governance Regulation / Academic Senate Charter",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Academic Council Members",
+        "Deans of Academic Schools",
+        "Heads of Department",
+        "University Registrar",
+        "Controller of Examinations"
+      ],
+      "keywords": [
+        "Academic Council mandate",
+        "AC powers and standing committees",
+        "statutory academic authority",
+        "curriculum approval authority",
+        "grading policy resolutions",
+        "autonomous degree regulations",
+        "standing committee hearings",
+        "ambiguous term AC",
+        "ACAD-REG-001"
+      ],
+      "retrieval_signals": [
+        "when is the next AC meeting for new elective approval",
+        "Academic Council resolutions on grading policy changes",
+        "Academic Council mandate Demo University",
+        "who sits on the Academic Council",
+        "standing committee powers of Academic Council",
+        "statutory academic senate regulations",
+        "curriculum revision approval body",
+        "academic councl meeting",
+        "ac mandate university",
+        "standing committee academic",
+        "Academic Council + curriculum approval + autonomous regulations",
+        "AC resolutions + grading policy + Academic Affairs"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS"
+      ],
+      "roles": [
+        "Vice-Chancellor (ROLE-VC)",
+        "Dean of Academic Affairs",
+        "University Registrar (ROLE-REG)",
+        "Controller of Examinations (COE)",
+        "All Academic Heads of Department"
+      ],
+      "related_documents": [
+        "GOV-ACT-001",
+        "ACAD-REG-001",
+        "ACAD-POL-009",
+        "OPS-FAC-005"
+      ],
+      "content": "1. STATUTORY CHARTER AND PURPOSE\nThe Academic Council (designated in university statutes as the 'AC') is the apex academic authority of Demo University, responsible for maintaining scholastic standards, approving curricula, ratifying autonomous regulations, and governing academic examinations.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (AC)\nWithin Demo University communications, the abbreviation 'AC' designates two completely different institutional concepts:\n2.1 Academic Council (AC under DEPT-ACAD / GOV-REG-002): The statutory university academic senate approving degree regulations, grading norms, and curricula;\n2.2 Air Conditioning (AC under DEPT-OPS / OPS-FAC-005): The physical HVAC climate control systems and thermostat settings.\n- Disambiguation Rule: Text referencing course revisions, academic bylaws, or degree approval resolutions refers to Academic Council (GOV-REG-002).\n\n3. COUNCIL COMPOSITION AND MEMBERSHIP\nChaired by the Vice-Chancellor, the Academic Council includes the Dean of Academic Affairs (Convener), Controller of Examinations, University Registrar, Deans of all Schools, all Academic Heads of Department (HODs), senior internal professors, and external industry and academic experts.\n\n4. POWERS, AUTHORITIES, AND FUNCTIONS\nThe Academic Council is empowered to:\n- Enact and amend General Academic Regulations (ACAD-REG-001) and Postgraduate Regulations (ACAD-REG-002);\n- Approve new degree programs, departmental course syllabi, and prerequisite structures;\n- Formulate grading scales, relative curve formulas, and examination passing criteria;\n- Appoint the Standing Committee of the Academic Council to adjudicate extraordinary academic appeals."
+    },
+    {
+      "document_id": "ACAD-GOV-004",
+      "title": "Senate Academic Committee Hearing Procedures",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Academic Appeals Procedure / Governance Committee Charter",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Students Appealing Academic Decisions",
+        "Senate Academic Committee Members",
+        "Dean of Academic Affairs",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "Senate Academic Committee hearings",
+        "SAC academic appeals",
+        "course detention appeal procedure",
+        "grace marks review",
+        "exceptional degree extension petition",
+        "appellate hearing process",
+        "ambiguous term SAC",
+        "GOV-REG-002"
+      ],
+      "retrieval_signals": [
+        "appeal to SAC against course detention",
+        "SAC decision on grace marks",
+        "Senate Academic Committee hearing procedure",
+        "how to appeal academic suspension to senate",
+        "student academic appeal process Demo University",
+        "petition for extraordinary degree time extension",
+        "senate academic committee members",
+        "senat academic committee",
+        "sac hearing procedure",
+        "appeal against detention",
+        "Senate Academic Committee + academic appeal + detention",
+        "SAC hearing + degree extension petition"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Dean of Academic Affairs (Chairperson)",
+        "Academic Committee Members",
+        "Controller of Examinations (COE)",
+        "Student Appellant"
+      ],
+      "related_documents": [
+        "GOV-REG-002",
+        "SAC-FAC-001",
+        "ACAD-POL-003",
+        "POL-ATTEND"
+      ],
+      "content": "1. PURPOSE AND APPELLATE JURISDICTION\nThis charter establishes the formal procedural steps, filing windows, hearing formats, and evidentiary rules governing the Senate Academic Committee (SAC). Functioning as the high-level standing committee of the Academic Council, the committee adjudicates exceptional student academic appeals.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (SAC)\nWithin Demo University administrative documentation, the abbreviation 'SAC' corresponds to two completely distinct entities:\n2.1 Senate Academic Committee (SAC under DEPT-ACAD / ACAD-GOV-004): The apex academic appeals tribunal reviewing detention challenges, extraordinary semester leaves, and grade disputes;\n2.2 Student Activity Centre (SAC under DEPT-SAC / SAC-FAC-001): The recreational student hub housing student clubs, the campus gymnasium, music rooms, and indoor sports facilities.\n- Disambiguation Rule: Text referencing appeals, academic detentions, or senate hearings refers to Senate Academic Committee (ACAD-GOV-004).\n\n3. ELIGIBLE APPEALS AND PETITION TIMELINES\n3.1 Contested Administrative Detentions: Extraordinary appeals contesting course detention where demonstrated administrative error or system failure occurred;\n3.2 Compassionate Degree Time-Limit Extensions: Petitions by candidates exceeding standard N + 2 residency windows due to documented medical trauma;\n3.3 Petition Lodging: Appeals must be submitted via ResolveDesk (Category: Academic Affairs > Senate Appeal) within seven (7) working days of the contested notification.\n\n4. HEARING CONDUCT AND RATIFICATION\nAppellants are entitled to appear in person before the committee to present written and verbal evidence. Committee determinations are recorded and submitted to the Academic Council for ratification."
+    },
+    {
+      "document_id": "ACAD-GOV-006",
+      "title": "Industry Advisory Board Composition and Mandate",
+      "department": "Academic Affairs & Career Development",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Institutional Governance Charter / Industry Advisory Guidelines",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Industry Advisory Board Members",
+        "Academic Department Heads",
+        "Dean of Academic Affairs",
+        "Director of Placements"
+      ],
+      "keywords": [
+        "Industry Advisory Board mandate",
+        "IA board composition",
+        "industry curriculum review",
+        "cloud computing syllabus advice",
+        "enterprise skills alignment",
+        "corporate advisory panel",
+        "ambiguous term IA",
+        "ACAD-POL-009"
+      ],
+      "retrieval_signals": [
+        "IA recommendations on cloud computing curriculum",
+        "industry advisory board meeting schedule",
+        "Industry Advisory Board composition and mandate",
+        "who sits on the industry advisory board",
+        "corporate input on engineering syllabus",
+        "industry advisory board Demo University",
+        "external industry advisors curriculum",
+        "industy advisory board",
+        "ia meeting schedule",
+        "corporate advisory panel",
+        "Industry Advisory Board + curriculum revision + industry alignment",
+        "IA board + corporate partnership + syllabus review"
+      ],
+      "systems": [
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Academic Affairs",
+        "Director of Placements and Corporate Relations",
+        "Head of Department (HOD)",
+        "External Corporate Executives"
+      ],
+      "related_documents": [
+        "ACAD-POL-009",
+        "PLC-POL-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. PURPOSE AND STRATEGIC ALLIANCE\nThis charter defines the composition, appointment criteria, consultative schedule, and curricular review mandates of the Industry Advisory Board (frequently designated in departmental records as the 'IA'). Established by Academic Affairs (DEPT-ACAD) in partnership with the Career Development Centre (DEPT-CDC) to align autonomous engineering and management curricula with contemporary corporate technological demands.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (IA)\nWithin university administrative nomenclature, the abbreviation 'IA' denotes two distinct entities:\n2.1 Industry Advisory Board (IA under DEPT-ACAD / ACAD-GOV-006): The external consultative body comprising enterprise executives advising on curriculum modernisation and industry readiness;\n2.2 Internal Assessment (IA under DEPT-EXAM / EXAM-GUI-001): The colloquial student term for Continuous Internal Evaluation (CIE) sessional examinations and tests.\n- Disambiguation Rule: Text referencing corporate executives, industry trends, or syllabus updates refers to Industry Advisory Board (ACAD-GOV-006).\n\n3. BOARD CONSTITUTION AND TENURE\nEach academic department maintains an Industry Advisory Board comprising 5 to 7 senior industry leaders (Engineering Directors, CTOs, Enterprise Architects) appointed for a two-year tenure.\n\n4. FUNCTIONS AND MEETING CYCLE\nThe board meets bi-annually to review laboratory computing curricula, evaluate capstone project rubrics, and recommend new elective subjects in emerging fields."
+    },
+    {
+      "document_id": "HR-POL-003",
+      "title": "Staff Leave Rules and Online LMS Portal Guide",
+      "department": "Human Resources / Administrative Office",
+      "department_id": "DEPT-ADM",
+      "document_type": "Human Resources Policy / Staff Leave Management Guide",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Teaching Faculty",
+        "Administrative and Technical Staff",
+        "Heads of Department",
+        "Human Resources Office"
+      ],
+      "keywords": [
+        "staff leave rules",
+        "Leave Management System LMS",
+        "casual leave application",
+        "earned leave rules",
+        "faculty medical leave",
+        "staff leave portal guide",
+        "ambiguous term LMS",
+        "HR administration"
+      ],
+      "retrieval_signals": [
+        "how to apply for casual leave in staff LMS",
+        "LMS leave balance for assistant professors",
+        "staff leave rules Demo University",
+        "faculty earned leave policy",
+        "Leave Management System login for employees",
+        "staff medical leave application portal",
+        "HR portal staff leave guide",
+        "staff lms login",
+        "casual leav apply",
+        "faculty leave balance",
+        "Leave Management System + staff leave + HR portal",
+        "casual leave + LMS leave balance + faculty"
+      ],
+      "systems": [
+        "Staff LMS Portal",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Head of Human Resources",
+        "University Registrar",
+        "Head of Department (HOD)",
+        "Faculty Member / Employee"
+      ],
+      "related_documents": [
+        "ADM-STF-002",
+        "IT-SYS-002",
+        "GOV-ACT-001"
+      ],
+      "content": "1. PURPOSE AND ADMINISTRATIVE REACH\nThis policy defines the leave entitlements, accrual rates, approval workflows, and online portal mechanics governing teaching faculty and non-teaching administrative staff at Demo University.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (LMS)\nWithin Demo University digital systems, the abbreviation 'LMS' represents two entirely separate software platforms:\n2.1 Leave Management System (LMS under HR / HR-POL-003): The internal employee portal utilized by faculty and staff to check leave balances and apply for casual, earned, or duty leaves;\n2.2 LearnSphere Learning Management System (LMS under IT / IT-SYS-002): The academic portal utilized by students and instructors for lecture slides, homework submissions, quizzes, and coding sandboxes.\n- Disambiguation Rule: Searches concerning employee casual leave, faculty vacation, or staff leave balances map to the Leave Management System (HR-POL-003).\n\n3. CORE LEAVE CATEGORIES AND ACCRUALS\n3.1 Casual Leave (CL): 12 days per calendar year for full-time regular employees;\n3.2 Earned Leave (EL): Accrued at statutory rates for non-vacation staff;\n3.3 Academic Duty Leave (OD): Sanctioned for presenting research papers, attending statutory conferences, or external examination duties.\n\n4. ONLINE LEAVE SUBMISSION WORKFLOW\nEmployees submit digital leave applications via the Staff LMS portal at least 48 hours prior to planned absence; applications route to the respective HOD or administrative supervisor."
+    },
+    {
+      "document_id": "IQAC-REV-003",
+      "title": "Annual Department Operational Review Guidelines",
+      "department": "Internal Quality Assurance Cell (IQAC)",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Quality Audit Guidelines / Institutional Review Manual",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Heads of Department",
+        "IQAC Audit Committee Members",
+        "Dean of Academic Affairs",
+        "Accreditation Steering Teams"
+      ],
+      "keywords": [
+        "Department Operational Review",
+        "DOR quality audit",
+        "annual academic audit",
+        "IQAC review guidelines",
+        "NBA NAAC compliance checklist",
+        "faculty research output review",
+        "student feedback audit",
+        "ambiguous term DOR"
+      ],
+      "retrieval_signals": [
+        "DOR audit checklist for CSE department accreditation",
+        "Annual Department Operational Review guidelines",
+        "IQAC academic audit schedule Demo University",
+        "department quality review process",
+        "internal quality audit checklist",
+        "DOR guidelines for engineering departments",
+        "annual faculty performance review audit",
+        "iqac dor audit",
+        "department audit checklist",
+        "operational revew guidelines",
+        "Department Operational Review + IQAC + accreditation audit",
+        "DOR quality audit + academic compliance + NBA"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS"
+      ],
+      "roles": [
+        "Director of IQAC",
+        "Dean of Academic Affairs",
+        "Head of Department (HOD)",
+        "Internal Audit Committee Member"
+      ],
+      "related_documents": [
+        "ACAD-OBE-001",
+        "ACAD-POL-002",
+        "ACAD-NOT-002",
+        "RES-OFF-001"
+      ],
+      "content": "1. PURPOSE AND QUALITY MANDATE\nTo maintain autonomous scholastic excellence and satisfy national accreditation benchmarks (NBA, NAAC, NIRF), the Internal Quality Assurance Cell (IQAC) conducts annual Department Operational Reviews (DOR).\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (DOR)\nWithin university administrative nomenclature, the abbreviation 'DOR' designates three distinct institutional concepts:\n2.1 Department Operational Review (DOR under IQAC / IQAC-REV-003): The annual quality audit evaluating academic departments on curriculum delivery, student outcomes, and research;\n2.2 Date of Registration (DOR under DEPT-ACAD / ACAD-NOT-002): The mandatory deadline for semester course enrollment in UniCampus ERP;\n2.3 Dean of Research (DOR under DEPT-RES / RES-OFF-001): The executive officer heading the research and doctoral administration office.\n- Disambiguation Rule: Text referencing internal audits, accreditation checklists, or quality reviews refers to Department Operational Review (IQAC-REV-003).\n\n3. AUDIT DIMENSIONS AND PARAMETERS\nReviews assess six core dimensions: Curricular Implementation & Outcome Attainment (ACAD-OBE-001); Faculty Scholarly Output; Continuous Internal Evaluation (CIE) Quality; Laboratory Infrastructure; Student Mentorship (ACAD-POL-006); and Stakeholder Feedback.\n\n4. AUDIT CYCLE AND REPORTING\nInternal peer audit teams inspect departmental documentation annually in June and submit formal evaluative reports to the Vice-Chancellor."
+    },
+    {
+      "document_id": "IRO-POL-001",
+      "title": "Semester Exchange and International Dual Degree Policy",
+      "department": "Office of International Relations",
+      "department_id": "DEPT-IRO",
+      "document_type": "International Mobility Policy / Study Abroad Guidelines",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate and Postgraduate Students",
+        "International Relations Officers",
+        "Dean of Academic Affairs",
+        "Foreign University Partner Coordinators"
+      ],
+      "keywords": [
+        "semester exchange policy",
+        "international dual degree",
+        "study abroad guidelines",
+        "foreign university exchange",
+        "credit transfer international",
+        "IR office scholarships Germany",
+        "visa assistance letter IR",
+        "ambiguous term IR",
+        "DEPT-IRO"
+      ],
+      "retrieval_signals": [
+        "IR office scholarships for semester abroad in Germany",
+        "visa assistance letter from IR office",
+        "semester exchange policy Demo University",
+        "international dual degree program guidelines",
+        "how to apply for study abroad semester exchange",
+        "credit transfer from foreign university",
+        "partner universities list international relations",
+        "semster exchange policy",
+        "study abroad ir office",
+        "internashunal relations",
+        "Semester Exchange + International Relations + study abroad",
+        "IR office + visa assistance letter + dual degree"
+      ],
+      "systems": [
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of International Relations",
+        "International Exchange Coordinator",
+        "Dean of Academic Affairs",
+        "University Registrar"
+      ],
+      "related_documents": [
+        "LIB-POL-004",
+        "SEC-SOP-003",
+        "ADM-INT-001",
+        "ACAD-POL-001"
+      ],
+      "content": "1. PURPOSE AND GLOBAL MOBILITY SCOPE\nThis policy establishes the eligibility benchmarks, application procedures, credit equivalency formulas, and institutional support mechanisms governing outbound student semester exchange and dual-degree programs operated with accredited foreign partner institutions. Administered by the Office of International Relations (DEPT-IRO).\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (IR)\nWithin Demo University administrative documentation, the abbreviation 'IR' represents three distinct entities:\n2.1 Office of International Relations (IR under DEPT-IRO / IRO-POL-001): The administrative division overseeing study abroad mobility, international dual degrees, and foreign memoranda of understanding;\n2.2 Institutional Repository (IR under DEPT-LIB / LIB-POL-004): The digital research library archive holding dissertations, theses, and publications;\n2.3 Incident Report (IR under DEPT-SEC / SEC-SOP-003): The formal security documentation protocol logging campus thefts or safety incidents.\n- Disambiguation Rule: Text referencing foreign universities, visas, exchange semesters, or overseas partner institutions maps strictly to International Relations (IRO-POL-001).\n\n3. ELIGIBILITY AND APPLICATION WORKFLOW\n3.1 Eligibility: Open to undergraduate students who have completed four semesters with a CGPA >= 7.50 and zero active backlogs;\n3.2 Application: Students submit applications through UniCampus ERP attaching statements of purpose and language proficiency scores;\n3.3 Credit Transfer: Pre-approved course syllabi transfer directly into Demo University academic records upon official transcript receipt."
+    },
+    {
+      "document_id": "ACAD-SOP-008",
+      "title": "Safety and Approval Protocol for Student Field Trips (FT)",
+      "department": "Academic Affairs & Student Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Standard Operating Procedure / Excursion Safety Protocol",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Faculty Field Trip Coordinators",
+        "Engineering Students (Civil, Mechanical)",
+        "Dean of Student Affairs",
+        "Transport Manager"
+      ],
+      "keywords": [
+        "field trip safety protocol",
+        "student FT approval procedure",
+        "parental consent form field trip",
+        "industrial visit safety guidelines",
+        "Civil engineering dam visit",
+        "field trip bus departure schedule",
+        "ambiguous term FT",
+        "REL-016"
+      ],
+      "retrieval_signals": [
+        "parent consent form for Civil engineering FT",
+        "FT bus departure time for dam site visit",
+        "is attendance mandatory for department FT",
+        "safety and approval protocol for student field trips",
+        "how to get approval for industrial visit",
+        "field trip guidelines Demo University",
+        "student outdoor survey safety rules",
+        "feild trip consent form",
+        "industrial visit approval",
+        "ft bus departure",
+        "Field Trip + parental consent + safety protocol",
+        "FT approval + industrial visit + Student Affairs"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "TransPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Head of Department (HOD)",
+        "Faculty Field Trip Coordinator",
+        "Dean of Student Affairs (DSA)",
+        "Transport Manager"
+      ],
+      "related_documents": [
+        "RES-POL-001",
+        "TRANS-POL-001",
+        "ACAD-POL-004",
+        "STU-POL-001"
+      ],
+      "content": "1. PURPOSE AND OPERATIONAL SCOPE\nThis standard operating procedure establishes safety requirements, administrative approvals, parental consent protocols, and transportation norms for student field trips (designated in academic departments as 'FT'), outdoor surveying camps, and off-campus industrial visits.\n\n2. CONTROLLED POLYSEMY AND ENTITY DISAMBIGUATION (FT)\nWithin university documentation, the abbreviation 'FT' possesses two completely distinct meanings:\n2.1 Field Trip (FT under DEPT-ACAD / ACAD-SOP-008): The faculty-supervised outdoor educational excursion, site inspection, or industrial survey;\n2.2 Full Time (FT under DEPT-RES / RES-POL-001): The statutory academic enrollment status of regular enrolled students or scholars (contrasted with part-time scholars).\n- Disambiguation Rule: Text referencing bus departure, site visits, parental consent, safety helmets, or outdoor surveys refers to Field Trip (ACAD-SOP-008).\n\n3. APPROVAL WORKFLOW AND SAFETY MANDATES\n3.1 Prior Sanction: Department field trip coordinators must submit an itinerary, risk assessment, and transport requisition via ResolveDesk at least fifteen (15) working days prior to the excursion;\n3.2 Mandatory Parental Consent: Every participating student must submit a signed Parental Consent Form prior to departure;\n3.3 Faculty Chaperones: A minimum ratio of one faculty member per twenty (20) students, including designated female faculty chaperones for co-educational cohorts, is mandatory."
+    }
+  ]
+}

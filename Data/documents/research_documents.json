@@ -1,0 +1,480 @@
+{
+  "domain": "Research and Innovation",
+  "documents": [
+    {
+      "document_id": "RES-POL-001",
+      "title": "Regulations Governing Doctor of Philosophy (Ph.D.) Degrees",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Statutory Academic Regulation / Doctoral Governance",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Doctoral Research Scholars (Full-Time and Part-Time)",
+        "Research Supervisors",
+        "Doctoral Committee Members",
+        "Dean of Research and Innovation",
+        "Academic Department Heads"
+      ],
+      "keywords": [
+        "doctoral regulations",
+        "PhD degree requirements",
+        "Doctoral Committee",
+        "14 coursework credits",
+        "RES801 Research Methodology",
+        "RES802 Publication Ethics",
+        "comprehensive examination",
+        "thesis submission",
+        "N+2 degree completion window",
+        "PROG-PHD-ENG"
+      ],
+      "retrieval_signals": [
+        "PhD",
+        "PhD regulations",
+        "PhD eligibility criteria",
+        "doctoral committee PhD",
+        "PhD course credit requirements",
+        "how many credits for PhD",
+        "maximum years to complete PhD",
+        "full time to part time PhD conversion",
+        "PhD comprehensive exam syllabus",
+        "thesis submission procedure",
+        "reserch scholar",
+        "doctral committe",
+        "thess submission",
+        "PhD registration + committee",
+        "thesis submission + doctoral committee"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP",
+        "Turnitin / E-Shodh Hub"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "Research Supervisor / Professor",
+        "Doctoral Committee Member",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "RES-POL-002",
+        "RES-POL-003",
+        "RES-ETH-001",
+        "LIB-POL-004",
+        "REL-014"
+      ],
+      "content": "1. PURPOSE AND STATUTORY GOVERNANCE\nThese regulations govern the admission, enrollment, supervisory assignment, curriculum credit requirements, progress milestones, comprehensive examination, and thesis evaluation procedures for candidates registered for the Doctor of Philosophy (Ph.D.) degree at Demo University.\n\n2. ENROLLMENT MODES AND DEGREE DURATION\n2.1 Enrollment Categories: Candidates are admitted under Full-Time (FT) scholar status (supported by institutional fellowships or external sponsored project grants) or Part-Time status (for working professionals and in-service faculty).\n- Entity Disambiguation: Full-Time (FT) doctoral enrollment must not be confused with student Field Trips (FT under ACAD-SOP-008).\n2.2 Program Duration: The standard minimum doctoral duration is four (4) academic years (8 semesters). In accordance with university academic regulations, the maximum allowable period for thesis submission is N + 2 years (a total ceiling of six years from initial registration).\n\n3. DOCTORAL COURSEWORK AND ACADEMIC BENCHMARKS (PROG-PHD-ENG)\n3.1 Mandatory Credit Load: Every registered research scholar must earn a minimum of fourteen (14) graduate-level coursework credits:\n- RES801: Research Methodology and Quantitative Analysis (Core, 4 Credits)\n- RES802: Research and Publication Ethics (Core, 2 Credits)\n- Departmental Advanced Technical Electives (8 Credits)\n3.2 Minimum Grade Standard: Scholars must attain a minimum Cumulative Grade Point Average (CGPA) of 7.00 across completed coursework subjects before they are permitted to attempt the comprehensive examination.\n\n4. DOCTORAL COMMITTEE (DC) AND COMPREHENSIVE ASSESSMENT\n4.1 Committee Constitution: Within sixty (60) days of enrollment, the Dean of Research constitutes a dedicated Doctoral Committee (DC) comprising the Research Supervisor (Convener), Head of Department or nominee, two senior internal faculty experts, and one approved external subject specialist.\n- Cross-Domain Disambiguation Note: Doctoral Committee (DC) under DEPT-RES must not be confused with the Disciplinary Committee (DC under DEPT-SW / STU-POL-005) or the Direct Current Hardware Laboratory (DC under DEPT-ECE / ECE-LAB-002).\n4.2 Comprehensive Examination: Upon finishing prescribed coursework, the scholar must pass a written and oral comprehensive examination administered by the DC to assess foundational mastery in the research domain.\n\n5. THESIS SUBMISSION AND DEFENSE\nFollowing successful completion of semi-annual progress reviews (RES-POL-002), mandatory publication requirements, and certified plagiarism verification under RES-ETH-001, the scholar presents a public pre-synopsis colloquium. Upon DC endorsement, the final Ph.D. thesis is dispatched to two independent external evaluators for blind adjudication, culminating in an open oral defense viva voce."
+    },
+    {
+      "document_id": "RES-POL-002",
+      "title": "Doctoral Committee Progress Report (PR) Submission Guidelines",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Research Milestone Guidelines / Monitoring SOP",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Ph.D. Research Scholars",
+        "Research Supervisors",
+        "Doctoral Committee Members",
+        "Dean of Research and Innovation"
+      ],
+      "keywords": [
+        "Doctoral Committee progress report",
+        "PR submission guidelines",
+        "semi-annual review",
+        "research milestone evaluation",
+        "fellowship continuation",
+        "June-July review",
+        "December-January review",
+        "ResTrack Portal",
+        "REL-014"
+      ],
+      "retrieval_signals": [
+        "PR",
+        "progress report PhD",
+        "doctoral progress review",
+        "PR submission deadline",
+        "PhD committee meeting",
+        "semi-annual research review",
+        "PR presentation format",
+        "doctoral committee review form download",
+        "fellowship stopped progress report",
+        "unsatisfactory progress PhD",
+        "reserch progress review",
+        "doctral PR",
+        "fellowship release + progress report"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "Research Supervisor / Professor",
+        "Doctoral Committee Member"
+      ],
+      "related_documents": [
+        "RES-POL-001",
+        "RES-POL-003",
+        "REL-014"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nThis guideline defines the scheduling, submission requirements, evaluation rubrics, and administrative recording protocols for the mandatory semi-annual Progress Report (PR) presentations required of all doctoral scholars at Demo University.\n\n2. DEFINITION AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Progress Report (PR): Refers strictly to the formal semi-annual milestone documentation and presentation evaluated by a scholar's Doctoral Committee (DC) to audit research trajectory, lab deliverables, and fellowship eligibility.\n- Cross-Domain Disambiguation Note: Progress Report (PR) under DEPT-RES must not be confused with Public Relations (PR under Admissions & Media / ADM-MED-001).\n\n3. SEMI-ANNUAL REVIEW CYCLES AND WORKFLOW (REL-014)\n3.1 Review Windows: Formal doctoral progress reviews are executed twice per academic calendar year:\n- Odd Semester Cycle: Scheduled during June–July.\n- Even Semester Cycle: Scheduled during December–January.\n3.2 Submission Workflow on ResTrack:\n- Step 1: The research scholar compiles the standardized PR dossier detailing literature surveys, experimental results, simulation data, chapter drafts, and publication manuscripts.\n- Step 2: The Research Supervisor reviews, endorses, and submits the dossier via ResTrack Portal at least ten (10) calendar days prior to the committee meeting.\n- Step 3: The Doctoral Committee convenes for an oral presentation and technical defense by the candidate.\n- Step 4: The DC records formal evaluations using institutional rubrics ('Satisfactory' or 'Unsatisfactory') and uploads signed review minutes to ResTrack.\n\n4. LINKAGE TO FELLOWSHIP DISBURSEMENT AND ACADEMIC CONTINUATION\n4.1 Fellowship Authorization: Under REL-014, the release of monthly institutional research stipends and funded project fellowships is strictly contingent upon a validated 'Satisfactory' rating endorsed by the DC and ratified by the Dean of Research and Innovation.\n4.2 Unsatisfactory Progress Sanction: An 'Unsatisfactory' evaluation results in immediate withholding of the monthly fellowship. Two consecutive 'Unsatisfactory' ratings warrant formal review by the Dean of Research and may result in the termination of doctoral registration."
+    },
+    {
+      "document_id": "RES-POL-003",
+      "title": "Sponsored Research Fellowship and Research Assistant (RA) Appointment Guidelines",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Fellowship Policy / Research Staff Appointment Guidelines",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Principal Investigators (PI)",
+        "Research Assistants (RA)",
+        "Junior/Senior Research Fellows (JRF/SRF)",
+        "Ph.D. Scholars",
+        "Finance and Accounts Office"
+      ],
+      "keywords": [
+        "sponsored research fellowship",
+        "Research Assistant appointment",
+        "RA guidelines",
+        "Principal Investigator PI",
+        "monthly research stipend release",
+        "sponsored project staffing",
+        "external grants DST SERB",
+        "leave entitlement 30 days",
+        "ROLE-RA-RES",
+        "REL-014"
+      ],
+      "retrieval_signals": [
+        "RA",
+        "research assistant",
+        "RA opening",
+        "RA position eligibility",
+        "stipend release for RA funded under DST grant",
+        "PhD stipend delayed this month",
+        "can MTech student work as RA",
+        "PI approval for research assistant",
+        "research fellowship continuation",
+        "attendance requirement for research fellowship",
+        "reserch assistant",
+        "reseach grant stipend",
+        "RA position + eligibility",
+        "research project + finance"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP",
+        "PayVarsity"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "Research Supervisor / Professor",
+        "Research Assistant (RA)",
+        "Chief Finance Officer / Bursar"
+      ],
+      "related_documents": [
+        "RES-POL-001",
+        "RES-POL-002",
+        "FIN-POL-006",
+        "REL-014"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis policy establishes the appointment criteria, recruitment workflows, compensation guidelines, leave entitlements, and monthly fellowship release protocols for Research Assistants (RAs) and project staff appointed under externally sponsored research grants and institutional doctoral schemes.\n\n2. DEFINITIONS AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Research Assistant (RA): Refers strictly to a qualified postgraduate scholar or project engineer formally contracted under a sponsored research project to conduct experimental investigations, data analysis, and software development.\n- Cross-Domain Disambiguation Note: Research Assistant (RA under DEPT-RES / ROLE-RA-RES) must not be confused with a Resident Assistant (RA under DEPT-HSTL / HSTL-REG-004 / ROLE-RA-HOSTEL), who is a senior student resident assisting with hostel floor governance.\n2.2 Principal Investigator (PI): The lead faculty researcher accountable for the technical execution, milestone compliance, and fiscal management of a funded research grant.\n\n3. SELECTION AND APPOINTMENT PROCEDURES\n3.1 Open Recruitment: RA vacancies funded by external agencies (DST, SERB, CSIR, industry partners) are advertised publicly on the university research portal. Candidates are evaluated by a Department Selection Committee chaired by the PI.\n3.2 Eligibility Thresholds: Candidates must hold relevant undergraduate or postgraduate degrees in the specified engineering or scientific discipline with verified national qualification credentials (GATE, NET) or demonstrated academic excellence.\n\n4. MONTHLY STIPEND RELEASE WORKFLOW (REL-014)\n4.1 Multi-Department Workflow: Monthly stipend disbursement requires a three-tier institutional handoff:\n- Step 1 (Attendance Certification): The Research Supervisor / PI certifies the scholar's monthly lab attendance and research deliverables in ResTrack by the 25th calendar day of each month.\n- Step 2 (Dean of Research Audit): The Office of Sponsored Research verifies ongoing milestone compliance and signs off on the disbursement voucher.\n- Step 3 (Finance Accounts Credit): The Finance and Accounts Office releases authorized stipend funds directly to the scholar's verified bank account via electronic NEFT by the 1st working day of the subsequent month.\n4.2 Inquiries Regarding Delayed Stipends: Inquiries concerning delayed Ph.D. stipends must be routed through ResTrack to the Dean of Research (`REL-014`), not to the undergraduate student scholarship office (`REL-002`).\n\n5. LEAVE ENTITLEMENTS AND DISCIPLINARY CODES\nAppointed Research Assistants are entitled to thirty (30) days of annual casual/medical leave per full academic year, approved by the PI. Unauthorized absence exceeding seven (7) consecutive days triggers immediate stipend suspension and appointment review."
+    },
+    {
+      "document_id": "RES-POL-004",
+      "title": "Intellectual Property Rights (IPR) and Patent Commercialization Policy",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Statutory Intellectual Property Policy / Patent SOP",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Faculty Researchers",
+        "Doctoral Scholars",
+        "Student Inventors",
+        "CIE Incubators",
+        "Academic Department Heads"
+      ],
+      "keywords": [
+        "intellectual property rights",
+        "IPR policy",
+        "patent filing procedure",
+        "invention disclosure form",
+        "technology transfer",
+        "patent attorney funding",
+        "royalty revenue sharing 60 40",
+        "student capstone IP",
+        "CIE commercialization",
+        "RES-POL-004"
+      ],
+      "retrieval_signals": [
+        "IPR",
+        "patent",
+        "patent filing",
+        "how to file patent through college",
+        "who owns IPR of student project",
+        "patent application funding",
+        "invention disclosure",
+        "IPR cell contact",
+        "royalty sharing patent",
+        "commercializing student startup",
+        "patnt",
+        "IPR filng",
+        "patent + IPR"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "IPR Cell In-Charge",
+        "Faculty Inventor / Student Inventor",
+        "Director of Placements and Corporate Relations"
+      ],
+      "related_documents": [
+        "RES-INC-001",
+        "RES-INC-002",
+        "RES-ETH-001"
+      ],
+      "content": "1. PURPOSE AND SCOPE\nThis policy defines the governance principles, ownership criteria, patent filing assistance, technology transfer mechanisms, and commercialization revenue distribution governing inventions, design patents, and software copyrights generated by faculty, scholars, and students at Demo University.\n\n2. DEFINITIONS AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Intellectual Property Rights (IPR): Refers strictly to legal protections (patents, designs, trademarks, and copyrights) safeguarding novel technological discoveries, algorithms, and industrial hardware innovations.\n- Cross-Domain Disambiguation Note: Intellectual Property Rights (IPR) under DEPT-RES must not be confused with IP Routing (IPR under DEPT-CSE / CSE-CRS-304 computer networking lab).\n\n3. OWNERSHIP PRINCIPLES\n3.1 University-Assisted Research: Inventions developed using university laboratory facilities, central computing infrastructure, or internal seed grant funding are owned jointly by the individual inventors and Demo University Higher Education Trust.\n3.2 Independent Student Inventions: Intellectual property developed by students purely during academic coursework or extracurricular hackathons without significant institutional funding remains the exclusive property of the student inventors.\n3.3 Sponsored Project IP: Ownership of inventions emerging from externally sponsored projects is governed by the specific contractual agreement signed with the external sponsoring agency (DST, corporate partners).\n\n4. PATENT FILING AND COMMERCIALIZATION WORKFLOW\n4.1 Step 1 — Invention Disclosure: The inventor completes an electronic Invention Disclosure Form (IDF) on ResTrack Portal, outlining technical novelty and claims.\n4.2 Step 2 — IPR Committee Evaluation: The University IPR Evaluation Committee assesses patentability, prior art, and commercial translation viability.\n4.3 Step 3 — Institutional Sponsorship: For approved inventions, the university finances one hundred percent (100%) of patent attorney drafting, filing, and statutory prosecution expenses.\n4.4 Step 4 — Royalty Revenue Sharing: Net licensing royalties or commercialization revenues are distributed as sixty percent (60%) to the inventor(s) and forty percent (40%) to the University Research & Innovation Fund."
+    },
+    {
+      "document_id": "RES-INC-001",
+      "title": "Centre for Innovation and Entrepreneurship (CIE) Incubation Framework",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Innovation Framework / Incubation Policy",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Student Entrepreneurs",
+        "Faculty Innovators",
+        "Startup Founders",
+        "Research Scholars",
+        "Angel Investors"
+      ],
+      "keywords": [
+        "Centre for Innovation and Entrepreneurship",
+        "CIE incubation framework",
+        "startup incubator",
+        "Faraday Tower Innovation Suite",
+        "pre-incubation",
+        "formal incubation",
+        "acceleration seed funding",
+        "co-working space",
+        "technology venture"
+      ],
+      "retrieval_signals": [
+        "CIE",
+        "incubator",
+        "startup incubation",
+        "college startup funding",
+        "how to incubate startup in college",
+        "where is CIE building located",
+        "apply for CIE startup incubation funding",
+        "student entrepreneurship cell",
+        "CIE office Faraday tower",
+        "co-working space for students",
+        "venture capital college"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "CIE Centre Director / Head of Incubation",
+        "Faculty Mentor"
+      ],
+      "related_documents": [
+        "RES-INC-002",
+        "RES-POL-004",
+        "SAC-POL-001"
+      ],
+      "content": "1. PURPOSE AND INCUBATION OBJECTIVE\nThis framework establishes the operational policies, admission criteria, physical facility access, and venture mentoring provided by the Centre for Innovation and Entrepreneurship (CIE), operating within the South Research & Engineering Hub at Demo University.\n\n2. THREE-STAGE VENTURE INCUBATION LIFECYCLE\n2.1 Stage 1 — Pre-Incubation (Ideation and Proof-of-Concept):\n- Duration: Up to six (6) months.\n- Offerings: Free shared desk space, access to CIE MakerSpace rapid prototyping units, and technical faculty mentorship.\n2.2 Stage 2 — Formal Incubation (Venture Incorporation):\n- Duration: Twelve (12) to twenty-four (24) months.\n- Offerings: Dedicated private office suites in Faraday Tower, formal legal entity incorporation assistance, accounting guidance, and subsidized patent filing support under RES-POL-004.\n2.3 Stage 3 — Acceleration & Seed Linkages:\n- Offerings: Investor pitch demo days, venture capital networking, and institutional seed capital allocation under RES-INC-002.\n\n3. GOVERNANCE AND APPLICATION ADMISSION\n3.1 Evaluation Panel: Venture applications submitted through ResTrack Portal are scrutinized quarterly by the CIE Incubation Advisory Board based on technical innovation, intellectual property defensibility, and market commercial viability.\n3.2 Code of Conduct: Incubated companies must adhere strictly to environmental safety norms, intellectual property ethics, and campus security regulations."
+    },
+    {
+      "document_id": "RES-INC-002",
+      "title": "CIE Startup Pre-Incubation Guidelines and Seed Grants",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Grant Guidelines / Pre-Incubation SOP",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate and Postgraduate Innovators",
+        "Student Hackathon Teams",
+        "Faculty Mentors",
+        "MakerSpace Users"
+      ],
+      "keywords": [
+        "CIE startup pre-incubation",
+        "seed grants",
+        "CIE MakerSpace",
+        "3D printer booking",
+        "rapid prototyping",
+        "micro-seed innovation grant",
+        "hardware prototype funding",
+        "proof of concept",
+        "RES-INC-002"
+      ],
+      "retrieval_signals": [
+        "CIE",
+        "seed grant",
+        "CIE makerspace",
+        "how to book 3D printer in CIE makerspace",
+        "apply for CIE startup incubation funding",
+        "prototype funding college",
+        "student project grant",
+        "makerspace tools booking",
+        "CIE grant application",
+        "startup seed money",
+        "reserch seed grant"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "ResolveDesk",
+        "LabServer Forge"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "CIE MakerSpace Manager",
+        "Student Startup Lead"
+      ],
+      "related_documents": [
+        "RES-INC-001",
+        "RES-POL-004",
+        "IT-POL-003",
+        "ACAD-LAB-001"
+      ],
+      "content": "1. PURPOSE AND SCOPE\nThese guidelines define the application workflows, eligibility criteria, seed funding disbursement, and MakerSpace tool reservation protocols governing the pre-incubation phase of student-led technology startups at Demo University.\n\n2. DEFINITIONS AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Centre for Innovation and Entrepreneurship (CIE): Refers strictly to the university startup incubator, innovation hub, and rapid prototyping makerspace facility located in the South Research & Engineering Hub.\n- Cross-Domain Disambiguation Note: Centre for Innovation and Entrepreneurship (CIE under DEPT-RES) must not be confused with Continuous Internal Evaluation (CIE under DEPT-EXAM / EXAM-GUI-001 sessional examination assessments).\n\n3. MAKERSPACE FACILITY USAGE AND TOOL RESERVATION\n3.1 Hardware Prototyping Inventory: Registered pre-incubation teams receive access to precision 3D additive printers, laser cutting instruments, PCB milling machines, and cloud GPU compute sandboxes (LabServer Forge).\n3.2 Machine Slot Booking: Tool reservations must be logged on ResolveDesk under 'CIE MakerSpace Reservation' at least forty-eight (48) hours in advance. Operators must pass mandatory safety induction training.\n\n4. UNIVERSITY SEED GRANTS\n4.1 Micro-Seed Funding Allocation: Prototype teams exhibiting novel technical proof-of-concept may receive institutional micro-seed grants to cover component acquisition, electronic sensors, fabrication materials, and cloud server hosting.\n4.2 Application and Review: Proposals are submitted via ResTrack Portal and evaluated by the CIE Pitch Evaluation Committee; disbursed grant expenditures are audited by the Finance and Accounts Office."
+    },
+    {
+      "document_id": "RES-ETH-001",
+      "title": "Research Ethics, Academic Integrity, and Plagiarism Prevention Code",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Research Ethics Code / Integrity Regulation",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Faculty Researchers",
+        "Doctoral Scholars",
+        "Postgraduate Thesis Students",
+        "Undergraduate Project Teams"
+      ],
+      "keywords": [
+        "research ethics code",
+        "academic integrity",
+        "plagiarism prevention",
+        "10% similarity index threshold",
+        "Turnitin thesis verification",
+        "Research Ethics Review Board",
+        "human subjects clearance",
+        "data fabrication penalty",
+        "publication ethics",
+        "RES802 course"
+      ],
+      "retrieval_signals": [
+        "research ethics",
+        "plagiarism policy",
+        "plagiarism percentage allowed thesis",
+        "similarity index cutoff",
+        "Turnitin check library",
+        "ethics approval for research",
+        "human subjects research clearance",
+        "paper submission ethics",
+        "data fabrication penalty",
+        "pubication ethics",
+        "reserch ethics"
+      ],
+      "systems": [
+        "Turnitin / E-Shodh Hub",
+        "ResTrack Portal",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "Chairperson of Research Ethics Review Board",
+        "University Chief Librarian"
+      ],
+      "related_documents": [
+        "RES-POL-001",
+        "LIB-POL-004",
+        "STU-POL-001"
+      ],
+      "content": "1. PURPOSE AND ETHICAL MANDATE\nThis institutional code establishes the binding ethical standards, integrity expectations, plagiarism detection limits, and review board clearance workflows governing all scientific inquiry, doctoral dissertations, postgraduate theses, and scholarly publications produced at Demo University.\n\n2. PLAGIARISM TOLERANCE THRESHOLDS AND THESIS CLEARANCE\n2.1 Statutory Ten Percent (10%) Threshold: In accordance with university academic regulations and national research integrity norms, the maximum permissible textual similarity index for all Ph.D. theses and M.Tech dissertations is strictly ten percent (<= 10%), excluding bibliography, mathematical equations, and standard institutional affiliations.\n2.2 Mandatory Verification Protocol: All thesis manuscripts must be submitted to the Plagiarism & Thesis Verification Unit at the Valmiki Central Library for formal scanning using Turnitin / E-Shodh Hub prior to final submission (LIB-POL-004). An official, digitally signed Similarity Clearance Certificate must accompany every submitted thesis.\n\n3. RESEARCH ETHICS REVIEW BOARD (RERB) CLEARANCE\n3.1 Mandatory Ethical Approval: Experimental research involving human participants, private personal data, biometric surveillance, or animal specimens requires formal advance clearance from the Research Ethics Review Board (RERB).\n3.2 Protocol Submission: Researchers must upload experimental consent forms, participant privacy safeguards, and risk-mitigation plans on ResTrack Portal prior to commencing clinical or field investigations.\n\n4. SCHOLARLY INTEGRITY BREACHES AND SANCTIONS\nFabrication of experimental results, data falsification, duplicate publication, ghost authorship, or intentional plagiarism exceeding statutory limits constitutes severe scientific malpractice. Verified infractions result in immediate thesis rejection, revocation of research fellowships, cancellation of doctoral registration, and formal disciplinary proceedings before the Proctorial Board."
+    },
+    {
+      "document_id": "RES-OFF-001",
+      "title": "Office of the Dean of Research Directory and Powers",
+      "department": "Office of Sponsored Research and Innovation",
+      "department_id": "DEPT-RES",
+      "document_type": "Administrative Charter / Governance Directory",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "University Faculty",
+        "Doctoral Scholars",
+        "Research Principal Investigators",
+        "External Funding Agencies",
+        "Industry Partners"
+      ],
+      "keywords": [
+        "Office of Dean of Research",
+        "Dean of Research powers",
+        "sponsored projects cell",
+        "grant endorsement",
+        "Ph.D. registry",
+        "Faraday Tower 4th Floor",
+        "DOR directory",
+        "seed funding approval",
+        "travel sanction conference",
+        "ROLE-DEAN-RES"
+      ],
+      "retrieval_signals": [
+        "DOR",
+        "Dean of Research",
+        "DOR office location",
+        "meet DOR for project grant approval",
+        "DOR signature on seed money proposal",
+        "research office contact",
+        "sponsored projects cell phone number",
+        "where is research office located",
+        "who is Dean of Research",
+        "research grant approval signature",
+        "doctoral registry office"
+      ],
+      "systems": [
+        "ResTrack Portal",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Dean of Research and Innovation",
+        "Sponsored Projects Officer",
+        "Doctoral Studies Coordinator"
+      ],
+      "related_documents": [
+        "RES-POL-001",
+        "RES-POL-003",
+        "FIN-POL-006",
+        "REL-014"
+      ],
+      "content": "1. PURPOSE AND ADMINISTRATIVE CHARTER\nThis charter establishes the executive authorities, operational portfolio, administrative subunits, and contact channels of the Office of the Dean of Research and Innovation (DEPT-RES) at Demo University.\n\n2. DEFINITION AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Dean of Research (DOR): Refers strictly to the principal academic and administrative executive (ROLE-DEAN-RES) leading research governance, doctoral administration, sponsored projects, and intellectual property.\n- Cross-Domain Disambiguation Note: Dean of Research (DOR under DEPT-RES) must not be confused with the Date of Registration (DOR under DEPT-ACAD / ACAD-NOT-002 semester enrollment deadline) or Department Operational Review (DOR under IQAC / IQAC-REV-003).\n\n3. EXECUTIVE POWERS AND STATUTORY AUTHORITIES\n3.1 Sponsored Grant Approvals: The Dean of Research evaluates and signs off on all competitive external funding proposals submitted to government agencies (DST, SERB, CSIR, ISRO) and corporate sponsors.\n3.2 Doctoral Oversight: Authorizes the constitution of Doctoral Committees (DC), ratifies comprehensive examination outcomes, and certifies thesis evaluation panels.\n3.3 Fellowship Sanction: Directs the monthly release of institutional and project research fellowships following progress reviews under REL-014.\n3.4 Research Travel and Seed Funding: Sanctions institutional travel grants for faculty and scholars attending national/international conferences (FIN-POL-006) and approves internal seed funding allocations.\n\n4. LOCATION AND ADMINISTRATIVE CONTACT\n4.1 Physical Office: Faraday Tower, 4th Floor Innovation Suite.\n4.2 Subunits: Sponsored Projects Cell, Doctoral Studies & Ph.D. Registry, Intellectual Property & Technology Transfer Desk, and Research Ethics Review Board.\n4.3 Operating Hours: Monday through Friday, 09:00 to 17:30 IST. Support tickets and appointment requests are submitted through ResolveDesk under 'Research & Innovation'."
+    }
+  ]
+}

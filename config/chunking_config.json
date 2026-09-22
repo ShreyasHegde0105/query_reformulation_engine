@@ -1,0 +1,14 @@
+{
+  "target_chunk_tokens": 500,
+  "max_chunk_tokens": 600,
+  "min_chunk_tokens": 100,
+  "overlap_tokens": 75,
+  "include_section_heading_in_text": true,
+  "detect_numbered_sections": true,
+  "detect_subsections": true,
+  "enable_paragraph_split": true,
+  "enable_sentence_split": true,
+  "enable_token_fallback": true,
+  "section_heading_pattern": "^(?:#{1,6}\\s+)?\\s*(\\d+)\\.\\s+([^\\n\\r]+?)$",
+  "subsection_heading_pattern": "^(?:#{1,6}\\s+)?\\s*(\\d+\\.\\d+)\\s+([^:\\n\\r]+)(?::|\\s*-|\\n|$)"
+}

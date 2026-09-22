@@ -1,0 +1,1021 @@
+{
+  "domain": "Student Affairs",
+  "documents": [
+    {
+      "document_id": "POL-OD",
+      "title": "On-Duty (OD) Leave and Co-Curricular Absence Policy",
+      "department": "Department of Student Affairs",
+      "department_id": "DEPT-DSA",
+      "document_type": "Policy",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Registered Undergraduate Students",
+        "All Registered Postgraduate Students",
+        "Course Instructors / Professors",
+        "Faculty Advisors",
+        "Sports Officers",
+        "Dean of Student Affairs"
+      ],
+      "keywords": [
+        "On-Duty",
+        "OD",
+        "OD leave",
+        "co-curricular absence",
+        "attendance exemption",
+        "sports representation",
+        "hackathon OD",
+        "technical symposium",
+        "10 working days limit",
+        "ResolveDesk OD application",
+        "AttendEdge Excused OD",
+        "event brochure",
+        "certificate of participation",
+        "Dean of Student Affairs"
+      ],
+      "retrieval_signals": [
+        "how to apply for OD",
+        "OD attendance",
+        "can I get OD",
+        "how to apply for OD for hackathon",
+        "did my sports OD get approved",
+        "maximum OD days allowed in a semester",
+        "OD form signature",
+        "who signs my OD form",
+        "prof denied my OD",
+        "OD for inter college fest",
+        "will my attendance be marked present during hackathon",
+        "OD limit exceeded due to sports",
+        "how many days OD allowed in BTech",
+        "OD claim deadline after event",
+        "apply for On Duty leave in ResolveDesk",
+        "OD attendance calculation AttendEdge",
+        "can I get OD for conference paper presentation",
+        "is OD counted for 75 percent attendance",
+        "OD approval pending with DSA",
+        "on duty leave rules"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "AttendEdge",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Student Affairs (DSA)",
+        "Faculty Coordinator (Sports / Club Mentor)",
+        "Course Instructor / Professor",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "STU-POL-002",
+        "POL-ATTEND",
+        "ACAD-POL-004",
+        "POL-CLUBS",
+        "PROC-OD-SANCTION"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nDemo University actively fosters holistic student development through participation in competitive athletic events, national hackathons, technical symposiums, research conferences, and cultural festivals. This policy establishes official regulations governing the sanction of On-Duty (OD) attendance exemptions, ceiling limits, procedural approval workflows, and automated attendance adjustments.\n\n2. JURISDICTION AND DEFINITIONS\n2.1 On-Duty (OD) Attendance Exemption: An authorized excused absence granted to a registered student officially selected to represent Demo University in sanctioned external or campus-wide co-curricular and extracurricular events.\n2.2 Attendance Factorization: Approved OD days are factored into AttendEdge attendance tracking engines as 'Excused Present', thereby safeguarding the candidate's statutory 75% attendance eligibility for Semester End Examinations (SEE).\n\n3. ELIGIBILITY CRITERIA AND SANCTIONED ACTIVITIES\n3.1 Permissible Categories: OD absence may be sanctioned exclusively for:\n  a) Inter-university sports tournaments endorsed by the University Sports Directorate.\n  b) National and international technical hackathons, design symposiums, and competitive collegiate coding contests endorsed by Department Heads.\n  c) Peer-reviewed academic conferences where the student is presenting an accepted research paper.\n  d) Authorized university cultural festivals, leadership summits, or inter-collegiate debates coordinated by the Student Activity Centre.\n3.2 Non-Permissible Categories: OD cannot be claimed for personal travel, family functions, private coaching, job interviews not coordinated through the Career Development Centre, or unapproved student-initiated trips.\n\n4. STATUTORY CEILINGS AND LIMITATIONS\n4.1 Semester Cap: On-Duty leave is strictly limited to a maximum of 10 working days per academic semester across all registered courses.\n4.2 Non-Extendable Threshold: Absences exceeding the 10-day statutory ceiling cannot be categorized as On-Duty and will be recorded as unexcused absences in AttendEdge.\n\n5. PROCEDURAL APPLICATION AND APPROVAL WORKFLOW (PROC-OD-SANCTION)\n5.1 Pre-Event Application: The student must log an official OD Request ticket on ResolveDesk at least 3 working days prior to the commencement of the event, attaching the formal invitation brochure, selection letter, and scheduled travel itinerary.\n5.2 Faculty Endorsement: The designated Faculty Coordinator (Sports Director, Club Mentor, or Project Guide) verifies the authenticity of the event and digitally endorses the application.\n5.3 Executive Approval: The Dean of Student Affairs (DSA) reviews institutional merit and grants formal administrative sanction.\n5.4 Post-Event Claim Submission: Within 5 working days of returning to campus, the student must upload the official Certificate of Participation / Attendance and a brief event report to the original ResolveDesk ticket.\n5.5 Automated System Reconciliation: Upon post-event verification, AttendEdge automatically adjusts course attendance records for the approved dates from absent to 'Excused OD'."
+    },
+    {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "title": "Medical Leave and Health Absence Policy",
+      "department": "Campus Health Centre",
+      "department_id": "DEPT-HEALTH",
+      "document_type": "Policy",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Experiencing Acute or Chronic Health Conditions",
+        "Faculty Advisors",
+        "Heads of Department",
+        "Senior Chief Medical Officer",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "medical leave",
+        "health absence",
+        "Medical Certificate",
+        "MC",
+        "Health Centre endorsement",
+        "hospitalization",
+        "3 consecutive days rule",
+        "48 hours reporting",
+        "3 days verification window",
+        "20 working days semester break",
+        "condonation 65% to 74.9%",
+        "Senior Medical Officer",
+        "HealthDesk",
+        "ResolveDesk"
+      ],
+      "retrieval_signals": [
+        "medical leave attendance",
+        "how to submit medical certificate for low attendance",
+        "medical leave certificate",
+        "where to submit MC for exam absence",
+        "can I get MC from outside private clinic approved",
+        "MC endorsement form at health centre",
+        "attendance shortage due to hospital admission",
+        "medical certificate submission deadline for exams",
+        "fever absent for 3 days medical leave procedure",
+        "hospitalized missed classes attendance condonation",
+        "prolonged illness semester break policy",
+        "fake medical certificate penalty",
+        "health centre verification slip",
+        "how many days medical leave allowed in college",
+        "medical leave reporting within 48 hours"
+      ],
+      "systems": [
+        "HealthDesk",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Senior Chief Medical Officer",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "STU-MED-001",
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "POL-DISCIPLINE",
+        "PROC-MED-COND"
+      ],
+      "content": "1. PURPOSE AND HEALTHCARE COMMITMENT\nDemo University recognizes that acute medical conditions, surgical emergencies, severe injuries, and chronic health challenges can temporarily disrupt academic continuity. This policy outlines statutory reporting protocols, medical certificate validation standards, health absence limits, and attendance condonation procedures.\n\n2. JURISDICTION AND ELIGIBILITY\nThis policy governs all undergraduate, postgraduate, and doctoral students experiencing genuine health emergencies that necessitate excused absence from lectures, practical laboratory sessions, or internal assessments.\n\n3. MANDATORY REPORTING TIMELINES AND CERTIFICATE ENDORSEMENT\n3.1 Acute Illness Threshold: Any illness or hospitalization resulting in absence for three or more consecutive working days must be formally notified to the Campus Health Centre and the candidate's Faculty Advisor within 48 hours of onset.\n3.2 External Medical Certificate Verification: Medical documentation issued by outside private hospitals, nursing homes, or medical practitioners must be presented in person by the student to the Senior Chief Medical Officer at the Campus Health Centre within three working days of resuming campus academic activities.\n3.3 Health Centre Endorsement: The Senior Medical Officer scrutinizes diagnostic records, lab investigation reports, and clinical discharge summaries. Upon authenticating bona fide medical necessity, an official University Medical Verification Slip bearing a unique digital endorsement code is generated in HealthDesk.\n\n4. ATTENDANCE CONDONATION AND EXAMINATION IMPLICATIONS (REL-004)\n4.1 Permissible Condonation Band: In strict conformity with institutional attendance policy POL-ATTEND, authenticated medical leave serves as the statutory foundation for attendance condonation strictly within the 65.0% to 74.9% range.\n4.2 Absolute Floor (65.0%): Absences reducing cumulative course attendance below 65.0% cannot be condoned under any medical ground. Candidates falling below 65.0% are detained ('W' or 'SA' grade) and must repeat the course.\n4.3 Submission via ResolveDesk: Endorsed medical verification slips must be uploaded to ResolveDesk under 'Medical Leave Submission' at least five working days prior to Semester End Examinations (SEE).\n\n5. PROLONGED MEDICAL LEAVE AND SEMESTER BREAK\n5.1 Severe Extended Illness: Where serious trauma, extensive surgery, contagious disease isolation, or psychiatric distress causes cumulative absence exceeding 20 working days in a semester, the student may petition for a formal Semester Break (Leave of Absence) without academic penalty.\n5.2 Resumption: Upon recovering and obtaining fitness certification ratified by the Senior Chief Medical Officer, the candidate re-enrolls in the respective semester during the subsequent academic cycle.\n\n6. INTEGRITY AND FABRICATION PENALTIES\nSubmission of falsified, forged, or purchased medical certificates constitutes a severe violation of campus ethics. Any case involving fabricated health records is summarily referred to the Proctorial Disciplinary Board, resulting in immediate one-semester academic suspension and permanent recording on the UniCampus ERP file."
+    },
+    {
+      "document_id": "POL-GRIEVANCE",
+      "title": "Student Grievance Redressal and Ombudsman Policy",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Policy",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students and Student Groups",
+        "Department Grievance Officers",
+        "Dean of Student Welfare",
+        "University Ombudsman",
+        "Heads of Department"
+      ],
+      "keywords": [
+        "student grievance",
+        "grievance redressal",
+        "Ombudsman",
+        "ResolveDesk grievance",
+        "Level 1 grievance",
+        "Level 2 grievance",
+        "Level 3 Ombudsman",
+        "5 days SLA",
+        "10 days SLA",
+        "20 days SLA",
+        "unfair grading",
+        "harassment grievance",
+        "whistleblower protection",
+        "anti-retaliation"
+      ],
+      "retrieval_signals": [
+        "how to file grievance",
+        "how do I complain",
+        "who do I complain to",
+        "student complaint portal",
+        "file complaint against professor",
+        "unfair grading complaint",
+        "ResolveDesk academic grievance",
+        "student grievance redressal committee",
+        "escalate complaint to Dean of Student Welfare",
+        "appeal to university ombudsman",
+        "harassment complaint by faculty",
+        "administrative delay complaint",
+        "grievance ticket SLA 5 days",
+        "ombudsman hearing procedure",
+        "protection against retaliation for filing complaint"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Department Grievance Officer",
+        "Central Student Grievance Redressal Committee",
+        "University Student Ombudsman",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "STU-POL-006",
+        "STU-GUI-001",
+        "STU-POL-003",
+        "POL-DISCIPLINE",
+        "PROC-GRIEVANCE-REDRESS"
+      ],
+      "content": "1. PURPOSE AND PRINCIPLES OF NATURAL JUSTICE\nDemo University is committed to maintaining a transparent, fair, and responsive academic environment where student concerns are resolved expeditiously and impartially. This policy defines the statutory framework for redressing student grievances, establishing a three-tier escalation hierarchy, strict service-level agreements (SLAs), and non-retaliation protections.\n\n2. SCOPE AND JURISDICTION\n2.1 Cognizable Grievances: A formal grievance may be lodged regarding:\n  a) Academic Irregularities: Arbitrary or discriminatory internal grading, denial of sanctioned On-Duty leave, or unnotified syllabus deviations.\n  b) Administrative Deficiencies: Inordinate delays in publishing results, issuing bonafide letters, or processing fee adjustments and refunds.\n  c) Campus Facilities & Services: Persistent failure in hostel maintenance, mess hygiene, transportation routes, or digital library access.\n  d) Victimization and Harassment: Discrimination based on gender, caste, creed, regional origin, or physical disability.\n2.2 Excluded Matters: Disciplinary sanctions imposed by the Proctorial Board and sexual harassment complaints (governed exclusively by the Internal Complaints Committee) fall outside the purview of this policy.\n\n3. THREE-TIER ESCALATION HIERARCHY AND SLAS (PROC-GRIEVANCE-REDRESS)\n3.1 Level 1 — Department Grievance Cell:\n  a) Submission: The student logs a formal grievance ticket on ResolveDesk, categorizing the issue and attaching corroborating evidence.\n  b) Operational SLA: The ticket routes automatically to the Department Grievance Officer, who must investigate and publish a formal resolution within 5 working days.\n3.2 Level 2 — Central Student Grievance Redressal Committee:\n  a) Escalation Trigger: If the candidate remains dissatisfied with the Level-1 determination, they may click 'Escalate to Level 2' within 48 hours of ticket closure.\n  b) Operational SLA: Chaired by the Dean of Student Welfare (DSW), the Central Committee convenes a hearing with the student and concerned department within 10 working days.\n3.3 Level 3 — Independent University Student Ombudsman:\n  a) Apex Appeal: If the grievance remains unresolved at Level 2, the matter is referred to the Independent University Student Ombudsman, appointed by the Board of Management.\n  b) Final Determination: The Ombudsman conducts independent inquiries and delivers a binding verdict within 20 working days.\n\n4. STATUTORY WHISTLEBLOWER AND ANTI-RETALIATION PROTECTIONS\nAny attempt by faculty, administrative personnel, or senior students to penalize, intimidate, lower internal marks, or retaliate against a student for filing a bona fide grievance is strictly prohibited and constitutes gross misconduct punishable by immediate administrative suspension."
+    },
+    {
+      "document_id": "POL-ANTI-RAGGING",
+      "title": "Zero-Tolerance Anti-Ragging and Harassment Policy",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Policy",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Entire University Campus Community",
+        "Freshmen Undergraduate Students",
+        "Senior Students",
+        "Hostel Wardens",
+        "Anti-Ragging Squad",
+        "Dean of Student Welfare"
+      ],
+      "keywords": [
+        "anti-ragging policy",
+        "zero tolerance",
+        "anti-ragging affidavit",
+        "emergency helpline",
+        "Anti-Ragging Flying Squad",
+        "Anti-Ragging Committee",
+        "ARC",
+        "hostel expulsion",
+        "FIR registration",
+        "24x7 helpline",
+        "ResolveDesk anonymous drop",
+        "senior harassment",
+        "protective relocation"
+      ],
+      "retrieval_signals": [
+        "caught ragging complaint",
+        "someone is ragging me",
+        "anti ragging complaint helpline",
+        "seniors ragging in hostel who to call",
+        "confidential report against senior harassment",
+        "immediate hostel room change due to ragging",
+        "anti ragging affidavit submission",
+        "what happens if caught ragging",
+        "anti ragging cell contact",
+        "ARC emergency helpline number",
+        "ragging in freshers hostel",
+        "anonymous ragging complaint portal",
+        "police FIR for ragging incident",
+        "expulsion for ragging at Demo University",
+        "anti-ragging committee hearing"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass",
+        "UniCampus ERP",
+        "DormTrack"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Anti-Ragging Flying Squad Directorate",
+        "Chief Warden of Hostels",
+        "Chief Security Officer (CSO)",
+        "Vice-Chancellor"
+      ],
+      "related_documents": [
+        "STU-POL-004",
+        "STU-POL-005",
+        "POL-DISCIPLINE",
+        "HSTL-REG-003",
+        "PROC-ANTI-RAGGING-INVEST",
+        "REL-011"
+      ],
+      "content": "1. STATUTORY ZERO-TOLERANCE MANDATE\nDemo University enforces absolute, unyielding zero tolerance against ragging, bullying, intimidation, hazing rituals, and physical or psychological harassment across all campus premises, hostels, transit buses, and off-campus student accommodation. This policy defines prohibited conduct, emergency reporting avenues, flying squad mobilization, and punitive consequences.\n\n2. DEFINITION AND FORMS OF RAGGING\nRagging constitutes any act by any student, whether individually or collectively, that creates an intimidating, hostile, or humiliating environment. Prohibited acts include:\n2.1 Psychological & Verbal: Indulging in rowdy speech, teasing, using abusive epithets, forcing juniors to perform embarrassing acts, or addressing juniors disrespectfully.\n2.2 Physical Hazing: Coerced physical exercises, confinement to hostel rooms, forced consumption of substances, sleep deprivation, or assault.\n2.3 Financial Exploitation: Extorting money, demanding forced treats, or compelling juniors to complete academic assignments, lab records, or coding tasks.\n2.4 Cyberbullying: Creating unauthorized social media pages, sharing humiliating memes, or sending intimidating messages over digital networks.\n\n3. STATUTORY PREVENTIVE MEASURES\nEvery admitted undergraduate and postgraduate student and their parent/guardian must submit a digitally signed, verifiable Anti-Ragging Affidavit on UniCampus ERP during annual registration.\n\n4. EMERGENCY REPORTING CHANNELS\nIncidents of ragging may be reported 24 hours a day, 7 days a week through:\n  a) The 24x7 University Anti-Ragging Emergency Phone Hotline.\n  b) The Confidential & Anonymous Drop Module on ResolveDesk.\n  c) Direct verbal or written reports to Residential Wardens, Security Personnel, or the Dean of Student Welfare.\n\n5. INVESTIGATION AND EMERGENCY MOBILIZATION WORKFLOW (PROC-ANTI-RAGGING-INVEST / REL-011)\n5.1 Instant Squad Mobilization: Upon receipt of a complaint, the Anti-Ragging Flying Squad mobilizes immediately. Plainclothes vigilance officers secure the premises.\n5.2 Victim Protection and Relocation: Within 24 hours, the victim is provided secure accommodation or transferred to a protected hostel annexe to guarantee safety.\n5.3 Emergency Hearing: The Dean of Student Welfare convenes an emergency inquiry session of the Anti-Ragging Committee within 24 hours to examine witnesses and review CCTV footage.\n5.4 Statutory Punitive Sanctions: If substantiated, the Vice-Chancellor ratifies immediate disciplinary measures:\n  a) Immediate suspension from academic classes and laboratory sessions.\n  b) Instant eviction from university hostels and debarment from campus.\n  c) Permanent expulsion from Demo University and forfeiture of academic credits.\n  d) Transmission of formal First Information Report (FIR) to local law enforcement for criminal prosecution under statutory anti-ragging legislation."
+    },
+    {
+      "document_id": "POL-DISCIPLINE",
+      "title": "Student Code of Conduct and Disciplinary Procedures",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Policy",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Student Clubs",
+        "Campus Organizations",
+        "Proctorial Board",
+        "Chief Security Officer",
+        "Dean of Student Welfare"
+      ],
+      "keywords": [
+        "code of conduct",
+        "student discipline",
+        "Proctorial Board",
+        "Disciplinary Committee",
+        "DC",
+        "PC",
+        "substance abuse expulsion",
+        "campus violence",
+        "vandalism restitution",
+        "show-cause notice",
+        "in camera hearing",
+        "7 days inquiry SLA",
+        "ERP disciplinary hold"
+      ],
+      "retrieval_signals": [
+        "I got into disciplinary trouble",
+        "Proctorial board inquiry procedure",
+        "summoned by DC for fight in hostel",
+        "DC enquiry process and student hearing rights",
+        "can DC suspend a student for alcohol",
+        "penalties for campus misconduct",
+        "student disciplinary committee hearing",
+        "caught with contraband on campus penalty",
+        "disciplinary show cause notice reply",
+        "damaged lab equipment disciplinary fine",
+        "physical fight suspension policy",
+        "appeal against disciplinary board suspension",
+        "student code of conduct Demo University",
+        "ERP blocked due to disciplinary action",
+        "proctorial committee hearing schedule"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP",
+        "CampusPass"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Proctorial Board Secretariat",
+        "Chief Security Officer (CSO)",
+        "University Registrar",
+        "Chief Warden of Hostels"
+      ],
+      "related_documents": [
+        "STU-POL-001",
+        "STU-POL-005",
+        "POL-ANTI-RAGGING",
+        "HSTL-REG-003",
+        "PROC-DISCIPLINE-INQUIRY"
+      ],
+      "content": "1. JURISDICTIONAL PURPOSE\nDemo University maintains high standards of campus decorum, personal integrity, and community safety. This policy regulates behavioral ethics, establishes statutory prohibitions against hazardous contraband, mandates restitution for property damage, and defines Proctorial Board disciplinary inquiry procedures.\n\n2. PROHIBITED BEHAVIORAL INFRACTIONS\n2.1 Contraband Prohibitions: The possession, distribution, consumption, or trade of alcohol, tobacco, narcotics, hallucinogens, psychotropic substances, or weapons on campus premises, buses, or hostels is absolutely prohibited. Violation results in immediate interim suspension pending formal expulsion.\n2.2 Physical Violence & Disorder: Engaging in brawls, assaults, intimidation, riots, or threatening faculty or staff warrants instant interim debarment and campus exclusion.\n2.3 Damage to Institutional Estate: Willful vandalism or reckless breakage of laboratory instruments, IT servers, classroom furniture, or residential estate requires 100% financial restitution plus punitive fines.\n2.4 Impersonation & Digital Infractions: Providing unauthorized credentials, forging administrative signatures, or circumventing biometric turnstiles constitutes severe misconduct.\n\n3. PROCTORIAL INQUIRY PROCEDURAL PHASES (PROC-DISCIPLINE-INQUIRY)\n3.1 Phase 1 — Incident Reporting: The reporting authority (Security, Warden, or Faculty) submits a detailed incident docket to the Office of Student Welfare within 24 hours.\n3.2 Phase 2 — Show-Cause Notice: The Proctorial Board Secretariat issues an official show-cause summons detailing allegations and scheduling a hearing within 7 working days.\n3.3 Phase 3 — In Camera Hearing: The student appears before the Board, reviews photographic, digital, and witness evidence, and submits a signed written statement.\n3.4 Phase 4 — Deliberation and Sanction: The Board evaluates aggravating and mitigating factors, determining proportionate penalties:\n  a) Formal Admonition & Mandatory Mentorship.\n  b) Community Service (up to 40 hours).\n  c) Disciplinary Fine and Financial Restitution.\n  d) Academic Suspension (one to two semesters).\n  e) Permanent Expulsion and Degree Revocation.\n3.5 Phase 5 — Order Ratification: The University Registrar ratifies the disciplinary order, updating UniCampus ERP with an administrative block."
+    },
+    {
+      "document_id": "POL-CLUBS",
+      "title": "Student Clubs, Societies, and Activity Sanction Policy",
+      "department": "Clubs and Student Activities Council",
+      "department_id": "DEPT-SAC",
+      "document_type": "Policy",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Student Club Officers",
+        "Club Members",
+        "Faculty Club Mentors",
+        "Event Organizers",
+        "Faculty Chair of Student Activities"
+      ],
+      "keywords": [
+        "student clubs",
+        "societies",
+        "activity sanction",
+        "Student Activity Centre",
+        "SAC",
+        "ClubSpace Portal",
+        "20 active members rule",
+        "faculty mentor",
+        "10 working days event notice",
+        "ResolveDesk event sanction",
+        "unauthorized sponsorship ban",
+        "campus event guidelines",
+        "technical clubs",
+        "cultural clubs"
+      ],
+      "retrieval_signals": [
+        "how do I join a club",
+        "how to form a student club",
+        "club registration",
+        "student club approval",
+        "club event permission ResolveDesk",
+        "how to book college auditorium for hackathon",
+        "club budget approval process",
+        "fest sound system permission after 10 PM",
+        "permission for outside students to stay overnight for fest",
+        "minimum members required to start a club",
+        "faculty mentor for student club",
+        "can student club take outside sponsorship",
+        "SAC building club rooms",
+        "ClubSpace portal registration",
+        "event sanction letter 10 days before"
+      ],
+      "systems": [
+        "ClubSpace Portal",
+        "ResolveDesk",
+        "CampusPass",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Faculty Chair of Student Activities",
+        "Faculty Club Mentor",
+        "Student Club President / Lead",
+        "Director of Campus Operations",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "STU-POL-002",
+        "POL-OD",
+        "PROC-CLUB-EVENT",
+        "SEC-POL-003",
+        "REL-008"
+      ],
+      "content": "1. PURPOSE AND CO-CURRICULAR VISION\nClubs and Student Activities Council (DEPT-SAC) oversees student organizations at Demo University. Operating from the Student Activity Centre (SAC Building, Ground Floor), this policy regulates club registration, faculty mentorship, activity budget approvals, venue bookings, and branding integrity.\n\n2. FORMATION AND RECOGNITION REQUIREMENTS\n2.1 Membership Threshold: Every prospective student club must demonstrate a registered roster of at least 20 active matriculated students.\n2.2 Compulsory Faculty Mentorship: A proposed club must secure written sponsorship from a full-time university faculty member who agrees to act as Faculty Club Mentor.\n2.3 Annual Renewal: Registered clubs must re-apply for chartered status annually in August via the ClubSpace Portal, submitting updated rosters, leadership election minutes, and annual activity reports.\n\n3. EVENT SANCTION AND VENUE ALLOTMENT WORKFLOW (PROC-CLUB-EVENT / REL-008)\n3.1 Ten-Day Advance Notice: Club events, technical workshops, hackathons, and guest lectures must be formally submitted on ResolveDesk at least 10 working days prior to the planned date.\n3.2 Review and Multi-Department Coordination: The event dossier must contain detailed schedules, faculty mentor sign-offs, line-item budgets, and guest credentials. The SAC Chair coordinates with:\n  a) Campus Operations (DEPT-OPS) for auditorium seating, sound infrastructure, and power.\n  b) Campus Security (DEPT-SEC) for visitor gate ingress passes and parking allocation.\n  c) IT Services (DEPT-IT) for temporary event Wi-Fi SSIDs.\n3.3 Formal Sanction: Upon administrative approval, SAC issues an official Event Sanction Letter, listing the activity on the official university calendar.\n\n4. FINANCIAL AND BRANDING RESTRICTIONS\n4.1 Prohibition of Unauthorized Collections: Collecting cash membership fees or unauthorized student contributions is strictly prohibited. Approved budgets are disbursed through the Finance Office.\n4.2 Corporate Sponsorships: External corporate sponsorships or brand partnerships require prior financial vetting and written authorization from the Finance and Accounts Office.\n4.3 University Branding: All digital flyers, banners, and social media handles must adhere to Demo University brand guidelines."
+    },
+    {
+      "document_id": "STU-POL-001",
+      "title": "Student Code of Conduct, Campus Ethics, and Behavioral Standards",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Policy / Code of Conduct",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Undergraduate and Postgraduate Students",
+        "Faculty Members",
+        "Proctorial Board",
+        "Hostel Wardens",
+        "Dean of Student Welfare"
+      ],
+      "keywords": [
+        "campus ethics",
+        "behavioral standards",
+        "student integrity",
+        "anti-harassment",
+        "academic civility",
+        "digital ethics",
+        "classroom decorum",
+        "peaceful assembly",
+        "property stewardship",
+        "social media guidelines",
+        "disciplinary escalation"
+      ],
+      "retrieval_signals": [
+        "student conduct rules Demo University",
+        "campus behavioral expectations",
+        "classroom etiquette policy",
+        "rules for student protests on campus",
+        "social media posting rules for students",
+        "can students record professors lectures",
+        "dress code and campus decorum",
+        "damage to campus property fine",
+        "ethics code for BTech students",
+        "disciplinary consequences for misconduct",
+        "disruptive behavior in classroom",
+        "guidelines for student assemblies",
+        "student ID badge display rule",
+        "campus decency and ethics",
+        "misbehavior with university staff"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "CampusPass"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Faculty Proctors",
+        "Heads of Department (HOD)",
+        "Chief Security Officer (CSO)"
+      ],
+      "related_documents": [
+        "POL-DISCIPLINE",
+        "STU-POL-005",
+        "POL-ANTI-RAGGING",
+        "SEC-POL-001"
+      ],
+      "content": "1. ETHICAL FOUNDATION AND VALUES\nDemo University cultivates a collegiate environment rooted in intellectual rigor, personal integrity, mutual respect, and civic responsibility. This Code of Conduct defines the core behavioral obligations governing every enrolled student across all academic departments, research hubs, residential quarters, and digital communication spaces.\n\n2. ACADEMIC AND CLASSROOM CIVILITY\n2.1 Respectful Engagement: Students must treat faculty, technical assistants, administrative officers, and fellow peers with courtesy and professional respect.\n2.2 Instructional Decorum: Punctual arrival for lectures, laboratory sessions, and seminars is mandatory. Unauthorized use of personal smartphones, gaming devices, or non-educational browsing during instructional periods is prohibited.\n2.3 Recording Restrictions: Recording video or audio of classroom lectures, lab briefings, or faculty interactions without the explicit prior written consent of the instructor constitutes an infringement of privacy and intellectual property.\n\n3. COMMUNITY HARMONY AND SOCIAL MEDIA ETHICS\n3.1 Freedom of Expression with Responsibility: Democratic discourse, intellectual critique, and peaceful dialogue are respected. However, assemblies obstructing academic quadrangles, blockading administrative doors, or causing noise pollution during instruction are forbidden.\n3.2 Digital and Online Decorum: Circulating defamatory, harassing, obscene, or threatening content targeting university members on online discussion forums, chat groups, or social media platforms is a punishable offense.\n\n4. PROPERTY STEWARDSHIP AND SECURITY COOPERATION\n4.1 Campus Badge Display: Students must visibly wear their official Demo University RFID Smart ID card at all times while inside academic complexes, libraries, and transport transit points.\n4.2 Safety and Compliance: Students must comply immediately with lawful security directives issued by campus vigilance personnel."
+    },
+    {
+      "document_id": "STU-POL-002",
+      "title": "Department of Student Affairs (DSA) Charter and Student Services Guide",
+      "department": "Department of Student Affairs",
+      "department_id": "DEPT-DSA",
+      "document_type": "Charter / Administrative Guide",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Student Leadership Council",
+        "Club Leads",
+        "Dean of Student Affairs",
+        "Faculty Mentors"
+      ],
+      "keywords": [
+        "Department of Student Affairs",
+        "DSA",
+        "Student Activity Centre",
+        "SAC 1st Floor",
+        "On-Duty approvals",
+        "OD desk",
+        "Student Leadership Council",
+        "orientation programs",
+        "extracurricular sanction",
+        "parent relations",
+        "ResolveDesk DSA"
+      ],
+      "retrieval_signals": [
+        "where is DSA office located",
+        "how to contact DSA for fest permission",
+        "DSA timing today",
+        "submit club budget to DSA",
+        "DSA office hours",
+        "what does Department of Student Affairs do",
+        "DSA approval for technical fest",
+        "student leadership council election",
+        "parent student relations desk",
+        "orientation program coordinator",
+        "DSA contact number and email",
+        "extracurricular approvals desk",
+        "DSA student services guide",
+        "who is the Dean of Student Affairs",
+        "apply for fest permissions SAC building"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP",
+        "ClubSpace Portal"
+      ],
+      "roles": [
+        "Dean of Student Affairs (DSA)",
+        "Extracurricular Approvals Officer",
+        "Student Leadership Council Liaison",
+        "Parent-Student Relations Coordinator"
+      ],
+      "related_documents": [
+        "POL-OD",
+        "POL-CLUBS",
+        "STU-POL-003",
+        "STU-LDR-001"
+      ],
+      "content": "1. ADMINISTRATIVE MANDATE AND LOCATION\nThe Department of Student Affairs (DEPT-DSA) operates from the Student Activity Centre (SAC Building, 1st Floor). Headed by the Dean of Student Affairs, the department serves as the institutional advocate for holistic non-academic student life, co-curricular governance, student leadership empowerment, and institutional representation.\n\n2. ORGANIZATIONAL SUBUNITS AND RESPONSIBILITIES\n2.1 Extracurricular Approvals Desk: Evaluates and sanctions student participation in external hackathons, athletic championships, and academic competitions, processing official On-Duty (OD) leaves in accordance with POL-OD.\n2.2 Student Leadership Council Liaison: Mentors the elected university student council, coordinates student representation across statutory university boards, and facilitates leadership workshops.\n2.3 Orientation & Campus Life Unit: Designs and conducts annual orientation bootcamps for incoming freshmen cohorts and manages annual university cultural festivals.\n2.4 Parent-Student Relations Section: Coordinates parent-faculty interactions, communicates institutional advisories, and provides liaison assistance for international and outstation families.\n\n3. STUDENT ENGAGEMENT AND OFFICE HOURS\n3.1 Public Service Windows: The Department of Student Affairs maintains daily open office hours from 10:00 AM to 01:00 PM and 02:30 PM to 04:30 PM, Monday through Friday.\n3.2 Digital Ticket Routing: Administrative requests, fest sanction submissions, and leadership inquiries are managed through the dedicated DSA queue on ResolveDesk."
+    },
+    {
+      "document_id": "STU-POL-003",
+      "title": "Office of Student Welfare Charter and Psychological Counseling Support",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Charter / Welfare Guide",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Campus Counselors",
+        "Faculty Advisors",
+        "Hostel Wardens",
+        "Dean of Student Welfare"
+      ],
+      "keywords": [
+        "Office of Student Welfare",
+        "Student Welfare",
+        "DEPT-SW",
+        "psychological counseling",
+        "mental wellness",
+        "counseling centre",
+        "Chanakya Bhavan Wing B",
+        "Proctorial Board Secretariat",
+        "Anti-Ragging Squad",
+        "Equal Opportunity Cell",
+        "hardship grants",
+        "ResolveDesk appointment"
+      ],
+      "retrieval_signals": [
+        "student welfare office location",
+        "mental wellness counseling appointment",
+        "how to meet college counselor",
+        "free psychological counseling for students",
+        "confidential therapy session on campus",
+        "Dean of Student Welfare contact",
+        "equal opportunity cell support",
+        "hardship financial grant application",
+        "stress and anxiety help before exams",
+        "proctorial board office Chanakya Bhavan",
+        "anti-ragging squad directorate office",
+        "student counseling centre timings",
+        "suicide prevention helpline campus",
+        "student rights and welfare charter",
+        "student hardship fund"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Senior Clinical Psychologist / Counselor",
+        "Proctorial Board Secretary",
+        "Equal Opportunity Officer"
+      ],
+      "related_documents": [
+        "POL-GRIEVANCE",
+        "POL-DISCIPLINE",
+        "POL-ANTI-RAGGING",
+        "POL-SCHOLARSHIP"
+      ],
+      "content": "1. ADMINISTRATIVE CHARTER AND LOCATION\nThe Office of Student Welfare (DEPT-SW) is situated in Chanakya Bhavan, 3rd Floor, Wing B. Led by the Dean of Student Welfare, the office safeguards student rights, administers psychological mental health counseling, manages emergency socio-economic hardship aid, and presides over campus disciplinary and anti-ragging bodies.\n\n2. CORE FUNCTIONAL DIVISIONS\n2.1 Student Counseling & Mental Wellness Centre: Employs full-time licensed clinical psychologists providing free, completely confidential individual counseling, crisis intervention, academic stress mitigation, and mental wellness workshops.\n2.2 Proctorial Board Secretariat: Maintains disciplinary dockets, issues hearing notices, and records administrative findings in compliance with POL-DISCIPLINE.\n2.3 Anti-Ragging Squad Directorate: Directs 24/7 flying squad patrols, inspects hostel premises, and investigates bullying complaints in accordance with POL-ANTI-RAGGING.\n2.4 Equal Opportunity Cell: Ensures accessibility compliance for differently-abled scholars and coordinates institutional socio-economic support schemes.\n\n3. PSYCHOLOGICAL COUNSELING SERVICES AND ACCESS\n3.1 Confidentiality Guarantee: Counseling consultations are entirely confidential. No clinical notes or consultation records are shared with academic departments, faculty advisors, parents, or future employers without express consent.\n3.2 Appointment Booking: Students may schedule confidential sessions via ResolveDesk ('Wellness Appointment') or access the walk-in clinic Monday through Friday between 09:00 AM and 05:00 PM."
+    },
+    {
+      "document_id": "STU-POL-004",
+      "title": "Anti-Ragging Policy and Zero Tolerance Statutory Enforcement Guidelines",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Policy / Regulatory Guidelines",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Entire University Community",
+        "Anti-Ragging Committee",
+        "Anti-Ragging Flying Squad",
+        "Hostel Wardens",
+        "Campus Security"
+      ],
+      "keywords": [
+        "anti-ragging statutory guidelines",
+        "Anti-Ragging Committee",
+        "ARC",
+        "Anti-Ragging Flying Squad",
+        "24-hour preliminary action",
+        "victim relocation",
+        "hostel night patrols",
+        "statutory FIR",
+        "police prosecution",
+        "anonymous complaints",
+        "harassment penalties"
+      ],
+      "retrieval_signals": [
+        "anti-ragging statutory regulations",
+        "anti-ragging committee constitution",
+        "flying squad night inspections in hostels",
+        "confidential complaint to ARC regarding senior ragging",
+        "emergency protective relocation for ragging victims",
+        "immediate action against ragging within 24 hours",
+        "punishments under anti-ragging policy",
+        "police FIR registration for college ragging",
+        "who heads the anti-ragging committee",
+        "anti-ragging surprise raids",
+        "how to report bullying in engineering hostel",
+        "victim protection protocol ragging",
+        "student debarment for senior harassment",
+        "anti-ragging compliance report",
+        "anti-ragging legal framework"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "CampusPass",
+        "UniCampus ERP",
+        "DormTrack"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Anti-Ragging Flying Squad Commander",
+        "Chief Security Officer (CSO)",
+        "Chief Warden of Hostels",
+        "University Registrar"
+      ],
+      "related_documents": [
+        "POL-ANTI-RAGGING",
+        "STU-POL-005",
+        "POL-DISCIPLINE",
+        "HSTL-REG-003",
+        "PROC-ANTI-RAGGING-INVEST"
+      ],
+      "content": "1. REGULATORY ENFORCEMENT FRAMEWORK\nThis document details the operational enforcement mechanisms, investigative workflows, victim protection protocols, and punitive processes mandated under the Zero-Tolerance Anti-Ragging Policy (POL-ANTI-RAGGING) of Demo University.\n\n2. STATUTORY MONITORING BODIES\n2.1 Anti-Ragging Committee: High-level statutory panel chaired by the Vice-Chancellor and executed by the Dean of Student Welfare, comprising faculty proctors, hostel wardens, local police representatives, non-governmental youth advocates, and student cohort representatives.\n2.2 Anti-Ragging Flying Squad: Operational rapid-response unit conducting unannounced night patrols across freshmen hostel corridors, dining halls, cafeteria corners, and campus perimeter grounds.\n\n3. TWENTY-FOUR-HOUR EMERGENCY MOBILIZATION PROTOCOL (PROC-ANTI-RAGGING-INVEST / REL-011)\n3.1 Initial Complaint Receipt: Complaints logged via the 24x7 phone hotline, ResolveDesk anonymous portal, or in person trigger an automated Priority-1 alert.\n3.2 Immediate Victim Security: Within 24 hours, the Flying Squad secures the victim, relocating them to secure residential quarters with round-the-clock security.\n3.3 Emergency Hearing: The Anti-Ragging Committee convenes a formal hearing within 24 hours of notification, examining witnesses, hostel access logs from CampusPass, and CCTV feeds.\n\n4. STATUTORY PENALTIES AND LEGAL CONSEQUENCES\nUpon establishing prima facie guilt, the university enforces immediate non-negotiable penalties: academic suspension, permanent hostel eviction, expulsion from Demo University, and formal transmission of incident dossiers to local law enforcement for statutory FIR registration."
+    },
+    {
+      "document_id": "STU-POL-005",
+      "title": "Proctorial Board Secretariat Charter and Student Disciplinary Hearings",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Charter / Disciplinary Regulations",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Proctorial Board Members",
+        "Students Charged with Infractions",
+        "Security Officers",
+        "Hostel Wardens",
+        "Registrar"
+      ],
+      "keywords": [
+        "Proctorial Board",
+        "disciplinary hearings",
+        "Proctorial Committee",
+        "PC",
+        "Disciplinary Committee",
+        "DC",
+        "show-cause notice",
+        "in camera inquiry",
+        "7 working days SLA",
+        "student defense rights",
+        "penalty schedule",
+        "Registrar disciplinary order"
+      ],
+      "retrieval_signals": [
+        "proctorial board hearing schedule",
+        "PC hearing notice served to student",
+        "how to reply to proctorial show cause notice",
+        "proctorial committee hearing rights",
+        "what happens in a proctorial board inquiry",
+        "can I bring a lawyer to disciplinary hearing",
+        "disciplinary committee inquiry steps",
+        "penalties issued by proctorial board",
+        "appeal against proctorial committee suspension",
+        "how long does disciplinary inquiry take",
+        "proctorial board members list",
+        "disciplinary hearing for hostel fight",
+        "malpractice case referred to proctorial board",
+        "proctorial board secretariat location",
+        "student conduct inquiry procedure"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP",
+        "CampusPass"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "Proctorial Board Secretariat",
+        "Chief Security Officer (CSO)",
+        "University Registrar",
+        "Controller of Examinations (COE)"
+      ],
+      "related_documents": [
+        "POL-DISCIPLINE",
+        "STU-POL-001",
+        "EXAM-GUI-003",
+        "PROC-DISCIPLINE-INQUIRY",
+        "REL-007"
+      ],
+      "content": "1. ADMINISTRATIVE MANDATE AND STRUCTURE\nThe Proctorial Board Secretariat constitutes the primary judicial inquiry body for student conduct at Demo University. Operating under the Office of Student Welfare (Chanakya Bhavan, 3rd Floor, Wing B), the Board investigates code-of-conduct breaches, acts of violence, substance prohibitions, and examination malpractice cases referred by the Examination Cell.\n\n2. COMPOSITION AND QUORUM\nThe Board is chaired by the Dean of Student Welfare (DSW) and comprises the Chief Proctor, four senior faculty proctors representing different academic schools, the Chief Security Officer, and the Chief Warden of Hostels. A quorum of four members is required for formal proceedings.\n\n3. HEARING WORKFLOW AND TIME-BOUND SLA (PROC-DISCIPLINE-INQUIRY)\n3.1 Show-Cause Notice: Within 48 hours of receiving an incident report, the Secretariat issues a formal show-cause summons detailing the alleged violations, witness statements, and scheduled hearing time.\n3.2 Inquiry Turnaround: The inquiry process must conclude within 7 working days from the date of the formal report.\n3.3 In Camera Proceedings: Hearings are conducted in camera. The student is entitled to examine all physical, digital, and documentary evidence and to present a written and verbal defense. Legal representation by outside advocates is not permitted during internal academic inquiries.\n\n4. PENALTY SPECTRUM AND PROMULGATION\n4.1 Range of Sanctions: The Board may recommend Admonition, Community Service, Disciplinary Fines, Academic Suspension, or Expulsion.\n4.2 Promulgation: Recommendations are transmitted to the University Registrar, who issues the formal Disciplinary Order and applies corresponding administrative hold flags in UniCampus ERP."
+    },
+    {
+      "document_id": "STU-POL-006",
+      "title": "Student Grievance Redressal Committee Regulations and Ombudsman Procedure",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "Regulations / Grievance Code",
+      "version": "2.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Department Grievance Officers",
+        "Central Grievance Redressal Committee",
+        "University Ombudsman",
+        "Dean of Student Welfare"
+      ],
+      "keywords": [
+        "grievance regulations",
+        "Student Grievance Redressal Committee",
+        "University Ombudsman",
+        "SLA tiers",
+        "Level 1 5 days",
+        "Level 2 10 days",
+        "Level 3 20 days",
+        "arbitrary grading appeal",
+        "ResolveDesk escalation",
+        "appellate procedure",
+        "whistleblower protection"
+      ],
+      "retrieval_signals": [
+        "student grievance redressal committee regulations",
+        "how to appeal to university ombudsman",
+        "ombudsman appointment and jurisdiction",
+        "grievance escalation timelines",
+        "ResolveDesk escalation to level 2 committee",
+        "central grievance committee hearing",
+        "complaint against department HOD decision",
+        "unfair internal assessment grievance",
+        "delay in caution deposit refund complaint",
+        "hostel facilities grievance escalation",
+        "whistleblower protection in grievance policy",
+        "binding nature of ombudsman order",
+        "grievance redressal procedure Demo University",
+        "independent student ombudsman office",
+        "how to appeal against grievance dismissal"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "University Student Ombudsman",
+        "Dean of Student Welfare (DSW)",
+        "Department Grievance Officer",
+        "Heads of Department (HOD)",
+        "Vice-Chancellor"
+      ],
+      "related_documents": [
+        "POL-GRIEVANCE",
+        "STU-GUI-001",
+        "STU-POL-003",
+        "PROC-GRIEVANCE-REDRESS"
+      ],
+      "content": "1. STATUTORY OBJECTIVE AND INDEPENDENCE\nThese regulations govern the statutory functioning of the Student Grievance Redressal Committee and the Office of the University Ombudsman at Demo University, guaranteeing independent, transparent, and binding resolution of student grievances in compliance with institutional and national higher education standards.\n\n2. THREE-LEVEL DISPUTE RESOLUTION ARCHITECTURE (PROC-GRIEVANCE-REDRESS)\n2.1 Level 1 — Department Grievance Cell:\n  - Composition: Head of Department, two senior professors, and a faculty counselor.\n  - Jurisdiction: Course assessment issues, internal sessional mark disputes, instructor absences, and lab scheduling conflicts.\n  - Binding SLA: Must investigate and post a written determination within 5 working days.\n2.2 Level 2 — Central Student Grievance Redressal Committee:\n  - Composition: Chaired by the Dean of Student Welfare (DSW), with three senior professors, the Registrar, and an elected student representative.\n  - Jurisdiction: Inter-departmental disputes, appeals against Level-1 determinations, administrative delays, and campus discrimination.\n  - Binding SLA: Convenes formal hearing and issues a resolution order within 10 working days.\n2.3 Level 3 — University Student Ombudsman:\n  - Independence: A distinguished retired jurist or eminent academic appointed by the Board of Management, operating independently of the executive university administration.\n  - Jurisdiction: Final appellate authority reviewing unresolved Level-2 cases, procedural injustice, or systemic administrative failure.\n  - Binding SLA: Convenes appellate hearings and issues final, binding recommendations within 20 working days.\n\n3. APPELLATE PROCEDURE AND FINALITY\nDeterminations made by the Ombudsman are submitted to the Vice-Chancellor for formal implementation. No further administrative appeal lies within the university."
+    },
+    {
+      "document_id": "STU-GUI-001",
+      "title": "Step-by-Step Guide: Filing an Online Student Grievance on ResolveDesk",
+      "department": "Office of Student Welfare",
+      "department_id": "DEPT-SW",
+      "document_type": "User Guide / SOP",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Enrolled Students",
+        "ResolveDesk Support Agents",
+        "Department Grievance Handlers"
+      ],
+      "keywords": [
+        "ResolveDesk user guide",
+        "how to file grievance",
+        "step by step grievance",
+        "ticket submission",
+        "grievance tracking",
+        "escalate ticket",
+        "attaching evidence",
+        "ticket status",
+        "ResolveDesk SLA countdown",
+        "online helpdesk"
+      ],
+      "retrieval_signals": [
+        "step by step guide filing online student grievance",
+        "how to use ResolveDesk for complaints",
+        "log a ticket for academic dispute",
+        "where to submit evidence for college complaint",
+        "how to escalate ResolveDesk ticket to level 2",
+        "track grievance ticket status online",
+        "ResolveDesk student login portal",
+        "filing hostel complaint on ResolveDesk",
+        "uploading proof for unfair grading on portal",
+        "ResolveDesk ticket response time",
+        "ResolveDesk complaint categories",
+        "cannot resolve ticket escalate button",
+        "ResolveDesk mobile view guide",
+        "how to reopen a closed grievance ticket",
+        "online complaint portal for students"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Dean of Student Welfare (DSW)",
+        "ResolveDesk System Administrator",
+        "Department Grievance Officer"
+      ],
+      "related_documents": [
+        "POL-GRIEVANCE",
+        "STU-POL-006",
+        "STU-POL-003",
+        "PROC-GRIEVANCE-REDRESS"
+      ],
+      "content": "1. PURPOSE AND PORTAL ACCESS\nThis procedural manual provides step-by-step instructions for matriculated students to submit, monitor, and escalate formal academic, administrative, facilities, and conduct grievances using the university's central ticketing platform, ResolveDesk (https://resolve.demo.edu.internal).\n\n2. STEP-BY-STEP SUBMISSION PROCEDURE\n2.1 Authentication: Log in to ResolveDesk using official Demo University single-sign-on credentials.\n2.2 Category Selection: From the primary dashboard, select 'Submit New Grievance' and choose the appropriate domain:\n  - Academic Grievance (grading discrepancies, attendance adjustments, syllabus coverage).\n  - Hostel & Residential Life (room maintenance, mess hygiene, curfew disputes).\n  - Finance & Accounts (scholarship adjustments, tuition refunds, fee holds).\n  - Harassment & Student Welfare (discrimination, bullying, unfair treatment).\n2.3 Docket Details: Fill out the structured grievance form:\n  - Detailed subject summary.\n  - Specific operational dates, involved personnel, course codes, or room numbers.\n  - Specific redress sought.\n2.4 Evidence Attachment: Attach supporting documentation (scanned marks sheets, payment receipts, correspondence, or photographs). File attachments are restricted to PDF, PNG, or JPEG formats up to 10 MB.\n2.5 Ticket Generation: Click 'Submit'. The system automatically issues a unique tracking code (e.g. `GRV-2026-XXXXX`) and starts the 5-day SLA countdown timer.\n\n3. TRACKING AND ESCALATION WORKFLOW (PROC-GRIEVANCE-REDRESS)\n3.1 Progress Monitoring: Students can view case updates, assigned officer comments, and request status directly from the 'My Tickets' dashboard.\n3.2 Escalation to Level 2: If the assigned Department Grievance Officer fails to resolve the issue within 5 working days, or if the student is dissatisfied with the proposed solution, the student must click the 'Escalate to Level 2' button within 48 hours of ticket closure. The ticket escalates directly to the Central Student Grievance Redressal Committee."
+    },
+    {
+      "document_id": "STU-LDR-001",
+      "title": "Class Representative (CR) Election, Roles, and Responsibilities Charter",
+      "department": "Department of Student Affairs",
+      "department_id": "DEPT-DSA",
+      "document_type": "Charter / Leadership Guidelines",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Class Representatives",
+        "Student Body",
+        "Course Instructors",
+        "Heads of Department",
+        "Dean of Student Affairs"
+      ],
+      "keywords": [
+        "Class Representative",
+        "CR",
+        "student leadership",
+        "CR election rules",
+        "CGPA 7.0 eligibility",
+        "zero backlogs requirement",
+        "clean disciplinary record",
+        "Class Committee meetings",
+        "faculty liaison",
+        "biometric error reporting",
+        "mass bunk prohibition",
+        "academic coordination"
+      ],
+      "retrieval_signals": [
+        "CR election rules and criteria",
+        "who is the CR for my class",
+        "Class Representative roles and responsibilities",
+        "minimum CGPA required to become CR",
+        "can a student with backlog become CR",
+        "CR meeting with HOD regarding lecture timetable",
+        "CR rights in faculty feedback",
+        "how are Class Representatives elected",
+        "CR removal procedure for indiscipline",
+        "class representative duties Demo University",
+        "reporting classroom projector fault CR",
+        "class committee meeting schedule",
+        "can CR cancel a class",
+        "CR liaison with student affairs",
+        "student representative selection BTech"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Class Representative (Student)",
+        "Academic Program Coordinator",
+        "Head of Department (HOD)",
+        "Dean of Student Affairs (DSA)"
+      ],
+      "related_documents": [
+        "STU-POL-002",
+        "POL-ATTEND",
+        "ACAD-POL-002",
+        "ACAD-POL-005"
+      ],
+      "content": "1. PURPOSE AND LEADERSHIP MANDATE\nThe Class Representative (CR) system establishes an official communication bridge between student cohorts, faculty instructors, department leadership, and the Department of Student Affairs. This charter defines eligibility standards, election procedures, functional responsibilities, and behavioral boundaries.\n\n2. ELIGIBILITY AND NOMINATION CRITERIA\nTo qualify for election or appointment as Class Representative, a candidate must simultaneously fulfill three mandatory prerequisites:\n  a) Academic Merit: Possess a cumulative grade point average (CGPA) of 7.00 or higher.\n  b) Backlog-Free Status: Maintain zero uncleared course backlogs ('F' or 'I' grades) across all completed semesters.\n  c) Clean Disciplinary Record: Possess zero formal citations, disciplinary reprimands, or active inquiries before the Proctorial Disciplinary Board.\n\n3. ELECTION AND TENURE\n3.1 Election Window: Elections or nominations are coordinated by the Academic Program Coordinator within the first two weeks of the academic semester.\n3.2 Balanced Representation: Each section selects one primary Class Representative and one Deputy Representative, ensuring balanced gender representation where practicable.\n3.3 Term: Representatives serve for one academic year, subject to semester performance review.\n\n4. CORE RESPONSIBILITIES AND JURISDICTION\n4.1 Faculty Liaison: Communicating constructive cohort feedback to course instructors regarding pacing, assignment schedules, and tutorial needs.\n4.2 Class Committee Participation: Attending statutory Department Class Committee meetings chaired by the HOD to review curriculum progress and exam timetables.\n4.3 Facility Reporting: Logging immediate infrastructure tickets on ResolveDesk regarding classroom air conditioning, multimedia projection, or biometric edge sensor errors.\n\n5. BOUNDARIES AND DISMISSAL PROTOCOLS\n5.1 Explicit Prohibitions: Class Representatives possess no authority to reschedule official examinations, condone student absences, collect unauthorized monetary funds, or organize class walkouts ('mass bunks'). Organizing or encouraging an unauthorized mass boycott of classes results in instant revocation of CR status and referral to the Proctorial Board.\n5.2 Recall Procedure: A CR may be removed by the HOD upon receipt of a no-confidence petition signed by at least two-thirds of the registered section or upon failing to maintain the 7.00 CGPA threshold."
+    },
+    {
+      "document_id": "STU-MED-001",
+      "title": "Campus Health Centre Medical Verification and Outpatient Consultation SOP",
+      "department": "Campus Health Centre",
+      "department_id": "DEPT-HEALTH",
+      "document_type": "Standard Operating Procedure (SOP)",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Requiring Healthcare or Medical Leave Endorsements",
+        "Medical Officers",
+        "Faculty Advisors",
+        "Campus Pharmacists"
+      ],
+      "keywords": [
+        "Campus Health Centre",
+        "Health & Wellness Pavilion",
+        "outpatient consultation",
+        "Senior Chief Medical Officer",
+        "medical verification slip",
+        "verification code",
+        "HealthDesk",
+        "hospital discharge summary",
+        "clinical scrutiny",
+        "attendance condonation workflow",
+        "emergency beds",
+        "ambulance service"
+      ],
+      "retrieval_signals": [
+        "campus health centre location and timings",
+        "how to get medical certificate verified at college",
+        "health centre verification slip procedure",
+        "medical leave verification workflow",
+        "where is the health clinic on campus",
+        "outpatient diagnostic clinic timings",
+        "health centre doctor appointment",
+        "submitting hospital discharge summary to CMO",
+        "medical verification slip for low attendance",
+        "free medicines at university health centre",
+        "campus ambulance emergency number",
+        "overnight medical observation beds",
+        "Senior Chief Medical Officer room",
+        "medical verification endorsement code",
+        "how long does medical slip endorsement take"
+      ],
+      "systems": [
+        "HealthDesk",
+        "ResolveDesk",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Senior Chief Medical Officer",
+        "Medical Verification Officer",
+        "Campus Pharmacist",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "POL-MEDICAL-LEAVE",
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "PROC-MED-COND",
+        "REL-004"
+      ],
+      "content": "1. OPERATIONAL PURPOSE AND FACILITY INFRASTRUCTURE\nThe Campus Health Centre operates from the Health & Wellness Pavilion (adjacent to the East Residential Enclave). Equipped with a 24-hour outpatient diagnostic clinic, 10 emergency observation beds, a licensed pharmacy, and an emergency response ambulance, this SOP governs outpatient consultations and the rigorous verification of external medical documentation.\n\n2. OUTPATIENT CLINICAL SERVICES\n2.1 General Consultation: The outpatient clinic is open daily from 08:00 AM to 08:00 PM for general primary healthcare, minor trauma dressings, diagnostic blood profiling, and pharmacy dispensing.\n2.2 Emergency Care: Emergency triage and observation services operate 24 hours a day under the supervision of resident medical officers.\n\n3. MEDICAL DOCUMENTATION VERIFICATION WORKFLOW (PROC-MED-COND / REL-004)\nWhen a student is absent due to acute illness or hospitalization and seeks academic attendance condonation, the following sequential workflow is mandatory:\n3.1 Step 1 — In-Person Presentation: Within 3 working days of resuming academic attendance, the student must visit the Medical Verification Desk carrying complete original hospital records: clinical case history, discharge summary, registered doctor prescriptions, and laboratory investigation receipts.\n3.2 Step 2 — Physician Audit: The Senior Chief Medical Officer examines the patient, scrutinizes diagnostic dates against class absence dates, cross-verifies hospital registration numbers, and validates clinical authenticity.\n3.3 Step 3 — Verification Slip Issuance: Upon authenticating the illness, the Medical Officer generates an official University Medical Verification Slip in HealthDesk featuring a unique digital verification code and medical stamp.\n3.4 Step 4 — ResolveDesk Upload: The student uploads a scanned copy of the endorsed medical slip to ResolveDesk under 'Medical Leave Submission' to notify their Faculty Advisor and HOD.\n3.5 Step 5 — Academic Transmission: The department endorses the verified medical slip and routes it to the Dean of Academic Affairs to adjust attendance calculations within the 65.0% to 74.9% condonation band.\n\n4. INTEGRITY SURVEILLANCE\nForged, altered, or purchased medical certificates will be impounded immediately. The Senior Medical Officer will file a formal disciplinary complaint with the Proctorial Board, triggering automatic semester suspension."
+    }
+  ]
+}

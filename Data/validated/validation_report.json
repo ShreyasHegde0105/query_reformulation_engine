@@ -1,0 +1,2346 @@
+{
+  "run_id": "validation-20260920-174725-6265dc",
+  "timestamp": "2026-09-20T17:47:26.718641Z",
+  "summary": {
+    "total_documents": 159,
+    "valid_documents": 157,
+    "rejected_documents": 2,
+    "warnings": 6,
+    "errors": 1,
+    "infos": 200
+  },
+  "id_statistics": {
+    "total_documents": 159,
+    "unique_document_ids": 158,
+    "duplicate_document_ids": 1,
+    "invalid_document_ids": 0
+  },
+  "duplicates": {
+    "exact_duplicate_count": 0,
+    "exact_duplicate_groups": [],
+    "near_duplicate_count": 0,
+    "near_duplicate_pairs": []
+  },
+  "quality": {
+    "total_words": 57725,
+    "average_word_count": 363.05,
+    "median_word_count": 347.0,
+    "min_word_count": 173,
+    "max_word_count": 626,
+    "average_char_count": 2610.66,
+    "median_char_count": 2469.0,
+    "min_char_count": 1242,
+    "max_char_count": 4580
+  },
+  "distribution": {
+    "departments": {
+      "Academic Affairs": 21,
+      "Academic Affairs & Admissions": 2,
+      "Academic Affairs & Finance Office": 1,
+      "Admissions Office / Registrar Records": 3,
+      "Department of Student Affairs": 4,
+      "Academic Affairs & Campus Health Centre": 1,
+      "Examination Cell": 16,
+      "Campus Safety, Vigilance and Security Department": 6,
+      "Admissions and Media Relations Office": 1,
+      "Administrative Office / Registrar Secretariat": 1,
+      "Admissions Office / International Wing": 1,
+      "Admissions Office": 1,
+      "Campus Health Centre": 3,
+      "University Governance / Registrar Secretariat": 1,
+      "Academic Affairs / Registrar Secretariat": 1,
+      "Academic Affairs & Career Development": 1,
+      "Human Resources / Administrative Office": 1,
+      "Internal Quality Assurance Cell (IQAC)": 1,
+      "Office of International Relations": 1,
+      "Academic Affairs & Student Affairs": 1,
+      "Career Development Centre / Placement Office": 9,
+      "Department of Computer Science and Engineering": 7,
+      "Department of Electronics and Communication Engineering": 4,
+      "Department of Mechanical Engineering": 2,
+      "Department of Civil Engineering": 2,
+      "Finance and Accounts Office": 10,
+      "Hostel Administration and Residence Life": 11,
+      "Information Technology Services": 14,
+      "Central Library and Learning Resource Centre": 7,
+      "Campus Mobility and Transportation Unit": 2,
+      "Campus Operations, Estate and Facilities Management": 5,
+      "Office of Sponsored Research and Innovation": 8,
+      "Office of Student Welfare": 9,
+      "Clubs and Student Activities Council": 1
+    },
+    "department_ids": {
+      "DEPT-ACAD": 29,
+      "DEPT-ADM": 9,
+      "DEPT-DSA": 4,
+      "DEPT-EXAM": 17,
+      "DEPT-SEC": 6,
+      "DEPT-HEALTH": 3,
+      "DEPT-IRO": 1,
+      "DEPT-CDC": 9,
+      "DEPT-CSE": 7,
+      "DEPT-ECE": 4,
+      "DEPT-MECH": 2,
+      "DEPT-CIVIL": 2,
+      "DEPT-FIN": 10,
+      "DEPT-HSTL": 11,
+      "DEPT-IT": 13,
+      "DEPT-LIB": 7,
+      "DEPT-TRANS": 2,
+      "DEPT-OPS": 5,
+      "DEPT-RES": 8,
+      "DEPT-SW": 9,
+      "DEPT-SAC": 1
+    },
+    "document_types": {
+      "Policy": 25,
+      "Regulation": 4,
+      "Notice": 1,
+      "Manual": 1,
+      "Administrative Application Form / Student Request Form": 1,
+      "Administrative Application Form / Financial Documentation Request": 1,
+      "Statutory Discharge Form / Departure Application": 1,
+      "Co-Curricular Absence Application / Attendance Adjustment Form": 1,
+      "Statutory Academic Condonation Form / Medical Exemption Request": 1,
+      "Examination Evaluation Appeal Form / Script Review Requisition": 1,
+      "Security Credential Re-issuance Form / Identity Badge Application": 1,
+      "Institutional Standard Operating Procedure / Cross-Department Clearance": 1,
+      "Standard Operating Procedure / Academic Documentation SOP": 1,
+      "Institutional Discharge Policy / Student Departure SOP": 1,
+      "Institutional Media Policy / Public Relations Guidelines": 1,
+      "Organizational Charter / Administrative Hierarchy Manual": 1,
+      "International Admissions SOP / Statutory Visa Compliance Manual": 1,
+      "Institutional Policy / Certification Governance": 1,
+      "Institutional Policy / Departure Governance": 1,
+      "Health & Attendance Policy / Clinical Absence Regulations": 1,
+      "Statutory University Governance Act / Executive Board Charter": 1,
+      "Statutory Governance Regulation / Academic Senate Charter": 1,
+      "Academic Appeals Procedure / Governance Committee Charter": 1,
+      "Institutional Governance Charter / Industry Advisory Guidelines": 1,
+      "Human Resources Policy / Staff Leave Management Guide": 1,
+      "Quality Audit Guidelines / Institutional Review Manual": 1,
+      "International Mobility Policy / Study Abroad Guidelines": 1,
+      "Standard Operating Procedure / Excursion Safety Protocol": 1,
+      "Institutional Policy / Placement Regulations": 1,
+      "Institutional Policy / Internship Regulations": 1,
+      "Corporate Guidelines / Recruiter Policy": 1,
+      "User Guide / Portal Manual": 1,
+      "Conduct Code / Operational Guidelines": 1,
+      "Standard Operating Procedure / Workflow Guide": 1,
+      "Training Framework / Curriculum SOP": 1,
+      "Institutional FAQ / Guidance Compendium": 1,
+      "Administrative Charter / Staff Directory": 1,
+      "Syllabus / Lab Guide": 7,
+      "Course Guide / Project Manual": 1,
+      "Course Outline / Lab Guide": 2,
+      "Syllabus / Computing Manual": 1,
+      "Department Catalog": 1,
+      "Lab Safety Manual": 1,
+      "Lab Manual": 2,
+      "Institutional Lab Safety Policy": 1,
+      "Guidelines / Manual": 1,
+      "Manual / Operational Guide": 1,
+      "Manual / Disciplinary Guidelines": 1,
+      "Standard Operating Procedure (SOP) / Guide": 1,
+      "Directory / Service Guide": 1,
+      "Notice / Notification": 2,
+      "Circular / Notification": 1,
+      "Instructional Notice / Advisory": 1,
+      "Notification / Calendar": 1,
+      "Schedule / Timetable": 1,
+      "Institutional Policy / Fee Regulation": 1,
+      "Fee Schedule / Administrative Regulation": 1,
+      "Financial Policy / Settlement SOP": 1,
+      "Statutory Refund Policy": 1,
+      "Financial Relief Guidelines": 1,
+      "Institutional Policy / Reimbursement Guidelines": 1,
+      "Scholarship Regulation / Financial Aid Policy": 1,
+      "Endowment Guidelines / Scholarship Policy": 1,
+      "User Guide / Payment Troubleshooting Manual": 1,
+      "Procurement Protocol / Institutional SOP": 1,
+      "Regulations / Handbook": 1,
+      "Standard Operating Procedure (SOP)": 4,
+      "Regulations / Resident Code": 1,
+      "Charter / Operational Guidelines": 1,
+      "Policy / Operational Guidelines": 1,
+      "Regulations / Dining Manual": 1,
+      "Policy / Safety Directive": 1,
+      "Policy / Advisory Guide": 1,
+      "User Guide / Navigation Manual": 1,
+      "User Guide / Manual": 1,
+      "User Guide / System Manual": 1,
+      "User Guide / Helpdesk Manual": 1,
+      "Technical Setup Guide": 1,
+      "Policy / Security Standard": 2,
+      "Operational Guide / Staff Charter": 1,
+      "Operational Architecture & Escalation SOP": 1,
+      "Laboratory Rules / Safety Manual": 1,
+      "Technical Security Standard": 1,
+      "Facility Guide / Policy": 1,
+      "Institutional Policy / Circulation Regulations": 1,
+      "Institutional Policy / Digital Services SOP": 1,
+      "Facility Operations Policy / Space Governance": 1,
+      "Institutional Policy / Research Archiving SOP": 1,
+      "User Manual / System Navigation Guide": 1,
+      "Informational FAQ / Knowledgebase Directory": 1,
+      "Governance Charter / Statutory Committee Bylaws": 1,
+      "Institutional Security Policy / Identity Credential Regulations": 1,
+      "Campus Safety Regulation / Traffic Operations Policy": 1,
+      "Campus Security Policy / Visitor Access SOP": 1,
+      "Emergency Standard Operating Procedure / Safety Protocol": 1,
+      "Standard Operating Procedure / Incident Response Protocol": 1,
+      "Auxiliary Transportation Policy / Commuter Service Guide": 1,
+      "Standard Operating Procedure / Transportation Service Workflow": 1,
+      "Estate Operations Policy / Facilities Maintenance SOP": 1,
+      "Facility Booking Policy / Space Allocation Regulations": 1,
+      "Facilities Operational Policy / Energy Conservation Guidelines": 1,
+      "Operational Duty Charter / Estate Inspection Protocol": 1,
+      "Staff Operational Directory / Laboratory Technical Charter": 1,
+      "Statutory Academic Regulation / Doctoral Governance": 1,
+      "Research Milestone Guidelines / Monitoring SOP": 1,
+      "Fellowship Policy / Research Staff Appointment Guidelines": 1,
+      "Statutory Intellectual Property Policy / Patent SOP": 1,
+      "Innovation Framework / Incubation Policy": 1,
+      "Grant Guidelines / Pre-Incubation SOP": 1,
+      "Research Ethics Code / Integrity Regulation": 1,
+      "Administrative Charter / Governance Directory": 1,
+      "Policy / Code of Conduct": 1,
+      "Charter / Administrative Guide": 1,
+      "Charter / Welfare Guide": 1,
+      "Policy / Regulatory Guidelines": 1,
+      "Charter / Disciplinary Regulations": 1,
+      "Regulations / Grievance Code": 1,
+      "User Guide / SOP": 1,
+      "Charter / Leadership Guidelines": 1
+    },
+    "domains": {
+      "Academic": 18,
+      "Administrative Forms & General Administration": 24,
+      "Career and Placement": 9,
+      "Engineering": 16,
+      "Examination": 15,
+      "Finance": 10,
+      "Hostel": 11,
+      "Information Technology": 14,
+      "Library and Knowledge Resources": 7,
+      "Operations & Security": 12,
+      "Research and Innovation": 8,
+      "Student Affairs": 15
+    },
+    "statuses": {
+      "Active": 159
+    },
+    "systems": {
+      "UniCampus ERP": 142,
+      "ResolveDesk": 90,
+      "PayVarsity": 50,
+      "CampusPass": 37,
+      "LearnSphere LMS": 35,
+      "ExamShield Portal": 28,
+      "AttendEdge": 23,
+      "DormTrack": 17,
+      "LibNet": 12,
+      "CareerHub": 10,
+      "LabServer Forge": 9,
+      "ResTrack Portal": 9,
+      "HealthDesk": 4,
+      "TransPass": 3,
+      "Turnitin / E-Shodh Hub": 3,
+      "EDA Cloud Lab": 2,
+      "ClubSpace Portal": 2,
+      "Staff LMS Portal": 1,
+      "Central Computing Centre (CC)": 1,
+      "AdmitFlow Portal": 1,
+      "Campus Wi-Fi (802.1X)": 1
+    },
+    "roles": {
+      "Dean of Academic Affairs": 43,
+      "Head of Department (HOD)": 39,
+      "Chief Finance Officer / Bursar": 36,
+      "Course Instructor / Professor": 32,
+      "Controller of Examinations (COE)": 30,
+      "Chief Security Officer (CSO)": 28,
+      "Faculty Advisor / Mentor": 25,
+      "Director of IT Infrastructure": 18,
+      "Dean of Student Welfare (DSW)": 17,
+      "Academic Program Coordinator": 16,
+      "University Registrar": 15,
+      "Chief Warden of Hostels": 14,
+      "Director of Placements and Corporate Relations": 12,
+      "Enterprise Systems Administrator": 11,
+      "Technical Assistant (Lab Technician)": 11,
+      "Dean of Research and Innovation": 11,
+      "Teaching Assistant (Graduate)": 10,
+      "University Chief Librarian": 10,
+      "Residential Warden": 9,
+      "Placement Officer": 8,
+      "Head of Department (HOD) - Computer Science": 8,
+      "Director of Campus Operations": 8,
+      "Hostel Caretaker": 7,
+      "Vice-Chancellor": 6,
+      "Dean of Student Affairs (DSA)": 6
+    }
+  },
+  "issues": [
+    {
+      "category": "id",
+      "severity": "error",
+      "message": "Duplicate document ID detected: 'POL-MEDICAL-LEAVE' appears 2 times across corpus",
+      "document_id": "POL-MEDICAL-LEAVE",
+      "field": "document_id",
+      "details": {
+        "count": 2
+      }
+    },
+    {
+      "category": "content",
+      "severity": "warning",
+      "message": "Detected placeholder or boilerplate pattern: 'XXXX'",
+      "document_id": "SEC-SOP-001",
+      "field": "content",
+      "details": {
+        "pattern": "xxx+"
+      }
+    },
+    {
+      "category": "content",
+      "severity": "warning",
+      "message": "Detected placeholder or boilerplate pattern: 'XXXXX'",
+      "document_id": "STU-GUI-001",
+      "field": "content",
+      "details": {
+        "pattern": "xxx+"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "warning",
+      "message": "Department ID 'DEPT-ACAD' maps inconsistently to multiple department names: ['Academic Affairs', 'Academic Affairs & Admissions', 'Academic Affairs & Campus Health Centre', 'Academic Affairs & Career Development', 'Academic Affairs & Finance Office', 'Academic Affairs & Student Affairs', 'Academic Affairs / Registrar Secretariat', 'Internal Quality Assurance Cell (IQAC)']",
+      "field": "department",
+      "details": {
+        "department_id": "DEPT-ACAD",
+        "conflicting_names": [
+          "Academic Affairs",
+          "Academic Affairs & Admissions",
+          "Academic Affairs & Campus Health Centre",
+          "Academic Affairs & Career Development",
+          "Academic Affairs & Finance Office",
+          "Academic Affairs & Student Affairs",
+          "Academic Affairs / Registrar Secretariat",
+          "Internal Quality Assurance Cell (IQAC)"
+        ]
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "warning",
+      "message": "Department ID 'DEPT-ADM' maps inconsistently to multiple department names: ['Administrative Office / Registrar Secretariat', 'Admissions Office', 'Admissions Office / International Wing', 'Admissions Office / Registrar Records', 'Admissions and Media Relations Office', 'Human Resources / Administrative Office', 'University Governance / Registrar Secretariat']",
+      "field": "department",
+      "details": {
+        "department_id": "DEPT-ADM",
+        "conflicting_names": [
+          "Administrative Office / Registrar Secretariat",
+          "Admissions Office",
+          "Admissions Office / International Wing",
+          "Admissions Office / Registrar Records",
+          "Admissions and Media Relations Office",
+          "Human Resources / Administrative Office",
+          "University Governance / Registrar Secretariat"
+        ]
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "warning",
+      "message": "Department ID 'DEPT-EXAM' maps inconsistently to multiple department names: ['Examination Cell', 'Information Technology Services']",
+      "field": "department",
+      "details": {
+        "department_id": "DEPT-EXAM",
+        "conflicting_names": [
+          "Examination Cell",
+          "Information Technology Services"
+        ]
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-ATTEND",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-ADD-DROP",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'DOR' (Date of Registration / Director of Research); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "DOR",
+        "context": "Date of Registration / Director of Research"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'NOC' (No-Objection Certificate / No-Dues Clearance); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-002",
+      "field": "content",
+      "details": {
+        "acronym": "NOC",
+        "context": "No-Objection Certificate / No-Dues Clearance"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-003",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-004",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-005",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'NOC' (No-Objection Certificate / No-Dues Clearance); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-006",
+      "field": "content",
+      "details": {
+        "acronym": "NOC",
+        "context": "No-Objection Certificate / No-Dues Clearance"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-007",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'NOC' (No-Objection Certificate / No-Dues Clearance); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-008",
+      "field": "content",
+      "details": {
+        "acronym": "NOC",
+        "context": "No-Objection Certificate / No-Dues Clearance"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-008",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-POL-009",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-REG-001",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-REG-001",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-OBE-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ADM-SOP-001",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'TC' (Transfer Certificate / Terms & Conditions); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ADM-STF-002",
+      "field": "content",
+      "details": {
+        "acronym": "TC",
+        "context": "Transfer Certificate / Terms & Conditions"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "HR-POL-003",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "PLC-GUI-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "ACAD-CRS-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-CIE",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-CIE",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-SEE",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-GUI-001",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-GUI-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-NOT-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-NOT-003",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-NOT-004",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'TC' (Transfer Certificate / Terms & Conditions); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-SCH-003",
+      "field": "content",
+      "details": {
+        "acronym": "TC",
+        "context": "Transfer Certificate / Terms & Conditions"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'FT' (Field Trip / Full Time); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-SCH-003",
+      "field": "content",
+      "details": {
+        "acronym": "FT",
+        "context": "Field Trip / Full Time"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-SCH-003",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "EXAM-SCH-003",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'DOR' (Date of Registration / Director of Research); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "FIN-POL-005",
+      "field": "content",
+      "details": {
+        "acronym": "DOR",
+        "context": "Date of Registration / Director of Research"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'AC' (Academic Council / Air Conditioning); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "FIN-POL-006",
+      "field": "content",
+      "details": {
+        "acronym": "AC",
+        "context": "Academic Council / Air Conditioning"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "FIN-POL-006",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "FIN-GUI-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'PR' (Public Relations / Placement Registration / Purchase Requisition); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "FIN-PRO-002",
+      "field": "content",
+      "details": {
+        "acronym": "PR",
+        "context": "Public Relations / Placement Registration / Purchase Requisition"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'AC' (Academic Council / Air Conditioning); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "POL-HOSTEL-ALLOC",
+      "field": "content",
+      "details": {
+        "acronym": "AC",
+        "context": "Academic Council / Air Conditioning"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'AC' (Academic Council / Air Conditioning); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "HSTL-REG-001",
+      "field": "content",
+      "details": {
+        "acronym": "AC",
+        "context": "Academic Council / Air Conditioning"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "HSTL-POL-002",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'DOR' (Date of Registration / Director of Research); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SYS-001",
+      "field": "content",
+      "details": {
+        "acronym": "DOR",
+        "context": "Date of Registration / Director of Research"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SYS-004",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SYS-004",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SYS-004",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SYS-005",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'NOC' (No-Objection Certificate / No-Dues Clearance); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "NOC",
+        "context": "No-Objection Certificate / No-Dues Clearance"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-POL-002",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-LAB-004",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-SEC-003",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-FAC-001",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "IT-FAC-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'TC' (Transfer Certificate / Terms & Conditions); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "LIB-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "TC",
+        "context": "Transfer Certificate / Terms & Conditions"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "LIB-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "LIB-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "LIB-POL-003",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "LIB-GUI-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'LMS' (Learning Management System / Leave Management System); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "SEC-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "LMS",
+        "context": "Learning Management System / Leave Management System"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'SAC' (Senate Academic Committee / Student Activity Centre); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "SEC-POL-003",
+      "field": "content",
+      "details": {
+        "acronym": "SAC",
+        "context": "Senate Academic Committee / Student Activity Centre"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "SEC-POL-003",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'ID' (Student Identity Card / System Identifier); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "TRANS-SOP-001",
+      "field": "content",
+      "details": {
+        "acronym": "ID",
+        "context": "Student Identity Card / System Identifier"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'FT' (Field Trip / Full Time); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "RES-POL-001",
+      "field": "content",
+      "details": {
+        "acronym": "FT",
+        "context": "Field Trip / Full Time"
+      }
+    },
+    {
+      "category": "entity",
+      "severity": "info",
+      "message": "Document uses ambiguous acronym 'OD' (On-Duty Leave / Overdue); consider adding it to keywords or retrieval_signals for search disambiguation",
+      "document_id": "STU-POL-002",
+      "field": "content",
+      "details": {
+        "acronym": "OD",
+        "context": "On-Duty Leave / Overdue"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-PAY' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-COURSE-REG",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-PAY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-REFUND' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-ADD-DROP",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-REFUND"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'STU-GUI-002' in related_documents, which is not present in the current corpus",
+      "document_id": "ACAD-POL-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "STU-GUI-002"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-INTERNSHIP' in related_documents, which is not present in the current corpus",
+      "document_id": "ACAD-POL-008",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-INTERNSHIP"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-PAY' in related_documents, which is not present in the current corpus",
+      "document_id": "ACAD-NOT-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-PAY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-OD-SANCTION' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-OD-SANCTION"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'STU-GUI-002' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "STU-GUI-002"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-ATTEND-COND' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-005",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-ATTEND-COND"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-REEVAL-APP' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-006",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-REEVAL-APP"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-ID-CARD' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-007",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-ID-CARD"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-ID-REPLACE' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-FRM-007",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-ID-REPLACE"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-POL-001' in related_documents, which is not present in the current corpus",
+      "document_id": "ADM-MED-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-POL-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-FAC-001' in related_documents, which is not present in the current corpus",
+      "document_id": "ACAD-GOV-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-FAC-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-POL-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-INTERNSHIP' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-POL-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-INTERNSHIP"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-POL-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-PLACEMENT-DRIVE' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-GUI-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-PLACEMENT-DRIVE"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-GUI-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-INTERN-NOC' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-GUI-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-INTERN-NOC"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-TRN-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-FAQ-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-PLACEMENT-ELIG' in related_documents, which is not present in the current corpus",
+      "document_id": "PLC-STF-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-PLACEMENT-ELIG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-PAY' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-SEE",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-PAY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-ID-CARD' in related_documents, which is not present in the current corpus",
+      "document_id": "EXAM-GUI-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-ID-CARD"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-ID-CARD' in related_documents, which is not present in the current corpus",
+      "document_id": "EXAM-NOT-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-ID-CARD"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'ACAD-SOP-001' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-POL-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "ACAD-SOP-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-PROGRAM-WITHDRAW' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-POL-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-PROGRAM-WITHDRAW"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-PAY' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-POL-005",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-PAY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'STU-GUI-002' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-POL-006",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "STU-GUI-002"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-SCHOLARSHIP-RENEW' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-SCH-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-SCHOLARSHIP-RENEW"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-POL-001' in related_documents, which is not present in the current corpus",
+      "document_id": "FIN-SCH-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-POL-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-HOSTEL-ALLOT' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-HOSTEL-ALLOC",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-HOSTEL-ALLOT"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-HOSTEL-GATEPASS' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-HOSTEL-LEAVE",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-HOSTEL-GATEPASS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-FEE-PAY' in related_documents, which is not present in the current corpus",
+      "document_id": "HSTL-REG-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-FEE-PAY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-HOSTEL-GATEPASS' in related_documents, which is not present in the current corpus",
+      "document_id": "HSTL-POL-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-HOSTEL-GATEPASS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'RESOLVE-DESK-GUIDE' in related_documents, which is not present in the current corpus",
+      "document_id": "HSTL-POL-002",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "RESOLVE-DESK-GUIDE"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-COURSE-REG' in related_documents, which is not present in the current corpus",
+      "document_id": "IT-SYS-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-COURSE-REG"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-GRIEVANCE-REDRESS' in related_documents, which is not present in the current corpus",
+      "document_id": "IT-SYS-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-GRIEVANCE-REDRESS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'ACAD-SOP-001' in related_documents, which is not present in the current corpus",
+      "document_id": "LIB-POL-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "ACAD-SOP-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'RES-IPR-001' in related_documents, which is not present in the current corpus",
+      "document_id": "LIB-POL-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "RES-IPR-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'ACAD-SOP-001' in related_documents, which is not present in the current corpus",
+      "document_id": "LIB-FAQ-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "ACAD-SOP-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-POL-001' in related_documents, which is not present in the current corpus",
+      "document_id": "SEC-POL-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-POL-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-POL-001' in related_documents, which is not present in the current corpus",
+      "document_id": "OPS-FAC-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-POL-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'SAC-POL-001' in related_documents, which is not present in the current corpus",
+      "document_id": "RES-INC-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "SAC-POL-001"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-OD-SANCTION' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-OD",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-OD-SANCTION"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-MED-COND' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-MEDICAL-LEAVE",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-MED-COND"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-GRIEVANCE-REDRESS' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-GRIEVANCE",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-GRIEVANCE-REDRESS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-ANTI-RAGGING-INVEST' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-ANTI-RAGGING",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-ANTI-RAGGING-INVEST"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-DISCIPLINE-INQUIRY' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-DISCIPLINE",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-DISCIPLINE-INQUIRY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-CLUB-EVENT' in related_documents, which is not present in the current corpus",
+      "document_id": "POL-CLUBS",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-CLUB-EVENT"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'POL-SCHOLARSHIP' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-POL-003",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "POL-SCHOLARSHIP"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-ANTI-RAGGING-INVEST' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-POL-004",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-ANTI-RAGGING-INVEST"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-DISCIPLINE-INQUIRY' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-POL-005",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-DISCIPLINE-INQUIRY"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-GRIEVANCE-REDRESS' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-POL-006",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-GRIEVANCE-REDRESS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-GRIEVANCE-REDRESS' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-GUI-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-GRIEVANCE-REDRESS"
+      }
+    },
+    {
+      "category": "consistency",
+      "severity": "info",
+      "message": "Document references 'PROC-MED-COND' in related_documents, which is not present in the current corpus",
+      "document_id": "STU-MED-001",
+      "field": "related_documents",
+      "details": {
+        "referenced_id": "PROC-MED-COND"
+      }
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-POL-005",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-REG-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-REG-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ADM-STF-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ADM-INT-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "GOV-ACT-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-GOV-006",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "IQAC-REV-003",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "PLC-TRN-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-003",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-004",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-005",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-006",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-007",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-008",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-009",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-CRS-010",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ECE-CRS-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ECE-LAB-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "CIV-LAB-304",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "CSE-CRS-304",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "MEC-CRS-304",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "ACAD-LAB-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "HSTL-REG-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "IT-STF-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "IT-OPS-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "OPS-EST-004",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "OPS-LAB-003",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "RES-POL-002",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "search_quality",
+      "severity": "info",
+      "message": "Retrieval signals do not include natural language question formats (e.g. 'how to...', 'what is the...')",
+      "document_id": "RES-ETH-001",
+      "field": "retrieval_signals"
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Academic Affairs & Finance Office' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Academic Affairs & Finance Office",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Academic Affairs & Campus Health Centre' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Academic Affairs & Campus Health Centre",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Admissions and Media Relations Office' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Admissions and Media Relations Office",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Administrative Office / Registrar Secretariat' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Administrative Office / Registrar Secretariat",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Admissions Office / International Wing' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Admissions Office / International Wing",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Admissions Office' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Admissions Office",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'University Governance / Registrar Secretariat' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "University Governance / Registrar Secretariat",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Academic Affairs / Registrar Secretariat' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Academic Affairs / Registrar Secretariat",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Academic Affairs & Career Development' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Academic Affairs & Career Development",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Human Resources / Administrative Office' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Human Resources / Administrative Office",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Internal Quality Assurance Cell (IQAC)' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Internal Quality Assurance Cell (IQAC)",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Office of International Relations' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Office of International Relations",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Academic Affairs & Student Affairs' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Academic Affairs & Student Affairs",
+        "count": 1
+      }
+    },
+    {
+      "category": "coverage",
+      "severity": "info",
+      "message": "Department 'Clubs and Student Activities Council' has only 1 document(s) in the corpus",
+      "field": "department",
+      "details": {
+        "department": "Clubs and Student Activities Council",
+        "count": 1
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'HealthDesk' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-POL-003",
+      "field": "systems",
+      "details": {
+        "system": "HealthDesk"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'HealthDesk' is not registered in authoritative world model systems catalog",
+      "document_id": "POL-MEDICAL-LEAVE",
+      "field": "systems",
+      "details": {
+        "system": "HealthDesk"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Staff LMS Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "HR-POL-003",
+      "field": "systems",
+      "details": {
+        "system": "Staff LMS Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "warning",
+      "message": "Department ID 'DEPT-IRO' is not in authoritative world model departments",
+      "document_id": "IRO-POL-001",
+      "field": "department_id",
+      "details": {
+        "department_id": "DEPT-IRO"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'TransPass' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-SOP-008",
+      "field": "systems",
+      "details": {
+        "system": "TransPass"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Central Computing Centre (CC)' is not registered in authoritative world model systems catalog",
+      "document_id": "PLC-TRN-001",
+      "field": "systems",
+      "details": {
+        "system": "Central Computing Centre (CC)"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-001",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-002",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-003",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-004",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-005",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-006",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'EDA Cloud Lab' is not registered in authoritative world model systems catalog",
+      "document_id": "ACAD-CRS-008",
+      "field": "systems",
+      "details": {
+        "system": "EDA Cloud Lab"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'EDA Cloud Lab' is not registered in authoritative world model systems catalog",
+      "document_id": "ECE-CRS-001",
+      "field": "systems",
+      "details": {
+        "system": "EDA Cloud Lab"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "CSE-CRS-304",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'AdmitFlow Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "FIN-POL-004",
+      "field": "systems",
+      "details": {
+        "system": "AdmitFlow Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "IT-POL-003",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Campus Wi-Fi (802.1X)' is not registered in authoritative world model systems catalog",
+      "document_id": "LIB-POL-002",
+      "field": "systems",
+      "details": {
+        "system": "Campus Wi-Fi (802.1X)"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Turnitin / E-Shodh Hub' is not registered in authoritative world model systems catalog",
+      "document_id": "LIB-POL-004",
+      "field": "systems",
+      "details": {
+        "system": "Turnitin / E-Shodh Hub"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "LIB-POL-004",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'TransPass' is not registered in authoritative world model systems catalog",
+      "document_id": "TRANS-POL-001",
+      "field": "systems",
+      "details": {
+        "system": "TransPass"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'TransPass' is not registered in authoritative world model systems catalog",
+      "document_id": "TRANS-SOP-001",
+      "field": "systems",
+      "details": {
+        "system": "TransPass"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-POL-001",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Turnitin / E-Shodh Hub' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-POL-001",
+      "field": "systems",
+      "details": {
+        "system": "Turnitin / E-Shodh Hub"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-POL-002",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-POL-003",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-POL-004",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-INC-001",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-INC-002",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'LabServer Forge' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-INC-002",
+      "field": "systems",
+      "details": {
+        "system": "LabServer Forge"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'Turnitin / E-Shodh Hub' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-ETH-001",
+      "field": "systems",
+      "details": {
+        "system": "Turnitin / E-Shodh Hub"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-ETH-001",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ResTrack Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "RES-OFF-001",
+      "field": "systems",
+      "details": {
+        "system": "ResTrack Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'HealthDesk' is not registered in authoritative world model systems catalog",
+      "document_id": "POL-MEDICAL-LEAVE",
+      "field": "systems",
+      "details": {
+        "system": "HealthDesk"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ClubSpace Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "POL-CLUBS",
+      "field": "systems",
+      "details": {
+        "system": "ClubSpace Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'ClubSpace Portal' is not registered in authoritative world model systems catalog",
+      "document_id": "STU-POL-002",
+      "field": "systems",
+      "details": {
+        "system": "ClubSpace Portal"
+      }
+    },
+    {
+      "category": "ground_truth",
+      "severity": "info",
+      "message": "System 'HealthDesk' is not registered in authoritative world model systems catalog",
+      "document_id": "STU-MED-001",
+      "field": "systems",
+      "details": {
+        "system": "HealthDesk"
+      }
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "domain": "Finance",
+  "documents": [
+    {
+      "document_id": "FIN-POL-001",
+      "title": "Student Tuition Fee Assessment, Due Dates, and Penalty Structure",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Institutional Policy / Fee Regulation",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Undergraduate Students",
+        "All Postgraduate Students",
+        "Doctoral Scholars",
+        "Parents and Guardians",
+        "Faculty Advisors",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "tuition fee assessment",
+        "fee payment schedule",
+        "billing announcement",
+        "late payment penalty",
+        "financial hold",
+        "PayVarsity",
+        "UniCampus ERP fee ledger",
+        "course registration block",
+        "exam hall ticket block",
+        "two-part installment plan",
+        "POL-FEE-PAY"
+      ],
+      "retrieval_signals": [
+        "fees",
+        "fee problem",
+        "tuition fee payment",
+        "college fee last date",
+        "tuition fee due dates",
+        "fee payment penalty",
+        "late fee per day",
+        "ERP showing financial hold",
+        "financial hold on course registration",
+        "cannot register for courses fee due",
+        "exam hall ticket blocked fee arrears",
+        "how much is the late fee for tuition",
+        "fee not updated",
+        "payment stuck",
+        "ERP showing dues",
+        "finance hold",
+        "feees",
+        "fee pament",
+        "paymnt pending",
+        "finacial hold",
+        "tuition fees receipt",
+        "fee payment + registration hold",
+        "tuition fee deadline fall 2026"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk",
+        "ExamShield Portal"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Academic Affairs",
+        "Faculty Advisor / Mentor",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "FIN-POL-002",
+        "FIN-POL-005",
+        "FIN-SCH-001",
+        "FIN-GUI-001",
+        "POL-COURSE-REG",
+        "ACAD-POL-001",
+        "REL-002",
+        "REL-005"
+      ],
+      "content": "1. PURPOSE AND APPLICABILITY\nThis institutional policy defines the assessment guidelines, billing schedules, payment deadlines, late payment surcharge tiers, and automated financial hold enforcement mechanisms governing tuition and composite institutional fees at Demo University. This regulation applies to all registered undergraduate, postgraduate, and doctoral students across all schools and academic departments.\n\n2. FEE ASSESSMENT AND BILLING CYCLE\n2.1 Semester Billing Announcement: Prior to the commencement of each academic semester, the Finance and Accounts Office publishes the formal fee demand schedule on the PayVarsity portal and synchronizes student billing records with UniCampus ERP.\n2.2 Standard Remittance Window: Semester tuition and mandatory institutional fees must be remitted within fifteen (15) calendar days from the official date of billing announcement.\n2.3 Authorized Payment Gateway: All fee transactions must be processed digitally through the PayVarsity portal (https://pay.demo.edu.internal) via supported digital modes (UPI, Net Banking, Debit/Credit Card, or authenticated institutional NEFT/RTGS E-Challan). Cash transactions at administrative counters are strictly prohibited.\n\n3. LATE PAYMENT PENALTY STRUCTURE\nStudents failing to remit assessed semester tuition fees within the stipulated 15-day remittance window incur statutory late payment surcharges:\n3.1 Tier 1 Penalty (Days 1 to 10 of Default): A late payment surcharge of Rs. 100 per calendar day is levied from day 16 to day 25 following the billing announcement.\n3.2 Tier 2 Penalty (Days 11 to 30 of Default): A late payment surcharge of Rs. 250 per calendar day is levied from day 26 to day 45 following the billing announcement.\n3.3 Maximum Penalty Cap: Accrued late fees are automatically appended to the student fee ledger balance in PayVarsity and must be settled in full alongside the principal tuition amount.\n\n4. AUTOMATED FINANCIAL HOLDS AND SYSTEM RESTRICTIONS\n4.1 Triggering of Financial Holds: Unpaid tuition balances extending beyond thirty (30) calendar days from the initial billing announcement trigger an automated system-level 'FINANCIAL-HOLD' flag on the student's UniCampus ERP profile.\n4.2 Consequences of Financial Hold:\n- Course Registration Lockout: Prevents semester course enrollment, elective basket selection, and add/drop changes on UniCampus ERP (cross-referencing POL-COURSE-REG and REL-005).\n- Examination Admit Card Withholding: Blocks automated hall ticket generation on the ExamShield portal, disqualifying the student from writing Semester End Examinations (cross-referencing POL-SEE).\n- Institutional Document Restriction: Restricts issuance of bonafide certificates, grade sheets, and semester transcripts.\n4.3 Release of Financial Holds: Remittance of all outstanding tuition arrears and accrued late charges via PayVarsity automatically updates the ERP central financial ledger, lifting system holds within two (2) hours.\n\n5. INSTALLMENT ARRANGEMENTS\nStudents experiencing verified financial distress may formally petition the Finance and Accounts Office for a structured two-part installment plan under FIN-POL-005. Formal written sanction from the Chief Finance Officer is mandatory prior to the expiry of the standard 15-day billing deadline."
+    },
+    {
+      "document_id": "FIN-POL-002",
+      "title": "Incidental Administrative Fees, Challan Generation, and Fines Schedule",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Fee Schedule / Administrative Regulation",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Academic Departments",
+        "Campus Safety and Security",
+        "Central Library",
+        "Examination Cell Staff"
+      ],
+      "keywords": [
+        "incidental administrative fees",
+        "fines schedule",
+        "E-Challan generation",
+        "duplicate ID card fee",
+        "re-evaluation fee",
+        "script viewing fee",
+        "re-totalling fee",
+        "backlog exam fee",
+        "library overdue fine",
+        "hostel guest fine",
+        "lab equipment breakage assessment",
+        "PayVarsity challan"
+      ],
+      "retrieval_signals": [
+        "fines",
+        "administrative fees",
+        "challan",
+        "E-challan download",
+        "duplicate ID card fee",
+        "how much for new ID card",
+        "lost ID fee payment",
+        "revaluation fee per subject",
+        "exam paper viewing charges",
+        "re-totalling cost",
+        "backlog exam registration fee",
+        "supplementary fee per paper",
+        "library fine payment",
+        "library overdue charges",
+        "hostel unauthorized guest fine",
+        "lab breakage fine",
+        "broke machine in lab cost",
+        "chalan generation PayVarsity",
+        "payvarsity challan not downloading",
+        "feees reciept",
+        "dues"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "CampusPass",
+        "LibNet",
+        "ExamShield Portal"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Controller of Examinations",
+        "Chief Security Officer",
+        "University Chief Librarian",
+        "Hostel Warden"
+      ],
+      "related_documents": [
+        "FIN-POL-001",
+        "FIN-GUI-001",
+        "SEC-POL-001",
+        "EXAM-GUI-004",
+        "LIB-POL-001",
+        "HSTL-REG-001",
+        "REL-009",
+        "REL-018"
+      ],
+      "content": "1. PURPOSE AND INSTITUTIONAL SCOPE\nThis schedule establishes the official, statutory tariffs for incidental student administrative services, duplicate document issuances, examination evaluation requests, library overdue charges, residential regulatory penalties, and laboratory equipment damage assessments across Demo University.\n\n2. OFFICIAL SCHEDULE OF INCIDENTAL ADMINISTRATIVE AND EXAMINATION FEES\nAll incidental fees must be generated as digital E-Challans on PayVarsity and remitted prior to service provisioning:\n2.1 Duplicate Student Smart RFID Identification Card: Rs. 500 per issuance following verification of loss report on ResolveDesk and deactivation in CampusPass (POL-ID-CARD, REL-009).\n2.2 Examination Answer Script Digital Viewing: Rs. 400 per registered theory paper, filed via ExamShield within seven (7) calendar days of result announcement (POL-REEVAL, PROC-REEVAL-APP).\n2.3 Examination Script Arithmetic Re-Totalling: Rs. 300 per paper, filed within seven (7) days on ExamShield (POL-REEVAL).\n2.4 Formal Examination Script Re-Evaluation: Rs. 1,200 per paper, evaluated blindly by an independent external evaluator. Note: If the finalized mark increases by ten percent (>= 10%) or more, a fifty percent (50%) statutory fee refund is automatically credited to the student ledger (POL-REEVAL).\n2.5 Supplementary / Backlog Examination Registration: Rs. 600 per uncleared course paper, payable during the notified supplementary examination window (PROC-BACKLOG-REG, REL-021).\n2.6 Program Withdrawal Administrative Processing Fee: Rs. 1,000 non-refundable deduction applied to statutory tuition refund settlements (POL-FEE-REFUND).\n\n3. REGULATORY AND DISCIPLINARY FINES SCHEDULE\n3.1 Library Overdue Fines: Charged at Rs. 5 per day per borrowed volume for the first seven (7) days beyond the 14-day (UG) or 28-day (PG) loan limit; increasing to Rs. 10 per day per volume thereafter. Unsettled library fines exceeding Rs. 50 trigger an automated borrowing lock in LibNet (POL-LIBRARY, PROC-LIB-CIRCULATION).\n3.2 Hostel Unauthorized Overnight Guest & Subletting Penalty: Rs. 5,000 fine levied against any resident hosting unregistered overnight guests or subletting residential accommodation, alongside disciplinary referral to the Proctorial Board (POL-HOSTEL-ALLOC).\n3.3 Laboratory Equipment Damage Assessment: For non-willful accidental damage during legitimate coursework, a subsidized repair fee is assessed by the department technical committee and Estate Office; willful damage or gross negligence warrants full financial restitution plus disciplinary fine, deducted from the student caution deposit (POL-DISCIPLINE, REL-018).\n\n4. CHALLAN GENERATION AND RECONCILIATION WORKFLOW\nStudents navigate to PayVarsity > Miscellaneous Fees / E-Challan, select the appropriate fee or fine category, enter their institutional student ID, and generate an authenticated transaction reference. Instant confirmation receipts are generated upon successful gateway settlement."
+    },
+    {
+      "document_id": "FIN-POL-003",
+      "title": "Caution Deposit Refund and Account Closure Regulations",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Financial Policy / Settlement SOP",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Graduating Students",
+        "Withdrawing Students",
+        "Department Lab In-Charges",
+        "Hostel Wardens",
+        "Library Staff",
+        "Registrar's Office"
+      ],
+      "keywords": [
+        "caution deposit refund",
+        "institutional security deposit",
+        "account closure",
+        "comprehensive No-Dues clearance",
+        "graduation clearance",
+        "inter-departmental sign-off",
+        "NEFT bank refund",
+        "REL-006",
+        "ADM-SOP-001",
+        "ACAD-SOP-001"
+      ],
+      "retrieval_signals": [
+        "caution deposit",
+        "caution deposit refund",
+        "security deposit return",
+        "how to get caution deposit back",
+        "caution deposit refund after 8th semester",
+        "no dues for degree",
+        "graduation no dues clearance",
+        "account closure finance",
+        "refund after graduation",
+        "leaving college need caution deposit and TC",
+        "library dues stopping deposit refund",
+        "caution deposit deduction",
+        "caution deposit bank account transfer",
+        "refnd deposit",
+        "cauton deposit",
+        "no dues clearance form finance"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "LibNet",
+        "DormTrack",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Registrar",
+        "University Chief Librarian",
+        "Hostel Warden / Chief Warden",
+        "Controller of Examinations"
+      ],
+      "related_documents": [
+        "FIN-POL-004",
+        "ADM-SOP-001",
+        "ACAD-SOP-001",
+        "LIB-POL-001",
+        "HSTL-POL-004",
+        "REL-006"
+      ],
+      "content": "1. REGULATORY FRAMEWORK AND OBJECTIVE\nThis policy establishes the mandatory procedures, inter-departmental verification protocols, statutory timelines, and deduction rules governing the full refund of institutional caution deposits and formal student ledger account closures upon graduation or institutional withdrawal from Demo University.\n\n2. CAUTION DEPOSIT ENTITLEMENT AND REFUNDABILITY\n2.1 Hundred Percent Refundability: The institutional caution deposit collected at the time of initial admission is one hundred percent (100%) refundable, contingent upon successful completion of the university Comprehensive Institutional No-Dues Clearance Workflow (POL-FEE-REFUND).\n2.2 Retention of Deposit: Caution deposits remain held in statutory escrow throughout the student's active enrollment and cannot be adjusted against regular semester tuition installments or incidental fees during continuous study.\n\n3. COMPREHENSIVE NO-DUES CLEARANCE WORKFLOW (REL-006, ADM-SOP-001)\nBefore the Finance and Accounts Office can authorize deposit release and fiscal account closure, graduating or withdrawing students must complete digital sign-offs across five key divisions via UniCampus ERP:\n3.1 Central Library Verification: Central Library staff inspect circulation logs in LibNet to verify the physical return of all borrowed books, bound volumes, and research monographs, alongside zero outstanding overdue fines (REL-006, POL-LIBRARY).\n3.2 Hostel Administration Verification: Residential wardens and hostel caretakers inspect the vacated dormitory room inventory, verify the return of room keys, and record zero unaddressed physical damage or mess dues in DormTrack (HSTL-POL-004).\n3.3 Academic Department & Engineering Labs: Department technical assistants inspect departmental equipment registers, verifying the return of project components, micro-controller development kits, and specialized laboratory tools (REL-006).\n3.4 Student Welfare and Sports: Physical education staff verify return of university athletic equipment, and the Proctorial Board certifies absence of unresolved disciplinary fines.\n3.5 Finance Audit & Ledger Reconciliation: The Finance and Accounts Office audits the student's complete multi-year fee ledger, validates tuition payments, reconciles any outstanding library/hostel charges, and certifies the final net refundable balance.\n\n4. DEDUCTION RULES AND STATUTORY DISBURSEMENTS\n4.1 Authorized Offsets: Unsettled library overdue fines, verified residential room damage repair invoices, or unreturned lab hardware charges are deducted from the caution deposit principal with an itemized ledger statement.\n4.2 Disbursement Mode and Timeline: Approved caution deposit balances are remitted strictly via electronic National Electronic Funds Transfer (NEFT) directly to the student's verified primary bank account within fourteen (14) working days from the date of final No-Dues sign-off. Cash refunds are prohibited."
+    },
+    {
+      "document_id": "FIN-POL-004",
+      "title": "Program Withdrawal and Tuition Fee Refund Policy",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Statutory Refund Policy",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Newly Admitted Students",
+        "Enrolled Students",
+        "Parents and Guardians",
+        "Admissions Office",
+        "Registrar's Secretariat"
+      ],
+      "keywords": [
+        "program withdrawal",
+        "tuition fee refund",
+        "refund tiers",
+        "refund percentages",
+        "statutory refund schedule",
+        "formal withdrawal notice",
+        "processing fee deduction",
+        "caution deposit return",
+        "AdmitFlow Portal",
+        "PROC-PROGRAM-WITHDRAW",
+        "POL-FEE-REFUND"
+      ],
+      "retrieval_signals": [
+        "refund",
+        "fee refund",
+        "tuition refund",
+        "withdraw from college refund",
+        "how much refund if I leave college",
+        "refund policy after admission",
+        "admission cancellation refund",
+        "percentage refund withdrawal",
+        "refund rules 15 days",
+        "money back leaving university",
+        "refund not received",
+        "fee refund status",
+        "refnd",
+        "fee refun",
+        "cancel seat refund",
+        "refund + withdrawal",
+        "14 working days refund"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk",
+        "AdmitFlow Portal"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Director of Admissions",
+        "Registrar"
+      ],
+      "related_documents": [
+        "FIN-POL-001",
+        "FIN-POL-003",
+        "ADM-POL-004",
+        "PROC-PROGRAM-WITHDRAW",
+        "ADM-SOP-001"
+      ],
+      "content": "1. PURPOSE AND STATUTORY COMPLIANCE\nThis policy governs the calculation, percentage tiers, administrative deductions, and disbursement protocols for tuition and composite fee refunds when an admitted or enrolled student formally withdraws from a degree program at Demo University, complying strictly with autonomous statutory higher education regulations.\n\n2. STATUTORY REFUND PERCENTAGE TIERS (POL-FEE-REFUND)\nRefund eligibility and entitlement percentages are determined strictly by the formal receipt timestamp of the student's withdrawal application submitted on ResolveDesk:\n2.1 100% Refund Tier (15 Days or More Prior): One hundred percent (100%) of the academic tuition fee is refunded, minus a statutory non-refundable administrative processing fee of Rs. 1,000, if the formal withdrawal notice is received fifteen (15) calendar days or more before the officially notified date of class commencement.\n2.2 90% Refund Tier (Less than 15 Days Prior): Ninety percent (90%) of the tuition fee is refunded if the formal withdrawal notice is received less than fifteen (15) calendar days prior to the date of class commencement.\n2.3 80% Refund Tier (Within 15 Days After): Eighty percent (80%) of the tuition fee is refunded if the formal withdrawal notice is received within fifteen (15) calendar days after the commencement of classes.\n2.4 50% Refund Tier (16 to 30 Days After): Fifty percent (50%) of the tuition fee is refunded if the formal withdrawal notice is received between sixteen (16) and thirty (30) calendar days after the commencement of classes.\n2.5 Zero Refund Tier (Beyond 30 Days): Zero percent (0%) refund is admissible if the withdrawal notice is received more than thirty (30) calendar days after the commencement of classes.\n\n3. CAUTION DEPOSIT AND NON-REFUNDABLE CHARGES\n3.1 Security Deposit: Institutional caution deposits are one hundred percent (100%) refundable across all withdrawal tiers upon completion of institutional No-Dues clearance under FIN-POL-003.\n3.2 Non-Refundable Components: Prospectus fees, entrance test application fees, and late registration surcharges are strictly non-refundable under all circumstances.\n\n4. WITHDRAWAL AND REFUND SETTLEMENT WORKFLOW (PROC-PROGRAM-WITHDRAW)\n4.1 Step 1 \u2014 Application Filing: The student logs into ResolveDesk, submits a formal 'Program Withdrawal Request' attaching parental consent and verified bank account details (account holder name, account number, bank name, IFSC).\n4.2 Step 2 \u2014 Institutional No-Dues: Digital clearances are acquired across Central Library, Hostels, Academic Departments, and Labs.\n4.3 Step 3 \u2014 Admissions De-enrollment: The Admissions Office cancels student enrollment in UniCampus ERP and archives official records.\n4.4 Step 4 \u2014 Finance Audit: The Finance and Accounts Office calculates the exact refund amount in accordance with Section 2 above.\n4.5 Step 5 \u2014 Electronic Disbursement: Authorized refund proceeds are credited directly to the student's verified bank account via NEFT within fourteen (14) working days from the formal submission date."
+    },
+    {
+      "document_id": "FIN-POL-005",
+      "title": "Installment Payment Scheme Guidelines for Economically Weaker Students",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Financial Relief Guidelines",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Economically Weaker Students",
+        "Parents and Guardians",
+        "Faculty Advisors",
+        "Dean of Student Welfare",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "installment payment scheme",
+        "fee installment guidelines",
+        "economically weaker students",
+        "two-part installment plan",
+        "Chief Finance Officer approval",
+        "PayVarsity installment tracker",
+        "financial relief",
+        "hardship petition",
+        "mid-semester installment",
+        "POL-FEE-PAY"
+      ],
+      "retrieval_signals": [
+        "fee installment",
+        "pay fees in installments",
+        "installment scheme",
+        "tuition fee installment request",
+        "two part fee payment",
+        "cannot pay full fee at once",
+        "financial hardship fee split",
+        "installment plan PayVarsity",
+        "fee split application",
+        "poor student fee installment",
+        "CFO fee installment permission",
+        "installment due date",
+        "intallment",
+        "fee installment pending",
+        "scholarship + fee balance"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Student Welfare",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "FIN-POL-001",
+        "FIN-SCH-001",
+        "FIN-GUI-001",
+        "POL-FEE-PAY"
+      ],
+      "content": "1. OBJECTIVE AND SCOPE\nThis guideline outlines the eligibility criteria, application process, payment scheduling, and default consequences for the university Installment Payment Scheme. The scheme provides temporary financial accommodation to students from economically weaker backgrounds, enabling them to fulfill semester tuition fee obligations in two structured tranches without triggering automated course registration locks.\n\n2. ELIGIBILITY CRITERIA\n2.1 Demonstrated Need: Open to registered undergraduate and postgraduate students experiencing documented socio-economic hardship, unexpected medical emergencies in the immediate family, or pending disbursement of approved external education loans.\n2.2 Academic Standing: The student must be in good academic standing, maintaining regular attendance and zero disciplinary suspensions.\n2.3 Prior Financial Record: Students with unresolved previous semester fee arrears are ineligible until previous accounts are cleared.\n\n3. STRUCTURE OF THE TWO-PART INSTALLMENT PLAN (POL-FEE-PAY)\nApproved beneficiaries remit their semester tuition fees according to a structured two-part timetable:\n3.1 Installment 1 (Tranche A): Fifty percent (50%) of the net tuition fee, along with mandatory non-tuition components (examination and lab maintenance fees), must be remitted prior to the Date of Registration (DOR) and semester commencement.\n3.2 Installment 2 (Tranche B): The remaining fifty percent (50%) balance must be remitted no later than the notified mid-semester deadline (specifically Friday of the eighth academic week, prior to CIE 2).\n3.3 Relief from Late Surcharges: Successful enrollment in the Installment Payment Scheme waives daily late payment penalties (Rs. 100 / Rs. 250 per day) during the authorized installment window.\n\n4. APPLICATION AND SANCTION PROCEDURE\n4.1 Submission Deadline: Students must submit the 'Fee Installment Scheme Application' on ResolveDesk at least seven (7) calendar days prior to the standard 15-day billing deadline.\n4.2 Mandatory Documentation: Applications must include a signed parent/guardian petition, documented income proof, and formal written endorsement from the student's assigned Faculty Advisor.\n4.3 Statutory CFO Approval: Under POL-FEE-PAY, all installment plans require formal written or digital approval from the Chief Finance Officer / Bursar. Upon CFO sanction, the student PayVarsity profile activates the 'Installment Plan Tracker' module.\n\n5. DEFAULT AND RE-ACTIVATION OF FINANCIAL HOLDS\nFailure to clear Installment 2 by the notified eighth-week mid-semester deadline results in the immediate activation of an automated 'FINANCIAL-HOLD' on UniCampus ERP. This system hold blocks the generation of the student's examination hall ticket on ExamShield for the upcoming Semester End Examinations until the outstanding balance is completely settled."
+    },
+    {
+      "document_id": "FIN-POL-006",
+      "title": "Official Travel and Daily Allowance Reimbursement Policy",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Institutional Policy / Reimbursement Guidelines",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Faculty Members",
+        "Administrative Staff",
+        "Doctoral Research Scholars",
+        "Undergraduate and Postgraduate Student Representatives",
+        "Academic Heads of Department"
+      ],
+      "keywords": [
+        "travel allowance",
+        "daily allowance",
+        "TA reimbursement",
+        "DA claim",
+        "official travel policy",
+        "per diem allowance",
+        "conference travel reimbursement",
+        "travel voucher",
+        "paper presentation TA",
+        "outstation duty",
+        "TA/DA claim form",
+        "FIN-POL-006"
+      ],
+      "retrieval_signals": [
+        "TA",
+        "DA",
+        "TA claim",
+        "DA claim",
+        "TA reimbursement",
+        "DA rate per day",
+        "how much TA do students get for paper presentation",
+        "TA bill claim form download",
+        "DA rate per day for outstation conference",
+        "how to claim DA in travel voucher",
+        "travel allowance policy",
+        "daily allowance rules",
+        "conference registration reimbursement",
+        "reimbursement",
+        "reimbursement supporting documents",
+        "reimbusment",
+        "TA form finance",
+        "DA per diem rate",
+        "student conference travel allowance"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "PayVarsity",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Research and Innovation",
+        "Dean of Student Affairs",
+        "Head of Department (HOD)"
+      ],
+      "related_documents": [
+        "ACAD-POL-004",
+        "RES-POL-003",
+        "STU-GUI-002",
+        "REL-001"
+      ],
+      "content": "1. PURPOSE AND POLICY SCOPE\nThis policy defines the entitlements, per diem expenditure rates, claim validation standards, and disbursement workflows for official Travel Allowance (TA) and Daily Allowance (DA) reimbursements. It governs university employees, doctoral research scholars, and enrolled students deputed for authenticated academic conferences, paper presentations, technical competitions, sports meets, and administrative fieldwork.\n\n2. DEFINITIONS AND CONTROLLED ENTITY DISAMBIGUATION\n2.1 Travel Allowance (TA): Refers strictly to the monetary reimbursement of authorized transit fares (rail, bus, or economy airfare) incurred while traveling on official institutional business.\n- Cross-Domain Disambiguation Note: Travel Allowance (TA) under DEPT-FIN must not be confused with graduate Teaching Assistants (TA under DEPT-ACAD / ACAD-POL-007) or laboratory Technical Assistants (TA under DEPT-IT / IT-STF-001).\n2.2 Daily Allowance (DA): Refers strictly to the authorized per diem subsistence allowance covering outstation boarding, lodging, and local conveyance during official travel.\n- Cross-Domain Disambiguation Note: Daily Allowance (DA) under DEPT-FIN must not be confused with the engineering curriculum course Design Analysis (DA under DEPT-MECH / MEC-CRS-304) or Department Advisor roles.\n\n3. ENTITLEMENT TIERS AND SUBSISTENCE LIMITS\n3.1 Student & Research Scholar Conference Deputation: Students presenting peer-reviewed research papers at recognized national/international conferences or representing the university in national competitions are eligible for:\n- Transit Travel: Sleeper / 3-Tier AC rail fare or certified deluxe state transport bus fare along the most direct geographic route.\n- Daily Allowance (DA): Fixed per diem allowance to cover lodging and meals for the approved duration of the technical event plus travel days, in accordance with the notified institutional rates.\n- Event Registration Fee: Reimbursed up to institutional ceiling upon submission of official receipt and certificate of presentation.\n3.2 Prior Administrative Sanction: Travel claims are admissible ONLY if supported by an approved Pre-Travel Sanction Form endorsed by the Head of Department and sanctioned by the Dean of Research and Innovation (for research scholars/faculty) or Dean of Student Affairs (for undergraduate/postgraduate students).\n\n4. CLAIM SUBMISSION PROCEDURE AND VERIFICATION DEADLINES\n4.1 Submission Window: Beneficiaries must submit completed Travel & Daily Allowance claim vouchers on ResolveDesk under 'Finance > TA/DA Claims' within fifteen (15) working days following completion of travel.\n4.2 Mandatory Supporting Documents: Claims must be accompanied by:\n- Original used boarding passes, train tickets with PNR, or authorized interstate bus tickets.\n- Itemized GST hotel lodging invoices showing guest name and dates of stay.\n- Formal certificate of participation or presentation issued by the event organizing body.\n- Copy of the pre-approved Travel Sanction Order and approved On-Duty (OD) sanction letter (cross-referencing ACAD-POL-004).\n4.3 Audit and Direct Bank Disbursement: The Student Fee Accounts Desk audits submitted ticket serial numbers, validates expense caps, and disburses verified funds directly to the claimant's bank account via electronic NEFT within ten (10) working days of audit clearance."
+    },
+    {
+      "document_id": "FIN-SCH-001",
+      "title": "University Merit and Need-Based Financial Aid Regulations",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Scholarship Regulation / Financial Aid Policy",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Registered Students",
+        "Incoming Freshmen",
+        "Parents and Guardians",
+        "Dean of Student Welfare",
+        "Faculty Advisors"
+      ],
+      "keywords": [
+        "merit scholarship",
+        "financial aid",
+        "FA regulations",
+        "Chancellor's Merit Scholarship",
+        "Merit-cum-Means Hardship Aid",
+        "tuition waiver",
+        "annual scholarship renewal",
+        "June-July renewal audit",
+        "CGPA 9.0",
+        "CGPA 8.0 renewal threshold",
+        "PayVarsity credit ledger",
+        "REL-002",
+        "PROC-SCHOLARSHIP-RENEW",
+        "POL-SCHOLARSHIP"
+      ],
+      "retrieval_signals": [
+        "FA",
+        "financial aid",
+        "scholarship",
+        "merit scholarship",
+        "Chancellor's Merit Scholarship",
+        "Merit-cum-Means scholarship",
+        "50% tuition waiver",
+        "scholarship eligibility criteria",
+        "scholarship renewal",
+        "how to renew scholarship",
+        "scholarship CGPA requirement",
+        "scholarship not updated in ERP",
+        "why is full fee showing when I have scholarship",
+        "scholarship refund to bank account",
+        "deadline to apply for financial aid",
+        "documents required for FA application",
+        "does FA cover hostel fees",
+        "scholarship money",
+        "scholrship",
+        "finacial aid",
+        "scholarship + fee balance",
+        "unpaid scholarship blocking registration"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Student Welfare",
+        "Faculty Advisor / Mentor"
+      ],
+      "related_documents": [
+        "FIN-POL-001",
+        "FIN-SCH-002",
+        "STU-POL-003",
+        "REL-002",
+        "PROC-SCHOLARSHIP-RENEW"
+      ],
+      "content": "1. INSTITUTIONAL PURPOSE AND FRAMEWORK\nThis statutory regulation governs the administration, eligibility parameters, award criteria, annual renewal conditions, and financial ledger settlement procedures for institutional merit scholarships and socio-economic financial aid at Demo University.\n\n2. CORE SCHOLARSHIP CATEGORIES (POL-SCHOLARSHIP)\n2.1 Chancellor's Merit Scholarship:\n- Scope: Awarded to the top two percent (2%) of registered students in each academic department branch.\n- Quantum of Benefit: Grants a fifty percent (50%) tuition fee waiver for the respective academic year.\n- Initial Award Criteria: Requires a minimum Cumulative Grade Point Average (CGPA) of 9.00 with zero active or historic backlogs and zero disciplinary infractions.\n2.2 Merit-cum-Means Hardship Financial Aid:\n- Scope: Provides targeted tuition concessions for academically capable students from economically constrained households.\n- Quantum of Benefit: Grants twenty-five percent (25%) to fifty percent (50%) tuition fee concessions based on assessed financial need.\n- Eligibility Threshold: Family gross annual income from all sources must be certified strictly below Rs. 4,50,000 via statutory government income certificates.\n\n3. ANNUAL SCHOLARSHIP AUDIT AND RENEWAL CRITERIA (PROC-SCHOLARSHIP-RENEW)\nScholarship continuation is not automatic and is subjected to an exhaustive annual performance and conduct audit conducted every June\u2013July:\n3.1 Academic Retention Cutoff: The beneficiary must maintain a minimum cumulative CGPA of 8.00 across completed semesters.\n3.2 Backlog Prohibition: The student must have zero active backlog arrears (no active 'F' or 'I' grades in regular or supplementary examinations).\n3.3 Disciplinary Clearance: The student must have a pristine disciplinary record with zero sanctions or show-cause notices from the Proctorial Board.\n3.4 Renewal Procedure: The Office of Student Welfare compiles performance rosters from ERP in June, secures signature from the Dean of Student Welfare, and transmits authorized renewal rosters to the Finance and Accounts Office.\n\n4. LEDGER ADJUSTMENT AND DISBURSEMENT RULES (REL-002)\n4.1 Non-Cash Ledger Credit: Institutional scholarship awards are applied strictly as credit adjustments against semester tuition fees in the student's PayVarsity financial ledger. Direct cash disbursements, bank transfers, or physical cheque releases are strictly prohibited (POL-SCHOLARSHIP).\n4.2 Discrepancy Resolution (REL-002): If an awarded student observes that their UniCampus ERP profile or PayVarsity portal reflects an unadjusted full tuition demand, the discrepancy arises from the synchronization queue between Student Welfare verification and Finance ledger posting. Students must submit an inquiry under 'Finance > Scholarship Ledger Reconciliation' on ResolveDesk; manual credits are posted within three (3) working days, clearing registration hold flags."
+    },
+    {
+      "document_id": "FIN-SCH-002",
+      "title": "Endowment, Alumni, and Sports Excellence Scholarship Guidelines",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Endowment Guidelines / Scholarship Policy",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Student Athletes",
+        "Alumni Scholars",
+        "Special Category Achievers",
+        "Clubs and Student Activities Council",
+        "Faculty Advisors"
+      ],
+      "keywords": [
+        "endowment scholarships",
+        "alumni foundation grants",
+        "sports excellence scholarship",
+        "athletic concessions",
+        "memorial scholarships",
+        "extracurricular merit aid",
+        "PayVarsity credit offset",
+        "joint scholarship committee",
+        "POL-SCHOLARSHIP"
+      ],
+      "retrieval_signals": [
+        "sports scholarship",
+        "alumni scholarship",
+        "endowment scholarship",
+        "sports quota fee concession",
+        "athletic scholarship criteria",
+        "alumni fund financial support",
+        "memorial trust scholarship",
+        "how to apply for sports excellence award",
+        "extracurricular scholarship",
+        "sports fee waiver",
+        "endowment fund application",
+        "scholrship sports",
+        "alumni scholrship",
+        "scholarship + fee balance"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Dean of Student Affairs",
+        "Dean of Student Welfare",
+        "Director of Physical Education"
+      ],
+      "related_documents": [
+        "FIN-SCH-001",
+        "FIN-POL-001",
+        "STU-POL-002",
+        "SAC-POL-001"
+      ],
+      "content": "1. PURPOSE AND PHILANTHROPIC SCOPE\nThese guidelines govern the allocation, selection criteria, monitoring, and disbursement of philanthropic endowments, alumni foundation trusts, and sports excellence scholarships at Demo University, supplementing institutional merit and need-based financial aid.\n\n2. SCHOLARSHIP CATEGORIES AND ELIGIBILITY CRITERIA\n2.1 Sports Excellence Scholarships:\n- Scope: Recognizes outstanding student athletes representing Demo University in inter-university, state, national, or international athletic championships.\n- Benefits: Awards tuition fee concessions ranging from twenty-five percent (25%) to one hundred percent (100%), alongside specialized athletic equipment support.\n- Endorsement: Requires formal technical recommendation and performance certification by the Director of Physical Education and Dean of Student Affairs.\n2.2 Alumni Association Endowed Grants:\n- Scope: Financed by the Demo University Global Alumni Trust to assist meritorious students demonstrating entrepreneurial ingenuity, community impact, or overcoming severe personal adversity.\n- Benefits: One-time or recurring semester tuition offsets established by specific donor trust agreements.\n2.3 Memorial and Industry Endowments:\n- Disbursed according to specialized covenant guidelines stipulated by corporate donors and memorial foundations, prioritizing specific branches of engineering or research initiatives.\n\n3. SELECTION AND SANCTION PROCESS\n3.1 Joint Scholarship Committee: Applications are evaluated semi-annually by the Joint Scholarship Committee, comprising the Chief Finance Officer, Dean of Student Affairs, Dean of Student Welfare, and designated faculty trustees.\n3.2 Application Window: Announcements are published on PayVarsity and UniCampus ERP at the start of the academic year; candidates submit verified sporting certificates, portfolios, or socio-economic documentation via ResolveDesk.\n\n4. DISBURSEMENT AND CONTINUATION NORMS\n4.1 Fiscal Accounting: All endowed and sports scholarships are credited directly to the recipient's semester fee ledger in PayVarsity. Funds cannot be redeemed as direct cash or transferred to private outside bank accounts.\n4.2 Maintenance Criteria: Beneficiaries must sustain active representation in university sports teams or approved societies, maintain a minimum CGPA of 6.50, and remain entirely free from academic malpractice or disciplinary infractions."
+    },
+    {
+      "document_id": "FIN-GUI-001",
+      "title": "PayVarsity Online Payment User Guide and Net Banking Troubleshooting",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "User Guide / Payment Troubleshooting Manual",
+      "version": "3.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students",
+        "Parents and Guardians",
+        "Accounts Office Staff",
+        "IT Helpdesk Engineers"
+      ],
+      "keywords": [
+        "PayVarsity user guide",
+        "net banking troubleshooting",
+        "fee payment portal",
+        "E-Challan",
+        "installment tracker",
+        "automated fee receipt",
+        "scholarship credit ledger",
+        "payment stuck",
+        "money deducted not reflected",
+        "dual charge refund",
+        "bank UTR reconciliation",
+        "SYS-PAY",
+        "PROC-FEE-PAY"
+      ],
+      "retrieval_signals": [
+        "PayVarsity",
+        "PayVarsity guide",
+        "how to pay fees on PayVarsity",
+        "PayVarsity payment issue",
+        "fee payment not reflected",
+        "ERP fee ledger not updated",
+        "money deducted but fee showing pending",
+        "payment stuck on gateway",
+        "double payment deducted PayVarsity",
+        "how to download fee receipt from PayVarsity",
+        "fee receipt unavailable",
+        "payvarsity login",
+        "payvarsity not wrking",
+        "payvarsity error",
+        "payment failed bank debited",
+        "UTR reference submit finance",
+        "payment + receipt",
+        "paymnt pending"
+      ],
+      "systems": [
+        "PayVarsity",
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Director of IT Infrastructure",
+        "Enterprise Systems Administrator"
+      ],
+      "related_documents": [
+        "FIN-POL-001",
+        "FIN-POL-002",
+        "IT-SYS-001",
+        "IT-SYS-004",
+        "REL-002",
+        "REL-005"
+      ],
+      "content": "1. SYSTEM ARCHITECTURE AND ACCESS\nPayVarsity (System ID: SYS-PAY) is the enterprise financial transactional portal of Demo University, operating on PCI-DSS compliant cloud infrastructure under the operational governance of the Finance and Accounts Office and IT Services.\n1.1 Access URLs: Students and parents access the portal at https://pay.demo.edu.internal; administrative finance teams operate via https://pay.demo.edu.internal/accounts.\n1.2 Core Integrated Modules:\n- E-Challan & Instant Net Banking Gateway\n- Installment Plan Tracker\n- Automated GST-Compliant Fee Receipt Generator\n- Scholarship Credit Ledger\n\n2. PAYMENT WORKFLOW AND INSTANT LEDGER SYNCHRONIZATION (PROC-FEE-PAY)\n2.1 Step 1 \u2014 Demand Statement Review: The student logs in using single sign-on (SSO) institutional credentials, viewing itemized semester tuition, hostel mess, or examination fees.\n2.2 Step 2 \u2014 Channel Selection: The user chooses from authorized payment channels: Unified Payments Interface (UPI), Net Banking across major schedule banks, Credit/Debit Cards, or generated NEFT/RTGS E-Challans.\n2.3 Step 3 \u2014 Secure Authorization: The user authorizes payment on the secure bank interface.\n2.4 Step 4 \u2014 Instant Ledger Sync: Upon receiving the bank's successful cryptographic response token, PayVarsity updates the student account balance to zero and transmits real-time synchronization packets to UniCampus ERP, automatically removing registration and exam financial hold flags within two (2) hours.\n2.5 Step 5 \u2014 Digitally Signed Receipt: The user immediately downloads a digitally signed, GST-compliant fee receipt containing a verifiable authentication QR code.\n\n3. TROUBLESHOOTING PAYMENT FAILURES AND BANKING GLITCHES (CHAL-06)\n3.1 Scenario A \u2014 Account Debited but Status 'Pending' on Portal:\n- Root Cause: Intermittent communication timeout between the external banking aggregator and the university gateway during peak registration traffic.\n- Standard Resolution: The automated reconciliation daemon executes batch queries every two (2) hours. In ninety-five percent of cases, payment status updates automatically to 'Settled' within four (4) hours.\n- Helpdesk Escalation: If status remains pending after twenty-four (24) hours, the student must log a ResolveDesk ticket under 'Finance > Payment Reconciliation', attaching bank transaction statement showing the unique 12-digit UTR number.\n3.2 Scenario B \u2014 Dual Deduction / Duplicate Payment:\n- Root Cause: Multiple payment attempts triggered when the initial gateway session lagged.\n- Automated Rectification: Duplicate debits identified during nightly banking audits are automatically flagged for reverse settlement. Excess funds are credited back to the originating bank account within five to seven (5\u20137) working days.\n3.3 Scenario C \u2014 E-Challan Offline Payment Delay:\n- NEFT/RTGS payments processed via bank branches require up to twenty-four (24) business hours for inter-bank clearance and manual UTR reconciliation in the finance accounts ledger."
+    },
+    {
+      "document_id": "FIN-PRO-002",
+      "title": "University Procurement, Tendering, and Purchase Order Protocol",
+      "department": "Finance and Accounts Office",
+      "department_id": "DEPT-FIN",
+      "document_type": "Procurement Protocol / Institutional SOP",
+      "version": "2.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Heads of Academic Departments",
+        "Laboratory In-Charges",
+        "Technical Assistants",
+        "Research Principal Investigators",
+        "Campus Operations Engineers",
+        "Administrative Officers"
+      ],
+      "keywords": [
+        "procurement protocol",
+        "Purchase Order",
+        "PO generation",
+        "university tendering",
+        "equipment purchase",
+        "laboratory apparatus procurement",
+        "vendor quotation audit",
+        "CAPEX budget",
+        "goods receipt inspection",
+        "asset tagging",
+        "FIN-PRO-002"
+      ],
+      "retrieval_signals": [
+        "PO",
+        "purchase order",
+        "PO status",
+        "how to raise purchase order",
+        "PO status for new computer lab workstations",
+        "procurement protocol",
+        "laboratory equipment purchase",
+        "tendering policy",
+        "vendor payment finance",
+        "lab chemicals purchase order",
+        "purchase requisition workflow",
+        "purchase order status ERP",
+        "quotation approval finance",
+        "CAPEX equipment procurement",
+        "asset tagging protocol"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Chief Finance Officer / Bursar",
+        "Registrar",
+        "Head of Department (HOD)",
+        "Technical Assistant (Lab Technician)"
+      ],
+      "related_documents": [
+        "IT-STF-001",
+        "ACAD-LAB-001",
+        "RES-POL-003",
+        "OPS-POL-001"
+      ],
+      "content": "1. INSTITUTIONAL PURPOSE AND GOVERNANCE\nThis protocol defines the statutory guidelines, threshold authorizations, competitive bidding procedures, and accounting controls governing the procurement of laboratory apparatus, engineering equipment, IT workstations, software licenses, research consumables, and physical estate infrastructure at Demo University.\n\n2. DEFINITION AND CONTROLLED AMBIGUITY DISAMBIGUATION\n2.1 Purchase Order (PO): Refers strictly to the formal, legally binding commercial contract issued by the Finance and Accounts Office authorizing an approved vendor to supply specified materials, machinery, or technical services at agreed prices and delivery schedules.\n- Cross-Domain Disambiguation Note: Purchase Order (PO) under DEPT-FIN must not be confused with Program Outcomes (PO under DEPT-ACAD / ACAD-OBE-001 outcome-based education) or Placement Officers (PO under DEPT-CDC / PLC-STF-001).\n\n3. REQUISITION AND PROCUREMENT WORKFLOW\nAll institutional procurement must adhere to a multi-tier authorization workflow executed on UniCampus ERP:\n3.1 Tier 1 \u2014 Requisition Indent: The department Lab In-Charge or Research Principal Investigator drafts an electronic Purchase Requisition (PR) detailing technical specifications, quantity, estimated cost, and designated budget head (Department CAPEX or Sponsored Research Grant).\n3.2 Tier 2 \u2014 Departmental Scrutiny & Endorsement: The academic Head of Department (HOD) verifies curriculum or research necessity and signs off on the indent.\n3.3 Tier 3 \u2014 Quotation Audit & Comparative Tendering:\n- Minor Purchases (< Rs. 50,000): Sourced directly through approved institutional rate contracts.\n- Moderate Purchases (Rs. 50,000 to Rs. 5,00,000): Requires minimum three (3) competitive written quotations scrutinized by the Department Purchase Committee.\n- Major Capital Purchases (> Rs. 5,00,000): Requires formal open tender publishing and evaluation by the Central Purchase and Tendering Board.\n3.4 Tier 4 \u2014 Financial Vetting & PO Generation: The Finance and Accounts Office audits vendor quotes, verifies tax compliance (GSTIN), validates budget availability, and generates the numbered Purchase Order (PO) signed by the Chief Finance Officer and Registrar.\n\n4. GOODS RECEIPT, INSPECTION, AND ASSET REGISTER ENTRY\n4.1 Physical Ingress & Technical Inspection: Delivered consignments enter through Central Stores. The designated Lab Technical Assistant and Lab In-Charge conduct technical calibration, operational testing, and verify adherence to purchase specifications within seven (7) working days.\n4.2 Asset Tagging & Ledger Entry: Accepted equipment is assigned a unique institutional barcode asset tag and registered in the UniCampus ERP Fixed Assets Ledger.\n4.3 Invoice Settlement: Upon submission of the verified Goods Receipt Note (GRN) and signed installation certificate, the Finance and Accounts Office releases vendor payment via electronic bank transfer within thirty (30) days."
+    }
+  ]
+}

@@ -1,0 +1,899 @@
+{
+  "domain": "Engineering",
+  "documents": [
+    {
+      "document_id": "ACAD-CRS-001",
+      "title": "CSE201: Data Structures and Algorithms (DSA) Course Syllabus and Lab Guide",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Graduate Teaching Assistants",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "CSE201",
+        "Data Structures and Algorithms",
+        "DSA",
+        "asymptotic notation",
+        "arrays",
+        "linked lists",
+        "stacks",
+        "queues",
+        "binary search trees",
+        "graph algorithms",
+        "sorting and searching",
+        "coding sandbox",
+        "LearnSphere LMS",
+        "Turing Complex"
+      ],
+      "retrieval_signals": [
+        "DSA lab syllabus pdf",
+        "who teaches DSA this semester",
+        "DSA exam date and room allotment",
+        "when is the DSA assignment 2 deadline",
+        "CSE201 course syllabus",
+        "data structures and algorithms course outline",
+        "CSE201 lab manual download",
+        "DSA coding sandbox submission guidelines",
+        "what topics are in DSA",
+        "prerequisites for CSE201"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP",
+        "LabServer Forge",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "ACAD-CRS-002",
+        "ACAD-CRS-003",
+        "ACAD-POL-007",
+        "EXAM-GUI-001",
+        "ACAD-REG-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION AND CURRICULAR CONTEXT\nCourse Code: CSE201\nCourse Title: Data Structures and Algorithms\nCurricular Abbreviation: DSA\nAdministering Department: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex (Floors 2-4)\nDegree Program: Bachelor of Technology in Computer Science and Engineering (PROG-BTECH-CSE)\nCourse Classification: Program Core\nInstructional Credit Structure: 4 Credits (3 Lecture hours per week + 2 Practical Laboratory hours per week)\nPrerequisites: Foundational Computer Programming and Problem Solving\n\n2. COURSE OBJECTIVES AND PEDAGOGICAL MISSION\nData Structures and Algorithms establishes foundational computational problem-solving principles for computer engineering undergraduates. The course develops systematic methodologies to analyze algorithmic time-space complexity, structure structured and unstructured in-memory data representations, and select optimal computational strategies for scalable software systems.\n\n3. MODULAR THEORY SYLLABUS\n3.1 Module 1: Complexity Analysis and Elementary Data Structures\n  - Mathematical foundations of algorithmic complexity: Asymptotic notation (Big-O, Big-Omega, Big-Theta) and recurrence relations.\n  - Contiguous versus linked allocation: Dynamic memory allocation, pointer manipulation, and memory leak mitigation.\n  - Linear data representations: Singly linked lists, doubly linked lists, circular buffers, and memory caching implications.\n3.2 Module 2: Abstract Data Types: Stacks and Queues\n  - Stack operations, array and linked implementations, recursion call-stack simulation, expression parsing (infix-to-postfix translation), and balanced delimiter matching.\n  - Queue architectures: Linear queues, circular queues, double-ended queues (deque), and priority queues implemented via binary heaps.\n3.3 Module 3: Non-Linear Hierarchical Representations: Trees\n  - Tree terminology, binary trees, properties, array representation, and recursive/iterative traversals.\n  - Binary Search Trees (BST): Insertion, search, deletion, and worst-case degeneracy.\n  - Self-balancing search trees: AVL tree rotations and balance factor maintenance; introduction to Red-Black trees and B-trees for external file indexing.\n3.4 Module 4: Graph Theory and Network Traversal\n  - Graph representations: Adjacency matrix, adjacency lists, and compressed sparse structures.\n  - Fundamental graph traversals: Breadth-First Search (BFS) and Depth-First Search (DFS) with cycle detection.\n  - Minimum Spanning Trees (Kruskal's and Prim's algorithms) and single-source shortest paths (Dijkstra's and Bellman-Ford algorithms).\n3.5 Module 5: Sorting, Searching, and Hash Tables\n  - Comparative sorting paradigms: Quicksort (partitioning strategies), Mergesort, and Heapsort.\n  - Non-comparative sorting: Counting sort and Radix sort.\n  - Hash table architectures: Hash functions, collision resolution mechanisms (chaining vs. open addressing: linear probing, quadratic probing, double hashing).\n\n4. LABORATORY EXPERIMENTAL PRACTICUM\n4.1 Execution Platform: Turing Complex Data Systems Lab, operating Linux workstations integrated with LabServer Forge and the LearnSphere LMS Automated Coding Sandbox.\n4.2 Mandatory Practical Assignments:\n  - Experiment 1: Singly and doubly linked list manipulation with in-place reversal and list merging.\n  - Experiment 2: Arithmetic expression evaluator utilizing dual-stack architecture.\n  - Experiment 3: Circular queue implementation supporting producer-consumer message buffering.\n  - Experiment 4: Balanced AVL tree insertion with automated tree rotation verification.\n  - Experiment 5: Graph pathfinding engine executing Dijkstra's algorithm on road networks.\n  - Experiment 6: Collision-resistant hash table implementation benchmarking linear probing against separate chaining.\n\n5. ASSESSMENT AND EVALUATION SCHEME\nPerformance is evaluated under the Continuous Internal Evaluation (CIE, 40% weightage) and Semester End Examination (SEE, 60% weightage) framework. Practical lab assessments comprise weekly code submissions, continuous rubric evaluations, and a formal laboratory practical examination.\n\n6. DISAMBIGUATION ADVISORY\nIn university search queries, student notices, and communications, the acronym 'DSA' designates strictly this engineering course 'Data Structures and Algorithms' (Course Code: CSE201). It must not be conflated with the administrative unit 'Department of Student Affairs' (DEPT-DSA / STU-POL-002) located in the Student Activity Centre."
+    },
+    {
+      "document_id": "ACAD-CRS-002",
+      "title": "CSE202: Object-Oriented Programming with Java Syllabus and Coding Standards",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Graduate Teaching Assistants"
+      ],
+      "keywords": [
+        "CSE202",
+        "Object-Oriented Programming",
+        "OOP",
+        "Java",
+        "classes and objects",
+        "inheritance",
+        "polymorphism",
+        "interfaces",
+        "exception handling",
+        "collections framework",
+        "multithreading",
+        "LearnSphere LMS"
+      ],
+      "retrieval_signals": [
+        "CSE202 syllabus",
+        "object oriented programming with java coding standards",
+        "Java OOP lab exercises",
+        "CSE202 lab assignments LearnSphere",
+        "OOP Java course outline Turing complex",
+        "java collections framework lab exercises",
+        "multithreading java programming practical"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP",
+        "LabServer Forge"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science"
+      ],
+      "related_documents": [
+        "ACAD-CRS-001",
+        "ACAD-CRS-005",
+        "ACAD-POL-007",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE METADATA AND INSTITUTIONAL LOCATION\nCourse Code: CSE202\nCourse Title: Object-Oriented Programming with Java\nCurricular Abbreviation: OOP\nAdministering Department: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex\nProgram: Bachelor of Technology in Computer Science and Engineering (PROG-BTECH-CSE)\nCourse Classification: Program Core\nInstructional Credit Structure: 3 Credits (2 Lecture hours + 2 Laboratory hours per week)\nPrerequisites: CSE201 Data Structures and Algorithms (concurrent or prior)\n\n2. PEDAGOGICAL OBJECTIVES\nCSE202 inculcates enterprise-grade object-oriented software engineering principles using the Java language ecosystem. Students transition from imperative scripting to disciplined object-oriented architecture, mastering encapsulation, class hierarchies, dynamic polymorphism, robust exception mitigation, concurrent thread execution, and the Java Collections Framework.\n\n3. DETAILED THEORY SYLLABUS\n3.1 Module 1: Principles of Object-Oriented Design and Java Fundamentals\n  - Object-oriented paradigm versus procedural programming: Abstraction, encapsulation, information hiding, modularity.\n  - Java virtual machine architecture: Bytecode compilation, JVM memory zones (heap, stack, method area), and automated garbage collection.\n  - Classes, constructors, object lifecycle, access specifiers (private, default, protected, public), and immutable class construction.\n3.2 Module 2: Inheritance, Polymorphism, and Interfaces\n  - Subclassing, method overriding, runtime polymorphism (dynamic method dispatch), and the 'super' keyword.\n  - Abstract classes versus interfaces: Default and static interface methods, functional interfaces, and multiple interface inheritance.\n3.3 Module 3: Exception Handling and Input/Output Streams\n  - Robust application resilience: Checked versus unchecked exceptions, try-catch-finally constructs, multi-catch, and custom domain exceptions.\n  - Java I/O streams, byte versus character streams, buffered readers, object serialization, and deserialization security.\n3.4 Module 4: Java Collections Framework and Generics\n  - Generics: Type parameters, type erasure, bounded type parameters, and wildcard semantics.\n  - Collections hierarchy: List (ArrayList, LinkedList), Set (HashSet, TreeSet), Map (HashMap, TreeMap), Iterator, and Comparator contracts.\n3.5 Module 5: Concurrent Multithreading and Event Handling\n  - Thread lifecycle, Thread class subclassing, Runnable interface implementation, thread synchronization, deadlocks, and thread safety.\n  - Event-driven programming basics and lambda expressions.\n\n4. LABORATORY PROGRAMMING PRACTICUM\n4.1 Infrastructure: Software Engineering Studio, Turing Complex, third floor.\n4.2 Practicum Projects:\n  - Lab 1: Bank account transaction ledger modeling encapsulation, validation, and domain-specific exceptions.\n  - Lab 2: Hierarchical payroll computation engine using abstract classes and polymorphic wage calculations.\n  - Lab 3: Multi-client persistent storage utility leveraging Java Object Streams and custom serialization.\n  - Lab 4: In-memory relational cache built upon Java Collections Framework benchmarking HashMap vs TreeMap search performance.\n  - Lab 5: Multi-threaded banking transfer simulation enforcing synchronization locks to prevent race conditions.\n\n5. ASSESSMENTS\nComposed of continuous LearnSphere automated test runner validations (CIE 40%) and a formal Semester End Examination (SEE 60%)."
+    },
+    {
+      "document_id": "ACAD-CRS-003",
+      "title": "CSE301: Operating Systems (OS) Syllabus and System Programming Lab",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Teaching Assistants"
+      ],
+      "keywords": [
+        "CSE301",
+        "Operating Systems",
+        "OS",
+        "kernel architecture",
+        "CPU scheduling",
+        "process synchronization",
+        "semaphores",
+        "mutex",
+        "deadlock handling",
+        "virtual memory",
+        "paging",
+        "POSIX threads",
+        "system programming lab",
+        "Turing Complex"
+      ],
+      "retrieval_signals": [
+        "OS lab shell programming exercises",
+        "deadlock questions in OS midterms",
+        "textbook by Silberschatz for OS",
+        "CSE301 syllabus",
+        "operating systems course outline",
+        "thread programming lab manual Linux",
+        "OS course prerequisite CSE201",
+        "POSIX system calls practical lab Turing complex"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "LabServer Forge",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "ACAD-CRS-001",
+        "ACAD-CRS-004",
+        "ACAD-POL-007",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION\nCourse Code: CSE301\nCourse Title: Operating Systems\nCurricular Abbreviation: OS\nDepartment: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex (Floors 2-4)\nProgram: B.Tech Computer Science and Engineering\nCredits: 4 (3 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisite: CSE201 Data Structures and Algorithms\nCore Textbook: Operating System Concepts by Silberschatz, Galvin, and Gagne.\n\n2. COURSE DESCRIPTION AND MISSION\nCSE301 explores the software layer mediating hardware resources and user applications. The syllabus covers fundamental operating system abstractions: process lifecycle management, preemptive CPU scheduling, inter-process communication, concurrency control, deadlock mitigation, physical and virtual memory architectures, file subsystem organization, and storage virtualization.\n\n3. THEORY CURRICULUM MODULES\n3.1 Module 1: Operating System Structures and Process Abstraction\n  - OS objectives, dual-mode operation (user mode vs. kernel mode), privileged instructions, and system call interfaces.\n  - Process model: Process Control Block (PCB), process state transitions, context switching mechanics, and process creation via fork() and exec().\n3.2 Module 2: CPU Scheduling and Inter-Process Communication (IPC)\n  - Scheduling criteria: Throughput, turnaround time, waiting time, and response time.\n  - Scheduling algorithms: First-Come First-Served (FCFS), Shortest Job First (SJF), Shortest Remaining Time First (SRTF), Priority Scheduling, and Round Robin (RR) with dynamic time quantum analysis.\n  - Inter-process communication: Shared memory architecture and message passing queues.\n3.3 Module 3: Concurrency, Synchronization, and Deadlocks\n  - Critical section problem: Race conditions, mutual exclusion, progress, and bounded waiting.\n  - Synchronization tools: Peterson's algorithmic solution, hardware atomic instructions (test-and-set), binary and counting semaphores, and mutex locks.\n  - Classical synchronization problems: Bounded-Buffer, Readers-Writers, and Dining Philosophers.\n  - Deadlock characterization: Mutual exclusion, hold-and-wait, no preemption, circular wait. Deadlock prevention, Banker's avoidance algorithm, and detection/recovery.\n3.4 Module 4: Memory Management and Virtual Memory\n  - Physical memory allocation: Contiguous allocation, fragmentation (internal and external), and dynamic storage partitioning.\n  - Paging architectures: Hardware page tables, Translation Lookaside Buffers (TLBs), and multi-level paging.\n  - Virtual memory: Demand paging, page fault service routines, and page replacement policies (FIFO, Optimal, LRU, and Second-Chance).\n3.5 Module 5: Storage and File Systems\n  - Secondary storage hardware, disk scheduling (FCFS, SSTF, SCAN, C-SCAN), file concept, directory structures, and allocation methods (contiguous, linked, indexed).\n\n4. SYSTEM PROGRAMMING PRACTICAL LABORATORY\n4.1 Location: Networks & Cloud Infrastructure Lab, Turing Complex.\n4.2 Linux C/C++ Practicum Experiments:\n  - Lab 1: Linux shell utility development manipulating POSIX fork(), exec(), and wait() system calls.\n  - Lab 2: Comparative simulation of CPU scheduling algorithms (Round Robin vs. SRTF).\n  - Lab 3: Multi-threaded producer-consumer engine implemented with POSIX pthread libraries, mutexes, and semaphores.\n  - Lab 4: Banker's Algorithm implementation validating multi-resource allocation safety states.\n  - Lab 5: Least Recently Used (LRU) and FIFO virtual memory page replacement simulator.\n\n5. DISAMBIGUATION ADVISORY\nIn administrative records and departmental queries, the abbreviation 'OS' refers strictly to this academic course 'Operating Systems' (CSE301). It must not be conflated with the staff designation 'Office Superintendent' (ADM-STF-002) in the Registrar's Administrative Office in Chanakya Bhavan."
+    },
+    {
+      "document_id": "ACAD-CRS-004",
+      "title": "CSE303: Database Management Systems (DBMS) Course and Query Lab Manual",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Teaching Assistants"
+      ],
+      "keywords": [
+        "CSE303",
+        "Database Management Systems",
+        "DBMS",
+        "relational data model",
+        "ER diagrams",
+        "normalization",
+        "BCNF",
+        "SQL queries",
+        "transaction processing",
+        "ACID properties",
+        "concurrency control",
+        "B-trees",
+        "PostgreSQL",
+        "Turing Complex"
+      ],
+      "retrieval_signals": [
+        "CSE303 syllabus",
+        "DBMS query lab manual",
+        "database management systems course outline",
+        "SQL normalization lab exercises",
+        "CSE303 assignments LearnSphere",
+        "relational algebra practical queries DBMS",
+        "ACID properties transaction processing CSE303"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "LabServer Forge",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science"
+      ],
+      "related_documents": [
+        "ACAD-CRS-001",
+        "ACAD-CRS-005",
+        "ACAD-POL-007",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE SPECIFICATION\nCourse Code: CSE303\nCourse Title: Database Management Systems\nCurricular Abbreviation: DBMS\nDepartment: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex\nProgram: B.Tech Computer Science and Engineering\nCredits: 3 (2 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisite: CSE201 Data Structures and Algorithms\n\n2. COURSE OBJECTIVES\nCSE303 delivers enterprise data management theory and practical database engineering competencies. Students master relational modeling, entity-relationship synthesis, formal relational calculus, SQL query formulation, database schema normalization, transaction serialization, and database indexing.\n\n3. CURRICULAR MODULES\n3.1 Module 1: Relational Architecture and Conceptual Modeling\n  - Limitations of file-based storage, three-schema database architecture (physical, conceptual, external), and data independence.\n  - Entity-Relationship (ER) modeling: Entities, attributes, relationships, cardinality ratios, and enhanced ER features (generalization, specialization).\n3.2 Module 2: Relational Model and Formal Query Languages\n  - Relational model constraints: Domain, key, entity integrity, and referential integrity constraints.\n  - Formal query languages: Relational algebra operators (select, project, join, set operations) and tuple relational calculus.\n3.3 Module 3: SQL Syntax and Complex Query Processing\n  - Data Definition Language (DDL), Data Manipulation Language (DML), and Data Control Language (DCL).\n  - Complex SQL queries: Nested subqueries, correlated subqueries, set operations, aggregate functions, and windowing functions.\n  - Views, triggers, and stored procedures.\n3.4 Module 4: Relational Schema Normalization\n  - Anomalies in unnormalized schemas: Insertion, deletion, and modification anomalies.\n  - Functional dependencies: Armstrong's axioms, canonical cover, and attribute closure.\n  - Normal forms: First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), and Boyce-Codd Normal Form (BCNF). Lossless-join decomposition and dependency preservation.\n3.5 Module 5: Transactions, Concurrency, and Recovery\n  - Transaction concepts and ACID properties (Atomicity, Consistency, Isolation, Durability).\n  - Serializability: Conflict and view serializability.\n  - Concurrency control techniques: Two-Phase Locking (2PL), timestamp ordering, and deadlock detection.\n  - Database recovery architectures: Write-ahead logging (WAL) and checkpointing.\n\n4. PRACTICAL QUERY LABORATORY\n4.1 Facility: Turing Complex Data Systems Lab, utilizing PostgreSQL.\n4.2 Laboratory Experiments:\n  - Lab 1: Comprehensive ER-to-relational schema mapping for a university management database.\n  - Lab 2: Table definition enforcing primary key, unique, check, and cascade foreign key constraints.\n  - Lab 3: Complex SQL queries involving multi-table joins, subqueries, and grouping.\n  - Lab 4: PL/pgSQL stored procedures, functions, and automated database triggers.\n  - Lab 5: Transaction execution analysis simulating concurrent updates under various isolation levels.\n\n5. EVALUATION METRICS\nCourse evaluation follows the 40% CIE (quizzes, normalization problem sets, lab exams) and 60% SEE summative examination structure."
+    },
+    {
+      "document_id": "ACAD-CRS-005",
+      "title": "CSE305: Software Engineering (SE) Agile Methodology Project Guide",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Course Guide / Project Manual",
+      "version": "2.9",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Academic Program Coordinators"
+      ],
+      "keywords": [
+        "CSE305",
+        "Software Engineering",
+        "SE",
+        "Agile methodology",
+        "Scrum framework",
+        "sprint planning",
+        "requirements engineering",
+        "UML modeling",
+        "software architecture",
+        "software testing",
+        "CI/CD",
+        "Turing Complex"
+      ],
+      "retrieval_signals": [
+        "SE agile project documentation format",
+        "CSE305 SE previous year question paper",
+        "who teaches software engineering section B",
+        "CSE305 syllabus",
+        "software engineering course guide",
+        "Agile scrum sprint project guidelines CSE305",
+        "UML modeling assignment software engineering"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP",
+        "LabServer Forge"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Head of Department (HOD) - Computer Science",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "ACAD-CRS-002",
+        "ACAD-CRS-004",
+        "ACAD-POL-005",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION\nCourse Code: CSE305\nCourse Title: Software Engineering\nCurricular Abbreviation: SE\nDepartment: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex (Floors 2-4)\nProgram: B.Tech Computer Science and Engineering\nCredits: 3 (3 Lecture / Project Studio hours per week)\nPrerequisite: CSE202 Object-Oriented Programming with Java\n\n2. COURSE MISSION\nCSE305 transitions students from writing isolated code routines to managing complex, collaborative, lifecycle-driven software engineering projects. The curriculum integrates modern Agile and Scrum practices, formal requirements elicitation, UML architectural modeling, automated verification, and continuous delivery systems.\n\n3. MODULAR SYLLABUS TOPICS\n3.1 Module 1: Software Lifecycles and Agile Methodologies\n  - Software crisis, professional engineering ethics, and process models: Waterfall, iterative, and spiral.\n  - Agile engineering manifesto, principles, and Scrum framework: Product owner, scrum master, sprint planning, daily stand-ups, sprint backlog, and retrospectives.\n3.2 Module 2: Requirements Analysis and System Specification\n  - Functional and non-functional requirements, stakeholder analysis, and user story mapping.\n  - Software Requirements Specification (SRS) authoring following IEEE 830 / ISO standards.\n3.3 Module 3: System Modeling and Architectural Design\n  - Unified Modeling Language (UML): Structural diagrams (class, package, component) and behavioral diagrams (use case, sequence, state machine, activity).\n  - Software architectural styles: Layered, client-server, microservices, and event-driven patterns.\n3.4 Module 4: Software Verification, Validation, and Testing\n  - Testing levels: Unit testing, integration testing, system testing, and acceptance testing.\n  - White-box testing (basis path, cyclomatic complexity) and black-box testing (equivalence partitioning, boundary value analysis).\n  - Test automation with JUnit and continuous integration pipelines.\n3.5 Module 5: Software Maintenance and Project Management\n  - Software metrics, estimation techniques (COCOMO, function points), risk management, and version control branching models.\n\n4. TEAM CAPSTONE PROJECT GUIDELINES\n4.1 Execution: Students form self-organizing teams of 4 to deliver an end-to-end software product across three 4-week Agile sprints in the Software Engineering Studio, Turing Complex.\n4.2 Sprint Deliverables:\n  - Sprint 1: Product Backlog, SRS document, and high-level architectural design.\n  - Sprint 2: Core feature prototype, automated unit tests, and CI/CD workflow.\n  - Sprint 3: Complete deployable product, code quality audits, and formal defense.\n\n5. DISAMBIGUATION ADVISORY\nIn university communications, the acronym 'SE' possesses multiple meanings:\n  a) Academic Course (Herein): 'Software Engineering' (CSE305).\n  b) Examination Event: 'Semester Exam' (EXAM-GUI-002 / Semester End Examination).\n  c) Facilities Job Title: 'Site Engineer' (OPS-EST-004 / Estate and Facilities Department).\nSearch queries regarding UML diagrams or Scrum sprints route to CSE305."
+    },
+    {
+      "document_id": "ACAD-CRS-006",
+      "title": "CSE401: Artificial Intelligence and Machine Learning Course Outline",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Course Outline / Lab Guide",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Teaching Assistants"
+      ],
+      "keywords": [
+        "CSE401",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "AIML",
+        "heuristic search",
+        "A* search",
+        "supervised learning",
+        "regression",
+        "classification",
+        "decision trees",
+        "clustering",
+        "neural networks",
+        "PyTorch",
+        "GPU lab",
+        "Turing Complex"
+      ],
+      "retrieval_signals": [
+        "CSE401 syllabus",
+        "artificial intelligence and machine learning course outline",
+        "AIML lab exercises Python",
+        "CSE401 GPU lab access Turing complex",
+        "machine learning course prerequisites",
+        "heuristic search algorithms A star CSE401",
+        "supervised learning practical lab manual"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "LabServer Forge",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science"
+      ],
+      "related_documents": [
+        "ACAD-CRS-001",
+        "ACAD-CRS-003",
+        "ACAD-POL-007",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE SPECIFICATION\nCourse Code: CSE401\nCourse Title: Artificial Intelligence and Machine Learning\nCurricular Abbreviation: AIML\nDepartment: Department of Computer Science and Engineering (DEPT-CSE)\nSchool: School of Computing and Data Sciences (SCH-SCDS), Turing Complex\nProgram: B.Tech Computer Science and Engineering\nCredits: 4 (3 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisites: CSE201 Data Structures and Algorithms, Applied Mathematics (Linear Algebra and Probability)\n\n2. COURSE OVERVIEW\nCSE401 provides comprehensive exposure to computational intelligence and statistical machine learning paradigms. The syllabus spans informed heuristic search algorithms, knowledge representation, statistical regression, classification algorithms, unsupervised clustering, dimensional reduction, artificial neural network architectures, and machine learning operational pipelines.\n\n3. THEORY SYLLABUS MODULES\n3.1 Module 1: Classical Artificial Intelligence and Problem Spaces\n  - State-space search representation, uninformed search (BFS, DFS, Uniform Cost Search).\n  - Informed heuristic search: Greedy Best-First, A* search and heuristic admissibility proofs.\n  - Adversarial search: Minimax algorithm and Alpha-Beta pruning in game trees.\n3.2 Module 2: Supervised Learning: Regression and Classification\n  - Supervised learning workflow, bias-variance tradeoff, and cross-validation.\n  - Linear and polynomial regression, regularization techniques (L1 Lasso, L2 Ridge).\n  - Classification paradigms: Logistic regression, K-Nearest Neighbors (KNN), Naive Bayes, and Decision Trees (ID3, CART, entropy, and Gini impurity).\n3.3 Module 3: Advanced Classifiers and Ensemble Paradigms\n  - Support Vector Machines (SVM): Hyperplane margins, soft margins, and kernel tricks.\n  - Ensemble learning: Bagging, Random Forests, and Gradient Boosting algorithms (XGBoost).\n3.4 Module 4: Unsupervised Learning and Dimensionality Reduction\n  - Clustering: K-Means, hierarchical clustering, and DBSCAN density-based clustering.\n  - Dimensionality reduction: Principal Component Analysis (PCA) and singular value decomposition.\n3.5 Module 5: Neural Networks and Deep Learning Foundations\n  - Artificial neurons (Perceptron), activation functions (Sigmoid, ReLU), multi-layer perceptrons, backpropagation algorithm, and loss functions.\n  - Ethical considerations: Algorithmic bias, fairness, transparency, and data privacy.\n\n4. PRACTICAL COMPUTING LABORATORY\n4.1 Facility: AI & Vision Lab, Turing Complex (supported by LabServer Forge high-performance GPU nodes).\n4.2 Laboratory Experiments:\n  - Lab 1: Informed A* search implementation solving routing and 8-puzzle state challenges.\n  - Lab 2: Multi-variable regularized linear regression modeling predictive engineering metrics.\n  - Lab 3: Decision tree and Random Forest comparative evaluation on tabular classification datasets.\n  - Lab 4: Principal Component Analysis (PCA) dimensional reduction and K-Means clustering.\n  - Lab 5: Multi-layer neural network implementation in Python / PyTorch with hyperparameter tuning.\n\n5. EVALUATION AND CONTINUOUS ASSESSMENT\nEvaluation comprises continuous notebook submissions and coding tests (CIE 40%) alongside a written theory Semester End Examination (SEE 60%)."
+    },
+    {
+      "document_id": "ACAD-CRS-007",
+      "title": "ECE201: Digital Electronics and Logic Design Course and Hardware Lab",
+      "department": "Department of Electronics and Communication Engineering",
+      "department_id": "DEPT-ECE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech ECE Students",
+        "Course Instructors",
+        "Technical Assistants"
+      ],
+      "keywords": [
+        "ECE201",
+        "Digital Electronics",
+        "Logic Design",
+        "DELD",
+        "Boolean algebra",
+        "K-maps",
+        "combinational circuits",
+        "sequential circuits",
+        "flip-flops",
+        "registers",
+        "counters",
+        "finite state machines",
+        "hardware lab",
+        "Faraday Tower"
+      ],
+      "retrieval_signals": [
+        "ECE201 syllabus",
+        "digital electronics and logic design course outline",
+        "DELD hardware lab manual",
+        "K map sequential circuits experiment ECE201",
+        "breadboard digital trainer kit lab manual Faraday tower",
+        "flip flop counter design lab ECE201",
+        "digital logic design course prerequisites"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Technical Assistant (Lab Technician)",
+        "Head of Department (HOD) - Electronics"
+      ],
+      "related_documents": [
+        "ACAD-CRS-008",
+        "ECE-CRS-001",
+        "ACAD-LAB-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION\nCourse Code: ECE201\nCourse Title: Digital Electronics and Logic Design\nCurricular Abbreviation: DELD\nDepartment: Department of Electronics and Communication Engineering (DEPT-ECE)\nSchool: School of Electrical and Electronics Engineering (SCH-SEEE), Faraday Tower (Floors 1-3)\nProgram: B.Tech Electronics and Communication Engineering\nCredits: 4 (3 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisites: Engineering Physics and Basic Electrical Engineering\n\n2. COURSE DESCRIPTION\nECE201 provides foundational hardware competency in digital logic systems. The curriculum encompasses switching algebra, gate minimization, combinational logic design, synchronous and asynchronous sequential circuit synthesis, finite state machines, and hardware description language simulations.\n\n3. CURRICULAR MODULES\n3.1 Module 1: Boolean Algebra and Combinational Optimization\n  - Number systems (binary, octal, hexadecimal), signed representations, and binary arithmetic.\n  - Axiomatic Boolean algebra, standard forms (SOP, POS), and Karnaugh Maps (K-Maps) up to 5 variables.\n  - Don't-care conditions, Quine-McCluskey tabular minimization, and logic hazard analysis.\n3.2 Module 2: Combinational Logic Circuits\n  - Arithmetic blocks: Half adders, full adders, carry-lookahead adders, and subtractors.\n  - MSI combinational components: Multiplexers, demultiplexers, decoders, priority encoders, and parity generators.\n3.3 Module 3: Sequential Circuit Foundations and Latches\n  - Latches and flip-flops: SR, JK, Master-Slave JK, D, and T flip-flops; excitation tables.\n  - Timing considerations: Setup time, hold time, propagation delay, and clock skew.\n3.4 Module 4: Registers, Counters, and Finite State Machines (FSM)\n  - Shift registers: SISO, SIPO, PISO, PIPO, and bidirectional universal shift registers.\n  - Synchronous and asynchronous counters, modulo-N counters, and ring/Johnson counters.\n  - Finite State Machine modeling: State diagrams, state tables, state reduction, and Mealy versus Moore machine synthesis.\n3.5 Module 5: Logic Families and Memory Architectures\n  - TTL, CMOS logic characteristics (noise margin, fan-out, power dissipation), and programmable logic arrays (PLA, PAL).\n\n4. HARDWARE EXPERIMENTAL LABORATORY\n4.1 Facility: Digital Electronics Hardware Lab, Faraday Tower, 2nd Floor.\n4.2 Laboratory Practicum Experiments:\n  - Lab 1: Verification of logic gate truth tables and realization of basic gates using universal NAND/NOR gates.\n  - Lab 2: Design and hardware implementation of a 4-bit parallel adder/subtractor circuit using IC 7483.\n  - Lab 3: Design of 8:1 multiplexer and implementation of combinational logic functions using IC 74151.\n  - Lab 4: Realization of synchronous 3-bit up/down counter using JK flip-flops on breadboard digital trainer kits.\n  - Lab 5: Verilog HDL behavioral simulation of Mealy and Moore sequence detectors.\n\n5. SAFETY AND BREAKAGE REGULATIONS\nAll student experimenters must adhere strictly to the General Engineering Laboratory Safety Rules (ACAD-LAB-001). Components must be handled with static-protective protocols."
+    },
+    {
+      "document_id": "ACAD-CRS-008",
+      "title": "ECE302: VLSI Design and Microelectronics EDA Lab Manual",
+      "department": "Department of Electronics and Communication Engineering",
+      "department_id": "DEPT-ECE",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.3",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech ECE Students",
+        "Course Instructors",
+        "Technical Assistants"
+      ],
+      "keywords": [
+        "ECE302",
+        "ECE-CRS-302",
+        "VLSI Design",
+        "microelectronics",
+        "CMOS",
+        "inverter dynamics",
+        "transmission gates",
+        "stick diagrams",
+        "layout design rules",
+        "Cadence EDA",
+        "SPICE simulation",
+        "Faraday Tower"
+      ],
+      "retrieval_signals": [
+        "Cadence EDA tool license for VLSI lab",
+        "VLSI design midterm question paper",
+        "who teaches CMOS VLSI design",
+        "ECE302 syllabus",
+        "VLSI design and microelectronics lab manual",
+        "CMOS inverter delay simulation experiment",
+        "ECE-CRS-302 lab manual",
+        "layout design rules lambda based VLSI"
+      ],
+      "systems": [
+        "EDA Cloud Lab",
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Technical Assistant (Lab Technician)",
+        "Head of Department (HOD) - Electronics"
+      ],
+      "related_documents": [
+        "ACAD-CRS-007",
+        "ECE-CRS-001",
+        "ACAD-LAB-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION\nCourse Code: ECE302 (also cataloged as ECE-CRS-302)\nCourse Title: VLSI Design and Microelectronics\nCurricular Abbreviation: VLSI\nDepartment: Department of Electronics and Communication Engineering (DEPT-ECE)\nSchool: School of Electrical and Electronics Engineering (SCH-SEEE), Faraday Tower (Floors 1-3)\nProgram: B.Tech Electronics and Communication Engineering\nCredits: 4 (3 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisites: ECE201 Digital Electronics and Logic Design\n\n2. COURSE DESCRIPTION\nECE302 covers semiconductor physics, silicon fabrication processes, MOS transistor theory, CMOS digital circuit synthesis, physical layout engineering, and automated Electronic Design Automation (EDA) flows. Students engineer integrated circuits from algorithmic descriptions to physical mask layouts.\n\n3. DETAILED THEORY SYLLABUS\n3.1 Module 1: MOS Transistor Theory and Semiconductor Physics\n  - MOS structure, threshold voltage model, accumulation, depletion, and inversion regimes.\n  - I-V characteristics of nMOS and pMOS, velocity saturation, channel length modulation, and body effect.\n3.2 Module 2: The CMOS Inverter: DC and Dynamic Characteristics\n  - Static inverter transfer characteristics (VTC), noise margins, and switching threshold.\n  - Inverter dynamic performance: Parasitic capacitances, propagation delay (t_phl, t_plh), rise and fall times.\n  - Power dissipation components: Static leakage, dynamic switching, and short-circuit power.\n3.3 Module 3: Combinational and Sequential CMOS Logic Design\n  - Static complementary CMOS logic gates, transmission gates, dynamic logic, and domino CMOS logic.\n  - Layout engineering: Lambda-based design rules, Euler paths, stick diagrams, and CMOS mask layouts.\n  - Sequential circuit design: Latches, registers, and flip-flops in static CMOS.\n3.4 Module 4: Interconnects, Timing, and Clocking\n  - Interconnect resistance and capacitance modeling, distributed RC delays, and buffer insertion.\n  - Clock distribution networks, clock skew, jitter, and setup/hold timing constraints.\n3.5 Module 5: Semiconductor Memories and ASIC Flows\n  - Memory architectures: Static RAM (6T SRAM cell read/write operation), DRAM, and non-volatile memory.\n  - Full-custom versus semi-custom design flows, standard cell libraries, and FPGA synthesis.\n\n4. EDA SIMULATION LABORATORY\n4.1 Infrastructure: VLSI Design Centre, Faraday Tower, running Cadence EDA Tools and SPICE engines via the EDA Cloud Lab.\n4.2 Laboratory Experiments:\n  - Lab 1: Schematic capture and DC transfer curve (VTC) simulation of a 45nm CMOS inverter.\n  - Lab 2: Transient transient analysis computing propagation delay and power dissipation of CMOS logic gates.\n  - Lab 3: Physical mask layout design of a standard CMOS NAND gate enforcing lambda design rules.\n  - Lab 4: Design Rule Checking (DRC) and Layout Versus Schematic (LVS) verification.\n  - Lab 5: 6T SRAM memory cell simulation verifying read/write stability margins.\n\n5. DISAMBIGUATION ADVISORY\nIn university communications, the acronym 'VLSI' has two distinct applications:\n  a) Academic Course / Lab (Herein): 'Very Large Scale Integration' (ECE302 / ECE-CRS-302).\n  b) Professional Development Initiative: 'Visiting Lecturer Series Initiative' (CPTD-ACT-002), a corporate expert lecture series organized by CPTD."
+    },
+    {
+      "document_id": "ACAD-CRS-009",
+      "title": "MEC204: Thermodynamics and Heat Transfer Laboratory Manual",
+      "department": "Department of Mechanical Engineering",
+      "department_id": "DEPT-MECH",
+      "document_type": "Syllabus / Lab Guide",
+      "version": "3.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech MECH Students",
+        "Course Instructors",
+        "Technical Assistants"
+      ],
+      "keywords": [
+        "MEC204",
+        "Thermodynamics",
+        "Heat Transfer",
+        "THERMO",
+        "laws of thermodynamics",
+        "entropy",
+        "power cycles",
+        "conduction",
+        "convection",
+        "radiation",
+        "heat exchangers",
+        "LMTD",
+        "Newton Hall",
+        "thermal engineering lab"
+      ],
+      "retrieval_signals": [
+        "MEC204 syllabus",
+        "thermodynamics and heat transfer laboratory manual",
+        "thermal engineering lab experiments Newton hall",
+        "heat exchanger LMTD experiment MEC204",
+        "pin fin heat transfer apparatus test",
+        "laws of thermodynamics course outline mechanical",
+        "MEC204 lab manual download"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Technical Assistant (Lab Technician)",
+        "Head of Department (HOD) - Mechanical"
+      ],
+      "related_documents": [
+        "MEC-CRS-304",
+        "ACAD-LAB-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE METADATA\nCourse Code: MEC204\nCourse Title: Thermodynamics and Heat Transfer\nCurricular Abbreviation: THERMO\nDepartment: Department of Mechanical Engineering (DEPT-MECH)\nSchool: School of Mechanical and Infrastructure Engineering (SCH-SMIE), Newton Hall (Floors 1-2 & Heavy Machinery Sheds)\nProgram: B.Tech Mechanical Engineering\nCredits: 4 (3 Lecture hours + 2 Practical Laboratory hours per week)\nPrerequisites: Engineering Physics and Applied Calculus\n\n2. COURSE OBJECTIVES\nMEC204 provides foundational knowledge in thermal-fluid sciences. Students analyze energy conservation, entropy generation, thermodynamic power and refrigeration cycles, and the three physical modes of thermal transport: conduction, convection, and radiation.\n\n3. MODULAR THEORY SYLLABUS\n3.1 Module 1: Fundamental Thermodynamic Laws and Energy Systems\n  - Thermodynamic systems, states, processes, cycles, and pure substances.\n  - First Law of Thermodynamics: Conservation of energy in closed and steady-flow open systems.\n  - Second Law of Thermodynamics: Kelvin-Planck and Clausius statements, Carnot cycle, and entropy generation.\n3.2 Module 2: Applied Thermodynamic Cycles\n  - Vapor power cycles: Ideal Rankine cycle and reheat/regenerative Rankine modifications.\n  - Gas power cycles: Air-standard Otto, Diesel, and dual cycles.\n  - Refrigeration cycles: Vapor-compression refrigeration cycle and heat pumps.\n3.3 Module 3: Conduction Heat Transfer\n  - Fourier's law of heat conduction, thermal conductivity of materials, and general heat conduction equations.\n  - One-dimensional steady-state conduction through composite walls, cylinders, and spheres.\n  - Extended surfaces (fins): Heat transfer from rectangular and pin fins with various boundary conditions.\n3.4 Module 4: Convection Heat Transfer\n  - Newton's law of cooling and hydrodynamic/thermal boundary layer fundamentals.\n  - Forced convection: Flow over flat plates, flow through circular pipes, and empirical correlations (Nusselt, Reynolds, Prandtl numbers).\n  - Free/natural convection over vertical and horizontal plates.\n3.5 Module 5: Radiation and Heat Exchangers\n  - Thermal radiation: Blackbody radiation, Planck's distribution, Stefan-Boltzmann law, Wien's displacement law, and shape/view factors.\n  - Heat exchangers: Types (parallel, counter-flow, cross-flow), Log Mean Temperature Difference (LMTD) method, and Number of Transfer Units (NTU) effectiveness method.\n\n4. LABORATORY EXPERIMENTAL PRACTICUM\n4.1 Facility: Thermal Engineering Lab, Newton Hall, Ground Floor.\n4.2 Laboratory Experiments:\n  - Lab 1: Determination of thermal conductivity of an insulating powder apparatus.\n  - Lab 2: Evaluation of heat transfer coefficient in natural and forced convection from a vertical cylinder.\n  - Lab 3: Performance test of a pin-fin apparatus determining temperature distribution along the fin length.\n  - Lab 4: Stefan-Boltzmann apparatus calibration verifying the fourth-power temperature law.\n  - Lab 5: Parallel-flow and counter-flow concentric tube heat exchanger test determining overall heat transfer coefficient and LMTD.\n\n5. SAFETY AND PROTOCOL\nOperating high-temperature thermal rigs requires thermal protective gloves and eye shields in strict accordance with the General Engineering Laboratory Safety Rules (ACAD-LAB-001)."
+    },
+    {
+      "document_id": "ACAD-CRS-010",
+      "title": "CIV205: Structural Analysis and Design Computing Manual",
+      "department": "Department of Civil Engineering",
+      "department_id": "DEPT-CIVIL",
+      "document_type": "Syllabus / Computing Manual",
+      "version": "3.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CIVIL Students",
+        "Course Instructors",
+        "Technical Assistants"
+      ],
+      "keywords": [
+        "CIV205",
+        "Structural Analysis",
+        "SA",
+        "mechanics of structures",
+        "determinate structures",
+        "indeterminate structures",
+        "moment distribution",
+        "slope deflection",
+        "energy principles",
+        "influence lines",
+        "matrix stiffness method",
+        "Aryabhata Wing"
+      ],
+      "retrieval_signals": [
+        "CIV205 syllabus",
+        "structural analysis and mechanics course outline",
+        "structural analysis and design computing manual Aryabhata wing",
+        "moment distribution method beam deflection CIV205",
+        "matrix stiffness structural design civil",
+        "CIV205 previous year question papers",
+        "influence line diagrams civil engineering"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Head of Department (HOD) - Civil",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "CIV-LAB-304",
+        "ACAD-LAB-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE IDENTIFICATION\nCourse Code: CIV205\nCourse Title: Structural Analysis and Mechanics (also documented as Structural Analysis and Design Computing Manual)\nCurricular Abbreviation: SA\nDepartment: Department of Civil Engineering (DEPT-CIVIL)\nSchool: School of Mechanical and Infrastructure Engineering (SCH-SMIE), Aryabhata Wing (Ground & 1st Floor)\nProgram: B.Tech Civil Engineering\nCredits: 4 (3 Lecture hours + 2 Tutorial / Computer-Aided Design hours per week)\nPrerequisites: Engineering Mechanics & Strength of Materials\n\n2. COURSE DESCRIPTION\nCIV205 establishes structural engineering competencies for indeterminate infrastructure. Students analyze internal stresses, deformations, and stability in beams, trusses, and rigid frames under static and dynamic loading using classical and modern matrix computational methods.\n\n3. DETAILED THEORY SYLLABUS\n3.1 Module 1: Statically Indeterminate Structures and Energy Principles\n  - Degree of static and kinematic indeterminacy for plane frames and space trusses.\n  - Strain energy in linear elastic structures: Castigliano's theorems, Betti-Maxwell reciprocal theorem, and unit load method for deflection computation.\n3.2 Module 2: Classical Slope-Deflection Method\n  - Slope-deflection equations, formulation of equilibrium conditions, and analysis of continuous beams with settlement of supports.\n  - Analysis of non-sway and symmetrical sway rigid plane frames.\n3.3 Module 3: Moment Distribution Method\n  - Hardy Cross method: Stiffness factors, carry-over factors, and distribution factors.\n  - Application to continuous beams, beams with overhangs, and portal frames with and without lateral sway.\n3.4 Module 4: Moving Loads and Influence Lines\n  - Concept of influence lines for determinate and indeterminate beams.\n  - Influence lines for reactions, shearing force, and bending moments under moving concentrated loads and uniformly distributed loads.\n  - Muller-Breslau principle for qualitative influence lines of continuous structures.\n3.5 Module 5: Matrix Methods of Structural Analysis\n  - Flexibility (Force) method versus Stiffness (Displacement) method.\n  - Element stiffness matrix formulation, coordinate transformations, global stiffness matrix assembly, and boundary conditions.\n\n4. COMPUTATIONAL DESIGN PRACTICUM\n4.1 Facility: Computational Station, Aryabhata Wing, Ground Floor.\n4.2 Computer-Aided Analysis Sessions:\n  - Session 1: Analytical modeling and deflection verification of 2D indeterminate continuous beams.\n  - Session 2: Frame sway analysis under asymmetrical lateral wind and seismic loading.\n  - Session 3: Matrix stiffness software modeling evaluating multi-story reinforced concrete structures.\n\n5. EVALUATION STRUCTURE\nEvaluated under the standard 40% CIE (quizzes, structural design problem sets, midterm tests) and 60% SEE summative examination framework."
+    },
+    {
+      "document_id": "ECE-CRS-001",
+      "title": "Department of EC Overview and Course Catalog",
+      "department": "Department of Electronics and Communication Engineering",
+      "department_id": "DEPT-ECE",
+      "document_type": "Department Catalog",
+      "version": "2.5",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All ECE Students",
+        "Prospective Students",
+        "Faculty",
+        "Academic Advisors"
+      ],
+      "keywords": [
+        "ECE-CRS-001",
+        "Department of EC",
+        "Electronics and Communication",
+        "ECE course catalog",
+        "Faraday Tower",
+        "VLSI Design Centre",
+        "Embedded IoT Systems Lab",
+        "Microwave RF Testing Facility",
+        "B.Tech ECE curriculum",
+        "160 credits"
+      ],
+      "retrieval_signals": [
+        "EC department seminar hall",
+        "EC placement statistics this year",
+        "ECE department overview and course catalog Faraday tower",
+        "curriculum structure B.Tech ECE",
+        "branches in School of Electrical Engineering",
+        "who is the HOD of ECE",
+        "facilities in Faraday Tower"
+      ],
+      "systems": [
+        "UniCampus ERP",
+        "LearnSphere LMS",
+        "EDA Cloud Lab"
+      ],
+      "roles": [
+        "Head of Department (HOD) - Electronics",
+        "Dean, School of Electrical Engineering",
+        "Academic Program Coordinator"
+      ],
+      "related_documents": [
+        "ACAD-CRS-007",
+        "ACAD-CRS-008",
+        "ECE-LAB-002",
+        "ACAD-REG-001"
+      ],
+      "content": "1. DEPARTMENTAL PROFILE AND MISSION\nDepartment: Department of Electronics and Communication Engineering (DEPT-ECE)\nSchool: School of Electrical and Electronics Engineering (SCH-SEEE)\nBuilding Location: Faraday Tower (Floors 1-3)\nAcademic Leadership: Head of Department (HOD) - Electronics, Faraday Tower, 1st Floor Executive Suite\nMission: Deliver specialized technical instruction and research leadership in VLSI semiconductor design, embedded hardware computing, wireless telecommunications, and digital signal processing architectures.\n\n2. ACADEMIC DEGREE PROGRAMS\n2.1 Undergraduate Program: Bachelor of Technology in Electronics and Communication Engineering (B.Tech ECE, Program Code: PROG-BTECH-ECE). Duration: 4 years (8 semesters), 160 required academic credits.\n2.2 Departmental Core Roadmap:\n  - Semester 3: ECE201 Digital Electronics and Logic Design (4 credits, lab)\n  - Semester 4: ECE204 Signals and Systems (3 credits)\n  - Semester 5: ECE302 VLSI Design and Microelectronics (4 credits, lab)\n  - Semester 6: ECE305 Embedded Systems and Microcontrollers (4 credits, lab)\n  - Semester 7: ECE402 Wireless and Cellular Communications (3 credits)\n\n3. SPECIALIZED LABORATORY FACILITIES\n3.1 VLSI Design Centre (Faraday Tower, Floor 2): Equipped with advanced workstations running Cadence EDA tools and high-performance server backends connected to the EDA Cloud Lab.\n3.2 Embedded IoT Systems Lab (Faraday Tower, Floor 2): ARM Cortex development platforms, FPGA evaluation boards, real-time operating systems, and sensor interfacing.\n3.3 Microwave & RF Testing Facility (Faraday Tower, Floor 3): Vector network analyzers, spectrum analyzers, microwave benches, and anechoic test chambers.\n3.4 Digital Signal Processing Lab (Faraday Tower, Floor 1): Texas Instruments DSP processor hardware and MATLAB simulation suites.\n\n4. DISAMBIGUATION ADVISORY\nIn institutional discourse and student queries, the abbreviation 'EC' possesses multiple distinct meanings:\n  a) Academic Department Shorthand (Herein): 'Electronics and Communication' (DEPT-ECE).\n  b) Regulatory Authority: 'Examination Cell' (DEPT-EXAM), the confidential evaluation office located in Chanakya Bhavan.\n  c) Statutory Apex Governance: 'Executive Council' (GOV-ACT-001), the apex administrative body of Demo University.\nQueries regarding circuits, antennas, or Faraday Tower labs map to DEPT-ECE."
+    },
+    {
+      "document_id": "ECE-LAB-002",
+      "title": "Electrical Circuits and DC Machines Lab Safety Manual",
+      "department": "Department of Electronics and Communication Engineering",
+      "department_id": "DEPT-ECE",
+      "document_type": "Lab Safety Manual",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Engineering Students",
+        "Technical Assistants",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "ECE-LAB-002",
+        "DC Machines Lab",
+        "Direct Current Lab",
+        "electrical safety",
+        "DC motor speed control",
+        "generator load characteristics",
+        "emergency shut-off",
+        "rubber matting",
+        "Faraday Tower",
+        "circuit breakers"
+      ],
+      "retrieval_signals": [
+        "DC machines lab manual download",
+        "DC motor speed control experiment",
+        "electrical circuits and DC machines lab safety manual Faraday tower",
+        "DC lab safety regulations",
+        "call the lab TA for machine calibration",
+        "emergency power cutoff electrical lab",
+        "technical assistant signature on lab record"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Technical Assistant (Lab Technician)",
+        "Course Instructor / Professor",
+        "Head of Department (HOD) - Electronics"
+      ],
+      "related_documents": [
+        "ECE-CRS-001",
+        "ACAD-LAB-001",
+        "OPS-LAB-003"
+      ],
+      "content": "1. LABORATORY IDENTITY AND LOCATION\nFacility: Electrical Circuits and DC Machines Laboratory\nDocument Code: ECE-LAB-002\nDepartment: Department of Electronics and Communication Engineering (DEPT-ECE) / School of Electrical and Electronics Engineering (SCH-SEEE)\nLocation: Faraday Tower, Ground Floor Machine Hall\nSupervisory Staff: Technical Assistant (ROLE-TA-TECH) and Senior Laboratory Technician\n\n2. PURPOSE AND EQUIPMENT SCOPE\nThis manual governs physical safety, experimental procedures, electrical ratings, and operational protocols for the high-power Direct Current (DC) machines testing suite. Equipment includes DC shunt and series motors, DC compound generators, motor-generator test sets, mechanical brake drum dynamometers, rheostats, and power supply panels.\n\n3. MANDATORY SAFETY RULES AND PROTOCOLS\n3.1 Personal Protective Equipment: Insulated rubber-soled footwear is mandatory. Loose garments, neckties, hanging jewelry, and long unsecured hair are strictly prohibited near rotating machine couplings.\n3.2 Floor Safety: All operations must be conducted while standing on the designated high-voltage insulated dielectric rubber matting installed around testing benches.\n3.3 Wiring Verification: Students are strictly forbidden from energizing any laboratory circuit breaker panel without prior physical inspection and signature from the assigned Technical Assistant.\n3.4 Emergency Power Cutoff: In the event of electrical arcing, motor runaway, smoke, or accidental contact, the red Emergency Stop Pushbutton located at each bench and the master trip switch at the entrance must be struck immediately.\n\n4. EXPERIMENTAL PROCEDURES\n4.1 Experiment: Speed Control of DC Shunt Motor by Armature Voltage and Field Flux Control.\n4.2 Experiment: Open-Circuit and Load Characteristics of Self-Excited DC Shunt Generator.\n4.3 Experiment: Swinburne's Test for Pre-determination of Efficiency of DC Machine.\n\n5. DISAMBIGUATION ADVISORY\nIn institutional correspondence, the acronym 'DC' carries three critical, non-overlapping meanings:\n  a) Laboratory Hardware Context (Herein): 'Direct Current Lab' (ECE-LAB-002), the high-voltage electrical machine testing facility in Faraday Tower.\n  b) Disciplinary Governance Context: 'Disciplinary Committee / Proctorial Board' (STU-POL-005), the judicial tribunal investigating student misconduct.\n  c) Research Context: 'Doctoral Committee' (RES-POL-001), the faculty panel evaluating Ph.D. progress milestones."
+    },
+    {
+      "document_id": "CIV-LAB-304",
+      "title": "Environmental Engineering Testing Manual: BOD/COD Protocols",
+      "department": "Department of Civil Engineering",
+      "department_id": "DEPT-CIVIL",
+      "document_type": "Lab Manual",
+      "version": "2.1",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CIVIL Students",
+        "Technical Assistants",
+        "Course Instructors"
+      ],
+      "keywords": [
+        "CIV-LAB-304",
+        "Biochemical Oxygen Demand",
+        "BOD",
+        "Chemical Oxygen Demand",
+        "COD",
+        "Winkler titration",
+        "dissolved oxygen",
+        "incubator bottle test",
+        "environmental lab",
+        "wastewater analysis",
+        "Aryabhata Wing"
+      ],
+      "retrieval_signals": [
+        "BOD incubator bottle test calculation formula",
+        "Civil lab experiment 4 BOD reading",
+        "environmental engineering testing manual BOD COD protocols",
+        "Winkler titration DO formula Aryabhata wing",
+        "CIV304 environmental lab manual",
+        "biochemical oxygen demand test procedure civil lab",
+        "COD reflux testing experiment Aryabhata"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "ResolveDesk"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Technical Assistant (Lab Technician)",
+        "Head of Department (HOD) - Civil"
+      ],
+      "related_documents": [
+        "ACAD-CRS-010",
+        "ACAD-LAB-001"
+      ],
+      "content": "1. FACILITY IDENTIFICATION\nLaboratory Unit: Hydraulics and Environmental Engineering Laboratory\nDocument Code: CIV-LAB-304\nAdministering Department: Department of Civil Engineering (DEPT-CIVIL)\nLocation: Aryabhata Wing, Ground Floor\nCurricular Association: CIV304 Environmental Engineering and Waste Management (Program Core, 3 Credits)\nSupervisory Oversight: Technical Assistant (ROLE-TA-TECH) and Environmental Laboratory In-Charge\n\n2. PURPOSE AND ENVIRONMENTAL MONITORING SCOPE\nCIV-LAB-304 provides standardized experimental procedures for testing physical, chemical, and biological parameters in municipal water and industrial wastewater. This protocol details the quantitative determination of Biochemical Oxygen Demand (BOD) and Chemical Oxygen Demand (COD) in accordance with national environmental testing standards.\n\n3. BIOCHEMICAL OXYGEN DEMAND (BOD) PROTOCOL\n3.1 Principle: BOD measures the amount of dissolved molecular oxygen consumed by aerobic microorganisms to biochemically oxidize organic matter present in a wastewater sample during incubation over a specified duration.\n3.2 Apparatus and Reagents: 300 mL glass-stoppered BOD incubation bottles, thermostatically controlled BOD incubator (maintained strictly at 20\u00b0C +/- 1\u00b0C), aerated dilution water, manganous sulfate solution, alkaline-iodide-azide reagent, concentrated sulfuric acid, starch indicator, and standardized sodium thiosulfate (0.025N) titrant.\n3.3 Procedure (5-Day 20\u00b0C Test):\n  - Step 1: Neutralize sample pH (6.5 to 8.5) and prepare appropriate serial dilutions with aerated dilution water.\n  - Step 2: Fill two sets of 300 mL BOD bottles to overflowing without entraining air bubbles. Stopper tightly and water-seal the neck.\n  - Step 3: Determine Initial Dissolved Oxygen (DO_0) on the first bottle immediately using the Azide Modification of the Winkler Titration Method.\n  - Step 4: Incubate the second bottle in the dark inside the BOD incubator at 20\u00b0C for exactly 5 days (120 hours).\n  - Step 5: On Day 5, withdraw the bottle and determine Final Dissolved Oxygen (DO_5) via Winkler titration.\n3.4 Calculation Formula:\n  BOD_5 (mg/L) = [(DO_0 - DO_5) - (B_0 - B_5)] * Dilution Factor\n  where B_0 and B_5 represent initial and final DO of the blank dilution water.\n\n4. DISAMBIGUATION ADVISORY\nIn university communications, the acronym 'BOD' represents two entirely distinct entities:\n  a) Laboratory Chemical Parameter (Herein): 'Biochemical Oxygen Demand' (CIV-LAB-304), the water quality metric analyzed in the Environmental Engineering Lab, Aryabhata Wing.\n  b) Executive Disciplinary Tribunal: 'Board of Discipline / Proctorial Board' (STU-POL-005), the judicial panel handling student suspensions, expulsions, and severe disciplinary infractions."
+    },
+    {
+      "document_id": "CSE-CRS-304",
+      "title": "Computer Networks and IP Routing Protocols Lab Manual",
+      "department": "Department of Computer Science and Engineering",
+      "department_id": "DEPT-CSE",
+      "document_type": "Lab Manual",
+      "version": "2.4",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech CSE Students",
+        "Course Instructors",
+        "Graduate Teaching Assistants"
+      ],
+      "keywords": [
+        "CSE-CRS-304",
+        "Computer Networks",
+        "IP Routing",
+        "IPR",
+        "packet tracer",
+        "routing protocols",
+        "OSPF",
+        "BGP",
+        "RIP",
+        "subnetting",
+        "Wireshark",
+        "Turing Complex",
+        "socket programming"
+      ],
+      "retrieval_signals": [
+        "IPR packet tracer simulation questions",
+        "OSPF vs BGP experiment in IPR lab",
+        "computer networks and IP routing protocols lab manual Turing complex",
+        "Wireshark packet capture experiment CSE",
+        "CSE-CRS-304 lab manual",
+        "IP routing protocols laboratory exercises",
+        "distance vector routing simulation lab"
+      ],
+      "systems": [
+        "LabServer Forge",
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Teaching Assistant (Graduate)",
+        "Head of Department (HOD) - Computer Science"
+      ],
+      "related_documents": [
+        "ACAD-CRS-001",
+        "ACAD-CRS-003",
+        "ACAD-LAB-001"
+      ],
+      "content": "1. COURSE IDENTITY AND PRACTICUM PROFILE\nLaboratory Code: CSE-CRS-304\nLaboratory Title: Computer Networks and IP Routing Protocols Lab\nCurricular Abbreviation: IPR\nDepartment: Department of Computer Science and Engineering (DEPT-CSE)\nLocation: Turing Complex, Networks & Cloud Infrastructure Lab\nCurricular Association: CSE304 Computer Networks Core Course\nTeaching Personnel: Course Instructor (ROLE-PROF) and Graduate Teaching Assistant (ROLE-TA-ACAD)\n\n2. PURPOSE AND NETWORK SIMULATION SCOPE\nCSE-CRS-304 develops applied network engineering competencies across protocol stack implementation, dynamic router configuration, subnet planning, packet dissection, and internetwork routing protocols (IPR). The practicum combines software simulation topologies with physical enterprise router/switch hardware benches.\n\n3. CORE LABORATORY EXPERIMENTS\n3.1 Experiment 1: Packet Capture and Protocol Analysis using Wireshark\n  - Real-time packet tracing dissecting Ethernet frames, IPv4/IPv6 headers, ARP handshakes, TCP 3-way handshakes, and DNS query-response payloads.\n3.2 Experiment 2: Variable Length Subnet Masking (VLSM) Network Configuration\n  - Addressing architecture for multi-department enterprise topologies minimizing host IP waste.\n3.3 Experiment 3: Distance-Vector Dynamic Routing: Routing Information Protocol (RIPv2)\n  - Configuring RIP on multi-router topologies in Cisco Packet Tracer, observing routing table convergence, split horizon, and poison reverse loop mitigation.\n3.4 Experiment 4: Link-State Dynamic Routing: Open Shortest Path First (OSPF)\n  - Single-area and multi-area OSPF configuration, cost metric calculation, Designated Router (DR) and Backup Designated Router (BDR) election.\n3.5 Experiment 5: Inter-Domain Path-Vector Routing: Border Gateway Protocol (BGP)\n  - Autonomous System (AS) peering, eBGP and iBGP routing, and path attribute route filtering.\n3.6 Experiment 6: Socket Programming Interface\n  - Client-server network communication built using POSIX socket APIs (TCP and UDP) in C and Python.\n\n4. DISAMBIGUATION ADVISORY\nIn campus communications and academic queries, the abbreviation 'IPR' carries dual meanings:\n  a) Networking Laboratory Context (Herein): 'IP Routing' (CSE-CRS-304), the engineering laboratory in Turing Complex covering OSPF, BGP, and packet routing.\n  b) Legal and Research Context: 'Intellectual Property Rights' (RES-POL-004), the institutional policy administered by the Office of Sponsored Research in Faraday Tower covering faculty patents, trademarks, and copyright commercialization."
+    },
+    {
+      "document_id": "MEC-CRS-304",
+      "title": "Mechanical Design and Stress Analysis Course Outline",
+      "department": "Department of Mechanical Engineering",
+      "department_id": "DEPT-MECH",
+      "document_type": "Course Outline / Lab Guide",
+      "version": "2.8",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "Undergraduate B.Tech MECH Students",
+        "Course Instructors",
+        "Technical Assistants"
+      ],
+      "keywords": [
+        "MEC-CRS-304",
+        "Design Analysis",
+        "DA",
+        "stress analysis",
+        "mechanical design",
+        "finite element analysis",
+        "FEA",
+        "ANSYS",
+        "fatigue failure",
+        "von Mises",
+        "shaft design",
+        "Newton Hall"
+      ],
+      "retrieval_signals": [
+        "DA software lab tutorials in ANSYS",
+        "submit DA project report before Friday",
+        "mechanical design and stress analysis course outline Newton hall",
+        "von Mises failure criteria experiment MEC-CRS-304",
+        "fatigue design stress analysis mechanical",
+        "MEC-CRS-304 syllabus",
+        "finite element analysis lab tutorial mechanical"
+      ],
+      "systems": [
+        "LearnSphere LMS",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Course Instructor / Professor",
+        "Head of Department (HOD) - Mechanical",
+        "Technical Assistant (Lab Technician)"
+      ],
+      "related_documents": [
+        "ACAD-CRS-009",
+        "ACAD-LAB-001",
+        "EXAM-GUI-001"
+      ],
+      "content": "1. COURSE PROFILE\nCourse Code: MEC-CRS-304\nCourse Title: Mechanical Design and Stress Analysis\nCurricular Abbreviation: DA\nDepartment: Department of Mechanical Engineering (DEPT-MECH)\nSchool: School of Mechanical and Infrastructure Engineering (SCH-SMIE), Newton Hall (Floors 1-2)\nProgram: B.Tech Mechanical Engineering\nCredits: 4 (3 Lecture hours + 2 Computer-Aided Design / FEA Laboratory hours per week)\nPrerequisites: Engineering Mechanics & Strength of Materials (MEC201)\n\n2. COURSE DESCRIPTION\nMEC-CRS-304 covers the design of mechanical components subjected to static, dynamic, and cyclic stress regimes. The curriculum integrates classical stress theory, failure criteria, fatigue analysis, fracture mechanics, and computer-aided Finite Element Analysis (FEA) using enterprise software suites.\n\n3. THEORY CURRICULUM MODULES\n3.1 Module 1: Static Failure Theories and Stress Concentration\n  - Multi-axial stress states, principal stresses, and Mohr's circle representation.\n  - Static failure criteria: Maximum Normal Stress theory, Maximum Shear Stress theory (Tresca), and Distortion Energy theory (von Mises).\n  - Stress concentration factors (K_t) and geometric notch sensitivity.\n3.2 Module 2: Fatigue and Dynamic Failure\n  - Cyclic loading, S-N curves, endurance limit, and modifying factors (surface finish, size, reliability, temperature).\n  - Fluctuating stress analysis: Gerber parabola, Goodman diagram, and Soderberg relation.\n3.3 Module 3: Design of Power Transmission Elements\n  - Transmission shaft design under combined bending and torsion using ASME design codes.\n  - Keyways, splines, rigid and flexible shaft couplings.\n3.4 Module 4: Mechanical Fasteners, Welds, and Springs\n  - Threaded fasteners, bolt pretension, stiffness matrices, and bolted joint fatigue.\n  - Stress analysis of welded joints (butt and fillet welds) under eccentric loads.\n  - Design of helical and leaf springs.\n3.5 Module 5: Finite Element Analysis (FEA) Principles\n  - Discretization, element formulations (1D bar, 2D plane stress, 3D solid elements), boundary constraints, and convergence.\n\n4. CAD / FEA COMPUTATIONAL PRACTICUM\n4.1 Location: Central Workshop Computational Suite, Newton Hall.\n4.2 ANSYS FEA Practicum Exercises:\n  - Lab 1: 2D stress concentration analysis around circular cutouts in tensile plates.\n  - Lab 2: Static stress and deflection modeling of cantilever beams under point and distributed loads.\n  - Lab 3: Von Mises stress and safety factor simulation of a connecting rod undergoing peak gas pressure.\n  - Lab 4: Modal dynamic analysis determining natural frequencies of a machine mounting bracket.\n\n5. DISAMBIGUATION ADVISORY\nIn university communications, the abbreviation 'DA' has multiple meanings:\n  a) Engineering Course Context (Herein): 'Design Analysis' (MEC-CRS-304), the mechanical engineering course and FEA lab in Newton Hall.\n  b) Financial Context: 'Daily Allowance' (FIN-POL-006), monetary per diem reimbursement for official travel.\n  c) Academic Counseling Context: 'Department Advisor / Faculty Advisor' (ROLE-FA / ACAD-POL-006)."
+    },
+    {
+      "document_id": "ACAD-LAB-001",
+      "title": "General Engineering Laboratory Safety Rules and Breakage Policy",
+      "department": "Academic Affairs",
+      "department_id": "DEPT-ACAD",
+      "document_type": "Institutional Lab Safety Policy",
+      "version": "4.0",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Engineering Students",
+        "Technical Assistants",
+        "Course Instructors",
+        "Heads of Department",
+        "Finance Office"
+      ],
+      "keywords": [
+        "ACAD-LAB-001",
+        "lab safety",
+        "equipment breakage policy",
+        "caution deposit deduction",
+        "lab rules",
+        "personal protective equipment",
+        "PPE",
+        "accidental damage",
+        "gross negligence",
+        "Technical Assistant",
+        "ResolveDesk",
+        "PayVarsity"
+      ],
+      "retrieval_signals": [
+        "broke equipment in lab what is the fine",
+        "lab breakage fee deduction from caution deposit",
+        "accidental damage to oscilloscope procedure",
+        "general engineering laboratory safety rules and breakage policy",
+        "technical assistant signature on lab record",
+        "call the lab TA for machine calibration",
+        "safety rules in mechanical workshop Newton hall",
+        "who assesses lab equipment damage"
+      ],
+      "systems": [
+        "ResolveDesk",
+        "PayVarsity",
+        "UniCampus ERP"
+      ],
+      "roles": [
+        "Technical Assistant (Lab Technician)",
+        "Course Instructor / Professor",
+        "Head of Department (HOD)",
+        "Chief Finance Officer / Bursar",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "ECE-LAB-002",
+        "CIV-LAB-304",
+        "STU-POL-005",
+        "FIN-POL-003",
+        "OPS-LAB-003"
+      ],
+      "content": "1. INSTITUTIONAL PURPOSE AND MANDATE\nDemo University maintains state-of-the-art engineering testing laboratories, high-performance computing centers, heavy machinery sheds, and chemical analytical suites across the North and South Academic quadrants. This policy establishes mandatory laboratory safety regulations, distinguishes bona fide accidental equipment failure from willful negligence, and outlines the financial and disciplinary procedures for equipment damage.\n\n2. JURISDICTION AND PARTICIPATING LABORATORIES\nApplies across all university instructional laboratories, including:\n  - Turing Complex: Data Systems Lab, AI & Vision Lab, Networks & Cloud Lab, Software Engineering Studio.\n  - Faraday Tower: VLSI Design Centre, Embedded IoT Lab, Microwave RF Lab, DC Machines Lab (ECE-LAB-002).\n  - Newton Hall: Central Workshop, CNC Milling Unit, Thermal Engineering Lab (MEC204), Fluid Dynamics Lab.\n  - Aryabhata Wing: Structural Materials Lab, Geotechnical Lab, Hydraulics & Environmental Lab (CIV-LAB-304).\n\n3. MANDATORY LABORATORY OPERATING REGULATIONS\n3.1 Personal Protective Equipment (PPE): Students must wear appropriate PPE, including closed-toe protective shoes, lab coats, and safety glasses when mandated by lab safety protocols. Loose jewelry and ties are prohibited near rotating machinery.\n3.2 Pre-Power Inspection: In all electrical, electronics, and heavy mechanical facilities, circuits and machinery must receive a formal physical inspection and sign-off from the assigned Technical Assistant (ROLE-TA-TECH) prior to applying electrical power.\n3.3 Equipment Removal Prohibited: Laboratory instruments, test probes, microcontroller kits, and tools must not be removed from lab rooms without formal sign-out passes.\n\n4. BREAKAGE AND DAMAGE ASSESSMENT WORKFLOW (CROSS-DEPARTMENT WORKFLOW REL-018)\n4.1 Immediate Incident Logging: When equipment damage occurs (e.g., blown oscilloscope, fractured testing probe, damaged CNC cutter), the student must immediately notify the Course Instructor and Technical Assistant. The Technical Assistant logs an Equipment Incident Report on ResolveDesk within 24 hours.\n4.2 Technical Assessment: Departmental technicians and Campus Operations repair engineers inspect the instrument to determine whether damage resulted from genuine instructional wear / accidental learning error, or gross negligence / intentional misuse.\n4.3 Financial Liability Resolution:\n  a) Accidental Damage: If damage occurred during legitimate instructional execution following verified safety protocols, the university repair fund absorbs the repair cost. No punitive fine is assessed to the student.\n  b) Negligent or Willful Damage: If damage resulted from defiance of instructor safety rules, unauthorized circuit energization, or horseplay, the Department Damage Assessment Committee assesses the repair or replacement cost. The fee is posted to the student's PayVarsity account or deducted from the Institutional Caution Deposit at graduation.\n  c) Malicious Vandalism: Willful destruction of university equipment is categorized as a Level-3 disciplinary offense, resulting in immediate suspension and formal inquiry before the Proctorial Disciplinary Board.\n\n5. ADMINISTRATIVE COORDINATION\nAdministered jointly by the academic engineering departments (CSE, ECE, MECH, CIVIL) and the Office of Academic Affairs, Chanakya Bhavan."
+    }
+  ]
+}
