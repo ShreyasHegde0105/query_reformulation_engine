@@ -45,10 +45,16 @@ class TestQueryReformulator(unittest.TestCase):
         self.assertEqual(result, ["a", "b", "c"])
 
     def test_duplicate_removal(self):
-        response = json.dumps({"reformulations": ["same", "same", "different"]})
+        response = json.dumps({"reformulations": ["same", "same", "different", "same"]})
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("same query")
-        self.assertEqual(result, ["different"])
+        self.assertEqual(result, ["same", "different"])
+
+    def test_duplicate_removal_multiple(self):
+        response = json.dumps({"reformulations": ["A", "A", "B", "A", "C", "B"]})
+        self.mock_client.generate.return_value = response
+        result = self.reformulator.generate_variants("query")
+        self.assertEqual(result, ["A", "B", "C"])
 
     def test_original_query_duplicate_removed(self):
         normalized = normalize_query("query original")

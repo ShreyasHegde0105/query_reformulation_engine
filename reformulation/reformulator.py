@@ -38,14 +38,15 @@ class QueryReformulator:
     """
 
     _PROMPT_TEMPLATE = (
-        "You are an AI assistant that generates *semantically equivalent* search"
-        " query alternatives.  Produce concise, search‑oriented queries that"
-        " preserve all important entities, identifiers, acronyms, and technical"
-        " terms from the original query.  Do **not** answer the question or"
-        " invent new facts.  Return **only** a JSON object with a single key"
-        " ``reformulations`` containing a list of alternative query strings."
-        " The list must contain **at most** {max_variants} items.  Use the"
-        " following normalized query as the basis: \"{normalized_query}\""
+        "You are an AI assistant that generates semantically equivalent query reformulations "
+        "useful for enterprise search. Produce concise, search-oriented query strings that "
+        "preserve the original intent, entities, identifiers, acronyms, and technical terms. "
+        "Do not answer the question or invent new facts. "
+        "The original query should not be unnecessarily repeated. "
+        "Return your response as a valid JSON object with the following structure:\n"
+        '{{\n  "reformulations": [\n    "variant 1",\n    "variant 2"\n  ]\n}}\n'
+        "The list must contain at most {max_variants} items. "
+        'Use the following normalized query as the basis: "{normalized_query}"'
     )
 
     def __init__(self, llm_client: LLMClient):
@@ -121,11 +122,11 @@ class QueryReformulator:
             if norm_variant == normalized:
                 continue
             candidates.append(norm_variant)
-        # Remove exact duplicates: keep only items that appear exactly once
-        from collections import Counter
-        freq = Counter(candidates)
+        # Remove exact duplicates: use FIRST-OCCURRENCE-WINS
+        seen = set()
         for var in candidates:
-            if freq[var] == 1:
+            if var not in seen:
+                seen.add(var)
                 clean_variants.append(var)
                 if len(clean_variants) >= max_variants:
                     break
