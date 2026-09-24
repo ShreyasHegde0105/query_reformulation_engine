@@ -86,6 +86,12 @@ class QueryReformulator:
         # --- LLM call --------------------------------------------------------------
         llm_output = self.llm_client.generate(prompt)
 
+        # --- Strip potential Markdown formatting ---
+        import re
+        match = re.search(r"```(?:json)?\s*(.*?)\s*```", llm_output, flags=re.DOTALL)
+        if match:
+            llm_output = match.group(1).strip()
+
         # --- JSON parsing ----------------------------------------------------------
         try:
             payload = json.loads(llm_output)

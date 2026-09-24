@@ -113,5 +113,25 @@ class TestQueryReformulator(unittest.TestCase):
         second = self.reformulator.generate_variants("test")
         self.assertEqual(first, second)
 
+    def test_normal_raw_json(self):
+        self.mock_client.generate.return_value = '{"reformulations": ["test1"]}'
+        result = self.reformulator.generate_variants("query")
+        self.assertEqual(result, ["test1"])
+
+    def test_markdown_json_wrapped(self):
+        self.mock_client.generate.return_value = '```json\n{"reformulations": ["test2"]}\n```'
+        result = self.reformulator.generate_variants("query")
+        self.assertEqual(result, ["test2"])
+
+    def test_markdown_wrapped(self):
+        self.mock_client.generate.return_value = '```\n{"reformulations": ["test3"]}\n```'
+        result = self.reformulator.generate_variants("query")
+        self.assertEqual(result, ["test3"])
+
+    def test_truly_invalid_json(self):
+        self.mock_client.generate.return_value = '```json\n{"reformulations": ["test4" missing bracket\n```'
+        with self.assertRaises(ReformulationParseError):
+            self.reformulator.generate_variants("query")
+
 if __name__ == "__main__":
     unittest.main()
