@@ -5,6 +5,7 @@ import dataclasses
 from reformulation.search_pipeline import SearchPipeline
 from reformulation.reformulator import QueryReformulator
 from reformulation.semantic_similarity import SemanticSimilarity
+from reformulation.normalizer import normalize_query
 from retrieval.hybrid_retriever import HybridRetriever
 from retrieval.models import RetrievedChunk
 
@@ -28,8 +29,12 @@ class TestSearchPipeline(unittest.TestCase):
         # By default, pass through
         self.semantic_similarity.filter_redundant.side_effect = lambda qs: qs
 
+        # The normalized form of the raw input "original query" used in these tests.
+        # normalize_query applies sentence-case, so "original query" → "Original query".
+        self._norm_original = normalize_query("original query")
+
         def mock_retrieve(query, **kwargs):
-            if query == "original query":
+            if query == self._norm_original:
                 return [
                     RetrievedChunk(chunk_id="A", document_id="d1", title="T", domain="D", chunk_index=0, chunk_text="A", section=None, token_count=10, score=1.0),
                     RetrievedChunk(chunk_id="B", document_id="d2", title="T", domain="D", chunk_index=0, chunk_text="B", section=None, token_count=10, score=0.9),
@@ -47,10 +52,13 @@ class TestSearchPipeline(unittest.TestCase):
     def test_basic_end_to_end_pipeline(self):
         results = self.pipeline.search("original query")
         
-        # Verify validation and normalization happened implicitly
-        # (normalized original query is "original query")
+        # Verify validation and normalization happened implicitly.
+        # The reformulator is called with the RAW query (as per pipeline design).
         self.reformulator.generate_variants.assert_called_once_with("original query", max_variants=5)
-        self.semantic_similarity.filter_redundant.assert_called_once_with(["original query", "variant 1", "variant 2"])
+        # The semantic similarity filter receives the NORMALIZED query first, then variants.
+        self.semantic_similarity.filter_redundant.assert_called_once_with(
+            [self._norm_original, "variant 1", "variant 2"]
+        )
         
         # Ensure hybrid retriever was called for the original query and the variants
         self.assertEqual(self.hybrid_retriever.retrieve.call_count, 3)
@@ -63,9 +71,12 @@ class TestSearchPipeline(unittest.TestCase):
         # We enforce a specific rank test
         # Query 1 -> rank 1: A, rank 2: B, rank 3: C
         # Query 2 -> rank 1: B, rank 2: C, rank 3: D
+
+        # Use already-normalised, clean query strings so normalization is a no-op.
+        norm_q1 = normalize_query("Q1")
         
         def mock_retrieve_agg(query, **kwargs):
-            if query == "Q1":
+            if query == norm_q1:
                 return [
                     RetrievedChunk(chunk_id="A", document_id="d", title="t", domain="d", chunk_index=0, chunk_text="t", section=None, token_count=1, score=1.0),
                     RetrievedChunk(chunk_id="B", document_id="d", title="t", domain="d", chunk_index=0, chunk_text="t", section=None, token_count=1, score=0.9),
@@ -119,10 +130,12 @@ class TestSearchPipeline(unittest.TestCase):
         self.assertEqual(len(results), 3)
 
     def test_deterministic_ordering_tie_breaker(self):
-        # Q1 and Q2 produce A and B at same rank, so their scores tie.
+        # Q1 and Q2 produce Z and A at same rank, so their scores tie.
         # chunk_id string comparison will break the tie.
+        norm_q1 = normalize_query("Q1")
+
         def mock_retrieve_tie(query, **kwargs):
-            if query == "Q1":
+            if query == norm_q1:
                 return [
                     RetrievedChunk(chunk_id="Z", document_id="d", title="t", domain="d", chunk_index=0, chunk_text="t", section=None, token_count=1, score=1.0)
                 ]
@@ -148,8 +161,10 @@ class TestSearchPipeline(unittest.TestCase):
         
         results = self.pipeline.search("query")
         
+        # The normalized form of "query" is "Query" (sentence case)
+        expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query="query", vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
         )
         self.assertEqual(len(results), 1)
 
@@ -160,19 +175,22 @@ class TestSearchPipeline(unittest.TestCase):
             RetrievedChunk(chunk_id="A", document_id="d", title="t", domain="d", chunk_index=0, chunk_text="t", section=None, token_count=1, score=1.0)
         ]
         
-        # Pipeline should catch and fallback to original query
+        # Pipeline should catch and fallback to normalized query
         results = self.pipeline.search("query")
         
+        expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query="query", vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
         )
         self.assertEqual(len(results), 1)
 
     def test_retrieval_branch_failure_continues(self):
         self.reformulator.generate_variants.return_value = ["bad variant"]
         
+        norm_query = normalize_query("query")
+
         def mock_retrieve_fail(query, **kwargs):
-            if query == "query":
+            if query == norm_query:
                 return [RetrievedChunk(chunk_id="A", document_id="d", title="t", domain="d", chunk_index=0, chunk_text="t", section=None, token_count=1, score=1.0)]
             else:
                 raise RuntimeError("Retrieval failed")

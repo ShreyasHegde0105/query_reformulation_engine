@@ -125,11 +125,12 @@ class InteractiveDemo:
 
         while True:
             try:
-                query = input("\nEnter your query (or type 'exit'):\n> ").strip()
-                if not query:
+                raw_input = input("\nEnter your query (or type 'exit'):\n> ")
+                if not raw_input or not raw_input.strip():
                     continue
-                if query.lower() in ('exit', 'quit'):
+                if raw_input.strip().lower() in ('exit', 'quit'):
                     break
+                query = raw_input
 
                 print("\n[1] ORIGINAL QUERY")
                 print(f"> {query}")

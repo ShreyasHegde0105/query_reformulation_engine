@@ -18,10 +18,11 @@ class TestQueryReformulator(unittest.TestCase):
         response = json.dumps({"reformulations": ["alternative one", "alternative two"]})
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("attendance policy", max_variants=5)
-        self.assertEqual(result, ["alternative one", "alternative two"])
+        # normalize_query is applied to each item; "alternative one" -> "Alternative one"
+        self.assertEqual(result, [normalize_query("alternative one"), normalize_query("alternative two")])
         # ensure prompt contains normalized query
         prompt_sent = self.mock_client.generate.call_args[0][0]
-        self.assertIn("attendance policy", prompt_sent)
+        self.assertIn("attendance policy", prompt_sent.lower())
 
     def test_validation_invalid_inputs(self):
         with self.assertRaises(ValueError):
@@ -35,6 +36,7 @@ class TestQueryReformulator(unittest.TestCase):
         self.mock_client.generate.return_value = json.dumps({"reformulations": []})
         self.reformulator.generate_variants("  What   is   leave policy?  ")
         prompt = self.mock_client.generate.call_args[0][0]
+        # normalize_query("  What   is   leave policy?  ") -> "What is leave policy?"
         self.assertIn("What is leave policy?", prompt)
 
     def test_max_variants_limit(self):
@@ -42,18 +44,22 @@ class TestQueryReformulator(unittest.TestCase):
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("policy", max_variants=3)
         self.assertEqual(len(result), 3)
-        self.assertEqual(result, ["a", "b", "c"])
+        # Results are normalized versions of the LLM output
+        self.assertEqual(result, [normalize_query("a"), normalize_query("b"), normalize_query("c")])
 
     def test_duplicate_removal(self):
         response = json.dumps({"reformulations": ["same", "same", "different", "same"]})
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("same query")
-        self.assertEqual(result, ["same", "different"])
+        # After normalization: "same" -> "Same", "different" -> "Different"
+        # "same query" -> "Same query" (the normalized original); "Same" != "Same query"
+        self.assertEqual(result, [normalize_query("same"), normalize_query("different")])
 
     def test_duplicate_removal_multiple(self):
         response = json.dumps({"reformulations": ["A", "A", "B", "A", "C", "B"]})
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("query")
+        # Single-letter tokens: normalize_query("A") stays "A" (acronym detection keeps it)
         self.assertEqual(result, ["A", "B", "C"])
 
     def test_original_query_duplicate_removed(self):
@@ -61,7 +67,9 @@ class TestQueryReformulator(unittest.TestCase):
         response = json.dumps({"reformulations": [normalized, "other"]})
         self.mock_client.generate.return_value = response
         result = self.reformulator.generate_variants("query original")
-        self.assertEqual(result, ["other"])
+        # normalize_query(normalized) == normalized; it equals the original normalized → dropped
+        # "other" -> normalize_query("other") -> "Other"
+        self.assertEqual(result, [normalize_query("other")])
 
     def test_empty_results(self):
         response = json.dumps({"reformulations": []})
@@ -92,7 +100,8 @@ class TestQueryReformulator(unittest.TestCase):
     def test_whitespace_items_removed(self):
         self.mock_client.generate.return_value = json.dumps({"reformulations": ["", "   ", "valid"]})
         result = self.reformulator.generate_variants("test")
-        self.assertEqual(result, ["valid"])
+        # Empty and whitespace-only items are dropped; "valid" is normalized
+        self.assertEqual(result, [normalize_query("valid")])
 
     def test_invalid_max_variants(self):
         with self.assertRaises(ValueError):
@@ -116,17 +125,17 @@ class TestQueryReformulator(unittest.TestCase):
     def test_normal_raw_json(self):
         self.mock_client.generate.return_value = '{"reformulations": ["test1"]}'
         result = self.reformulator.generate_variants("query")
-        self.assertEqual(result, ["test1"])
+        self.assertEqual(result, [normalize_query("test1")])
 
     def test_markdown_json_wrapped(self):
         self.mock_client.generate.return_value = '```json\n{"reformulations": ["test2"]}\n```'
         result = self.reformulator.generate_variants("query")
-        self.assertEqual(result, ["test2"])
+        self.assertEqual(result, [normalize_query("test2")])
 
     def test_markdown_wrapped(self):
         self.mock_client.generate.return_value = '```\n{"reformulations": ["test3"]}\n```'
         result = self.reformulator.generate_variants("query")
-        self.assertEqual(result, ["test3"])
+        self.assertEqual(result, [normalize_query("test3")])
 
     def test_truly_invalid_json(self):
         self.mock_client.generate.return_value = '```json\n{"reformulations": ["test4" missing bracket\n```'
