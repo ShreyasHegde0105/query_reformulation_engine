@@ -1,0 +1,2279 @@
+{
+  "aggregate": {
+    "mean_candidate_recall": {
+      "20": 0.78,
+      "30": 0.83,
+      "50": 0.86
+    },
+    "classification_counts": {
+      "20": {
+        "ALL_PRESENT": 31,
+        "SOME_PRESENT": 16,
+        "NONE_PRESENT": 3
+      },
+      "30": {
+        "ALL_PRESENT": 36,
+        "SOME_PRESENT": 11,
+        "NONE_PRESENT": 3
+      },
+      "50": {
+        "ALL_PRESENT": 38,
+        "SOME_PRESENT": 10,
+        "NONE_PRESENT": 2
+      }
+    }
+  },
+  "type_a_queries": [
+    "Q004",
+    "Q014"
+  ],
+  "type_b_queries": [
+    "Q005",
+    "Q008",
+    "Q016",
+    "Q017",
+    "Q020",
+    "Q024",
+    "Q027",
+    "Q047"
+  ],
+  "per_query": {
+    "Q001": {
+      "query_id": "Q001",
+      "query": "semester fees",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-001_CHUNK_002",
+        "FIN-POL-001_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_001",
+            "FIN-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.9428938999999446
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_001",
+            "FIN-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0076114000003145
+        },
+        "50": {
+          "pool_size": 48,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_001",
+            "FIN-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9641473000001497
+        }
+      }
+    },
+    "Q002": {
+      "query_id": "Q002",
+      "query": "hostel allotment",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "HSTL-REG-001_CHUNK_001",
+        "HSTL-REG-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0224775999995472
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8703395000002274
+        },
+        "50": {
+          "pool_size": 47,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.752793799999381
+        }
+      }
+    },
+    "Q003": {
+      "query_id": "Q003",
+      "query": "CSE301 prerequisites",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-COURSE-REG_CHUNK_004",
+        "ACAD-CRS-003_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_001",
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.7680949999994482
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_001",
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.664854199999354
+        },
+        "50": {
+          "pool_size": 39,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_001",
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9069339999996373
+        }
+      }
+    },
+    "Q004": {
+      "query_id": "Q004",
+      "query": "academic transcript",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-POL-007_CHUNK_002",
+        "ACAD-POL-007_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "ACAD-POL-007_CHUNK_001",
+            "ACAD-POL-007_CHUNK_002"
+          ],
+          "latency_s": 1.977199599999949
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "ACAD-POL-007_CHUNK_001",
+            "ACAD-POL-007_CHUNK_002"
+          ],
+          "latency_s": 1.9938324000004286
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "ACAD-POL-007_CHUNK_001",
+            "ACAD-POL-007_CHUNK_002"
+          ],
+          "latency_s": 2.0079644000006738
+        }
+      }
+    },
+    "Q005": {
+      "query_id": "Q005",
+      "query": "library book renewal",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "LIB-POL-001_CHUNK_002",
+        "LIB-POL-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "LIB-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "LIB-POL-001_CHUNK_002"
+          ],
+          "latency_s": 1.9772898999999597
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "LIB-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "LIB-POL-001_CHUNK_002"
+          ],
+          "latency_s": 1.9940022000000681
+        },
+        "50": {
+          "pool_size": 37,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "LIB-POL-001_CHUNK_002",
+            "LIB-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.065719100000024
+        }
+      }
+    },
+    "Q006": {
+      "query_id": "Q006",
+      "query": "Can I get a refund if I withdraw from the semester?",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-004_CHUNK_001",
+        "FIN-POL-004_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0845933000000514
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.484251900000345
+        },
+        "50": {
+          "pool_size": 37,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9449137000001429
+        }
+      }
+    },
+    "Q007": {
+      "query_id": "Q007",
+      "query": "What are the requirements for hostel allotment?",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-HOSTEL-ALLOC_CHUNK_001",
+        "POL-HOSTEL-ALLOC_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-HOSTEL-ALLOC_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "POL-HOSTEL-ALLOC_CHUNK_002"
+          ],
+          "latency_s": 2.7557039000002987
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-HOSTEL-ALLOC_CHUNK_001",
+            "POL-HOSTEL-ALLOC_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.8274606000004496
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-HOSTEL-ALLOC_CHUNK_001",
+            "POL-HOSTEL-ALLOC_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.274571800000558
+        }
+      }
+    },
+    "Q008": {
+      "query_id": "Q008",
+      "query": "What happens if my attendance is below 75%?",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-ATTEND_CHUNK_003",
+        "POL-ATTEND_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 2.7822498999994423
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 3.2363305999997465
+        },
+        "50": {
+          "pool_size": 45,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 2.304200700000365
+        }
+      }
+    },
+    "Q009": {
+      "query_id": "Q009",
+      "query": "How many credits can an undergraduate student register per semester?",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-COURSE-REG_CHUNK_003",
+        "POL-COURSE-REG_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 2.8673254000004817
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 3.0873792999991565
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 2.973989700000857
+        }
+      }
+    },
+    "Q010": {
+      "query_id": "Q010",
+      "query": "What is the fine for returning library books late?",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-002_CHUNK_003",
+        "LIB-POL-001_CHUNK_004"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-002_CHUNK_003",
+            "LIB-POL-001_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.8468149999998786
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-002_CHUNK_003",
+            "LIB-POL-001_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.7357551000004605
+        },
+        "50": {
+          "pool_size": 43,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-002_CHUNK_003",
+            "LIB-POL-001_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.7568384999995033
+        }
+      }
+    },
+    "Q011": {
+      "query_id": "Q011",
+      "query": "sem fees payment schedule",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-001_CHUNK_002",
+        "FIN-POL-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_002",
+            "FIN-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.6410789999999906
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_002",
+            "FIN-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.6707494000002043
+        },
+        "50": {
+          "pool_size": 41,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_002",
+            "FIN-POL-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.5201007999994545
+        }
+      }
+    },
+    "Q012": {
+      "query_id": "Q012",
+      "query": "dept regulations for lab safety",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-LAB-001_CHUNK_002",
+        "ACAD-LAB-001_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "ACAD-LAB-001_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "ACAD-LAB-001_CHUNK_002"
+          ],
+          "latency_s": 2.4987707000000228
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-LAB-001_CHUNK_001",
+            "ACAD-LAB-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.436584899999616
+        },
+        "50": {
+          "pool_size": 43,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-LAB-001_CHUNK_001",
+            "ACAD-LAB-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.599031300000206
+        }
+      }
+    },
+    "Q013": {
+      "query_id": "Q013",
+      "query": "univ admission eligibility for international students",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ADM-INT-001_CHUNK_001",
+        "ADM-INT-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-INT-001_CHUNK_001",
+            "ADM-INT-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.443760099999963
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-INT-001_CHUNK_001",
+            "ADM-INT-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.4708012000000963
+        },
+        "50": {
+          "pool_size": 45,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-INT-001_CHUNK_001",
+            "ADM-INT-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.5086105000000316
+        }
+      }
+    },
+    "Q014": {
+      "query_id": "Q014",
+      "query": "min attendance criteria for SEE examination",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-SEE_CHUNK_002",
+        "POL-ATTEND_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002",
+            "POL-SEE_CHUNK_002"
+          ],
+          "latency_s": 2.3580689999998867
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002",
+            "POL-SEE_CHUNK_002"
+          ],
+          "latency_s": 2.583164699999543
+        },
+        "50": {
+          "pool_size": 39,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002",
+            "POL-SEE_CHUNK_002"
+          ],
+          "latency_s": 2.6077690000001894
+        }
+      }
+    },
+    "Q015": {
+      "query_id": "Q015",
+      "query": "prof office hours and mentoring guidelines",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-POL-006_CHUNK_003",
+        "ACAD-POL-006_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-006_CHUNK_002",
+            "ACAD-POL-006_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.45203279999987
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-006_CHUNK_002",
+            "ACAD-POL-006_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.4034630000005563
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-006_CHUNK_002",
+            "ACAD-POL-006_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.5146826999998666
+        }
+      }
+    },
+    "Q016": {
+      "query_id": "Q016",
+      "query": "attendence shortage rules",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-ATTEND_CHUNK_003",
+        "POL-ATTEND_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 2.0667193999997835
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 2.281778999999915
+        },
+        "50": {
+          "pool_size": 43,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-ATTEND_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-ATTEND_CHUNK_002"
+          ],
+          "latency_s": 1.8661062999999558
+        }
+      }
+    },
+    "Q017": {
+      "query_id": "Q017",
+      "query": "hostel allotmnt process",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "HSTL-REG-001_CHUNK_001",
+        "HSTL-REG-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.292026000000078
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2156711999996332
+        },
+        "50": {
+          "pool_size": 46,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-REG-001_CHUNK_001",
+            "HSTL-REG-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.168706500000553
+        }
+      }
+    },
+    "Q018": {
+      "query_id": "Q018",
+      "query": "revalution fee and deadline",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-REEVAL_CHUNK_003",
+        "POL-REEVAL_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-REEVAL_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-REEVAL_CHUNK_002"
+          ],
+          "latency_s": 1.9480926000005638
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-REEVAL_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-REEVAL_CHUNK_002"
+          ],
+          "latency_s": 1.9999535999995715
+        },
+        "50": {
+          "pool_size": 49,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-REEVAL_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-REEVAL_CHUNK_002"
+          ],
+          "latency_s": 2.0076123999997435
+        }
+      }
+    },
+    "Q019": {
+      "query_id": "Q019",
+      "query": "scholarship reqmnt criteria",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-SCH-001_CHUNK_002",
+        "FIN-SCH-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.362469499999861
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.203346799999963
+        },
+        "50": {
+          "pool_size": 48,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.281227399999807
+        }
+      }
+    },
+    "Q020": {
+      "query_id": "Q020",
+      "query": "semester withdrawl procedure",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-004_CHUNK_003",
+        "FIN-POL-004_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "FIN-POL-004_CHUNK_002",
+            "FIN-POL-004_CHUNK_003"
+          ],
+          "latency_s": 2.3230365999997957
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.0,
+          "status": "NONE_PRESENT",
+          "present_relevant": [],
+          "absent_relevant": [
+            "FIN-POL-004_CHUNK_002",
+            "FIN-POL-004_CHUNK_003"
+          ],
+          "latency_s": 2.254880999999841
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "FIN-POL-004_CHUNK_003"
+          ],
+          "latency_s": 2.1483078999999634
+        }
+      }
+    },
+    "Q021": {
+      "query_id": "Q021",
+      "query": "cse301 syllabus and textbooks",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-CRS-003_CHUNK_003",
+        "ACAD-CRS-003_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "ACAD-CRS-003_CHUNK_003"
+          ],
+          "latency_s": 1.8736615999996502
+        },
+        "30": {
+          "pool_size": 29,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_002",
+            "ACAD-CRS-003_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9343925000002855
+        },
+        "50": {
+          "pool_size": 29,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_002",
+            "ACAD-CRS-003_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.729372400000102
+        }
+      }
+    },
+    "Q022": {
+      "query_id": "Q022",
+      "query": "ECE201 course outline",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-CRS-007_CHUNK_002",
+        "ACAD-CRS-007_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-007_CHUNK_001",
+            "ACAD-CRS-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.817370700000538
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-007_CHUNK_001",
+            "ACAD-CRS-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8926272000007884
+        },
+        "50": {
+          "pool_size": 45,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-007_CHUNK_001",
+            "ACAD-CRS-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8862625000001572
+        }
+      }
+    },
+    "Q023": {
+      "query_id": "Q023",
+      "query": "MEC304 course outline",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "MEC-CRS-304_CHUNK_001",
+        "MEC-CRS-304_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "MEC-CRS-304_CHUNK_001",
+            "MEC-CRS-304_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8791649000004327
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "MEC-CRS-304_CHUNK_001",
+            "MEC-CRS-304_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.77941009999995
+        },
+        "50": {
+          "pool_size": 42,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "MEC-CRS-304_CHUNK_001",
+            "MEC-CRS-304_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8167947000001732
+        }
+      }
+    },
+    "Q024": {
+      "query_id": "Q024",
+      "query": "CSE301 practical laboratory assignments",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-CRS-003_CHUNK_005",
+        "ACAD-CRS-003_CHUNK_004"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_004"
+          ],
+          "absent_relevant": [
+            "ACAD-CRS-003_CHUNK_005"
+          ],
+          "latency_s": 2.2398431999999957
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_004"
+          ],
+          "absent_relevant": [
+            "ACAD-CRS-003_CHUNK_005"
+          ],
+          "latency_s": 2.231277500000033
+        },
+        "50": {
+          "pool_size": 39,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-003_CHUNK_004"
+          ],
+          "absent_relevant": [
+            "ACAD-CRS-003_CHUNK_005"
+          ],
+          "latency_s": 2.1679811999993035
+        }
+      }
+    },
+    "Q025": {
+      "query_id": "Q025",
+      "query": "CIV205 structural analysis computing manual",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-CRS-010_CHUNK_001",
+        "ACAD-CRS-010_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-010_CHUNK_001",
+            "ACAD-CRS-010_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.5712219999995796
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-010_CHUNK_001",
+            "ACAD-CRS-010_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.5994737000000896
+        },
+        "50": {
+          "pool_size": 40,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-CRS-010_CHUNK_001",
+            "ACAD-CRS-010_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.6379267999991498
+        }
+      }
+    },
+    "Q026": {
+      "query_id": "Q026",
+      "query": "attendance below 75 percent medical condonation",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ACAD-POL-003_CHUNK_002",
+        "ACAD-POL-003_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-003_CHUNK_001",
+            "ACAD-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2403198000001794
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-003_CHUNK_001",
+            "ACAD-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.3339689000004
+        },
+        "50": {
+          "pool_size": 35,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ACAD-POL-003_CHUNK_001",
+            "ACAD-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.315232800000558
+        }
+      }
+    },
+    "Q027": {
+      "query_id": "Q027",
+      "query": "minimum CGPA 6.0 academic probation",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-COURSE-REG_CHUNK_004",
+        "POL-COURSE-REG_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "latency_s": 2.2310834999998406
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "latency_s": 2.2016986999997243
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003",
+            "POL-COURSE-REG_CHUNK_004"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.4564485000000786
+        }
+      }
+    },
+    "Q028": {
+      "query_id": "Q028",
+      "query": "caution deposit refund within 30 days",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-003_CHUNK_003",
+        "FIN-POL-003_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-003_CHUNK_002",
+            "FIN-POL-003_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.170940299999529
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-003_CHUNK_002",
+            "FIN-POL-003_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2196626999993896
+        },
+        "50": {
+          "pool_size": 41,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-003_CHUNK_002",
+            "FIN-POL-003_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.3443002000003617
+        }
+      }
+    },
+    "Q029": {
+      "query_id": "Q029",
+      "query": "maximum 28 credit load per semester",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-COURSE-REG_CHUNK_003",
+        "POL-COURSE-REG_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 2.280381700000362
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 2.1875999000003503
+        },
+        "50": {
+          "pool_size": 49,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-COURSE-REG_CHUNK_003"
+          ],
+          "absent_relevant": [
+            "POL-COURSE-REG_CHUNK_002"
+          ],
+          "latency_s": 2.2485855999993873
+        }
+      }
+    },
+    "Q030": {
+      "query_id": "Q030",
+      "query": "late fee fine 500 rupees per week",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-001_CHUNK_003",
+        "FIN-POL-002_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_003",
+            "FIN-POL-002_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8473168000000442
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_003",
+            "FIN-POL-002_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8304732999995394
+        },
+        "50": {
+          "pool_size": 44,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-001_CHUNK_003",
+            "FIN-POL-002_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8621456999999282
+        }
+      }
+    },
+    "Q031": {
+      "query_id": "Q031",
+      "query": "semester withdrawal refund policy",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-POL-004_CHUNK_001",
+        "FIN-POL-004_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9699375000000146
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.070056200000181
+        },
+        "50": {
+          "pool_size": 39,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-POL-004_CHUNK_001",
+            "FIN-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.943668200000502
+        }
+      }
+    },
+    "Q032": {
+      "query_id": "Q032",
+      "query": "zero tolerance anti ragging policy",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-ANTI-RAGGING_CHUNK_001",
+        "POL-ANTI-RAGGING_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-ANTI-RAGGING_CHUNK_001",
+            "POL-ANTI-RAGGING_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8751205999997183
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-ANTI-RAGGING_CHUNK_001",
+            "POL-ANTI-RAGGING_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8644249999997555
+        },
+        "50": {
+          "pool_size": 39,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-ANTI-RAGGING_CHUNK_001",
+            "POL-ANTI-RAGGING_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9600340000006327
+        }
+      }
+    },
+    "Q033": {
+      "query_id": "Q033",
+      "query": "student grievance redressal ombudsman policy",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-GRIEVANCE_CHUNK_001",
+        "POL-GRIEVANCE_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-GRIEVANCE_CHUNK_001",
+            "POL-GRIEVANCE_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2514795000006416
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-GRIEVANCE_CHUNK_001",
+            "POL-GRIEVANCE_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.273605800000041
+        },
+        "50": {
+          "pool_size": 47,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-GRIEVANCE_CHUNK_001",
+            "POL-GRIEVANCE_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.193984900000032
+        }
+      }
+    },
+    "Q034": {
+      "query_id": "Q034",
+      "query": "academic integrity and plagiarism prevention policy",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "RES-ETH-001_CHUNK_001",
+        "RES-ETH-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "RES-ETH-001_CHUNK_001",
+            "RES-ETH-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.1665926999994554
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "RES-ETH-001_CHUNK_001",
+            "RES-ETH-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.268756499999654
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "RES-ETH-001_CHUNK_001",
+            "RES-ETH-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2439315000001443
+        }
+      }
+    },
+    "Q035": {
+      "query_id": "Q035",
+      "query": "hostel electrical appliances prohibition policy",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "HSTL-POL-003_CHUNK_001",
+        "HSTL-POL-003_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-003_CHUNK_001",
+            "HSTL-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.9773238999996465
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-003_CHUNK_001",
+            "HSTL-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2478830999998536
+        },
+        "50": {
+          "pool_size": 32,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-003_CHUNK_001",
+            "HSTL-POL-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.3230584000002636
+        }
+      }
+    },
+    "Q036": {
+      "query_id": "Q036",
+      "query": "who is eligible for chancellor merit scholarship",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "FIN-SCH-001_CHUNK_002",
+        "FIN-SCH-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8810627000002569
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9349671999998463
+        },
+        "50": {
+          "pool_size": 41,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "FIN-SCH-001_CHUNK_002",
+            "FIN-SCH-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.02036870000029
+        }
+      }
+    },
+    "Q037": {
+      "query_id": "Q037",
+      "query": "eligibility criteria for campus placement drives",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "PLC-POL-001_CHUNK_002",
+        "PLC-POL-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "PLC-POL-001_CHUNK_003"
+          ],
+          "latency_s": 1.7859066000000894
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "PLC-POL-001_CHUNK_003"
+          ],
+          "latency_s": 1.6887981999998374
+        },
+        "50": {
+          "pool_size": 40,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "PLC-POL-001_CHUNK_003"
+          ],
+          "latency_s": 1.5911999999998443
+        }
+      }
+    },
+    "Q038": {
+      "query_id": "Q038",
+      "query": "eligibility for supplementary backlog examination",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-BACKLOG_CHUNK_002",
+        "POL-BACKLOG_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-BACKLOG_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "POL-BACKLOG_CHUNK_001"
+          ],
+          "latency_s": 1.9891903000007005
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-BACKLOG_CHUNK_001",
+            "POL-BACKLOG_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.3088437000005797
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "POL-BACKLOG_CHUNK_001",
+            "POL-BACKLOG_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0788290000000416
+        }
+      }
+    },
+    "Q039": {
+      "query_id": "Q039",
+      "query": "eligibility for student semester exchange program",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "IRO-POL-001_CHUNK_002",
+        "IRO-POL-001_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "IRO-POL-001_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "IRO-POL-001_CHUNK_002"
+          ],
+          "latency_s": 2.0484488000001875
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "IRO-POL-001_CHUNK_001",
+            "IRO-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.026366500000222
+        },
+        "50": {
+          "pool_size": 49,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "IRO-POL-001_CHUNK_001",
+            "IRO-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0181257000003825
+        }
+      }
+    },
+    "Q040": {
+      "query_id": "Q040",
+      "query": "internship NOC eligibility and credit transfer",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "PLC-GUI-003_CHUNK_001",
+        "PLC-GUI-003_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-GUI-003_CHUNK_001",
+            "PLC-GUI-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.6204948000004151
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-GUI-003_CHUNK_001",
+            "PLC-GUI-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.6528330000001006
+        },
+        "50": {
+          "pool_size": 47,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-GUI-003_CHUNK_001",
+            "PLC-GUI-003_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.6648191999993287
+        }
+      }
+    },
+    "Q041": {
+      "query_id": "Q041",
+      "query": "how to apply for general bonafide student certificate",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "STU-FRM-001_CHUNK_002",
+        "STU-FRM-001_CHUNK_003"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-FRM-001_CHUNK_002",
+            "STU-FRM-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.2450552000000243
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-FRM-001_CHUNK_002",
+            "STU-FRM-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0420612999996592
+        },
+        "50": {
+          "pool_size": 37,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-FRM-001_CHUNK_002",
+            "STU-FRM-001_CHUNK_003"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0986109000004944
+        }
+      }
+    },
+    "Q042": {
+      "query_id": "Q042",
+      "query": "procedure for lost student id card replacement",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "SEC-POL-001_CHUNK_004",
+        "STU-FRM-007_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "SEC-POL-001_CHUNK_004",
+            "STU-FRM-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8864128000004712
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "SEC-POL-001_CHUNK_004",
+            "STU-FRM-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.781260600000678
+        },
+        "50": {
+          "pool_size": 45,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "SEC-POL-001_CHUNK_004",
+            "STU-FRM-007_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8397945000006075
+        }
+      }
+    },
+    "Q043": {
+      "query_id": "Q043",
+      "query": "procedure for hostel room vacation and clearance",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "HSTL-POL-004_CHUNK_001",
+        "HSTL-POL-004_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-004_CHUNK_001",
+            "HSTL-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0681303000001208
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-004_CHUNK_001",
+            "HSTL-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9966800000001967
+        },
+        "50": {
+          "pool_size": 41,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "HSTL-POL-004_CHUNK_001",
+            "HSTL-POL-004_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.0966945999998643
+        }
+      }
+    },
+    "Q044": {
+      "query_id": "Q044",
+      "query": "procedure to file online student grievance on ResolveDesk",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "STU-GUI-001_CHUNK_002",
+        "STU-GUI-001_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-GUI-001_CHUNK_001",
+            "STU-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8502809000001434
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-GUI-001_CHUNK_001",
+            "STU-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8700521999999182
+        },
+        "50": {
+          "pool_size": 38,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "STU-GUI-001_CHUNK_001",
+            "STU-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.5451675000003888
+        }
+      }
+    },
+    "Q045": {
+      "query_id": "Q045",
+      "query": "procedure for on-duty leave application and approval",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "POL-OD_CHUNK_003",
+        "POL-OD_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-OD_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "POL-OD_CHUNK_003"
+          ],
+          "latency_s": 1.846994900000027
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-OD_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "POL-OD_CHUNK_003"
+          ],
+          "latency_s": 1.8805480000000898
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "POL-OD_CHUNK_002"
+          ],
+          "absent_relevant": [
+            "POL-OD_CHUNK_003"
+          ],
+          "latency_s": 2.3974379999999655
+        }
+      }
+    },
+    "Q046": {
+      "query_id": "Q046",
+      "query": "institutional five-department no-dues clearance sign-off matrix",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "ADM-SOP-001_CHUNK_001",
+        "ADM-SOP-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-SOP-001_CHUNK_001",
+            "ADM-SOP-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8951192000004085
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-SOP-001_CHUNK_001",
+            "ADM-SOP-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8825867999994443
+        },
+        "50": {
+          "pool_size": 50,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "ADM-SOP-001_CHUNK_001",
+            "ADM-SOP-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.23844150000059
+        }
+      }
+    },
+    "Q047": {
+      "query_id": "Q047",
+      "query": "ExamShield portal hall ticket download and re-evaluation filing",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "IT-SYS-003_CHUNK_002",
+        "IT-SYS-003_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "IT-SYS-003_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "IT-SYS-003_CHUNK_002"
+          ],
+          "latency_s": 1.6174255999994784
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "IT-SYS-003_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "IT-SYS-003_CHUNK_002"
+          ],
+          "latency_s": 1.6026898999998593
+        },
+        "50": {
+          "pool_size": 32,
+          "candidate_recall": 0.5,
+          "status": "SOME_PRESENT",
+          "present_relevant": [
+            "IT-SYS-003_CHUNK_001"
+          ],
+          "absent_relevant": [
+            "IT-SYS-003_CHUNK_002"
+          ],
+          "latency_s": 1.5208753000006254
+        }
+      }
+    },
+    "Q048": {
+      "query_id": "Q048",
+      "query": "LibNet OPAC book reservation and account renewal guide",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "LIB-GUI-001_CHUNK_002",
+        "LIB-GUI-001_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "LIB-GUI-001_CHUNK_001",
+            "LIB-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.817565299999842
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "LIB-GUI-001_CHUNK_001",
+            "LIB-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.822110000000066
+        },
+        "50": {
+          "pool_size": 43,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "LIB-GUI-001_CHUNK_001",
+            "LIB-GUI-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9580255000000761
+        }
+      }
+    },
+    "Q049": {
+      "query_id": "Q049",
+      "query": "campus Wi-Fi 802.1X PEAP MSCHAPv2 device authentication",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "IT-SYS-005_CHUNK_002",
+        "IT-SYS-005_CHUNK_001"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "IT-SYS-005_CHUNK_001",
+            "IT-SYS-005_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 2.1430375999998432
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "IT-SYS-005_CHUNK_001",
+            "IT-SYS-005_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.871222900000248
+        },
+        "50": {
+          "pool_size": 40,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "IT-SYS-005_CHUNK_001",
+            "IT-SYS-005_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8035626000000775
+        }
+      }
+    },
+    "Q050": {
+      "query_id": "Q050",
+      "query": "CareerHub portal CDC registration and one-offer placement norms",
+      "n_relevant": 2,
+      "relevant_chunks": [
+        "PLC-POL-001_CHUNK_001",
+        "PLC-POL-001_CHUNK_002"
+      ],
+      "candidate_pools": {
+        "20": {
+          "pool_size": 20,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_001",
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.8432575000006182
+        },
+        "30": {
+          "pool_size": 30,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_001",
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.9490548999992825
+        },
+        "50": {
+          "pool_size": 46,
+          "candidate_recall": 1.0,
+          "status": "ALL_PRESENT",
+          "present_relevant": [
+            "PLC-POL-001_CHUNK_001",
+            "PLC-POL-001_CHUNK_002"
+          ],
+          "absent_relevant": [],
+          "latency_s": 1.981877700000041
+        }
+      }
+    }
+  }
+}

@@ -49,11 +49,12 @@ class SearchPipeline:
         filter_domain: Optional[str] = None,
         k: int = 60,
         final_k: int = 20,
+        primary_query_weight: float = 1.0,
     ) -> List[RetrievedChunk]:
         """Execute the full search pipeline and return aggregated, ranked chunks.
 
         The aggregation uses Reciprocal Rank Fusion (RRF) across the multiple
-        queries: for each query's results, a chunk receives `1 / (k + rank)`.
+        queries: for each query's results, a chunk receives `weight * (1 / (k + rank))`.
         
         Parameters
         ----------
@@ -71,6 +72,8 @@ class SearchPipeline:
             RRF damping factor for multi-query aggregation.
         final_k : int
             Number of top results to return overall.
+        primary_query_weight : float
+            Weight multiplier for the normalized original user query branch.
         """
         # 1 & 2. Validation and Normalization
         validate_query(query)
@@ -101,10 +104,50 @@ class SearchPipeline:
         if not final_queries:
             final_queries = [normalized]
 
-        # 6 & 7. Hybrid Retrieval and Aggregation
+        # 6 & 7 & 8. Hybrid Retrieval, Aggregation and Ranking
+        return self.aggregate_retrieval(
+            queries=final_queries,
+            vector_match_count=vector_match_count,
+            keyword_match_count=keyword_match_count,
+            filter_domain=filter_domain,
+            k=k,
+            final_k=final_k,
+            primary_query_weight=primary_query_weight,
+        )
+
+    def aggregate_retrieval(
+        self,
+        queries: List[str],
+        vector_match_count: int = 20,
+        keyword_match_count: int = 20,
+        filter_domain: Optional[str] = None,
+        k: int = 60,
+        final_k: int = 20,
+        primary_query_weight: float = 1.0,
+    ) -> List[RetrievedChunk]:
+        """Execute hybrid retrieval across multiple queries and aggregate using RRF.
+
+        Parameters
+        ----------
+        queries : List[str]
+            List of search queries to retrieve and aggregate.
+        vector_match_count : int
+            Candidates requested from the vector retriever per query.
+        keyword_match_count : int
+            Candidates requested from the keyword retriever per query.
+        filter_domain : Optional[str]
+            Optional domain filter.
+        k : int
+            RRF damping factor for multi-query aggregation.
+        final_k : int
+            Number of top results to return overall.
+        primary_query_weight : float
+            Weight multiplier for the first query in queries.
+        """
         fused: dict[str, RetrievedChunk] = {}
-        
-        for q in final_queries:
+
+        for q_idx, q in enumerate(queries):
+            weight = primary_query_weight if q_idx == 0 else 1.0
             try:
                 results = self.hybrid_retriever.retrieve(
                     query=q,
@@ -115,29 +158,21 @@ class SearchPipeline:
                     final_k=final_k,
                 )
             except Exception as exc:
-                # Gracefully skip this query branch if it fails.
-                # This mirrors the HybridRetriever's approach to continuing upon branch failure.
                 logger.error("Hybrid retrieval failed for query '%s': %s", q, exc)
                 continue
 
             for rank, chunk in enumerate(results, start=1):
-                contribution = 1.0 / (k + rank)
-                
+                contribution = weight * (1.0 / (k + rank))
+
                 if chunk.chunk_id not in fused:
-                    # Clone chunk and initialize its aggregated score
                     new_chunk = dataclasses.replace(chunk, score=0.0)
                     fused[chunk.chunk_id] = new_chunk
-                
-                # Add the reciprocal rank contribution
+
                 fused[chunk.chunk_id].score += contribution
-                
-                # Optionally, we merge metadata if there's any new information.
-                # The existing chunk metadata is updated with any new keys.
+
                 if chunk.metadata:
                     fused[chunk.chunk_id].metadata.update(chunk.metadata)
 
-        # 8. Final Ranking
-        # Sort by aggregated score descending, then chunk_id for deterministic tie-breaking.
         aggregated_results = list(fused.values())
         aggregated_results.sort(key=lambda c: (-c.score, c.chunk_id))
 

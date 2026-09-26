@@ -553,6 +553,91 @@ class TestGeneralNoiseSuite(unittest.TestCase):
         self.assertIn("ABC123", normalize_query("Document ABC123 status"))
 
 
+class TestNormalizerTargetedCorrections(unittest.TestCase):
+    """Regression tests for targeted normalizer corrections."""
+
+    # 1. Acronyms with repeated characters preserved before elongation collapse
+    def test_ieee_acronym_preserved(self):
+        self.assertEqual(normalize_query("IEEE conference papers"), "IEEE conference papers")
+        self.assertEqual(normalize_query("IEEE standards"), "IEEE standards")
+
+    def test_iiit_acronym_preserved(self):
+        self.assertEqual(normalize_query("IIIT admissions"), "IIIT admissions")
+        self.assertEqual(normalize_query("IIIT cutoff"), "IIIT cutoff")
+
+    # 2. Uppercase acronyms protected from typo map
+    def test_las_acronym_protected(self):
+        self.assertEqual(normalize_query("LAS department courses"), "LAS department courses")
+        self.assertEqual(normalize_query("Dean of LAS"), "Dean of LAS")
+
+    def test_las_lowercase_typo_still_corrected(self):
+        self.assertEqual(normalize_query("las sem marks"), "Last semester marks")
+
+    # 3. Dangerous typo correction hospitel -> hospital (not hostel)
+    def test_hospitel_corrected_to_hospital(self):
+        self.assertEqual(normalize_query("university hospitel bills"), "University hospital bills")
+        self.assertEqual(normalize_query("leave for hospitel visit"), "Leave for hospital visit")
+
+    # 4. Dangerous std abbreviation removed (not expanded to student)
+    def test_std_abbreviation_not_expanded_to_student(self):
+        self.assertEqual(normalize_query("std deviation for grade calculation"), "Std deviation for grade calculation")
+        self.assertEqual(normalize_query("std format for thesis"), "Std format for thesis")
+        self.assertEqual(normalize_query("std operating procedure"), "Std operating procedure")
+
+    # 5. Sentence casing on leading ordinals and numbers
+    def test_leading_ordinal_and_number_casing(self):
+        self.assertEqual(normalize_query("2nd semester fees"), "2nd semester fees")
+        self.assertEqual(normalize_query("3rd semester marks"), "3rd semester marks")
+        self.assertEqual(normalize_query("1st year fees"), "1st year fees")
+        self.assertEqual(normalize_query("75 percent attendance"), "75 percent attendance")
+        self.assertEqual(normalize_query("10 credits"), "10 credits")
+
+    # 6. Missing common university typos
+    def test_missing_university_typos_corrected(self):
+        self.assertEqual(normalize_query("attendance reqmnt"), "Attendance requirement")
+        self.assertEqual(normalize_query("hostel allotmnt process"), "Hostel allotment process")
+        self.assertEqual(normalize_query("revalution policy"), "Revaluation policy")
+        self.assertEqual(normalize_query("attendence shortage"), "Attendance shortage")
+
+    # 7. Course code canonicalization
+    def test_course_code_canonicalization(self):
+        self.assertEqual(normalize_query("cse301 prerequisites"), "CSE301 prerequisites")
+        self.assertEqual(normalize_query("Cse301 prerequisites"), "CSE301 prerequisites")
+        self.assertEqual(normalize_query("CSE301 prerequisites"), "CSE301 prerequisites")
+        self.assertEqual(normalize_query("CSE 301 prerequisites"), "CSE 301 prerequisites")
+        self.assertEqual(normalize_query("CSE-301 prerequisites"), "CSE-301 prerequisites")
+        self.assertEqual(normalize_query("Cs101 syllabus"), "CS101 syllabus")
+
+    # 8. Idempotence across all regression queries
+    def test_regression_queries_idempotence(self):
+        queries = [
+            "IEEE conference papers",
+            "IIIT admissions",
+            "LAS department courses",
+            "Dean of LAS",
+            "university hospitel bills",
+            "leave for hospitel visit",
+            "std deviation for grade calculation",
+            "2nd semester fees",
+            "3rd semester marks",
+            "1st year fees",
+            "75 percent attendance",
+            "10 credits",
+            "attendance reqmnt",
+            "hostel allotmnt process",
+            "revalution policy",
+            "attendence shortage",
+            "cse301 prerequisites",
+            "Cse301 prerequisites",
+            "Cs101 syllabus",
+        ]
+        for q in queries:
+            once = normalize_query(q)
+            twice = normalize_query(once)
+            self.assertEqual(once, twice, f"Idempotence failed for {q!r}")
+
+
 if __name__ == "__main__":
     unittest.main()
+
 

@@ -91,7 +91,15 @@ class LLMClient:
                 if status == 429:
                     attempts += 1
                     if attempts > self.config.max_retries:
-                        raise LLMRateLimitError("Rate limit exceeded after retries (HTTP 429)") from http_err
+                        # Surface the provider's explanation (e.g. which quota was hit)
+                        try:
+                            detail = http_err.read().decode("utf-8", errors="replace")[:1000]
+                        except Exception:
+                            detail = ""
+                        message = "Rate limit exceeded after retries (HTTP 429)"
+                        if detail:
+                            message += f": {detail}"
+                        raise LLMRateLimitError(message) from http_err
                     backoff = (2 ** (attempts - 1)) * 0.1
                     self._sleep(backoff)
                     continue

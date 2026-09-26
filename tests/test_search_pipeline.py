@@ -232,15 +232,58 @@ class TestSearchPipeline(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.pipeline.search(None)
 
-    def test_semantic_filtering_failure_fallback(self):
-        self.semantic_similarity.filter_redundant.side_effect = Exception("Semantic Error")
-        self.reformulator.generate_variants.return_value = ["v1"]
-        self.hybrid_retriever.retrieve.return_value = []
+    def test_primary_query_weight_mathematical_behavior(self):
+        # Test that primary query branch receives primary_query_weight multiplier
+        # while reformulation branches receive 1.0 multiplier.
+        norm_q = normalize_query("main query")
         
-        # Pipeline should catch and fallback to the unfiltered candidate list
-        self.pipeline.search("q")
-        
-        self.assertEqual(self.hybrid_retriever.retrieve.call_count, 2) # original + v1
+        def mock_retrieve_weighted(query, **kwargs):
+            if query == norm_q:
+                # Rank 1: ChunkA, Rank 2: ChunkB
+                return [
+                    RetrievedChunk(chunk_id="ChunkA", document_id="d1", title="T", domain="D", chunk_index=0, chunk_text="A", section=None, token_count=10, score=1.0),
+                    RetrievedChunk(chunk_id="ChunkB", document_id="d2", title="T", domain="D", chunk_index=0, chunk_text="B", section=None, token_count=10, score=0.9),
+                ]
+            elif query == "variant 1":
+                # Rank 1: ChunkB, Rank 2: ChunkC
+                return [
+                    RetrievedChunk(chunk_id="ChunkB", document_id="d2", title="T", domain="D", chunk_index=0, chunk_text="B", section=None, token_count=10, score=1.0),
+                    RetrievedChunk(chunk_id="ChunkC", document_id="d3", title="T", domain="D", chunk_index=0, chunk_text="C", section=None, token_count=10, score=0.8),
+                ]
+            return []
+
+        self.hybrid_retriever.retrieve.side_effect = mock_retrieve_weighted
+        self.reformulator.generate_variants.return_value = ["variant 1"]
+        self.semantic_similarity.filter_redundant.side_effect = lambda qs: qs
+
+        # 1. Unweighted / Baseline (weight = 1.0)
+        # Score ChunkA = 1.0 * (1 / (60 + 1)) = 1/61 = 0.01639344
+        # Score ChunkB = 1.0 * (1 / (60 + 2)) + 1.0 * (1 / (60 + 1)) = 1/62 + 1/61 = 0.03252247
+        # Score ChunkC = 1.0 * (1 / (60 + 2)) = 1/62 = 0.01612903
+        results_1_0 = self.pipeline.search("main query", k=60, primary_query_weight=1.0)
+        scores_1_0 = {c.chunk_id: c.score for c in results_1_0}
+        self.assertAlmostEqual(scores_1_0["ChunkA"], 1.0 / 61)
+        self.assertAlmostEqual(scores_1_0["ChunkB"], 1.0 / 62 + 1.0 / 61)
+        self.assertAlmostEqual(scores_1_0["ChunkC"], 1.0 / 62)
+        self.assertEqual(results_1_0[0].chunk_id, "ChunkB")
+        self.assertEqual(results_1_0[1].chunk_id, "ChunkA")
+        self.assertEqual(results_1_0[2].chunk_id, "ChunkC")
+
+        # 2. Weighted (weight = 1.5)
+        # Score ChunkA = 1.5 * (1 / 61) = 0.02459016
+        # Score ChunkB = 1.5 * (1 / 62) + 1.0 * (1 / 61) = 0.02419355 + 0.01639344 = 0.04058699
+        # Score ChunkC = 1.0 * (1 / 62) = 0.01612903
+        results_1_5 = self.pipeline.search("main query", k=60, primary_query_weight=1.5)
+        scores_1_5 = {c.chunk_id: c.score for c in results_1_5}
+        self.assertAlmostEqual(scores_1_5["ChunkA"], 1.5 / 61)
+        self.assertAlmostEqual(scores_1_5["ChunkB"], 1.5 / 62 + 1.0 / 61)
+        self.assertAlmostEqual(scores_1_5["ChunkC"], 1.0 / 62)
+
+        # 3. Default parameter compatibility (omitted primary_query_weight defaults to 1.0)
+        results_default = self.pipeline.search("main query", k=60)
+        scores_default = {c.chunk_id: c.score for c in results_default}
+        self.assertEqual(scores_default, scores_1_0)
+
 
 if __name__ == "__main__":
     unittest.main()

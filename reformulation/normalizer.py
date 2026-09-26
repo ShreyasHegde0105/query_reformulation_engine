@@ -69,8 +69,6 @@ _ABBREV_MAP: dict[str, str] = {
     "lib":    "library",
     "libs":   "libraries",
     "regs":   "regulations",
-    "std":    "student",
-    "stds":   "students",
     "yr":     "year",
     "yrs":    "years",
     "approx": "approximately",
@@ -135,7 +133,7 @@ _TYPO_MAP: dict[str, str] = {
     "libary":       "library",
     "libraray":     "library",
     "hostle":       "hostel",
-    "hospitel":     "hostel",
+    "hospitel":     "hospital",
     "hospial":      "hospital",
     "hosiptal":     "hospital",
     "recieve":      "receive",
@@ -167,6 +165,10 @@ _TYPO_MAP: dict[str, str] = {
     "elgibility":   "eligibility",
     "requirment":   "requirement",
     "requriment":   "requirement",
+    "reqmnt":       "requirement",
+    "allotmnt":     "allotment",
+    "revalution":   "revaluation",
+    "attendence":   "attendance",
 }
 
 # Tokens with known canonical casing: UPPERCASE(token) → canonical form.
@@ -189,6 +191,7 @@ _PRESERVED_TOKENS: frozenset[str] = frozenset({
     # Governance / ambiguous acronyms (preserved verbatim)
     "HOD", "UGC", "NAAC", "AICTE", "NIRF", "IQAC", "COE", "IEEE", "ACM",
     "SOP", "UG", "PG", "FT", "BOD", "AC", "NSS", "CC", "IPR", "CS",
+    "IIIT", "LAS",
 })
 
 _PRESERVED_BY_UPPER: dict[str, str] = {t.upper(): t for t in _PRESERVED_TOKENS}
@@ -267,6 +270,7 @@ _COMMON_WORDS: frozenset[str] = frozenset({
 # Course code pattern: 2-5 alphabetic department code optionally hyphenated/underscored with 2-4 digits.
 _COURSE_CODE_RE = re.compile(r"^[A-Za-z]{2,5}[-_]?\d{2,4}[A-Za-z]?$")
 _EMAIL_RE = re.compile(r"^[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}$")
+_ORDINAL_RE = re.compile(r"^\d+(?:st|nd|rd|th)$", re.IGNORECASE)
 
 _LEET_MAP: dict[str, list[str]] = {
     "0": ["o"],
@@ -399,7 +403,7 @@ def _clean_token_noise(token: str) -> str:
 
 def _normalize_leetspeak(core: str) -> str:
     """Normalize unambiguous leetspeak character substitutions in ordinary vocabulary."""
-    if core.isdigit():
+    if core.isdigit() or _ORDINAL_RE.match(core):
         return core
     if not any(ch in "01345" for ch in core):
         return core
@@ -500,7 +504,11 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
     if not core:
         return core
 
-    core = _collapse_repeated_letters(core)
+    upper = core.upper()
+
+    # Protect preserved entities and acronyms from repeated-letter elongation collapse
+    if upper not in _PRESERVED_BY_UPPER:
+        core = _collapse_repeated_letters(core)
     core = _normalize_leetspeak(core)
     low = core.lower()
     upper = core.upper()
@@ -509,11 +517,12 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
     if core.startswith("#") and core[1:].upper() in _PRESERVED_BY_UPPER:
         return "#" + _PRESERVED_BY_UPPER[core[1:].upper()]
 
-    # 1. Typo correction
+    # 1. Typo correction (protect uppercase preserved acronyms like LAS)
     if low in _TYPO_MAP:
-        low = _TYPO_MAP[low]
-        upper = low.upper()
-        core = low
+        if not (core.isupper() and upper in _PRESERVED_BY_UPPER):
+            low = _TYPO_MAP[low]
+            upper = low.upper()
+            core = low
 
     # 2. Abbreviation expansion
     if low in _ABBREV_MAP:
@@ -538,8 +547,8 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
     if upper in _PRESERVED_BY_UPPER:
         return _PRESERVED_BY_UPPER[upper]
 
-    # 6. Course codes (e.g. CSE301, CSE-301, CS101, math201)
-    if _COURSE_CODE_RE.match(core) and (core[:2].isupper() or core[:2].islower()):
+    # 6. Course codes (e.g. CSE301, CSE-301, CS101, math201, Cse301)
+    if _COURSE_CODE_RE.match(core):
         return upper
 
     # 7. Slash-separated entities (e.g. AI/ML, 2025/26)
@@ -664,12 +673,13 @@ def normalize_query(query: Any) -> str:
 
     joined = " ".join(result_tokens)
 
-    # Capitalise first alphabetical character unless it is a mixed-case identifier (e.g. abcXYZ123, iOS)
+    # Capitalise first alphabetical character of the first word, unless it is a mixed-case identifier
+    # or the query begins with a numeric, ordinal, or currency expression (e.g. 2nd, 75, 10, ₹50,000)
     first_token = result_tokens[0] if result_tokens else ""
-    if not re.match(r"^[a-z]+[A-Z]", first_token):
+    if re.match(r"^[(\"'\`\[\{]*[a-zA-Z]", first_token) and not re.match(r"^[(\"'\`\[\{]*[a-z]+[A-Z]", first_token):
         def _cap_first(m: re.Match) -> str:
             return m.group(0).upper()
-        joined = re.sub(r"[a-zA-Z]", _cap_first, joined, count=1)
+        joined = re.sub(r"^[(\"'\`\[\{]*[a-zA-Z]", _cap_first, joined, count=1)
 
     # Final cleanup pass
     joined = re.sub(r"[\s]+", " ", joined.strip())

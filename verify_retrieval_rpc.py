@@ -16,7 +16,7 @@ logger = logging.getLogger("verify_rpc")
 
 
 def run_verification() -> Dict[str, Any]:
-    load_dotenv()
+    load_dotenv(override=True)
     url = os.getenv("SUPABASE_URL")
     key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 

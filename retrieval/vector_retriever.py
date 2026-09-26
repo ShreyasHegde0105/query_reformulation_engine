@@ -32,7 +32,7 @@ class VectorRetriever:
         if client is not None:
             self.client = client
         else:
-            load_dotenv()
+            load_dotenv(override=True)
             url = os.getenv("SUPABASE_URL")
             key = os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_KEY")
             if not url or not key:

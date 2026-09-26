@@ -57,7 +57,7 @@ class QueryReformulator:
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
-    def generate_variants(self, query: str, max_variants: int = 5) -> List[str]:
+    def generate_variants(self, query: str, max_variants: int = 10) -> List[str]:
         """Return a list of alternative search queries.
 
         The flow follows the contract defined in the specification:

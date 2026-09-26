@@ -1,0 +1,502 @@
+[
+  {
+    "query_id": "Q001",
+    "query": "semester fees",
+    "category": "keyword",
+    "tags": ["keyword", "finance", "fees"],
+    "target_doc_id": "FIN-POL-001",
+    "relevant_chunks": ["FIN-POL-001_CHUNK_001", "FIN-POL-001_CHUNK_002"],
+    "graded_relevance": {"FIN-POL-001_CHUNK_001": 3, "FIN-POL-001_CHUNK_002": 2},
+    "description": "Standard semester fee components, tuition breakdown, and payment schedule"
+  },
+  {
+    "query_id": "Q002",
+    "query": "hostel allotment",
+    "category": "keyword",
+    "tags": ["keyword", "hostel", "accommodation"],
+    "target_doc_id": "HSTL-REG-001",
+    "relevant_chunks": ["HSTL-REG-001_CHUNK_001", "HSTL-REG-001_CHUNK_002"],
+    "graded_relevance": {"HSTL-REG-001_CHUNK_001": 3, "HSTL-REG-001_CHUNK_002": 2},
+    "description": "Hostel room allotment policy, criteria, occupancy matrix, and fee rules"
+  },
+  {
+    "query_id": "Q003",
+    "query": "CSE301 prerequisites",
+    "category": "keyword",
+    "tags": ["keyword", "course", "cse301"],
+    "target_doc_id": "ACAD-CRS-003",
+    "relevant_chunks": ["ACAD-CRS-003_CHUNK_001", "POL-COURSE-REG_CHUNK_004"],
+    "graded_relevance": {"ACAD-CRS-003_CHUNK_001": 3, "POL-COURSE-REG_CHUNK_004": 2},
+    "description": "Prerequisites and course identification for CSE301 Operating Systems"
+  },
+  {
+    "query_id": "Q004",
+    "query": "academic transcript",
+    "category": "keyword",
+    "tags": ["keyword", "academics", "transcript"],
+    "target_doc_id": "EXAM-GUI-005",
+    "relevant_chunks": ["EXAM-GUI-005_CHUNK_002", "EXAM-GUI-005_CHUNK_001"],
+    "graded_relevance": {"EXAM-GUI-005_CHUNK_002": 3, "EXAM-GUI-005_CHUNK_001": 2},
+    "description": "Official grade report, cumulative grade card, and academic transcript issuance"
+  },
+  {
+    "query_id": "Q005",
+    "query": "library book renewal",
+    "category": "keyword",
+    "tags": ["keyword", "library", "circulation"],
+    "target_doc_id": "LIB-POL-001",
+    "relevant_chunks": ["LIB-POL-001_CHUNK_002", "LIB-POL-001_CHUNK_003"],
+    "graded_relevance": {"LIB-POL-001_CHUNK_002": 3, "LIB-POL-001_CHUNK_003": 2},
+    "description": "Central library book borrowing durations, limits, and renewal regulations"
+  },
+  {
+    "query_id": "Q006",
+    "query": "Can I get a refund if I withdraw from the semester?",
+    "category": "natural_language",
+    "tags": ["natural_language", "policy", "refund", "withdrawal"],
+    "target_doc_id": "FIN-POL-004",
+    "relevant_chunks": ["FIN-POL-004_CHUNK_001", "FIN-POL-004_CHUNK_002"],
+    "graded_relevance": {"FIN-POL-004_CHUNK_001": 3, "FIN-POL-004_CHUNK_002": 2},
+    "description": "Tuition fee refund percentage tiers and timeline upon program/semester withdrawal"
+  },
+  {
+    "query_id": "Q007",
+    "query": "What are the requirements for hostel allotment?",
+    "category": "natural_language",
+    "tags": ["natural_language", "hostel", "eligibility"],
+    "target_doc_id": "POL-HOSTEL-ALLOC",
+    "relevant_chunks": ["POL-HOSTEL-ALLOC_CHUNK_001", "POL-HOSTEL-ALLOC_CHUNK_002"],
+    "graded_relevance": {"POL-HOSTEL-ALLOC_CHUNK_001": 3, "POL-HOSTEL-ALLOC_CHUNK_002": 2},
+    "description": "Eligibility, distance criteria, and priority rankings for hostel allocation"
+  },
+  {
+    "query_id": "Q008",
+    "query": "What happens if my attendance is below 75%?",
+    "category": "natural_language",
+    "tags": ["natural_language", "attendance", "policy"],
+    "target_doc_id": "POL-ATTEND",
+    "relevant_chunks": ["POL-ATTEND_CHUNK_002", "POL-ATTEND_CHUNK_003"],
+    "graded_relevance": {"POL-ATTEND_CHUNK_002": 3, "POL-ATTEND_CHUNK_003": 2},
+    "description": "Penalties, SEE debarment, and condonation band for attendance below 75 percent"
+  },
+  {
+    "query_id": "Q009",
+    "query": "How many credits can an undergraduate student register per semester?",
+    "category": "natural_language",
+    "tags": ["natural_language", "course_registration", "credits"],
+    "target_doc_id": "POL-COURSE-REG",
+    "relevant_chunks": ["POL-COURSE-REG_CHUNK_002", "POL-COURSE-REG_CHUNK_003"],
+    "graded_relevance": {"POL-COURSE-REG_CHUNK_002": 3, "POL-COURSE-REG_CHUNK_003": 2},
+    "description": "Minimum full-time load (16 credits) and maximum semester registration credit limits"
+  },
+  {
+    "query_id": "Q010",
+    "query": "What is the fine for returning library books late?",
+    "category": "natural_language",
+    "tags": ["natural_language", "library", "fines"],
+    "target_doc_id": "LIB-POL-001",
+    "relevant_chunks": ["LIB-POL-001_CHUNK_004", "FIN-POL-002_CHUNK_003"],
+    "graded_relevance": {"LIB-POL-001_CHUNK_004": 3, "FIN-POL-002_CHUNK_003": 2},
+    "description": "Overdue book fine rates per day for central library circulation"
+  },
+  {
+    "query_id": "Q011",
+    "query": "sem fees payment schedule",
+    "category": "abbreviation",
+    "tags": ["abbreviation", "finance", "fees"],
+    "target_doc_id": "FIN-POL-001",
+    "relevant_chunks": ["FIN-POL-001_CHUNK_002", "FIN-POL-001_CHUNK_003"],
+    "graded_relevance": {"FIN-POL-001_CHUNK_002": 3, "FIN-POL-001_CHUNK_003": 2},
+    "description": "Semester fee payment deadlines and late payment surcharge schedules"
+  },
+  {
+    "query_id": "Q012",
+    "query": "dept regulations for lab safety",
+    "category": "abbreviation",
+    "tags": ["abbreviation", "engineering", "lab_safety"],
+    "target_doc_id": "ACAD-LAB-001",
+    "relevant_chunks": ["ACAD-LAB-001_CHUNK_001", "ACAD-LAB-001_CHUNK_002"],
+    "graded_relevance": {"ACAD-LAB-001_CHUNK_001": 3, "ACAD-LAB-001_CHUNK_002": 2},
+    "description": "General engineering laboratory safety regulations, equipment rules, and PPE"
+  },
+  {
+    "query_id": "Q013",
+    "query": "univ admission eligibility for international students",
+    "category": "abbreviation",
+    "tags": ["abbreviation", "admissions", "international"],
+    "target_doc_id": "ADM-INT-001",
+    "relevant_chunks": ["ADM-INT-001_CHUNK_001", "ADM-INT-001_CHUNK_002"],
+    "graded_relevance": {"ADM-INT-001_CHUNK_001": 3, "ADM-INT-001_CHUNK_002": 2},
+    "description": "University admission criteria, English proficiency, and visa compliance for international applicants"
+  },
+  {
+    "query_id": "Q014",
+    "query": "min attendance criteria for SEE examination",
+    "category": "abbreviation",
+    "tags": ["abbreviation", "attendance", "exams"],
+    "target_doc_id": "POL-SEE",
+    "relevant_chunks": ["POL-SEE_CHUNK_002", "POL-ATTEND_CHUNK_002"],
+    "graded_relevance": {"POL-SEE_CHUNK_002": 3, "POL-ATTEND_CHUNK_002": 2},
+    "description": "Minimum mandatory attendance threshold (75%) required for Semester End Exam eligibility"
+  },
+  {
+    "query_id": "Q015",
+    "query": "prof office hours and mentoring guidelines",
+    "category": "abbreviation",
+    "tags": ["abbreviation", "academics", "faculty"],
+    "target_doc_id": "ACAD-POL-006",
+    "relevant_chunks": ["ACAD-POL-006_CHUNK_002", "ACAD-POL-006_CHUNK_003"],
+    "graded_relevance": {"ACAD-POL-006_CHUNK_002": 3, "ACAD-POL-006_CHUNK_003": 2},
+    "description": "Faculty advisor mentoring framework, contact hours, and student advisory protocols"
+  },
+  {
+    "query_id": "Q016",
+    "query": "attendence shortage rules",
+    "category": "typo",
+    "tags": ["typo", "attendance", "condonation"],
+    "target_doc_id": "POL-ATTEND",
+    "relevant_chunks": ["POL-ATTEND_CHUNK_002", "POL-ATTEND_CHUNK_003"],
+    "graded_relevance": {"POL-ATTEND_CHUNK_002": 3, "POL-ATTEND_CHUNK_003": 2},
+    "description": "Attendance shortage limits, condonable ranges, and N-grade course repetition"
+  },
+  {
+    "query_id": "Q017",
+    "query": "hostel allotmnt process",
+    "category": "typo",
+    "tags": ["typo", "hostel", "allotment"],
+    "target_doc_id": "HSTL-REG-001",
+    "relevant_chunks": ["HSTL-REG-001_CHUNK_001", "HSTL-REG-001_CHUNK_002"],
+    "graded_relevance": {"HSTL-REG-001_CHUNK_001": 3, "HSTL-REG-001_CHUNK_002": 2},
+    "description": "Hostel room allotment procedure, room matrix, and occupancy options"
+  },
+  {
+    "query_id": "Q018",
+    "query": "revalution fee and deadline",
+    "category": "typo",
+    "tags": ["typo", "examination", "reevaluation"],
+    "target_doc_id": "POL-REEVAL",
+    "relevant_chunks": ["POL-REEVAL_CHUNK_002", "POL-REEVAL_CHUNK_003"],
+    "graded_relevance": {"POL-REEVAL_CHUNK_002": 3, "POL-REEVAL_CHUNK_003": 2},
+    "description": "SEE answer script revaluation application fee, timeline, and procedure"
+  },
+  {
+    "query_id": "Q019",
+    "query": "scholarship reqmnt criteria",
+    "category": "typo",
+    "tags": ["typo", "scholarship", "financial_aid"],
+    "target_doc_id": "FIN-SCH-001",
+    "relevant_chunks": ["FIN-SCH-001_CHUNK_002", "FIN-SCH-001_CHUNK_003"],
+    "graded_relevance": {"FIN-SCH-001_CHUNK_002": 3, "FIN-SCH-001_CHUNK_003": 2},
+    "description": "University merit and need-based financial aid eligibility requirements"
+  },
+  {
+    "query_id": "Q020",
+    "query": "semester withdrawl procedure",
+    "category": "typo",
+    "tags": ["typo", "academic", "withdrawal"],
+    "target_doc_id": "FIN-POL-004",
+    "relevant_chunks": ["FIN-POL-004_CHUNK_002", "FIN-POL-004_CHUNK_003"],
+    "graded_relevance": {"FIN-POL-004_CHUNK_002": 3, "FIN-POL-004_CHUNK_003": 2},
+    "description": "Official institutional procedure for semester and degree withdrawal"
+  },
+  {
+    "query_id": "Q021",
+    "query": "cse301 syllabus and textbooks",
+    "category": "course_code",
+    "tags": ["course_code", "cse", "syllabus"],
+    "target_doc_id": "ACAD-CRS-003",
+    "relevant_chunks": ["ACAD-CRS-003_CHUNK_002", "ACAD-CRS-003_CHUNK_003"],
+    "graded_relevance": {"ACAD-CRS-003_CHUNK_002": 3, "ACAD-CRS-003_CHUNK_003": 2},
+    "description": "CSE301 Operating Systems syllabus modules, references, and textbooks"
+  },
+  {
+    "query_id": "Q022",
+    "query": "ECE201 course outline",
+    "category": "course_code",
+    "tags": ["course_code", "ece", "syllabus"],
+    "target_doc_id": "ACAD-CRS-007",
+    "relevant_chunks": ["ACAD-CRS-007_CHUNK_001", "ACAD-CRS-007_CHUNK_002"],
+    "graded_relevance": {"ACAD-CRS-007_CHUNK_001": 3, "ACAD-CRS-007_CHUNK_002": 2},
+    "description": "ECE201 Digital Electronics and Logic Design course structure and lab syllabus"
+  },
+  {
+    "query_id": "Q023",
+    "query": "MEC304 course outline",
+    "category": "course_code",
+    "tags": ["course_code", "mec", "syllabus"],
+    "target_doc_id": "MEC-CRS-304",
+    "relevant_chunks": ["MEC-CRS-304_CHUNK_001", "MEC-CRS-304_CHUNK_002"],
+    "graded_relevance": {"MEC-CRS-304_CHUNK_001": 3, "MEC-CRS-304_CHUNK_002": 2},
+    "description": "MEC304 Mechanical Design and Stress Analysis syllabus and course content"
+  },
+  {
+    "query_id": "Q024",
+    "query": "CSE301 practical laboratory assignments",
+    "category": "course_code",
+    "tags": ["course_code", "cse", "lab"],
+    "target_doc_id": "ACAD-CRS-003",
+    "relevant_chunks": ["ACAD-CRS-003_CHUNK_004", "ACAD-CRS-003_CHUNK_005"],
+    "graded_relevance": {"ACAD-CRS-003_CHUNK_004": 3, "ACAD-CRS-003_CHUNK_005": 2},
+    "description": "CSE301 System Programming lab exercises, POSIX thread programming, and shell scripting"
+  },
+  {
+    "query_id": "Q025",
+    "query": "CIV205 structural analysis computing manual",
+    "category": "course_code",
+    "tags": ["course_code", "civ", "computing"],
+    "target_doc_id": "ACAD-CRS-010",
+    "relevant_chunks": ["ACAD-CRS-010_CHUNK_001", "ACAD-CRS-010_CHUNK_002"],
+    "graded_relevance": {"ACAD-CRS-010_CHUNK_001": 3, "ACAD-CRS-010_CHUNK_002": 2},
+    "description": "CIV205 Structural Analysis and Design Computing Manual computational lab modules"
+  },
+  {
+    "query_id": "Q026",
+    "query": "attendance below 75 percent medical condonation",
+    "category": "numeric",
+    "tags": ["numeric", "attendance", "medical"],
+    "target_doc_id": "ACAD-POL-003",
+    "relevant_chunks": ["ACAD-POL-003_CHUNK_001", "ACAD-POL-003_CHUNK_002"],
+    "graded_relevance": {"ACAD-POL-003_CHUNK_001": 3, "ACAD-POL-003_CHUNK_002": 2},
+    "description": "Medical condonation eligibility band strictly between 65% and 75% attendance"
+  },
+  {
+    "query_id": "Q027",
+    "query": "minimum CGPA 6.0 academic probation",
+    "category": "numeric",
+    "tags": ["numeric", "academics", "probation"],
+    "target_doc_id": "POL-COURSE-REG",
+    "relevant_chunks": ["POL-COURSE-REG_CHUNK_003", "POL-COURSE-REG_CHUNK_004"],
+    "graded_relevance": {"POL-COURSE-REG_CHUNK_003": 3, "POL-COURSE-REG_CHUNK_004": 2},
+    "description": "Academic probation status and 18-credit registration ceiling for CGPA below 6.0"
+  },
+  {
+    "query_id": "Q028",
+    "query": "caution deposit refund within 30 days",
+    "category": "numeric",
+    "tags": ["numeric", "finance", "refund"],
+    "target_doc_id": "FIN-POL-003",
+    "relevant_chunks": ["FIN-POL-003_CHUNK_002", "FIN-POL-003_CHUNK_003"],
+    "graded_relevance": {"FIN-POL-003_CHUNK_002": 3, "FIN-POL-003_CHUNK_003": 2},
+    "description": "Statutory 30-day timeline for institutional caution deposit refund disbursement"
+  },
+  {
+    "query_id": "Q029",
+    "query": "maximum 28 credit load per semester",
+    "category": "numeric",
+    "tags": ["numeric", "course_registration", "credits"],
+    "target_doc_id": "POL-COURSE-REG",
+    "relevant_chunks": ["POL-COURSE-REG_CHUNK_002", "POL-COURSE-REG_CHUNK_003"],
+    "graded_relevance": {"POL-COURSE-REG_CHUNK_002": 3, "POL-COURSE-REG_CHUNK_003": 2},
+    "description": "Academic overload registration ceiling of 28 credits per semester"
+  },
+  {
+    "query_id": "Q030",
+    "query": "late fee fine 500 rupees per week",
+    "category": "numeric",
+    "tags": ["numeric", "finance", "fines"],
+    "target_doc_id": "FIN-POL-001",
+    "relevant_chunks": ["FIN-POL-001_CHUNK_003", "FIN-POL-002_CHUNK_002"],
+    "graded_relevance": {"FIN-POL-001_CHUNK_003": 3, "FIN-POL-002_CHUNK_002": 2},
+    "description": "Late registration and tuition fee penalty schedule of Rs. 500 per weekly tier"
+  },
+  {
+    "query_id": "Q031",
+    "query": "semester withdrawal refund policy",
+    "category": "policy",
+    "tags": ["policy", "finance", "refund"],
+    "target_doc_id": "FIN-POL-004",
+    "relevant_chunks": ["FIN-POL-004_CHUNK_001", "FIN-POL-004_CHUNK_002"],
+    "graded_relevance": {"FIN-POL-004_CHUNK_001": 3, "FIN-POL-004_CHUNK_002": 2},
+    "description": "Formal institutional policy governing program withdrawal and tuition fee refunds"
+  },
+  {
+    "query_id": "Q032",
+    "query": "zero tolerance anti ragging policy",
+    "category": "policy",
+    "tags": ["policy", "discipline", "anti_ragging"],
+    "target_doc_id": "POL-ANTI-RAGGING",
+    "relevant_chunks": ["POL-ANTI-RAGGING_CHUNK_001", "POL-ANTI-RAGGING_CHUNK_002"],
+    "graded_relevance": {"POL-ANTI-RAGGING_CHUNK_001": 3, "POL-ANTI-RAGGING_CHUNK_002": 2},
+    "description": "Statutory zero-tolerance anti-ragging measures, committee jurisdiction, and expulsion penalties"
+  },
+  {
+    "query_id": "Q033",
+    "query": "student grievance redressal ombudsman policy",
+    "category": "policy",
+    "tags": ["policy", "student_affairs", "grievance"],
+    "target_doc_id": "POL-GRIEVANCE",
+    "relevant_chunks": ["POL-GRIEVANCE_CHUNK_001", "POL-GRIEVANCE_CHUNK_002"],
+    "graded_relevance": {"POL-GRIEVANCE_CHUNK_001": 3, "POL-GRIEVANCE_CHUNK_002": 2},
+    "description": "Student grievance redressal framework, committee constitution, and ombudsman review"
+  },
+  {
+    "query_id": "Q034",
+    "query": "academic integrity and plagiarism prevention policy",
+    "category": "policy",
+    "tags": ["policy", "research", "ethics"],
+    "target_doc_id": "RES-ETH-001",
+    "relevant_chunks": ["RES-ETH-001_CHUNK_001", "RES-ETH-001_CHUNK_002"],
+    "graded_relevance": {"RES-ETH-001_CHUNK_001": 3, "RES-ETH-001_CHUNK_002": 2},
+    "description": "Research ethics, plagiarism similarity index thresholds, and disciplinary sanctions"
+  },
+  {
+    "query_id": "Q035",
+    "query": "hostel electrical appliances prohibition policy",
+    "category": "policy",
+    "tags": ["policy", "hostel", "safety"],
+    "target_doc_id": "HSTL-POL-003",
+    "relevant_chunks": ["HSTL-POL-003_CHUNK_001", "HSTL-POL-003_CHUNK_002"],
+    "graded_relevance": {"HSTL-POL-003_CHUNK_001": 3, "HSTL-POL-003_CHUNK_002": 2},
+    "description": "Prohibition of high-wattage electrical heating appliances and fire safety rules in hostels"
+  },
+  {
+    "query_id": "Q036",
+    "query": "who is eligible for chancellor merit scholarship",
+    "category": "eligibility",
+    "tags": ["eligibility", "scholarship", "finance"],
+    "target_doc_id": "FIN-SCH-001",
+    "relevant_chunks": ["FIN-SCH-001_CHUNK_002", "FIN-SCH-001_CHUNK_003"],
+    "graded_relevance": {"FIN-SCH-001_CHUNK_002": 3, "FIN-SCH-001_CHUNK_003": 2},
+    "description": "Eligibility criteria for top two percent students for Chancellor Merit Scholarship"
+  },
+  {
+    "query_id": "Q037",
+    "query": "eligibility criteria for campus placement drives",
+    "category": "eligibility",
+    "tags": ["eligibility", "placements", "career"],
+    "target_doc_id": "PLC-POL-001",
+    "relevant_chunks": ["PLC-POL-001_CHUNK_002", "PLC-POL-001_CHUNK_003"],
+    "graded_relevance": {"PLC-POL-001_CHUNK_002": 3, "PLC-POL-001_CHUNK_003": 2},
+    "description": "Academic CGPA, no active backlogs, and attendance eligibility for campus recruitment"
+  },
+  {
+    "query_id": "Q038",
+    "query": "eligibility for supplementary backlog examination",
+    "category": "eligibility",
+    "tags": ["eligibility", "examination", "backlog"],
+    "target_doc_id": "POL-BACKLOG",
+    "relevant_chunks": ["POL-BACKLOG_CHUNK_001", "POL-BACKLOG_CHUNK_002"],
+    "graded_relevance": {"POL-BACKLOG_CHUNK_001": 3, "POL-BACKLOG_CHUNK_002": 2},
+    "description": "Eligibility requirements and registration for backlog supplementary examinations"
+  },
+  {
+    "query_id": "Q039",
+    "query": "eligibility for student semester exchange program",
+    "category": "eligibility",
+    "tags": ["eligibility", "international", "exchange"],
+    "target_doc_id": "IRO-POL-001",
+    "relevant_chunks": ["IRO-POL-001_CHUNK_001", "IRO-POL-001_CHUNK_002"],
+    "graded_relevance": {"IRO-POL-001_CHUNK_001": 3, "IRO-POL-001_CHUNK_002": 2},
+    "description": "Minimum CGPA (7.5) and semester completion requirements for international exchange"
+  },
+  {
+    "query_id": "Q040",
+    "query": "internship NOC eligibility and credit transfer",
+    "category": "eligibility",
+    "tags": ["eligibility", "internship", "career"],
+    "target_doc_id": "PLC-GUI-003",
+    "relevant_chunks": ["PLC-GUI-003_CHUNK_001", "PLC-GUI-003_CHUNK_002"],
+    "graded_relevance": {"PLC-GUI-003_CHUNK_001": 3, "PLC-GUI-003_CHUNK_002": 2},
+    "description": "Criteria for obtaining an internship No Objection Certificate and academic credit transfer"
+  },
+  {
+    "query_id": "Q041",
+    "query": "how to apply for general bonafide student certificate",
+    "category": "procedure",
+    "tags": ["procedure", "student_affairs", "certificate"],
+    "target_doc_id": "STU-FRM-001",
+    "relevant_chunks": ["STU-FRM-001_CHUNK_002", "STU-FRM-001_CHUNK_003"],
+    "graded_relevance": {"STU-FRM-001_CHUNK_002": 3, "STU-FRM-001_CHUNK_003": 2},
+    "description": "Step-by-step procedure to submit bonafide certificate application on UniCampus ERP"
+  },
+  {
+    "query_id": "Q042",
+    "query": "procedure for lost student id card replacement",
+    "category": "procedure",
+    "tags": ["procedure", "security", "id_card"],
+    "target_doc_id": "SEC-POL-001",
+    "relevant_chunks": ["SEC-POL-001_CHUNK_004", "STU-FRM-007_CHUNK_002"],
+    "graded_relevance": {"SEC-POL-001_CHUNK_004": 3, "STU-FRM-007_CHUNK_002": 2},
+    "description": "Workflow for reporting lost RFID card and requesting duplicate card"
+  },
+  {
+    "query_id": "Q043",
+    "query": "procedure for hostel room vacation and clearance",
+    "category": "procedure",
+    "tags": ["procedure", "hostel", "vacating"],
+    "target_doc_id": "HSTL-POL-004",
+    "relevant_chunks": ["HSTL-POL-004_CHUNK_001", "HSTL-POL-004_CHUNK_002"],
+    "graded_relevance": {"HSTL-POL-004_CHUNK_001": 3, "HSTL-POL-004_CHUNK_002": 2},
+    "description": "Protocol for inventory handover, key return, and room vacation at semester end"
+  },
+  {
+    "query_id": "Q044",
+    "query": "procedure to file online student grievance on ResolveDesk",
+    "category": "procedure",
+    "tags": ["procedure", "student_affairs", "grievance"],
+    "target_doc_id": "STU-GUI-001",
+    "relevant_chunks": ["STU-GUI-001_CHUNK_001", "STU-GUI-001_CHUNK_002"],
+    "graded_relevance": {"STU-GUI-001_CHUNK_001": 3, "STU-GUI-001_CHUNK_002": 2},
+    "description": "Step-by-step guide for logging tickets and tracking SLAs on ResolveDesk portal"
+  },
+  {
+    "query_id": "Q045",
+    "query": "procedure for on-duty leave application and approval",
+    "category": "procedure",
+    "tags": ["procedure", "academics", "leave"],
+    "target_doc_id": "POL-OD",
+    "relevant_chunks": ["POL-OD_CHUNK_002", "POL-OD_CHUNK_003"],
+    "graded_relevance": {"POL-OD_CHUNK_002": 3, "POL-OD_CHUNK_003": 2},
+    "description": "On-Duty (OD) application submission and HOD approval timeline"
+  },
+  {
+    "query_id": "Q046",
+    "query": "institutional five-department no-dues clearance sign-off matrix",
+    "category": "lexical_diversity",
+    "tags": ["lexical_diversity", "clearance", "graduation"],
+    "target_doc_id": "ADM-SOP-001",
+    "relevant_chunks": ["ADM-SOP-001_CHUNK_001", "ADM-SOP-001_CHUNK_002"],
+    "graded_relevance": {"ADM-SOP-001_CHUNK_001": 3, "ADM-SOP-001_CHUNK_002": 2},
+    "description": "Five-department digital sign-off matrix for institutional no-dues clearance"
+  },
+  {
+    "query_id": "Q047",
+    "query": "ExamShield portal hall ticket download and re-evaluation filing",
+    "category": "lexical_diversity",
+    "tags": ["lexical_diversity", "it_systems", "examshield"],
+    "target_doc_id": "IT-SYS-003",
+    "relevant_chunks": ["IT-SYS-003_CHUNK_001", "IT-SYS-003_CHUNK_002"],
+    "graded_relevance": {"IT-SYS-003_CHUNK_001": 3, "IT-SYS-003_CHUNK_002": 2},
+    "description": "ExamShield portal instructions for hall ticket download and re-evaluation filing"
+  },
+  {
+    "query_id": "Q048",
+    "query": "LibNet OPAC book reservation and account renewal guide",
+    "category": "lexical_diversity",
+    "tags": ["lexical_diversity", "library", "opac"],
+    "target_doc_id": "LIB-GUI-001",
+    "relevant_chunks": ["LIB-GUI-001_CHUNK_001", "LIB-GUI-001_CHUNK_002"],
+    "graded_relevance": {"LIB-GUI-001_CHUNK_001": 3, "LIB-GUI-001_CHUNK_002": 2},
+    "description": "LibNet online public access catalog book reservation and account renewal steps"
+  },
+  {
+    "query_id": "Q049",
+    "query": "campus Wi-Fi 802.1X PEAP MSCHAPv2 device authentication",
+    "category": "lexical_diversity",
+    "tags": ["lexical_diversity", "network", "wifi"],
+    "target_doc_id": "IT-SYS-005",
+    "relevant_chunks": ["IT-SYS-005_CHUNK_001", "IT-SYS-005_CHUNK_002"],
+    "graded_relevance": {"IT-SYS-005_CHUNK_001": 3, "IT-SYS-005_CHUNK_002": 2},
+    "description": "Campus Wi-Fi enterprise 802.1X PEAP MSCHAPv2 configuration parameters"
+  },
+  {
+    "query_id": "Q050",
+    "query": "CareerHub portal CDC registration and one-offer placement norms",
+    "category": "lexical_diversity",
+    "tags": ["lexical_diversity", "placements", "careerhub"],
+    "target_doc_id": "PLC-POL-001",
+    "relevant_chunks": ["PLC-POL-001_CHUNK_001", "PLC-POL-001_CHUNK_002"],
+    "graded_relevance": {"PLC-POL-001_CHUNK_001": 3, "PLC-POL-001_CHUNK_002": 2},
+    "description": "CareerHub placement portal registration workflow and one-offer rules"
+  }
+]
