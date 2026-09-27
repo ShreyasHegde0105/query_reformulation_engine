@@ -17,3 +17,6 @@ venv/
 
 # Local-only docs
 Repo_Docs/
+
+# Throwaway evaluation sample runs
+evaluation/results/sample/

@@ -184,10 +184,18 @@ def main() -> None:
         default=["baseline_vector", "baseline_keyword", "baseline_hybrid", "reformulation_hybrid", "full_pipeline"],
         help="List of variants to evaluate.",
     )
-    parser.add_argument("--output-dir", type=str, default="evaluation/results", help="Directory to save evaluation artifacts.")
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default=None,
+        help="Directory to save evaluation artifacts (default: evaluation/results, or evaluation/results/sample with --sample-size).",
+    )
     parser.add_argument("--no-cache", action="store_true", help="Disable reformulation caching.")
     
     args = parser.parse_args()
+    if args.output_dir is None:
+        # Keep partial sample runs from overwriting the full benchmark results.
+        args.output_dir = "evaluation/results/sample" if args.sample_size else "evaluation/results"
 
     # 1. Load dataset
     dataset = load_golden_dataset(args.dataset)

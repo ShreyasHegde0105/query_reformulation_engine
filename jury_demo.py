@@ -36,6 +36,7 @@ from dotenv import load_dotenv
 # override=True so values in .env win over stale OS-level environment variables.
 load_dotenv(override=True)
 
+from embedding.encoder import EmbeddingEncoder
 from evaluation.metrics import calculate_all_metrics
 from reformulation.cross_encoder import CrossEncoderReranker
 from reformulation.llm.client import LLMClient
@@ -107,8 +108,10 @@ class PresentationDemo:
             llm_config = LLMConfig.from_env()
             llm_client = LLMClient(config=llm_config)
             self.reformulator = QueryReformulator(llm_client=llm_client)
-            self.semantic_similarity = SemanticSimilarity()
-            self.vector_retriever = VectorRetriever()
+            # One embedding model shared by the redundancy filter and vector search.
+            encoder = EmbeddingEncoder()
+            self.semantic_similarity = SemanticSimilarity(embed_fn=encoder.embed_query)
+            self.vector_retriever = VectorRetriever(encoder=encoder)
             self.keyword_retriever = BM25Retriever()
             self.hybrid_retriever = HybridRetriever(
                 vector_retriever=self.vector_retriever,
@@ -691,14 +694,13 @@ class PresentationDemo:
         else:
             print("Status: DISABLED in production pipeline configuration (RERANKER_ENABLED=false)")
             print()
-            print("Phase 4 Benchmark Findings:")
-            print("  • Candidate Pool Recall: 87% of ground-truth chunks enter the pool at K=50 (vs 79% at K=20).")
-            print("  • Type A Failures (Candidate Generation): 1 query (Q014) is absent from pool entirely;")
-            print("    Cross-Encoder cannot rank candidates that never reach the candidate pool.")
-            print("  • Type B Failures (Ranking): Cross-Encoder successfully promotes targets present in pool")
-            print("    (e.g., Q027 probation: Rank 17 → 4; Q008 attendance: Rank 8 → 2).")
-            print("  • Compute Cost: Adds ~0.25s CPU inference time per query across 50 candidates.")
-            print("  • Conclusion: Maintained as an optional configurable stage (RERANKER_ENABLED=true).")
+            print("Benchmark Findings (50 golden queries):")
+            print("  • Phase 4: pure Cross-Encoder reranking lowered Recall@10 (0.69 → 0.62) and MRR (0.56 → 0.53);")
+            print("    14 queries improved, 17 regressed. Cost: ~4.0s CPU per query for 50 candidates.")
+            print("  • Phase 5: contextual embeddings + BM25 raised candidate Recall@50 from 87% to 96%")
+            print("    and the full pipeline to Recall@10 0.83, MRR 0.666 (from 0.69 / 0.561).")
+            print("  • Conclusion: kept as an optional stage (RERANKER_ENABLED=true); to be re-evaluated")
+            print("    on the stronger Phase 5 candidate pool.")
         print()
 
     def run(self) -> None:
