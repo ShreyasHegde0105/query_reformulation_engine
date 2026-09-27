@@ -15,7 +15,7 @@ from evaluation.run_evaluation import load_golden_dataset
 from reformulation.normalizer import normalize_query
 from reformulation.semantic_similarity import SemanticSimilarity
 from retrieval.hybrid_retriever import HybridRetriever
-from retrieval.keyword_retriever import KeywordRetriever
+from retrieval.bm25_retriever import BM25Retriever
 from retrieval.vector_retriever import VectorRetriever
 from retrieval.models import RetrievedChunk
 
@@ -107,7 +107,7 @@ def diagnose_query(
 
     # 2. Retrievers
     vec_retriever = VectorRetriever()
-    kw_retriever = KeywordRetriever()
+    kw_retriever = BM25Retriever()
     hyb_retriever = HybridRetriever(vector_retriever=vec_retriever, keyword_retriever=kw_retriever)
 
     # 3. Track Ground Truth

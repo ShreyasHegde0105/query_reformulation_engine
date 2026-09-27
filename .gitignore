@@ -1,2 +1,19 @@
+# Secrets
 .env
-.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local-only docs
+Repo_Docs/

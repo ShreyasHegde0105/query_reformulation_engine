@@ -18,16 +18,14 @@ class TestRetrievalDatabaseLayer(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         load_dotenv()
-        cls.migration_path = Path("migrations/000001_retrieval_functions.sql")
-        cls.supabase_migration_path = Path("supabase/migrations/20260922000001_retrieval_functions.sql")
+        cls.migration_path = Path("supabase/migrations/20260922000001_retrieval_functions.sql")
 
     # -------------------------------------------------------------------------
     # 1. Migration File & Contract Tests
     # -------------------------------------------------------------------------
     def test_migration_files_exist(self) -> None:
-        """Verify that migration files exist in both standard locations."""
+        """Verify that the Supabase migration file exists."""
         self.assertTrue(self.migration_path.exists(), f"Missing {self.migration_path}")
-        self.assertTrue(self.supabase_migration_path.exists(), f"Missing {self.supabase_migration_path}")
 
     def test_migration_sql_contains_required_functions(self) -> None:
         """Verify SQL contains required function definitions and specifications."""

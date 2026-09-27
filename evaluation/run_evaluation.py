@@ -19,7 +19,7 @@ from reformulation.reformulator import QueryReformulator
 from reformulation.search_pipeline import SearchPipeline
 from reformulation.semantic_similarity import SemanticSimilarity
 from retrieval.hybrid_retriever import HybridRetriever
-from retrieval.keyword_retriever import KeywordRetriever
+from retrieval.bm25_retriever import BM25Retriever
 from retrieval.vector_retriever import VectorRetriever
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
@@ -144,7 +144,7 @@ def save_json_results(
 def initialize_real_evaluator(config: Optional[EvaluationConfig] = None) -> RetrievalEvaluator:
     """Initialize evaluator wired to real project components."""
     vec = VectorRetriever()
-    kw = KeywordRetriever()
+    kw = BM25Retriever()
     hyb = HybridRetriever(vector_retriever=vec, keyword_retriever=kw)
     
     try:

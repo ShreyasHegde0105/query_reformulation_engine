@@ -67,7 +67,8 @@ class IngestionPipeline:
 
         # 3. Load embedding model and generate embeddings
         logger.info("Loading embedding model...")
-        texts = [chunk["text"] for chunk in chunks]
+        texts = [DocumentMapper.passage_text(chunk, self.config.contextual_passages) for chunk in chunks]
+        logger.info("Contextual passages (title + section header): %s", self.config.contextual_passages)
 
         logger.info("Generating embeddings...")
         t0_emb = time.time()

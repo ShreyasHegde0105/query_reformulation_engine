@@ -45,7 +45,7 @@ from reformulation.reformulator import QueryReformulator
 from reformulation.search_pipeline import SearchPipeline
 from reformulation.semantic_similarity import FilterDecision, SemanticSimilarity
 from retrieval.hybrid_retriever import HybridRetriever
-from retrieval.keyword_retriever import KeywordRetriever
+from retrieval.bm25_retriever import BM25Retriever
 from retrieval.models import RetrievedChunk
 from retrieval.vector_retriever import VectorRetriever
 
@@ -109,7 +109,7 @@ class PresentationDemo:
             self.reformulator = QueryReformulator(llm_client=llm_client)
             self.semantic_similarity = SemanticSimilarity()
             self.vector_retriever = VectorRetriever()
-            self.keyword_retriever = KeywordRetriever()
+            self.keyword_retriever = BM25Retriever()
             self.hybrid_retriever = HybridRetriever(
                 vector_retriever=self.vector_retriever,
                 keyword_retriever=self.keyword_retriever,

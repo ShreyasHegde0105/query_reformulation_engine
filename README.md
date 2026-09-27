@@ -7,17 +7,28 @@ Document Generation (Modules 1–12)          ✅ COMPLETED (157 enterprise docu
         ↓
 Corpus Validation                           ✅ COMPLETED (Data/validated/)
         ↓
-Document Chunking                           ✅ COMPLETED (Data/chunks/)
+Document Chunking                           ✅ COMPLETED (Data/chunks/, 696 chunks)
         ↓
-Embedding Generation                        ⏳ Next Phase
+Embedding Generation                        ✅ COMPLETED (bge-small-en-v1.5, contextual passages)
         ↓
-Vector / Hybrid Indexing                    ⏳ Upcoming
+Vector / Hybrid Indexing                    ✅ COMPLETED (Supabase pgvector + in-process BM25)
         ↓
-Retrieval (Dense + BM25)                    ⏳ Upcoming
+Retrieval (Dense + BM25, RRF)               ✅ COMPLETED (retrieval/)
         ↓
-Query Reformulation Engine                  ⏳ Upcoming
+Query Reformulation Engine                  ✅ COMPLETED (reformulation/)
         ↓
-Benchmark Evaluation                        ⏳ Upcoming
+Benchmark Evaluation                        ✅ COMPLETED (evaluation/, Phases 2–5)
+```
+
+**Current results (50 golden queries, full pipeline, top-20):** Recall@10 **0.83**, MRR **0.666**, NDCG@10 **0.628**, candidate Recall@50 **0.96**
+(Phase 2 baseline: 0.69 / 0.561 / 0.473 / 0.87). See `evaluation/results/phase5_report.md`.
+
+### Setup
+
+```bash
+pip install -e ".[chunking,dev]"
+cp .env.example .env          # fill in SUPABASE_* and LLM_*
+python -m pytest              # offline test suite (tests/ only)
 ```
 
 ---

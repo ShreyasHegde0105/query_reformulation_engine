@@ -5,6 +5,7 @@ from typing import List, Optional
 
 from retrieval.models import RetrievedChunk
 from retrieval.vector_retriever import VectorRetriever
+from retrieval.bm25_retriever import BM25Retriever
 from retrieval.keyword_retriever import KeywordRetriever
 
 logger = logging.getLogger("retrieval.hybrid")
@@ -18,17 +19,18 @@ class HybridRetriever:
     ----------
     vector_retriever: Optional[VectorRetriever]
         Pre‑constructed vector retriever (defaults to a new instance).
-    keyword_retriever: Optional[KeywordRetriever]
-        Pre‑constructed keyword retriever (defaults to a new instance).
+    keyword_retriever: Optional[KeywordRetriever | BM25Retriever]
+        Pre‑constructed keyword retriever (defaults to an in-process BM25Retriever;
+        pass a KeywordRetriever to use PostgreSQL full-text search instead).
     """
 
     def __init__(
         self,
         vector_retriever: Optional[VectorRetriever] = None,
-        keyword_retriever: Optional[KeywordRetriever] = None,
+        keyword_retriever: Optional[KeywordRetriever | BM25Retriever] = None,
     ) -> None:
         self.vector_retriever = vector_retriever or VectorRetriever()
-        self.keyword_retriever = keyword_retriever or KeywordRetriever()
+        self.keyword_retriever = keyword_retriever or BM25Retriever()
 
     def retrieve(
         self,

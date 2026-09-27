@@ -25,6 +25,7 @@ class IngestionConfig:
     input_chunks_path: Path = Path("Data/chunks/chunks.jsonl")
     validated_docs_path: Path = Path("Data/validated/validated_documents.json")
     local_files_only: bool = True
+    contextual_passages: bool = True
     dry_run: bool = False
     timeout: float = 30.0
 
@@ -56,6 +57,7 @@ class IngestionConfig:
             "input_chunks_path": chunks_path,
             "validated_docs_path": val_docs_path,
             "local_files_only": os.getenv("HF_LOCAL_FILES_ONLY", "1").lower() in ("1", "true", "yes"),
+            "contextual_passages": os.getenv("EMBEDDING_CONTEXTUAL", "1").lower() in ("1", "true", "yes"),
             "dry_run": os.getenv("DRY_RUN", "0").lower() in ("1", "true", "yes"),
         }
 
@@ -73,6 +75,7 @@ class IngestionConfig:
             "input_chunks_path": str(self.input_chunks_path),
             "validated_docs_path": str(self.validated_docs_path),
             "local_files_only": self.local_files_only,
+            "contextual_passages": self.contextual_passages,
             "dry_run": self.dry_run,
             "timeout": self.timeout,
         }

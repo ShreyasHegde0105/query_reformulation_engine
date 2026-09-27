@@ -79,7 +79,8 @@ def main(args: list[str] | None = None) -> int:
         embedding_model_name=parsed_args.model,
         embedding_batch_size=parsed_args.embedding_batch_size,
         db_batch_size=parsed_args.upsert_batch_size,
-        dry_run=parsed_args.dry_run,
+        # None (flag absent) defers to the DRY_RUN env var instead of forcing False.
+        dry_run=True if parsed_args.dry_run else None,
     )
 
     pipeline = IngestionPipeline(config=config)

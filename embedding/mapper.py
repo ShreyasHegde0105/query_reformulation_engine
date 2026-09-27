@@ -88,6 +88,21 @@ class DocumentMapper:
 
         return list(docs_by_id.values())
 
+    @staticmethod
+    def passage_text(chunk: Dict[str, Any], contextual: bool = True) -> str:
+        """Text that is embedded for a chunk.
+
+        With ``contextual=True`` the document title and section heading are
+        prepended, so chunks deep inside a document still carry what the
+        document is about (e.g. a lab-assignment chunk of a course outline).
+        The stored ``chunk_text`` is never changed.
+        """
+        text = chunk["text"]
+        if not contextual:
+            return text
+        header = "\n".join(p for p in (chunk.get("title"), chunk.get("section")) if p)
+        return f"{header}\n\n{text}" if header else text
+
     @classmethod
     def build_chunk_records(
         cls,
