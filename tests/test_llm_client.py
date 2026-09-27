@@ -194,6 +194,20 @@ class TestLLMClient(unittest.TestCase):
             self.client.generate("fail_timeout")
         self.assertEqual(mock_urlopen.call_count, 3)
 
+    @mock.patch("urllib.request.urlopen")
+    def test_read_timeout_is_retried_and_reported_as_timeout(self, mock_urlopen):
+        # A timeout while reading the response body surfaces as a bare TimeoutError.
+        read_timeout = TimeoutError("The read operation timed out")
+        success_payload = {"choices": [{"message": {"content": "ok"}}]}
+        mock_urlopen.side_effect = [read_timeout, _MockHTTPResponse(json.dumps(success_payload).encode())]
+        self.assertEqual(self.client.generate("slow"), "ok")
+
+        mock_urlopen.reset_mock()
+        mock_urlopen.side_effect = [read_timeout] * 3
+        with self.assertRaises(LLMTimeoutError):
+            self.client.generate("slow")
+        self.assertEqual(mock_urlopen.call_count, 3)
+
     # ---------- Malformed response ----------
     @mock.patch("urllib.request.urlopen")
     def test_malformed_response(self, mock_urlopen):

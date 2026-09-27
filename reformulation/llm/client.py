@@ -143,8 +143,16 @@ class LLMClient:
                 backoff = (2 ** (attempts - 1)) * 0.1
                 self._sleep(backoff)
                 continue
+            except TimeoutError as timeout_err:
+                # A timeout while reading the response is raised directly, not wrapped in URLError.
+                attempts += 1
+                if attempts > self.config.max_retries:
+                    raise LLMTimeoutError("Request timed out after retries") from timeout_err
+                backoff = (2 ** (attempts - 1)) * 0.1
+                self._sleep(backoff)
+                continue
             except Exception as exc:
-                raise LLMError("Unexpected error during LLM request") from exc
+                raise LLMError(f"Unexpected error during LLM request ({type(exc).__name__})") from exc
 
     # ---------------------------------------------------------------------
     # Public API

@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import heapq
 import json
 import logging
 import math
 import os
 import re
+from array import array
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence
@@ -122,20 +124,28 @@ class BM25Retriever:
         return " ".join(parts)
 
     def _build_index(self) -> None:
-        self._postings: Dict[str, List[tuple[int, int]]] = defaultdict(list)
-        self._doc_len: List[int] = []
+        # Postings are stored as two compact int arrays per term (doc indices, term
+        # frequencies) rather than lists of tuples: ~10x less memory on large corpora.
+        self._postings: Dict[str, tuple[array, array]] = {}
+        self._doc_len = array("i")
+        self._id_to_idx: Dict[str, int] = {}
 
         for idx, chunk in enumerate(self._chunks):
             terms = tokenize(self._index_text(chunk))
             self._doc_len.append(len(terms))
+            self._id_to_idx[str(chunk["chunk_id"])] = idx
             for term, tf in Counter(terms).items():
-                self._postings[term].append((idx, tf))
+                entry = self._postings.get(term)
+                if entry is None:
+                    entry = self._postings[term] = (array("i"), array("i"))
+                entry[0].append(idx)
+                entry[1].append(tf)
 
         n_docs = len(self._chunks)
         self._avg_len = (sum(self._doc_len) / n_docs) if n_docs else 0.0
         self._idf = {
-            term: math.log(1.0 + (n_docs - len(p) + 0.5) / (len(p) + 0.5))
-            for term, p in self._postings.items()
+            term: math.log(1.0 + (n_docs - len(ids) + 0.5) / (len(ids) + 0.5))
+            for term, (ids, _) in self._postings.items()
         }
         logger.info("BM25 index built: %d chunks, %d terms.", n_docs, len(self._postings))
 
@@ -160,6 +170,21 @@ class BM25Retriever:
         if isinstance(match_count, bool) or not isinstance(match_count, int) or match_count < 1 or match_count > 100:
             raise ValueError("match_count must be an integer between 1 and 100.")
 
+        return self.retrieve_weighted({term: 1.0 for term in tokenize(query)}, match_count, filter_domain)
+
+    def retrieve_weighted(
+        self,
+        term_weights: Dict[str, float],
+        match_count: int = 20,
+        filter_domain: Optional[str] = None,
+    ) -> List[RetrievedChunk]:
+        """Like :meth:`retrieve`, but for an already-tokenized query with per-term weights.
+
+        Each term's BM25 contribution is multiplied by its weight (used by
+        pseudo-relevance feedback such as RM3). Keys must be outputs of :func:`tokenize`.
+        """
+        if isinstance(match_count, bool) or not isinstance(match_count, int) or match_count < 1 or match_count > 100:
+            raise ValueError("match_count must be an integer between 1 and 100.")
         clean_domain: Optional[str] = None
         if filter_domain is not None:
             if not isinstance(filter_domain, str):
@@ -167,20 +192,28 @@ class BM25Retriever:
             clean_domain = filter_domain.strip() or None
 
         scores: Dict[int, float] = defaultdict(float)
-        for term in set(tokenize(query)):
+        for term, weight in term_weights.items():
             postings = self._postings.get(term)
-            if not postings:
+            if not postings or weight <= 0:
                 continue
             idf = self._idf[term]
-            for idx, tf in postings:
+            for idx, tf in zip(*postings):
                 norm = self.k1 * (1.0 - self.b + self.b * self._doc_len[idx] / self._avg_len)
-                scores[idx] += idf * tf * (self.k1 + 1.0) / (tf + norm)
+                scores[idx] += weight * idf * tf * (self.k1 + 1.0) / (tf + norm)
 
         if clean_domain is not None:
             scores = {i: s for i, s in scores.items() if self._chunks[i].get("department") == clean_domain}
 
-        ranked = sorted(scores.items(), key=lambda item: (-item[1], self._chunks[item[0]]["chunk_id"]))
-        return [self._to_retrieved(self._chunks[i], s) for i, s in ranked[:match_count]]
+        ranked = heapq.nsmallest(match_count, scores.items(),
+                                 key=lambda item: (-item[1], self._chunks[item[0]]["chunk_id"]))
+        return [self._to_retrieved(self._chunks[i], s) for i, s in ranked]
+
+    def doc_terms(self, chunk_id: str) -> Counter:
+        """Term frequencies of an indexed chunk (tokenized as for search).
+
+        Recomputed on demand rather than stored per document, to keep the index small.
+        """
+        return Counter(tokenize(self._index_text(self._chunks[self._id_to_idx[chunk_id]])))
 
     @staticmethod
     def _to_retrieved(chunk: Dict[str, Any], score: float) -> RetrievedChunk:

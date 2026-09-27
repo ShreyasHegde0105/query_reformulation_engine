@@ -20,3 +20,6 @@ Repo_Docs/
 
 # Throwaway evaluation sample runs
 evaluation/results/sample/
+
+# Downloaded benchmark datasets and cached embeddings
+Data/beir/
