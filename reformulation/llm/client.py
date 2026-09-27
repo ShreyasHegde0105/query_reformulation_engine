@@ -63,6 +63,18 @@ class LLMClient:
         }
         return json.dumps(payload).encode("utf-8")
 
+    _MAX_RETRY_AFTER_SECONDS = 30.0
+
+    @classmethod
+    def _retry_after_seconds(cls, http_err: urllib.error.HTTPError) -> float:
+        """Seconds requested by a ``Retry-After`` header (capped), or 0 if absent/unparseable."""
+        headers = getattr(http_err, "headers", None)
+        value = headers.get("Retry-After") if headers is not None else None
+        try:
+            return min(max(float(value), 0.0), cls._MAX_RETRY_AFTER_SECONDS)
+        except (TypeError, ValueError):
+            return 0.0
+
     # ---------------------------------------------------------------------
     # Low‑level POST with retry handling
     # ---------------------------------------------------------------------
@@ -100,7 +112,7 @@ class LLMClient:
                         if detail:
                             message += f": {detail}"
                         raise LLMRateLimitError(message) from http_err
-                    backoff = (2 ** (attempts - 1)) * 0.1
+                    backoff = max((2 ** (attempts - 1)) * 0.1, self._retry_after_seconds(http_err))
                     self._sleep(backoff)
                     continue
                 # 5xx – server errors (retry)

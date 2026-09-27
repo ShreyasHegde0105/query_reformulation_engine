@@ -164,7 +164,7 @@ class TestSearchPipeline(unittest.TestCase):
         # The normalized form of "query" is "Query" (sentence case)
         expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50
         )
         self.assertEqual(len(results), 1)
 
@@ -180,7 +180,7 @@ class TestSearchPipeline(unittest.TestCase):
         
         expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=20
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50
         )
         self.assertEqual(len(results), 1)
 
@@ -283,6 +283,104 @@ class TestSearchPipeline(unittest.TestCase):
         results_default = self.pipeline.search("main query", k=60)
         scores_default = {c.chunk_id: c.score for c in results_default}
         self.assertEqual(scores_default, scores_1_0)
+
+
+class TestSearchPipelineRuntime(unittest.TestCase):
+    """Candidate depth, parallel retrieval, reformulation cache and trace."""
+
+    def _chunk(self, cid, score=1.0, metadata=None):
+        return RetrievedChunk(chunk_id=cid, document_id="d", title="T", domain="D", chunk_index=0,
+                              chunk_text=cid, section=None, token_count=1, score=score, metadata=metadata or {})
+
+    def _pipeline(self, **kwargs):
+        reformulator = MagicMock(spec=QueryReformulator)
+        reformulator.generate_variants.return_value = ["v1", "v2", "v3"]
+        sem = MagicMock(spec=SemanticSimilarity)
+        sem.filter_redundant.side_effect = lambda qs: qs
+        hybrid = MagicMock(spec=HybridRetriever)
+        return SearchPipeline(reformulator=reformulator, semantic_similarity=sem, hybrid_retriever=hybrid, **kwargs)
+
+    def test_candidate_k_sets_per_query_depth(self):
+        p = self._pipeline()
+        p.hybrid_retriever.retrieve.return_value = []
+        p.search("query", final_k=10, candidate_k=40)
+        for call in p.hybrid_retriever.retrieve.call_args_list:
+            self.assertEqual(call.kwargs["final_k"], 40)
+        p.hybrid_retriever.retrieve.reset_mock()
+        p.search("query", final_k=10, candidate_k=None)
+        for call in p.hybrid_retriever.retrieve.call_args_list:
+            self.assertEqual(call.kwargs["final_k"], 10)
+
+    def test_parallel_matches_sequential(self):
+        lists = {
+            normalize_query("query"): ["A", "B", "C"],
+            "v1": ["C", "D"],
+            "v2": ["B", "E", "A"],
+            "v3": ["F"],
+        }
+        outputs = []
+        for workers in (1, 4):
+            p = self._pipeline(max_workers=workers)
+            p.hybrid_retriever.retrieve.side_effect = lambda query, **kw: [self._chunk(c) for c in lists[query]]
+            outputs.append([(c.chunk_id, round(c.score, 12)) for c in p.search("query", primary_query_weight=2.0)])
+        self.assertEqual(outputs[0], outputs[1])
+
+    def test_reformulations_cached_for_repeated_query(self):
+        p = self._pipeline()
+        p.hybrid_retriever.retrieve.return_value = []
+        first = p.search_detailed("query")
+        second = p.search_detailed("query")
+        p.reformulator.generate_variants.assert_called_once()
+        self.assertFalse(first.reformulation_cached)
+        self.assertTrue(second.reformulation_cached)
+        self.assertEqual(first.reformulations, second.reformulations)
+
+    def test_cache_disabled_and_eviction(self):
+        p = self._pipeline(reformulation_cache_size=0)
+        p.hybrid_retriever.retrieve.return_value = []
+        p.search("query"); p.search("query")
+        self.assertEqual(p.reformulator.generate_variants.call_count, 2)
+
+        p = self._pipeline(reformulation_cache_size=1)
+        p.hybrid_retriever.retrieve.return_value = []
+        p.search("query a"); p.search("query b"); p.search("query a")
+        self.assertEqual(p.reformulator.generate_variants.call_count, 3)
+
+    def test_failed_reformulation_not_cached(self):
+        p = self._pipeline()
+        p.hybrid_retriever.retrieve.return_value = []
+        p.reformulator.generate_variants.side_effect = [RuntimeError("LLM down"), ["v1"]]
+        first = p.search_detailed("query")
+        second = p.search_detailed("query")
+        self.assertEqual(first.reformulation_error, "LLM down")
+        self.assertEqual(second.reformulations, ["v1"])
+
+    def test_search_detailed_trace(self):
+        p = self._pipeline()
+        p.hybrid_retriever.retrieve.return_value = [self._chunk("A")]
+        res = p.search_detailed("original query")
+        self.assertEqual(res.original_query, "original query")
+        self.assertEqual(res.normalized_query, normalize_query("original query"))
+        self.assertEqual(res.queries_used, [normalize_query("original query"), "v1", "v2", "v3"])
+        self.assertEqual([c.chunk_id for c in res.results], ["A"])
+        self.assertEqual(set(res.timings_ms), {"reformulation", "filtering", "retrieval", "total"})
+        self.assertEqual(res.to_dict()["results"][0]["chunk_id"], "A")
+
+    def test_retriever_chunks_not_mutated(self):
+        p = self._pipeline()
+        shared = self._chunk("A", metadata={"x": 1})
+        other = self._chunk("A", metadata={"y": 2})
+        p.hybrid_retriever.retrieve.side_effect = lambda query, **kw: [shared] if query == "v1" else [other]
+        p.search("query")
+        self.assertEqual(shared.metadata, {"x": 1})
+        self.assertEqual(other.metadata, {"y": 2})
+        self.assertEqual(shared.score, 1.0)
+
+    def test_invalid_constructor_args(self):
+        with self.assertRaises(ValueError):
+            self._pipeline(max_workers=0)
+        with self.assertRaises(ValueError):
+            self._pipeline(reformulation_cache_size=-1)
 
 
 if __name__ == "__main__":

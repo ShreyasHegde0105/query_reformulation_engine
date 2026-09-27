@@ -75,25 +75,28 @@ class HybridRetriever:
         keyword_results: List[RetrievedChunk] = []
         vector_error = keyword_error = None
 
-        try:
-            vector_results = self.vector_retriever.retrieve(
-                query=query,
-                match_count=vector_match_count,
-                filter_domain=filter_domain,
-            )
-        except Exception as exc:  # pragma: no cover – exercised in tests
-            vector_error = exc
-            logger.error("Vector retrieval failed: %s", exc)
+        # A match count of 0 disables that branch entirely.
+        if vector_match_count > 0:
+            try:
+                vector_results = self.vector_retriever.retrieve(
+                    query=query,
+                    match_count=vector_match_count,
+                    filter_domain=filter_domain,
+                )
+            except Exception as exc:  # pragma: no cover – exercised in tests
+                vector_error = exc
+                logger.error("Vector retrieval failed: %s", exc)
 
-        try:
-            keyword_results = self.keyword_retriever.retrieve(
-                query=query,
-                match_count=keyword_match_count,
-                filter_domain=filter_domain,
-            )
-        except Exception as exc:  # pragma: no cover – exercised in tests
-            keyword_error = exc
-            logger.error("Keyword retrieval failed: %s", exc)
+        if keyword_match_count > 0:
+            try:
+                keyword_results = self.keyword_retriever.retrieve(
+                    query=query,
+                    match_count=keyword_match_count,
+                    filter_domain=filter_domain,
+                )
+            except Exception as exc:  # pragma: no cover – exercised in tests
+                keyword_error = exc
+                logger.error("Keyword retrieval failed: %s", exc)
 
         if vector_error and keyword_error:
             raise RuntimeError(

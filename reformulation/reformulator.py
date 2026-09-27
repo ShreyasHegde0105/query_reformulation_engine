@@ -13,6 +13,7 @@ the tests mock that client.
 from __future__ import annotations
 
 import json
+import re
 from typing import List
 
 from .validator import validate_query
@@ -87,7 +88,6 @@ class QueryReformulator:
         llm_output = self.llm_client.generate(prompt)
 
         # --- Strip potential Markdown formatting ---
-        import re
         match = re.search(r"```(?:json)?\s*(.*?)\s*```", llm_output, flags=re.DOTALL)
         if match:
             llm_output = match.group(1).strip()
@@ -112,7 +112,7 @@ class QueryReformulator:
                 "'reformulations' must be a list in LLM output"
             )
 
-# --- item validation --------------------------------------------------------
+        # --- item validation --------------------------------------------------------
         clean_variants: List[str] = []
         # First collect normalized candidates, excluding empties and the original query
         candidates: List[str] = []

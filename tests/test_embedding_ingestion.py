@@ -128,6 +128,30 @@ class TestEmbeddingAndIngestion(unittest.TestCase):
         norm = sum(x * x for x in emb) ** 0.5
         self.assertAlmostEqual(norm, 1.0, places=2)
 
+    def test_encoder_query_cache(self) -> None:
+        from unittest.mock import MagicMock
+        import numpy as np
+
+        encoder = EmbeddingEncoder(query_cache_size=2)
+        model = MagicMock()
+        model.encode.side_effect = lambda text, normalize_embeddings=True: np.eye(384)[len(text) % 384]
+        encoder._model = model
+
+        first = encoder.embed_query("hostel fees")
+        first.append(99.0)  # callers mutating the result must not corrupt the cache
+        self.assertEqual(len(encoder.embed_query("  hostel fees  ")), 384)
+        self.assertEqual(model.encode.call_count, 1)
+
+        encoder.embed_query("library")
+        encoder.embed_query("exam")          # evicts "hostel fees" (least recently used)
+        encoder.embed_query("hostel fees")
+        self.assertEqual(model.encode.call_count, 4)
+
+        uncached = EmbeddingEncoder(query_cache_size=0)
+        uncached._model = model
+        uncached.embed_query("x"); uncached.embed_query("x")
+        self.assertEqual(model.encode.call_count, 6)
+
     # -------------------------------------------------------------
     # Mapper Tests (Confirmed Supabase Schema)
     # -------------------------------------------------------------

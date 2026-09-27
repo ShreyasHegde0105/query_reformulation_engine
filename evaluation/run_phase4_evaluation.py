@@ -84,7 +84,8 @@ def run_rrf_only(
     if evaluator.cached_reformulator:
         evaluator.cached_reformulator.set_current_query_id(query_item.query_id)
     t0 = time.perf_counter()
-    chunks = evaluator.search_pipeline.search(
+    chunks = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            
         query=query_item.query,
         max_variants=5,
         vector_match_count=20,
@@ -113,7 +114,8 @@ def run_rrf_then_ce(
 
     # Stage 1: RRF candidate generation
     t0 = time.perf_counter()
-    candidates = evaluator.search_pipeline.search(
+    candidates = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            
         query=query_item.query,
         max_variants=5,
         vector_match_count=20,

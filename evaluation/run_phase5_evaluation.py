@@ -38,6 +38,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from embedding.encoder import EmbeddingEncoder
 from embedding.mapper import DocumentMapper
 from evaluation.metrics import calculate_all_metrics
+from evaluation.significance import paired_comparison
 from reformulation.search_pipeline import SearchPipeline
 from reformulation.semantic_similarity import SemanticSimilarity
 from retrieval.bm25_retriever import BM25Retriever
@@ -138,12 +139,14 @@ def build_runners(chunks, encoder, sem, reformulator, postgres_keyword: bool):
         return lambda g, depth: [c.chunk_id for c in h.retrieve(
             g["query"], vector_match_count=MATCH_COUNT, keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=depth)]
 
-    def pipeline(vec, kw):
+    def pipeline(vec, kw, candidate_k=None):
+        # candidate_k=None keeps each query's hybrid list at the output depth (Phase 2 behaviour).
         p = SearchPipeline(reformulator=reformulator, semantic_similarity=sem,
                            hybrid_retriever=HybridRetriever(vector_retriever=vec, keyword_retriever=kw))
         return lambda g, depth: [c.chunk_id for c in p.search(
             g["query"], max_variants=MAX_VARIANTS, vector_match_count=MATCH_COUNT,
-            keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=depth)]
+            keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=depth,
+            candidate_k=max(candidate_k or depth, depth))]
 
     runners: Dict[str, tuple[str, Callable]] = {}
     if postgres_keyword:
@@ -157,7 +160,9 @@ def build_runners(chunks, encoder, sem, reformulator, postgres_keyword: bool):
         "bm25": ("BM25 (title+section+text)", single(bm25)),
         "hybrid_ctx_bm25": ("Hybrid: contextual vec + BM25 (no reformulation)", hybrid(vec_ctx, bm25)),
         "pipeline_plain_bm25": ("Pipeline: plain vec + BM25", pipeline(vec_plain, bm25)),
-        "pipeline_ctx_bm25": ("Pipeline: contextual vec + BM25 (Phase 5)", pipeline(vec_ctx, bm25)),
+        "pipeline_ctx_bm25": ("Pipeline: contextual vec + BM25", pipeline(vec_ctx, bm25)),
+        "pipeline_ctx_bm25_deep": ("Pipeline: contextual vec + BM25, candidate_k=50 (Phase 5)",
+                                   pipeline(vec_ctx, bm25, candidate_k=POOL_K)),
     })
     return runners
 
@@ -210,7 +215,23 @@ def write_report(results: Dict[str, dict], names: Dict[str, str], path: str, bas
         elif d_mrr < -1e-9 or d_r10 < -1e-9:
             regressed.append(row)
 
-    for title, rows in (("3. Improved queries", improved), ("4. Regressed or mixed queries", regressed)):
+    lines += [
+        "",
+        f"## 3. Significance: {names[final_key]} vs {names[baseline_key]}",
+        "",
+        "Paired randomization test (two-sided) and 95% bootstrap CI of the per-query difference; "
+        "10,000 resamples, seed 0.",
+        "",
+        "| Metric | Before | After | Δ | 95% CI | p-value | Significant (p<0.05) |",
+        "|:---|---:|---:|---:|:---:|---:|:---:|",
+    ]
+    for metric in ("recall@10", "mrr", "ndcg@10", "pool_recall@50"):
+        cmp = paired_comparison([q["metrics"][metric] for q in base["per_query"]],
+                                [q["metrics"][metric] for q in final["per_query"]])
+        lines.append(f"| {metric} | {cmp.mean_a:.4f} | {cmp.mean_b:.4f} | {cmp.mean_diff:+.4f} | "
+                     f"[{cmp.ci_low:+.4f}, {cmp.ci_high:+.4f}] | {cmp.p_value:.4f} | {'yes' if cmp.significant else 'no'} |")
+
+    for title, rows in (("4. Improved queries", improved), ("5. Regressed or mixed queries", regressed)):
         lines += ["", f"## {title} ({len(rows)})", "",
                   "| Query | Category | Text | MRR before | MRR after | R@10 before | R@10 after |",
                   "|:---|:---|:---|---:|---:|---:|---:|"]
@@ -218,7 +239,7 @@ def write_report(results: Dict[str, dict], names: Dict[str, str], path: str, bas
 
     lines += [
         "",
-        "## 5. Notes",
+        "## 6. Notes",
         "",
         "- With 50 queries, one query moves Recall@10 by 0.01–0.02. Treat differences below ~0.03 as noise.",
         "- BM25 indexes title, section and chunk text only; the synthetic `keywords` metadata is deliberately "
@@ -261,7 +282,7 @@ def main() -> None:
     os.makedirs(args.output_dir, exist_ok=True)
     with open(os.path.join(args.output_dir, "phase5_results.json"), "w", encoding="utf-8") as f:
         json.dump({"names": names, "results": results}, f, indent=1)
-    write_report(results, names, os.path.join(args.output_dir, "phase5_report.md"), baseline_key, "pipeline_ctx_bm25")
+    write_report(results, names, os.path.join(args.output_dir, "phase5_report.md"), baseline_key, "pipeline_ctx_bm25_deep")
     print(f"\nReport: {os.path.join(args.output_dir, 'phase5_report.md')}")
 
 

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 from corpus_validation.models import Document, Severity, ValidationIssue
@@ -18,7 +18,7 @@ class ValidationReporter:
     ) -> Dict[str, Any]:
         report = {
             "run_id": run_id,
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "summary": metadata_report.get("summary", {}),
             "id_statistics": metadata_report.get("id_stats", {}),
             "duplicates": {
@@ -59,7 +59,7 @@ class ValidationReporter:
             f"# Enterprise Corpus Validation Report",
             f"",
             f"- **Run ID:** `{run_id}`",
-            f"- **Timestamp:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}",
+            f"- **Timestamp:** {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}",
             f"- **Overall Status:** {'✅ PASSED (Ready for Chunking)' if errors == 0 else '❌ FAILED (Contains Errors)'}",
             f"",
             f"## 1. Executive Summary",

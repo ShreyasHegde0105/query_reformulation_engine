@@ -188,9 +188,12 @@ def main():
             evaluator.cached_reformulator.set_current_query_id(qid)
 
         # Retrieve pools at K=20, 30, 50
-        pool_20 = evaluator.search_pipeline.search(query=q.query, k=60, final_k=20, primary_query_weight=1.0)
-        pool_30 = evaluator.search_pipeline.search(query=q.query, k=60, final_k=30, primary_query_weight=1.0)
-        pool_50 = evaluator.search_pipeline.search(query=q.query, k=60, final_k=50, primary_query_weight=1.0)
+        pool_20 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            query=q.query, k=60, final_k=20, primary_query_weight=1.0)
+        pool_30 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            query=q.query, k=60, final_k=30, primary_query_weight=1.0)
+        pool_50 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            query=q.query, k=60, final_k=50, primary_query_weight=1.0)
 
         # Rerank K=50 pool
         reranked_50 = reranker.rerank(q.query, pool_50)
@@ -294,23 +297,28 @@ def main():
             evaluator.cached_reformulator.set_current_query_id(qid)
 
         # Baseline Phase 2 / Phase 3 runs
-        chunks_w10 = evaluator.search_pipeline.search(
+        chunks_w10 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            
             query=q.query, k=60, final_k=20, primary_query_weight=1.0
         )
-        chunks_w15 = evaluator.search_pipeline.search(
+        chunks_w15 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            
             query=q.query, k=60, final_k=20, primary_query_weight=1.5
         )
-        chunks_w20 = evaluator.search_pipeline.search(
+        chunks_w20 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            
             query=q.query, k=60, final_k=20, primary_query_weight=2.0
         )
 
         # Candidate pools for Candidate Recall measurement
         pool_20 = chunks_w10[:20]
-        pool_30 = evaluator.search_pipeline.search(query=q.query, k=60, final_k=30, primary_query_weight=1.0)
+        pool_30 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            query=q.query, k=60, final_k=30, primary_query_weight=1.0)
 
         # Timed Phase 4 RRF candidate pool generation (K=50)
         t0 = time.perf_counter()
-        pool_50 = evaluator.search_pipeline.search(query=q.query, k=60, final_k=CE_CANDIDATE_K, primary_query_weight=1.0)
+        pool_50 = evaluator.search_pipeline.search(candidate_k=None,  # Phase 4 depth semantics
+            query=q.query, k=60, final_k=CE_CANDIDATE_K, primary_query_weight=1.0)
         t_cand = time.perf_counter() - t0
 
         # Timed CE reranking

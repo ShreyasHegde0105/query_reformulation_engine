@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import logging
 import math
+import threading
+from collections import OrderedDict
 from typing import List, Optional
 
 import numpy as np
@@ -21,12 +23,18 @@ class EmbeddingEncoder:
         expected_dimension: int = 384,
         batch_size: int = 32,
         local_files_only: bool = True,
+        query_cache_size: int = 1024,
     ):
         self.model_name = model_name
         self.expected_dimension = expected_dimension
         self.batch_size = batch_size
         self.local_files_only = local_files_only
         self._model: Optional[SentenceTransformer] = None
+        # Query embeddings are reused: the redundancy filter and vector search
+        # embed the same query variants, and users repeat queries.
+        self.query_cache_size = query_cache_size
+        self._query_cache: "OrderedDict[str, List[float]]" = OrderedDict()
+        self._cache_lock = threading.Lock()
 
     def _get_model(self) -> SentenceTransformer:
         if self._model is None:
@@ -96,12 +104,26 @@ class EmbeddingEncoder:
         if not query or not query.strip():
             raise ValueError("Query string must be non-empty.")
 
+        key = query.strip()
+        with self._cache_lock:
+            cached = self._query_cache.get(key)
+            if cached is not None:
+                self._query_cache.move_to_end(key)
+                return list(cached)
+
         model = self._get_model()
-        prefixed_query = f"{BGE_QUERY_INSTRUCTION}{query.strip()}"
+        prefixed_query = f"{BGE_QUERY_INSTRUCTION}{key}"
         raw_emb = model.encode(prefixed_query, normalize_embeddings=True)
         vec_list = [float(x) for x in raw_emb]
         self._validate_embedding_vector(vec_list, index=0)
-        return vec_list
+
+        if self.query_cache_size > 0:
+            with self._cache_lock:
+                self._query_cache[key] = vec_list
+                self._query_cache.move_to_end(key)
+                while len(self._query_cache) > self.query_cache_size:
+                    self._query_cache.popitem(last=False)
+        return list(vec_list)
 
     def _validate_embedding_vector(self, vec: List[float], index: int) -> None:
         if len(vec) != self.expected_dimension:

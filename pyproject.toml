@@ -16,11 +16,13 @@ dependencies = [
 
 [project.optional-dependencies]
 chunking = ["tiktoken>=0.7", "pyyaml>=6.0"]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
 dev = ["pytest>=8.0"]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = [
+    "api*",
     "corpus_validation*",
     "document_chunking*",
     "embedding*",

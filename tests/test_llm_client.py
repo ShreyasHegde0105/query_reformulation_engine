@@ -139,6 +139,18 @@ class TestLLMClient(unittest.TestCase):
         self.assertEqual(mock_urlopen.call_count, 2)
 
     @mock.patch("urllib.request.urlopen")
+    def test_rate_limit_honors_retry_after_header(self, mock_urlopen):
+        sleeps = []
+        client = LLMClient(_make_config(), sleep_func=sleeps.append)
+        success_payload = {"choices": [{"message": {"content": "ok"}}]}
+        for header, expected in (("5", 5.0), ("9999", 30.0), ("soon", 0.1)):
+            sleeps.clear()
+            err = urllib.error.HTTPError(url="http://x", code=429, msg="rate", hdrs={"Retry-After": header}, fp=None)
+            mock_urlopen.side_effect = [err, _MockHTTPResponse(json.dumps(success_payload).encode())]
+            self.assertEqual(client.generate("retry"), "ok")
+            self.assertEqual(sleeps, [expected])
+
+    @mock.patch("urllib.request.urlopen")
     def test_rate_limit_exhausted(self, mock_urlopen):
         err = urllib.error.HTTPError(url="http://x", code=429, msg="rate", hdrs=None, fp=None)
         mock_urlopen.side_effect = [err, err, err]

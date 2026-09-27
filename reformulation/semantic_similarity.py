@@ -109,7 +109,7 @@ class SemanticSimilarity:
                 raise RuntimeError(
                     "EmbeddingEncoder could not be imported; provide embed_fn explicitly"
                 )
-            # Lazily initialise the encoder – model loading only happens when needed.
+            # The encoder loads its model on the first embed call, not here.
             self._encoder = EmbeddingEncoder()
             self._embed_fn = self._encoder.embed_query
 

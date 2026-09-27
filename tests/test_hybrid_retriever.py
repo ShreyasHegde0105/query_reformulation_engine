@@ -131,10 +131,17 @@ class TestHybridRetriever(unittest.TestCase):
     def test_domain_filter_passed(self):
         self.vec_mock.retrieve.return_value = []
         self.key_mock.retrieve.return_value = []
-        self.hybrid.retrieve(self.query, vector_match_count=0, keyword_match_count=0,
+        self.hybrid.retrieve(self.query, vector_match_count=3, keyword_match_count=4,
                              filter_domain=self.filter_domain, k=self.k, final_k=5)
-        self.vec_mock.retrieve.assert_called_once_with(query=self.query, match_count=0, filter_domain=self.filter_domain)
-        self.key_mock.retrieve.assert_called_once_with(query=self.query, match_count=0, filter_domain=self.filter_domain)
+        self.vec_mock.retrieve.assert_called_once_with(query=self.query, match_count=3, filter_domain=self.filter_domain)
+        self.key_mock.retrieve.assert_called_once_with(query=self.query, match_count=4, filter_domain=self.filter_domain)
+
+    def test_zero_match_count_skips_branch(self):
+        self.vec_mock.retrieve.return_value = [make_chunk("c1", score=0.9)]
+        result = self.hybrid.retrieve(self.query, vector_match_count=2, keyword_match_count=0,
+                                      filter_domain=self.filter_domain, k=self.k, final_k=5)
+        self.key_mock.retrieve.assert_not_called()
+        self.assertEqual([c.chunk_id for c in result], ["c1"])
 
     def test_both_empty(self):
         self.vec_mock.retrieve.return_value = []
@@ -142,6 +149,8 @@ class TestHybridRetriever(unittest.TestCase):
         result = self.hybrid.retrieve(self.query, vector_match_count=0, keyword_match_count=0,
                                       filter_domain=self.filter_domain, k=self.k, final_k=5)
         self.assertEqual(result, [])
+        self.vec_mock.retrieve.assert_not_called()
+        self.key_mock.retrieve.assert_not_called()
 
     def test_configurable_k(self):
         vec_chunks = [make_chunk("c1", score=0.9)]

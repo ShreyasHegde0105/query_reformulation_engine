@@ -698,9 +698,10 @@ class PresentationDemo:
             print("  • Phase 4: pure Cross-Encoder reranking lowered Recall@10 (0.69 → 0.62) and MRR (0.56 → 0.53);")
             print("    14 queries improved, 17 regressed. Cost: ~4.0s CPU per query for 50 candidates.")
             print("  • Phase 5: contextual embeddings + BM25 raised candidate Recall@50 from 87% to 96%")
-            print("    and the full pipeline to Recall@10 0.83, MRR 0.666 (from 0.69 / 0.561).")
-            print("  • Conclusion: kept as an optional stage (RERANKER_ENABLED=true); to be re-evaluated")
-            print("    on the stronger Phase 5 candidate pool.")
+            print("    and the full pipeline to Recall@10 0.87, MRR 0.670 (from 0.69 / 0.561).")
+            print("  • Re-tested on the Phase 5 pool: every reranking setup tied or lost to plain RRF")
+            print("    (best fusion: Recall@10 0.85 vs 0.87 RRF) at ~7.5s per query.")
+            print("  • Conclusion: left off by default; available for demos via --enable-ce.")
         print()
 
     def run(self) -> None:

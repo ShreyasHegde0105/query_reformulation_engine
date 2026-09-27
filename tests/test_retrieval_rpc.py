@@ -27,6 +27,24 @@ class TestRetrievalDatabaseLayer(unittest.TestCase):
         """Verify that the Supabase migration file exists."""
         self.assertTrue(self.migration_path.exists(), f"Missing {self.migration_path}")
 
+    def test_schema_migration_covers_ingested_columns(self) -> None:
+        """The core schema migration must define every column ingestion writes, and sort first."""
+        import re
+        from embedding.client import KNOWN_CHUNK_COLS, KNOWN_DOC_COLS
+
+        schema_path = Path("supabase/migrations/20260922000000_core_schema.sql")
+        self.assertTrue(schema_path.exists(), f"Missing {schema_path}")
+        self.assertLess(schema_path.name, self.migration_path.name)
+
+        sql = schema_path.read_text(encoding="utf-8")
+        for table, expected in (("documents", KNOWN_DOC_COLS), ("document_chunks", KNOWN_CHUNK_COLS)):
+            body = re.search(rf"CREATE TABLE IF NOT EXISTS {table} \((.*?)\n\);", sql, re.S)
+            self.assertIsNotNone(body, f"No CREATE TABLE for {table}")
+            columns = {line.split()[0] for line in body.group(1).strip().splitlines() if line.strip()}
+            self.assertTrue(expected <= columns, f"{table} missing {expected - columns}")
+        self.assertIn("embedding   extensions.vector(384)", sql)
+        self.assertIn("USING hnsw (embedding extensions.vector_cosine_ops)", sql)
+
     def test_migration_sql_contains_required_functions(self) -> None:
         """Verify SQL contains required function definitions and specifications."""
         sql = self.migration_path.read_text(encoding="utf-8")

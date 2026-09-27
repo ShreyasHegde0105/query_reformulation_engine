@@ -20,16 +20,36 @@ Query Reformulation Engine                  ✅ COMPLETED (reformulation/)
 Benchmark Evaluation                        ✅ COMPLETED (evaluation/, Phases 2–5)
 ```
 
-**Current results (50 golden queries, full pipeline, top-20):** Recall@10 **0.83**, MRR **0.666**, NDCG@10 **0.628**, candidate Recall@50 **0.96**
-(Phase 2 baseline: 0.69 / 0.561 / 0.473 / 0.87). See `evaluation/results/phase5_report.md`.
+**Current results (50 golden queries, full pipeline, top-20):** Recall@10 **0.87**, MRR **0.670**, NDCG@10 **0.645**, candidate Recall@50 **0.96**
+(Phase 2 baseline: 0.69 / 0.561 / 0.473 / 0.87; all four gains significant at p < 0.05). See `evaluation/results/phase5_report.md`.
 
 ### Setup
 
 ```bash
-pip install -e ".[chunking,dev]"
+pip install -e ".[chunking,api,dev]"
 cp .env.example .env          # fill in SUPABASE_* and LLM_*
 python -m pytest              # offline test suite (tests/ only)
 ```
+
+### Search API
+
+```bash
+uvicorn api.app:app --port 8000
+```
+
+```bash
+curl -X POST localhost:8000/search -H "Content-Type: application/json"   -d '{"query": "revaluation fee and deadline", "top_k": 5, "answer": true, "debug": true}'
+```
+
+- `top_k` (1–50), `domain` (optional department filter), `max_variants` (1–10).
+- `answer: true` adds an LLM answer grounded in the top 5 results, with the chunk IDs it cites
+  (`answerable: false` when the documents don't cover the question).
+- `debug: true` adds the trace: normalized query, reformulations, queries used, per-stage timings.
+- `GET /health` reports which components are active. Without `LLM_*` settings the API still
+  searches (original query only) and reports answers as disabled.
+- Note: each uncached query uses one LLM call to reformulate, plus one more with `answer: true`.
+  Free-tier LLM quotas (e.g. 5 requests/minute) are reached quickly; repeated queries reuse
+  cached reformulations.
 
 ---
 

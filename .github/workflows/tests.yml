@@ -20,6 +20,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install -e ".[chunking,dev]"
+          pip install -e ".[chunking,api,dev]"
       - name: Run tests
         run: python -m pytest -q

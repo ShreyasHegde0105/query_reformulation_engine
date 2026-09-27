@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -29,7 +29,7 @@ class CorpusValidator:
         output_dir: Optional[str | Path] = None,
         run_id: Optional[str] = None,
     ) -> Tuple[List[Document], List[Document], List[ValidationIssue], Dict[str, Any]]:
-        run_id = run_id or f"validation-{datetime.utcnow().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
+        run_id = run_id or f"validation-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
         logger.info(f"Initializing corpus validation run: {run_id}")
 
         # 1. Load documents
