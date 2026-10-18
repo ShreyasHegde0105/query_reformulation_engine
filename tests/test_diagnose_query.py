@@ -16,6 +16,7 @@ def test_get_query_reformulations():
     assert isinstance(reformulations, list)
 
 
+@pytest.mark.integration
 def test_diagnose_query_q004():
     diag = diagnose_query("Q004")
     assert diag["query_id"] == "Q004"
@@ -27,6 +28,7 @@ def test_diagnose_query_q004():
     assert "final_top_10" in diag
 
 
+@pytest.mark.integration
 def test_print_diagnostic_report(capsys):
     diag = diagnose_query("Q004")
     print_diagnostic_report(diag)

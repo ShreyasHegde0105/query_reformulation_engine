@@ -37,8 +37,13 @@ def trace_semantic_filtering(
     candidate_queries: List[str],
     similarity_engine: SemanticSimilarity,
 ) -> Tuple[List[str], List[Dict[str, Any]]]:
-    """Trace semantic filtering decisions step-by-step."""
-    accepted_queries = similarity_engine.filter_redundant(candidate_queries)
+    """Trace semantic filtering decisions step-by-step.
+
+    ``candidate_queries[0]`` is the normalized user query; like the search
+    pipeline, it is passed as ``original_query`` so the filter always keeps it.
+    """
+    original = candidate_queries[0] if candidate_queries else None
+    accepted_queries = similarity_engine.filter_redundant(candidate_queries, original_query=original)
     accepted_set = set(accepted_queries)
 
     pruning_log: List[Dict[str, Any]] = []

@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import MagicMock
+from unittest.mock import ANY, MagicMock
 import dataclasses
 
 from reformulation.search_pipeline import SearchPipeline
@@ -27,7 +27,7 @@ class TestSearchPipeline(unittest.TestCase):
         # Default behaviors
         self.reformulator.generate_variants.return_value = ["variant 1", "variant 2"]
         # By default, pass through
-        self.semantic_similarity.filter_redundant.side_effect = lambda qs: qs
+        self.semantic_similarity.filter_redundant.side_effect = lambda qs, original_query=None: qs
 
         # The normalized form of the raw input "original query" used in these tests.
         # normalize_query applies sentence-case, so "original query" → "Original query".
@@ -57,7 +57,7 @@ class TestSearchPipeline(unittest.TestCase):
         self.reformulator.generate_variants.assert_called_once_with("original query", max_variants=5)
         # The semantic similarity filter receives the NORMALIZED query first, then variants.
         self.semantic_similarity.filter_redundant.assert_called_once_with(
-            [self._norm_original, "variant 1", "variant 2"]
+            [self._norm_original, "variant 1", "variant 2"], original_query=self._norm_original
         )
         
         # Ensure hybrid retriever was called for the original query and the variants
@@ -92,7 +92,7 @@ class TestSearchPipeline(unittest.TestCase):
             
         self.hybrid_retriever.retrieve.side_effect = mock_retrieve_agg
         self.reformulator.generate_variants.return_value = ["Q2"]
-        self.semantic_similarity.filter_redundant.side_effect = lambda qs: qs
+        self.semantic_similarity.filter_redundant.side_effect = lambda qs, original_query=None: qs
         
         results = self.pipeline.search("Q1", k=60)
         
@@ -164,7 +164,8 @@ class TestSearchPipeline(unittest.TestCase):
         # The normalized form of "query" is "Query" (sentence case)
         expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50,
+            on_branch_error=ANY,
         )
         self.assertEqual(len(results), 1)
 
@@ -180,7 +181,8 @@ class TestSearchPipeline(unittest.TestCase):
         
         expected_normalized = normalize_query("query")
         self.hybrid_retriever.retrieve.assert_called_once_with(
-            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50
+            query=expected_normalized, vector_match_count=20, keyword_match_count=20, filter_domain=None, k=60, final_k=50,
+            on_branch_error=ANY,
         )
         self.assertEqual(len(results), 1)
 
@@ -254,7 +256,7 @@ class TestSearchPipeline(unittest.TestCase):
 
         self.hybrid_retriever.retrieve.side_effect = mock_retrieve_weighted
         self.reformulator.generate_variants.return_value = ["variant 1"]
-        self.semantic_similarity.filter_redundant.side_effect = lambda qs: qs
+        self.semantic_similarity.filter_redundant.side_effect = lambda qs, original_query=None: qs
 
         # 1. Unweighted / Baseline (weight = 1.0)
         # Score ChunkA = 1.0 * (1 / (60 + 1)) = 1/61 = 0.01639344
@@ -296,7 +298,7 @@ class TestSearchPipelineRuntime(unittest.TestCase):
         reformulator = MagicMock(spec=QueryReformulator)
         reformulator.generate_variants.return_value = ["v1", "v2", "v3"]
         sem = MagicMock(spec=SemanticSimilarity)
-        sem.filter_redundant.side_effect = lambda qs: qs
+        sem.filter_redundant.side_effect = lambda qs, original_query=None: qs
         hybrid = MagicMock(spec=HybridRetriever)
         return SearchPipeline(reformulator=reformulator, semantic_similarity=sem, hybrid_retriever=hybrid, **kwargs)
 
@@ -352,7 +354,8 @@ class TestSearchPipelineRuntime(unittest.TestCase):
         p.reformulator.generate_variants.side_effect = [RuntimeError("LLM down"), ["v1"]]
         first = p.search_detailed("query")
         second = p.search_detailed("query")
-        self.assertEqual(first.reformulation_error, "LLM down")
+        self.assertEqual(first.reformulation_error,
+                         "Reformulation failed (RuntimeError); searched the original query only.")
         self.assertEqual(second.reformulations, ["v1"])
 
     def test_search_detailed_trace(self):
@@ -381,6 +384,137 @@ class TestSearchPipelineRuntime(unittest.TestCase):
             self._pipeline(max_workers=0)
         with self.assertRaises(ValueError):
             self._pipeline(reformulation_cache_size=-1)
+
+    def test_cache_keyed_on_normalized_query(self):
+        p = self._pipeline()
+        p.hybrid_retriever.retrieve.return_value = []
+        p.search("semester fees"); p.search("  Semester   fees ")
+        p.reformulator.generate_variants.assert_called_once()
+
+    def test_cache_is_thread_safe(self):
+        import threading
+        p = self._pipeline(reformulation_cache_size=2, max_workers=1)
+        p.hybrid_retriever.retrieve.return_value = []
+        errors = []
+
+        def worker(n):
+            try:
+                for i in range(200):
+                    p.search(f"query {(n + i) % 5}")
+            except Exception as exc:  # pragma: no cover - only on failure
+                errors.append(exc)
+
+        threads = [threading.Thread(target=worker, args=(n,)) for n in range(8)]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+        self.assertEqual(errors, [])
+        self.assertLessEqual(len(p._reformulation_cache), 2)
+
+
+class TestSearchPipelineOriginalQuery(unittest.TestCase):
+    """The user's own query must always be searched, first, with the primary weight."""
+
+    def setUp(self):
+        self.reformulator = MagicMock(spec=QueryReformulator)
+        self.reformulator.generate_variants.return_value = ["semester fee refund policy deadline"]
+        self.sem = MagicMock(spec=SemanticSimilarity)
+        self.hybrid = MagicMock(spec=HybridRetriever)
+        self.hybrid.retrieve.return_value = []
+        self.pipeline = SearchPipeline(self.reformulator, self.sem, self.hybrid, max_workers=1)
+        self.norm = normalize_query("fee refund")
+
+    def test_filter_receives_original_query(self):
+        self.sem.filter_redundant.side_effect = lambda qs, original_query=None: qs
+        self.pipeline.search_detailed("fee refund")
+        self.assertEqual(self.sem.filter_redundant.call_args.kwargs["original_query"], self.norm)
+
+    def test_original_restored_first_if_filter_drops_it(self):
+        self.sem.filter_redundant.side_effect = lambda qs, original_query=None: ["semester fee refund policy deadline"]
+        res = self.pipeline.search_detailed("fee refund")
+        self.assertEqual(res.queries_used, [self.norm, "semester fee refund policy deadline"])
+        self.assertEqual(self.hybrid.retrieve.call_args_list[0].kwargs["query"], self.norm)
+
+    def test_original_moved_first_if_filter_reorders(self):
+        self.sem.filter_redundant.side_effect = lambda qs, original_query=None: list(reversed(qs))
+        res = self.pipeline.search_detailed("fee refund")
+        self.assertEqual(res.queries_used[0], self.norm)
+
+
+class TestSearchPipelineFailures(unittest.TestCase):
+    """Retrieval failures are reported, never silently turned into empty results."""
+
+    def _chunk(self, cid):
+        return RetrievedChunk(chunk_id=cid, document_id="d", title="T", domain="D", chunk_index=0,
+                              chunk_text=cid, section=None, token_count=1, score=1.0)
+
+    def _pipeline(self, hybrid):
+        reformulator = MagicMock(spec=QueryReformulator)
+        reformulator.generate_variants.return_value = ["v1"]
+        sem = MagicMock(spec=SemanticSimilarity)
+        sem.filter_redundant.side_effect = lambda qs, original_query=None: qs
+        return SearchPipeline(reformulator, sem, hybrid, max_workers=1)
+
+    def test_all_queries_failing_raises(self):
+        from reformulation.exceptions import RetrievalUnavailableError
+        hybrid = MagicMock(spec=HybridRetriever)
+        hybrid.retrieve.side_effect = RuntimeError("supabase down")
+        with self.assertRaises(RetrievalUnavailableError):
+            self._pipeline(hybrid).search_detailed("query")
+
+    def test_both_branches_down_with_real_hybrid_raises(self):
+        from reformulation.exceptions import RetrievalUnavailableError
+        vec, kw = MagicMock(), MagicMock()
+        vec.retrieve.side_effect = RuntimeError("supabase down")
+        kw.retrieve.side_effect = RuntimeError("bm25 index missing")
+        hybrid = HybridRetriever(vector_retriever=vec, keyword_retriever=kw)
+        with self.assertRaises(RetrievalUnavailableError):
+            self._pipeline(hybrid).search_detailed("query")
+
+    def test_partial_query_failure_is_degraded(self):
+        hybrid = MagicMock(spec=HybridRetriever)
+        norm = normalize_query("query")
+
+        def retrieve(query, **kw):
+            if query == norm:
+                return [self._chunk("A")]
+            raise RuntimeError("timeout")
+
+        hybrid.retrieve.side_effect = retrieve
+        res = self._pipeline(hybrid).search_detailed("query")
+        self.assertEqual([c.chunk_id for c in res.results], ["A"])
+        self.assertTrue(res.degraded)
+        self.assertEqual(res.warnings, ["Retrieval failed for 1 of 2 queries."])
+
+    def test_one_branch_down_is_degraded(self):
+        vec, kw = MagicMock(), MagicMock()
+        vec.retrieve.side_effect = RuntimeError("supabase down")
+        kw.retrieve.return_value = [self._chunk("A")]
+        hybrid = HybridRetriever(vector_retriever=vec, keyword_retriever=kw)
+        res = self._pipeline(hybrid).search_detailed("query")
+        self.assertEqual([c.chunk_id for c in res.results], ["A"])
+        self.assertTrue(res.degraded)
+        self.assertEqual(res.warnings, ["The vector search branch failed; results come from the remaining branch."])
+        self.assertNotIn("supabase", " ".join(res.warnings))
+
+    def test_healthy_search_not_degraded(self):
+        hybrid = MagicMock(spec=HybridRetriever)
+        hybrid.retrieve.return_value = []
+        res = self._pipeline(hybrid).search_detailed("query")
+        self.assertEqual(res.results, [])
+        self.assertFalse(res.degraded)
+        self.assertEqual(res.warnings, [])
+
+    def test_reformulation_error_does_not_leak_provider_text(self):
+        from reformulation.llm.exceptions import LLMRateLimitError
+        hybrid = MagicMock(spec=HybridRetriever)
+        hybrid.retrieve.return_value = []
+        p = self._pipeline(hybrid)
+        p.reformulator.generate_variants.side_effect = LLMRateLimitError('HTTP 429: {"quotaMetric": "secret"}')
+        res = p.search_detailed("query")
+        self.assertIn("rate limit", res.reformulation_error)
+        self.assertNotIn("quotaMetric", res.reformulation_error)
 
 
 if __name__ == "__main__":

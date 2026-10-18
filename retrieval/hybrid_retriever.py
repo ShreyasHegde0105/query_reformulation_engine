@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import logging
-from typing import List, Optional
+from typing import Callable, List, Optional
 
 from retrieval.models import RetrievedChunk
 from retrieval.vector_retriever import VectorRetriever
@@ -40,6 +40,7 @@ class HybridRetriever:
         filter_domain: Optional[str] = None,
         k: int = 60,
         final_k: int = 20,
+        on_branch_error: Optional[Callable[[str, Exception], None]] = None,
     ) -> List[RetrievedChunk]:
         """Retrieve chunks via both back‑ends and fuse them with RRF.
 
@@ -57,6 +58,9 @@ class HybridRetriever:
             RRF damping factor (must be > 0).
         final_k: int
             Number of top results to return after fusion.
+        on_branch_error: Optional[Callable[[str, Exception], None]]
+            Called with ``("vector" | "keyword", exc)`` when one branch fails and
+            results continue from the other, so callers can flag degraded results.
         """
         # ------------------------------ validation ------------------------------
         if not isinstance(query, str) or not query.strip():
@@ -104,6 +108,11 @@ class HybridRetriever:
             )
 
         # If one branch failed, continue with the successful results.
+        if on_branch_error is not None:
+            if vector_error:
+                on_branch_error("vector", vector_error)
+            if keyword_error:
+                on_branch_error("keyword", keyword_error)
         # Ensure deterministic ranking order based on score (higher first).
         # Both retrievers are expected to return results already sorted, but we enforce it
         # to match test expectations where keyword list may not be pre‑sorted.

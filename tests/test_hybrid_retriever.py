@@ -189,6 +189,22 @@ class TestHybridRetriever(unittest.TestCase):
                                  filter_domain=self.filter_domain, k=self.k, final_k=5)
         self.assertIn("Both retrieval branches failed", str(ctx.exception))
 
+    def test_branch_failure_reported_to_callback(self):
+        self.key_mock.retrieve.side_effect = RuntimeError("Keyword down")
+        self.vec_mock.retrieve.return_value = [make_chunk("c1", score=0.9)]
+        failures = []
+        result = self.hybrid.retrieve(self.query, vector_match_count=1, keyword_match_count=1,
+                                      on_branch_error=lambda branch, exc: failures.append((branch, str(exc))))
+        self.assertEqual([c.chunk_id for c in result], ["c1"])
+        self.assertEqual(failures, [("keyword", "Keyword down")])
+
+    def test_callback_not_called_when_healthy(self):
+        self.vec_mock.retrieve.return_value = [make_chunk("c1", score=0.9)]
+        self.key_mock.retrieve.return_value = []
+        failures = []
+        self.hybrid.retrieve(self.query, on_branch_error=lambda branch, exc: failures.append(branch))
+        self.assertEqual(failures, [])
+
 
 if __name__ == "__main__":
     unittest.main()
