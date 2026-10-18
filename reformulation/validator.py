@@ -14,10 +14,13 @@ from __future__ import annotations
 import os
 from typing import Any
 
+from .exceptions import QueryValidationError
+
 # Default maximum length for a query.  The value can be overridden via the
 # environment variable ``MAX_QUERY_LENGTH`` to make the behaviour configurable
-# without code changes.
-_MAX_QUERY_LENGTH: int = int(os.getenv("MAX_QUERY_LENGTH", "256"))
+# without code changes.  The API uses the same limit for its request schema.
+MAX_QUERY_LENGTH: int = int(os.getenv("MAX_QUERY_LENGTH", "256"))
+_MAX_QUERY_LENGTH: int = MAX_QUERY_LENGTH
 
 
 def _type_check(query: Any) -> None:
@@ -30,11 +33,11 @@ def _type_check(query: Any) -> None:
 
     Raises
     ------
-    ValueError
+    QueryValidationError
         If *query* is not an instance of :class:`str`.
     """
     if not isinstance(query, str):
-        raise ValueError("Query must be a string")
+        raise QueryValidationError("Query must be a string")
 
 
 def _content_check(query: str) -> None:
@@ -53,9 +56,9 @@ def _content_check(query: str) -> None:
     """
     stripped = query.strip()
     if not stripped:
-        raise ValueError("Query cannot be empty or whitespace only")
+        raise QueryValidationError("Query cannot be empty or whitespace only")
     if len(stripped) > _MAX_QUERY_LENGTH:
-        raise ValueError(
+        raise QueryValidationError(
             f"Query exceeds maximum allowed length of {_MAX_QUERY_LENGTH} characters"
         )
 

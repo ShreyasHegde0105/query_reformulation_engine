@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 
 from api.app import create_app
 from reformulation.answer_generator import Answer, AnswerGenerator
+from reformulation.exceptions import QueryValidationError
 from reformulation.search_pipeline import SearchPipeline, SearchResult
 from retrieval.models import RetrievedChunk
 
@@ -92,10 +93,56 @@ class TestSearchAPI(unittest.TestCase):
             self.assertEqual(self.client.post("/search", json=payload).status_code, 422, payload)
 
     def test_pipeline_value_error_is_422(self):
-        self.pipeline.search_detailed.side_effect = ValueError("Query contains no searchable content")
+        self.pipeline.search_detailed.side_effect = QueryValidationError("Query contains no searchable content")
         r = self.client.post("/search", json={"query": "???"})
         self.assertEqual(r.status_code, 422)
         self.assertIn("no searchable content", r.json()["detail"])
+
+    def test_query_limit_matches_validator(self):
+        from reformulation.validator import MAX_QUERY_LENGTH
+        ok = self.client.post("/search", json={"query": "x" * MAX_QUERY_LENGTH})
+        self.assertEqual(ok.status_code, 200)
+        too_long = self.client.post("/search", json={"query": "x" * (MAX_QUERY_LENGTH + 1)})
+        self.assertEqual(too_long.status_code, 422)
+
+    def test_internal_value_error_is_503_without_detail(self):
+        self.pipeline.search_detailed.side_effect = ValueError("k must be a positive integer.")
+        r = self.client.post("/search", json={"query": "semester fees"})
+        self.assertEqual(r.status_code, 503)
+        self.assertNotIn("positive integer", r.text)
+
+    def test_degraded_flag_returned(self):
+        self.pipeline.search_detailed.return_value.degraded = True
+        body = self.client.post("/search", json={"query": "semester fees"}).json()
+        self.assertTrue(body["degraded"])
+        healthy = SearchResult(results=[], original_query="q", normalized_query="Q", reformulations=[],
+                               queries_used=["Q"], timings_ms={})
+        self.pipeline.search_detailed.return_value = healthy
+        self.assertFalse(self.client.post("/search", json={"query": "q"}).json()["degraded"])
+
+    def test_all_backends_down_is_503_with_real_pipeline(self):
+        from reformulation.reformulator import QueryReformulator
+        from reformulation.semantic_similarity import SemanticSimilarity
+        from retrieval.hybrid_retriever import HybridRetriever
+        vec, kw = MagicMock(), MagicMock()
+        vec.retrieve.side_effect = RuntimeError("supabase down")
+        kw.retrieve.side_effect = RuntimeError("bm25 down")
+        reformulator = MagicMock(spec=QueryReformulator)
+        reformulator.generate_variants.return_value = []
+        sem = MagicMock(spec=SemanticSimilarity)
+        sem.filter_redundant.side_effect = lambda qs, original_query=None: qs
+        pipeline = SearchPipeline(reformulator, sem, HybridRetriever(vector_retriever=vec, keyword_retriever=kw))
+        with TestClient(create_app(pipeline=pipeline)) as client:
+            r = client.post("/search", json={"query": "semester fees"})
+        self.assertEqual(r.status_code, 503)
+        self.assertEqual(r.json()["detail"], "Search backend unavailable")
+
+    def test_real_pipeline_raises_query_validation_error(self):
+        # The API maps exactly this exception type to 422.
+        from reformulation.validator import MAX_QUERY_LENGTH
+        pipeline = SearchPipeline(MagicMock(), MagicMock(), MagicMock())
+        with self.assertRaises(QueryValidationError):
+            pipeline.search_detailed("x" * (MAX_QUERY_LENGTH + 1))
 
     def test_backend_failure_is_503(self):
         self.pipeline.search_detailed.side_effect = RuntimeError("supabase down")

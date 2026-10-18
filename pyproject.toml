@@ -33,3 +33,8 @@ include = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Integration tests need live Supabase/network access; run them with `pytest -m integration`.
+addopts = '-m "not integration"'
+markers = [
+    "integration: needs live Supabase/network access (skipped by default)",
+]

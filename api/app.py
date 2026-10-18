@@ -19,13 +19,15 @@ from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel, Field
 
+from reformulation.exceptions import QueryValidationError
 from reformulation.search_pipeline import SearchPipeline
+from reformulation.validator import MAX_QUERY_LENGTH
 
 logger = logging.getLogger("api")
 
 
 class SearchRequest(BaseModel):
-    query: str = Field(..., min_length=1, max_length=500, description="Raw user query.")
+    query: str = Field(..., min_length=1, max_length=MAX_QUERY_LENGTH, description="Raw user query.")
     top_k: int = Field(10, ge=1, le=50, description="Number of results to return.")
     domain: Optional[str] = Field(None, description="Restrict results to one department/domain.")
     max_variants: int = Field(5, ge=1, le=10, description="Maximum LLM reformulations.")
@@ -53,6 +55,7 @@ class AnswerPayload(BaseModel):
 class SearchResponse(BaseModel):
     query: str
     results: List[SearchHit]
+    degraded: bool = Field(False, description="True when part of retrieval failed; results may be incomplete.")
     answer: Optional[AnswerPayload] = None
     answer_error: Optional[str] = None
     trace: Optional[Dict[str, Any]] = None
@@ -147,9 +150,11 @@ def create_app(
                 filter_domain=body.domain,
                 final_k=body.top_k,
             )
-        except ValueError as exc:
+        except QueryValidationError as exc:
+            # Only problems with the query itself are client errors; their messages are ours and safe.
             raise HTTPException(status_code=422, detail=str(exc)) from exc
         except Exception as exc:
+            # Anything else (including internal ValueErrors) is logged in full but not shown to the client.
             logger.exception("Search failed for %r", query)
             raise HTTPException(status_code=503, detail="Search backend unavailable") from exc
 
@@ -182,7 +187,8 @@ def create_app(
         trace = None
         if body.debug:
             trace = {key: value for key, value in result.to_dict().items() if key != "results"}
-        return SearchResponse(query=query, results=hits, answer=answer, answer_error=answer_error, trace=trace)
+        return SearchResponse(query=query, results=hits, degraded=result.degraded, answer=answer,
+                              answer_error=answer_error, trace=trace)
 
     return app
 
