@@ -1,7 +1,5 @@
 {
  "names": {
-  "p2_keyword_pg": "Postgres FTS (Phase 2 keyword)",
-  "p2_pipeline": "Phase 2 pipeline: plain vec + Postgres FTS",
   "vector_plain": "Vector, plain passages",
   "vector_ctx": "Vector, contextual passages",
   "bm25": "BM25 (title+section+text)",
@@ -11,2825 +9,6 @@
   "pipeline_ctx_bm25_deep": "Pipeline: contextual vec + BM25, candidate_k=50 (Phase 5)"
  },
  "results": {
-  "p2_keyword_pg": {
-   "mean": {
-    "recall@5": 0.1,
-    "recall@10": 0.1,
-    "mrr": 0.154,
-    "ndcg@5": 0.10001329088922065,
-    "ndcg@10": 0.10001329088922065,
-    "recall@20": 0.1,
-    "pool_recall@50": 0.1
-   },
-   "categories": {
-    "abbreviation": {
-     "recall@5": 0.0,
-     "recall@10": 0.0,
-     "mrr": 0.0,
-     "ndcg@5": 0.0,
-     "ndcg@10": 0.0,
-     "recall@20": 0.0,
-     "pool_recall@50": 0.0
-    },
-    "course_code": {
-     "recall@5": 0.1,
-     "recall@10": 0.1,
-     "mrr": 0.2,
-     "ndcg@5": 0.15743092059819436,
-     "ndcg@10": 0.15743092059819436,
-     "recall@20": 0.1,
-     "pool_recall@50": 0.1
-    },
-    "eligibility": {
-     "recall@5": 0.4,
-     "recall@10": 0.4,
-     "mrr": 0.7,
-     "ndcg@5": 0.5148618411963887,
-     "ndcg@10": 0.5148618411963887,
-     "recall@20": 0.4,
-     "pool_recall@50": 0.4
-    },
-    "keyword": {
-     "recall@5": 0.3,
-     "recall@10": 0.3,
-     "mrr": 0.24,
-     "ndcg@5": 0.19289935801345676,
-     "ndcg@10": 0.19289935801345676,
-     "recall@20": 0.3,
-     "pool_recall@50": 0.3
-    },
-    "lexical_diversity": {
-     "recall@5": 0.0,
-     "recall@10": 0.0,
-     "mrr": 0.0,
-     "ndcg@5": 0.0,
-     "ndcg@10": 0.0,
-     "recall@20": 0.0,
-     "pool_recall@50": 0.0
-    },
-    "natural_language": {
-     "recall@5": 0.0,
-     "recall@10": 0.0,
-     "mrr": 0.0,
-     "ndcg@5": 0.0,
-     "ndcg@10": 0.0,
-     "recall@20": 0.0,
-     "pool_recall@50": 0.0
-    },
-    "numeric": {
-     "recall@5": 0.1,
-     "recall@10": 0.1,
-     "mrr": 0.2,
-     "ndcg@5": 0.0674703945420833,
-     "ndcg@10": 0.0674703945420833,
-     "recall@20": 0.1,
-     "pool_recall@50": 0.1
-    },
-    "policy": {
-     "recall@5": 0.0,
-     "recall@10": 0.0,
-     "mrr": 0.0,
-     "ndcg@5": 0.0,
-     "ndcg@10": 0.0,
-     "recall@20": 0.0,
-     "pool_recall@50": 0.0
-    },
-    "procedure": {
-     "recall@5": 0.1,
-     "recall@10": 0.1,
-     "mrr": 0.2,
-     "ndcg@5": 0.0674703945420833,
-     "ndcg@10": 0.0674703945420833,
-     "recall@20": 0.1,
-     "pool_recall@50": 0.1
-    },
-    "typo": {
-     "recall@5": 0.0,
-     "recall@10": 0.0,
-     "mrr": 0.0,
-     "ndcg@5": 0.0,
-     "ndcg@10": 0.0,
-     "recall@20": 0.0,
-     "pool_recall@50": 0.0
-    }
-   },
-   "per_query": [
-    {
-     "query_id": "Q001",
-     "query": "semester fees",
-     "category": "keyword",
-     "retrieved": [
-      "TRANS-SOP-001_CHUNK_004",
-      "FIN-POL-005_CHUNK_002",
-      "FIN-SCH-002_CHUNK_004",
-      "FIN-POL-005_CHUNK_003",
-      "FIN-POL-001_CHUNK_002",
-      "POL-BONAFIDE_CHUNK_002",
-      "FIN-POL-001_CHUNK_003",
-      "FIN-POL-005_CHUNK_001",
-      "FIN-SCH-001_CHUNK_004",
-      "FIN-POL-003_CHUNK_002",
-      "FIN-GUI-001_CHUNK_002",
-      "IT-SYS-001_CHUNK_001",
-      "HSTL-REG-001_CHUNK_003",
-      "EXAM-NOT-003_CHUNK_002",
-      "POL-ADD-DROP_CHUNK_005",
-      "EXAM-NOT-002_CHUNK_003",
-      "TRANS-POL-001_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_003",
-      "IT-SYS-003_CHUNK_003",
-      "TRANS-SOP-001_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.2,
-      "ndcg@5": 0.1305055576691351,
-      "ndcg@10": 0.1305055576691351,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q002",
-     "query": "hostel allotment",
-     "category": "keyword",
-     "retrieved": [
-      "POL-HOSTEL-ALLOC_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q003",
-     "query": "CSE301 prerequisites",
-     "category": "keyword",
-     "retrieved": [
-      "POL-COURSE-REG_CHUNK_004",
-      "ACAD-CRS-003_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q004",
-     "query": "academic transcript",
-     "category": "keyword",
-     "retrieved": [
-      "POL-ADD-DROP_CHUNK_003",
-      "IRO-POL-001_CHUNK_003",
-      "ADM-SOP-001_CHUNK_001",
-      "ACAD-POL-010_CHUNK_005",
-      "POL-GRADUATION_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q005",
-     "query": "library book renewal",
-     "category": "keyword",
-     "retrieved": [
-      "LIB-FAQ-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_004",
-      "LIB-GUI-001_CHUNK_004",
-      "LIB-GOV-001_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q006",
-     "query": "Can I get a refund if I withdraw from the semester?",
-     "category": "natural_language",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q007",
-     "query": "What are the requirements for hostel allotment?",
-     "category": "natural_language",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q008",
-     "query": "What happens if my attendance is below 75%?",
-     "category": "natural_language",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q009",
-     "query": "How many credits can an undergraduate student register per semester?",
-     "category": "natural_language",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q010",
-     "query": "What is the fine for returning library books late?",
-     "category": "natural_language",
-     "retrieved": [
-      "LIB-FAQ-001_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q011",
-     "query": "sem fees payment schedule",
-     "category": "abbreviation",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q012",
-     "query": "dept regulations for lab safety",
-     "category": "abbreviation",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q013",
-     "query": "univ admission eligibility for international students",
-     "category": "abbreviation",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q014",
-     "query": "min attendance criteria for SEE examination",
-     "category": "abbreviation",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q015",
-     "query": "prof office hours and mentoring guidelines",
-     "category": "abbreviation",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q016",
-     "query": "attendence shortage rules",
-     "category": "typo",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q017",
-     "query": "hostel allotmnt process",
-     "category": "typo",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q018",
-     "query": "revalution fee and deadline",
-     "category": "typo",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q019",
-     "query": "scholarship reqmnt criteria",
-     "category": "typo",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q020",
-     "query": "semester withdrawl procedure",
-     "category": "typo",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q021",
-     "query": "cse301 syllabus and textbooks",
-     "category": "course_code",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q022",
-     "query": "ECE201 course outline",
-     "category": "course_code",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q023",
-     "query": "MEC304 course outline",
-     "category": "course_code",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q024",
-     "query": "CSE301 practical laboratory assignments",
-     "category": "course_code",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q025",
-     "query": "CIV205 structural analysis computing manual",
-     "category": "course_code",
-     "retrieved": [
-      "ACAD-CRS-010_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q026",
-     "query": "attendance below 75 percent medical condonation",
-     "category": "numeric",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q027",
-     "query": "minimum CGPA 6.0 academic probation",
-     "category": "numeric",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q028",
-     "query": "caution deposit refund within 30 days",
-     "category": "numeric",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q029",
-     "query": "maximum 28 credit load per semester",
-     "category": "numeric",
-     "retrieved": [
-      "POL-COURSE-REG_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.3373519727104165,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q030",
-     "query": "late fee fine 500 rupees per week",
-     "category": "numeric",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q031",
-     "query": "semester withdrawal refund policy",
-     "category": "policy",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q032",
-     "query": "zero tolerance anti ragging policy",
-     "category": "policy",
-     "retrieved": [
-      "STU-POL-004_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q033",
-     "query": "student grievance redressal ombudsman policy",
-     "category": "policy",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q034",
-     "query": "academic integrity and plagiarism prevention policy",
-     "category": "policy",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q035",
-     "query": "hostel electrical appliances prohibition policy",
-     "category": "policy",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q036",
-     "query": "who is eligible for chancellor merit scholarship",
-     "category": "eligibility",
-     "retrieved": [
-      "FIN-SCH-001_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q037",
-     "query": "eligibility criteria for campus placement drives",
-     "category": "eligibility",
-     "retrieved": [
-      "PLC-POL-001_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q038",
-     "query": "eligibility for supplementary backlog examination",
-     "category": "eligibility",
-     "retrieved": [
-      "EXAM-NOT-002_CHUNK_001",
-      "POL-BACKLOG_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.5,
-      "ndcg@5": 0.2128453970090281,
-      "ndcg@10": 0.2128453970090281,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q039",
-     "query": "eligibility for student semester exchange program",
-     "category": "eligibility",
-     "retrieved": [
-      "IRO-POL-001_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q040",
-     "query": "internship NOC eligibility and credit transfer",
-     "category": "eligibility",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q041",
-     "query": "how to apply for general bonafide student certificate",
-     "category": "procedure",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q042",
-     "query": "procedure for lost student id card replacement",
-     "category": "procedure",
-     "retrieved": [
-      "STU-FRM-007_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.3373519727104165,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q043",
-     "query": "procedure for hostel room vacation and clearance",
-     "category": "procedure",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q044",
-     "query": "procedure to file online student grievance on ResolveDesk",
-     "category": "procedure",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q045",
-     "query": "procedure for on-duty leave application and approval",
-     "category": "procedure",
-     "retrieved": [
-      "POL-CIE_CHUNK_005",
-      "EXAM-GUI-001_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q046",
-     "query": "institutional five-department no-dues clearance sign-off matrix",
-     "category": "lexical_diversity",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q047",
-     "query": "ExamShield portal hall ticket download and re-evaluation filing",
-     "category": "lexical_diversity",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q048",
-     "query": "LibNet OPAC book reservation and account renewal guide",
-     "category": "lexical_diversity",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q049",
-     "query": "campus Wi-Fi 802.1X PEAP MSCHAPv2 device authentication",
-     "category": "lexical_diversity",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q050",
-     "query": "CareerHub portal CDC registration and one-offer placement norms",
-     "category": "lexical_diversity",
-     "retrieved": [],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    }
-   ]
-  },
-  "p2_pipeline": {
-   "mean": {
-    "recall@5": 0.54,
-    "recall@10": 0.69,
-    "mrr": 0.5614604643722291,
-    "ndcg@5": 0.42343584861901506,
-    "ndcg@10": 0.4725788575842234,
-    "recall@20": 0.79,
-    "pool_recall@50": 0.87
-   },
-   "categories": {
-    "abbreviation": {
-     "recall@5": 0.5,
-     "recall@10": 0.7,
-     "mrr": 0.3733333333333333,
-     "ndcg@5": 0.36451936901830456,
-     "ndcg@10": 0.4446308338613177,
-     "recall@20": 0.7,
-     "pool_recall@50": 0.8
-    },
-    "course_code": {
-     "recall@5": 0.7,
-     "recall@10": 0.7,
-     "mrr": 0.8153846153846154,
-     "ndcg@5": 0.6194004016784669,
-     "ndcg@10": 0.6194004016784669,
-     "recall@20": 0.8,
-     "pool_recall@50": 0.9
-    },
-    "eligibility": {
-     "recall@5": 0.5,
-     "recall@10": 0.6,
-     "mrr": 0.6900000000000001,
-     "ndcg@5": 0.5110366363349577,
-     "ndcg@10": 0.5305399542148643,
-     "recall@20": 0.7,
-     "pool_recall@50": 0.9
-    },
-    "keyword": {
-     "recall@5": 0.4,
-     "recall@10": 0.7,
-     "mrr": 0.4381818181818182,
-     "ndcg@5": 0.2702699194603651,
-     "ndcg@10": 0.35747527926177325,
-     "recall@20": 0.8,
-     "pool_recall@50": 0.9
-    },
-    "lexical_diversity": {
-     "recall@5": 0.5,
-     "recall@10": 0.7,
-     "mrr": 0.482051282051282,
-     "ndcg@5": 0.3667982464796297,
-     "ndcg@10": 0.4354742155255836,
-     "recall@20": 0.9,
-     "pool_recall@50": 0.9
-    },
-    "natural_language": {
-     "recall@5": 0.6,
-     "recall@10": 0.7,
-     "mrr": 0.39166666666666666,
-     "ndcg@5": 0.3718197048587345,
-     "ndcg@10": 0.3931042445596373,
-     "recall@20": 0.7,
-     "pool_recall@50": 0.8
-    },
-    "numeric": {
-     "recall@5": 0.5,
-     "recall@10": 0.6,
-     "mrr": 0.8117647058823529,
-     "ndcg@5": 0.5176044372981113,
-     "ndcg@10": 0.5400945688121391,
-     "recall@20": 0.8,
-     "pool_recall@50": 0.9
-    },
-    "policy": {
-     "recall@5": 0.8,
-     "recall@10": 0.9,
-     "mrr": 0.6166666666666666,
-     "ndcg@5": 0.5385523566473045,
-     "ndcg@10": 0.591029330180036,
-     "recall@20": 1.0,
-     "pool_recall@50": 1.0
-    },
-    "procedure": {
-     "recall@5": 0.7,
-     "recall@10": 0.9,
-     "mrr": 0.85,
-     "ndcg@5": 0.5695408425813524,
-     "ndcg@10": 0.6694092454591349,
-     "recall@20": 0.9,
-     "pool_recall@50": 0.9
-    },
-    "typo": {
-     "recall@5": 0.2,
-     "recall@10": 0.4,
-     "mrr": 0.14555555555555555,
-     "ndcg@5": 0.10481657183292421,
-     "ndcg@10": 0.14463050228928132,
-     "recall@20": 0.6,
-     "pool_recall@50": 0.7
-    }
-   },
-   "per_query": [
-    {
-     "query_id": "Q001",
-     "query": "semester fees",
-     "category": "keyword",
-     "retrieved": [
-      "FIN-POL-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_003",
-      "STU-FRM-002_CHUNK_002",
-      "FIN-POL-001_CHUNK_003",
-      "FIN-POL-001_CHUNK_001",
-      "EXAM-NOT-002_CHUNK_003",
-      "HSTL-REG-001_CHUNK_003",
-      "FIN-POL-005_CHUNK_001",
-      "TRANS-POL-001_CHUNK_003",
-      "STU-FRM-002_CHUNK_001",
-      "ACAD-POL-001_CHUNK_002",
-      "POL-COURSE-REG_CHUNK_003",
-      "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-004_CHUNK_001",
-      "STU-FRM-006_CHUNK_002",
-      "FIN-GUI-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_004",
-      "FIN-POL-002_CHUNK_002",
-      "ACAD-REG-001_CHUNK_002",
-      "ACAD-POL-006_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.641864940605065,
-      "ndcg@10": 0.641864940605065,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q002",
-     "query": "hostel allotment",
-     "category": "keyword",
-     "retrieved": [
-      "POL-HOSTEL-ALLOC_CHUNK_003",
-      "HSTL-REG-001_CHUNK_002",
-      "HSTL-POL-005_CHUNK_002",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
-      "LIB-POL-003_CHUNK_003",
-      "HSTL-REG-001_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_002",
-      "HSTL-REG-001_CHUNK_001",
-      "HSTL-POL-004_CHUNK_002",
-      "HSTL-REG-002_CHUNK_001",
-      "HSTL-REG-002_CHUNK_004",
-      "EXAM-GUI-002_CHUNK_002",
-      "HSTL-POL-005_CHUNK_001",
-      "LIB-POL-003_CHUNK_004",
-      "HSTL-REG-001_CHUNK_005",
-      "HSTL-REG-004_CHUNK_002",
-      "HSTL-REG-004_CHUNK_003",
-      "EXAM-NOT-001_CHUNK_001",
-      "HSTL-REG-002_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.2128453970090281,
-      "ndcg@10": 0.4498025437342832,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q003",
-     "query": "CSE301 prerequisites",
-     "category": "keyword",
-     "retrieved": [
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_001",
-      "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-004_CHUNK_001",
-      "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_001",
-      "POL-COURSE-REG_CHUNK_004",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_001",
-      "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_002",
-      "POL-CIE_CHUNK_004",
-      "ACAD-CRS-008_CHUNK_002",
-      "EXAM-NOT-001_CHUNK_003",
-      "ACAD-REG-002_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_005",
-      "ACAD-CRS-003_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.4966392596877323,
-      "ndcg@10": 0.5981923225699844,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q004",
-     "query": "academic transcript",
-     "category": "keyword",
-     "retrieved": [
-      "STU-FRM-001_CHUNK_001",
-      "STU-FRM-002_CHUNK_001",
-      "STU-FRM-003_CHUNK_001",
-      "STU-FRM-003_CHUNK_004",
-      "POL-GRADUATION_CHUNK_005",
-      "ACAD-POL-010_CHUNK_005",
-      "ADM-POL-004_CHUNK_004",
-      "STU-FRM-001_CHUNK_003",
-      "FIN-POL-005_CHUNK_004",
-      "EXAM-NOT-002_CHUNK_001",
-      "EXAM-GUI-005_CHUNK_002",
-      "STU-FRM-002_CHUNK_003",
-      "POL-TRANSFER-CERT_CHUNK_002",
-      "PLC-GUI-001_CHUNK_002",
-      "STU-FRM-005_CHUNK_003",
-      "STU-FRM-003_CHUNK_002",
-      "EXAM-NOT-002_CHUNK_003",
-      "PLC-GUI-001_CHUNK_003",
-      "ACAD-POL-006_CHUNK_003",
-      "EXAM-NOT-003_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.09090909090909091,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q005",
-     "query": "library book renewal",
-     "category": "keyword",
-     "retrieved": [
-      "LIB-GUI-001_CHUNK_004",
-      "LIB-POL-001_CHUNK_004",
-      "LIB-FAQ-001_CHUNK_001",
-      "LIB-FAQ-001_CHUNK_002",
-      "LIB-POL-001_CHUNK_005",
-      "LIB-GUI-001_CHUNK_003",
-      "LIB-GOV-001_CHUNK_004",
-      "FIN-POL-002_CHUNK_003",
-      "LIB-POL-001_CHUNK_006",
-      "LIB-POL-001_CHUNK_003",
-      "LIB-POL-001_CHUNK_001",
-      "LIB-GUI-001_CHUNK_002",
-      "FIN-POL-003_CHUNK_003",
-      "FIN-POL-003_CHUNK_004",
-      "LIB-GUI-001_CHUNK_001",
-      "FIN-SCH-001_CHUNK_003",
-      "LIB-GOV-001_CHUNK_002",
-      "LIB-POL-003_CHUNK_005",
-      "LIB-POL-004_CHUNK_001",
-      "LIB-POL-002_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.5,
-      "mrr": 0.1,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.09751658939953338,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q006",
-     "query": "Can I get a refund if I withdraw from the semester?",
-     "category": "natural_language",
-     "retrieved": [
-      "TRANS-SOP-001_CHUNK_004",
-      "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-004_CHUNK_002",
-      "FIN-POL-004_CHUNK_001",
-      "FIN-POL-004_CHUNK_004",
-      "POL-ADD-DROP_CHUNK_004",
-      "FIN-POL-003_CHUNK_004",
-      "FIN-POL-003_CHUNK_002",
-      "FIN-POL-005_CHUNK_003",
-      "FIN-SCH-001_CHUNK_004",
-      "FIN-SCH-001_CHUNK_003",
-      "FIN-POL-003_CHUNK_003",
-      "LIB-POL-001_CHUNK_006",
-      "IT-SYS-001_CHUNK_004",
-      "FIN-POL-003_CHUNK_001",
-      "FIN-POL-001_CHUNK_002",
-      "HSTL-POL-004_CHUNK_003",
-      "POL-ATTEND_CHUNK_005",
-      "FIN-POL-004_CHUNK_003",
-      "FIN-POL-002_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.5076850214429881,
-      "ndcg@10": 0.5076850214429881,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q007",
-     "query": "What are the requirements for hostel allotment?",
-     "category": "natural_language",
-     "retrieved": [
-      "HSTL-POL-005_CHUNK_002",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
-      "HSTL-POL-005_CHUNK_001",
-      "HSTL-REG-001_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_003",
-      "HSTL-REG-004_CHUNK_002",
-      "HSTL-REG-001_CHUNK_005",
-      "HSTL-REG-002_CHUNK_001",
-      "HSTL-REG-002_CHUNK_004",
-      "LIB-POL-003_CHUNK_003",
-      "HSTL-REG-002_CHUNK_002",
-      "HSTL-REG-004_CHUNK_003",
-      "FIN-POL-005_CHUNK_002",
-      "HSTL-POL-003_CHUNK_001",
-      "HSTL-POL-004_CHUNK_002",
-      "HSTL-REG-003_CHUNK_003",
-      "HSTL-REG-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_001",
-      "POL-HOSTEL-LEAVE_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.5,
-      "ndcg@5": 0.4966392596877323,
-      "ndcg@10": 0.4966392596877323,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q008",
-     "query": "What happens if my attendance is below 75%?",
-     "category": "natural_language",
-     "retrieved": [
-      "POL-ATTEND_CHUNK_005",
-      "STU-FRM-005_CHUNK_001",
-      "ACAD-REG-001_CHUNK_003",
-      "POL-ATTEND_CHUNK_004",
-      "PLC-TRN-001_CHUNK_004",
-      "ACAD-POL-004_CHUNK_003",
-      "ACAD-POL-003_CHUNK_001",
-      "POL-ATTEND_CHUNK_003",
-      "ACAD-POL-003_CHUNK_002",
-      "POL-SEE_CHUNK_004",
-      "STU-FRM-004_CHUNK_003",
-      "STU-FRM-005_CHUNK_002",
-      "FIN-SCH-001_CHUNK_003",
-      "PLC-POL-002_CHUNK_004",
-      "STU-LDR-001_CHUNK_005",
-      "EXAM-NOT-005_CHUNK_003",
-      "PLC-POL-001_CHUNK_002",
-      "POL-OD_CHUNK_002",
-      "FIN-POL-005_CHUNK_002",
-      "LIB-POL-001_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.5,
-      "mrr": 0.125,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.10642269850451405,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q009",
-     "query": "How many credits can an undergraduate student register per semester?",
-     "category": "natural_language",
-     "retrieved": [
-      "ACAD-POL-001_CHUNK_002",
-      "POL-COURSE-REG_CHUNK_003",
-      "ACAD-POL-010_CHUNK_002",
-      "ACAD-REG-001_CHUNK_002",
-      "POL-BACKLOG_CHUNK_005",
-      "POL-COURSE-REG_CHUNK_001",
-      "POL-ATTEND_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "POL-BACKLOG_CHUNK_004",
-      "ACAD-POL-010_CHUNK_004",
-      "EXAM-NOT-002_CHUNK_002",
-      "POL-ATTEND_CHUNK_005",
-      "ACAD-POL-004_CHUNK_003",
-      "POL-CIE_CHUNK_004",
-      "POL-ADD-DROP_CHUNK_004",
-      "EXAM-NOT-005_CHUNK_003",
-      "ACAD-REG-002_CHUNK_002",
-      "ACAD-REG-001_CHUNK_008",
-      "POL-GRADUATION_CHUNK_002",
-      "POL-OD_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.5,
-      "ndcg@5": 0.2128453970090281,
-      "ndcg@10": 0.2128453970090281,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q010",
-     "query": "What is the fine for returning library books late?",
-     "category": "natural_language",
-     "retrieved": [
-      "LIB-FAQ-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_004",
-      "LIB-FAQ-001_CHUNK_002",
-      "FIN-POL-002_CHUNK_003",
-      "LIB-POL-001_CHUNK_005",
-      "LIB-GUI-001_CHUNK_004",
-      "FIN-POL-003_CHUNK_003",
-      "LIB-POL-001_CHUNK_003",
-      "LIB-GUI-001_CHUNK_003",
-      "FIN-POL-003_CHUNK_004",
-      "LIB-POL-001_CHUNK_006",
-      "POL-GRADUATION_CHUNK_005",
-      "LIB-POL-003_CHUNK_005",
-      "LIB-POL-003_CHUNK_003",
-      "ADM-SOP-001_CHUNK_002",
-      "LIB-POL-003_CHUNK_002",
-      "EXAM-NOT-002_CHUNK_003",
-      "LIB-POL-001_CHUNK_001",
-      "FIN-POL-001_CHUNK_003",
-      "TRANS-SOP-001_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.6419288461539238,
-      "ndcg@10": 0.6419288461539238,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q011",
-     "query": "sem fees payment schedule",
-     "category": "abbreviation",
-     "retrieved": [
-      "FIN-POL-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_003",
-      "FIN-POL-001_CHUNK_003",
-      "EXAM-NOT-002_CHUNK_003",
-      "FIN-POL-005_CHUNK_004",
-      "FIN-POL-001_CHUNK_001",
-      "ACAD-NOT-002_CHUNK_003",
-      "FIN-POL-005_CHUNK_001",
-      "FIN-POL-001_CHUNK_005",
-      "STU-FRM-002_CHUNK_002",
-      "HSTL-REG-001_CHUNK_003",
-      "EXAM-NOT-005_CHUNK_001",
-      "TRANS-POL-001_CHUNK_003",
-      "ACAD-NOT-002_CHUNK_001",
-      "POL-ADD-DROP_CHUNK_005",
-      "FIN-GUI-001_CHUNK_002",
-      "STU-FRM-006_CHUNK_002",
-      "STU-FRM-002_CHUNK_001",
-      "FIN-POL-002_CHUNK_004",
-      "POL-BACKLOG_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.95583058934618,
-      "ndcg@10": 0.95583058934618,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q012",
-     "query": "dept regulations for lab safety",
-     "category": "abbreviation",
-     "retrieved": [
-      "ACAD-CRS-007_CHUNK_005",
-      "ACAD-LAB-001_CHUNK_003",
-      "ECE-LAB-002_CHUNK_003",
-      "OPS-LAB-003_CHUNK_003",
-      "ACAD-LAB-001_CHUNK_001",
-      "ACAD-CRS-009_CHUNK_005",
-      "OPS-LAB-003_CHUNK_001",
-      "ACAD-LAB-001_CHUNK_004",
-      "IT-STF-001_CHUNK_002",
-      "IT-LAB-004_CHUNK_002",
-      "ECE-LAB-002_CHUNK_001",
-      "OPS-EST-004_CHUNK_001",
-      "IT-LAB-004_CHUNK_001",
-      "HSTL-POL-005_CHUNK_003",
-      "HSTL-POL-003_CHUNK_001",
-      "ACAD-POL-002_CHUNK_003",
-      "SEC-POL-003_CHUNK_001",
-      "CIV-LAB-304_CHUNK_004",
-      "CSE-CRS-304_CHUNK_001",
-      "ECE-LAB-002_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.2,
-      "ndcg@5": 0.30451296789464855,
-      "ndcg@10": 0.30451296789464855,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q013",
-     "query": "univ admission eligibility for international students",
-     "category": "abbreviation",
-     "retrieved": [
-      "FIN-POL-005_CHUNK_002",
-      "IRO-POL-001_CHUNK_001",
-      "ADM-INT-001_CHUNK_001",
-      "FIN-SCH-002_CHUNK_002",
-      "HSTL-POL-005_CHUNK_002",
-      "ADM-INT-001_CHUNK_002",
-      "EXAM-NOT-005_CHUNK_003",
-      "POL-SEE_CHUNK_004",
-      "IRO-POL-001_CHUNK_003",
-      "POL-CIE_CHUNK_004",
-      "RES-POL-003_CHUNK_003",
-      "ADM-INT-001_CHUNK_003",
-      "HSTL-REG-004_CHUNK_002",
-      "ACAD-POL-008_CHUNK_002",
-      "POL-BACKLOG_CHUNK_005",
-      "FIN-SCH-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_001",
-      "POL-OD_CHUNK_003",
-      "POL-GRADUATION_CHUNK_001",
-      "POL-BONAFIDE_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.3935773014954859,
-      "ndcg@10": 0.5137444987600056,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q014",
-     "query": "min attendance criteria for SEE examination",
-     "category": "abbreviation",
-     "retrieved": [
-      "ACAD-REG-001_CHUNK_003",
-      "ACAD-POL-004_CHUNK_003",
-      "POL-SEE_CHUNK_003",
-      "POL-SEE_CHUNK_004",
-      "POL-ATTEND_CHUNK_005",
-      "FIN-POL-005_CHUNK_002",
-      "STU-FRM-005_CHUNK_001",
-      "POL-ATTEND_CHUNK_003",
-      "POL-OD_CHUNK_002",
-      "EXAM-NOT-003_CHUNK_002",
-      "EXAM-NOT-005_CHUNK_004",
-      "POL-CIE_CHUNK_004",
-      "FIN-SCH-001_CHUNK_003",
-      "ACAD-REG-001_CHUNK_004",
-      "POL-ATTEND_CHUNK_001",
-      "EXAM-GUI-001_CHUNK_003",
-      "POL-ATTEND_CHUNK_004",
-      "STU-LDR-001_CHUNK_002",
-      "ACAD-POL-003_CHUNK_001",
-      "EXAM-GUI-001_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.0
-     }
-    },
-    {
-     "query_id": "Q015",
-     "query": "prof office hours and mentoring guidelines",
-     "category": "abbreviation",
-     "retrieved": [
-      "ACAD-POL-006_CHUNK_004",
-      "ACAD-POL-006_CHUNK_001",
-      "ACAD-POL-006_CHUNK_003",
-      "STU-LDR-001_CHUNK_004",
-      "ACAD-POL-006_CHUNK_005",
-      "ACAD-POL-006_CHUNK_002",
-      "STU-LDR-001_CHUNK_001",
-      "FIN-POL-001_CHUNK_001",
-      "ACAD-POL-006_CHUNK_006",
-      "ACAD-POL-007_CHUNK_001",
-      "LIB-GOV-001_CHUNK_003",
-      "STU-POL-001_CHUNK_002",
-      "LIB-GOV-001_CHUNK_001",
-      "ACAD-POL-001_CHUNK_003",
-      "STU-POL-002_CHUNK_003",
-      "ACAD-POL-002_CHUNK_005",
-      "ADM-POL-004_CHUNK_001",
-      "IT-FAC-001_CHUNK_002",
-      "LIB-FAQ-001_CHUNK_001",
-      "HSTL-POL-005_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.16867598635520825,
-      "ndcg@10": 0.44906611330575424,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q016",
-     "query": "attendence shortage rules",
-     "category": "typo",
-     "retrieved": [
-      "STU-FRM-005_CHUNK_001",
-      "ACAD-POL-004_CHUNK_003",
-      "POL-ATTEND_CHUNK_005",
-      "ACAD-POL-003_CHUNK_001",
-      "ACAD-REG-001_CHUNK_003",
-      "POL-ATTEND_CHUNK_004",
-      "POL-OD_CHUNK_002",
-      "POL-ATTEND_CHUNK_001",
-      "POL-ATTEND_CHUNK_003",
-      "STU-FRM-004_CHUNK_003",
-      "POL-SEE_CHUNK_004",
-      "ACAD-POL-003_CHUNK_002",
-      "STU-FRM-005_CHUNK_002",
-      "FIN-SCH-001_CHUNK_003",
-      "STU-LDR-001_CHUNK_005",
-      "FIN-POL-005_CHUNK_002",
-      "PLC-POL-002_CHUNK_004",
-      "POL-OD_CHUNK_001",
-      "PLC-TRN-001_CHUNK_004",
-      "HSTL-REG-004_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.5,
-      "mrr": 0.1111111111111111,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.10155306288225219,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q017",
-     "query": "hostel allotmnt process",
-     "category": "typo",
-     "retrieved": [
-      "HSTL-REG-001_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
-      "HSTL-POL-005_CHUNK_002",
-      "LIB-POL-003_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_003",
-      "HSTL-POL-004_CHUNK_002",
-      "HSTL-REG-002_CHUNK_001",
-      "HSTL-REG-002_CHUNK_004",
-      "HSTL-REG-004_CHUNK_003",
-      "HSTL-REG-002_CHUNK_002",
-      "HSTL-REG-001_CHUNK_002",
-      "HSTL-REG-001_CHUNK_005",
-      "HSTL-REG-001_CHUNK_001",
-      "POL-ANTI-RAGGING_CHUNK_005",
-      "LIB-POL-003_CHUNK_004",
-      "HSTL-POL-001_CHUNK_003",
-      "HSTL-REG-001_CHUNK_004",
-      "HSTL-POL-004_CHUNK_001",
-      "HSTL-POL-005_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.08333333333333333,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q018",
-     "query": "revalution fee and deadline",
-     "category": "typo",
-     "retrieved": [
-      "STU-FRM-006_CHUNK_002",
-      "FIN-POL-002_CHUNK_002",
-      "EXAM-NOT-002_CHUNK_003",
-      "POL-REEVAL_CHUNK_004",
-      "POL-REEVAL_CHUNK_003",
-      "POL-REEVAL_CHUNK_005",
-      "FIN-POL-005_CHUNK_003",
-      "STU-FRM-006_CHUNK_003",
-      "FIN-POL-005_CHUNK_004",
-      "EXAM-SCH-003_CHUNK_004",
-      "EXAM-GUI-004_CHUNK_003",
-      "LIB-POL-001_CHUNK_005",
-      "LIB-FAQ-001_CHUNK_002",
-      "ACAD-NOT-002_CHUNK_003",
-      "FIN-POL-006_CHUNK_004",
-      "EXAM-GUI-004_CHUNK_002",
-      "FIN-POL-001_CHUNK_002",
-      "EXAM-GUI-004_CHUNK_004",
-      "EXAM-GUI-002_CHUNK_006",
-      "EXAM-GUI-001_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.2,
-      "ndcg@5": 0.1305055576691351,
-      "ndcg@10": 0.1305055576691351,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q019",
-     "query": "scholarship reqmnt criteria",
-     "category": "typo",
-     "retrieved": [
-      "FIN-POL-005_CHUNK_002",
-      "FIN-SCH-001_CHUNK_001",
-      "FIN-SCH-001_CHUNK_002",
-      "FIN-SCH-002_CHUNK_002",
-      "HSTL-REG-004_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "POL-SEE_CHUNK_004",
-      "FIN-POL-005_CHUNK_001",
-      "FIN-SCH-002_CHUNK_003",
-      "FIN-SCH-001_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "POL-CIE_CHUNK_004",
-      "STU-FRM-001_CHUNK_002",
-      "FIN-SCH-002_CHUNK_004",
-      "POL-GRADUATION_CHUNK_001",
-      "IRO-POL-001_CHUNK_003",
-      "HSTL-POL-005_CHUNK_002",
-      "PLC-POL-001_CHUNK_002",
-      "FIN-SCH-002_CHUNK_001",
-      "EXAM-NOT-002_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.3935773014954859,
-      "ndcg@10": 0.4910938908950193,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q020",
-     "query": "semester withdrawl procedure",
-     "category": "typo",
-     "retrieved": [
-      "POL-ADD-DROP_CHUNK_004",
-      "FIN-POL-004_CHUNK_004",
-      "FIN-POL-003_CHUNK_003",
-      "HSTL-POL-004_CHUNK_001",
-      "POL-ADD-DROP_CHUNK_001",
-      "POL-ADD-DROP_CHUNK_003",
-      "ADM-SOP-001_CHUNK_001",
-      "FIN-POL-004_CHUNK_001",
-      "FIN-SCH-001_CHUNK_003",
-      "ADM-POL-004_CHUNK_001",
-      "POL-SEE_CHUNK_001",
-      "ADM-SOP-001_CHUNK_003",
-      "POL-ADD-DROP_CHUNK_005",
-      "STU-FRM-003_CHUNK_003",
-      "LIB-POL-001_CHUNK_006",
-      "TRANS-SOP-001_CHUNK_004",
-      "POL-ATTEND_CHUNK_005",
-      "FIN-POL-005_CHUNK_001",
-      "HSTL-POL-004_CHUNK_002",
-      "FIN-POL-003_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.0,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.0,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q021",
-     "query": "cse301 syllabus and textbooks",
-     "category": "course_code",
-     "retrieved": [
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_002",
-      "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_001",
-      "ACAD-CRS-004_CHUNK_001",
-      "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-005_CHUNK_003",
-      "ACAD-CRS-002_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_001",
-      "ACAD-CRS-007_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_005",
-      "ACAD-CRS-001_CHUNK_002",
-      "ACAD-CRS-008_CHUNK_001",
-      "CSE-CRS-304_CHUNK_001",
-      "EXAM-NOT-001_CHUNK_003",
-      "EXAM-SCH-003_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q022",
-     "query": "ECE201 course outline",
-     "category": "course_code",
-     "retrieved": [
-      "ACAD-CRS-007_CHUNK_002",
-      "ACAD-CRS-007_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-008_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_001",
-      "ECE-CRS-001_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_002",
-      "EXAM-SCH-003_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_004",
-      "ACAD-POL-005_CHUNK_004",
-      "ECE-CRS-001_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_003",
-      "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-010_CHUNK_002",
-      "CSE-CRS-304_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q023",
-     "query": "MEC304 course outline",
-     "category": "course_code",
-     "retrieved": [
-      "MEC-CRS-304_CHUNK_002",
-      "MEC-CRS-304_CHUNK_001",
-      "ACAD-CRS-009_CHUNK_001",
-      "ACAD-CRS-004_CHUNK_001",
-      "ACAD-CRS-009_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_003",
-      "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_001",
-      "MEC-CRS-304_CHUNK_004",
-      "ACAD-CRS-010_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_002",
-      "ACAD-CRS-010_CHUNK_004",
-      "MEC-CRS-304_CHUNK_003",
-      "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-010_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q024",
-     "query": "CSE301 practical laboratory assignments",
-     "category": "course_code",
-     "retrieved": [
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_001",
-      "ACAD-CRS-005_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-004_CHUNK_001",
-      "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-002_CHUNK_001",
-      "CSE-CRS-304_CHUNK_001",
-      "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_004",
-      "ACAD-CRS-001_CHUNK_002",
-      "CSE-CRS-304_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_003",
-      "ACAD-CRS-001_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_004",
-      "ACAD-CRS-001_CHUNK_004",
-      "MEC-CRS-304_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.07692307692307693,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q025",
-     "query": "CIV205 structural analysis computing manual",
-     "category": "course_code",
-     "retrieved": [
-      "ACAD-CRS-010_CHUNK_002",
-      "ACAD-CRS-010_CHUNK_004",
-      "ACAD-CRS-006_CHUNK_004",
-      "ACAD-CRS-001_CHUNK_002",
-      "ACAD-CRS-010_CHUNK_001",
-      "ACAD-CRS-003_CHUNK_004",
-      "ACAD-CRS-004_CHUNK_004",
-      "ACAD-CRS-002_CHUNK_004",
-      "EXAM-GUI-001_CHUNK_001",
-      "CSE-CRS-304_CHUNK_001",
-      "ACAD-CRS-002_CHUNK_002",
-      "CSE-CRS-304_CHUNK_002",
-      "IT-LAB-004_CHUNK_001",
-      "ACAD-LAB-001_CHUNK_002",
-      "MEC-CRS-304_CHUNK_004",
-      "ACAD-CRS-008_CHUNK_004",
-      "IT-POL-003_CHUNK_003",
-      "ACAD-CRS-006_CHUNK_003",
-      "ACAD-CRS-005_CHUNK_003",
-      "ACAD-CRS-002_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.641864940605065,
-      "ndcg@10": 0.641864940605065,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q026",
-     "query": "attendance below 75 percent medical condonation",
-     "category": "numeric",
-     "retrieved": [
-      "ACAD-POL-003_CHUNK_002",
-      "STU-FRM-005_CHUNK_001",
-      "POL-ATTEND_CHUNK_004",
-      "ACAD-POL-003_CHUNK_001",
-      "STU-FRM-005_CHUNK_002",
-      "ACAD-REG-001_CHUNK_003",
-      "STU-MED-001_CHUNK_003",
-      "POL-ATTEND_CHUNK_005",
-      "PLC-TRN-001_CHUNK_004",
-      "POL-OD_CHUNK_002",
-      "STU-FRM-005_CHUNK_003",
-      "POL-ATTEND_CHUNK_003",
-      "POL-CIE_CHUNK_005",
-      "PLC-POL-002_CHUNK_004",
-      "SEC-SOP-001_CHUNK_005",
-      "STU-MED-001_CHUNK_004",
-      "FIN-POL-005_CHUNK_002",
-      "STU-LDR-001_CHUNK_005",
-      "PLC-POL-001_CHUNK_002",
-      "EXAM-NOT-003_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.6763610077981964,
-      "ndcg@10": 0.6763610077981964,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q027",
-     "query": "minimum CGPA 6.0 academic probation",
-     "category": "numeric",
-     "retrieved": [
-      "ACAD-POL-010_CHUNK_002",
-      "ACAD-REG-002_CHUNK_002",
-      "POL-ATTEND_CHUNK_005",
-      "ACAD-POL-001_CHUNK_002",
-      "HSTL-REG-004_CHUNK_002",
-      "IRO-POL-001_CHUNK_003",
-      "FIN-SCH-001_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "PLC-GUI-001_CHUNK_004",
-      "PLC-POL-001_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "POL-SEE_CHUNK_003",
-      "EXAM-GUI-001_CHUNK_004",
-      "PLC-FAQ-001_CHUNK_002",
-      "PLC-GUI-001_CHUNK_003",
-      "ACAD-REG-001_CHUNK_004",
-      "POL-COURSE-REG_CHUNK_003",
-      "EXAM-GUI-001_CHUNK_003",
-      "FIN-POL-005_CHUNK_002",
-      "POL-CIE_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.058823529411764705,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q028",
-     "query": "caution deposit refund within 30 days",
-     "category": "numeric",
-     "retrieved": [
-      "FIN-POL-003_CHUNK_002",
-      "FIN-POL-004_CHUNK_003",
-      "FIN-POL-003_CHUNK_004",
-      "TRANS-SOP-001_CHUNK_004",
-      "FIN-POL-003_CHUNK_001",
-      "FIN-POL-004_CHUNK_002",
-      "FIN-POL-004_CHUNK_004",
-      "IT-SYS-001_CHUNK_004",
-      "HSTL-POL-004_CHUNK_003",
-      "FIN-POL-006_CHUNK_004",
-      "FIN-GUI-001_CHUNK_003",
-      "STU-FRM-002_CHUNK_002",
-      "FIN-POL-001_CHUNK_005",
-      "LIB-POL-001_CHUNK_004",
-      "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-004_CHUNK_001",
-      "FIN-POL-003_CHUNK_003",
-      "FIN-POL-005_CHUNK_003",
-      "HSTL-POL-004_CHUNK_002",
-      "LIB-POL-001_CHUNK_006"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q029",
-     "query": "maximum 28 credit load per semester",
-     "category": "numeric",
-     "retrieved": [
-      "POL-COURSE-REG_CHUNK_003",
-      "ACAD-POL-001_CHUNK_002",
-      "POL-BACKLOG_CHUNK_005",
-      "POL-ADD-DROP_CHUNK_004",
-      "ACAD-POL-004_CHUNK_003",
-      "POL-OD_CHUNK_004",
-      "ACAD-REG-002_CHUNK_006",
-      "ACAD-POL-010_CHUNK_002",
-      "ACAD-POL-008_CHUNK_002",
-      "ACAD-REG-001_CHUNK_002",
-      "POL-BACKLOG_CHUNK_004",
-      "FIN-SCH-001_CHUNK_004",
-      "FIN-POL-005_CHUNK_003",
-      "POL-ATTEND_CHUNK_005",
-      "EXAM-NOT-002_CHUNK_002",
-      "POL-ADD-DROP_CHUNK_003",
-      "EXAM-NOT-005_CHUNK_003",
-      "POL-COURSE-REG_CHUNK_001",
-      "STU-FRM-004_CHUNK_003",
-      "ACAD-REG-001_CHUNK_008"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.3373519727104165,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q030",
-     "query": "late fee fine 500 rupees per week",
-     "category": "numeric",
-     "retrieved": [
-      "FIN-POL-001_CHUNK_003",
-      "EXAM-NOT-002_CHUNK_003",
-      "ACAD-NOT-002_CHUNK_003",
-      "FIN-POL-002_CHUNK_003",
-      "LIB-POL-001_CHUNK_004",
-      "FIN-POL-005_CHUNK_003",
-      "FIN-POL-002_CHUNK_002",
-      "STU-FRM-006_CHUNK_002",
-      "POL-BACKLOG_CHUNK_003",
-      "FIN-POL-001_CHUNK_002",
-      "TRANS-POL-001_CHUNK_003",
-      "EXAM-NOT-005_CHUNK_001",
-      "FIN-POL-004_CHUNK_002",
-      "LIB-FAQ-001_CHUNK_001",
-      "TRANS-SOP-001_CHUNK_004",
-      "FIN-POL-001_CHUNK_001",
-      "FIN-POL-005_CHUNK_004",
-      "FIN-POL-001_CHUNK_005",
-      "FIN-POL-004_CHUNK_003",
-      "EXAM-GUI-002_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.8996052605611106,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q031",
-     "query": "semester withdrawal refund policy",
-     "category": "policy",
-     "retrieved": [
-      "FIN-POL-004_CHUNK_002",
-      "FIN-POL-004_CHUNK_001",
-      "TRANS-SOP-001_CHUNK_004",
-      "FIN-POL-004_CHUNK_004",
-      "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-003_CHUNK_002",
-      "POL-ADD-DROP_CHUNK_004",
-      "FIN-POL-003_CHUNK_004",
-      "FIN-POL-005_CHUNK_003",
-      "FIN-POL-003_CHUNK_001",
-      "FIN-SCH-001_CHUNK_004",
-      "FIN-POL-004_CHUNK_003",
-      "FIN-POL-003_CHUNK_003",
-      "FIN-SCH-001_CHUNK_003",
-      "FIN-POL-001_CHUNK_002",
-      "LIB-POL-001_CHUNK_006",
-      "POL-TRANSFER-CERT_CHUNK_001",
-      "HSTL-POL-004_CHUNK_003",
-      "FIN-POL-002_CHUNK_002",
-      "FIN-POL-001_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q032",
-     "query": "zero tolerance anti ragging policy",
-     "category": "policy",
-     "retrieved": [
-      "STU-POL-004_CHUNK_001",
-      "POL-ANTI-RAGGING_CHUNK_005",
-      "STU-POL-004_CHUNK_002",
-      "POL-ANTI-RAGGING_CHUNK_002",
-      "POL-ANTI-RAGGING_CHUNK_004",
-      "STU-POL-004_CHUNK_003",
-      "POL-ANTI-RAGGING_CHUNK_001",
-      "POL-GRIEVANCE_CHUNK_002",
-      "STU-LDR-001_CHUNK_005",
-      "POL-GRIEVANCE_CHUNK_004",
-      "POL-ANTI-RAGGING_CHUNK_003",
-      "STU-POL-005_CHUNK_004",
-      "STU-POL-004_CHUNK_004",
-      "HSTL-POL-002_CHUNK_004",
-      "EXAM-GUI-003_CHUNK_001",
-      "TRANS-POL-001_CHUNK_005",
-      "SEC-POL-002_CHUNK_005",
-      "HSTL-REG-003_CHUNK_005",
-      "ACAD-REG-001_CHUNK_007",
-      "HSTL-POL-003_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.25,
-      "ndcg@5": 0.14528958646619142,
-      "ndcg@10": 0.40767445412984865,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q033",
-     "query": "student grievance redressal ombudsman policy",
-     "category": "policy",
-     "retrieved": [
-      "STU-POL-006_CHUNK_001",
-      "STU-GUI-001_CHUNK_002",
-      "POL-GRIEVANCE_CHUNK_002",
-      "STU-POL-006_CHUNK_002",
-      "POL-GRIEVANCE_CHUNK_003",
-      "POL-GRIEVANCE_CHUNK_004",
-      "HSTL-POL-002_CHUNK_004",
-      "ACAD-POL-003_CHUNK_004",
-      "STU-POL-006_CHUNK_003",
-      "STU-POL-004_CHUNK_004",
-      "STU-GUI-001_CHUNK_003",
-      "STU-GUI-001_CHUNK_001",
-      "POL-GRIEVANCE_CHUNK_001",
-      "STU-LDR-001_CHUNK_005",
-      "POL-ANTI-RAGGING_CHUNK_001",
-      "HSTL-REG-003_CHUNK_005",
-      "IT-SYS-003_CHUNK_004",
-      "IT-SYS-004_CHUNK_002",
-      "STU-POL-004_CHUNK_002",
-      "IT-SYS-004_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.16867598635520825,
-      "ndcg@10": 0.16867598635520825,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q034",
-     "query": "academic integrity and plagiarism prevention policy",
-     "category": "policy",
-     "retrieved": [
-      "RES-ETH-001_CHUNK_004",
-      "RES-ETH-001_CHUNK_001",
-      "LIB-POL-004_CHUNK_004",
-      "LIB-POL-004_CHUNK_001",
-      "RES-ETH-001_CHUNK_002",
-      "POL-REEVAL_CHUNK_001",
-      "LIB-POL-004_CHUNK_003",
-      "EXAM-GUI-003_CHUNK_002",
-      "PLC-GUI-002_CHUNK_004",
-      "POL-BACKLOG_CHUNK_001",
-      "PLC-POL-002_CHUNK_001",
-      "POL-ATTEND_CHUNK_001",
-      "LIB-FAQ-001_CHUNK_002",
-      "POL-GRIEVANCE_CHUNK_002",
-      "EXAM-GUI-003_CHUNK_001",
-      "FIN-POL-003_CHUNK_001",
-      "LIB-GOV-001_CHUNK_002",
-      "LIB-POL-002_CHUNK_004",
-      "SEC-SOP-003_CHUNK_002",
-      "ACAD-REG-002_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.6271448173568673,
-      "ndcg@10": 0.6271448173568673,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q035",
-     "query": "hostel electrical appliances prohibition policy",
-     "category": "policy",
-     "retrieved": [
-      "HSTL-POL-003_CHUNK_001",
-      "OPS-FAC-005_CHUNK_005",
-      "HSTL-REG-003_CHUNK_003",
-      "POL-HOSTEL-ALLOC_CHUNK_005",
-      "HSTL-POL-003_CHUNK_002",
-      "HSTL-REG-002_CHUNK_004",
-      "IT-POL-003_CHUNK_004",
-      "HSTL-REG-001_CHUNK_005",
-      "LIB-POL-003_CHUNK_003",
-      "HSTL-REG-002_CHUNK_002",
-      "HSTL-REG-002_CHUNK_001",
-      "LIB-POL-003_CHUNK_005",
-      "ECE-LAB-002_CHUNK_003",
-      "HSTL-REG-003_CHUNK_004",
-      "POL-DISCIPLINE_CHUNK_002",
-      "HSTL-POL-003_CHUNK_003",
-      "FIN-POL-002_CHUNK_003",
-      "POL-HOSTEL-LEAVE_CHUNK_002",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
-      "POL-HOSTEL-LEAVE_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.9176601606601069,
-      "ndcg@10": 0.9176601606601069,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q036",
-     "query": "who is eligible for chancellor merit scholarship",
-     "category": "eligibility",
-     "retrieved": [
-      "FIN-SCH-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_002",
-      "HSTL-REG-004_CHUNK_002",
-      "FIN-SCH-002_CHUNK_003",
-      "FIN-SCH-002_CHUNK_002",
-      "POL-SEE_CHUNK_004",
-      "HSTL-POL-005_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "FIN-SCH-001_CHUNK_001",
-      "STU-FRM-001_CHUNK_002",
-      "FIN-SCH-001_CHUNK_003",
-      "FIN-SCH-002_CHUNK_004",
-      "POL-OD_CHUNK_003",
-      "FIN-SCH-001_CHUNK_004",
-      "POL-BONAFIDE_CHUNK_001",
-      "RES-POL-003_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "POL-SEE_CHUNK_003",
-      "POL-GRADUATION_CHUNK_001",
-      "EXAM-NOT-002_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q037",
-     "query": "eligibility criteria for campus placement drives",
-     "category": "eligibility",
-     "retrieved": [
-      "PLC-POL-001_CHUNK_002",
-      "PLC-FAQ-001_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "PLC-POL-003_CHUNK_003",
-      "PLC-GUI-001_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "FIN-POL-005_CHUNK_002",
-      "HSTL-POL-005_CHUNK_002",
-      "PLC-POL-001_CHUNK_001",
-      "HSTL-REG-004_CHUNK_002",
-      "IRO-POL-001_CHUNK_003",
-      "POL-SEE_CHUNK_004",
-      "PLC-POL-003_CHUNK_004",
-      "PLC-POL-001_CHUNK_005",
-      "POL-CLUBS_CHUNK_002",
-      "ACAD-POL-001_CHUNK_002",
-      "POL-CIE_CHUNK_004",
-      "FIN-SCH-001_CHUNK_002",
-      "RES-POL-003_CHUNK_003",
-      "PLC-FAQ-001_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.7871546029909718,
-      "ndcg@10": 0.7871546029909718,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q038",
-     "query": "eligibility for supplementary backlog examination",
-     "category": "eligibility",
-     "retrieved": [
-      "POL-BACKLOG_CHUNK_002",
-      "ACAD-REG-001_CHUNK_006",
-      "EXAM-NOT-005_CHUNK_003",
-      "EXAM-GUI-001_CHUNK_004",
-      "POL-BACKLOG_CHUNK_003",
-      "EXAM-NOT-002_CHUNK_001",
-      "POL-CIE_CHUNK_005",
-      "EXAM-NOT-005_CHUNK_005",
-      "EXAM-NOT-002_CHUNK_004",
-      "FIN-SCH-001_CHUNK_003",
-      "POL-BACKLOG_CHUNK_005",
-      "EXAM-NOT-002_CHUNK_002",
-      "PLC-POL-001_CHUNK_002",
-      "IRO-POL-001_CHUNK_003",
-      "POL-SEE_CHUNK_004",
-      "FIN-POL-005_CHUNK_002",
-      "EXAM-NOT-002_CHUNK_003",
-      "PLC-FAQ-001_CHUNK_002",
-      "PLC-GUI-001_CHUNK_004",
-      "EXAM-NOT-002_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.3373519727104165,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q039",
-     "query": "eligibility for student semester exchange program",
-     "category": "eligibility",
-     "retrieved": [
-      "ACAD-POL-008_CHUNK_002",
-      "POL-CIE_CHUNK_004",
-      "FIN-POL-005_CHUNK_001",
-      "IRO-POL-001_CHUNK_001",
-      "IRO-POL-001_CHUNK_003",
-      "FIN-POL-005_CHUNK_002",
-      "ACAD-POL-008_CHUNK_003",
-      "HSTL-REG-004_CHUNK_002",
-      "HSTL-POL-005_CHUNK_002",
-      "PLC-POL-001_CHUNK_005",
-      "POL-SEE_CHUNK_004",
-      "FIN-SCH-002_CHUNK_002",
-      "ADM-INT-001_CHUNK_001",
-      "ADM-INT-001_CHUNK_003",
-      "RES-POL-003_CHUNK_003",
-      "EXAM-NOT-005_CHUNK_003",
-      "ADM-INT-001_CHUNK_002",
-      "PLC-GUI-003_CHUNK_004",
-      "EXAM-NOT-003_CHUNK_002",
-      "POL-TRANSFER-CERT_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.25,
-      "ndcg@5": 0.3390090350877799,
-      "ndcg@10": 0.3390090350877799,
-      "recall@20": 0.5,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q040",
-     "query": "internship NOC eligibility and credit transfer",
-     "category": "eligibility",
-     "retrieved": [
-      "PLC-POL-002_CHUNK_003",
-      "PLC-GUI-003_CHUNK_003",
-      "ACAD-POL-008_CHUNK_002",
-      "ACAD-POL-008_CHUNK_004",
-      "PLC-GUI-003_CHUNK_001",
-      "PLC-POL-002_CHUNK_001",
-      "PLC-GUI-003_CHUNK_004",
-      "PLC-POL-002_CHUNK_002",
-      "POL-TRANSFER-CERT_CHUNK_002",
-      "PLC-GUI-003_CHUNK_002",
-      "PLC-POL-001_CHUNK_005",
-      "IRO-POL-001_CHUNK_003",
-      "POL-GRADUATION_CHUNK_003",
-      "ACAD-POL-008_CHUNK_003",
-      "ACAD-POL-008_CHUNK_001",
-      "PLC-POL-002_CHUNK_004",
-      "PLC-GUI-001_CHUNK_003",
-      "STU-FRM-003_CHUNK_003",
-      "STU-FRM-003_CHUNK_001",
-      "FIN-POL-005_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.2,
-      "ndcg@5": 0.30451296789464855,
-      "ndcg@10": 0.40202955729418194,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q041",
-     "query": "how to apply for general bonafide student certificate",
-     "category": "procedure",
-     "retrieved": [
-      "STU-FRM-001_CHUNK_003",
-      "ACAD-SOP-002_CHUNK_001",
-      "STU-FRM-001_CHUNK_001",
-      "POL-BONAFIDE_CHUNK_002",
-      "POL-BONAFIDE_CHUNK_003",
-      "STU-FRM-001_CHUNK_004",
-      "STU-FRM-001_CHUNK_002",
-      "ACAD-SOP-002_CHUNK_002",
-      "IT-SYS-001_CHUNK_003",
-      "STU-FRM-002_CHUNK_001",
-      "ADM-INT-001_CHUNK_002",
-      "ACAD-SOP-002_CHUNK_003",
-      "ADM-INT-001_CHUNK_003",
-      "POL-BONAFIDE_CHUNK_001",
-      "EXAM-NOT-002_CHUNK_004",
-      "PLC-GUI-003_CHUNK_001",
-      "ADM-POL-004_CHUNK_004",
-      "ADM-SOP-001_CHUNK_003",
-      "STU-FRM-003_CHUNK_004",
-      "PLC-GUI-003_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.5997368403740738,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q042",
-     "query": "procedure for lost student id card replacement",
-     "category": "procedure",
-     "retrieved": [
-      "SEC-POL-001_CHUNK_004",
-      "STU-FRM-007_CHUNK_002",
-      "STU-FRM-007_CHUNK_001",
-      "SEC-POL-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_002",
-      "LIB-GUI-001_CHUNK_005",
-      "IT-POL-002_CHUNK_004",
-      "POL-ATTEND_CHUNK_006",
-      "ADM-POL-004_CHUNK_004",
-      "STU-GUI-001_CHUNK_002",
-      "STU-MED-001_CHUNK_003",
-      "TRANS-POL-001_CHUNK_004",
-      "FIN-POL-002_CHUNK_002",
-      "IT-SOP-004_CHUNK_003",
-      "FIN-POL-004_CHUNK_004",
-      "SEC-POL-001_CHUNK_002",
-      "IT-SOP-004_CHUNK_001",
-      "STU-FRM-003_CHUNK_004",
-      "STU-POL-001_CHUNK_004",
-      "LIB-POL-001_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 1.0,
-      "ndcg@10": 1.0,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q043",
-     "query": "procedure for hostel room vacation and clearance",
-     "category": "procedure",
-     "retrieved": [
-      "HSTL-POL-004_CHUNK_002",
-      "POL-HOSTEL-ALLOC_CHUNK_005",
-      "HSTL-REG-001_CHUNK_003",
-      "HSTL-REG-002_CHUNK_002",
-      "HSTL-POL-004_CHUNK_003",
-      "HSTL-REG-004_CHUNK_003",
-      "FIN-POL-003_CHUNK_003",
-      "HSTL-REG-002_CHUNK_001",
-      "HSTL-POL-004_CHUNK_001",
-      "HSTL-REG-002_CHUNK_004",
-      "LIB-POL-003_CHUNK_003",
-      "HSTL-REG-001_CHUNK_005",
-      "HSTL-POL-001_CHUNK_003",
-      "POL-HOSTEL-LEAVE_CHUNK_004",
-      "ADM-SOP-001_CHUNK_001",
-      "FIN-POL-006_CHUNK_004",
-      "STU-FRM-003_CHUNK_003",
-      "POL-HOSTEL-LEAVE_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
-      "LIB-POL-001_CHUNK_006"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.5743091194356716,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q044",
-     "query": "procedure to file online student grievance on ResolveDesk",
-     "category": "procedure",
-     "retrieved": [
-      "STU-GUI-001_CHUNK_002",
-      "STU-GUI-001_CHUNK_001",
-      "ACAD-POL-003_CHUNK_004",
-      "IT-SYS-003_CHUNK_004",
-      "ACAD-POL-004_CHUNK_004",
-      "POL-GRIEVANCE_CHUNK_003",
-      "POL-OD_CHUNK_005",
-      "IT-SOP-004_CHUNK_003",
-      "OPS-POL-001_CHUNK_003",
-      "IT-SYS-004_CHUNK_001",
-      "IT-SYS-002_CHUNK_004",
-      "LIB-POL-002_CHUNK_006",
-      "SEC-SOP-003_CHUNK_004",
-      "IT-SYS-004_CHUNK_002",
-      "STU-GUI-001_CHUNK_003",
-      "FIN-POL-004_CHUNK_004",
-      "STU-POL-006_CHUNK_002",
-      "FIN-POL-005_CHUNK_004",
-      "IT-SYS-004_CHUNK_003",
-      "EXAM-SCH-003_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q045",
-     "query": "procedure for on-duty leave application and approval",
-     "category": "procedure",
-     "retrieved": [
-      "PLC-POL-002_CHUNK_004",
-      "HR-POL-003_CHUNK_004",
-      "POL-OD_CHUNK_005",
-      "POL-OD_CHUNK_002",
-      "STU-FRM-004_CHUNK_003",
-      "HR-POL-003_CHUNK_003",
-      "EXAM-GUI-001_CHUNK_004",
-      "ACAD-POL-004_CHUNK_003",
-      "ACAD-POL-004_CHUNK_004",
-      "STU-FRM-003_CHUNK_004",
-      "POL-CIE_CHUNK_005",
-      "POL-OD_CHUNK_004",
-      "HSTL-REG-004_CHUNK_003",
-      "FIN-POL-005_CHUNK_004",
-      "STU-FRM-003_CHUNK_003",
-      "EXAM-GUI-002_CHUNK_001",
-      "EXAM-GUI-002_CHUNK_006",
-      "ACAD-POL-004_CHUNK_005",
-      "PLC-POL-001_CHUNK_004",
-      "STU-MED-001_CHUNK_003"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.25,
-      "ndcg@5": 0.3390090350877799,
-      "ndcg@10": 0.3390090350877799,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q046",
-     "query": "institutional five-department no-dues clearance sign-off matrix",
-     "category": "lexical_diversity",
-     "retrieved": [
-      "ADM-SOP-001_CHUNK_002",
-      "POL-GRADUATION_CHUNK_005",
-      "FIN-POL-003_CHUNK_003",
-      "STU-FRM-003_CHUNK_003",
-      "LIB-POL-001_CHUNK_006",
-      "ADM-POL-004_CHUNK_003",
-      "ADM-SOP-001_CHUNK_003",
-      "HSTL-POL-004_CHUNK_003",
-      "ADM-SOP-001_CHUNK_001",
-      "ACAD-POL-008_CHUNK_004",
-      "ACAD-POL-010_CHUNK_005",
-      "PLC-POL-002_CHUNK_003",
-      "PLC-POL-002_CHUNK_004",
-      "PLC-GUI-003_CHUNK_001",
-      "ADM-INT-001_CHUNK_001",
-      "EXAM-NOT-003_CHUNK_004",
-      "STU-FRM-003_CHUNK_004",
-      "IT-POL-001_CHUNK_004",
-      "FIN-PRO-002_CHUNK_003",
-      "HR-POL-003_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.5743091194356716,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q047",
-     "query": "ExamShield portal hall ticket download and re-evaluation filing",
-     "category": "lexical_diversity",
-     "retrieved": [
-      "EXAM-NOT-002_CHUNK_004",
-      "EXAM-GUI-004_CHUNK_002",
-      "POL-REEVAL_CHUNK_003",
-      "POL-BACKLOG_CHUNK_003",
-      "FIN-POL-002_CHUNK_002",
-      "EXAM-GUI-002_CHUNK_002",
-      "STU-FRM-006_CHUNK_002",
-      "IT-SYS-003_CHUNK_003",
-      "EXAM-NOT-002_CHUNK_005",
-      "EXAM-GUI-005_CHUNK_002",
-      "EXAM-NOT-003_CHUNK_001",
-      "POL-SEE_CHUNK_004",
-      "IT-SYS-003_CHUNK_001",
-      "EXAM-NOT-001_CHUNK_004",
-      "POL-SEE_CHUNK_005",
-      "EXAM-GUI-004_CHUNK_004",
-      "POL-REEVAL_CHUNK_005",
-      "EXAM-GUI-002_CHUNK_004",
-      "STU-FRM-006_CHUNK_001",
-      "IT-SYS-003_CHUNK_004"
-     ],
-     "metrics": {
-      "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.07692307692307693,
-      "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 0.5,
-      "pool_recall@50": 0.5
-     }
-    },
-    {
-     "query_id": "Q048",
-     "query": "LibNet OPAC book reservation and account renewal guide",
-     "category": "lexical_diversity",
-     "retrieved": [
-      "LIB-GUI-001_CHUNK_003",
-      "LIB-GUI-001_CHUNK_004",
-      "LIB-GUI-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_004",
-      "FIN-POL-003_CHUNK_003",
-      "LIB-FAQ-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_006",
-      "LIB-GUI-001_CHUNK_002",
-      "LIB-POL-003_CHUNK_004",
-      "LIB-POL-004_CHUNK_006",
-      "FIN-POL-002_CHUNK_003",
-      "LIB-FAQ-001_CHUNK_002",
-      "LIB-POL-002_CHUNK_003",
-      "LIB-POL-001_CHUNK_005",
-      "LIB-GOV-001_CHUNK_004",
-      "LIB-POL-004_CHUNK_005",
-      "FIN-POL-006_CHUNK_004",
-      "ADM-SOP-001_CHUNK_002",
-      "FIN-SCH-001_CHUNK_003",
-      "LIB-POL-002_CHUNK_001"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 1.0,
-      "mrr": 0.3333333333333333,
-      "ndcg@5": 0.3935773014954859,
-      "ndcg@10": 0.5,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q049",
-     "query": "campus Wi-Fi 802.1X PEAP MSCHAPv2 device authentication",
-     "category": "lexical_diversity",
-     "retrieved": [
-      "LIB-POL-002_CHUNK_003",
-      "IT-SYS-005_CHUNK_001",
-      "IT-POL-003_CHUNK_002",
-      "IT-SOP-004_CHUNK_002",
-      "IT-FAC-001_CHUNK_003",
-      "IT-SYS-005_CHUNK_004",
-      "IT-SYS-004_CHUNK_002",
-      "IT-SYS-005_CHUNK_003",
-      "IT-POL-003_CHUNK_001",
-      "LIB-POL-001_CHUNK_002",
-      "IT-SYS-005_CHUNK_002",
-      "STU-POL-001_CHUNK_004",
-      "HSTL-POL-001_CHUNK_003",
-      "SEC-POL-001_CHUNK_002",
-      "IT-OPS-002_CHUNK_002",
-      "IT-POL-003_CHUNK_004",
-      "IT-SYS-001_CHUNK_002",
-      "HSTL-POL-005_CHUNK_003",
-      "LIB-POL-003_CHUNK_003",
-      "TRANS-SOP-001_CHUNK_002"
-     ],
-     "metrics": {
-      "recall@5": 0.5,
-      "recall@10": 0.5,
-      "mrr": 0.5,
-      "ndcg@5": 0.4966392596877323,
-      "ndcg@10": 0.4966392596877323,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    },
-    {
-     "query_id": "Q050",
-     "query": "CareerHub portal CDC registration and one-offer placement norms",
-     "category": "lexical_diversity",
-     "retrieved": [
-      "PLC-FAQ-001_CHUNK_002",
-      "PLC-POL-001_CHUNK_002",
-      "PLC-POL-001_CHUNK_001",
-      "PLC-POL-003_CHUNK_004",
-      "PLC-GUI-001_CHUNK_003",
-      "PLC-POL-003_CHUNK_003",
-      "PLC-GUI-001_CHUNK_001",
-      "PLC-POL-001_CHUNK_004",
-      "PLC-GUI-001_CHUNK_004",
-      "PLC-GUI-001_CHUNK_002",
-      "PLC-GUI-003_CHUNK_003",
-      "ACAD-POL-008_CHUNK_004",
-      "PLC-POL-003_CHUNK_002",
-      "PLC-TRN-001_CHUNK_001",
-      "ACAD-POL-009_CHUNK_004",
-      "PLC-POL-001_CHUNK_003",
-      "PLC-POL-002_CHUNK_004",
-      "PLC-TRN-001_CHUNK_004",
-      "PLC-STF-001_CHUNK_003",
-      "PLC-POL-001_CHUNK_005"
-     ],
-     "metrics": {
-      "recall@5": 1.0,
-      "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.606422698504514,
-      "ndcg@10": 0.606422698504514,
-      "recall@20": 1.0,
-      "pool_recall@50": 1.0
-     }
-    }
-   ]
-  },
   "vector_plain": {
    "mean": {
     "recall@5": 0.5,
@@ -8553,7 +5732,7 @@
     "ndcg@5": 0.527012131724578,
     "ndcg@10": 0.5672994603599715,
     "recall@20": 0.86,
-    "pool_recall@50": 0.87
+    "pool_recall@50": 0.91
    },
    "categories": {
     "abbreviation": {
@@ -8563,7 +5742,7 @@
      "ndcg@5": 0.42142030386409113,
      "ndcg@10": 0.48647951477992446,
      "recall@20": 0.8,
-     "pool_recall@50": 0.8
+     "pool_recall@50": 0.9
     },
     "course_code": {
      "recall@5": 0.9,
@@ -8617,7 +5796,7 @@
      "ndcg@5": 0.4123119532583567,
      "ndcg@10": 0.4558487105911674,
      "recall@20": 0.7,
-     "pool_recall@50": 0.8
+     "pool_recall@50": 0.9
     },
     "policy": {
      "recall@5": 0.9,
@@ -8635,7 +5814,7 @@
      "ndcg@5": 0.6771691328989914,
      "ndcg@10": 0.7226768746187736,
      "recall@20": 0.9,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     },
     "typo": {
      "recall@5": 0.3,
@@ -8644,7 +5823,7 @@
      "ndcg@5": 0.3242291670778241,
      "ndcg@10": 0.3242291670778241,
      "recall@20": 0.4,
-     "pool_recall@50": 0.4
+     "pool_recall@50": 0.5
     }
    },
    "per_query": [
@@ -9149,7 +6328,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.0,
       "recall@20": 0.0,
-      "pool_recall@50": 0.0
+      "pool_recall@50": 0.5
      }
     },
     {
@@ -9221,7 +6400,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.0,
       "recall@20": 0.0,
-      "pool_recall@50": 0.0
+      "pool_recall@50": 0.5
      }
     },
     {
@@ -9617,7 +6796,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.0,
       "recall@20": 0.0,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -10265,7 +7444,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.22753870859891123,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -10454,11 +7633,11 @@
    "mean": {
     "recall@5": 0.66,
     "recall@10": 0.82,
-    "mrr": 0.6495324675324674,
-    "ndcg@5": 0.5288054810619962,
-    "ndcg@10": 0.5858874394541486,
-    "recall@20": 0.93,
-    "pool_recall@50": 0.95
+    "mrr": 0.6469365079365079,
+    "ndcg@5": 0.5299287095267204,
+    "ndcg@10": 0.582853940517699,
+    "recall@20": 0.92,
+    "pool_recall@50": 0.97
    },
    "categories": {
     "abbreviation": {
@@ -10468,7 +7647,7 @@
      "ndcg@5": 0.45515550113513276,
      "ndcg@10": 0.49869225846794335,
      "recall@20": 0.8,
-     "pool_recall@50": 0.8
+     "pool_recall@50": 0.9
     },
     "course_code": {
      "recall@5": 0.9,
@@ -10489,12 +7668,12 @@
      "pool_recall@50": 1.0
     },
     "keyword": {
-     "recall@5": 0.6,
-     "recall@10": 0.8,
-     "mrr": 0.7181818181818181,
-     "ndcg@5": 0.5171285250912809,
-     "ndcg@10": 0.594491090182293,
-     "recall@20": 1.0,
+     "recall@5": 0.7,
+     "recall@10": 0.9,
+     "mrr": 0.72,
+     "ndcg@5": 0.5603755327911726,
+     "ndcg@10": 0.6011633903719821,
+     "recall@20": 0.9,
      "pool_recall@50": 1.0
     },
     "lexical_diversity": {
@@ -10522,14 +7701,14 @@
      "ndcg@5": 0.5313176154979343,
      "ndcg@10": 0.5553510549508383,
      "recall@20": 0.8,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     },
     "policy": {
      "recall@5": 0.7,
      "recall@10": 1.0,
      "mrr": 0.5833333333333334,
      "ndcg@5": 0.5289192129814562,
-     "ndcg@10": 0.657906599499823,
+     "ndcg@10": 0.6550935519358647,
      "recall@20": 1.0,
      "pool_recall@50": 1.0
     },
@@ -10543,11 +7722,11 @@
      "pool_recall@50": 1.0
     },
     "typo": {
-     "recall@5": 0.3,
-     "recall@10": 0.6,
-     "mrr": 0.3252380952380952,
-     "ndcg@5": 0.21554675518467095,
-     "ndcg@10": 0.3166050436028357,
+     "recall@5": 0.2,
+     "recall@10": 0.5,
+     "mrr": 0.2974603174603175,
+     "ndcg@5": 0.18353203213202138,
+     "ndcg@10": 0.2824108016126088,
      "recall@20": 0.9,
      "pool_recall@50": 0.9
     }
@@ -10559,8 +7738,8 @@
      "category": "keyword",
      "retrieved": [
       "FIN-POL-001_CHUNK_002",
-      "FIN-POL-001_CHUNK_001",
       "FIN-POL-001_CHUNK_003",
+      "FIN-POL-001_CHUNK_001",
       "STU-FRM-002_CHUNK_002",
       "FIN-POL-005_CHUNK_003",
       "HSTL-REG-001_CHUNK_003",
@@ -10568,23 +7747,23 @@
       "FIN-POL-005_CHUNK_001",
       "TRANS-POL-001_CHUNK_003",
       "POL-ADD-DROP_CHUNK_005",
-      "ACAD-POL-001_CHUNK_002",
       "ACAD-NOT-002_CHUNK_003",
       "FIN-POL-002_CHUNK_002",
+      "ACAD-POL-001_CHUNK_002",
+      "POL-COURSE-REG_CHUNK_003",
+      "ACAD-NOT-002_CHUNK_002",
+      "POL-BACKLOG_CHUNK_003",
       "STU-FRM-006_CHUNK_002",
       "FIN-GUI-001_CHUNK_002",
       "FIN-POL-005_CHUNK_002",
-      "FIN-POL-004_CHUNK_001",
-      "FIN-POL-005_CHUNK_004",
-      "POL-BACKLOG_CHUNK_003",
-      "POL-COURSE-REG_CHUNK_003"
+      "FIN-POL-004_CHUNK_001"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 0.8339912323981488,
-      "ndcg@10": 0.8339912323981488,
+      "ndcg@5": 0.7309292742059024,
+      "ndcg@10": 0.7309292742059024,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -10598,29 +7777,29 @@
       "POL-HOSTEL-ALLOC_CHUNK_003",
       "HSTL-REG-001_CHUNK_003",
       "POL-HOSTEL-ALLOC_CHUNK_001",
-      "HSTL-POL-004_CHUNK_001",
       "HSTL-REG-001_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_005",
       "HSTL-REG-002_CHUNK_001",
       "HSTL-REG-001_CHUNK_004",
       "HSTL-POL-005_CHUNK_002",
-      "EXAM-GUI-002_CHUNK_002",
+      "HSTL-POL-004_CHUNK_001",
       "LIB-POL-003_CHUNK_003",
+      "EXAM-GUI-002_CHUNK_002",
       "HSTL-REG-003_CHUNK_004",
       "POL-HOSTEL-ALLOC_CHUNK_002",
       "HSTL-REG-001_CHUNK_005",
-      "HSTL-POL-005_CHUNK_001",
       "HSTL-REG-002_CHUNK_004",
+      "EXAM-GUI-002_CHUNK_001",
+      "HSTL-POL-005_CHUNK_001",
       "HSTL-REG-004_CHUNK_003",
-      "POL-ANTI-RAGGING_CHUNK_005",
-      "EXAM-GUI-002_CHUNK_001"
+      "POL-ANTI-RAGGING_CHUNK_005"
      ],
      "metrics": {
-      "recall@5": 0.5,
+      "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.6177420996609625,
+      "ndcg@5": 0.641864940605065,
+      "ndcg@10": 0.641864940605065,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -10634,22 +7813,22 @@
       "ACAD-CRS-003_CHUNK_001",
       "ACAD-CRS-004_CHUNK_001",
       "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_001",
       "ACAD-CRS-003_CHUNK_005",
+      "ACAD-CRS-005_CHUNK_001",
       "ACAD-CRS-005_CHUNK_002",
       "POL-COURSE-REG_CHUNK_004",
-      "ACAD-CRS-002_CHUNK_001",
       "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_001",
+      "ACAD-CRS-002_CHUNK_001",
       "POL-COURSE-REG_CHUNK_001",
       "ACAD-CRS-002_CHUNK_002",
+      "ACAD-CRS-001_CHUNK_001",
       "ACAD-NOT-002_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_002",
-      "ADM-STF-002_CHUNK_002",
       "POL-SEE_CHUNK_004",
-      "POL-COURSE-REG_CHUNK_002",
-      "ACAD-POL-008_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_003"
+      "ACAD-CRS-006_CHUNK_002",
+      "ACAD-CRS-003_CHUNK_004",
+      "ADM-POL-004_CHUNK_003",
+      "ADM-STF-002_CHUNK_002",
+      "POL-COURSE-REG_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.5,
@@ -10667,32 +7846,32 @@
      "category": "keyword",
      "retrieved": [
       "EXAM-GUI-005_CHUNK_002",
-      "STU-FRM-001_CHUNK_001",
       "ACAD-POL-010_CHUNK_005",
       "IRO-POL-001_CHUNK_003",
       "EXAM-GUI-005_CHUNK_001",
-      "ADM-POL-004_CHUNK_004",
       "POL-GRADUATION_CHUNK_005",
+      "STU-FRM-001_CHUNK_001",
+      "POL-ADD-DROP_CHUNK_004",
+      "ADM-SOP-001_CHUNK_003",
+      "ADM-POL-004_CHUNK_004",
       "STU-FRM-001_CHUNK_003",
+      "ADM-SOP-001_CHUNK_001",
+      "POL-ADD-DROP_CHUNK_003",
       "STU-FRM-007_CHUNK_001",
       "STU-FRM-002_CHUNK_001",
-      "POL-ADD-DROP_CHUNK_004",
       "SEC-POL-001_CHUNK_004",
-      "ADM-SOP-001_CHUNK_003",
+      "LIB-POL-004_CHUNK_005",
+      "ACAD-POL-010_CHUNK_001",
+      "RES-POL-001_CHUNK_003",
       "FIN-POL-005_CHUNK_004",
-      "EXAM-GUI-004_CHUNK_004",
-      "POL-GRADUATION_CHUNK_002",
-      "POL-SEE_CHUNK_003",
-      "STU-FRM-002_CHUNK_004",
-      "ACAD-REG-001_CHUNK_005",
-      "EXAM-GUI-004_CHUNK_003"
+      "FIN-POL-001_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 0.9176601606601069,
-      "ndcg@10": 0.9176601606601069,
+      "ndcg@5": 0.9324441894571632,
+      "ndcg@10": 0.9324441894571632,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -10708,28 +7887,28 @@
       "LIB-POL-001_CHUNK_005",
       "LIB-GOV-001_CHUNK_004",
       "LIB-FAQ-001_CHUNK_002",
-      "LIB-POL-001_CHUNK_006",
       "LIB-GUI-001_CHUNK_003",
       "FIN-POL-002_CHUNK_003",
       "LIB-GUI-001_CHUNK_005",
       "LIB-POL-001_CHUNK_003",
+      "LIB-POL-001_CHUNK_006",
       "LIB-GUI-001_CHUNK_001",
       "LIB-GUI-001_CHUNK_002",
       "LIB-GOV-001_CHUNK_002",
       "FIN-SCH-001_CHUNK_003",
-      "FIN-POL-003_CHUNK_003",
       "LIB-POL-001_CHUNK_001",
-      "LIB-POL-001_CHUNK_002",
+      "LIB-POL-003_CHUNK_004",
       "LIB-POL-003_CHUNK_005",
-      "FIN-POL-003_CHUNK_004"
+      "FIN-POL-003_CHUNK_003",
+      "STU-FRM-003_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 0.0,
-      "recall@10": 0.0,
-      "mrr": 0.09090909090909091,
+      "recall@10": 0.5,
+      "mrr": 0.1,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.0,
-      "recall@20": 1.0,
+      "ndcg@10": 0.09751658939953338,
+      "recall@20": 0.5,
       "pool_recall@50": 1.0
      }
     },
@@ -11054,7 +8233,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.0,
       "recall@20": 0.0,
-      "pool_recall@50": 0.0
+      "pool_recall@50": 0.5
      }
     },
     {
@@ -11100,31 +8279,31 @@
      "retrieved": [
       "STU-FRM-005_CHUNK_001",
       "POL-ATTEND_CHUNK_001",
-      "ACAD-REG-001_CHUNK_003",
       "POL-ATTEND_CHUNK_005",
       "POL-ATTEND_CHUNK_004",
       "ACAD-POL-004_CHUNK_003",
-      "POL-ATTEND_CHUNK_003",
+      "ACAD-REG-001_CHUNK_003",
       "STU-FRM-005_CHUNK_002",
       "ACAD-POL-003_CHUNK_001",
-      "POL-OD_CHUNK_002",
-      "PLC-POL-001_CHUNK_002",
+      "POL-ATTEND_CHUNK_003",
       "POL-SEE_CHUNK_004",
       "EXAM-NOT-003_CHUNK_003",
-      "STU-FRM-005_CHUNK_003",
+      "POL-OD_CHUNK_002",
       "STU-FRM-004_CHUNK_003",
+      "STU-FRM-005_CHUNK_003",
+      "EXAM-NOT-003_CHUNK_002",
+      "PLC-POL-001_CHUNK_002",
       "ACAD-POL-003_CHUNK_002",
       "POL-OD_CHUNK_001",
       "PLC-TRN-001_CHUNK_004",
-      "EXAM-NOT-003_CHUNK_002",
       "PLC-POL-002_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 0.0,
       "recall@10": 0.5,
-      "mrr": 0.14285714285714285,
+      "mrr": 0.1111111111111111,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.11245065757013882,
+      "ndcg@10": 0.10155306288225219,
       "recall@20": 0.5,
       "pool_recall@50": 0.5
      }
@@ -11136,15 +8315,15 @@
      "retrieved": [
       "HSTL-REG-001_CHUNK_003",
       "POL-HOSTEL-ALLOC_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
       "HSTL-POL-004_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_003",
-      "HSTL-REG-001_CHUNK_001",
-      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-002_CHUNK_001",
+      "HSTL-REG-001_CHUNK_001",
+      "POL-HOSTEL-ALLOC_CHUNK_001",
       "HSTL-REG-001_CHUNK_004",
       "HSTL-REG-002_CHUNK_004",
       "LIB-POL-003_CHUNK_003",
+      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-001_CHUNK_005",
       "HSTL-REG-002_CHUNK_002",
       "EXAM-GUI-002_CHUNK_002",
@@ -11157,10 +8336,10 @@
      ],
      "metrics": {
       "recall@5": 0.0,
-      "recall@10": 1.0,
+      "recall@10": 0.5,
       "mrr": 0.16666666666666666,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.3928407845206848,
+      "ndcg@10": 0.280390126950546,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -11173,30 +8352,30 @@
       "STU-FRM-006_CHUNK_002",
       "POL-REEVAL_CHUNK_004",
       "FIN-POL-002_CHUNK_002",
-      "POL-REEVAL_CHUNK_003",
       "POL-REEVAL_CHUNK_005",
-      "EXAM-GUI-004_CHUNK_004",
-      "STU-FRM-006_CHUNK_003",
       "EXAM-NOT-002_CHUNK_003",
-      "EXAM-GUI-004_CHUNK_003",
-      "STU-FRM-006_CHUNK_001",
       "FIN-POL-005_CHUNK_004",
-      "EXAM-GUI-004_CHUNK_001",
+      "POL-REEVAL_CHUNK_003",
+      "EXAM-GUI-004_CHUNK_004",
       "LIB-POL-001_CHUNK_005",
+      "STU-FRM-006_CHUNK_003",
+      "FIN-POL-005_CHUNK_003",
+      "EXAM-NOT-002_CHUNK_001",
+      "EXAM-GUI-004_CHUNK_003",
+      "ACAD-NOT-002_CHUNK_003",
+      "STU-FRM-006_CHUNK_001",
+      "EXAM-GUI-004_CHUNK_001",
       "POL-REEVAL_CHUNK_002",
       "POL-REEVAL_CHUNK_001",
       "IT-SYS-003_CHUNK_003",
-      "EXAM-GUI-004_CHUNK_002",
-      "EXAM-NOT-002_CHUNK_001",
-      "FIN-POL-005_CHUNK_003",
-      "EXAM-GUI-002_CHUNK_006"
+      "LIB-FAQ-001_CHUNK_002"
      ],
      "metrics": {
-      "recall@5": 0.5,
+      "recall@5": 0.0,
       "recall@10": 0.5,
-      "mrr": 0.25,
-      "ndcg@5": 0.14528958646619142,
-      "ndcg@10": 0.14528958646619142,
+      "mrr": 0.14285714285714285,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.11245065757013882,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -11209,30 +8388,30 @@
       "FIN-SCH-001_CHUNK_002",
       "FIN-SCH-001_CHUNK_001",
       "FIN-SCH-002_CHUNK_002",
-      "FIN-SCH-001_CHUNK_003",
       "FIN-POL-005_CHUNK_002",
+      "FIN-SCH-001_CHUNK_003",
       "FIN-SCH-002_CHUNK_001",
       "FIN-SCH-002_CHUNK_004",
       "FIN-SCH-002_CHUNK_003",
-      "STU-LDR-001_CHUNK_002",
       "FIN-SCH-001_CHUNK_004",
-      "POL-SEE_CHUNK_004",
+      "STU-LDR-001_CHUNK_002",
       "HSTL-REG-004_CHUNK_002",
       "ACAD-POL-008_CHUNK_002",
-      "FIN-POL-005_CHUNK_001",
+      "POL-SEE_CHUNK_004",
       "HSTL-POL-005_CHUNK_002",
+      "FIN-POL-005_CHUNK_001",
       "ACAD-POL-006_CHUNK_005",
       "STU-FRM-001_CHUNK_002",
-      "POL-GRADUATION_CHUNK_001",
       "IRO-POL-001_CHUNK_003",
+      "EXAM-NOT-002_CHUNK_002",
       "ACAD-POL-010_CHUNK_005"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 0.9324441894571632,
-      "ndcg@10": 0.9324441894571632,
+      "ndcg@5": 0.9176601606601069,
+      "ndcg@10": 0.9176601606601069,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -11322,18 +8501,18 @@
       "ACAD-CRS-003_CHUNK_002",
       "ACAD-CRS-007_CHUNK_005",
       "ACAD-CRS-001_CHUNK_002",
-      "EXAM-NOT-001_CHUNK_003",
-      "ACAD-CRS-002_CHUNK_001",
       "ACAD-CRS-006_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
+      "ACAD-CRS-002_CHUNK_001",
       "ACAD-CRS-002_CHUNK_002",
+      "EXAM-NOT-001_CHUNK_003",
       "ACAD-CRS-001_CHUNK_001",
       "ACAD-CRS-007_CHUNK_004",
+      "ACAD-POL-005_CHUNK_004",
       "EXAM-SCH-003_CHUNK_003",
       "ECE-CRS-001_CHUNK_001",
-      "ACAD-POL-005_CHUNK_004",
       "ACAD-CRS-008_CHUNK_004",
-      "ACAD-CRS-001_CHUNK_006"
+      "MEC-CRS-304_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -11354,22 +8533,22 @@
       "MEC-CRS-304_CHUNK_001",
       "ACAD-CRS-009_CHUNK_001",
       "MEC-CRS-304_CHUNK_003",
+      "MEC-CRS-304_CHUNK_004",
       "ACAD-CRS-003_CHUNK_002",
       "ACAD-CRS-009_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_002",
       "MEC-CRS-304_CHUNK_005",
-      "MEC-CRS-304_CHUNK_004",
+      "ACAD-CRS-005_CHUNK_002",
       "ACAD-CRS-010_CHUNK_001",
       "ACAD-CRS-005_CHUNK_003",
       "ACAD-CRS-010_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
       "ACAD-CRS-008_CHUNK_001",
+      "ACAD-CRS-008_CHUNK_002",
       "ACAD-CRS-010_CHUNK_003",
       "ACAD-CRS-006_CHUNK_002",
       "ACAD-CRS-004_CHUNK_002",
       "ACAD-CRS-010_CHUNK_004",
-      "ACAD-CRS-006_CHUNK_003",
-      "ACAD-CRS-008_CHUNK_002"
+      "ACAD-CRS-006_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -11594,7 +8773,7 @@
       "ndcg@5": 0.3373519727104165,
       "ndcg@10": 0.3373519727104165,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -11640,24 +8819,24 @@
      "retrieved": [
       "FIN-POL-004_CHUNK_002",
       "FIN-POL-004_CHUNK_001",
-      "FIN-POL-004_CHUNK_004",
       "TRANS-SOP-001_CHUNK_004",
+      "FIN-POL-004_CHUNK_004",
       "POL-ADD-DROP_CHUNK_005",
       "FIN-POL-003_CHUNK_001",
-      "FIN-POL-003_CHUNK_002",
       "FIN-POL-004_CHUNK_003",
+      "FIN-POL-003_CHUNK_002",
       "POL-ADD-DROP_CHUNK_004",
-      "FIN-POL-002_CHUNK_002",
       "FIN-POL-005_CHUNK_003",
+      "FIN-POL-002_CHUNK_002",
       "FIN-POL-003_CHUNK_004",
-      "FIN-POL-001_CHUNK_002",
       "ADM-POL-004_CHUNK_001",
-      "POL-TRANSFER-CERT_CHUNK_001",
-      "FIN-SCH-001_CHUNK_004",
-      "FIN-SCH-001_CHUNK_003",
       "LIB-POL-001_CHUNK_006",
+      "POL-TRANSFER-CERT_CHUNK_001",
+      "FIN-SCH-001_CHUNK_003",
+      "FIN-SCH-001_CHUNK_004",
+      "FIN-POL-001_CHUNK_002",
       "FIN-POL-001_CHUNK_001",
-      "POL-ADD-DROP_CHUNK_002"
+      "HSTL-POL-004_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -11680,14 +8859,14 @@
       "POL-ANTI-RAGGING_CHUNK_004",
       "STU-POL-004_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_002",
-      "POL-ANTI-RAGGING_CHUNK_001",
       "POL-ANTI-RAGGING_CHUNK_003",
+      "POL-ANTI-RAGGING_CHUNK_001",
       "STU-POL-004_CHUNK_004",
       "STU-POL-003_CHUNK_002",
       "STU-POL-003_CHUNK_001",
       "ACAD-REG-001_CHUNK_007",
-      "POL-GRIEVANCE_CHUNK_004",
       "TRANS-POL-001_CHUNK_005",
+      "POL-GRIEVANCE_CHUNK_004",
       "POL-GRIEVANCE_CHUNK_002",
       "HSTL-REG-004_CHUNK_003",
       "STU-POL-005_CHUNK_004",
@@ -11700,7 +8879,7 @@
       "recall@10": 1.0,
       "mrr": 0.16666666666666666,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.382552064928177,
+      "ndcg@10": 0.3684868271083859,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -11861,19 +9040,19 @@
       "PLC-STF-001_CHUNK_002",
       "PLC-GUI-001_CHUNK_003",
       "PLC-POL-003_CHUNK_003",
-      "HSTL-POL-005_CHUNK_002",
       "PLC-FAQ-001_CHUNK_001",
+      "HSTL-POL-005_CHUNK_002",
       "FIN-POL-005_CHUNK_002",
       "ACAD-POL-008_CHUNK_002",
+      "IRO-POL-001_CHUNK_003",
       "PLC-POL-001_CHUNK_001",
       "PLC-POL-001_CHUNK_005",
       "PLC-POL-003_CHUNK_004",
       "PLC-POL-001_CHUNK_004",
       "ACAD-POL-009_CHUNK_004",
-      "IRO-POL-001_CHUNK_003",
       "HSTL-REG-004_CHUNK_002",
       "PLC-TRN-001_CHUNK_001",
-      "PLC-GUI-001_CHUNK_002"
+      "POL-CLUBS_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.5,
@@ -12359,11 +9538,11 @@
    "mean": {
     "recall@5": 0.69,
     "recall@10": 0.83,
-    "mrr": 0.6657619047619048,
-    "ndcg@5": 0.5780185662010172,
-    "ndcg@10": 0.6284665921321422,
+    "mrr": 0.6654047619047619,
+    "ndcg@5": 0.5771351779879408,
+    "ndcg@10": 0.6274626447377534,
     "recall@20": 0.93,
-    "pool_recall@50": 0.96
+    "pool_recall@50": 0.98
    },
    "categories": {
     "abbreviation": {
@@ -12397,7 +9576,7 @@
      "recall@5": 0.6,
      "recall@10": 0.8,
      "mrr": 0.7166666666666667,
-     "ndcg@5": 0.5326746927326131,
+     "ndcg@5": 0.532674692732613,
      "ndcg@10": 0.61124284963675,
      "recall@20": 1.0,
      "pool_recall@50": 1.0
@@ -12427,7 +9606,7 @@
      "ndcg@5": 0.4704150219190046,
      "ndcg@10": 0.5694155664186678,
      "recall@20": 0.8,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     },
     "policy": {
      "recall@5": 0.8,
@@ -12450,11 +9629,11 @@
     "typo": {
      "recall@5": 0.4,
      "recall@10": 0.6,
-     "mrr": 0.4652380952380953,
-     "ndcg@5": 0.3864888378914326,
-     "ndcg@10": 0.428482287285367,
+     "mrr": 0.4616666666666667,
+     "ndcg@5": 0.37765495576066865,
+     "ndcg@10": 0.4184428133414781,
      "recall@20": 0.8,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     }
    },
    "per_query": [
@@ -12463,8 +9642,8 @@
      "query": "semester fees",
      "category": "keyword",
      "retrieved": [
-      "FIN-POL-001_CHUNK_003",
       "FIN-POL-001_CHUNK_002",
+      "FIN-POL-001_CHUNK_003",
       "FIN-POL-001_CHUNK_001",
       "STU-FRM-002_CHUNK_002",
       "FIN-POL-005_CHUNK_003",
@@ -12474,22 +9653,22 @@
       "TRANS-POL-001_CHUNK_003",
       "ACAD-NOT-002_CHUNK_002",
       "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-001_CHUNK_005",
       "FIN-POL-005_CHUNK_001",
+      "FIN-POL-001_CHUNK_005",
       "FIN-POL-002_CHUNK_002",
+      "POL-BACKLOG_CHUNK_003",
       "FIN-GUI-001_CHUNK_002",
       "STU-FRM-006_CHUNK_002",
       "FIN-POL-005_CHUNK_002",
       "FIN-POL-005_CHUNK_004",
-      "ACAD-POL-001_CHUNK_002",
-      "POL-BACKLOG_CHUNK_003"
+      "ACAD-POL-001_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.606422698504514,
-      "ndcg@10": 0.606422698504514,
+      "mrr": 1.0,
+      "ndcg@5": 0.7309292742059024,
+      "ndcg@10": 0.7309292742059024,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -12499,33 +9678,33 @@
      "query": "hostel allotment",
      "category": "keyword",
      "retrieved": [
-      "HSTL-REG-001_CHUNK_002",
       "POL-HOSTEL-ALLOC_CHUNK_003",
+      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-001_CHUNK_003",
       "POL-HOSTEL-ALLOC_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_005",
       "HSTL-REG-001_CHUNK_001",
       "HSTL-REG-001_CHUNK_004",
+      "HSTL-REG-002_CHUNK_001",
+      "HSTL-REG-001_CHUNK_005",
       "HSTL-POL-004_CHUNK_001",
       "EXAM-GUI-002_CHUNK_002",
-      "HSTL-REG-002_CHUNK_001",
       "HSTL-REG-003_CHUNK_004",
       "POL-HOSTEL-ALLOC_CHUNK_002",
-      "HSTL-REG-001_CHUNK_005",
       "HSTL-POL-005_CHUNK_002",
+      "HSTL-REG-002_CHUNK_004",
+      "POL-HOSTEL-LEAVE_CHUNK_005",
+      "EXAM-GUI-002_CHUNK_001",
       "HSTL-POL-004_CHUNK_002",
       "HSTL-REG-004_CHUNK_002",
-      "HSTL-POL-005_CHUNK_001",
-      "HSTL-REG-002_CHUNK_004",
-      "EXAM-GUI-002_CHUNK_001",
-      "LIB-POL-003_CHUNK_003"
+      "HSTL-POL-005_CHUNK_001"
      ],
      "metrics": {
       "recall@5": 0.5,
       "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.3373519727104165,
-      "ndcg@10": 0.6177420996609625,
+      "mrr": 0.5,
+      "ndcg@5": 0.2128453970090281,
+      "ndcg@10": 0.4932355239595741,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -12537,23 +9716,23 @@
      "retrieved": [
       "ACAD-CRS-003_CHUNK_001",
       "ACAD-CRS-003_CHUNK_002",
+      "ACAD-CRS-003_CHUNK_005",
       "ACAD-CRS-004_CHUNK_001",
       "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-003_CHUNK_005",
       "ACAD-CRS-005_CHUNK_002",
       "POL-COURSE-REG_CHUNK_004",
-      "ACAD-CRS-002_CHUNK_001",
       "ACAD-CRS-004_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
+      "ACAD-CRS-002_CHUNK_001",
       "POL-COURSE-REG_CHUNK_001",
       "ACAD-CRS-002_CHUNK_005",
+      "ACAD-CRS-003_CHUNK_004",
       "ACAD-CRS-001_CHUNK_001",
       "ACAD-NOT-002_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_004",
+      "POL-SEE_CHUNK_004",
       "ACAD-CRS-003_CHUNK_003",
       "ADM-STF-002_CHUNK_002",
-      "POL-SEE_CHUNK_004",
+      "ADM-POL-004_CHUNK_003",
       "POL-COURSE-REG_CHUNK_002"
      ],
      "metrics": {
@@ -12575,22 +9754,22 @@
       "ACAD-POL-010_CHUNK_005",
       "IRO-POL-001_CHUNK_003",
       "EXAM-GUI-005_CHUNK_001",
+      "POL-GRADUATION_CHUNK_005",
+      "POL-ADD-DROP_CHUNK_004",
+      "ADM-SOP-001_CHUNK_003",
       "STU-FRM-001_CHUNK_001",
       "ADM-POL-004_CHUNK_004",
-      "POL-GRADUATION_CHUNK_005",
+      "LIB-POL-004_CHUNK_005",
+      "ADM-SOP-001_CHUNK_001",
+      "POL-ADD-DROP_CHUNK_003",
       "STU-FRM-001_CHUNK_003",
       "STU-FRM-002_CHUNK_001",
       "POL-TRANSFER-CERT_CHUNK_002",
-      "POL-ADD-DROP_CHUNK_004",
       "FIN-POL-005_CHUNK_004",
       "SEC-POL-001_CHUNK_004",
-      "ADM-SOP-001_CHUNK_003",
       "STU-FRM-007_CHUNK_001",
-      "EXAM-GUI-004_CHUNK_004",
-      "POL-SEE_CHUNK_003",
-      "ACAD-REG-001_CHUNK_005",
-      "POL-REEVAL_CHUNK_004",
-      "SEC-POL-001_CHUNK_001"
+      "PLC-GUI-003_CHUNK_004",
+      "FIN-POL-001_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -12608,25 +9787,25 @@
      "category": "keyword",
      "retrieved": [
       "LIB-GUI-001_CHUNK_004",
-      "LIB-POL-001_CHUNK_004",
       "LIB-POL-001_CHUNK_005",
+      "LIB-POL-001_CHUNK_004",
       "LIB-FAQ-001_CHUNK_001",
+      "LIB-GOV-001_CHUNK_004",
       "LIB-POL-001_CHUNK_006",
       "LIB-FAQ-001_CHUNK_002",
-      "LIB-GOV-001_CHUNK_004",
       "LIB-GUI-001_CHUNK_003",
       "LIB-GUI-001_CHUNK_002",
-      "FIN-POL-002_CHUNK_003",
       "LIB-GUI-001_CHUNK_005",
+      "FIN-POL-002_CHUNK_003",
       "LIB-POL-001_CHUNK_003",
-      "LIB-POL-001_CHUNK_001",
       "LIB-GUI-001_CHUNK_001",
+      "LIB-POL-001_CHUNK_001",
       "LIB-GOV-001_CHUNK_002",
-      "LIB-POL-003_CHUNK_004",
       "FIN-SCH-001_CHUNK_003",
-      "FIN-POL-003_CHUNK_003",
+      "LIB-POL-003_CHUNK_004",
       "LIB-POL-001_CHUNK_002",
-      "STU-FRM-003_CHUNK_003"
+      "LIB-POL-003_CHUNK_005",
+      "FIN-POL-003_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 0.0,
@@ -13006,23 +10185,23 @@
       "POL-ATTEND_CHUNK_005",
       "POL-ATTEND_CHUNK_001",
       "ACAD-REG-001_CHUNK_003",
-      "ACAD-POL-004_CHUNK_003",
       "STU-FRM-005_CHUNK_001",
+      "ACAD-POL-004_CHUNK_003",
       "ACAD-POL-003_CHUNK_001",
-      "POL-OD_CHUNK_002",
       "POL-ATTEND_CHUNK_004",
       "STU-FRM-005_CHUNK_002",
+      "POL-OD_CHUNK_002",
       "POL-ATTEND_CHUNK_003",
-      "ACAD-POL-003_CHUNK_002",
       "EXAM-NOT-003_CHUNK_003",
       "STU-FRM-005_CHUNK_003",
+      "ACAD-POL-003_CHUNK_002",
+      "POL-SEE_CHUNK_004",
+      "STU-FRM-004_CHUNK_003",
       "POL-OD_CHUNK_001",
       "PLC-TRN-001_CHUNK_004",
       "ACAD-POL-004_CHUNK_001",
       "EXAM-NOT-003_CHUNK_002",
-      "POL-SEE_CHUNK_004",
-      "FIN-POL-005_CHUNK_002",
-      "PLC-POL-002_CHUNK_004"
+      "FIN-POL-005_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.0,
@@ -13031,7 +10210,7 @@
       "ndcg@5": 0.0,
       "ndcg@10": 0.09751658939953338,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -13040,32 +10219,32 @@
      "category": "typo",
      "retrieved": [
       "HSTL-REG-001_CHUNK_001",
-      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-001_CHUNK_003",
+      "HSTL-REG-001_CHUNK_002",
       "HSTL-POL-004_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_005",
-      "POL-HOSTEL-ALLOC_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_003",
-      "HSTL-POL-004_CHUNK_002",
       "HSTL-REG-001_CHUNK_004",
       "HSTL-REG-002_CHUNK_001",
+      "POL-HOSTEL-ALLOC_CHUNK_001",
+      "HSTL-POL-004_CHUNK_002",
       "HSTL-REG-001_CHUNK_005",
       "HSTL-REG-002_CHUNK_004",
       "EXAM-GUI-002_CHUNK_002",
       "HSTL-POL-001_CHUNK_003",
-      "POL-ANTI-RAGGING_CHUNK_005",
       "HSTL-POL-005_CHUNK_002",
       "LIB-POL-003_CHUNK_003",
       "HSTL-REG-003_CHUNK_004",
+      "POL-HOSTEL-ALLOC_CHUNK_002",
       "HSTL-REG-002_CHUNK_002",
-      "POL-HOSTEL-ALLOC_CHUNK_002"
+      "EXAM-GUI-002_CHUNK_001"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 1.0,
-      "ndcg@10": 1.0,
+      "ndcg@5": 0.95583058934618,
+      "ndcg@10": 0.95583058934618,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -13077,31 +10256,31 @@
      "retrieved": [
       "STU-FRM-006_CHUNK_002",
       "POL-REEVAL_CHUNK_005",
-      "POL-REEVAL_CHUNK_004",
       "FIN-POL-002_CHUNK_002",
-      "EXAM-GUI-004_CHUNK_004",
+      "POL-REEVAL_CHUNK_004",
       "EXAM-NOT-002_CHUNK_003",
+      "EXAM-GUI-004_CHUNK_004",
+      "EXAM-NOT-002_CHUNK_001",
       "POL-REEVAL_CHUNK_003",
       "STU-FRM-006_CHUNK_003",
+      "FIN-POL-005_CHUNK_004",
+      "FIN-POL-005_CHUNK_003",
       "EXAM-GUI-004_CHUNK_001",
       "EXAM-GUI-004_CHUNK_003",
       "STU-FRM-006_CHUNK_001",
+      "ACAD-NOT-002_CHUNK_003",
       "POL-REEVAL_CHUNK_002",
+      "LIB-POL-001_CHUNK_005",
       "POL-REEVAL_CHUNK_001",
-      "FIN-POL-001_CHUNK_002",
-      "IT-SYS-003_CHUNK_003",
-      "EXAM-NOT-002_CHUNK_001",
-      "EXAM-GUI-004_CHUNK_002",
-      "FIN-POL-005_CHUNK_004",
-      "EXAM-GUI-002_CHUNK_006",
-      "FIN-POL-005_CHUNK_003"
+      "EXAM-NOT-002_CHUNK_004",
+      "FIN-POL-001_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.0,
       "recall@10": 0.5,
-      "mrr": 0.14285714285714285,
+      "mrr": 0.125,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.11245065757013882,
+      "ndcg@10": 0.10642269850451405,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -13120,17 +10299,17 @@
       "FIN-SCH-002_CHUNK_004",
       "FIN-SCH-002_CHUNK_003",
       "HSTL-REG-004_CHUNK_002",
-      "POL-SEE_CHUNK_004",
       "FIN-SCH-001_CHUNK_004",
       "STU-LDR-001_CHUNK_002",
       "ACAD-POL-008_CHUNK_002",
-      "EXAM-NOT-005_CHUNK_003",
-      "PLC-POL-001_CHUNK_002",
-      "FIN-POL-005_CHUNK_001",
+      "POL-SEE_CHUNK_004",
       "HSTL-POL-005_CHUNK_002",
+      "EXAM-NOT-005_CHUNK_003",
       "ACAD-POL-006_CHUNK_005",
+      "FIN-POL-005_CHUNK_001",
+      "PLC-POL-001_CHUNK_002",
       "STU-FRM-001_CHUNK_002",
-      "POL-GRADUATION_CHUNK_001"
+      "EXAM-NOT-003_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -13224,21 +10403,21 @@
       "ACAD-CRS-008_CHUNK_001",
       "ECE-CRS-001_CHUNK_002",
       "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_002",
       "ACAD-CRS-007_CHUNK_005",
+      "ACAD-CRS-001_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
-      "EXAM-NOT-001_CHUNK_003",
       "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-007_CHUNK_004",
       "ACAD-CRS-002_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_001",
       "ACAD-CRS-003_CHUNK_002",
+      "EXAM-NOT-001_CHUNK_003",
+      "ACAD-CRS-007_CHUNK_004",
+      "ACAD-CRS-001_CHUNK_001",
+      "ACAD-CRS-006_CHUNK_004",
+      "ACAD-CRS-002_CHUNK_002",
+      "MEC-CRS-304_CHUNK_002",
       "ACAD-CRS-007_CHUNK_003",
       "ECE-CRS-001_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_003",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-008_CHUNK_004",
-      "EXAM-SCH-003_CHUNK_003"
+      "ACAD-CRS-008_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -13258,23 +10437,23 @@
       "MEC-CRS-304_CHUNK_001",
       "MEC-CRS-304_CHUNK_002",
       "ACAD-CRS-009_CHUNK_001",
-      "MEC-CRS-304_CHUNK_003",
-      "MEC-CRS-304_CHUNK_005",
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-009_CHUNK_002",
       "ACAD-CRS-008_CHUNK_001",
       "MEC-CRS-304_CHUNK_004",
+      "MEC-CRS-304_CHUNK_003",
+      "MEC-CRS-304_CHUNK_005",
+      "ACAD-CRS-009_CHUNK_002",
+      "ACAD-CRS-003_CHUNK_002",
       "ACAD-CRS-010_CHUNK_001",
       "ACAD-CRS-005_CHUNK_003",
       "ACAD-CRS-010_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
       "ACAD-CRS-010_CHUNK_003",
+      "ACAD-CRS-008_CHUNK_002",
       "ACAD-CRS-004_CHUNK_002",
-      "ACAD-CRS-010_CHUNK_004",
       "ACAD-CRS-006_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_005",
-      "ACAD-CRS-005_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_001"
+      "ACAD-CRS-004_CHUNK_001",
+      "ACAD-CRS-010_CHUNK_004",
+      "ACAD-CRS-006_CHUNK_005"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -13499,7 +10678,7 @@
       "ndcg@5": 0.3373519727104165,
       "ndcg@10": 0.3373519727104165,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -13547,22 +10726,22 @@
       "FIN-POL-004_CHUNK_001",
       "FIN-POL-004_CHUNK_004",
       "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-004_CHUNK_003",
       "TRANS-SOP-001_CHUNK_004",
+      "FIN-POL-004_CHUNK_003",
       "FIN-POL-003_CHUNK_001",
       "POL-ADD-DROP_CHUNK_004",
       "FIN-POL-003_CHUNK_002",
-      "FIN-POL-002_CHUNK_002",
       "FIN-POL-003_CHUNK_004",
-      "FIN-POL-005_CHUNK_003",
+      "FIN-POL-002_CHUNK_002",
       "FIN-POL-003_CHUNK_003",
-      "FIN-POL-001_CHUNK_002",
       "ADM-POL-004_CHUNK_001",
+      "FIN-POL-005_CHUNK_003",
       "POL-TRANSFER-CERT_CHUNK_001",
-      "FIN-SCH-001_CHUNK_004",
+      "FIN-POL-001_CHUNK_002",
       "POL-ADD-DROP_CHUNK_001",
+      "HSTL-POL-004_CHUNK_003",
       "POL-ADD-DROP_CHUNK_002",
-      "TRANS-SOP-001_CHUNK_003"
+      "FIN-SCH-001_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -13584,8 +10763,8 @@
       "POL-ANTI-RAGGING_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_005",
       "POL-ANTI-RAGGING_CHUNK_001",
-      "STU-POL-004_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_004",
+      "STU-POL-004_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_002",
       "STU-POL-004_CHUNK_004",
       "STU-POL-003_CHUNK_002",
@@ -13597,7 +10776,7 @@
       "HSTL-REG-003_CHUNK_005",
       "POL-GRIEVANCE_CHUNK_002",
       "IT-POL-001_CHUNK_004",
-      "EXAM-GUI-003_CHUNK_001",
+      "POL-HOSTEL-ALLOC_CHUNK_005",
       "PLC-GUI-002_CHUNK_004"
      ],
      "metrics": {
@@ -13771,12 +10950,12 @@
       "PLC-POL-001_CHUNK_001",
       "PLC-POL-001_CHUNK_003",
       "FIN-POL-005_CHUNK_002",
+      "PLC-POL-001_CHUNK_005",
       "PLC-POL-003_CHUNK_004",
       "ACAD-POL-008_CHUNK_002",
       "PLC-POL-001_CHUNK_004",
       "ACAD-POL-009_CHUNK_004",
       "HSTL-REG-004_CHUNK_002",
-      "PLC-POL-001_CHUNK_005",
       "PLC-GUI-001_CHUNK_002",
       "EXAM-NOT-005_CHUNK_003"
      ],
@@ -14264,11 +11443,11 @@
    "mean": {
     "recall@5": 0.7,
     "recall@10": 0.87,
-    "mrr": 0.6696190476190477,
-    "ndcg@5": 0.5898379884332176,
-    "ndcg@10": 0.6446214451849832,
+    "mrr": 0.6678095238095239,
+    "ndcg@5": 0.5887825527983019,
+    "ndcg@10": 0.6429586665988803,
     "recall@20": 0.94,
-    "pool_recall@50": 0.96
+    "pool_recall@50": 0.98
    },
    "categories": {
     "abbreviation": {
@@ -14302,8 +11481,8 @@
      "recall@5": 0.7,
      "recall@10": 0.8,
      "mrr": 0.7142857142857143,
-     "ndcg@5": 0.5975196939907578,
-     "ndcg@10": 0.6215531334436617,
+     "ndcg@5": 0.600476499750169,
+     "ndcg@10": 0.624509939203073,
      "recall@20": 1.0,
      "pool_recall@50": 1.0
     },
@@ -14332,7 +11511,7 @@
      "ndcg@5": 0.5491304822181018,
      "ndcg@10": 0.5956540531850335,
      "recall@20": 0.8,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     },
     "policy": {
      "recall@5": 0.8,
@@ -14355,11 +11534,11 @@
     "typo": {
      "recall@5": 0.4,
      "recall@10": 0.7,
-     "mrr": 0.4866666666666667,
-     "ndcg@5": 0.3864888378914326,
-     "ndcg@10": 0.48006345851702276,
+     "mrr": 0.4685714285714286,
+     "ndcg@5": 0.3729776757828653,
+     "ndcg@10": 0.46047886689658196,
      "recall@20": 0.9,
-     "pool_recall@50": 0.9
+     "pool_recall@50": 1.0
     }
    },
    "per_query": [
@@ -14368,33 +11547,33 @@
      "query": "semester fees",
      "category": "keyword",
      "retrieved": [
-      "FIN-POL-001_CHUNK_003",
       "FIN-POL-001_CHUNK_002",
+      "FIN-POL-001_CHUNK_003",
       "FIN-POL-001_CHUNK_001",
       "FIN-POL-005_CHUNK_003",
       "EXAM-NOT-002_CHUNK_003",
       "STU-FRM-002_CHUNK_002",
-      "FIN-POL-001_CHUNK_005",
       "ACAD-NOT-002_CHUNK_003",
+      "FIN-POL-001_CHUNK_005",
       "HSTL-REG-001_CHUNK_003",
       "ACAD-NOT-002_CHUNK_002",
       "STU-FRM-002_CHUNK_001",
       "TRANS-POL-001_CHUNK_003",
       "POL-ADD-DROP_CHUNK_005",
       "FIN-POL-005_CHUNK_001",
-      "ACAD-POL-001_CHUNK_002",
-      "FIN-POL-004_CHUNK_001",
       "POL-BACKLOG_CHUNK_003",
-      "POL-BONAFIDE_CHUNK_003",
       "ACAD-NOT-002_CHUNK_001",
-      "FIN-POL-002_CHUNK_002"
+      "FIN-POL-002_CHUNK_002",
+      "FIN-GUI-001_CHUNK_002",
+      "FIN-POL-005_CHUNK_004",
+      "ACAD-POL-001_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "mrr": 0.5,
-      "ndcg@5": 0.606422698504514,
-      "ndcg@10": 0.606422698504514,
+      "mrr": 1.0,
+      "ndcg@5": 0.7309292742059024,
+      "ndcg@10": 0.7309292742059024,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -14404,33 +11583,33 @@
      "query": "hostel allotment",
      "category": "keyword",
      "retrieved": [
-      "HSTL-REG-001_CHUNK_002",
       "POL-HOSTEL-ALLOC_CHUNK_003",
+      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-001_CHUNK_003",
       "HSTL-REG-001_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_001",
       "POL-HOSTEL-ALLOC_CHUNK_005",
       "HSTL-REG-001_CHUNK_005",
       "HSTL-REG-002_CHUNK_001",
-      "POL-HOSTEL-ALLOC_CHUNK_002",
       "HSTL-REG-001_CHUNK_004",
-      "HSTL-POL-004_CHUNK_001",
       "EXAM-GUI-002_CHUNK_002",
+      "HSTL-POL-004_CHUNK_001",
       "HSTL-POL-005_CHUNK_002",
-      "HSTL-REG-003_CHUNK_004",
       "LIB-POL-003_CHUNK_003",
       "HSTL-REG-003_CHUNK_003",
+      "POL-HOSTEL-ALLOC_CHUNK_002",
       "HSTL-POL-003_CHUNK_001",
+      "HSTL-REG-003_CHUNK_004",
       "HSTL-POL-004_CHUNK_002",
       "POL-HOSTEL-LEAVE_CHUNK_005",
-      "HSTL-REG-004_CHUNK_004"
+      "HSTL-REG-002_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
-      "mrr": 1.0,
-      "ndcg@5": 0.6763610077981964,
-      "ndcg@10": 0.6763610077981964,
+      "mrr": 0.5,
+      "ndcg@5": 0.5518544320968081,
+      "ndcg@10": 0.5518544320968081,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -14442,24 +11621,24 @@
      "retrieved": [
       "ACAD-CRS-003_CHUNK_001",
       "ACAD-CRS-003_CHUNK_002",
+      "ACAD-CRS-003_CHUNK_005",
       "ACAD-CRS-004_CHUNK_001",
       "ACAD-CRS-005_CHUNK_001",
-      "ACAD-CRS-003_CHUNK_005",
       "POL-COURSE-REG_CHUNK_004",
       "ACAD-CRS-005_CHUNK_002",
       "ACAD-CRS-004_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
+      "ACAD-CRS-003_CHUNK_004",
       "ACAD-CRS-002_CHUNK_005",
       "ADM-STF-002_CHUNK_002",
       "ACAD-CRS-002_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_001",
       "POL-COURSE-REG_CHUNK_001",
+      "ACAD-CRS-001_CHUNK_001",
       "ACAD-NOT-002_CHUNK_002",
-      "ACAD-CRS-003_CHUNK_004",
       "ACAD-CRS-003_CHUNK_003",
+      "POL-SEE_CHUNK_004",
       "ACAD-CRS-001_CHUNK_002",
-      "ACAD-CRS-002_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_003"
+      "ACAD-CRS-002_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.5,
@@ -14478,31 +11657,31 @@
      "retrieved": [
       "EXAM-GUI-005_CHUNK_002",
       "ACAD-POL-010_CHUNK_005",
-      "STU-FRM-001_CHUNK_001",
       "IRO-POL-001_CHUNK_003",
       "EXAM-GUI-005_CHUNK_001",
-      "ADM-POL-004_CHUNK_004",
-      "STU-FRM-002_CHUNK_001",
       "ADM-SOP-001_CHUNK_001",
       "ADM-SOP-001_CHUNK_003",
-      "STU-FRM-007_CHUNK_001",
       "POL-GRADUATION_CHUNK_005",
-      "STU-FRM-001_CHUNK_003",
-      "POL-TRANSFER-CERT_CHUNK_002",
-      "STU-FRM-002_CHUNK_003",
+      "STU-FRM-001_CHUNK_001",
+      "ADM-POL-004_CHUNK_004",
+      "POL-ADD-DROP_CHUNK_003",
       "POL-ADD-DROP_CHUNK_004",
+      "STU-FRM-002_CHUNK_001",
+      "POL-TRANSFER-CERT_CHUNK_002",
+      "FIN-POL-001_CHUNK_004",
+      "STU-FRM-007_CHUNK_001",
+      "LIB-POL-004_CHUNK_005",
+      "STU-FRM-001_CHUNK_003",
+      "STU-FRM-002_CHUNK_003",
       "FIN-POL-005_CHUNK_004",
-      "SEC-POL-001_CHUNK_004",
-      "STU-FRM-001_CHUNK_004",
-      "ACAD-REG-001_CHUNK_005",
-      "POL-ADD-DROP_CHUNK_003"
+      "SEC-POL-001_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 0.9176601606601069,
-      "ndcg@10": 0.9176601606601069,
+      "ndcg@5": 0.9324441894571632,
+      "ndcg@10": 0.9324441894571632,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -14513,25 +11692,25 @@
      "category": "keyword",
      "retrieved": [
       "LIB-GUI-001_CHUNK_004",
-      "LIB-POL-001_CHUNK_004",
       "LIB-POL-001_CHUNK_005",
+      "LIB-POL-001_CHUNK_004",
       "LIB-FAQ-001_CHUNK_001",
+      "LIB-GOV-001_CHUNK_004",
       "LIB-POL-001_CHUNK_006",
       "LIB-FAQ-001_CHUNK_002",
-      "LIB-GOV-001_CHUNK_004",
       "LIB-GUI-001_CHUNK_003",
       "LIB-GUI-001_CHUNK_002",
       "LIB-GUI-001_CHUNK_001",
-      "FIN-POL-002_CHUNK_003",
       "LIB-GUI-001_CHUNK_005",
+      "FIN-POL-002_CHUNK_003",
       "FIN-POL-003_CHUNK_003",
       "LIB-POL-001_CHUNK_003",
       "LIB-POL-001_CHUNK_001",
       "LIB-GOV-001_CHUNK_002",
-      "LIB-POL-003_CHUNK_004",
       "FIN-SCH-001_CHUNK_003",
-      "FIN-POL-003_CHUNK_004",
-      "LIB-POL-001_CHUNK_002"
+      "LIB-POL-003_CHUNK_004",
+      "LIB-POL-001_CHUNK_002",
+      "LIB-POL-003_CHUNK_005"
      ],
      "metrics": {
       "recall@5": 0.0,
@@ -14910,33 +12089,33 @@
      "retrieved": [
       "POL-ATTEND_CHUNK_005",
       "POL-ATTEND_CHUNK_001",
-      "ACAD-REG-001_CHUNK_003",
       "POL-ATTEND_CHUNK_004",
-      "ACAD-POL-004_CHUNK_003",
-      "POL-ATTEND_CHUNK_003",
+      "ACAD-REG-001_CHUNK_003",
       "STU-FRM-005_CHUNK_001",
+      "ACAD-POL-004_CHUNK_003",
       "ACAD-POL-003_CHUNK_001",
       "POL-OD_CHUNK_002",
       "STU-FRM-005_CHUNK_002",
-      "POL-OD_CHUNK_001",
+      "POL-ATTEND_CHUNK_003",
       "FIN-POL-005_CHUNK_002",
-      "PLC-POL-001_CHUNK_002",
-      "POL-OD_CHUNK_003",
-      "ACAD-POL-003_CHUNK_002",
-      "ACAD-POL-004_CHUNK_001",
       "EXAM-NOT-003_CHUNK_003",
-      "EXAM-NOT-003_CHUNK_002",
       "STU-FRM-005_CHUNK_003",
-      "PLC-POL-002_CHUNK_004"
+      "POL-OD_CHUNK_001",
+      "EXAM-NOT-003_CHUNK_002",
+      "STU-FRM-004_CHUNK_003",
+      "PLC-POL-002_CHUNK_004",
+      "PLC-POL-001_CHUNK_002",
+      "EXAM-NOT-005_CHUNK_003",
+      "POL-OD_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 0.0,
       "recall@10": 0.5,
-      "mrr": 0.16666666666666666,
+      "mrr": 0.1,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.12016719726451973,
+      "ndcg@10": 0.09751658939953338,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -14945,12 +12124,12 @@
      "category": "typo",
      "retrieved": [
       "HSTL-REG-001_CHUNK_001",
-      "HSTL-REG-001_CHUNK_002",
       "HSTL-REG-001_CHUNK_003",
       "POL-HOSTEL-ALLOC_CHUNK_003",
+      "HSTL-REG-001_CHUNK_002",
       "HSTL-POL-004_CHUNK_001",
-      "HSTL-REG-001_CHUNK_004",
       "POL-HOSTEL-ALLOC_CHUNK_005",
+      "HSTL-REG-001_CHUNK_004",
       "POL-HOSTEL-ALLOC_CHUNK_001",
       "HSTL-REG-001_CHUNK_005",
       "HSTL-POL-004_CHUNK_002",
@@ -14958,8 +12137,8 @@
       "HSTL-REG-002_CHUNK_004",
       "HSTL-POL-001_CHUNK_003",
       "LIB-POL-003_CHUNK_003",
-      "HSTL-REG-002_CHUNK_002",
       "EXAM-GUI-002_CHUNK_002",
+      "HSTL-REG-002_CHUNK_002",
       "HSTL-REG-003_CHUNK_003",
       "HSTL-REG-003_CHUNK_004",
       "HSTL-POL-003_CHUNK_001",
@@ -14969,8 +12148,8 @@
       "recall@5": 1.0,
       "recall@10": 1.0,
       "mrr": 1.0,
-      "ndcg@5": 1.0,
-      "ndcg@10": 1.0,
+      "ndcg@5": 0.9324441894571632,
+      "ndcg@10": 0.9324441894571632,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -14983,30 +12162,30 @@
       "STU-FRM-006_CHUNK_002",
       "POL-REEVAL_CHUNK_005",
       "FIN-POL-002_CHUNK_002",
-      "POL-REEVAL_CHUNK_004",
       "EXAM-NOT-002_CHUNK_003",
-      "POL-REEVAL_CHUNK_003",
+      "POL-REEVAL_CHUNK_004",
       "EXAM-GUI-004_CHUNK_004",
+      "POL-REEVAL_CHUNK_003",
+      "FIN-POL-005_CHUNK_004",
+      "ACAD-NOT-002_CHUNK_003",
+      "LIB-POL-001_CHUNK_005",
+      "FIN-POL-001_CHUNK_002",
+      "LIB-FAQ-001_CHUNK_002",
+      "EXAM-NOT-002_CHUNK_001",
       "STU-FRM-006_CHUNK_003",
+      "FIN-POL-005_CHUNK_003",
       "EXAM-GUI-004_CHUNK_001",
       "EXAM-GUI-004_CHUNK_002",
       "EXAM-GUI-004_CHUNK_003",
       "STU-FRM-006_CHUNK_001",
-      "FIN-POL-005_CHUNK_004",
-      "POL-REEVAL_CHUNK_002",
-      "POL-REEVAL_CHUNK_001",
-      "LIB-POL-001_CHUNK_005",
-      "ACAD-NOT-002_CHUNK_003",
-      "FIN-POL-001_CHUNK_002",
-      "IT-SYS-003_CHUNK_003",
-      "EXAM-SCH-003_CHUNK_004"
+      "POL-REEVAL_CHUNK_002"
      ],
      "metrics": {
       "recall@5": 0.0,
       "recall@10": 0.5,
-      "mrr": 0.16666666666666666,
+      "mrr": 0.14285714285714285,
       "ndcg@5": 0.0,
-      "ndcg@10": 0.12016719726451973,
+      "ndcg@10": 0.11245065757013882,
       "recall@20": 1.0,
       "pool_recall@50": 1.0
      }
@@ -15023,17 +12202,17 @@
       "FIN-POL-005_CHUNK_002",
       "FIN-SCH-002_CHUNK_001",
       "FIN-SCH-002_CHUNK_004",
+      "EXAM-NOT-005_CHUNK_003",
       "FIN-SCH-002_CHUNK_003",
       "HSTL-REG-004_CHUNK_002",
-      "STU-LDR-001_CHUNK_002",
-      "POL-SEE_CHUNK_004",
       "FIN-SCH-001_CHUNK_004",
+      "STU-LDR-001_CHUNK_002",
       "ACAD-POL-008_CHUNK_002",
-      "EXAM-NOT-005_CHUNK_003",
-      "PLC-POL-001_CHUNK_002",
       "ACAD-POL-006_CHUNK_005",
+      "POL-SEE_CHUNK_004",
       "HSTL-POL-005_CHUNK_002",
-      "ACAD-POL-010_CHUNK_001",
+      "PLC-POL-001_CHUNK_002",
+      "EXAM-NOT-003_CHUNK_002",
       "ACAD-POL-002_CHUNK_001",
       "POL-CIE_CHUNK_004"
      ],
@@ -15129,21 +12308,21 @@
       "ACAD-CRS-008_CHUNK_001",
       "ECE-CRS-001_CHUNK_002",
       "ACAD-CRS-008_CHUNK_002",
-      "ACAD-CRS-001_CHUNK_002",
       "ACAD-CRS-007_CHUNK_005",
+      "ACAD-CRS-001_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
-      "ACAD-CRS-001_CHUNK_001",
       "ACAD-CRS-006_CHUNK_002",
+      "ACAD-CRS-001_CHUNK_001",
       "ACAD-CRS-007_CHUNK_004",
       "ACAD-CRS-002_CHUNK_001",
-      "EXAM-NOT-001_CHUNK_003",
       "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-006_CHUNK_003",
+      "EXAM-NOT-001_CHUNK_003",
       "ACAD-CRS-006_CHUNK_004",
-      "ACAD-CRS-008_CHUNK_004",
+      "ACAD-CRS-006_CHUNK_003",
       "ACAD-CRS-002_CHUNK_002",
       "ACAD-CRS-002_CHUNK_005",
-      "ACAD-CRS-004_CHUNK_001"
+      "MEC-CRS-304_CHUNK_001",
+      "ACAD-CRS-007_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -15163,23 +12342,23 @@
       "MEC-CRS-304_CHUNK_001",
       "MEC-CRS-304_CHUNK_002",
       "ACAD-CRS-009_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_001",
       "MEC-CRS-304_CHUNK_003",
+      "ACAD-CRS-008_CHUNK_001",
+      "ACAD-CRS-005_CHUNK_003",
       "ACAD-CRS-004_CHUNK_001",
       "MEC-CRS-304_CHUNK_004",
       "MEC-CRS-304_CHUNK_005",
-      "ACAD-CRS-003_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_003",
       "ACAD-CRS-009_CHUNK_002",
-      "ACAD-CRS-005_CHUNK_002",
+      "ACAD-CRS-003_CHUNK_002",
       "ACAD-CRS-004_CHUNK_002",
+      "ACAD-CRS-008_CHUNK_002",
+      "ACAD-CRS-005_CHUNK_002",
+      "ACAD-CRS-006_CHUNK_003",
       "ACAD-CRS-010_CHUNK_001",
       "ACAD-CRS-010_CHUNK_002",
       "ACAD-CRS-006_CHUNK_001",
       "ACAD-CRS-010_CHUNK_003",
-      "ACAD-CRS-010_CHUNK_004",
-      "ACAD-CRS-003_CHUNK_001",
-      "ACAD-CRS-008_CHUNK_002"
+      "ACAD-CRS-010_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -15404,7 +12583,7 @@
       "ndcg@5": 0.3373519727104165,
       "ndcg@10": 0.3373519727104165,
       "recall@20": 0.5,
-      "pool_recall@50": 0.5
+      "pool_recall@50": 1.0
      }
     },
     {
@@ -15452,22 +12631,22 @@
       "FIN-POL-004_CHUNK_001",
       "FIN-POL-004_CHUNK_004",
       "POL-ADD-DROP_CHUNK_005",
-      "FIN-POL-004_CHUNK_003",
       "TRANS-SOP-001_CHUNK_004",
+      "FIN-POL-004_CHUNK_003",
       "FIN-POL-003_CHUNK_001",
       "POL-ADD-DROP_CHUNK_004",
       "FIN-POL-003_CHUNK_002",
-      "FIN-POL-002_CHUNK_002",
       "FIN-POL-003_CHUNK_004",
+      "FIN-POL-002_CHUNK_002",
       "FIN-POL-003_CHUNK_003",
       "FIN-POL-005_CHUNK_003",
       "POL-ADD-DROP_CHUNK_001",
       "FIN-SCH-001_CHUNK_004",
-      "FIN-POL-001_CHUNK_002",
+      "TRANS-SOP-001_CHUNK_003",
+      "TRANS-SOP-001_CHUNK_001",
       "ADM-POL-004_CHUNK_001",
       "POL-TRANSFER-CERT_CHUNK_001",
-      "TRANS-SOP-001_CHUNK_003",
-      "FIN-SCH-001_CHUNK_003"
+      "HSTL-POL-004_CHUNK_003"
      ],
      "metrics": {
       "recall@5": 1.0,
@@ -15489,21 +12668,21 @@
       "POL-ANTI-RAGGING_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_005",
       "POL-ANTI-RAGGING_CHUNK_001",
-      "STU-POL-004_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_004",
+      "STU-POL-004_CHUNK_003",
       "POL-ANTI-RAGGING_CHUNK_002",
       "STU-POL-004_CHUNK_004",
       "ACAD-REG-001_CHUNK_007",
       "STU-POL-003_CHUNK_002",
       "STU-POL-003_CHUNK_001",
       "HSTL-REG-004_CHUNK_003",
-      "PLC-GUI-002_CHUNK_004",
       "POL-GRIEVANCE_CHUNK_004",
       "TRANS-POL-001_CHUNK_005",
       "POL-GRIEVANCE_CHUNK_002",
+      "PLC-GUI-002_CHUNK_004",
       "HSTL-REG-003_CHUNK_005",
       "EXAM-GUI-003_CHUNK_001",
-      "POL-DISCIPLINE_CHUNK_002"
+      "STU-POL-005_CHUNK_004"
      ],
      "metrics": {
       "recall@5": 0.5,
@@ -15671,15 +12850,15 @@
       "PLC-TRN-001_CHUNK_004",
       "STU-LDR-001_CHUNK_002",
       "PLC-STF-001_CHUNK_002",
-      "PLC-POL-003_CHUNK_004",
       "PLC-GUI-001_CHUNK_003",
       "HSTL-POL-005_CHUNK_002",
       "PLC-POL-001_CHUNK_001",
       "PLC-POL-001_CHUNK_003",
       "FIN-POL-005_CHUNK_002",
       "HSTL-REG-004_CHUNK_002",
-      "PLC-POL-001_CHUNK_004",
+      "PLC-POL-003_CHUNK_004",
       "ACAD-POL-008_CHUNK_002",
+      "PLC-POL-001_CHUNK_004",
       "ACAD-POL-009_CHUNK_004",
       "POL-SEE_CHUNK_004",
       "PLC-POL-001_CHUNK_005",

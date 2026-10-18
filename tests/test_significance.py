@@ -1,6 +1,6 @@
 import unittest
 
-from evaluation.significance import paired_comparison
+from evaluation.significance import holm_adjust, paired_comparison
 
 
 class TestPairedComparison(unittest.TestCase):
@@ -45,6 +45,28 @@ class TestPairedComparison(unittest.TestCase):
             paired_comparison([], [])
         with self.assertRaises(ValueError):
             paired_comparison([0.1], [0.2], n_resamples=0)
+
+
+class TestHolmAdjust(unittest.TestCase):
+    def test_known_values(self):
+        # Sorted p: 0.01, 0.02, 0.04 -> 3*0.01, max(that, 2*0.02), max(that, 1*0.04)
+        adjusted = holm_adjust([0.04, 0.01, 0.02])
+        for got, want in zip(adjusted, [0.04, 0.03, 0.04]):
+            self.assertAlmostEqual(got, want)
+
+    def test_capped_at_one_and_monotone(self):
+        adjusted = holm_adjust([0.5, 0.6, 0.001])
+        self.assertEqual(adjusted[0], 1.0)
+        self.assertEqual(adjusted[1], 1.0)
+        self.assertAlmostEqual(adjusted[2], 0.003)
+
+    def test_never_below_raw_p(self):
+        ps = [0.03, 0.2, 0.0001, 0.049]
+        for raw, adj in zip(ps, holm_adjust(ps)):
+            self.assertGreaterEqual(adj, raw)
+
+    def test_empty(self):
+        self.assertEqual(holm_adjust([]), [])
 
 
 if __name__ == "__main__":

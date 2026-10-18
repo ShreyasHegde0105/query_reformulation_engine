@@ -20,8 +20,21 @@ Query Reformulation Engine                  ✅ COMPLETED (reformulation/)
 Benchmark Evaluation                        ✅ COMPLETED (evaluation/, Phases 2–5)
 ```
 
-**Current results (50 golden queries, full pipeline, top-20):** Recall@10 **0.87**, MRR **0.670**, NDCG@10 **0.645**, candidate Recall@50 **0.96**
-(Phase 2 baseline: 0.69 / 0.561 / 0.473 / 0.87; all four gains significant at p < 0.05). See `evaluation/results/phase5_report.md`.
+**Current results — held-out test set** (94 answerable queries written without seeing the documents and
+never used for tuning; `evaluation/heldout_queries.json`, report `evaluation/results/heldout_report.md`):
+
+| System (same indexes, only the query side differs) | Recall@10 | MRR | NDCG@10 |
+|:---|---:|---:|---:|
+| Hybrid search, raw query | 0.875 | 0.696 | 0.693 |
+| + normalization and corpus spelling correction | 0.893 | 0.686 | 0.698 |
+| + LLM reformulation (full pipeline) | **0.944** | **0.734** | **0.744** |
+
+LLM reformulation improves Recall@10 (+0.05) and NDCG@10 (+0.05) significantly after a Holm correction for
+all 9 tests; the MRR gain and the normalization/spelling layer are not significant. The biggest gain is on
+queries worded differently from the documents (NDCG@10 0.43 → 0.62). The original 50 golden queries
+(`evaluation/golden_queries.json`) were used to tune the pipeline and are now the tuning set; their numbers
+(Recall@10 0.87, MRR 0.670, NDCG@10 0.646; `evaluation/results/tune_set_report.md`) should not be quoted as
+test results.
 
 ### Setup
 

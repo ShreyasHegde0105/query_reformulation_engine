@@ -1,0 +1,640 @@
+{
+ "reformulations": {
+  "H001": [
+   "Bus pass refund policy",
+   "Transit pass refund request",
+   "How to get a bus pass refund",
+   "Cancel bus pass and get refund",
+   "Bus ticket refund status"
+  ],
+  "H002": [
+   "Mess menu update",
+   "Dining hall diet modification",
+   "Canteen food schedule change",
+   "Mess meal plan revision",
+   "Cafeteria diet alteration"
+  ],
+  "H003": [
+   "Library late fees",
+   "Overdue book charges",
+   "Library penalty rates",
+   "Circulation fine schedule"
+  ],
+  "H004": [
+   "EC department elective courses",
+   "Electronics and communication electives",
+   "EC elective modules",
+   "Department of EC electives list"
+  ],
+  "H005": [
+   "Car parking permit",
+   "Vehicle parking pass",
+   "Parking decal",
+   "Auto parking tag",
+   "Vehicle parking sticker replacement"
+  ],
+  "H006": [
+   "Doctoral dissertation guidelines",
+   "PhD thesis policy",
+   "Doctoral thesis requirements",
+   "PhD graduation regulations"
+  ],
+  "H007": [
+   "Industry advisory board roster",
+   "Industry advisory committee participants",
+   "Industry advisory board directory",
+   "Members of the industry advisory board"
+  ],
+  "H008": [
+   "Exam cheating consequences",
+   "Academic dishonesty penalties",
+   "Examination malpractice sanctions",
+   "Cheating on exam punishment",
+   "Academic misconduct penalties"
+  ],
+  "H009": [
+   "Multi-factor authentication account reset",
+   "Reset MFA credentials",
+   "MFA profile reset",
+   "Multi-factor auth password reset"
+  ],
+  "H010": [
+   "Dream company perks",
+   "Dream company benefits",
+   "Dream company rewards",
+   "Dream company compensation",
+   "Dream company offerings"
+  ],
+  "H011": [
+   "Library book borrowing limit",
+   "Maximum books checked out at once",
+   "Library checkout limit per user",
+   "How many books can be borrowed simultaneously",
+   "Maximum number of library books allowed"
+  ],
+  "H012": [
+   "End semester exam mobile phone policy violations",
+   "Penalties for using phone during final exams",
+   "Caught with smartphone in examination hall consequences",
+   "Cheating with mobile phone end semester exam rules",
+   "Prohibited items phone end term exam disciplinary action"
+  ],
+  "H013": [
+   "Electric kettle hostel room policy",
+   "Allowed appliances hostel kettle",
+   "Hostel rules electric kettle permitted",
+   "Can you have a kettle in a dorm room",
+   "Hostel room electric kettle allowance"
+  ],
+  "H014": [
+   "Classroom fan repair contact",
+   "Report broken classroom fan",
+   "Maintenance support classroom ventilation",
+   "Who to call for broken fan in room"
+  ],
+  "H015": [
+   "College fee structure letter education loan",
+   "Request tuition fee certificate for education loan",
+   "College letter total education expenses loan",
+   "Proof of fees document college loan",
+   "Education loan fee verification letter college"
+  ],
+  "H016": [
+   "Building fire alarm emergency procedure",
+   "What to do during a fire alarm",
+   "Fire evacuation protocol",
+   "Fire alarm response steps"
+  ],
+  "H017": [
+   "Administration office section officer supervisor hierarchy",
+   "Who manages the section officer in administration",
+   "Administration office reporting structure above section officer",
+   "Section officer superior in administration department",
+   "Administration office organizational chart section officer manager"
+  ],
+  "H018": [
+   "Industrial visit approval process",
+   "Class field trip authorization requirements",
+   "Industrial tour permission workflow",
+   "School trip approval guidelines"
+  ],
+  "H019": [
+   "IEEE remote access home",
+   "Access IEEE Xplore off campus",
+   "IEEE institutional login from home",
+   "View IEEE articles remotely",
+   "IEEE VPN access instructions"
+  ],
+  "H020": [
+   "Stress counseling resources",
+   "Employee assistance program mental health support",
+   "Talk to a counselor for stress",
+   "Mental health counseling services location",
+   "Stress management support contacts"
+  ],
+  "H021": [
+   "TC application form",
+   "Transfer certificate application",
+   "TC apply form",
+   "Transfer certificate form",
+   "TC request form"
+  ],
+  "H022": [
+   "PhD progress report guidelines",
+   "Doctoral progress review guidelines",
+   "PhD progress reporting requirements",
+   "Graduate research progress report instructions"
+  ],
+  "H023": [
+   "CR election guidelines",
+   "CR voting regulations",
+   "CR election bylaws",
+   "CR electoral rules"
+  ],
+  "H024": [
+   "OD leave application form",
+   "On duty leave form",
+   "OD application form PDF",
+   "On duty leave application",
+   "OD leave request form"
+  ],
+  "H025": [
+   "Academic council standing committee authority",
+   "Standing committee of the academic council mandate",
+   "Academic council standing committee responsibilities",
+   "Powers of academic council standing committees",
+   "Standing committee academic council functions"
+  ],
+  "H026": [
+   "International students FRRO registration",
+   "Foreign students FRRO reg process",
+   "FRRO registration requirements for international students",
+   "Foreign national students FRRO compliance"
+  ],
+  "H027": [
+   "TA DA reimbursement official travel",
+   "Travel allowance daily allowance official travel claim",
+   "TA/DA official travel expense policy",
+   "Reimbursement for official travel TA DA",
+   "Per diem and travel allowance official trip"
+  ],
+  "H028": [
+   "CC lab hours and workstation allocation",
+   "Computer center lab schedule and machine reservation",
+   "CC lab timings and equipment quota",
+   "Computer lab opening hours and device allotment"
+  ],
+  "H029": [
+   "Duplicate ID card request",
+   "Replacement ID card process",
+   "Order duplicate employee badge",
+   "Lost ID card replacement",
+   "Reprint ID card form"
+  ],
+  "H030": [
+   "No dues certificate final year students",
+   "Final year clearance certificate",
+   "No dues form final year",
+   "Obtain no dues certificate graduation",
+   "Final year student no dues process"
+  ],
+  "H031": [
+   "Migration certificate",
+   "Migraton certificate application",
+   "How to get migration certificate",
+   "Migration certificate download"
+  ],
+  "H032": [
+   "Intellectual property patent filing process",
+   "Patent application intellectual property",
+   "IP patent submission",
+   "File intellectual property patent",
+   "Patent filing requirements IP"
+  ],
+  "H033": [
+   "Medical condonation request form",
+   "Medical condonation application",
+   "Condonation of attendance medical certificate form",
+   "Medical grounds condonation form"
+  ],
+  "H034": [
+   "Supplementary exam fee due date",
+   "Deadline for supplementary exam payment",
+   "Supplementary examination fee last date",
+   "Supplementary exam payment deadline"
+  ],
+  "H035": [
+   "Sports scholarship grants",
+   "Athletic scholarship programs",
+   "Sports player financial aid",
+   "Athletics tuition assistance"
+  ],
+  "H036": [
+   "Hostel curfew hours",
+   "Dormitory curfew schedule",
+   "Hostel return time policy",
+   "Accommodation curfew rules"
+  ],
+  "H037": [
+   "Incubation seed grant",
+   "Seed grant incubation",
+   "Incubator seed funding",
+   "Seed grant program incubation"
+  ],
+  "H038": [
+   "Proctorial board disciplinary hearing",
+   "Disciplinary committee hearing proctorial board",
+   "Proctorial board disciplinary proceeding"
+  ],
+  "H039": [
+   "Careerhub upload resume",
+   "How to upload resume in careerhub",
+   "Careerhub resume attachment error",
+   "Careerhub cv upload issue"
+  ],
+  "H040": [
+   "Library 24 hour reading room",
+   "24/7 library study space",
+   "Night library reading area access",
+   "Round the clock library opening hours"
+  ],
+  "H041": [
+   "CSE201 laboratory tasks",
+   "CSE201 practical exercises",
+   "CSE201 lab assignments"
+  ],
+  "H042": [
+   "CSE303 SQL lab manual PDF",
+   "CSE303 database lab guide",
+   "CSE303 SQL practical manual",
+   "CSE 303 SQL lab instructions"
+  ],
+  "H043": [
+   "CSE401 machine learning syllabus",
+   "CSE 401 ML course description",
+   "CSE401 machine learning curriculum",
+   "CSE 401 ML course plan"
+  ],
+  "H044": [
+   "ECE 201 logic design laboratory",
+   "ECE201 digital logic lab",
+   "ECE201 lab manual logic design",
+   "ECE 201 logic design course lab"
+  ],
+  "H045": [
+   "ECE 302 vlsi eda tools",
+   "ECE302 electronic design automation software",
+   "ECE 302 very large scale integration EDA tools"
+  ],
+  "H046": [
+   "MEC204 thermal transfer lab",
+   "MEC204 heat transfer practical",
+   "MEC204 heat transfer laboratory experiments"
+  ],
+  "H047": [
+   "CIV205 structure analysis tool",
+   "CIV205 structural analysis program",
+   "CIV205 engineering software structure",
+   "Software for CIV205 structural analysis"
+  ],
+  "H048": [
+   "CSE202 Java style guide",
+   "CSE202 Java programming guidelines",
+   "CSE202 Java coding best practices",
+   "CSE202 Java code conventions"
+  ],
+  "H049": [
+   "CSE305 agile project outputs",
+   "CSE305 agile deliverables",
+   "Agile project deliverables CSE305"
+  ],
+  "H050": [
+   "CIV310 BOD cod laboratory manual",
+   "CIV310 biochemical oxygen demand chemical oxygen demand lab manual",
+   "CIV310 BOD and COD lab instructions",
+   "CIV310 lab manual BOD cod"
+  ],
+  "H051": [
+   "75 percent attendance policy",
+   "Minimum 75% attendance rule",
+   "Attendance threshold 75 percent",
+   "75% attendance criteria",
+   "Mandatory 75 attendance"
+  ],
+  "H052": [
+   "Late fee 15 days post registration",
+   "Registration late payment penalty 15 days",
+   "Fee applied 15 days after registration",
+   "Late registration fee threshold 15 days"
+  ],
+  "H053": [
+   "Maximum credit limit per semester",
+   "Registering for 28 credit hours",
+   "Credit overload approval process",
+   "Maximum credits allowed for registration"
+  ],
+  "H054": [
+   "5.0 CGPA graduation requirement",
+   "Minimum CGPA needed to graduate 5.0",
+   "Graduation CGPA threshold 5.0",
+   "CGPA 5.0 degree completion policy"
+  ],
+  "H055": [
+   "Rs 500 fee duplicate marksheet challan",
+   "Duplicate marksheet payment challan 500 rupees",
+   "Fee challan for duplicate marksheet INR 500"
+  ],
+  "H056": [
+   "Late tuition fee penalty 30 days",
+   "Tuition payment fine after 30 days",
+   "Overdue tuition fee surcharge 30 days",
+   "Tuition late fee policy 30 days",
+   "Penalty for unpaid tuition after 30 days"
+  ],
+  "H057": [
+   "CIE grading out of 50",
+   "CIE assessment total 50 marks",
+   "Cambridge International examination score out of 50",
+   "CIE marks scale 50"
+  ],
+  "H058": [
+   "Hostel 2 night outs monthly",
+   "Hostel policy 2 night outs per month",
+   "Monthly overnight leave hostel",
+   "Hostel curfew 2 nights out per month"
+  ],
+  "H059": [
+   "8th semester 6 month internship",
+   "Six month internship final semester",
+   "Semester 8 six month internship program"
+  ],
+  "H060": [
+   "Companies with CTC above 10 LPA",
+   "Employers offering 10+ LPA package",
+   "Firms with CTC tier greater than 10 LPA",
+   "Companies offering salary above 10 LPA"
+  ],
+  "H061": [
+   "Student placement one offer policy",
+   "Policy single offer per student placements",
+   "Campus placement offer limits students",
+   "One job offer per student placement guidelines"
+  ],
+  "H062": [
+   "AC usage guidelines labs offices",
+   "Air conditioning policy workplace",
+   "Office and laboratory air conditioner rules",
+   "AC regulation research labs offices",
+   "Climate control policy offices laboratories"
+  ],
+  "H063": [
+   "Hostel quiet hours policy",
+   "Rules for silence times in hostel",
+   "Hostel noise regulations quiet hours",
+   "Quiet hours guidelines hostel"
+  ],
+  "H064": [
+   "Damaged lab equipment policy",
+   "Lab equipment breakage procedure",
+   "Policy for broken laboratory equipment",
+   "Lab accident equipment damage guidelines"
+  ],
+  "H065": [
+   "PG accommodation rules outside campus",
+   "Policy on living in paying guest accommodation off campus",
+   "Off campus PG staying guidelines",
+   "Regulations for external PG accommodation",
+   "Student housing rules outside campus PG"
+  ],
+  "H066": [
+   "Student media policy university guidelines",
+   "Talking to reporters student code of conduct",
+   "University media relations policy for students",
+   "Student press guidelines campus policy",
+   "Media contact rules for university students"
+  ],
+  "H067": [
+   "Thesis upload policy institutional repository",
+   "Institutional repository dissertation submission guidelines",
+   "Uploading ETD to university repository policy",
+   "Thesis deposition requirements institutional archive",
+   "Repository policy thesis upload procedure"
+  ],
+  "H068": [
+   "Acceptable use policy university email computers",
+   "Campus email and computer acceptable use guidelines",
+   "University IT acceptable use policy",
+   "Student staff computer and email acceptable use rules"
+  ],
+  "H069": [
+   "Placement interview dress code",
+   "Interview attire guidelines placement",
+   "What to wear placement interview rules",
+   "Campus placement dress code policy",
+   "Interview clothing requirements placement"
+  ],
+  "H070": [
+   "Student club creation guidelines",
+   "How to start a new student organization",
+   "Student club formation policy",
+   "Steps to establish a student club",
+   "New club startup requirements"
+  ],
+  "H071": [
+   "Fee installment payment eligibility",
+   "Who can pay fees in installments",
+   "Installment fee payment criteria",
+   "Eligible for tuition installments",
+   "Pay fees by installment requirements"
+  ],
+  "H072": [
+   "Need based financial aid eligibility",
+   "How to apply for need based financial aid",
+   "Need based financial aid requirements",
+   "Applying for need based aid"
+  ],
+  "H073": [
+   "Dual degree abroad eligibility",
+   "Who is eligible for international dual degree programs",
+   "Dual degree abroad application requirements",
+   "Qualifications for studying dual degree overseas"
+  ],
+  "H074": [
+   "Fast track summer term exam eligibility",
+   "Summer term fast track exam criteria",
+   "Am I eligible for fast track summer exams",
+   "Fast track summer exam requirements"
+  ],
+  "H075": [
+   "Resident assistant hostel eligibility requirements",
+   "How to become a hostel RA",
+   "Hostel resident assistant qualifications",
+   "RA application criteria hostel"
+  ],
+  "H076": [
+   "Research assistant fellowship eligibility criteria",
+   "Qualifications for research assistant fellowship",
+   "How to qualify for research assistant fellowship",
+   "Research assistant fellowship requirements"
+  ],
+  "H077": [
+   "First year student hostel eligibility",
+   "Are freshmen eligible for hostel accommodation",
+   "Hostel room availability for first year students",
+   "Housing allocation policy first year students",
+   "Can freshers apply for campus hostel"
+  ],
+  "H078": [
+   "OD eligibility hackathon",
+   "Official duty leave hackathon policy",
+   "Qualify for OD hackathon attendance"
+  ],
+  "H079": [
+   "Day scholar college bus eligibility",
+   "Transport facility for day scholars bus service",
+   "Can day students use college transportation",
+   "Day scholar bus pass rules",
+   "College bus service policy for day scholars"
+  ],
+  "H080": [
+   "Staff casual leave carry forward policy",
+   "Unused casual leave rollover rules employees",
+   "Can employees carry over unused casual leave",
+   "Casual leave balance carry forward eligibility"
+  ],
+  "H081": [
+   "Resolvedesk ticket escalation unresolved",
+   "How to escalate open resolvedesk ticket",
+   "Escalate unresolved resolvedesk issue",
+   "Resolvedesk ticket escalation process"
+  ],
+  "H082": [
+   "Student online complaint filing process",
+   "How to submit a student grievance online",
+   "Online student complaint procedure steps",
+   "File student report online guide"
+  ],
+  "H083": [
+   "Hostel room checkout year end",
+   "Vacate hostel room procedure",
+   "End of year hostel checkout guide",
+   "How to check out of hostel room"
+  ],
+  "H084": [
+   "Learnsphere submit assignment",
+   "How to upload assignment learnsphere",
+   "Learnsphere assignment submission guide",
+   "Submit homework learnsphere",
+   "Learnsphere submit project"
+  ],
+  "H085": [
+   "How to report campus theft",
+   "Campus theft reporting procedure",
+   "Report stolen property university campus",
+   "Campus security theft report steps"
+  ],
+  "H086": [
+   "Payvarsity net banking fee payment",
+   "How to pay fees via net banking payvarsity",
+   "Payvarsity online fee payment net banking guide"
+  ],
+  "H087": [
+   "View answer script post results",
+   "Access exam answer sheet after grades",
+   "How to check evaluated answer script",
+   "View graded answer paper",
+   "Exam results answer script access"
+  ],
+  "H088": [
+   "Hostel room leaking tap repair request",
+   "Report leaky faucet hostel accommodation",
+   "Fix leaking water tap in hostel",
+   "Hostel maintenance plumbing leak request"
+  ],
+  "H089": [
+   "ERP portal grade check guide",
+   "View grades ERP system",
+   "How to see marks on ERP",
+   "ERP portal student grades lookup"
+  ],
+  "H090": [
+   "Medical certificate verification process health centre",
+   "How to verify medical certificate health center",
+   "Health centre medical certificate validation procedure",
+   "Medical certificate attestation health centre"
+  ],
+  "H091": [
+   "Debarred list exam eligibility",
+   "Candidate on debarred list unable to take exams",
+   "Debarment status block exam registration",
+   "Appeal exam ban debarred list"
+  ],
+  "H092": [
+   "College withdrawal document retrieval",
+   "Dropping out of university transcript return",
+   "Reclaiming records after leaving college",
+   "Withdrawing from school and getting paperwork back",
+   "Requesting documents after college dropout"
+  ],
+  "H093": [
+   "Biometric scanner attendance failure",
+   "Fingerprint reader not recording attendance",
+   "Attendance system fingerprint error",
+   "Biometric device attendance not registering"
+  ],
+  "H094": [
+   "Reporting ragging senior student harassment complaint procedure",
+   "How to report senior bullying freshman students",
+   "Freshman anti ragging grievance reporting mechanism",
+   "Complaint process for senior student bullying"
+  ],
+  "H095": [
+   "Enrollment verification letter visa",
+   "Proof of enrollment letter for visa",
+   "Current enrollment certificate visa application",
+   "Student status letter visa",
+   "Enrollment confirmation letter immigration"
+  ],
+  "H096": [
+   "University governance final authority",
+   "Who manages the university",
+   "University chief executive decision maker",
+   "Highest authority in university administration"
+  ],
+  "H097": [
+   "Aptitude preparation classes placement season",
+   "Placement aptitude training courses",
+   "Campus placement aptitude coaching",
+   "Pre placement aptitude prep classes"
+  ],
+  "H098": [
+   "Program resignation refund policy",
+   "Withdrawal refund eligibility",
+   "Canceling program and getting refund",
+   "Tuition refund after quitting program",
+   "Repayment upon program withdrawal"
+  ],
+  "H099": [
+   "Department quality audit frequency",
+   "Quality audit schedule departments",
+   "How frequently are departments audited for quality",
+   "Departmental quality audit intervals",
+   "Quality assurance audit timeline departments"
+  ],
+  "H100": [
+   "Campus network restricted websites",
+   "Blocked sites university wifi",
+   "Campus internet content filtering",
+   "Banned websites school network",
+   "Firewall blocked sites campus"
+  ]
+ },
+ "parse_errors": {},
+ "metadata": {
+  "model": "gemini-3.5-flash-lite",
+  "provider": "google",
+  "max_variants": 5,
+  "queries_file": "evaluation/heldout_queries.json",
+  "started": "2026-10-18T04:11:12.109799+00:00"
+ }
+}

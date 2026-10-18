@@ -39,7 +39,7 @@ import numpy as np
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from evaluation.metrics import calculate_all_metrics
-from evaluation.significance import paired_comparison
+from evaluation.significance import holm_adjust, paired_comparison
 from retrieval.models import RetrievedChunk
 
 logger = logging.getLogger("evaluation.beir")
@@ -365,15 +365,25 @@ def write_report(results, query_ids, n_total, cache, cache_path, path) -> None:
         lines.append(f"| {name} | {m['ndcg@10']:.4f} | {m['recall@10']:.4f} | {m['mrr']:.4f} | "
                      f"{m['recall@20']:.4f} | {results[key]['seconds_per_query']:.2f} |")
 
-    lines += ["", "## 2. Significance (paired randomization test, 95% bootstrap CI, 10,000 resamples)", ""]
+    comparisons = {
+        (a, b, m): paired_comparison([results[a]["per_query"][q][m] for q in query_ids],
+                                     [results[b]["per_query"][q][m] for q in query_ids])
+        for a, b in COMPARISONS for m in METRICS
+    }
+    # Holm correction over every test in this report, so "significant" holds family-wide.
+    holm = dict(zip(comparisons, holm_adjust([c.p_value for c in comparisons.values()])))
+    lines += ["", "## 2. Significance (paired randomization test, 95% bootstrap CI, 10,000 resamples)", "",
+              f"Holm-adjusted p-values correct for all {len(comparisons)} tests below; "
+              "\"Significant\" uses the adjusted p < 0.05.", ""]
     for a, b in COMPARISONS:
         lines += [f"### {SYSTEMS[b]} vs {SYSTEMS[a]}", "",
-                  "| Metric | A | B | Δ (B−A) | 95% CI | p | Significant |", "|:---|---:|---:|---:|:---:|---:|:---:|"]
+                  "| Metric | A | B | Δ (B−A) | 95% CI | p | Holm p | Significant |",
+                  "|:---|---:|---:|---:|:---:|---:|---:|:---:|"]
         for m in METRICS:
-            c = paired_comparison([results[a]["per_query"][q][m] for q in query_ids],
-                                  [results[b]["per_query"][q][m] for q in query_ids])
+            c, p_adj = comparisons[(a, b, m)], holm[(a, b, m)]
             lines.append(f"| {m} | {c.mean_a:.4f} | {c.mean_b:.4f} | {c.mean_diff:+.4f} | "
-                         f"[{c.ci_low:+.4f}, {c.ci_high:+.4f}] | {c.p_value:.4f} | {'yes' if c.significant else 'no'} |")
+                         f"[{c.ci_low:+.4f}, {c.ci_high:+.4f}] | {c.p_value:.4f} | {p_adj:.4f} | "
+                         f"{'yes' if p_adj < 0.05 else 'no'} |")
         lines.append("")
 
     a, b = results["hybrid"]["per_query"], results["llm_pipeline"]["per_query"]

@@ -126,15 +126,19 @@ class RetrievalEvaluator:
         if query_item.query_id in self.reformulation_cache:
             return self.reformulation_cache[query_item.query_id][:self.config.max_reformulation_variants]
         
+        variants: List[str] = []
         if self.search_pipeline and self.search_pipeline.reformulator:
             try:
-                return self.search_pipeline.reformulator.generate_variants(
+                variants = self.search_pipeline.reformulator.generate_variants(
                     query_item.query,
                     max_variants=self.config.max_reformulation_variants,
                 )
             except Exception as exc:
                 logger.warning("LLM reformulation failed for %s: %s", query_item.query_id, exc)
-        return []
+        # Remember them, so the variants recorded in the results are the ones that were
+        # searched (variant D asks twice per query) and the LLM is called once per query.
+        self.reformulation_cache[query_item.query_id] = variants
+        return variants[:self.config.max_reformulation_variants]
 
     def run_query_variant(self, query_item: GoldenQuery, variant_name: str) -> List[str]:
         """Execute a specific retrieval variant for a single query.
@@ -239,7 +243,7 @@ class RetrievalEvaluator:
             retrieved_chunk_ids=retrieved_chunk_ids,
             relevant_chunk_ids=query_item.relevant_chunks,
             graded_relevance=query_item.graded_relevance,
-            k_list=self.config.top_k_values[:2],  # [5, 10]
+            k_list=sorted(self.config.top_k_values)[:2],  # [5, 10]
         )
 
         return QueryResult(

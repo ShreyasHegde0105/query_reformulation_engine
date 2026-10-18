@@ -12,7 +12,29 @@ This framework allows comparing retrieval pipeline variants under identical expe
 
 ---
 
-## 2. Benchmark Architecture
+## 2. Tuning set vs held-out test set
+
+| Set | File | Queries | Use |
+|---|---|---|---|
+| Tuning | `golden_queries.json` | 50 | Used to design and tune the pipeline (phases 2–5). Not a fair test any more. |
+| Held-out test | `heldout_queries.json` | 100 (94 answerable) | Report results on this set only. |
+
+The held-out queries were written by an assessor who saw only department names and document titles,
+never document text, 10 per category. Relevance was then judged by separate assessors who read the
+candidate documents in full (grades 3 = answers it, 2 = needed for a complete answer, 1 = background) and
+were not allowed to use the search system. `relevant_chunks` holds the grade 2–3 chunks; grade 1 chunks
+only add partial NDCG gain. Six queries the corpus cannot answer are kept with `"answerable": false` and
+excluded from metrics.
+
+```bash
+python evaluation/build_reformulation_cache.py --queries evaluation/heldout_queries.json --model <llm>  # once, paced
+python evaluation/run_heldout_evaluation.py     # offline, deterministic -> results/heldout_report.md
+```
+
+Do not add normalizer entries, prompts or settings based on individual held-out queries; tune on the
+tuning set, then measure once on the held-out set.
+
+## 3. Benchmark Architecture
 
 ### Golden Dataset (`evaluation/golden_queries.json`)
 The dataset contains **50 curated evaluation queries** balanced across 10 distinct search categories with **100 chunk-level ground-truth relevance annotations**:
@@ -30,7 +52,7 @@ The dataset contains **50 curated evaluation queries** balanced across 10 distin
 
 ---
 
-## 3. Evaluated Variants
+## 4. Evaluated Variants
 
 The framework compares 5 core variants:
 
@@ -44,7 +66,7 @@ The framework compares 5 core variants:
 
 ---
 
-## 4. Standard Metrics
+## 5. Standard Metrics
 
 1. **Recall@5 & Recall@10**: Proportion of ground-truth relevant chunks retrieved within top 5 (and top 10).
 $$\text{Recall}@K = \frac{|\text{top\_k(retrieved)} \cap \text{relevant}|}{|\text{relevant}|}$$
@@ -57,7 +79,7 @@ $$\text{DCG}@K = \sum_{i=1}^{\min(K, |R|)} \frac{2^{\text{rel}_i} - 1}{\log_2(i 
 
 ---
 
-## 5. Usage
+## 6. Usage
 
 ### Run Quick 5-Query Sample Test
 ```bash

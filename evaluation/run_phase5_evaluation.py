@@ -134,18 +134,21 @@ def build_runners(chunks, encoder, sem, reformulator, postgres_keyword: bool):
     def single(retriever):
         return lambda g, depth: [c.chunk_id for c in retriever.retrieve(g["query"], match_count=depth)]
 
+    # Every configuration may draw `depth` candidates per branch, so Pool R@50 compares
+    # systems on equal pools (hybrid used to be capped at 2 x MATCH_COUNT = 40).
     def hybrid(vec, kw):
         h = HybridRetriever(vector_retriever=vec, keyword_retriever=kw)
         return lambda g, depth: [c.chunk_id for c in h.retrieve(
-            g["query"], vector_match_count=MATCH_COUNT, keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=depth)]
+            g["query"], vector_match_count=max(MATCH_COUNT, depth), keyword_match_count=max(MATCH_COUNT, depth),
+            k=RRF_K, final_k=depth)]
 
     def pipeline(vec, kw, candidate_k=None):
         # candidate_k=None keeps each query's hybrid list at the output depth (Phase 2 behaviour).
         p = SearchPipeline(reformulator=reformulator, semantic_similarity=sem,
                            hybrid_retriever=HybridRetriever(vector_retriever=vec, keyword_retriever=kw))
         return lambda g, depth: [c.chunk_id for c in p.search(
-            g["query"], max_variants=MAX_VARIANTS, vector_match_count=MATCH_COUNT,
-            keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=depth,
+            g["query"], max_variants=MAX_VARIANTS, vector_match_count=max(MATCH_COUNT, depth),
+            keyword_match_count=max(MATCH_COUNT, depth), k=RRF_K, final_k=depth,
             candidate_k=max(candidate_k or depth, depth))]
 
     runners: Dict[str, tuple[str, Callable]] = {}

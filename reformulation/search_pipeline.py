@@ -11,6 +11,7 @@ from reformulation.validator import validate_query
 from reformulation.normalizer import normalize_query
 from reformulation.reformulator import QueryReformulator
 from reformulation.semantic_similarity import SemanticSimilarity
+from reformulation.spelling import CorpusSpellCorrector
 from retrieval.hybrid_retriever import HybridRetriever
 from retrieval.models import RetrievedChunk
 
@@ -74,6 +75,7 @@ class SearchPipeline:
         hybrid_retriever: HybridRetriever,
         max_workers: int = 4,
         reformulation_cache_size: int = 256,
+        spell_corrector: Optional[CorpusSpellCorrector] = None,
     ):
         """Initialize the pipeline with its required dependencies.
 
@@ -90,6 +92,9 @@ class SearchPipeline:
         reformulation_cache_size: int
             Number of recent queries whose reformulations are kept in memory
             (0 disables caching). Avoids a repeat LLM call for a repeated query.
+        spell_corrector: Optional[CorpusSpellCorrector]
+            Corrects misspelled query words to words of the indexed corpus
+            during normalization (``None`` = curated corrections only).
         """
         if max_workers < 1:
             raise ValueError("max_workers must be >= 1")
@@ -98,6 +103,7 @@ class SearchPipeline:
         self.reformulator = reformulator
         self.semantic_similarity = semantic_similarity
         self.hybrid_retriever = hybrid_retriever
+        self.spell_corrector = spell_corrector
         self.max_workers = max_workers
         self.reformulation_cache_size = reformulation_cache_size
         self._reformulation_cache: "OrderedDict[tuple[str, int], List[str]]" = OrderedDict()
@@ -174,7 +180,7 @@ class SearchPipeline:
 
         # 1 & 2. Validation and Normalization
         validate_query(query)
-        normalized = normalize_query(query)
+        normalized = normalize_query(query, spell_corrector=self.spell_corrector)
 
         # 3. Reformulation
         t = time.perf_counter()

@@ -592,12 +592,18 @@ class TestNormalizerTargetedCorrections(unittest.TestCase):
         self.assertEqual(normalize_query("75 percent attendance"), "75 percent attendance")
         self.assertEqual(normalize_query("10 credits"), "10 credits")
 
-    # 6. Missing common university typos
-    def test_missing_university_typos_corrected(self):
-        self.assertEqual(normalize_query("attendance reqmnt"), "Attendance requirement")
-        self.assertEqual(normalize_query("hostel allotmnt process"), "Hostel allotment process")
-        self.assertEqual(normalize_query("revalution policy"), "Revaluation policy")
-        self.assertEqual(normalize_query("attendence shortage"), "Attendance shortage")
+    # 6. Golden-set typos are not hard-coded; the corpus spell corrector handles one-edit typos
+    def test_golden_typos_not_hard_coded(self):
+        self.assertEqual(normalize_query("hostel allotmnt process"), "Hostel allotmnt process")
+        self.assertEqual(normalize_query("attendence shortage"), "Attendence shortage")
+
+    def test_corpus_spell_corrector_fixes_one_edit_typos(self):
+        from reformulation.spelling import CorpusSpellCorrector
+        corrector = CorpusSpellCorrector({"attendance": 9, "allotment": 4, "requirement": 6, "hostel": 5})
+        self.assertEqual(normalize_query("hostel allotmnt process", spell_corrector=corrector), "Hostel allotment process")
+        self.assertEqual(normalize_query("attendence shortage", spell_corrector=corrector), "Attendance shortage")
+        # Too far from any corpus word: left as typed rather than guessed.
+        self.assertEqual(normalize_query("attendance reqmnt", spell_corrector=corrector), "Attendance reqmnt")
 
     # 7. Course code canonicalization
     def test_course_code_canonicalization(self):

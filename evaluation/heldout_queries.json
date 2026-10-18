@@ -1,0 +1,2336 @@
+[
+ {
+  "query_id": "H001",
+  "query": "bus pass refund",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "TRANS-SOP-001",
+  "relevant_chunks": [
+   "TRANS-SOP-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "TRANS-SOP-001_CHUNK_004": 3,
+   "TRANS-SOP-001_CHUNK_003": 1,
+   "TRANS-POL-001_CHUNK_005": 1,
+   "TRANS-SOP-001_CHUNK_001": 1
+  },
+  "description": "Bus pass cancellation refund tiers: 90% before classes, 50% within first 15 days, zero after 15 days (except medical/withdrawal); credited to bank in 14 working days."
+ },
+ {
+  "query_id": "H002",
+  "query": "mess diet change",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "HSTL-POL-002",
+  "relevant_chunks": [
+   "HSTL-POL-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "HSTL-POL-002_CHUNK_003": 3,
+   "HSTL-POL-002_CHUNK_001": 1
+  },
+  "description": "Diet (veg/non-veg/Jain) changes via DormTrack Diet Switcher, submitted before the 25th of the preceding month."
+ },
+ {
+  "query_id": "H003",
+  "query": "library fine rates",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "LIB-POL-001",
+  "relevant_chunks": [
+   "LIB-FAQ-001_CHUNK_001",
+   "LIB-POL-001_CHUNK_004",
+   "FIN-POL-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "LIB-POL-001_CHUNK_004": 3,
+   "LIB-FAQ-001_CHUNK_001": 3,
+   "FIN-POL-002_CHUNK_003": 2,
+   "LIB-POL-001_CHUNK_005": 1
+  },
+  "description": "Overdue fines Rs 5/day/book for days 1-7, Rs 10/day/book from day 8; account locked if unpaid fines exceed Rs 50."
+ },
+ {
+  "query_id": "H004",
+  "query": "EC department electives",
+  "category": "keyword",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "No document lists EC/ECE electives; ECE-CRS-001 gives only the core course roadmap (ECE201/204/302/305/402), no elective list."
+ },
+ {
+  "query_id": "H005",
+  "query": "vehicle parking sticker",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "SEC-POL-002",
+  "relevant_chunks": [
+   "SEC-POL-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "SEC-POL-002_CHUNK_003": 3,
+   "SEC-POL-002_CHUNK_004": 1,
+   "SEC-POL-002_CHUNK_005": 1
+  },
+  "description": "Register vehicle on CampusPass with RC/insurance/licence; Security affixes RFID windshield/fork tag within 3 working days."
+ },
+ {
+  "query_id": "H006",
+  "query": "phd thesis regulations",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "RES-POL-001",
+  "relevant_chunks": [
+   "RES-POL-001_CHUNK_005",
+   "RES-ETH-001_CHUNK_002",
+   "RES-POL-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "RES-POL-001_CHUNK_005": 3,
+   "RES-POL-001_CHUNK_002": 2,
+   "RES-ETH-001_CHUNK_002": 2,
+   "RES-POL-001_CHUNK_001": 1,
+   "LIB-POL-004_CHUNK_004": 1,
+   "LIB-POL-004_CHUNK_005": 1,
+   "LIB-POL-004_CHUNK_003": 1
+  },
+  "description": "PhD thesis: after progress reviews, publications and plagiarism check, pre-synopsis colloquium, two external evaluators, viva voce; max N+2 (6 yrs); similarity <=10%."
+ },
+ {
+  "query_id": "H007",
+  "query": "industry advisory board members",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "ACAD-GOV-006",
+  "relevant_chunks": [
+   "ACAD-GOV-006_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-GOV-006_CHUNK_003": 3,
+   "ACAD-GOV-006_CHUNK_004": 1,
+   "ACAD-GOV-006_CHUNK_001": 1,
+   "ACAD-POL-009_CHUNK_003": 1
+  },
+  "description": "Each department's IAB has 5-7 senior industry leaders (Engineering Directors, CTOs, Enterprise Architects) on two-year tenure."
+ },
+ {
+  "query_id": "H008",
+  "query": "exam malpractice penalty",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "EXAM-GUI-003",
+  "relevant_chunks": [
+   "EXAM-GUI-003_CHUNK_002",
+   "EXAM-NOT-004_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "EXAM-GUI-003_CHUNK_002": 3,
+   "EXAM-NOT-004_CHUNK_004": 2,
+   "POL-SEE_CHUNK_006": 1,
+   "EXAM-GUI-003_CHUNK_003": 1,
+   "EXAM-GUI-003_CHUNK_004": 1,
+   "STU-POL-005_CHUNK_004": 1
+  },
+  "description": "Malpractice Levels 1-3: L1 paper cancelled/F; L2 all semester exams cancelled, F in all courses; L3 result cancelled, 1-2 yr debarment or expulsion."
+ },
+ {
+  "query_id": "H009",
+  "query": "MFA account reset",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "IT-POL-002",
+  "relevant_chunks": [
+   "IT-POL-002_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "IT-POL-002_CHUNK_004": 3,
+   "IT-POL-002_CHUNK_003": 1,
+   "IT-SYS-001_CHUNK_004": 1,
+   "IT-POL-002_CHUNK_001": 1
+  },
+  "description": "Account reset via SSPR with OTP to registered phone/email, in person at IAM Desk (Turing Complex) with RFID ID, or remote ResolveDesk ticket with govt photo ID."
+ },
+ {
+  "query_id": "H010",
+  "query": "dream company offers",
+  "category": "keyword",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "keyword"
+  ],
+  "target_doc_id": "PLC-POL-001",
+  "relevant_chunks": [
+   "PLC-FAQ-001_CHUNK_002",
+   "PLC-POL-001_CHUNK_003",
+   "PLC-POL-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "PLC-POL-001_CHUNK_003": 3,
+   "PLC-FAQ-001_CHUNK_002": 3,
+   "PLC-POL-003_CHUNK_003": 2
+  },
+  "description": "Dream companies offer CTC > Rs 12 LPA; students with one Regular (<= 8 LPA) offer may still sit for them; a Dream offer freezes placement status."
+ },
+ {
+  "query_id": "H011",
+  "query": "how many books can i borrow from the library at once",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "LIB-POL-001",
+  "relevant_chunks": [
+   "LIB-FAQ-001_CHUNK_001",
+   "LIB-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "LIB-POL-001_CHUNK_003": 3,
+   "LIB-FAQ-001_CHUNK_001": 3,
+   "LIB-GUI-001_CHUNK_005": 1
+  },
+  "description": "UG may borrow 4 books for 14 days; PG/PhD 6 books for 28 days; faculty 10 for 90 days."
+ },
+ {
+  "query_id": "H012",
+  "query": "what happens if i get caught with my phone during the end sem exam",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "EXAM-NOT-004",
+  "relevant_chunks": [
+   "EXAM-NOT-004_CHUNK_004",
+   "EXAM-GUI-002_CHUNK_005",
+   "EXAM-GUI-003_CHUNK_002",
+   "POL-SEE_CHUNK_006"
+  ],
+  "graded_relevance": {
+   "EXAM-NOT-004_CHUNK_004": 3,
+   "EXAM-GUI-003_CHUNK_002": 2,
+   "POL-SEE_CHUNK_006": 2,
+   "EXAM-GUI-002_CHUNK_005": 2,
+   "EXAM-NOT-004_CHUNK_002": 1,
+   "EXAM-GUI-003_CHUNK_003": 1
+  },
+  "description": "Mere possession of a phone is Level-2 malpractice: device and booklet seized, all semester exams cancelled (F grades), referral to Proctorial Board."
+ },
+ {
+  "query_id": "H013",
+  "query": "can i keep an electric kettle in my hostel room",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "HSTL-POL-003",
+  "relevant_chunks": [
+   "HSTL-POL-003_CHUNK_002",
+   "HSTL-POL-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "HSTL-POL-003_CHUNK_002": 3,
+   "HSTL-POL-003_CHUNK_003": 2,
+   "HSTL-POL-003_CHUNK_004": 1,
+   "HSTL-POL-003_CHUNK_001": 1
+  },
+  "description": "High-wattage heating/cooking appliances (immersion rods, heating coils, cooking stoves, hotplates) are banned; only low-power devices permitted; violators fined Rs 2,500/5,000. Kettle not named explicitly."
+ },
+ {
+  "query_id": "H014",
+  "query": "who do i contact if the fan in my classroom isn't working",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "OPS-POL-001",
+  "relevant_chunks": [
+   "OPS-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "OPS-POL-001_CHUNK_003": 3,
+   "OPS-POL-001_CHUNK_004": 1,
+   "OPS-POL-001_CHUNK_005": 1,
+   "STU-LDR-001_CHUNK_004": 1
+  },
+  "description": "Log a ResolveDesk ticket under Campus Operations (Electrical Infrastructure covers ceiling fans)."
+ },
+ {
+  "query_id": "H015",
+  "query": "how do i get a letter from college showing total fees for my education loan",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "STU-FRM-002",
+  "relevant_chunks": [
+   "STU-FRM-002_CHUNK_003",
+   "STU-FRM-002_CHUNK_001",
+   "STU-FRM-002_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "STU-FRM-002_CHUNK_003": 3,
+   "STU-FRM-002_CHUNK_004": 2,
+   "STU-FRM-002_CHUNK_001": 2,
+   "STU-FRM-002_CHUNK_002": 1,
+   "ACAD-SOP-002_CHUNK_002": 1,
+   "ACAD-SOP-002_CHUNK_003": 1,
+   "POL-BONAFIDE_CHUNK_003": 1,
+   "IT-SYS-001_CHUNK_003": 1
+  },
+  "description": "Apply via UniCampus ERP > Student Services > Education Loan Fee Estimation Request with bank details/sanction letter; issued in 4 working days, collect at Registrar counter."
+ },
+ {
+  "query_id": "H016",
+  "query": "what should i do if the fire alarm goes off in my building",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "SEC-SOP-001",
+  "relevant_chunks": [
+   "SEC-SOP-001_CHUNK_003",
+   "SEC-SOP-001_CHUNK_004",
+   "SEC-SOP-001_CHUNK_005"
+  ],
+  "graded_relevance": {
+   "SEC-SOP-001_CHUNK_003": 3,
+   "SEC-SOP-001_CHUNK_004": 2,
+   "SEC-SOP-001_CHUNK_005": 2,
+   "SEC-SOP-001_CHUNK_002": 1
+  },
+  "description": "Stop work, leave belongings, no lifts, use fire stairs, move orderly to designated assembly point; no re-entry until All-Clear."
+ },
+ {
+  "query_id": "H017",
+  "query": "who is above the section officer in the admin office",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "ADM-STF-002",
+  "relevant_chunks": [
+   "ADM-STF-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ADM-STF-002_CHUNK_003": 3,
+   "ADM-STF-002_CHUNK_002": 1,
+   "ADM-STF-002_CHUNK_004": 1
+  },
+  "description": "Admin hierarchy: Registrar > Deputy Registrar (Administration) > Office Superintendent > counter staff. No Section Officer role exists; closest is Office Superintendent."
+ },
+ {
+  "query_id": "H018",
+  "query": "what approvals do we need to take our class on an industrial visit",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "ACAD-SOP-008",
+  "relevant_chunks": [
+   "ACAD-SOP-008_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-SOP-008_CHUNK_003": 3,
+   "ACAD-SOP-008_CHUNK_001": 1
+  },
+  "description": "Coordinator submits itinerary, risk assessment, transport requisition on ResolveDesk 15 working days ahead; parental consent forms; 1 faculty per 20 students."
+ },
+ {
+  "query_id": "H019",
+  "query": "how do i access ieee papers from home",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "LIB-POL-002",
+  "relevant_chunks": [
+   "LIB-FAQ-001_CHUNK_001",
+   "LIB-POL-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "LIB-POL-002_CHUNK_003": 3,
+   "LIB-FAQ-001_CHUNK_001": 3,
+   "LIB-POL-002_CHUNK_002": 1,
+   "LIB-POL-002_CHUNK_006": 1,
+   "LIB-POL-002_CHUNK_004": 1
+  },
+  "description": "Off campus, log in through the LibNet Off-Campus E-Journal Proxy Gateway with UniCampus ERP SSO credentials."
+ },
+ {
+  "query_id": "H020",
+  "query": "where can i talk to a counselor if i'm feeling stressed",
+  "category": "natural_language",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "natural_language"
+  ],
+  "target_doc_id": "STU-POL-003",
+  "relevant_chunks": [
+   "STU-POL-003_CHUNK_003",
+   "STU-POL-003_CHUNK_001",
+   "STU-POL-003_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "STU-POL-003_CHUNK_003": 3,
+   "STU-POL-003_CHUNK_002": 2,
+   "STU-POL-003_CHUNK_001": 2,
+   "ACAD-POL-006_CHUNK_001": 1
+  },
+  "description": "Student Counseling & Mental Wellness Centre (Office of Student Welfare, Chanakya Bhavan 3rd floor): free confidential sessions via ResolveDesk Wellness Appointment or walk-in Mon-Fri 9-5."
+ },
+ {
+  "query_id": "H021",
+  "query": "TC appl form",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "STU-FRM-003",
+  "relevant_chunks": [
+   "STU-FRM-003_CHUNK_004",
+   "STU-FRM-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "STU-FRM-003_CHUNK_004": 3,
+   "STU-FRM-003_CHUNK_003": 2,
+   "STU-FRM-003_CHUNK_001": 1,
+   "ADM-POL-004_CHUNK_004": 1,
+   "ADM-POL-004_CHUNK_003": 1,
+   "POL-TRANSFER-CERT_CHUNK_002": 1
+  },
+  "description": "After full No-Dues clearance, submit UniCampus ERP > Student Services > TC & Migration Request; certificates ready in 7 working days."
+ },
+ {
+  "query_id": "H022",
+  "query": "phd progress rpt guidelines",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "RES-POL-002",
+  "relevant_chunks": [
+   "RES-POL-002_CHUNK_003",
+   "RES-POL-002_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "RES-POL-002_CHUNK_003": 3,
+   "RES-POL-002_CHUNK_004": 2,
+   "RES-POL-002_CHUNK_001": 1,
+   "RES-POL-002_CHUNK_002": 1,
+   "RES-POL-001_CHUNK_005": 1
+  },
+  "description": "Semi-annual PR reviews (Jun-Jul, Dec-Jan); supervisor submits dossier on ResTrack 10 days before DC meeting; Satisfactory rating needed for fellowship, two Unsatisfactory may terminate registration."
+ },
+ {
+  "query_id": "H023",
+  "query": "CR election rules",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "STU-LDR-001",
+  "relevant_chunks": [
+   "STU-LDR-001_CHUNK_003",
+   "STU-LDR-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "STU-LDR-001_CHUNK_003": 3,
+   "STU-LDR-001_CHUNK_002": 2,
+   "STU-LDR-001_CHUNK_005": 1,
+   "STU-LDR-001_CHUNK_001": 1
+  },
+  "description": "CR elections coordinated by Program Coordinator in first two weeks; one CR + deputy per section, one-year term; candidates need CGPA >= 7.0, no backlogs, clean record."
+ },
+ {
+  "query_id": "H024",
+  "query": "OD leave appl form",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "STU-FRM-004",
+  "relevant_chunks": [
+   "STU-FRM-004_CHUNK_003",
+   "ACAD-POL-004_CHUNK_004",
+   "POL-OD_CHUNK_005"
+  ],
+  "graded_relevance": {
+   "STU-FRM-004_CHUNK_003": 3,
+   "POL-OD_CHUNK_005": 2,
+   "ACAD-POL-004_CHUNK_004": 2,
+   "STU-FRM-004_CHUNK_001": 1
+  },
+  "description": "Submit OD form on ResolveDesk (Student Affairs > On-Duty Sanction) 3 working days before, with brochure/schedule/faculty endorsement; max 10 days/semester; upload certificate within 5 days after."
+ },
+ {
+  "query_id": "H025",
+  "query": "acad council standing committee powers",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "GOV-REG-002",
+  "relevant_chunks": [
+   "GOV-REG-002_CHUNK_004",
+   "ACAD-GOV-004_CHUNK_001",
+   "ACAD-GOV-004_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "GOV-REG-002_CHUNK_004": 3,
+   "ACAD-GOV-004_CHUNK_001": 2,
+   "ACAD-GOV-004_CHUNK_003": 2,
+   "ACAD-GOV-004_CHUNK_004": 1,
+   "GOV-REG-002_CHUNK_003": 1,
+   "GOV-REG-002_CHUNK_001": 1
+  },
+  "description": "Academic Council enacts regulations, approves programs/syllabi, sets grading/passing criteria and appoints its Standing Committee (Senate Academic Committee) to adjudicate extraordinary academic appeals."
+ },
+ {
+  "query_id": "H026",
+  "query": "intl students FRRO reg",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "ADM-INT-001",
+  "relevant_chunks": [
+   "ADM-INT-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "ADM-INT-001_CHUNK_002": 3,
+   "ADM-INT-001_CHUNK_001": 1,
+   "ADM-INT-001_CHUNK_003": 1
+  },
+  "description": "Foreign students must register on the e-FRRO portal within 14 days of arrival; International Student Advisor submits Form S; hostel issues residential bonafide as address proof."
+ },
+ {
+  "query_id": "H027",
+  "query": "TA/DA reimb for official travel",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "FIN-POL-006",
+  "relevant_chunks": [
+   "FIN-POL-006_CHUNK_003",
+   "FIN-POL-006_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "FIN-POL-006_CHUNK_003": 3,
+   "FIN-POL-006_CHUNK_004": 3,
+   "FIN-POL-006_CHUNK_001": 1,
+   "FIN-POL-006_CHUNK_002": 1,
+   "RES-OFF-001_CHUNK_003": 1
+  },
+  "description": "TA/DA entitlements (sleeper/3AC rail or bus fare, per diem DA, registration fee) need pre-travel sanction; claims filed on ResolveDesk Finance > TA/DA Claims within 15 working days with tickets, invoices, certificates; NEFT within 10 days of audit."
+ },
+ {
+  "query_id": "H028",
+  "query": "CC lab hrs and machine allotment",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "IT-FAC-001",
+  "relevant_chunks": [
+   "IT-FAC-001_CHUNK_002",
+   "IT-FAC-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "IT-FAC-001_CHUNK_002": 3,
+   "IT-FAC-001_CHUNK_003": 3,
+   "IT-FAC-001_CHUNK_001": 1
+  },
+  "description": "Central Computing Centre open Mon-Fri 8AM-10PM, Sat 9AM-6PM, closed Sunday, 24h around SEE; machines first-come-first-served via RFID/SSO, clubs can reserve blocks via ResolveDesk 5 days ahead."
+ },
+ {
+  "query_id": "H029",
+  "query": "dup ID card req",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "STU-FRM-007",
+  "relevant_chunks": [
+   "SEC-POL-001_CHUNK_004",
+   "STU-FRM-007_CHUNK_002",
+   "STU-FRM-007_CHUNK_001"
+  ],
+  "graded_relevance": {
+   "STU-FRM-007_CHUNK_002": 3,
+   "SEC-POL-001_CHUNK_004": 3,
+   "STU-FRM-007_CHUNK_001": 2,
+   "SEC-POL-001_CHUNK_005": 1,
+   "FIN-POL-002_CHUNK_002": 1
+  },
+  "description": "Log Security > Lost ID Card on ResolveDesk, pay Rs 500 via PayVarsity, show receipt + govt photo ID at Central Security Office; duplicate card issued within 48 hours."
+ },
+ {
+  "query_id": "H030",
+  "query": "no dues cert for final yr",
+  "category": "abbreviation",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "abbreviation"
+  ],
+  "target_doc_id": "ADM-SOP-001",
+  "relevant_chunks": [
+   "ADM-SOP-001_CHUNK_002",
+   "ADM-SOP-001_CHUNK_003",
+   "FIN-POL-003_CHUNK_003",
+   "POL-GRADUATION_CHUNK_005"
+  ],
+  "graded_relevance": {
+   "ADM-SOP-001_CHUNK_002": 3,
+   "ADM-SOP-001_CHUNK_003": 3,
+   "POL-GRADUATION_CHUNK_005": 2,
+   "FIN-POL-003_CHUNK_003": 2,
+   "ADM-SOP-001_CHUNK_001": 1,
+   "ACAD-POL-010_CHUNK_005": 1,
+   "HSTL-POL-004_CHUNK_003": 1,
+   "LIB-POL-001_CHUNK_006": 1,
+   "STU-FRM-003_CHUNK_003": 1
+  },
+  "description": "No-dues clearance via UniCampus ERP in the May-June graduation window with sign-offs from Library, Hostel, Department labs, Ops/Sports and Finance (5-day SLA); then caution deposit refund and certificate release."
+ },
+ {
+  "query_id": "H031",
+  "query": "migraton certificate",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "STU-FRM-003",
+  "relevant_chunks": [
+   "ADM-POL-004_CHUNK_004",
+   "STU-FRM-003_CHUNK_004",
+   "POL-TRANSFER-CERT_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "STU-FRM-003_CHUNK_004": 3,
+   "ADM-POL-004_CHUNK_004": 3,
+   "POL-TRANSFER-CERT_CHUNK_002": 2,
+   "STU-FRM-003_CHUNK_003": 1,
+   "STU-FRM-003_CHUNK_001": 1,
+   "ADM-POL-004_CHUNK_001": 1,
+   "ADM-POL-004_CHUNK_003": 1,
+   "POL-TRANSFER-CERT_CHUNK_001": 1,
+   "POL-GRADUATION_CHUNK_005": 1
+  },
+  "description": "After no-dues clearance, file TC & Migration Request on UniCampus ERP (STU-FRM-003); Registrar signs/seals within 7 working days, collected or speed-posted; duplicates need police report + affidavit + Rs 1000."
+ },
+ {
+  "query_id": "H032",
+  "query": "intellectual proprety patent filing",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "RES-POL-004",
+  "relevant_chunks": [
+   "RES-POL-004_CHUNK_004",
+   "RES-POL-004_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "RES-POL-004_CHUNK_004": 3,
+   "RES-POL-004_CHUNK_003": 2,
+   "RES-POL-004_CHUNK_001": 1,
+   "RES-POL-004_CHUNK_002": 1,
+   "RES-OFF-001_CHUNK_004": 1
+  },
+  "description": "Patent filing: Invention Disclosure Form on ResTrack, IPR Committee evaluation, university funds 100% of filing costs, royalties 60/40 inventor/university; ownership depends on funding source."
+ },
+ {
+  "query_id": "H033",
+  "query": "medical condonaton form",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "STU-FRM-005",
+  "relevant_chunks": [
+   "STU-FRM-005_CHUNK_003",
+   "ACAD-POL-003_CHUNK_004",
+   "STU-FRM-005_CHUNK_001",
+   "STU-FRM-005_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "STU-FRM-005_CHUNK_003": 3,
+   "STU-FRM-005_CHUNK_001": 2,
+   "STU-FRM-005_CHUNK_002": 2,
+   "ACAD-POL-003_CHUNK_004": 2,
+   "ACAD-POL-003_CHUNK_003": 1,
+   "ACAD-POL-003_CHUNK_002": 1,
+   "STU-MED-001_CHUNK_003": 1,
+   "POL-ATTEND_CHUNK_004": 1
+  },
+  "description": "Medical condonation form (STU-FRM-005) for 65-74.9% attendance: clinical proofs plus Health Centre Verification Slip, FA/HOD endorsement, lodged on ResolveDesk 5 working days before SEE; Dean approval lifts detention."
+ },
+ {
+  "query_id": "H034",
+  "query": "suplementary exam fee deadline",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "EXAM-NOT-002",
+  "relevant_chunks": [
+   "EXAM-NOT-002_CHUNK_003",
+   "POL-BACKLOG_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "EXAM-NOT-002_CHUNK_003": 3,
+   "POL-BACKLOG_CHUNK_003": 3,
+   "EXAM-NOT-002_CHUNK_004": 1,
+   "FIN-POL-002_CHUNK_002": 1,
+   "IT-SYS-003_CHUNK_003": 1
+  },
+  "description": "Supplementary registration closes 5 PM on the 10th calendar day after results; 3-day late window with Rs 500 fine; fee Rs 600 per paper via PayVarsity."
+ },
+ {
+  "query_id": "H035",
+  "query": "scholorship for sports players",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "FIN-SCH-002",
+  "relevant_chunks": [
+   "FIN-SCH-002_CHUNK_002",
+   "FIN-SCH-002_CHUNK_003",
+   "FIN-SCH-002_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "FIN-SCH-002_CHUNK_002": 3,
+   "FIN-SCH-002_CHUNK_003": 2,
+   "FIN-SCH-002_CHUNK_004": 2,
+   "FIN-SCH-002_CHUNK_001": 1
+  },
+  "description": "Sports Excellence Scholarship: 25-100% tuition concession for athletes representing the university, endorsed by Director of PE and DSA; Joint Scholarship Committee selection; must keep CGPA 6.50 and team participation."
+ },
+ {
+  "query_id": "H036",
+  "query": "hostle curfew timings",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "POL-HOSTEL-LEAVE",
+  "relevant_chunks": [
+   "POL-HOSTEL-LEAVE_CHUNK_002",
+   "POL-HOSTEL-LEAVE_CHUNK_005"
+  ],
+  "graded_relevance": {
+   "POL-HOSTEL-LEAVE_CHUNK_002": 3,
+   "POL-HOSTEL-LEAVE_CHUNK_005": 2,
+   "POL-HOSTEL-LEAVE_CHUNK_003": 1,
+   "POL-HOSTEL-LEAVE_CHUNK_001": 1,
+   "HSTL-POL-001_CHUNK_002": 1,
+   "HSTL-REG-004_CHUNK_003": 1
+  },
+  "description": "Hostel curfew 9:30 PM weekdays, 10:30 PM weekends, roll call 10 PM; three unexcused curfew violations cancel residency."
+ },
+ {
+  "query_id": "H037",
+  "query": "incubaton seed grant",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "RES-INC-002",
+  "relevant_chunks": [
+   "RES-INC-002_CHUNK_004",
+   "RES-INC-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "RES-INC-002_CHUNK_004": 3,
+   "RES-INC-001_CHUNK_002": 2,
+   "RES-INC-002_CHUNK_001": 1,
+   "RES-INC-001_CHUNK_003": 1,
+   "RES-OFF-001_CHUNK_003": 1
+  },
+  "description": "CIE micro-seed grants for pre-incubation prototype teams cover components, materials, cloud hosting; proposals via ResTrack, evaluated by CIE Pitch Evaluation Committee, audited by Finance."
+ },
+ {
+  "query_id": "H038",
+  "query": "proctorial board disiplinary hearing",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "STU-POL-005",
+  "relevant_chunks": [
+   "POL-DISCIPLINE_CHUNK_003",
+   "STU-POL-005_CHUNK_003",
+   "EXAM-GUI-003_CHUNK_004",
+   "STU-POL-005_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "STU-POL-005_CHUNK_003": 3,
+   "POL-DISCIPLINE_CHUNK_003": 3,
+   "STU-POL-005_CHUNK_004": 2,
+   "EXAM-GUI-003_CHUNK_004": 2,
+   "STU-POL-005_CHUNK_002": 1,
+   "STU-POL-005_CHUNK_001": 1,
+   "POL-DISCIPLINE_CHUNK_001": 1
+  },
+  "description": "Proctorial Board hearing: show-cause within 48h, inquiry done in 7 working days, in camera hearing with right to see evidence and defend, no outside lawyers; sanctions admonition to expulsion ratified by Registrar."
+ },
+ {
+  "query_id": "H039",
+  "query": "resume uplod careerhub",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "PLC-GUI-001",
+  "relevant_chunks": [
+   "PLC-GUI-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "PLC-GUI-001_CHUNK_002": 3,
+   "PLC-GUI-001_CHUNK_001": 1,
+   "PLC-GUI-001_CHUNK_003": 1,
+   "PLC-GUI-001_CHUNK_004": 1
+  },
+  "description": "Upload resume on CareerHub as PDF max 2MB following CDC template; without a verified master resume students cannot register for drives."
+ },
+ {
+  "query_id": "H040",
+  "query": "librery reading room 24 hours",
+  "category": "typo",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "typo"
+  ],
+  "target_doc_id": "LIB-POL-003",
+  "relevant_chunks": [
+   "LIB-POL-003_CHUNK_003",
+   "LIB-FAQ-001_CHUNK_001"
+  ],
+  "graded_relevance": {
+   "LIB-POL-003_CHUNK_003": 3,
+   "LIB-FAQ-001_CHUNK_001": 2,
+   "LIB-POL-003_CHUNK_002": 1,
+   "LIB-POL-003_CHUNK_001": 1
+  },
+  "description": "Ground Floor 24/7 Reading Room open round the clock; entry 10PM-6AM by RFID via CampusPass only; hostelers must log night study on DormTrack."
+ },
+ {
+  "query_id": "H041",
+  "query": "CSE201 lab exercises",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-001",
+  "relevant_chunks": [
+   "ACAD-CRS-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-001_CHUNK_004": 3,
+   "ACAD-CRS-001_CHUNK_001": 1,
+   "ACAD-CRS-001_CHUNK_005": 1
+  },
+  "description": "CSE201 lab: six experiments (linked lists, dual-stack evaluator, circular queue, AVL tree, Dijkstra, hash table) in Turing Complex Data Systems Lab."
+ },
+ {
+  "query_id": "H042",
+  "query": "CSE303 sql lab manual",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-004",
+  "relevant_chunks": [
+   "ACAD-CRS-004_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-004_CHUNK_004": 3,
+   "ACAD-CRS-004_CHUNK_003": 1,
+   "ACAD-CRS-004_CHUNK_001": 1
+  },
+  "description": "CSE303 query lab on PostgreSQL: ER mapping, constraints, complex SQL joins/subqueries, PL/pgSQL procedures/triggers, transaction isolation."
+ },
+ {
+  "query_id": "H043",
+  "query": "CSE401 ml course outline",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-006",
+  "relevant_chunks": [
+   "ACAD-CRS-006_CHUNK_003",
+   "ACAD-CRS-006_CHUNK_001",
+   "ACAD-CRS-006_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-006_CHUNK_003": 3,
+   "ACAD-CRS-006_CHUNK_002": 2,
+   "ACAD-CRS-006_CHUNK_001": 2,
+   "ACAD-CRS-006_CHUNK_004": 1,
+   "ACAD-CRS-006_CHUNK_005": 1
+  },
+  "description": "CSE401 AIML outline: 4 credits; modules on search, supervised learning, SVM/ensembles, unsupervised/PCA, neural networks; labs; 40/60 CIE/SEE."
+ },
+ {
+  "query_id": "H044",
+  "query": "ECE201 logic design lab",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-007",
+  "relevant_chunks": [
+   "ACAD-CRS-007_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-007_CHUNK_004": 3,
+   "ACAD-CRS-007_CHUNK_001": 1,
+   "ACAD-CRS-007_CHUNK_003": 1,
+   "ACAD-CRS-007_CHUNK_005": 1
+  },
+  "description": "ECE201 Digital Electronics Hardware Lab (Faraday Tower 2F): NAND/NOR gates, 4-bit adder IC7483, 8:1 mux IC74151, JK up/down counter, Verilog Mealy/Moore detectors."
+ },
+ {
+  "query_id": "H045",
+  "query": "ECE302 vlsi EDA tools",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-008",
+  "relevant_chunks": [
+   "ACAD-CRS-008_CHUNK_004",
+   "ECE-CRS-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-008_CHUNK_004": 3,
+   "ECE-CRS-001_CHUNK_003": 2,
+   "ACAD-CRS-008_CHUNK_002": 1,
+   "ACAD-CRS-008_CHUNK_001": 1
+  },
+  "description": "ECE302 EDA lab uses Cadence EDA tools and SPICE via EDA Cloud Lab in the VLSI Design Centre; labs: inverter VTC, transient, layout, DRC/LVS, 6T SRAM."
+ },
+ {
+  "query_id": "H046",
+  "query": "MEC204 heat transfer experiments",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-009",
+  "relevant_chunks": [
+   "ACAD-CRS-009_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-009_CHUNK_004": 3,
+   "ACAD-CRS-009_CHUNK_003": 1,
+   "ACAD-CRS-009_CHUNK_005": 1
+  },
+  "description": "MEC204 Thermal Engineering Lab: thermal conductivity of insulating powder, natural/forced convection, pin-fin, Stefan-Boltzmann, parallel/counter-flow heat exchanger."
+ },
+ {
+  "query_id": "H047",
+  "query": "CIV205 structural analysis software",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-010",
+  "relevant_chunks": [
+   "ACAD-CRS-010_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-010_CHUNK_004": 3,
+   "ACAD-CRS-010_CHUNK_001": 1,
+   "ACAD-CRS-010_CHUNK_003": 1
+  },
+  "description": "CIV205 computational practicum at Aryabhata Wing Computational Station: computer-aided beam deflection, frame sway, matrix stiffness software modeling of RC structures (no specific software product named)."
+ },
+ {
+  "query_id": "H048",
+  "query": "CSE202 java coding standards",
+  "category": "course_code",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "ACAD-CRS-002 (CSE202 Java) has objectives, syllabus, labs and assessment but no Java coding standards/style rules despite its title; nothing else in the corpus covers coding standards."
+ },
+ {
+  "query_id": "H049",
+  "query": "CSE305 agile project deliverables",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "ACAD-CRS-005",
+  "relevant_chunks": [
+   "ACAD-CRS-005_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ACAD-CRS-005_CHUNK_004": 3,
+   "ACAD-CRS-005_CHUNK_003": 1,
+   "ACAD-CRS-005_CHUNK_002": 1
+  },
+  "description": "CSE305 capstone: teams of 4, three 4-week sprints; Sprint 1 backlog/SRS/architecture, Sprint 2 prototype/unit tests/CI-CD, Sprint 3 deployable product, code audits, defense."
+ },
+ {
+  "query_id": "H050",
+  "query": "CIV310 BOD COD lab manual",
+  "category": "course_code",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "course_code"
+  ],
+  "target_doc_id": "CIV-LAB-304",
+  "relevant_chunks": [
+   "CIV-LAB-304_CHUNK_003",
+   "CIV-LAB-304_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "CIV-LAB-304_CHUNK_003": 3,
+   "CIV-LAB-304_CHUNK_002": 2,
+   "CIV-LAB-304_CHUNK_001": 1
+  },
+  "description": "Environmental Engineering lab manual (CIV-LAB-304, course CIV304 not CIV310): 5-day 20C BOD Winkler procedure and formula; COD named in scope but no COD procedure given."
+ },
+ {
+  "query_id": "H051",
+  "query": "75% attendance requirement",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "POL-ATTEND",
+  "relevant_chunks": [
+   "ACAD-REG-001_CHUNK_003",
+   "POL-ATTEND_CHUNK_003",
+   "POL-ATTEND_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "POL-ATTEND_CHUNK_003": 3,
+   "ACAD-REG-001_CHUNK_003": 3,
+   "POL-ATTEND_CHUNK_004": 2,
+   "POL-ATTEND_CHUNK_005": 1,
+   "ACAD-POL-003_CHUNK_001": 1,
+   "POL-SEE_CHUNK_004": 1,
+   "EXAM-NOT-003_CHUNK_002": 1
+  },
+  "description": "Minimum 75.0% attendance required in every registered course; 65-74.9% condonable on medical/OD grounds; below 65% means detention from SEE."
+ },
+ {
+  "query_id": "H052",
+  "query": "late fee after 15 days of registration",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "ACAD-NOT-002",
+  "relevant_chunks": [
+   "ACAD-NOT-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-NOT-002_CHUNK_003": 3,
+   "ACAD-NOT-002_CHUNK_001": 1,
+   "FIN-POL-001_CHUNK_003": 1
+  },
+  "description": "Late registration after DOR (Aug 5): Rs 100/day Aug 6-15; after Aug 15 Rs 250/day (Aug 16-Sep 4) with HOD endorsement; registration closes permanently Sep 5."
+ },
+ {
+  "query_id": "H053",
+  "query": "can i register for 28 credits",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "ACAD-POL-001",
+  "relevant_chunks": [
+   "ACAD-POL-001_CHUNK_002",
+   "POL-COURSE-REG_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-POL-001_CHUNK_002": 3,
+   "POL-COURSE-REG_CHUNK_003": 3,
+   "POL-ADD-DROP_CHUNK_003": 1
+  },
+  "description": "Normal load is 20-24 credits; overload up to 28 credits only with CGPA >= 8.00 and no backlogs (with advisor/HOD/Dean approval)."
+ },
+ {
+  "query_id": "H054",
+  "query": "minimum 5.0 CGPA to graduate",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "ACAD-POL-010",
+  "relevant_chunks": [
+   "ACAD-POL-010_CHUNK_002",
+   "POL-GRADUATION_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "ACAD-POL-010_CHUNK_002": 3,
+   "POL-GRADUATION_CHUNK_002": 3,
+   "ACAD-REG-002_CHUNK_002": 1
+  },
+  "description": "UG degree requires minimum terminal CGPA 5.00 on 10-point scale (PG requires 6.00), plus 160 credits and zero backlogs."
+ },
+ {
+  "query_id": "H055",
+  "query": "Rs 500 challan for duplicate marksheet",
+  "category": "numeric",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "No duplicate marksheet/grade-card fee exists in the corpus; the Rs 500 E-Challan fee in FIN-POL-002 is for a duplicate RFID ID card, and the only duplicate-certificate fee is Rs 1,000 for a TC/migration certificate."
+ },
+ {
+  "query_id": "H056",
+  "query": "tuition fee penalty after 30 days",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "FIN-POL-001",
+  "relevant_chunks": [
+   "FIN-POL-001_CHUNK_004",
+   "FIN-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "FIN-POL-001_CHUNK_004": 3,
+   "FIN-POL-001_CHUNK_003": 2,
+   "FIN-POL-001_CHUNK_002": 1,
+   "EXAM-NOT-003_CHUNK_002": 1
+  },
+  "description": "Unpaid tuition beyond 30 days from billing triggers a FINANCIAL-HOLD (blocks registration, hall ticket, documents); late surcharges are Rs 100/day (days 16-25) and Rs 250/day (days 26-45)."
+ },
+ {
+  "query_id": "H057",
+  "query": "CIE marks out of 50",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "POL-CIE",
+  "relevant_chunks": [
+   "EXAM-GUI-001_CHUNK_002",
+   "POL-CIE_CHUNK_003",
+   "ACAD-REG-001_CHUNK_004",
+   "EXAM-SCH-003_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "POL-CIE_CHUNK_003": 3,
+   "EXAM-GUI-001_CHUNK_002": 3,
+   "EXAM-SCH-003_CHUNK_002": 2,
+   "ACAD-REG-001_CHUNK_004": 2,
+   "POL-CIE_CHUNK_004": 1
+  },
+  "description": "CIE carries 40% weightage (50% only where regulations mandate equal split); CIE1/CIE2 sessional tests are 90 min scaled to 50 marks; 40% CIE minimum needed for SEE."
+ },
+ {
+  "query_id": "H058",
+  "query": "2 night outs per month hostel",
+  "category": "numeric",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "No monthly night-out quota (e.g., 2 per month) exists in the corpus; hostel docs (HSTL-POL-001, POL-HOSTEL-LEAVE) only describe the night-out pass procedure (24h advance + parental OTP + warden approval) without any numeric limit."
+ },
+ {
+  "query_id": "H059",
+  "query": "6 month internship in 8th semester",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "ACAD-POL-008",
+  "relevant_chunks": [
+   "ACAD-POL-008_CHUNK_002",
+   "ACAD-POL-008_CHUNK_003",
+   "ACAD-POL-008_CHUNK_004",
+   "PLC-POL-002_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "ACAD-POL-008_CHUNK_002": 3,
+   "ACAD-POL-008_CHUNK_003": 2,
+   "PLC-POL-002_CHUNK_002": 2,
+   "ACAD-POL-008_CHUNK_004": 2,
+   "ACAD-POL-008_CHUNK_001": 1,
+   "PLC-GUI-003_CHUNK_004": 1,
+   "PLC-GUI-003_CHUNK_003": 1,
+   "PLC-POL-001_CHUNK_005": 1
+  },
+  "description": "Semester-long 8th-semester industry internship allowed with CGPA >= 7.00, zero backlogs, verified offer and NOC; substitutes 8th-sem electives with an industry capstone project."
+ },
+ {
+  "query_id": "H060",
+  "query": "companies offering above 10 LPA CTC tier",
+  "category": "numeric",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "numeric"
+  ],
+  "target_doc_id": "PLC-POL-003",
+  "relevant_chunks": [
+   "PLC-POL-003_CHUNK_003",
+   "PLC-FAQ-001_CHUNK_002",
+   "PLC-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "PLC-POL-003_CHUNK_003": 3,
+   "PLC-POL-001_CHUNK_003": 2,
+   "PLC-FAQ-001_CHUNK_002": 2
+  },
+  "description": "CTC tiers: Regular tier up to Rs 8 LPA; Dream tier strictly above Rs 12 LPA (priority slots, open to Regular-offer holders). No tier is defined at 10 LPA."
+ },
+ {
+  "query_id": "H061",
+  "query": "what is the policy on one offer per student in placements",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "PLC-POL-001",
+  "relevant_chunks": [
+   "PLC-FAQ-001_CHUNK_002",
+   "PLC-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "PLC-POL-001_CHUNK_003": 3,
+   "PLC-FAQ-001_CHUNK_002": 3,
+   "PLC-POL-003_CHUNK_003": 1,
+   "PLC-POL-001_CHUNK_001": 1
+  },
+  "description": "One-Student-One-Job: a Regular tier offer (<= 8 LPA) locks out further Regular drives; student may still try Dream (> 12 LPA) drives; a Dream offer freezes placement status."
+ },
+ {
+  "query_id": "H062",
+  "query": "policy on air conditioner usage in labs and offices",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "OPS-FAC-005",
+  "relevant_chunks": [
+   "OPS-FAC-005_CHUNK_003",
+   "OPS-FAC-005_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "OPS-FAC-005_CHUNK_003": 3,
+   "OPS-FAC-005_CHUNK_004": 2,
+   "OPS-FAC-005_CHUNK_005": 1,
+   "OPS-FAC-005_CHUNK_001": 1
+  },
+  "description": "Thermostats in offices/halls kept at 24-26 C, never below 22 C, doors/windows closed; central HVAC runs 08:30-17:30 on lecture days; 24/7 only for server rooms/HPC/library hub."
+ },
+ {
+  "query_id": "H063",
+  "query": "rules about silence hours in hostel",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "HSTL-REG-003",
+  "relevant_chunks": [
+   "HSTL-REG-003_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "HSTL-REG-003_CHUNK_002": 3,
+   "HSTL-REG-003_CHUNK_001": 1,
+   "HSTL-REG-003_CHUNK_005": 1
+  },
+  "description": "Hostel silence hours are 11:00 PM to 6:00 AM daily; loud music, speakers, shouting and rowdy gatherings are prohibited."
+ },
+ {
+  "query_id": "H064",
+  "query": "policy if i break lab equipment",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "ACAD-LAB-001",
+  "relevant_chunks": [
+   "ACAD-LAB-001_CHUNK_004",
+   "FIN-POL-002_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "ACAD-LAB-001_CHUNK_004": 3,
+   "FIN-POL-002_CHUNK_003": 2,
+   "OPS-LAB-003_CHUNK_003": 1,
+   "POL-DISCIPLINE_CHUNK_002": 1,
+   "IT-LAB-004_CHUNK_004": 1,
+   "ACAD-POL-002_CHUNK_003": 1,
+   "ACAD-LAB-001_CHUNK_001": 1
+  },
+  "description": "Report breakage immediately; TA logs incident; accidental damage during proper use is absorbed by university, negligent damage is charged to PayVarsity/caution deposit, vandalism is a Level-3 offense."
+ },
+ {
+  "query_id": "H065",
+  "query": "what is the rule on staying in a pg outside campus",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "HSTL-POL-005",
+  "relevant_chunks": [
+   "HSTL-POL-005_CHUNK_002",
+   "HSTL-POL-005_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "HSTL-POL-005_CHUNK_002": 3,
+   "HSTL-POL-005_CHUNK_003": 2,
+   "HSTL-POL-005_CHUNK_004": 1,
+   "HSTL-POL-005_CHUNK_001": 1
+  },
+  "description": "First-years must live on campus (except local day scholars); 2nd-year+ UG, PG and PhD may move to an off-campus PG with a parental consent affidavit on ERP; safety advisories apply."
+ },
+ {
+  "query_id": "H066",
+  "query": "university policy on students talking to the media",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "ADM-MED-001",
+  "relevant_chunks": [
+   "ADM-MED-001_CHUNK_003",
+   "ADM-MED-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "ADM-MED-001_CHUNK_003": 3,
+   "ADM-MED-001_CHUNK_004": 2,
+   "ADM-MED-001_CHUNK_001": 1,
+   "STU-POL-001_CHUNK_003": 1
+  },
+  "description": "Only VC, Registrar or PRO may speak for the university; students are prohibited from making statements to media on its behalf without written authorization from the Director of Media Relations."
+ },
+ {
+  "query_id": "H067",
+  "query": "policy on uploading thesis to institutional repository",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "LIB-POL-004",
+  "relevant_chunks": [
+   "LIB-POL-004_CHUNK_005",
+   "LIB-POL-004_CHUNK_003",
+   "LIB-POL-004_CHUNK_004",
+   "LIB-POL-004_CHUNK_006"
+  ],
+  "graded_relevance": {
+   "LIB-POL-004_CHUNK_005": 3,
+   "LIB-POL-004_CHUNK_003": 2,
+   "LIB-POL-004_CHUNK_004": 2,
+   "LIB-POL-004_CHUNK_006": 2,
+   "LIB-POL-004_CHUNK_001": 1,
+   "RES-ETH-001_CHUNK_002": 1,
+   "LIB-FAQ-001_CHUNK_002": 1
+  },
+  "description": "IR deposit is mandatory for theses; similarity <= 10% via Turnitin; upload PDF/A with metadata and Turnitin certificate through LibNet; open access with a 6-12 month embargo option."
+ },
+ {
+  "query_id": "H068",
+  "query": "acceptable use policy for university email and computers",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "IT-POL-001",
+  "relevant_chunks": [
+   "IT-POL-001_CHUNK_002",
+   "IT-POL-001_CHUNK_003",
+   "IT-POL-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "IT-POL-001_CHUNK_002": 3,
+   "IT-POL-001_CHUNK_003": 3,
+   "IT-POL-001_CHUNK_004": 2,
+   "IT-POL-001_CHUNK_001": 1,
+   "IT-LAB-004_CHUNK_003": 1
+  },
+  "description": "Accounts are personal (no password/MFA sharing); prohibited: scanning, torrents/piracy, crypto mining, malware; violations lead to account revocation and Proctorial Board referral."
+ },
+ {
+  "query_id": "H069",
+  "query": "dress code rules for placement interviews",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "PLC-GUI-002",
+  "relevant_chunks": [
+   "PLC-GUI-002_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "PLC-GUI-002_CHUNK_002": 3,
+   "PLC-GUI-002_CHUNK_001": 1,
+   "PLC-GUI-002_CHUNK_003": 1
+  },
+  "description": "Formal attire required (suit or formal shirt, trousers, leather shoes, tie, or formal Indian attire); jeans, t-shirts, sports shoes, sandals prohibited; ID card must be displayed."
+ },
+ {
+  "query_id": "H070",
+  "query": "rules for starting a new student club",
+  "category": "policy",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "policy"
+  ],
+  "target_doc_id": "POL-CLUBS",
+  "relevant_chunks": [
+   "POL-CLUBS_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "POL-CLUBS_CHUNK_002": 3,
+   "POL-CLUBS_CHUNK_001": 1,
+   "POL-CLUBS_CHUNK_003": 1,
+   "POL-CLUBS_CHUNK_004": 1
+  },
+  "description": "A new club needs at least 20 active student members and written sponsorship of a full-time faculty mentor; charter renewed annually in August via ClubSpace."
+ },
+ {
+  "query_id": "H071",
+  "query": "who is eligible for paying fees in installments",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "FIN-POL-005",
+  "relevant_chunks": [
+   "FIN-POL-005_CHUNK_002",
+   "FIN-POL-001_CHUNK_005",
+   "FIN-POL-005_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "FIN-POL-005_CHUNK_002": 3,
+   "FIN-POL-005_CHUNK_004": 2,
+   "FIN-POL-001_CHUNK_005": 2,
+   "FIN-POL-005_CHUNK_001": 1,
+   "FIN-POL-005_CHUNK_003": 1
+  },
+  "description": "Installments open to UG/PG students with documented hardship, family medical emergency or pending loan, in good academic standing, with no prior fee arrears; needs CFO approval."
+ },
+ {
+  "query_id": "H072",
+  "query": "can i get need based financial aid",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "FIN-SCH-001",
+  "relevant_chunks": [
+   "FIN-SCH-001_CHUNK_002",
+   "FIN-SCH-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "FIN-SCH-001_CHUNK_002": 3,
+   "FIN-SCH-001_CHUNK_003": 2,
+   "FIN-SCH-001_CHUNK_001": 1,
+   "FIN-POL-005_CHUNK_002": 1
+  },
+  "description": "Merit-cum-Means Hardship Aid gives 25-50% tuition concession for capable students with certified family income below Rs 4,50,000; renewal requires CGPA >= 8.00, no backlogs, clean record."
+ },
+ {
+  "query_id": "H073",
+  "query": "who can apply for dual degree abroad",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "IRO-POL-001",
+  "relevant_chunks": [
+   "IRO-POL-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "IRO-POL-001_CHUNK_003": 3,
+   "IRO-POL-001_CHUNK_001": 1
+  },
+  "description": "Exchange/dual degree open to UG students who completed four semesters with CGPA >= 7.50 and zero active backlogs; apply via ERP with SOP and language scores."
+ },
+ {
+  "query_id": "H074",
+  "query": "am i eligible for the fast track summer term exam",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "EXAM-NOT-005",
+  "relevant_chunks": [
+   "EXAM-NOT-005_CHUNK_003",
+   "EXAM-NOT-005_CHUNK_001",
+   "POL-BACKLOG_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "EXAM-NOT-005_CHUNK_003": 3,
+   "POL-BACKLOG_CHUNK_004": 2,
+   "EXAM-NOT-005_CHUNK_001": 2,
+   "POL-BACKLOG_CHUNK_002": 1,
+   "ACAD-REG-001_CHUNK_006": 1,
+   "POL-ATTEND_CHUNK_005": 1
+  },
+  "description": "Summer term is only for students with an F grade or attendance detention (W/SA, below 65%); maximum two backlog courses; fees paid on PayVarsity."
+ },
+ {
+  "query_id": "H075",
+  "query": "who can become a resident assistant in hostel",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "HSTL-REG-004",
+  "relevant_chunks": [
+   "HSTL-REG-004_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "HSTL-REG-004_CHUNK_002": 3,
+   "HSTL-REG-004_CHUNK_001": 1,
+   "HSTL-REG-004_CHUNK_004": 1
+  },
+  "description": "RA eligibility: CGPA >= 7.50, zero backlogs, at least one year of on-campus residency with clean conduct record; selected each July via Chief Warden interviews."
+ },
+ {
+  "query_id": "H076",
+  "query": "eligibility for research assistant fellowship",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "RES-POL-003",
+  "relevant_chunks": [
+   "RES-POL-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "RES-POL-003_CHUNK_003": 3,
+   "RES-POL-003_CHUNK_002": 1,
+   "RES-POL-002_CHUNK_004": 1
+  },
+  "description": "RA candidates need relevant UG/PG engineering/science degree with GATE/NET qualification or demonstrated academic excellence; selected by PI-chaired committee."
+ },
+ {
+  "query_id": "H077",
+  "query": "can first year students get a hostel room",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "POL-HOSTEL-ALLOC",
+  "relevant_chunks": [
+   "POL-HOSTEL-ALLOC_CHUNK_003",
+   "HSTL-POL-005_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "POL-HOSTEL-ALLOC_CHUNK_003": 3,
+   "HSTL-POL-005_CHUNK_002": 2,
+   "HSTL-REG-001_CHUNK_002": 1
+  },
+  "description": "Yes: first-year outstation UG students get priority allotment (Cauvery for men, Sarojini for women); first-years must live on campus unless local day scholars."
+ },
+ {
+  "query_id": "H078",
+  "query": "do i qualify for OD if i attend a hackathon",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "POL-OD",
+  "relevant_chunks": [
+   "POL-OD_CHUNK_003",
+   "ACAD-POL-004_CHUNK_002",
+   "ACAD-POL-004_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "POL-OD_CHUNK_003": 3,
+   "ACAD-POL-004_CHUNK_002": 2,
+   "ACAD-POL-004_CHUNK_003": 2,
+   "POL-OD_CHUNK_004": 1,
+   "POL-OD_CHUNK_005": 1,
+   "STU-FRM-004_CHUNK_001": 1,
+   "STU-POL-002_CHUNK_002": 1
+  },
+  "description": "OD can be sanctioned for national/international technical hackathons endorsed by HOD/DSA (not private commercial hackathons); max 10 days per semester."
+ },
+ {
+  "query_id": "H079",
+  "query": "can day scholars use the college bus service",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": "TRANS-POL-001",
+  "relevant_chunks": [
+   "TRANS-POL-001_CHUNK_001",
+   "TRANS-SOP-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "TRANS-POL-001_CHUNK_001": 3,
+   "TRANS-SOP-001_CHUNK_002": 2,
+   "TRANS-POL-001_CHUNK_003": 1,
+   "TRANS-POL-001_CHUNK_004": 1
+  },
+  "description": "Yes: the university bus fleet serves enrolled day-scholar students; enroll via TransPass and pay zonal fee on PayVarsity."
+ },
+ {
+  "query_id": "H080",
+  "query": "can staff carry forward unused casual leave",
+  "category": "eligibility",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "eligibility"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "HR-POL-003 only states 12 days CL per year; no rule on carrying forward unused casual leave exists anywhere in corpus."
+ },
+ {
+  "query_id": "H081",
+  "query": "how do i escalate a resolvedesk ticket that's not resolved",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "IT-SYS-004",
+  "relevant_chunks": [
+   "IT-SYS-004_CHUNK_003",
+   "POL-GRIEVANCE_CHUNK_003",
+   "STU-GUI-001_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "IT-SYS-004_CHUNK_003": 3,
+   "STU-GUI-001_CHUNK_003": 2,
+   "POL-GRIEVANCE_CHUNK_003": 2,
+   "STU-POL-006_CHUNK_002": 1
+  },
+  "description": "If a ticket breaches SLA or outcome is unsatisfactory, click 'Escalate' within 48 hours to route it to the next governance tier (Level 2 committee, then Ombudsman)."
+ },
+ {
+  "query_id": "H082",
+  "query": "steps to file a complaint online as a student",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "STU-GUI-001",
+  "relevant_chunks": [
+   "STU-GUI-001_CHUNK_002",
+   "POL-GRIEVANCE_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "STU-GUI-001_CHUNK_002": 3,
+   "POL-GRIEVANCE_CHUNK_003": 2,
+   "STU-GUI-001_CHUNK_001": 1,
+   "STU-GUI-001_CHUNK_003": 1,
+   "IT-SYS-004_CHUNK_002": 1
+  },
+  "description": "Log in to ResolveDesk with SSO, choose 'Submit New Grievance' and category, fill docket, attach evidence (PDF/PNG/JPEG <=10MB), submit to get GRV tracking code; 5-day SLA."
+ },
+ {
+  "query_id": "H083",
+  "query": "how do i vacate my hostel room at end of year",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "HSTL-POL-004",
+  "relevant_chunks": [
+   "HSTL-POL-004_CHUNK_002",
+   "HSTL-POL-004_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "HSTL-POL-004_CHUNK_002": 3,
+   "HSTL-POL-004_CHUNK_003": 2,
+   "HSTL-POL-004_CHUNK_001": 1,
+   "FIN-POL-003_CHUNK_003": 1,
+   "ADM-SOP-001_CHUNK_002": 1
+  },
+  "description": "Submit Room Vacation Notice on DormTrack 7 working days ahead, joint inventory inspection with caretaker, damages billed, surrender keys (Rs.1000 if unreturned); warden sign-off clears hostel no-dues."
+ },
+ {
+  "query_id": "H084",
+  "query": "how to submit assignment on learnsphere",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "IT-SYS-002",
+  "relevant_chunks": [
+   "IT-SYS-002_CHUNK_003",
+   "IT-SYS-002_CHUNK_002",
+   "IT-SYS-002_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "IT-SYS-002_CHUNK_003": 3,
+   "IT-SYS-002_CHUNK_002": 2,
+   "IT-SYS-002_CHUNK_004": 2,
+   "IT-SYS-002_CHUNK_001": 1
+  },
+  "description": "Upload to the course assignment dropbox on LearnSphere (learn.demo.edu.internal) in PDF/DOCX/ZIP before deadline; 25 MB per file limit; failures go to ResolveDesk 'LMS Technical Support'."
+ },
+ {
+  "query_id": "H085",
+  "query": "steps to report a theft on campus",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "SEC-SOP-003",
+  "relevant_chunks": [
+   "SEC-SOP-003_CHUNK_004",
+   "SEC-SOP-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "SEC-SOP-003_CHUNK_004": 3,
+   "SEC-SOP-003_CHUNK_003": 2,
+   "SEC-SOP-003_CHUNK_002": 1,
+   "SEC-SOP-003_CHUNK_005": 1
+  },
+  "description": "File a Security Incident Report on ResolveDesk (Campus Security > Incident Report) or report in person at the 24/7 Security Operations Centre at Main Gate; theft tiered by severity."
+ },
+ {
+  "query_id": "H086",
+  "query": "how do i pay fees through net banking on payvarsity",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "FIN-GUI-001",
+  "relevant_chunks": [
+   "FIN-GUI-001_CHUNK_002",
+   "FIN-GUI-001_CHUNK_001",
+   "FIN-POL-001_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "FIN-GUI-001_CHUNK_002": 3,
+   "FIN-GUI-001_CHUNK_001": 2,
+   "FIN-POL-001_CHUNK_002": 2,
+   "FIN-GUI-001_CHUNK_003": 1
+  },
+  "description": "Log in to PayVarsity (pay.demo.edu.internal) via SSO, review demand, choose Net Banking, authorize on bank page, ledger syncs and download signed receipt."
+ },
+ {
+  "query_id": "H087",
+  "query": "how to view my answer script after results",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "EXAM-GUI-004",
+  "relevant_chunks": [
+   "EXAM-GUI-004_CHUNK_002",
+   "POL-REEVAL_CHUNK_003",
+   "STU-FRM-006_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "EXAM-GUI-004_CHUNK_002": 3,
+   "POL-REEVAL_CHUNK_003": 2,
+   "STU-FRM-006_CHUNK_002": 2,
+   "IT-SYS-003_CHUNK_003": 1,
+   "FIN-POL-002_CHUNK_002": 1
+  },
+  "description": "Within 7 days of results, apply on ExamShield > Examination Services > Answer Script Viewing, pay Rs.400/paper on PayVarsity; scanned PDF uploaded within 5 working days."
+ },
+ {
+  "query_id": "H088",
+  "query": "how to request repair of leaking tap in hostel room",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "HSTL-REG-002",
+  "relevant_chunks": [
+   "HSTL-REG-002_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "HSTL-REG-002_CHUNK_002": 3,
+   "HSTL-REG-002_CHUNK_003": 1,
+   "STU-GUI-001_CHUNK_002": 1,
+   "OPS-POL-001_CHUNK_003": 1,
+   "HSTL-REG-004_CHUNK_003": 1
+  },
+  "description": "Log a request on ResolveDesk 'Hostel Maintenance' portal or submit a work order at the Caretaker Desk; leaking taps fall under Plumbing & Water Supply."
+ },
+ {
+  "query_id": "H089",
+  "query": "how to check grades on the erp portal",
+  "category": "procedure",
+  "split": "test",
+  "answerable": false,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": null,
+  "relevant_chunks": [],
+  "graded_relevance": {},
+  "description": "ERP guide (IT-SYS-001) lists enrollment, fee ledger, bonafide, degree audit modules but nothing on viewing grades/results; results are only incidentally said to be published on ExamShield."
+ },
+ {
+  "query_id": "H090",
+  "query": "process to get my medical certificate verified at health centre",
+  "category": "procedure",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "procedure"
+  ],
+  "target_doc_id": "STU-MED-001",
+  "relevant_chunks": [
+   "STU-MED-001_CHUNK_003",
+   "ACAD-POL-003_CHUNK_003",
+   "STU-FRM-005_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "STU-MED-001_CHUNK_003": 3,
+   "ACAD-POL-003_CHUNK_003": 2,
+   "STU-FRM-005_CHUNK_003": 2,
+   "STU-MED-001_CHUNK_001": 1,
+   "STU-MED-001_CHUNK_004": 1,
+   "ACAD-POL-003_CHUNK_004": 1
+  },
+  "description": "Within 3 working days of resuming classes, present original hospital records in person at the Medical Verification Desk; Senior CMO audits and issues a Medical Verification Slip, which is uploaded to ResolveDesk."
+ },
+ {
+  "query_id": "H091",
+  "query": "my name is on the debarred list, can't write exams",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "EXAM-NOT-003",
+  "relevant_chunks": [
+   "EXAM-NOT-003_CHUNK_003",
+   "EXAM-NOT-003_CHUNK_002",
+   "EXAM-NOT-003_CHUNK_004",
+   "POL-ATTEND_CHUNK_007"
+  ],
+  "graded_relevance": {
+   "EXAM-NOT-003_CHUNK_003": 3,
+   "EXAM-NOT-003_CHUNK_004": 2,
+   "EXAM-NOT-003_CHUNK_002": 2,
+   "POL-ATTEND_CHUNK_007": 2,
+   "POL-ATTEND_CHUNK_005": 1,
+   "POL-CIE_CHUNK_004": 1,
+   "ACAD-REG-001_CHUNK_003": 1
+  },
+  "description": "Students failing fees/attendance/CIE criteria are placed on the ExamShield detention roster and debarred; clear dues or get condonation forwarded 5 days before SEE; appeals to Dean of Academic Affairs within 3 days."
+ },
+ {
+  "query_id": "H092",
+  "query": "dropping out of college and getting my documents back",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "ADM-POL-004",
+  "relevant_chunks": [
+   "ADM-POL-004_CHUNK_004",
+   "STU-FRM-003_CHUNK_004",
+   "ADM-POL-004_CHUNK_003",
+   "FIN-POL-004_CHUNK_004",
+   "POL-TRANSFER-CERT_CHUNK_002"
+  ],
+  "graded_relevance": {
+   "ADM-POL-004_CHUNK_004": 3,
+   "STU-FRM-003_CHUNK_004": 3,
+   "ADM-POL-004_CHUNK_003": 2,
+   "POL-TRANSFER-CERT_CHUNK_002": 2,
+   "FIN-POL-004_CHUNK_004": 2,
+   "STU-FRM-003_CHUNK_003": 1,
+   "ADM-POL-004_CHUNK_001": 1,
+   "ADM-SOP-001_CHUNK_003": 1
+  },
+  "description": "After withdrawal request and full No-Dues clearance, apply on ERP for TC & Migration (reason: Personal Withdrawal); certificates issued within 7 working days for collection or speed post."
+ },
+ {
+  "query_id": "H093",
+  "query": "fingerprint scanner not marking my attendance",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "IT-SOP-004",
+  "relevant_chunks": [
+   "IT-SOP-004_CHUNK_003",
+   "POL-ATTEND_CHUNK_006"
+  ],
+  "graded_relevance": {
+   "IT-SOP-004_CHUNK_003": 3,
+   "POL-ATTEND_CHUNK_006": 2,
+   "IT-SOP-004_CHUNK_002": 1,
+   "IT-SOP-004_CHUNK_001": 1,
+   "STU-LDR-001_CHUNK_004": 1
+  },
+  "description": "Log an 'Attendance Biometric Glitch' ticket on ResolveDesk within 48 hours with course/date/slot/room; IT audits logs, instructor verifies, HOD/Dean authorize AttendEdge patch."
+ },
+ {
+  "query_id": "H094",
+  "query": "seniors bullying freshers where to complain",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "POL-ANTI-RAGGING",
+  "relevant_chunks": [
+   "POL-ANTI-RAGGING_CHUNK_004",
+   "STU-POL-004_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "POL-ANTI-RAGGING_CHUNK_004": 3,
+   "STU-POL-004_CHUNK_003": 2,
+   "POL-ANTI-RAGGING_CHUNK_002": 1,
+   "POL-ANTI-RAGGING_CHUNK_005": 1,
+   "STU-POL-004_CHUNK_002": 1,
+   "STU-GUI-001_CHUNK_002": 1
+  },
+  "description": "Report ragging 24x7 via Anti-Ragging hotline, anonymous ResolveDesk module, or directly to wardens, security, or Dean of Student Welfare."
+ },
+ {
+  "query_id": "H095",
+  "query": "letter saying i'm currently enrolled for visa application",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "ACAD-SOP-002",
+  "relevant_chunks": [
+   "ACAD-SOP-002_CHUNK_002",
+   "ACAD-SOP-002_CHUNK_003",
+   "POL-BONAFIDE_CHUNK_003",
+   "STU-FRM-001_CHUNK_001"
+  ],
+  "graded_relevance": {
+   "ACAD-SOP-002_CHUNK_002": 3,
+   "ACAD-SOP-002_CHUNK_003": 2,
+   "POL-BONAFIDE_CHUNK_003": 2,
+   "STU-FRM-001_CHUNK_001": 2,
+   "STU-FRM-001_CHUNK_003": 1,
+   "STU-FRM-001_CHUNK_004": 1,
+   "POL-BONAFIDE_CHUNK_002": 1,
+   "ADM-INT-001_CHUNK_003": 1
+  },
+  "description": "Request a bonafide/proof-of-study (Visa/Embassy attestation category, 4-day SLA) via UniCampus ERP > Student Services > Certificates; embossing at Chanakya Bhavan counter if needed."
+ },
+ {
+  "query_id": "H096",
+  "query": "who has the final say in running the university",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "GOV-ACT-001",
+  "relevant_chunks": [
+   "GOV-ACT-001_CHUNK_001",
+   "GOV-ACT-001_CHUNK_003",
+   "GOV-ACT-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "GOV-ACT-001_CHUNK_001": 3,
+   "GOV-ACT-001_CHUNK_004": 2,
+   "GOV-ACT-001_CHUNK_003": 2,
+   "GOV-REG-002_CHUNK_001": 1
+  },
+  "description": "The Executive Council, chaired by the Vice-Chancellor, is the apex executive and governing authority (budgets, statutes, appointments, final appeals)."
+ },
+ {
+  "query_id": "H097",
+  "query": "aptitude prep classes before placement season",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "PLC-TRN-001",
+  "relevant_chunks": [
+   "PLC-TRN-001_CHUNK_003",
+   "PLC-TRN-001_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "PLC-TRN-001_CHUNK_003": 3,
+   "PLC-TRN-001_CHUNK_004": 2,
+   "PLC-TRN-001_CHUNK_001": 1,
+   "PLC-POL-001_CHUNK_002": 1,
+   "PLC-FAQ-001_CHUNK_002": 1
+  },
+  "description": "CDC/CPTD pre-placement training in semesters 5-7 includes Quantitative Aptitude & Logical Reasoning, coding, and soft skills modules; 85% attendance required for placement eligibility."
+ },
+ {
+  "query_id": "H098",
+  "query": "getting my money back if i quit the program",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "FIN-POL-004",
+  "relevant_chunks": [
+   "FIN-POL-004_CHUNK_002",
+   "FIN-POL-004_CHUNK_003",
+   "FIN-POL-004_CHUNK_004"
+  ],
+  "graded_relevance": {
+   "FIN-POL-004_CHUNK_002": 3,
+   "FIN-POL-004_CHUNK_004": 2,
+   "FIN-POL-004_CHUNK_003": 2,
+   "FIN-POL-004_CHUNK_001": 1,
+   "FIN-POL-002_CHUNK_002": 1,
+   "FIN-POL-003_CHUNK_004": 1,
+   "TRANS-SOP-001_CHUNK_004": 1
+  },
+  "description": "Tuition refund tiers by withdrawal timing: 100% minus Rs.1000 (>=15 days before classes), 90%, 80%, 50%, 0% after 30 days; caution deposit fully refundable; NEFT within 14 working days."
+ },
+ {
+  "query_id": "H099",
+  "query": "how often are departments audited for quality",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "IQAC-REV-003",
+  "relevant_chunks": [
+   "IQAC-REV-003_CHUNK_004",
+   "IQAC-REV-003_CHUNK_001"
+  ],
+  "graded_relevance": {
+   "IQAC-REV-003_CHUNK_004": 3,
+   "IQAC-REV-003_CHUNK_001": 2,
+   "IQAC-REV-003_CHUNK_003": 1
+  },
+  "description": "IQAC conducts annual Department Operational Reviews; peer audit teams inspect departments every June and report to the Vice-Chancellor."
+ },
+ {
+  "query_id": "H100",
+  "query": "websites blocked on campus internet",
+  "category": "lexical_diversity",
+  "split": "test",
+  "answerable": true,
+  "tags": [
+   "heldout",
+   "lexical_diversity"
+  ],
+  "target_doc_id": "IT-SEC-003",
+  "relevant_chunks": [
+   "IT-SEC-003_CHUNK_002",
+   "IT-SEC-003_CHUNK_003"
+  ],
+  "graded_relevance": {
+   "IT-SEC-003_CHUNK_002": 3,
+   "IT-SEC-003_CHUNK_003": 2,
+   "IT-SEC-003_CHUNK_001": 1,
+   "IT-POL-003_CHUNK_002": 1,
+   "IT-POL-001_CHUNK_003": 1
+  },
+  "description": "The perimeter gateway blocks malicious, phishing, gambling, P2P torrent and explicit sites; academic exceptions via ResolveDesk 'Firewall Whitelisting Exception' ticket."
+ }
+]

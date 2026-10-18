@@ -8,7 +8,7 @@ evaluation on a fixed query set.
 from __future__ import annotations
 
 import dataclasses
-from typing import Dict, Sequence
+from typing import Dict, List, Sequence
 
 import numpy as np
 
@@ -81,3 +81,21 @@ def paired_comparison(
         p_value=min(p_value, 1.0),
         n=n,
     )
+
+
+def holm_adjust(p_values: Sequence[float]) -> List[float]:
+    """Holm-Bonferroni adjusted p-values, in the input order.
+
+    Use when several comparisons are reported together: an adjusted p below
+    0.05 keeps the family-wise error rate at 5% across all of them. Holm is
+    uniformly more powerful than plain Bonferroni and assumes nothing about
+    dependence between the tests.
+    """
+    m = len(p_values)
+    order = sorted(range(m), key=lambda i: p_values[i])
+    adjusted = [0.0] * m
+    running_max = 0.0
+    for rank, i in enumerate(order):
+        running_max = max(running_max, (m - rank) * p_values[i])
+        adjusted[i] = min(running_max, 1.0)
+    return adjusted

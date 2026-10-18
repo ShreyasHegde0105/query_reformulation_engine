@@ -86,6 +86,7 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
     from reformulation.llm.config import LLMConfig
     from reformulation.reformulator import QueryReformulator
     from reformulation.semantic_similarity import SemanticSimilarity
+    from reformulation.spelling import CorpusSpellCorrector
     from retrieval.bm25_retriever import BM25Retriever
     from retrieval.hybrid_retriever import HybridRetriever
     from retrieval.vector_retriever import VectorRetriever
@@ -110,8 +111,10 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
         reformulator=reformulator,
         semantic_similarity=SemanticSimilarity(embed_fn=encoder.embed_query),
         hybrid_retriever=HybridRetriever(vector_retriever=VectorRetriever(encoder=encoder), keyword_retriever=bm25),
+        spell_corrector=CorpusSpellCorrector.from_chunks_file(),
     )
     info["vector"] = "supabase"
+    info["spelling"] = "corpus"
     info["keyword"] = "bm25"
     return pipeline, answerer, info
 

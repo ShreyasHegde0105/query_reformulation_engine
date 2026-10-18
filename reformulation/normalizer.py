@@ -18,8 +18,10 @@ retrieval and LLM reformulation prompts. Normalization performs the following st
 5. Letter elongation / keystroke repeat normalization:
    - Normalize repeated character runs (e.g. "HOWWWW" → "HOW").
 6. Safe typo correction:
-   - Correct unambiguous typos using a curated domain dictionary (e.g. "las" → "last",
-     "semster" → "semester", "universty" → "university").
+   - Correct unambiguous typos using a curated dictionary of common English
+     misspellings (e.g. "las" → "last", "semster" → "semester").
+   - Optionally (``spell_corrector=``), correct other unknown words to a word of the
+     indexed corpus (see :mod:`reformulation.spelling`).
 7. Safe domain abbreviation expansion:
    - Expand safe, unambiguous abbreviations (e.g. "sem" → "semester", "prof" → "professor",
      "dept" → "department").
@@ -47,7 +49,10 @@ Design constraints
 from __future__ import annotations
 
 import re
-from typing import Any
+from typing import TYPE_CHECKING, Any, Optional
+
+if TYPE_CHECKING:
+    from .spelling import CorpusSpellCorrector
 
 # ---------------------------------------------------------------------------
 # Internal data tables
@@ -165,10 +170,6 @@ _TYPO_MAP: dict[str, str] = {
     "elgibility":   "eligibility",
     "requirment":   "requirement",
     "requriment":   "requirement",
-    "reqmnt":       "requirement",
-    "allotmnt":     "allotment",
-    "revalution":   "revaluation",
-    "attendence":   "attendance",
 }
 
 # Tokens with known canonical casing: UPPERCASE(token) → canonical form.
@@ -480,7 +481,12 @@ def _split_token(token: str, query_has_balanced_paren: bool) -> tuple[str, str, 
     return prefix, core, possessive, suffix
 
 
-def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
+def _classify_core(
+    core: str,
+    is_first: bool,
+    is_noisy: bool,
+    spell_corrector: Optional["CorpusSpellCorrector"] = None,
+) -> str:
     """Return the normalised canonical form of a single token core.
 
     Evaluated in priority order:
@@ -530,6 +536,22 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
         upper = low.upper()
         core = low
 
+    # 2b. Corpus spelling correction for unknown ordinary words. Acronyms and
+    # mid-sentence Title-Case words (likely names) are left alone.
+    looks_ordinary = core.islower() or is_noisy or (is_first and core[1:].islower())
+    if (
+        spell_corrector is not None
+        and looks_ordinary
+        and core.isalpha()
+        and low not in _COMMON_WORDS
+        and upper not in _PRESERVED_BY_UPPER
+    ):
+        corrected = spell_corrector.correct(low)
+        if corrected:
+            low = corrected
+            upper = low.upper()
+            core = low
+
     # 3. Pronoun "I" and contractions
     if low == "i":
         return "I"
@@ -554,7 +576,9 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
     # 7. Slash-separated entities (e.g. AI/ML, 2025/26)
     if "/" in core:
         parts = core.split("/")
-        classified_parts = [_classify_core(p, is_first=False, is_noisy=is_noisy) for p in parts]
+        classified_parts = [
+            _classify_core(p, is_first=False, is_noisy=is_noisy, spell_corrector=spell_corrector) for p in parts
+        ]
         return "/".join(classified_parts)
 
     # 8. Known / legitimate CamelCase identifiers (e.g. GitHub, GitLab, YouTube, DevOps)
@@ -595,7 +619,7 @@ def _classify_core(core: str, is_first: bool, is_noisy: bool) -> str:
 # Public API
 # ---------------------------------------------------------------------------
 
-def normalize_query(query: Any) -> str:
+def normalize_query(query: Any, spell_corrector: Optional["CorpusSpellCorrector"] = None) -> str:
     """Return a cleaned, canonical version of *query*.
 
     The function applies a deterministic, conservative set of normalisation
@@ -619,6 +643,9 @@ def normalize_query(query: Any) -> str:
     ----------
     query:
         The raw user input string.
+    spell_corrector:
+        Optional corpus spelling corrector; when given, unknown ordinary words are
+        corrected to words of the indexed corpus.
 
     Returns
     -------
@@ -667,7 +694,7 @@ def normalize_query(query: Any) -> str:
     result_tokens: list[str] = []
     for idx, token in enumerate(tokens):
         prefix, core, possessive, suffix = _split_token(token, has_balanced_paren)
-        norm_core = _classify_core(core, is_first=(idx == 0), is_noisy=is_noisy)
+        norm_core = _classify_core(core, is_first=(idx == 0), is_noisy=is_noisy, spell_corrector=spell_corrector)
         if norm_core:
             result_tokens.append(prefix + norm_core + possessive + suffix)
 
