@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University Document Search</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1f2937; --muted: #6b7280; --border: #e5e7eb;
+    --accent: #2563eb; --accent-soft: #dbeafe; --bar-bg: #eef2f7;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 6px; text-align: center; }
+  .tagline { text-align: center; color: var(--muted); margin: 0 0 28px; }
+  form { display: flex; gap: 10px; }
+  input[type=search] { flex: 1; min-width: 0; font-size: 18px; padding: 14px 18px; border-radius: 999px;
+         border: 1px solid #cbd5e1; background: var(--card); outline: none; color: var(--text); }
+  input[type=search]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  button { font-size: 16px; font-weight: 600; padding: 0 26px; border: 0; border-radius: 999px;
+           background: var(--accent); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: default; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 16px 0 0; }
+  .chips span { font-size: 13px; color: var(--muted); align-self: center; }
+  .chip { font-size: 13px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border);
+          background: var(--card); color: var(--text); cursor: pointer; }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .status { margin: 28px 0 12px; color: var(--muted); font-size: 14px; min-height: 20px; }
+  .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid #cbd5e1;
+             border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite;
+             vertical-align: -2px; margin-right: 8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .result { background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+            padding: 18px 20px; margin-bottom: 12px; }
+  .head { display: flex; gap: 14px; align-items: flex-start; }
+  .rank { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+          font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .titles { flex: 1; min-width: 0; }
+  .title { font-size: 18px; font-weight: 650; margin: 3px 0 2px; }
+  .section { font-size: 14px; color: var(--muted); }
+  .score { flex: 0 0 150px; text-align: right; }
+  .score .pct { font-size: 15px; font-weight: 650; }
+  .score .raw { font-size: 12px; color: var(--muted); }
+  .bar { height: 6px; background: var(--bar-bg); border-radius: 999px; margin: 5px 0 3px; overflow: hidden; }
+  .bar div { height: 100%; background: var(--accent); border-radius: 999px; }
+  .text { margin: 12px 0 0 44px; font-size: 15px; line-height: 1.5; color: #374151; white-space: pre-line;
+          display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+  .text.open { -webkit-line-clamp: unset; display: block; }
+  .meta { margin: 8px 0 0 44px; font-size: 12px; color: var(--muted); }
+  .note { font-size: 12px; color: var(--muted); text-align: center; margin-top: 20px; }
+  @media (max-width: 600px) {
+    .head { flex-wrap: wrap; }
+    .score { flex-basis: 100%; text-align: left; margin-left: 44px; }
+    .text, .meta { margin-left: 0; }
+    button { padding: 0 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>University Document Search</h1>
+  <p class="tagline">Search policies, procedures and guides across all departments.</p>
+  <form id="form">
+    <input id="q" type="search" placeholder="e.g. sem fees payment schedule" autocomplete="off" autofocus>
+    <button id="go" type="submit">Search</button>
+  </form>
+  <div class="chips" id="chips"></div>
+  <div class="status" id="status"></div>
+  <div id="results"></div>
+  <p class="note" id="note" hidden>Score: match strength relative to the top result (100%). Small number: the raw ranking score.</p>
+</div>
+<script>
+  const $ = (id) => document.getElementById(id);
+
+  function esc(s) {
+    return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  async function loadSuggestions() {
+    try {
+      const res = await fetch("/api/suggestions");
+      const list = await res.json();
+      $("chips").innerHTML = "<span>Try:</span>" +
+        list.map((q) => `<button type="button" class="chip">${esc(q)}</button>`).join("");
+      $("chips").querySelectorAll(".chip").forEach((b) =>
+        b.addEventListener("click", () => { $("q").value = b.textContent; search(); }));
+    } catch (e) { /* suggestions are optional */ }
+  }
+
+  // Chunks start with their own section heading; drop it, since the card shows the section already.
+  function body(r) {
+    const text = String(r.text || "").trim();
+    return r.section && text.startsWith(r.section) ? text.slice(r.section.length).trim() : text;
+  }
+
+  function render(data) {
+    if (!data.results.length) {
+      $("status").textContent = "No matching documents found.";
+      $("results").innerHTML = "";
+      $("note").hidden = true;
+      return;
+    }
+    $("status").textContent = `Top ${data.results.length} results for “${data.query}”`;
+    $("results").innerHTML = data.results.map((r) => `
+      <div class="result">
+        <div class="head">
+          <div class="rank">${r.rank}</div>
+          <div class="titles">
+            <div class="title">${esc(r.title)}</div>
+            ${r.section ? `<div class="section">${esc(r.section)}</div>` : ""}
+          </div>
+          <div class="score">
+            <div class="pct">${r.relative}% match</div>
+            <div class="bar"><div style="width:${Math.max(2, r.relative)}%"></div></div>
+            <div class="raw">score ${r.score.toFixed(4)}</div>
+          </div>
+        </div>
+        <div class="text" title="Click to expand">${esc(body(r))}</div>
+        <div class="meta">${esc(r.document_id)} · ${esc(r.chunk_id)}</div>
+      </div>`).join("");
+    $("results").querySelectorAll(".text").forEach((t) =>
+      t.addEventListener("click", () => t.classList.toggle("open")));
+    $("note").hidden = false;
+  }
+
+  async function search() {
+    const query = $("q").value.trim();
+    if (!query) return;
+    $("go").disabled = true;
+    $("status").innerHTML = '<span class="spinner"></span>Searching…';
+    $("results").innerHTML = "";
+    $("note").hidden = true;
+    try {
+      const res = await fetch("/api/search", {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query }),
+      });
+      const data = await res.json();
+      if (!res.ok) { $("status").textContent = data.detail || "Search failed."; return; }
+      render(data);
+    } catch (e) {
+      $("status").textContent = "Could not reach the search server.";
+    } finally {
+      $("go").disabled = false;
+    }
+  }
+
+  $("form").addEventListener("submit", (e) => { e.preventDefault(); search(); });
+  loadSuggestions();
+  // Optional ?q=... runs a search on load (handy for bookmarks during a presentation).
+  const initial = new URLSearchParams(location.search).get("q");
+  if (initial) { $("q").value = initial; search(); }
+</script>
+</body>
+</html>

@@ -154,6 +154,9 @@ class PresentationDemo:
             except Exception as e:
                 print(f"Warning: Could not load reformulation cache: {e}")
 
+        # Live LLM rewrites from this session, so repeating a query does not use quota again.
+        self._live_reformulations: Dict[str, List[str]] = {}
+
         print("Components ready.\n")
 
     def find_ground_truth(self, query: str, golden_id: Optional[str] = None) -> Optional[Dict[str, Any]]:
@@ -304,8 +307,12 @@ class PresentationDemo:
             print(f"         {new_rel} judged-relevant chunk(s) gained, {lost_rel} judged-relevant chunk(s) lost")
         print()
 
-    def execute_demo_query(self, query: str, golden_id: Optional[str] = None) -> None:
-        """Run the full presentation flow for a single query."""
+    def execute_demo_query(self, query: str, golden_id: Optional[str] = None) -> List[RetrievedChunk]:
+        """Run the full presentation flow for a single query.
+
+        Prints every step and returns the reformulated pipeline's ranked results
+        (used by ``demo_server.py`` to show them in the browser).
+        """
         gt = self.find_ground_truth(query, golden_id)
         if gt and not golden_id:
             golden_id = gt.get("query_id")
@@ -357,11 +364,17 @@ class PresentationDemo:
         print()
 
         reformulations: List[str] = []
+        live_key = normalized.strip().lower()
         if self.use_cache and golden_id and golden_id in self.reformulation_cache:
             reformulations = self.reformulation_cache[golden_id][:5]
+            print(f"  [i] Saved benchmark reformulations for {golden_id} (no LLM call):")
+        elif live_key in self._live_reformulations:
+            reformulations = self._live_reformulations[live_key]
+            print("  [i] Reusing this session's LLM reformulations (no new LLM call):")
         else:
             try:
                 reformulations = self.reformulator.generate_variants(query, max_variants=5)
+                self._live_reformulations[live_key] = reformulations
             except Exception as e:
                 # Graceful fallback to pre-generated benchmark cache if live LLM rate-limits or fails
                 if golden_id and golden_id in self.reformulation_cache:
@@ -703,6 +716,8 @@ class PresentationDemo:
             print("    (best fusion: Recall@10 0.85 vs 0.87 RRF) at ~7.5s per query.")
             print("  • Conclusion: left off by default; available for demos via --enable-ce.")
         print()
+
+        return reform_results
 
     def run(self) -> None:
         """Run interactive presentation loop."""
