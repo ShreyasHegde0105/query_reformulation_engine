@@ -821,6 +821,1335 @@
    "Filing taxes as independent contractor 1099 compared to s corporation",
    "Sole proprietor 1099 vs S-corp tax classification",
    "Tax filing differences 1099 independent contractor and s corporation"
+  ],
+  "1281": [
+   "FTB IRS amended tax return audit process reliability",
+   "How state and federal tax agencies detect errors in amended returns",
+   "Accuracy of FTB and IRS error detection for amended returns",
+   "Amended return discrepancy detection FTB IRS"
+  ],
+  "3837": [
+   "Roth IRA account opening fee structure Vanguard Scottrade tiaa-cref",
+   "Compare Roth IRA fees Vanguard Scottrade tiaa-cref",
+   "Vanguard Scottrade tiaa-cref Roth IRA account costs and fees",
+   "Roth IRA opening fees Vanguard vs Scottrade vs tiaa-cref"
+  ],
+  "8592": [
+   "ISO exercise and sell same day tax consequences",
+   "Tax impact of cashless ISO exercise and hold",
+   "Incentive stock option pyramiding tax rules",
+   "Exercising isos with ISO stock proceeds taxation"
+  ],
+  "10547": [
+   "Brokerage exchange trade fees cost",
+   "Exchange transaction fees paid by brokers",
+   "Broker per trade exchange pricing",
+   "Exchanges trading fees broker charges"
+  ],
+  "5231": [
+   "Public companies IPO date CSV JSON dataset",
+   "Download public company IPO list JSON CSV",
+   "Publicly traded companies IPO schedule data source",
+   "IPO date data for public companies file format CSV JSON",
+   "API dataset publicly traded companies IPO dates"
+  ],
+  "7674": [
+   "How to set limit price limit order",
+   "Limit order price selection",
+   "Determining limit order price level",
+   "Setting price for limit order"
+  ],
+  "3103": [
+   "AVS address verification system credit debit cards location process",
+   "How and where AVS works for credit and debit cards",
+   "Address verification system AVS debit credit card implementation",
+   "AVS card processing workflow location and usage"
+  ],
+  "10137": [
+   "F-1 visa foreign market investing rules",
+   "Non-resident alien F-1 stock trading international",
+   "F-1 student international investment regulations",
+   "Can F-1 visa holders invest overseas"
+  ],
+  "1415": [
+   "VAT registration non-registered supplier purchasing prices inclusive or exclusive",
+   "Do non VAT registered businesses buy excluding or including VAT",
+   "Purchasing from suppliers without VAT registration price tax inclusive",
+   "VAT treatment for non registered business purchases supplier pricing"
+  ],
+  "5940": [
+   "Private company investment process",
+   "How to invest in private companies",
+   "Private equity investment mechanics",
+   "Investing in private firms workflow",
+   "Private company funding process"
+  ],
+  "6612": [
+   "Renting vs buying with high debt in a rising housing market",
+   "Rolling unsecured debt into a mortgage vs paying off debt while renting",
+   "Debt consolidation mortgage vs rent and pay off debt housing market appreciation",
+   "Financial strategy high debt rising home prices rent or buy",
+   "Should I buy a house and roll in debt or rent while paying down debt"
+  ],
+  "945": [
+   "Us company employee living in France tax obligation",
+   "Working remotely from France for us employer taxes",
+   "France tax residency us remote worker",
+   "Foreign employer remote work France tax liability",
+   "Us remote employment French tax rules"
+  ],
+  "2549": [
+   "Market year over year chart Dow Jones Index",
+   "Visualize YoY market data Dow Jones",
+   "Plot annual market trends Dow Jones Index",
+   "Year over year market comparison graph",
+   "Dow Jones Index YoY performance plot"
+  ],
+  "4714": [
+   "Personal finance app reviewed transactions flag",
+   "Budgeting software mark transactions reviewed status",
+   "Finance app transaction review feature",
+   "Track personal expenses tag transactions reviewed"
+  ],
+  "588": [
+   "0% yield bond investment rationale",
+   "Why buy zero yield bonds",
+   "Benefits of negative or zero yield bonds",
+   "Zero coupon bond purchase reasons",
+   "Investing in zero percent yield bonds"
+  ],
+  "4233": [
+   "Personal finance classes high school availability",
+   "High school money management courses taught where",
+   "Are personal finance classes required in high schools",
+   "High school personal finance curriculum availability",
+   "Money management education in high schools"
+  ],
+  "6441": [
+   "Trading with settled and unsettled funds t+3",
+   "T+3 trading settled unsettled cash",
+   "Settled vs unsettled funds trade execution t+3",
+   "T+3 settlement cycle settled funds trading"
+  ],
+  "8456": [
+   "Unvested stock treatment acquisition",
+   "What happens to unvested equity in m&a",
+   "Acquisition unvested shares fate",
+   "Unvested stock options corporate buyout",
+   "Unvested equity handling merger"
+  ],
+  "10213": [
+   "Best investment vehicles seasonal work savings",
+   "Seasonal income savings investment options",
+   "Financial products seasonal employment savings",
+   "Investment accounts for seasonal workers",
+   "Saving strategies for seasonal income"
+  ],
+  "106": [
+   "Small business pricing methods",
+   "How to price a small business",
+   "Pricing strategies for small businesses",
+   "Small business valuation and pricing approaches"
+  ],
+  "4306": [
+   "Currency market mechanics exchange rate drivers",
+   "How foreign exchange markets work currency valuation factors",
+   "Factors influencing currency price fluctuations forex",
+   "Foreign exchange market operation and currency appreciation depreciation causes"
+  ],
+  "5196": [
+   "Credit card convenience check considerations",
+   "Convenience check pros cons risks",
+   "Using credit card convenience checks fees terms",
+   "Convenience check financial implications"
+  ],
+  "3006": [
+   "Child future savings strategies college fund",
+   "How to save money for child education college",
+   "Children savings plans investment strategies",
+   "Saving for kids college education guide",
+   "Junior savings account and college planning"
+  ],
+  "7205": [
+   "Historical option prices",
+   "View past option quotes",
+   "Historical options data access",
+   "Retrieve past option pricing"
+  ],
+  "3909": [
+   "Negative interest rate account funds protection",
+   "How to avoid negative interest charges on deposits",
+   "Managing money during negative interest rates",
+   "Preventing wealth loss from negative interest"
+  ],
+  "4116": [
+   "Sovereign default effects symbolic impact",
+   "Nation default consequences symbolic economic",
+   "Anticipated national default economic versus symbolic effects",
+   "Impact of sovereign debt default symbolic significance"
+  ],
+  "4942": [
+   "ETF holdings list",
+   "Fund portfolio composition",
+   "Public fund stock breakdown",
+   "Mutual fund holdings report",
+   "Equity fund asset allocation"
+  ],
+  "6907": [
+   "Par value of shares",
+   "Nominal share value",
+   "Face value of stock",
+   "Share nominal price",
+   "Nominal value per share"
+  ],
+  "5464": [
+   "Buying rental properties guide",
+   "How to purchase investment property resources",
+   "Real estate rental acquisition documentation",
+   "Rental property purchase materials",
+   "Investing in rental properties guide"
+  ],
+  "2385": [
+   "Director self billing company",
+   "Invoicing own company as director",
+   "Director invoicing self owned business",
+   "Can a director invoice their own company"
+  ],
+  "691": [
+   "Categorize credit card payments",
+   "Credit card transaction categorization guide",
+   "How to classify credit card charges",
+   "Payment categorization methods credit card",
+   "Categorizing credit card expenses"
+  ],
+  "3177": [
+   "Vanguard ETF compared to mutual fund",
+   "Vanguard exchange traded fund vs mutual fund differences",
+   "Vanguard mutual funds versus etfs",
+   "Compare Vanguard ETF and mutual fund"
+  ],
+  "10034": [
+   "Us tax implications of holding EWU UK etfs",
+   "UK ETF tax treatment us citizen investor",
+   "EWU holding tax rules us resident",
+   "Us tax on UK etfs like EWU"
+  ],
+  "5090": [
+   "Student loan undergraduate studies France",
+   "Financing bachelor degree France student loan",
+   "Borrowing money for undergraduate university in France",
+   "French undergraduate studies student loan options"
+  ],
+  "2088": [
+   "Sell stock in private company",
+   "Privately held company shares liquidation",
+   "How to sell privately held stock",
+   "Selling shares of a private corporation"
+  ],
+  "9391": [
+   "Replace bonds passive investment strategy",
+   "Bonds replacement passive portfolio",
+   "Switching bonds in passive investing",
+   "Should I sell bonds passive strategy",
+   "Modifying bond allocation passive portfolio"
+  ],
+  "529": [
+   "Sole proprietorship vs LLC",
+   "Difference between sole proprietorship and LLC",
+   "Choosing sole proprietorship or LLC",
+   "Sole proprietorship versus LLC comparison"
+  ],
+  "2118": [
+   "Argentina 2001 banking crisis bank closures",
+   "Argentina 2001 economic crisis bank holidays restrictions",
+   "Corralito Argentina 2001 bank shutdown details",
+   "Were all banks closed in Argentina 2001 crisis",
+   "Argentina 2001 financial sector collapse bank access"
+  ],
+  "3148": [
+   "Car dealership refuse copy of contract balance details rights",
+   "Auto manufacturer withhold financing contract balance statement legal",
+   "Dealership denied my request for vehicle purchase contract and balance",
+   "Can auto finance company deny access to contract and payoff balance"
+  ],
+  "4955": [
+   "Bond valuation yield to maturity formula",
+   "Calculate bond price given yield percentage",
+   "Pricing a bond to yield x percent",
+   "How to determine bond value from yield",
+   "Bond price calculation yield"
+  ],
+  "8275": [
+   "Stock exchange buying and selling prices matching buyer seller",
+   "Do bid ask prices at stock exchange represent active buyers and sellers",
+   "Stock market buy sell price execution mechanism",
+   "Understanding stock exchange transaction prices buyer seller matching"
+  ],
+  "4678": [
+   "Finance, Cash, or Lease options",
+   "Financing vs cash vs lease",
+   "Buying financing leasing comparison",
+   "Cash purchase finance lease differences"
+  ],
+  "2398": [
+   "Landlord disputes",
+   "Tenant landlord issues",
+   "Difficult tenant resolution",
+   "Landlord complaints",
+   "Property management problems"
+  ],
+  "3569": [
+   "Unclaimed funds closed bank account government escheatment",
+   "Money in closed account transferred to state government",
+   "Government seizure of funds from closed bank account",
+   "Closed bank account balance sent to government"
+  ],
+  "8072": [
+   "Sell on ask sell on bid meaning stocks",
+   "Definition sell on ask sell on bid stock market",
+   "What is selling on the ask and selling on the bid",
+   "Stock trading sell on ask vs sell on bid"
+  ],
+  "7734": [
+   "Comparing stock PE ratio to other asset classes",
+   "Pe ratio comparison alternative investments",
+   "Can price to earnings ratio be used for other investments",
+   "Pe ratio cross asset comparison"
+  ],
+  "8947": [
+   "Roth IRA as emergency savings account",
+   "Using Roth IRA for savings",
+   "Roth IRA withdrawal rules for savings",
+   "Can you treat a Roth IRA like a savings account"
+  ],
+  "6746": [
+   "Margin call brokerage account stock price drop",
+   "Maintenance margin violation consequences falling stock value",
+   "What happens when margin equity falls below requirement",
+   "Brokerage margin shortfall liquidation process"
+  ],
+  "5511": [
+   "Pay off car loan in full vs leaving small balance",
+   "Should I pay off auto loan completely or leave nominal balance",
+   "Car loan early payoff $1 remaining pros cons",
+   "Fully paying off vehicle loan vs keeping account open"
+  ],
+  "6009": [
+   "Low volume stock price movement causes",
+   "Why low trading volume impacts stock price volatility",
+   "Low liquidity stock price volatility explanation",
+   "Factors causing large price changes on low volume"
+  ],
+  "813": [
+   "Income Tax and Investment Planning",
+   "Taxation and Investments",
+   "Investment Income Tax Guide",
+   "Tax on Investments"
+  ],
+  "8834": [
+   "Advantages and disadvantages of purchasing discounted company stock",
+   "Employee stock purchase plan pros and cons",
+   "Benefits and risks of buying discounted employer shares",
+   "Buying discounted company stock evaluation"
+  ],
+  "1157": [
+   "Shopify PayPal shop personal tax filing",
+   "Personal income tax Shopify PayPal store",
+   "Tax obligations personal Shopify PayPal business",
+   "Reporting personal taxes Shopify PayPal ecommerce"
+  ],
+  "988": [
+   "Savings investment options",
+   "Best places to invest savings",
+   "Investment strategies for savings",
+   "Where to invest personal savings",
+   "Portfolio allocation for savings"
+  ],
+  "3369": [
+   "401k employer match contribution limit rationale",
+   "Maximizing 401k up to employer match benefits",
+   "Reasons to limit 401k contributions to employer match",
+   "401k investing strategy employer match threshold"
+  ],
+  "9296": [
+   "Etfs tracking identical indexes different returns causes",
+   "Why identical index etfs have different performance",
+   "Reasons for tracking difference in identical index etfs",
+   "Same index etfs performance divergence factors",
+   "Identical benchmark ETF return discrepancies"
+  ],
+  "9643": [
+   "Public ETF holdings data",
+   "How to find ETF portfolio holdings publicly",
+   "ETF constituent data availability",
+   "Lookup ETF holdings public sources"
+  ],
+  "9245": [
+   "Stock options cash and stock buyout treatment",
+   "Employee stock options corporate acquisition cash stock deal",
+   "Merger and acquisition stock options cash stock consideration",
+   "How stock options are handled in cash and stock acquisition",
+   "Unvested stock options cash stock buyout"
+  ],
+  "3490": [
+   "Stock sale tax withholding",
+   "Equity sale tax withholding rules",
+   "Withholding tax on stock sale",
+   "Selling stock tax withholding requirements"
+  ],
+  "5763": [
+   "Estimate home value before refinancing",
+   "How to get preliminary home appraisal refinance",
+   "Rough property valuation pre refinance",
+   "Informal home appraisal methods refinance"
+  ],
+  "26": [
+   "How to apply for business credit",
+   "Business credit application process",
+   "Obtaining business credit",
+   "Apply receive corporate credit"
+  ],
+  "4962": [
+   "Net Cash Flows bond sale and investment",
+   "Cash flows from bond disposal and investment activities",
+   "Net cash inflow outflow bond sale investment",
+   "Bond selling and investing net cash flow"
+  ],
+  "4846": [
+   "CNN Fear and Greed Index alternative",
+   "Market sentiment indicator like Fear and Greed",
+   "Comparable stock market sentiment indices",
+   "Equivalent to CNN Fear and Greed Index"
+  ],
+  "2460": [
+   "Notice period non-compliance consequences",
+   "Breach of notice period penalties quitting job",
+   "Failing to work notice period legal implications",
+   "Resignation notice period violation outcomes"
+  ],
+  "9403": [
+   "Abundance of Cash investment strategies",
+   "Managing excess cash financial guidance",
+   "What to do with surplus cash",
+   "Corporate cash surplus management options"
+  ],
+  "5646": [
+   "Multiple credit monitoring services necessity",
+   "Do you need more than one credit monitoring service",
+   "Comparing multiple credit monitoring services",
+   "How many credit monitoring services required"
+  ],
+  "3503": [
+   "Lower leverage higher return rental property",
+   "Less debt better ROI real estate investing",
+   "Reduced leverage rental property returns analysis",
+   "Equity vs debt return on rental property"
+  ],
+  "2676": [
+   "Car sale tax implications",
+   "Selling a vehicle taxes",
+   "Tax rules for selling a car",
+   "Income tax car sale"
+  ],
+  "929": [
+   "Freelancer second bank account",
+   "Business bank account separate personal freelancer",
+   "Should freelancers open another bank account",
+   "Freelancing separate finances bank accounts"
+  ],
+  "5993": [
+   "Debt payoff strategies alternative to highest interest",
+   "Debt snowball vs debt avalanche method rationale",
+   "Reasons for paying off low interest debt first",
+   "Psychological benefits of debt repayment methods"
+  ],
+  "10845": [
+   "MACD 12 26 9 parameters rationale",
+   "Why use 12 26 9 for MACD calculation",
+   "MACD indicator standard periods 12 26 9 origin",
+   "Reasoning behind MACD 12 26 9 settings"
+  ],
+  "8116": [
+   "A-b-c class Shares difference",
+   "Compare a b c class shares",
+   "Class a class b class c shares comparison",
+   "Differences between A-b-c class shares"
+  ],
+  "9633": [
+   "Stock market education video recommendations",
+   "Learning stock market trading video resources",
+   "Educational videos for investing and stocks",
+   "Stock market tutorial video suggestions"
+  ],
+  "5710": [
+   "Investment bucketing individual growth tracking",
+   "Track portfolio growth by investment buckets",
+   "Segmented investment tracking individual performance",
+   "Asset bucketing growth monitoring",
+   "Categorizing investments for individual growth analysis"
+  ],
+  "9824": [
+   "Corporate bonds end-of-day data download",
+   "Download EOD corporate bond pricing data",
+   "Corporate bond historical daily data source",
+   "EOD data feed for corporate bonds",
+   "Where to download corporate bond EOD prices"
+  ],
+  "7529": [
+   "Fund-of-funds expense ratio underlying holdings fees included",
+   "Do fund of funds expense ratios cover portfolio holdings",
+   "Fund of funds total expense ratio calculation holdings",
+   "Fee structure fund of funds underlying fund expenses"
+  ],
+  "475": [
+   "LLC hiring employees new EIN requirement",
+   "Do I need a new EIN when hiring employees for LLC",
+   "EIN requirements LLC with employees",
+   "Employer identification number LLC new employees"
+  ],
+  "5021": [
+   "Customizable stock chart service color selection multi-stock comparison",
+   "Flexible stock charting tool custom colors multiple stocks",
+   "Stock comparison chart API customizable color themes",
+   "Financial charting service configurable series colors comparison"
+  ],
+  "9548": [
+   "Roth IRA mutual fund selection guide",
+   "How to research and analyze mutual funds for Roth IRA",
+   "Choosing mutual funds for Roth IRA accounts",
+   "Roth IRA fund analysis and evaluation"
+  ],
+  "7592": [
+   "Debit credit liabilities FAQ",
+   "Accounting debit credit liabilities guide",
+   "Understanding debits credits liabilities",
+   "Debit and credit rules liabilities"
+  ],
+  "2968": [
+   "HSA retirement savings prioritization",
+   "Maximizing retirement contributions in health savings account",
+   "HSA vs retirement account priority",
+   "Using HSA for retirement investing strategy"
+  ],
+  "7758": [
+   "Index fund bid ask spreads",
+   "Index fund liquidity bid ask spread",
+   "Trading costs index funds spread",
+   "Etf and index fund bid ask pricing"
+  ],
+  "3612": [
+   "Day trading stocks",
+   "How to buy and sell stock same day",
+   "Day trading rules and execution",
+   "Same day stock transactions"
+  ],
+  "10596": [
+   "Market maker buy sell bid ask price",
+   "Do market makers trade at bid or ask",
+   "Market maker pricing bid vs ask",
+   "Market maker transaction price bid ask"
+  ],
+  "4153": [
+   "Investing in emerging markets guide",
+   "Emerging market investment options",
+   "How to buy emerging market assets",
+   "Emerging markets portfolio allocation"
+  ],
+  "4409": [
+   "Risks of being added to a house deed purchase",
+   "Liability of putting name on mortgage or title for someone else",
+   "Co-buying property risks guarantor co-signer",
+   "Legal and financial implications of adding another person to home purchase"
+  ],
+  "5369": [
+   "Credit card paying off balance immediately credit score impact",
+   "Does paying credit card before statement close help credit rating",
+   "Paying off credit purchases right away effect on credit score",
+   "Rapidly paying off credit card balances credit bureau reporting",
+   "Micro-payments credit card credit utilization score effect"
+  ],
+  "2070": [
+   "Credit union vs national bank advantages",
+   "Benefits of local community banks vs BOA Chase",
+   "Credit union advantages over nationwide banks",
+   "Community bank vs large commercial bank comparison",
+   "Why choose credit union over big bank"
+  ],
+  "5505": [
+   "Deduct medical loan interest and fees",
+   "Qualified medical expenses loan interest deduction",
+   "Tax deduction for loan interest medical expenses",
+   "Are medical loan fees and interest tax deductible"
+  ],
+  "6611": [
+   "Vanguard Target Retirement Funds asset allocation methodology",
+   "How Vanguard determines optimal asset allocation for Target Retirement Funds",
+   "Vanguard Target Retirement Fund portfolio construction process",
+   "Optimal asset allocation strategy Vanguard Target Retirement"
+  ],
+  "11039": [
+   "Credit card debt vs employer 401k match priority",
+   "Should I pay off credit card or contribute to 401k",
+   "Paying off high interest debt vs 401k employer match",
+   "401k match vs paying debt financial strategy"
+  ],
+  "5460": [
+   "Loan refinancing lower interest rate",
+   "Refinance loan better rate",
+   "Consolidate loan for lower interest",
+   "Pay off loan with new loan"
+  ],
+  "7925": [
+   "Selling stock immediately settlement rules",
+   "Can I sell shares right away",
+   "Stock sale timing settlement period",
+   "Immediate stock liquidation rules",
+   "Same day stock sale execution"
+  ],
+  "4286": [
+   "Invest the REST buy term insurance and invest the difference strategy",
+   "Buy term and invest the difference portfolio allocation",
+   "How to invest the REST after buying term life insurance",
+   "Buy term insurance invest the REST investment options",
+   "Buy term and invest the REST guide"
+  ],
+  "3789": [
+   "Owner Occupancy Affidavit workarounds purchasing second home within year",
+   "How to bypass Owner Occupancy Affidavit for multiple home purchases",
+   "Owner Occupancy Affidavit exception buy another house early",
+   "Financing another home before Owner Occupancy Affidavit period expires"
+  ],
+  "5228": [
+   "IRS bank transfer 14000 gift vs loan detection",
+   "How banks report transfers over 14k gift or repayment",
+   "IRS rules bank deposit over reporting threshold gift loan",
+   "Distinguish gift from loan bank transfer 14k audit"
+  ],
+  "2685": [
+   "Ways to earn extra income",
+   "Side hustle ideas",
+   "How to make extra money",
+   "Part time income opportunities",
+   "Additional revenue sources"
+  ],
+  "8702": [
+   "Early exercise ITM option disadvantages",
+   "Reasons not to exercise in the money option early",
+   "Optimal stopping early exercise ITM options rationale",
+   "Why avoid early exercise of American options in the money"
+  ],
+  "1877": [
+   "Sole proprietor solo 401k employer contributions gross income",
+   "Do solo 401k contributions reduce gross income self employed",
+   "Solo 401k employer contribution tax deduction sole proprietorship",
+   "Are solo 401k contributions considered income for sole proprietors"
+  ],
+  "10645": [
+   "Retirement portfolio rebalancing details and benefits",
+   "How to rebalance retirement portfolio advantages",
+   "Benefits of rebalancing retirement accounts",
+   "Retirement portfolio rebalancing guide",
+   "Rebalancing retirement investments pros and mechanics"
+  ],
+  "1090": [
+   "Formula for monthly payments with reinvested returns at time t",
+   "Calculate monthly annuity payment reinvestment formula",
+   "Reinvestment return periodic payment formula time t",
+   "Formula future value monthly payments reinvestment",
+   "Monthly payment calculation with reinvestment rate"
+  ],
+  "7080": [
+   "Wash sale rule dividend reinvestment plan",
+   "Dividend reinvestment DRIP wash sale implications",
+   "Tax wash sale rule automatic dividend reinvestment",
+   "Wash sale rule mutual fund dividend reinvestment"
+  ],
+  "6122": [
+   "Renting condo to daughter vs adding to title",
+   "Tax implications renting to family member vs co-ownership",
+   "Transfer title to child or lease property",
+   "Renting property to relative vs putting child on deed"
+  ],
+  "3682": [
+   "Short sale lender motivation",
+   "Why lenders lend shares for short selling",
+   "Reasons for securities lending in short selling",
+   "Lender incentives short selling",
+   "Short selling stock lending rationale"
+  ],
+  "4514": [
+   "Intrinsic non-monetary value of gold commodity",
+   "Gold commodity non monetary intrinsic value",
+   "Gold intrinsic value independent of monetary use",
+   "Commodity gold non-monetary worth"
+  ],
+  "8507": [
+   "Stock selling criteria",
+   "When to exit a stock position",
+   "Stock sale timing",
+   "Indicators to sell a stock",
+   "Best time to sell stocks"
+  ],
+  "6221": [
+   "Student loan payoff strategy lump sum vs extra monthly payments",
+   "How to pay off student loans faster lump sum or monthly",
+   "Student loan extra monthly payment compared to lump sum",
+   "Pay off student loan early savings strategy"
+  ],
+  "1819": [
+   "Un-cashed paycheck expiration validity period",
+   "What to do with expired uncashed paycheck",
+   "Paycheck check validity duration and replacement",
+   "Stale-dated paycheck rules and options"
+  ],
+  "6468": [
+   "Deep in the money options low liquidity causes",
+   "ITM options low trading volume reasons",
+   "Liquidity issues deep ITM options",
+   "Why are deep in the money options illiquid"
+  ],
+  "3008": [
+   "Mortgage approval low credit high income",
+   "Getting a home loan with bad credit high salary",
+   "Poor credit score high income mortgage eligibility",
+   "Mortgage chances bad credit high earnings"
+  ],
+  "9925": [
+   "Chapter 11 Bankruptcy impact on shareholders",
+   "Investor rights Chapter 11 bankruptcy equity holders",
+   "What happens to stocks during Chapter 11 bankruptcy",
+   "Chapter 11 company share value investor implications"
+  ],
+  "4007": [
+   "S-corp owner sole member reasonable compensation",
+   "Reasonable salary small business s corporation owner",
+   "S-corp single member LLC officer compensation guidelines",
+   "Reasonable salary determination S-corp shareholder"
+  ],
+  "6644": [
+   "SWIFT issuance timestamp verification",
+   "Track exact SWIFT message issue time",
+   "How to confirm SWIFT issuance date bank",
+   "Verify exact time bank issued SWIFT"
+  ],
+  "6420": [
+   "Bid ask concept dealer markets",
+   "Bid ask spread dealer market existence",
+   "Do dealer markets use bid ask",
+   "Bid and ask pricing in dealer markets"
+  ],
+  "6713": [
+   "SNAP eligibility dependent parent",
+   "Claiming father as dependent food stamps eligibility",
+   "SNAP household size parent dependent rules",
+   "Food stamp eligibility adult dependent relative"
+  ],
+  "4844": [
+   "How to read bond yield quotes time coupon price yield",
+   "Bond quote explanation time coupon price yield meaning",
+   "Understanding bond quotes and yield table columns",
+   "Bond market quote fields definition"
+  ],
+  "7463": [
+   "Mortgage loan investment index fund pros cons",
+   "Borrowing against mortgage to invest in index funds risks benefits",
+   "Leveraging mortgage for index fund investing advantages disadvantages",
+   "Mortgage debt for stock market investment analysis"
+  ],
+  "6479": [
+   "Exchange trading vs brokerage companies",
+   "Trade on stock exchange or through broker",
+   "Exchanges vs brokerages for trading",
+   "Brokerage firms compared to direct exchange trading"
+  ],
+  "10267": [
+   "Financial crisis preparation guide",
+   "Economic downturn readiness strategy",
+   "Recession preparation best practices",
+   "Financial crisis mitigation plan"
+  ],
+  "7622": [
+   "Debt payoff strategies",
+   "How to clear debt efficiently",
+   "Best debt repayment methods",
+   "Methods to eliminate debt",
+   "Debt reduction options"
+  ],
+  "10979": [
+   "How to close a futures position",
+   "Liquidation of futures contract",
+   "Exit futures trade",
+   "Closing out futures position"
+  ],
+  "2498": [
+   "Small vendor turnover tax liability calculation",
+   "Calculate tax on small business turnover",
+   "Vendor turnover tax computation method",
+   "Small enterprise tax liability on sales turnover"
+  ],
+  "2010": [
+   "PayPal website donate button non-charity",
+   "Accept donations on website PayPal personal account",
+   "PayPal donation link without 501c3 status",
+   "How to add PayPal donate button non-profit",
+   "PayPal payments for donations non-charitable"
+  ],
+  "3767": [
+   "Identity theft protection best practices",
+   "How to prevent identity theft",
+   "Identity theft prevention steps",
+   "Securing personal information against identity fraud"
+  ],
+  "7145": [
+   "Buy and hold passive funds",
+   "Passively managed buy and hold investment funds",
+   "Passive buy and hold mutual funds etfs"
+  ],
+  "6554": [
+   "Mutual fund value decreased share quantity increased no user action",
+   "Fund value dropped shares increased uninitiated transaction",
+   "Portfolio value went down shares went up no trade executed",
+   "Mutual fund balance decreased while shares increased"
+  ],
+  "9556": [
+   "Pre-market trading mechanics",
+   "How pre-market trading operates",
+   "Pre-market trading process",
+   "Trading in the pre-market session"
+  ],
+  "2445": [
+   "IRS notification new LLC member",
+   "How to add member to LLC IRS",
+   "Notify IRS LLC ownership change",
+   "LLC new member reporting IRS"
+  ],
+  "6410": [
+   "ETF reconstitution timing index rebalancing",
+   "Do etfs instantly reflect index reconstitution",
+   "ETF underlying index reconstitution delay impact",
+   "ETF portfolio adjustment index rebalance execution",
+   "Index reconstitution effect on ETF pricing speed"
+  ],
+  "5155": [
+   "Insurance $4000 per year 10 years vs $500 per year indefinitely",
+   "Compare 10 year annuity $4000 to perpetual $500 payout insurance",
+   "Insurance policy payout duration $4000 vs $500 annual",
+   "Financial analysis insurance premium 10 years $4000 perpetual $500"
+  ],
+  "5030": [
+   "End-of-day historical prices pricing rationale",
+   "Value of paid end of day historical market data",
+   "Why purchase historical EOD price data",
+   "Cost justification for historical end of day prices"
+  ],
+  "6252": [
+   "Mortgage advice reliability",
+   "Evaluate mortgage advice quality",
+   "Mortgage advice legitimacy",
+   "Assess mortgage guidance validity"
+  ],
+  "885": [
+   "Credit card active status missing person",
+   "Card validity after account holder disappearance",
+   "How long do credit cards work when someone goes missing",
+   "Credit card expiration timeline missing person case"
+  ],
+  "7377": [
+   "Vanguard return types",
+   "How Vanguard quotes returns",
+   "Vanguard performance return calculation types",
+   "Vanguard quoted return methodology"
+  ],
+  "4031": [
+   "28 years old inherited money and real estate guidance",
+   "Large inheritance financial planning for young adults",
+   "What to do after inheriting property and cash",
+   "Managing a large inheritance and real estate assets",
+   "Inheritance management strategy for 28 year old"
+  ],
+  "766": [
+   "Foreclosure deficiency judgment liability",
+   "Does borrower owe balance after foreclosure",
+   "Foreclosure remaining debt ex-homeowner",
+   "Post foreclosure deficiency balance responsibility"
+  ],
+  "8779": [
+   "Defined contribution plan mechanism",
+   "How defined contribution plans operate",
+   "Defined contribution plan structure and function",
+   "Explaining defined contribution plans"
+  ],
+  "2183": [
+   "Us banking system unit banking structure causes",
+   "Reasons for fragmented us banking industry many small banks",
+   "Why are there so many small banks in the United States",
+   "Factors contributing to high number of banks in us"
+  ],
+  "6219": [
+   "Investable real estate indices geographic locations",
+   "Geographic real estate index investment",
+   "Location-based investable real estate benchmarks",
+   "Geographical real estate indices for investing"
+  ],
+  "6849": [
+   "Stock market index points meaning",
+   "How are stock market index points calculated",
+   "What do index points represent in stock markets",
+   "Stock market index point value definition"
+  ],
+  "8079": [
+   "Growth rate plus dividend yield total",
+   "Dividend yield plus growth rate formula",
+   "Total return growth rate and dividend yield",
+   "Sum of growth rate and dividend yield"
+  ],
+  "5086": [
+   "Mortgage financing demolition and new construction",
+   "Construction loan requirements tearing down house rebuild",
+   "Existing mortgage implications rebuilding property",
+   "Financing options demolition and new build mortgage"
+  ],
+  "8202": [
+   "DXJR stock price drop causes",
+   "Why did DXJR shares fall",
+   "DXJR stock decline reasons",
+   "Factors behind DXJR stock price crash"
+  ],
+  "7345": [
+   "Futures contract numbers meaning",
+   "Interpret futures pricing numbers",
+   "Understanding futures data figures",
+   "Futures market numbers explanation"
+  ],
+  "2648": [
+   "Unemployment insurance process overview",
+   "How unemployment benefits work",
+   "Unemployment insurance eligibility and operation",
+   "Mechanics of unemployment insurance"
+  ],
+  "7441": [
+   "Broker restrictions shorting stocks under 5 dollars company stock split rationale",
+   "Why companies do not split stock below 5 dollars to avoid short selling limits",
+   "Sub 5 dollar stock shorting rules and reverse split strategies",
+   "Brokerage margin rules shorting low priced stocks stock split mechanics"
+  ],
+  "776": [
+   "Saving 15 percent of income starting at age 25 millionaire",
+   "Invest 15% salary from age 25 net worth 1 million",
+   "Compound interest 15 percent savings starting age 25 millionaire goal",
+   "Retirement savings 15 percent age 25 reach 1 million"
+  ],
+  "5125": [
+   "CBS acquisition of TEN Australia",
+   "Australian CBS takeover TEN network",
+   "CBS purchase of network Ten Australia",
+   "TEN Australia CBS buyout"
+  ],
+  "89": [
+   "Deposit business check into personal account",
+   "Cashing business check personal account policy",
+   "Business payable check personal bank deposit",
+   "Depositing third party business check personal account"
+  ],
+  "9329": [
+   "Interactive Brokers IOPTS structured products list",
+   "IBKR IOPTS available structured products",
+   "Interactive Brokers structured products directory IOPTS",
+   "IOPTS list Interactive Brokers"
+  ],
+  "2516": [
+   "Banks with cash deposit machines Germany",
+   "Cash recycling ATM banks Germany",
+   "German banks cash deposit atms",
+   "Cash deposit machine availability Germany banks"
+  ],
+  "6629": [
+   "Boxed trade tax treatment",
+   "Tax implications of boxed trades",
+   "Box trade taxation rules",
+   "How are boxed trades taxed"
+  ],
+  "8970": [
+   "Stock appreciation vs compound interest difference",
+   "Compare stock appreciation compound interest",
+   "Stock appreciation and compound interest distinction"
+  ],
+  "4484": [
+   "Impact of recent credit card regulations on negotiating lower interest rates",
+   "Do new credit card rules reduce chances of rate reduction by calling",
+   "Credit card regulations effect on asking for lower APR",
+   "Cardholder success rate calling to lower interest rate under new regulations"
+  ],
+  "1451": [
+   "Find independent insurance broker Canada trusted",
+   "Reputable independent insurance broker Canada",
+   "How to choose honest insurance broker Canada",
+   "Ethical independent insurance broker Canadian"
+  ],
+  "1889": [
+   "E-commerce financial gain reporting",
+   "Online store revenue reporting",
+   "Report e-commerce profits",
+   "Track online shop earnings",
+   "Financial reporting for online store"
+  ],
+  "1920": [
+   "Student expenses tax filing clarification",
+   "Next year tax student expense deduction rules",
+   "Clarify student tax expenses filing guidance",
+   "Student education expenses tax return next year"
+  ],
+  "8013": [
+   "Investment frequency to maximize returns minimize fees",
+   "Optimal investment schedule for maximum returns lowest fees",
+   "How often to invest to maximize returns and reduce fees",
+   "Best investment timing for maximum ROI and minimal fees",
+   "Frequency of contributions to maximize returns and lower fees"
+  ],
+  "3759": [
+   "Simplify money management",
+   "Money management simplification",
+   "Streamline financial management",
+   "Easy money management",
+   "Personal finance simplification"
+  ],
+  "7295": [
+   "Selling non-dividend paying stocks for dividend stocks",
+   "Switching from non-dividend to dividend stocks",
+   "Replacing non-dividend stocks with dividend equities",
+   "Reallocating portfolio from growth to dividend stocks",
+   "Trading non-dividend stocks for dividend-yielding shares"
+  ],
+  "7448": [
+   "ETF impact share issuance underlying index constituent",
+   "Index increase due to new share issuance effect on ETF",
+   "What happens to ETF when index rises from company issuing more shares",
+   "ETF pricing corporate actions additional share issuance index"
+  ],
+  "7329": [
+   "Implied Volatility incorporation of known future events",
+   "Does Implied Volatility price in upcoming events",
+   "Implied Volatility and known future events pricing",
+   "Does Implied Volatility reflect all known future information"
+  ],
+  "10639": [
+   "Short term parking large inheritance",
+   "Temporary storage large inheritance",
+   "Short term investment large inheritance",
+   "Holding large inheritance short term"
+  ],
+  "6635": [
+   "Share buyback impact on stock price alternative Fridays employee purchase",
+   "Why stock prices don't increase during employee share purchase plan execution",
+   "Company share repurchase schedule effect on stock valuation",
+   "Employee stock purchase plan market price reaction",
+   "Share price movement corporate buyback program"
+  ],
+  "4312": [
+   "90 percent of investors lose money statistics",
+   "Do 90% of retail investors lose money",
+   "Investor loss rate 90 percent truth",
+   "Percentage of investors that lose money"
+  ],
+  "1230": [
+   "Walmart expired food accounting policy",
+   "How Walmart records food waste write-offs",
+   "Walmart inventory spoilage accounting procedure",
+   "Expired merchandise accounting treatment Walmart"
+  ],
+  "2486": [
+   "W2 employment with benefits pros and cons",
+   "Working W2 employee benefits evaluation",
+   "Is W2 with benefits advantageous",
+   "W2 position benefits analysis"
+  ],
+  "6121": [
+   "Housing loans limited credit history options",
+   "Mortgage options thin credit file",
+   "Best home loan products low credit lines",
+   "Qualifying for mortgage with few credit accounts",
+   "Housing loan options bad or limited credit"
+  ],
+  "859": [
+   "Reasons to keep old traditional bank account",
+   "Benefits of maintaining legacy bank account",
+   "Closing old bank account vs keeping it open",
+   "Pros and cons of keeping old large bank account"
+  ],
+  "6525": [
+   "GOOGL vs GOOG stock exchange spread",
+   "Trading Alphabet class a for class c shares",
+   "GOOGL to GOOG share conversion strategy",
+   "Arbitrage GOOGL and GOOG shares"
+  ],
+  "2590": [
+   "Non-resident UK company share ownership rules",
+   "Foreign nationals purchasing UK shares legality",
+   "Can foreigners own shares in UK corporations",
+   "Non-uk resident shareholding regulations",
+   "Foreign investment UK company shares restrictions"
+  ],
+  "3781": [
+   "AMT salary threshold estimate",
+   "Alternative minimum tax income threshold",
+   "Taxpayer salary value for AMT",
+   "Rough estimate income for AMT liability"
+  ],
+  "5374": [
+   "DRYS stock price spike and drop causes",
+   "Reasons for DRYS share price volatility surge and crash",
+   "DryShips stock dramatic price fluctuations drivers",
+   "Factors behind DRYS stock price spike and collapse"
+  ],
+  "1310": [
+   "Bitcoin backed mortgage",
+   "Crypto collateralized mortgage loan",
+   "Borrow against bitcoin mortgage",
+   "Bitcoin secured home loan"
+  ],
+  "8005": [
+   "Vanguard s&p 500 ucits etf vs vanguard s&p 500 etf comparison",
+   "Vanguard SP500 ucits etf differences vanguard s&p 500",
+   "Compare Vanguard s&p 500 UCITS and Vanguard s&p500",
+   "Vanguard SP500 UCITS vs Vanguard s&p 500 fund differences"
+  ],
+  "2994": [
+   "Side employment spouse company",
+   "Working for wife business policy",
+   "Secondary employment spouse organization",
+   "Moonlighting spouse company",
+   "Conflict of interest spouse business"
+  ],
+  "6142": [
+   "IPO stabilization mechanism definition",
+   "How price stabilization works in initial public offerings",
+   "IPO stabilization process explanation",
+   "Underwriter stock stabilization during IPO"
+  ],
+  "3125": [
+   "Mileage allowance claim policy",
+   "How to claim mileage guidelines",
+   "Mileage reimbursement rules",
+   "Vehicle mileage allowance procedure"
+  ],
+  "8832": [
+   "Questrade buy commodity etfs",
+   "Trading silver commodity ETF Questrade",
+   "Questrade supported commodity exchange traded funds",
+   "Purchase commodities etfs on Questrade"
+  ],
+  "3683": [
+   "Motley Fool credibility reliability",
+   "Is Motley Fool trustworthy",
+   "Motley Fool reviews reputation",
+   "Motley Fool stock advice accuracy"
+  ],
+  "939": [
+   "Amend accepted e-filed tax return",
+   "How to correct approved electronic tax return",
+   "Modify filed and approved tax return",
+   "File amended return after electronic approval",
+   "Correction process for accepted electronic tax filing"
+  ],
+  "7206": [
+   "Large share purchases",
+   "Major stock buyers",
+   "Significant share acquisitions",
+   "Bulk stock purchasers",
+   "Large volume share buyers"
+  ],
+  "10246": [
+   "T+3 settlement cycle rules",
+   "Explain t+3 settlement days",
+   "T+3 trade settlement timeline",
+   "Understanding t+3 settlement"
+  ],
+  "5241": [
+   "Mortgage vs cash us home purchase",
+   "Buying us home cash or mortgage",
+   "Mortgage versus cash real estate us",
+   "Cash vs financing us house buy"
+  ],
+  "8121": [
+   "Calculate stock value Williams %r last set",
+   "Williams %r stock valuation previous set",
+   "Compute stock price using Williams percent r last set"
+  ],
+  "98": [
+   "Make 250000 trading investing business 5 years",
+   "Earn 250000 dollars in 5 years through business or investing",
+   "Strategy to generate 250k in five years trading business",
+   "How to reach 250000 net worth in 5 years investing business"
+  ],
+  "5064": [
+   "Graduate student savings target",
+   "How much money should grad students save",
+   "Graduate student budget savings rate",
+   "Recommended savings amount for graduate students"
+  ],
+  "4615": [
+   "Solar panels and wind turbines cost-benefit analysis",
+   "Are solar cells and windmills financially worth it",
+   "Solar panel and wind turbine ROI",
+   "Economic viability of solar panels and wind mills"
+  ],
+  "7467": [
+   "Secondary market stock trading",
+   "Are stocks traded on secondary markets",
+   "Secondary markets for stock trading"
+  ],
+  "1676": [
+   "W-2 vs 1099 classification",
+   "Employee vs independent contractor status",
+   "W2 versus 1099 worker differences",
+   "Employee status determination W2 1099"
+  ],
+  "503": [
+   "Creditworthiness data privacy preferences",
+   "Privacy settings credit scoring data",
+   "Managing privacy preferences for credit data",
+   "Credit history data privacy controls"
+  ],
+  "3264": [
+   "Interest-only loans advantages and disadvantages",
+   "Interest only mortgages pros cons",
+   "Benefits and drawbacks of interest only loans",
+   "Interest only loan positive and negative aspects"
+  ],
+  "6467": [
+   "Strategy guide for selling timing",
+   "When to sell investment strategy",
+   "Stock selling strategy advice",
+   "Optimal exit strategy timing",
+   "Guidance on when to liquidate assets"
+  ],
+  "4289": [
+   "Currency exchange rate additional information metadata",
+   "Exchange rate extra details data fields",
+   "Additional data in currency exchange rates",
+   "Currency exchange rate supplementary information"
+  ],
+  "4394": [
+   "Transfer 50000 to external account California",
+   "Send 50k to another person account USA",
+   "Wire 50000 dollars third party California",
+   "P2p transfer 50k us account"
+  ],
+  "4047": [
+   "Stock research homework effectiveness",
+   "Does analyzing stocks make sense",
+   "Value of stock market research",
+   "Retail investor stock research utility"
+  ],
+  "1815": [
+   "LLC SEP contribution rules",
+   "How to make SEP IRA contributions LLC",
+   "SEP plan eligibility rules limited liability company",
+   "Contributing to SEP IRA as LLC owner guidelines"
+  ],
+  "7218": [
+   "Short sale initial margin requirement maintenance margin",
+   "Margin required to open and hold short position",
+   "Short selling margin requirements",
+   "Initial and maintenance margin for short sales"
+  ],
+  "8982": [
+   "ETF vs mutual fund risk comparison",
+   "Are exchange-traded funds safer than mutual funds",
+   "Mutual funds safety compared to etfs",
+   "ETF risk level versus traditional mutual funds"
+  ],
+  "8874": [
+   "Adjust re allow disallowed year end December wash sale loss timeline",
+   "When to take disallowed December wash sale loss",
+   "Year end wash sale loss re allowance rules",
+   "Adjusting for disallowed December wash sale losses",
+   "Re allowing disallowed wash sale loss December timing"
+  ],
+  "549": [
+   "Request ACH Direct Debit personal bank account",
+   "ACH debit fund transfer own account setup",
+   "How to initiate ACH withdrawal personal account",
+   "ACH Direct Debit authorization form location"
+  ],
+  "2407": [
+   "Waiting period mortgage credit limit increase",
+   "How soon after mortgage approval raise credit limit",
+   "Credit limit increase timeline post mortgage",
+   "Mortgage closing wait time credit card limit increase"
+  ],
+  "8937": [
+   "In-the-money vs out-of-the-money call options",
+   "ITM vs OTM call options difference",
+   "Comparing in the money and out of the money options",
+   "Call options ITM and OTM definitions"
+  ],
+  "7344": [
+   "Dow divisor calculation method",
+   "How to calculate Dow Jones divisor",
+   "Dow divisor formula",
+   "Calculating the Dow Jones Industrial Average divisor"
+  ],
+  "2856": [
+   "International check cashing process",
+   "How to cash check abroad",
+   "Cashing foreign checks guidelines",
+   "International bank check cashing options"
+  ],
+  "7801": [
+   "Arguments against investing",
+   "Criticisms of investing risks",
+   "Why not to invest drawbacks",
+   "Disadvantages of investing money",
+   "Reasons to avoid investing"
+  ],
+  "2395": [
+   "Freelance platform lowest commission fee",
+   "Lowest fee freelance websites",
+   "Freelance marketplace lowest commission",
+   "Cheapest freelance sites commission rate"
+  ],
+  "6875": [
+   "Free Thailand stock research reports",
+   "Thailand equity recommendations sources",
+   "Where to get free Thailand stock picks",
+   "Thailand stock market analysis free access"
+  ],
+  "6891": [
+   "Rick Van Ness diversification video risk calculation theory",
+   "Rick Van Ness risk calculation model diversification explanation",
+   "Theory of risk calculation Rick Van Ness diversification",
+   "Diversification video Rick Van Ness risk formula theory"
+  ],
+  "7702": [
+   "Bond etfs compared to individual bonds",
+   "Difference between bond etfs and physical bonds",
+   "Investing in bond etfs vs actual bonds",
+   "Bond funds vs direct bond holdings"
+  ],
+  "2695": [
+   "Parking space investment vs savings account interest",
+   "Buy and lease parking spot or high yield savings",
+   "Parking spot rental income vs bank savings return",
+   "Investing in parking spaces compared to interest-bearing accounts"
+  ],
+  "5616": [
+   "Corporate financial reporting channels",
+   "Where do companies publish financial statements",
+   "Financial report filing process companies",
+   "Regulatory financial disclosure methods"
+  ],
+  "928": [
+   "Verify FHA loan refinance lender legitimacy",
+   "How to check reputable FHA refinance lender",
+   "FHA loan refinance lender trustworthiness check",
+   "Validate FHA refinance offer lender"
+  ],
+  "10447": [
+   "Traditional non-deductible IRA vs taxable account advantages",
+   "Benefits of non-deductible traditional IRA compared to taxable brokerage",
+   "Traditional non-deductible IRA tax advantages vs taxable account",
+   "Non-deductible IRA benefits over taxable investment account"
   ]
  },
  "parse_errors": {},

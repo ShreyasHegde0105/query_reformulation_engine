@@ -1,20 +1,29 @@
-"""External validation on BEIR FiQA-2018 (57,638 passages, 648 test queries).
+"""External validation on public BEIR-format datasets.
 
 Does LLM query reformulation beat normal search, and cheap non-LLM expansion,
 on data this project did not create? Compares, at identical retrieval depth:
 
-    bm25         BM25 (in-process, IDF-weighted)
-    dense        bge-small-en-v1.5, exact cosine
-    hybrid       dense + BM25, RRF
-    hybrid_rm3   dense + RM3-expanded BM25, RRF          (non-LLM expansion)
-    llm_pipeline full SearchPipeline: normalize → LLM rewrites → filter →
-                 multi-query hybrid RRF                   (this project)
+    bm25            BM25 (in-process, IDF-weighted)
+    dense           bge-small-en-v1.5, exact cosine
+    hybrid          dense + BM25, RRF
+    hybrid_rm3      dense + RM3-expanded BM25, RRF          (non-LLM expansion)
+    pipeline_no_llm SearchPipeline without the LLM: normalize + corpus spelling
+                    correction -> hybrid
+    llm_pipeline    full SearchPipeline: normalize + spelling -> LLM rewrites ->
+                    filter -> multi-query hybrid RRF         (this project)
+
+Datasets (``--dataset``, default ``fiqa``):
+
+    fiqa             BEIR FiQA-2018: 57,638 finance forum passages, 648 test queries
+    msmarco-sample   MS MARCO passage dev: 500 sampled real Bing queries over a pool
+                     of BM25 candidates from the full 8.8M collection
+                     (built by evaluation/prepare_msmarco_sample.py)
 
 Three steps (the LLM step is rate-limited; encoding is the CPU/memory-heavy one):
 
-    python evaluation/run_beir_evaluation.py encode        # dense index, cached (run once)
-    python evaluation/run_beir_evaluation.py reformulate   # resumable; stops at the daily quota
-    python evaluation/run_beir_evaluation.py evaluate      # all systems + significance tests
+    python evaluation/run_beir_evaluation.py encode      [--dataset D]  # dense index, cached
+    python evaluation/run_beir_evaluation.py reformulate [--dataset D]  # resumable; stops at the daily quota
+    python evaluation/run_beir_evaluation.py evaluate    [--dataset D]  # all systems + significance tests
 
 Data: download https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/fiqa.zip
 and unzip into Data/beir/ (gitignored).
@@ -45,15 +54,46 @@ from retrieval.models import RetrievedChunk
 logger = logging.getLogger("evaluation.beir")
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DATA_DIR = os.path.join(ROOT, "Data", "beir", "fiqa")
-DENSE_CACHE = os.path.join(DATA_DIR, "bge_small_passages.npz")
+BEIR_DIR = os.path.join(ROOT, "Data", "beir")
+DATA_DIR = os.path.join(BEIR_DIR, "fiqa")
 CACHE_DIR = os.path.join(ROOT, "evaluation", "cache")
 
 
-def cache_path_for(model: str) -> str:
-    """One reformulation cache per LLM, so rewrites from different models never mix."""
+@dataclasses.dataclass(frozen=True)
+class Dataset:
+    key: str
+    title: str
+    split: str
+    description: str
+    label_note: str
+
+    @property
+    def data_dir(self) -> str:
+        return os.path.join(BEIR_DIR, self.key)
+
+    @property
+    def dense_cache(self) -> str:
+        return os.path.join(self.data_dir, "bge_small_passages.npz")
+
+
+DATASETS = {
+    "fiqa": Dataset(
+        "fiqa", "BEIR FiQA-2018", "test", "57,638 finance forum passages",
+        "FiQA relevance labels are binary; NDCG@10 is the standard BEIR headline metric."),
+    "msmarco-sample": Dataset(
+        "msmarco-sample", "MS MARCO passage (dev sample)", "dev",
+        "500 real Bing queries; pool = top-100 BM25 candidates per query from the full "
+        "8.8M-passage collection + all judged-relevant passages",
+        "MS MARCO has about one judged-relevant passage per query, so unjudged relevant passages "
+        "count as misses for every system (MRR@10 is its usual headline metric). The pool comes from "
+        "BM25 on the original query, which favours systems that search the original wording."),
+}
+
+
+def cache_path_for(model: str, dataset: str = "fiqa") -> str:
+    """One reformulation cache per dataset and LLM, so rewrites from different models never mix."""
     safe = "".join(ch if ch.isalnum() or ch in "-._" else "_" for ch in model.split("/")[-1])
-    return os.path.join(CACHE_DIR, f"beir_fiqa_reformulations_{safe}.json")
+    return os.path.join(CACHE_DIR, f"beir_{dataset}_reformulations_{safe}.json")
 RESULTS_DIR = os.path.join(ROOT, "evaluation", "results")
 
 MATCH_COUNT = 50      # per-branch candidates (same for every system)
@@ -66,10 +106,12 @@ SYSTEMS = {
     "dense": "Dense (bge-small)",
     "hybrid": "Hybrid (dense + BM25, RRF)",
     "hybrid_rm3": "Hybrid + RM3 expansion (non-LLM)",
+    "pipeline_no_llm": "Pipeline without LLM (normalization + spelling)",
     "llm_pipeline": "Hybrid + LLM reformulation (full pipeline)",
 }
 COMPARISONS = [
     ("hybrid", "llm_pipeline"),
+    ("pipeline_no_llm", "llm_pipeline"),
     ("hybrid_rm3", "llm_pipeline"),
     ("hybrid", "hybrid_rm3"),
     ("bm25", "hybrid"),
@@ -101,7 +143,7 @@ def keep_awake():
 # ----------------------------------------------------------------------------
 # Data
 # ----------------------------------------------------------------------------
-def load_fiqa(data_dir: str = DATA_DIR, split: str = "test"):
+def load_beir(data_dir: str = DATA_DIR, split: str = "test"):
     """Return (chunks, queries, qrels) for one split.
 
     chunks: chunk dicts in this project's format (one per passage)
@@ -129,9 +171,13 @@ def load_fiqa(data_dir: str = DATA_DIR, split: str = "test"):
             d = json.loads(line)
             chunks.append({
                 "chunk_id": d["_id"], "document_id": d["_id"], "title": d.get("title") or "",
-                "section": None, "text": d["text"], "chunk_index": 0, "department": "fiqa",
+                "section": None, "text": d["text"], "chunk_index": 0,
+                "department": os.path.basename(os.path.normpath(data_dir)),
             })
     return chunks, queries, qrels
+
+
+load_fiqa = load_beir  # backwards-compatible name
 
 
 # ----------------------------------------------------------------------------
@@ -268,7 +314,7 @@ class DenseIndex:
         top = top[np.argsort(-sims[top])]
         return [
             RetrievedChunk(chunk_id=self.chunks[i]["chunk_id"], document_id=self.chunks[i]["document_id"],
-                           title=self.chunks[i]["title"], domain="fiqa", chunk_index=0,
+                           title=self.chunks[i]["title"], domain=self.chunks[i]["department"], chunk_index=0,
                            chunk_text=self.chunks[i]["text"], section=None, token_count=None,
                            score=float(sims[i]), retriever_type="vector")
             for i in top
@@ -284,9 +330,16 @@ class _CachedReformulator:
         return self.cache.get(self.text_to_qid.get(query, ""), [])[:max_variants]
 
 
-def build_systems(chunks, queries, reformulations, encoder) -> Dict[str, Callable[[str], List[str]]]:
+class _NoReformulation:
+    def generate_variants(self, query: str, max_variants: int = 5) -> List[str]:
+        return []
+
+
+def build_systems(chunks, queries, reformulations, encoder, dense_cache: Optional[str] = None
+                  ) -> Dict[str, Callable[[str], List[str]]]:
     from reformulation.search_pipeline import SearchPipeline
     from reformulation.semantic_similarity import SemanticSimilarity
+    from reformulation.spelling import CorpusSpellCorrector, build_vocabulary
     from retrieval.bm25_retriever import BM25Retriever
     from retrieval.hybrid_retriever import HybridRetriever
     from retrieval.prf import RM3Retriever
@@ -294,17 +347,26 @@ def build_systems(chunks, queries, reformulations, encoder) -> Dict[str, Callabl
     print("Building BM25 index ...", flush=True)
     bm25 = BM25Retriever(chunks=chunks)
     print("Loading / encoding dense index ...", flush=True)
-    dense = DenseIndex(chunks, encoder, cache_path=DENSE_CACHE)
+    dense = DenseIndex(chunks, encoder, cache_path=dense_cache)
     hybrid = HybridRetriever(vector_retriever=dense, keyword_retriever=bm25)
     hybrid_rm3 = HybridRetriever(vector_retriever=dense, keyword_retriever=RM3Retriever(bm25))
-    pipeline = SearchPipeline(
-        reformulator=_CachedReformulator(reformulations, {t: q for q, t in queries.items()}),
-        semantic_similarity=SemanticSimilarity(embed_fn=encoder.embed_query),
-        hybrid_retriever=hybrid,
-    )
+    # Spelling correction against this dataset's own vocabulary, as in production.
+    speller = CorpusSpellCorrector(build_vocabulary(f"{c['title']} {c['text']}" for c in chunks))
+    sem = SemanticSimilarity(embed_fn=encoder.embed_query)
+
+    def pipeline(reformulator):
+        return SearchPipeline(reformulator=reformulator, semantic_similarity=sem, hybrid_retriever=hybrid,
+                              spell_corrector=speller, reformulation_cache_size=0)
+
+    no_llm = pipeline(_NoReformulation())
+    full = pipeline(_CachedReformulator(reformulations, {t: q for q, t in queries.items()}))
 
     def ids(results):
         return [c.chunk_id for c in results]
+
+    def run_pipeline(p, q):
+        return ids(p.search(q, max_variants=MAX_VARIANTS, vector_match_count=MATCH_COUNT,
+                            keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=FINAL_K, candidate_k=MATCH_COUNT))
 
     return {
         "bm25": lambda q: ids(bm25.retrieve(q, match_count=FINAL_K)),
@@ -313,9 +375,8 @@ def build_systems(chunks, queries, reformulations, encoder) -> Dict[str, Callabl
                                                 k=RRF_K, final_k=FINAL_K)),
         "hybrid_rm3": lambda q: ids(hybrid_rm3.retrieve(q, vector_match_count=MATCH_COUNT, keyword_match_count=MATCH_COUNT,
                                                         k=RRF_K, final_k=FINAL_K)),
-        "llm_pipeline": lambda q: ids(pipeline.search(q, max_variants=MAX_VARIANTS, vector_match_count=MATCH_COUNT,
-                                                      keyword_match_count=MATCH_COUNT, k=RRF_K, final_k=FINAL_K,
-                                                      candidate_k=MATCH_COUNT)),
+        "pipeline_no_llm": lambda q: run_pipeline(no_llm, q),
+        "llm_pipeline": lambda q: run_pipeline(full, q),
     }
 
 
@@ -325,31 +386,44 @@ def score_query(ranked: List[str], relevant: Dict[str, int]) -> Dict[str, float]
     return m
 
 
+def valid_query_ids(queries: Dict[str, str], query_ids: List[str]) -> List[str]:
+    """Queries the pipeline would reject (e.g. over the length limit) are excluded for
+    every system; scoring them 0 for the pipeline alone would bias the comparison."""
+    from reformulation.validator import validate_query
+
+    valid = []
+    for qid in query_ids:
+        try:
+            validate_query(queries[qid])
+        except ValueError:
+            continue
+        valid.append(qid)
+    return valid
+
+
 def evaluate(queries, qrels, systems, query_ids) -> Dict[str, Dict[str, Any]]:
     results: Dict[str, Dict[str, Any]] = {}
     for key, run in systems.items():
         print(f"Evaluating {SYSTEMS[key]} on {len(query_ids)} queries ...", flush=True)
         t0 = time.perf_counter()
-        per_query, failures = {}, 0
-        for qid in query_ids:
-            try:
-                ranked = run(queries[qid])
-            except ValueError:
-                ranked, failures = [], failures + 1   # query rejected by validation
-            per_query[qid] = score_query(ranked, qrels[qid])
+        per_query = {qid: score_query(run(queries[qid]), qrels[qid]) for qid in query_ids}
         mean = {m: float(np.mean([pq[m] for pq in per_query.values()])) for m in METRICS}
-        results[key] = {"mean": mean, "per_query": per_query, "failures": failures,
+        results[key] = {"mean": mean, "per_query": per_query,
                         "seconds_per_query": (time.perf_counter() - t0) / len(query_ids)}
         print("    " + "  ".join(f"{m}={mean[m]:.4f}" for m in METRICS), flush=True)
     return results
 
 
-def write_report(results, query_ids, n_total, cache, cache_path, path) -> None:
+def write_report(results, query_ids, n_total, cache, cache_path, path, dataset: "Dataset" = None,
+                 n_invalid: int = 0) -> None:
+    dataset = dataset or DATASETS["fiqa"]
     lines = [
-        "# BEIR FiQA-2018 — Does LLM Query Reformulation Beat Normal Search?",
+        f"# {dataset.title} — Does LLM Query Reformulation Beat Normal Search?",
         "",
         f"**Run:** {datetime.now(timezone.utc).isoformat()}  ",
-        f"**Corpus:** 57,638 passages · **Queries evaluated:** {len(query_ids)} of {n_total} test queries  ",
+        f"**Corpus:** {dataset.description} · **Queries evaluated:** {len(query_ids)} of {n_total} "
+        f"{dataset.split} queries"
+        + (f" ({n_invalid} over the query length limit excluded for every system)" if n_invalid else "") + "  ",
         f"**Retrieval depth:** {MATCH_COUNT} candidates per branch, top-{FINAL_K} output, RRF k={RRF_K}  ",
         f"**Reformulation LLM:** `{cache.get('metadata', {}).get('model', '?')}` · cache "
         f"`{os.path.relpath(cache_path, ROOT).replace(os.sep, '/')}` "
@@ -397,8 +471,9 @@ def write_report(results, query_ids, n_total, cache, cache_path, path) -> None:
         "## 4. Notes",
         "",
         "- All systems share the same BM25 index, dense index and retrieval depth; only the query side differs.",
-        "- The pipeline is used unchanged from the university project, including its domain-tuned normalizer.",
-        "- FiQA relevance labels are binary; NDCG@10 is the standard BEIR headline metric.",
+        "- The pipeline is used unchanged from the university project, including its domain-tuned normalizer; "
+        "spelling correction uses this dataset's own vocabulary.",
+        f"- {dataset.label_note}",
     ]
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
@@ -409,13 +484,15 @@ def write_report(results, query_ids, n_total, cache, cache_path, path) -> None:
 # ----------------------------------------------------------------------------
 def main() -> None:
     logging.basicConfig(level=logging.WARNING, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
-    parser = argparse.ArgumentParser(description="BEIR FiQA evaluation of LLM query reformulation")
+    parser = argparse.ArgumentParser(description="BEIR-format evaluation of LLM query reformulation")
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("encode", help="Encode all passages with bge-small and cache the matrix.")
+    c = sub.add_parser("encode", help="Encode all passages with bge-small and cache the matrix.")
     r = sub.add_parser("reformulate", help="Generate and cache LLM reformulations (resumable).")
     r.add_argument("--limit", type=int, default=None, help="Only process this many new queries.")
     r.add_argument("--min-interval", type=float, default=13.0, help="Seconds between LLM calls.")
     e = sub.add_parser("evaluate", help="Evaluate all systems.")
+    for p in (c, r, e):
+        p.add_argument("--dataset", choices=sorted(DATASETS), default="fiqa")
     for p in (r, e):
         p.add_argument("--model", default=None, help="LLM model for reformulation (default: LLM_MODEL from .env).")
     e.add_argument("--allow-partial", action="store_true",
@@ -426,14 +503,14 @@ def main() -> None:
 
 
 def _run(args: argparse.Namespace) -> None:
-
-    chunks, queries, qrels = load_fiqa()
+    dataset = DATASETS[args.dataset]
+    chunks, queries, qrels = load_beir(dataset.data_dir, dataset.split)
     if args.command == "encode":
         from embedding.encoder import EmbeddingEncoder
 
-        print(f"Encoding {len(chunks)} passages (cached to {DENSE_CACHE}) ...", flush=True)
+        print(f"Encoding {len(chunks)} passages (cached to {dataset.dense_cache}) ...", flush=True)
         t0 = time.perf_counter()
-        index = DenseIndex(chunks, EmbeddingEncoder(), cache_path=DENSE_CACHE)
+        index = DenseIndex(chunks, EmbeddingEncoder(), cache_path=dataset.dense_cache)
         print(f"Done: {index.matrix.shape} in {time.perf_counter() - t0:.0f}s", flush=True)
         return
 
@@ -442,19 +519,19 @@ def _run(args: argparse.Namespace) -> None:
     config = LLMConfig.from_env()
     if args.model:
         config = dataclasses.replace(config, model=args.model)
-    cache_path = cache_path_for(config.model)
+    cache_path = cache_path_for(config.model, dataset.key)
 
     if args.command == "reformulate":
         from reformulation.llm.client import LLMClient
         from reformulation.reformulator import QueryReformulator
 
         reformulator = QueryReformulator(LLMClient(config))
-        print(f"Reformulating {len(queries)} FiQA test queries with {config.model} "
+        print(f"Reformulating {len(queries)} {dataset.title} {dataset.split} queries with {config.model} "
               f"(one call every {args.min_interval:.0f}s) ...", flush=True)
         stats = generate_reformulations(
             queries, reformulator, cache_path=cache_path, min_interval=args.min_interval, limit=args.limit,
             metadata={"model": config.model, "provider": config.provider, "max_variants": MAX_VARIANTS,
-                      "started": datetime.now(timezone.utc).isoformat()},
+                      "dataset": dataset.key, "started": datetime.now(timezone.utc).isoformat()},
         )
         print(json.dumps(stats, indent=1))
         return
@@ -464,18 +541,21 @@ def _run(args: argparse.Namespace) -> None:
     if len(covered) < len(queries) and not args.allow_partial:
         sys.exit(f"Only {len(covered)}/{len(queries)} queries have reformulations. "
                  "Run `reformulate` until done, or pass --allow-partial.")
+    evaluated = valid_query_ids(queries, covered)
     from embedding.encoder import EmbeddingEncoder
 
     encoder = EmbeddingEncoder(query_cache_size=20000)
-    systems = build_systems(chunks, queries, cache["reformulations"], encoder)
-    results = evaluate(queries, qrels, systems, covered)
-    suffix = f"_{os.path.basename(cache_path)[len('beir_fiqa_reformulations_'):-5]}"
+    systems = build_systems(chunks, queries, cache["reformulations"], encoder, dense_cache=dataset.dense_cache)
+    results = evaluate(queries, qrels, systems, evaluated)
+    prefix = f"beir_{dataset.key}_reformulations_"
+    suffix = f"_{os.path.basename(cache_path)[len(prefix):-5]}"
     suffix += "" if len(covered) == len(queries) else "_partial"
     os.makedirs(RESULTS_DIR, exist_ok=True)
-    with open(os.path.join(RESULTS_DIR, f"beir_fiqa_results{suffix}.json"), "w", encoding="utf-8") as f:
-        json.dump({"query_ids": covered, "results": results}, f)
-    report = os.path.join(RESULTS_DIR, f"beir_fiqa_report{suffix}.md")
-    write_report(results, covered, len(queries), cache, cache_path, report)
+    with open(os.path.join(RESULTS_DIR, f"beir_{dataset.key}_results{suffix}.json"), "w", encoding="utf-8") as f:
+        json.dump({"query_ids": evaluated, "results": results}, f)
+    report = os.path.join(RESULTS_DIR, f"beir_{dataset.key}_report{suffix}.md")
+    write_report(results, evaluated, len(queries), cache, cache_path, report, dataset=dataset,
+                 n_invalid=len(covered) - len(evaluated))
     print(f"\nReport: {report}")
 
 
