@@ -142,5 +142,37 @@ class TestQueryReformulator(unittest.TestCase):
         with self.assertRaises(ReformulationParseError):
             self.reformulator.generate_variants("query")
 
+
+class TestGlossaryPrompt(unittest.TestCase):
+    def setUp(self):
+        self.mock_client = MagicMock(spec=LLMClient)
+        self.mock_client.generate.return_value = json.dumps({"reformulations": ["web content filtering policy"]})
+
+    def test_generic_prompt_without_glossary(self):
+        reformulator = QueryReformulator(self.mock_client)
+        reformulator.generate_variants("websites blocked on campus")
+        prompt = self.mock_client.generate.call_args[0][0]
+        self.assertIn("semantically equivalent", prompt)
+        self.assertNotIn("glossary", prompt.lower())
+        self.assertEqual(reformulator.prompt_version, "generic-v1")
+
+    def test_glossary_prompt_includes_glossary_and_query(self):
+        glossary = "Systems and portals: LearnSphere LMS\nDocument titles:\n- Acceptable Use Policy {v2}"
+        reformulator = QueryReformulator(self.mock_client, glossary=glossary)
+        result = reformulator.generate_variants("websites blocked on campus")
+        prompt = self.mock_client.generate.call_args[0][0]
+        self.assertIn("LearnSphere LMS", prompt)
+        self.assertIn("Acceptable Use Policy {v2}", prompt)   # braces in the glossary survive formatting
+        self.assertIn('User query: "Websites blocked on campus"', prompt)
+        self.assertNotIn("semantically equivalent", prompt)
+        self.assertEqual(result, [normalize_query("web content filtering policy")])
+        self.assertEqual(reformulator.prompt_version, "glossary-v1")
+
+    def test_blank_glossary_uses_generic_prompt(self):
+        reformulator = QueryReformulator(self.mock_client, glossary="   ")
+        self.assertIsNone(reformulator.glossary)
+        self.assertEqual(reformulator.prompt_version, "generic-v1")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,341 @@
+{
+ "reformulations": {
+  "Q001": [
+   "Student tuition fee Assessment, due dates, and Penalty Structure",
+   "PayVarsity",
+   "Incidental Administrative fees, Challan Generation, and fines schedule",
+   "Finance and Accounts office",
+   "What are the payment deadlines and amounts for semester fees?"
+  ],
+  "Q002": [
+   "Student Residential Housing and hostel Allocation policy",
+   "Hostel admission, room Allotment Matrix, fee Structure, and Mess rules",
+   "Hostel Administration and Residence Life room allotment",
+   "How to check hostel room allotment and admission guidelines?",
+   "DormTrack room allotment"
+  ],
+  "Q003": [
+   "CSE301 course registration, credit Limits, and Prerequisite policy",
+   "Department of Computer Science and Engineering course requirements CSE301",
+   "General academic regulations for Autonomous programs CSE301 prerequisite rules"
+  ],
+  "Q004": [
+   "Procedure for Requesting Bonafide Certificates and Proof of Study",
+   "Bonafide student certificate and document verification policy",
+   "Application form: General Bonafide student certificate Request",
+   "Academic affairs Registrar Secretariat transcript records",
+   "How to get an academic transcript"
+  ],
+  "Q005": [
+   "LibNet OPAC Search, book Reservation, and Account Renewal Guide",
+   "Central library Borrowing rules, Circulation Limits, and fine Rates",
+   "Central library and Learning Resource Centre book renewal",
+   "How to renew library books?",
+   "Central library Services, off-campus e-access, and book Bank faqs"
+  ],
+  "Q006": [
+   "Program withdrawal and tuition fee refund policy",
+   "Caution Deposit refund and Account Closure regulations",
+   "Procedure for withdrawal, Transfer certificate (TC), and Migration",
+   "Fee refund for semester withdrawal",
+   "Finance and Accounts office tuition refund guidelines"
+  ],
+  "Q007": [
+   "Student Residential Housing and hostel Allocation policy",
+   "Hostel admission, room Allotment Matrix, fee Structure, and Mess rules",
+   "Hostel Administration and Residence Life room allotment requirements",
+   "What are the criteria and rules for getting a hostel room?"
+  ],
+  "Q008": [
+   "Mandatory attendance and Condonation policy",
+   "Application form: attendance Shortage medical Condonation",
+   "Policy on attendance Condonation on medical Grounds",
+   "What is the penalty for low attendance?",
+   "Examination Cell attendance shortfall guidelines"
+  ],
+  "Q009": [
+   "Course registration, credit Limits, and Prerequisite policy",
+   "Maximum credits undergraduate semester course limit",
+   "Academic affairs",
+   "What are the credit limits for course registration each semester?",
+   "Regulations on course registration, Add/Drop, and credit Limits"
+  ],
+  "Q010": [
+   "Central library Borrowing rules, Circulation Limits, and fine Rates",
+   "Fine for returning library books late",
+   "Central library and Learning Resource Centre overdue book charges",
+   "What are the late fees and circulation limits for library books?"
+  ],
+  "Q011": [
+   "Student tuition fee Assessment, due dates, and Penalty Structure",
+   "PayVarsity Online payment User Guide and Net Banking Troubleshooting",
+   "Finance and Accounts office tuition fee payment deadlines",
+   "Incidental Administrative fees, Challan Generation, and fines schedule",
+   "When are the semester fees due and how do I pay them?"
+  ],
+  "Q012": [
+   "General Engineering laboratory Safety rules and Breakage policy",
+   "Electrical Circuits and DC Machines lab Safety manual",
+   "Computer laboratory Acceptable use and Hardware Security",
+   "Department of Electronics and Communication Engineering"
+  ],
+  "Q013": [
+   "International student admissions, Visa Compliance, and FRRO guidelines",
+   "Admissions office International Wing",
+   "International student admission criteria and requirements",
+   "Admissions office"
+  ],
+  "Q014": [
+   "Mandatory attendance and Condonation policy",
+   "Minimum attendance requirement for see examination",
+   "Examination Cell attendance rules for semester end exams",
+   "What is the minimum attendance percentage required to sit for the semester end examination?",
+   "Academic affairs attendance criteria"
+  ],
+  "Q015": [
+   "Faculty Advisory system and student Mentoring guidelines",
+   "Department academic Governance and HOD Decision Authorities",
+   "Academic affairs",
+   "Student mentoring and faculty office hours policy"
+  ],
+  "Q016": [
+   "Mandatory attendance and Condonation policy",
+   "Application form: attendance Shortage medical Condonation",
+   "Policy on attendance Condonation on medical Grounds",
+   "Academic affairs attendance shortage rules",
+   "What are the attendance requirements and condonation rules?"
+  ],
+  "Q017": [
+   "Hostel admission, room Allotment Matrix, fee Structure, and Mess rules",
+   "Student Residential Housing and hostel Allocation policy",
+   "Hostel Administration and Residence Life room allotment",
+   "ResTrack portal room booking",
+   "How are hostel rooms assigned to students?"
+  ],
+  "Q018": [
+   "ExamShield portal Guide: hall Ticket download and Re-evaluation Filing",
+   "Incidental Administrative fees, Challan Generation, and fines schedule",
+   "Examination Cell",
+   "What is the fee and deadline for answer script re-evaluation?",
+   "Answer Script Viewing, re-totalling, and re-evaluation policy"
+  ],
+  "Q019": [
+   "University Merit and need-based Financial aid regulations",
+   "Endowment, Alumni, and Sports Excellence scholarship guidelines",
+   "Scholarship requirements and eligibility criteria",
+   "Academic affairs & Finance office financial aid guidelines",
+   "What are the eligibility conditions for student scholarships?"
+  ],
+  "Q020": [
+   "Procedure for withdrawal, Transfer certificate (TC), and Migration",
+   "Program withdrawal and tuition fee refund policy",
+   "Course Add/Drop and course withdrawal policy",
+   "How to withdraw from the semester",
+   "Academic affairs Registrar Secretariat semester withdrawal"
+  ],
+  "Q021": [
+   "CSE301: Operating systems (OS) syllabus and system Programming lab",
+   "CSE301 syllabus",
+   "Department of Computer Science and Engineering course outlines",
+   "What are the prescribed topics and texts for CSE301?"
+  ],
+  "Q022": [
+   "Department of EC Overview and course Catalog",
+   "ECE201: Digital Electronics and Logic Design course and Hardware lab",
+   "ECE201 syllabus",
+   "Department of Electronics and Communication Engineering ECE201 course outline"
+  ],
+  "Q023": [
+   "Department of Mechanical Engineering course catalog MEC304",
+   "Mechanical Design and Stress Analysis course Outline MEC304",
+   "What are the topics covered in MEC304?"
+  ],
+  "Q024": [
+   "CSE301: Operating systems (OS) syllabus and system Programming lab",
+   "CSE301 practical lab work",
+   "Department of Computer Science and Engineering",
+   "LearnSphere LMS User Guide: assignments, quizzes, and Virtual Classrooms"
+  ],
+  "Q025": [
+   "CIV205: Structural Analysis and Design Computing manual",
+   "CIV205 structural analysis manual department of CIVIL Engineering",
+   "Department of CIVIL Engineering CIV205 computing manual",
+   "Where can I find the CIV205 structural analysis computing manual?",
+   "CIV205"
+  ],
+  "Q026": [
+   "Application form: attendance Shortage medical Condonation",
+   "Policy on attendance Condonation on medical Grounds",
+   "Mandatory attendance and Condonation policy",
+   "Academic affairs attendance below 75 percent medical condonation",
+   "Medical leave attendance shortage condonation form"
+  ],
+  "Q027": [
+   "Graduation requirements and Minimum CGPA degree Standards",
+   "What is the minimum CGPA required to avoid academic probation?",
+   "Academic affairs",
+   "General academic regulations for Autonomous programs",
+   "Minimum CGPA academic probation requirements"
+  ],
+  "Q028": [
+   "Caution Deposit refund and Account Closure regulations",
+   "How to get caution deposit refund within 30 days?",
+   "Finance and Accounts office caution deposit refund policy",
+   "Caution Deposit refund and Account Closure regulations timeline"
+  ],
+  "Q029": [
+   "Course registration, credit Limits, and Prerequisite policy",
+   "Regulations on course registration, Add/Drop, and credit Limits",
+   "Academic regulations for Postgraduate programs",
+   "General academic regulations for Autonomous programs",
+   "Academic affairs"
+  ],
+  "Q030": [
+   "Incidental Administrative fees, Challan Generation, and fines schedule",
+   "Fall semester date of registration (DOR) and Late fee Penalties",
+   "Finance and Accounts office late fee 500 rupees per week",
+   "Student tuition fee Assessment, due dates, and Penalty Structure",
+   "What is the late fee fine of 500 rupees per week?"
+  ],
+  "Q031": [
+   "Program withdrawal and tuition fee refund policy",
+   "Withdrawal refund rules",
+   "Academic affairs Registrar Secretariat",
+   "How do I get a tuition refund after withdrawing from the semester?"
+  ],
+  "Q032": [
+   "Zero-tolerance anti-ragging and Harassment policy",
+   "Anti-ragging policy and Zero Tolerance Statutory Enforcement guidelines",
+   "Anti-ragging rules zero tolerance enforcement",
+   "Campus Safety, Vigilance and Security department anti-ragging guidelines",
+   "What are the statutory enforcement guidelines for zero tolerance anti-ragging?"
+  ],
+  "Q033": [
+   "Student grievance Redressal and Ombudsman policy",
+   "Student grievance Redressal committee regulations and Ombudsman procedure",
+   "Department of student affairs",
+   "What are the policies and regulations regarding student grievances and the ombudsman?"
+  ],
+  "Q034": [
+   "Research Ethics, academic integrity, and Plagiarism Prevention code",
+   "Academic integrity plagiarism policy",
+   "Internal Quality Assurance Cell (IQAC) research integrity guidelines",
+   "What are the university's rules on academic integrity and plagiarism prevention?"
+  ],
+  "Q035": [
+   "Prohibition of Electrical Appliances and Fire Safety in student hostels",
+   "Hostel Administration and Residence Life electrical rules",
+   "Appliances banned hostel rooms",
+   "Hostel Operations Division Maintenance SOP and grievance Logging",
+   "Student Resident code of conduct, Silence Hours, and room Inspections"
+  ],
+  "Q036": [
+   "University Merit and need-based Financial aid regulations",
+   "Endowment, Alumni, and Sports Excellence scholarship guidelines",
+   "Financial aid eligibility criteria and merit scholarships",
+   "Who qualifies for university merit scholarships?",
+   "Finance and Accounts office scholarship regulations"
+  ],
+  "Q037": [
+   "Campus Recruitment policy, CDC registration, and one-offer Norms",
+   "Recruiter conduct code, campus Hiring guidelines, and CTC Tiers",
+   "Career Development Centre placement office campus placement eligibility criteria",
+   "Frequently Asked Questions regarding campus Placements and Dream Companies",
+   "What are the requirements to register and participate in campus placement drives?"
+  ],
+  "Q038": [
+   "Backlog Arrears, Supplementary exams, and Summer Term policy",
+   "Circular: Supplementary Backlog examination registration and fee deadlines",
+   "Examination Cell supplementary exam eligibility",
+   "Who is eligible to write backlog and supplementary exams?"
+  ],
+  "Q039": [
+   "Semester Exchange and International Dual degree policy",
+   "Semester exchange program eligibility criteria",
+   "Office of International Relations",
+   "What are the requirements for studying abroad on a student semester exchange?"
+  ],
+  "Q040": [
+   "Procedure for Securing internship NOC and academic credit Transfer",
+   "Student internship guidelines and Corporate leave regulations",
+   "Policy on Industry internship-based 8th semester projects",
+   "Academic affairs & Career Development internship approval guidelines",
+   "How do I get an NOC for an internship and transfer my credits?"
+  ],
+  "Q041": [
+   "Procedure for Requesting Bonafide Certificates and Proof of Study",
+   "Application form: General Bonafide student certificate Request",
+   "Bonafide student certificate and document verification policy",
+   "How to get general bonafide student certificate",
+   "Admissions office Registrar Records bonafide request"
+  ],
+  "Q042": [
+   "Application form: Duplicate student Identity card Request",
+   "Student ID card Issuance, RFID Usage, and Replacement policy",
+   "How to replace a lost student identification card",
+   "Administrative office Registrar Secretariat student ID replacement"
+  ],
+  "Q043": [
+   "Hostel room vacation, Inventory Clearance, and Key Handover protocol",
+   "How do I clear my room and hand over keys when leaving the residence?",
+   "Hostel Administration and Residence Life room vacation procedure",
+   "Room checkout clearance inventory protocol",
+   "What are the steps for hostel room vacation, inventory clearance, and key handover?"
+  ],
+  "Q044": [
+   "Step-by-step Guide: Filing an Online student grievance on ResolveDesk",
+   "ResolveDesk ticketing user guide for lodging complaints",
+   "How to raise a student complaint online through ResolveDesk",
+   "Student grievance Redressal and Ombudsman policy",
+   "Information Technology Services ResolveDesk online grievance submission"
+  ],
+  "Q045": [
+   "Application form: on-duty (OD) leave Sanction",
+   "On-duty (OD) leave and co-curricular Absence policy",
+   "On-duty (OD) Sanction and attendance Adjustment regulations",
+   "How to apply for on-duty leave?",
+   "Academic affairs & student affairs"
+  ],
+  "Q046": [
+   "Comprehensive university Institutional no-dues Clearance SOP",
+   "Comprehensive institutional no-dues sign-off procedure",
+   "No-dues clearance matrix and department sign-off guidelines",
+   "Finance and Accounts office no-dues clearance process"
+  ],
+  "Q047": [
+   "ExamShield portal Guide: hall Ticket download and Re-evaluation Filing",
+   "How to download hall tickets and file for re-evaluation using ExamShield",
+   "ExamShield portal",
+   "Examination Cell"
+  ],
+  "Q048": [
+   "LibNet OPAC Search, book Reservation, and Account Renewal Guide",
+   "LibNet account renewal and book holding guide",
+   "Central library and Learning Resource Centre LibNet book reservation procedure",
+   "How do I reserve a book and renew my account on LibNet?"
+  ],
+  "Q049": [
+   "Campus wi-fi (802.1x)",
+   "Campus wi-fi Connectivity and 802.1x Device Authentication Setup Guide",
+   "Campus Cybersecurity and network Infrastructure Usage policy",
+   "How to configure campus wi-fi (802.1x) authentication settings",
+   "Information Technology Services"
+  ],
+  "Q050": [
+   "CareerHub portal student Guide: Drive registration and Resume upload",
+   "Campus Recruitment policy, CDC registration, and one-offer Norms",
+   "Career Development Centre placement office",
+   "How to register for drives and what are the one-offer rules on CareerHub?",
+   "Recruiter conduct code, campus Hiring guidelines, and CTC Tiers"
+  ]
+ },
+ "parse_errors": {},
+ "metadata": {
+  "model": "gemini-3.5-flash-lite",
+  "provider": "google",
+  "max_variants": 5,
+  "prompt": "glossary-v1",
+  "queries_file": "evaluation/golden_queries.json",
+  "started": "2026-10-20T10:23:33.183717+00:00"
+ }
+}
