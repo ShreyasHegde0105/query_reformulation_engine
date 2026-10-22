@@ -82,8 +82,7 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
     """Assemble the production pipeline (and answer generator, if an LLM is configured)."""
     from embedding.encoder import EmbeddingEncoder
     from reformulation.answer_generator import AnswerGenerator
-    from reformulation.llm.client import LLMClient
-    from reformulation.llm.config import LLMConfig
+    from reformulation.llm.fallback import FallbackLLMClient
     from reformulation.reformulator import QueryReformulator
     from reformulation.semantic_similarity import SemanticSimilarity
     from reformulation.spelling import CorpusSpellCorrector
@@ -94,7 +93,7 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
     info: Dict[str, Any] = {}
     answerer: Optional[AnswerGenerator] = None
     try:
-        llm = LLMClient(LLMConfig.from_env())
+        llm = FallbackLLMClient.from_env()
         reformulator: Any = QueryReformulator(llm)
         answerer = AnswerGenerator(llm)
         info["reformulation"] = "llm"

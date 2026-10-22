@@ -59,8 +59,9 @@ class LLMClient:
         payload = {
             "model": self.config.model,
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": self.config.temperature,
         }
+        if self.config.temperature is not None:
+            payload["temperature"] = self.config.temperature
         return json.dumps(payload).encode("utf-8")
 
     _MAX_RETRY_AFTER_SECONDS = 30.0
@@ -83,6 +84,8 @@ class LLMClient:
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {self.config.api_key}",
+            # Some providers' firewalls (e.g. Groq's) block urllib's default User-Agent with HTTP 403.
+            "User-Agent": "query-reformulation-engine/1.0",
         }
         request = urllib.request.Request(url, data=data, method="POST")
         for header_name, header_value in headers.items():

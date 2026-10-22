@@ -5,6 +5,7 @@ Exports the configuration object, client class and exception hierarchy.
 
 from .config import LLMConfig
 from .client import LLMClient
+from .fallback import FallbackLLMClient
 from .exceptions import (
     LLMError,
     LLMConfigError,
@@ -18,6 +19,7 @@ from .exceptions import (
 __all__ = [
     "LLMConfig",
     "LLMClient",
+    "FallbackLLMClient",
     "LLMError",
     "LLMConfigError",
     "LLMPromptError",

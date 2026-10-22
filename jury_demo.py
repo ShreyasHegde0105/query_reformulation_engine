@@ -4,7 +4,7 @@ Terminal-based demonstration for project jury and presentation.
 Demonstrates the full end-to-end AI query reformulation and retrieval pipeline:
 1. User Query
 2. Query Normalization (typo correction, abbreviation expansion, casing)
-3. LLM Query Reformulation (Gemini generation)
+3. LLM Query Reformulation (multi-provider, key fail-over)
 4. Semantic Filtering (cosine similarity scoring + redundancy filtering + reasons)
 5. Final Query Set
 6. Baseline Retrieval (original normalized query only)
@@ -39,8 +39,7 @@ load_dotenv(override=True)
 from embedding.encoder import EmbeddingEncoder
 from evaluation.metrics import calculate_all_metrics
 from reformulation.cross_encoder import CrossEncoderReranker
-from reformulation.llm.client import LLMClient
-from reformulation.llm.config import LLMConfig
+from reformulation.llm.fallback import FallbackLLMClient
 from reformulation.normalizer import normalize_query
 from reformulation.reformulator import QueryReformulator
 from reformulation.search_pipeline import SearchPipeline
@@ -105,8 +104,8 @@ class PresentationDemo:
         print("Initializing production components...")
         self.use_cache = use_cache
         try:
-            llm_config = LLMConfig.from_env()
-            llm_client = LLMClient(config=llm_config)
+            llm_client = FallbackLLMClient.from_env()
+            print(f"LLM keys (fail-over order): {', '.join(llm_client.labels)}")
             self.reformulator = QueryReformulator(llm_client=llm_client)
             # One embedding model shared by the redundancy filter and vector search.
             encoder = EmbeddingEncoder()
