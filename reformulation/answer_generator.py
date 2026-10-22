@@ -16,6 +16,7 @@ from retrieval.models import RetrievedChunk
 
 from .exceptions import ReformulationParseError
 from .llm.client import LLMClient
+from .llm.fallback import FallbackLLMClient
 
 __all__ = ["Answer", "AnswerGenerator"]
 
@@ -50,8 +51,8 @@ class AnswerGenerator:
     )
 
     def __init__(self, llm_client: LLMClient, max_chunks: int = 5, max_chars_per_chunk: int = 2000):
-        if not isinstance(llm_client, LLMClient):
-            raise TypeError("llm_client must be an instance of LLMClient")
+        if not isinstance(llm_client, (LLMClient, FallbackLLMClient)):
+            raise TypeError("llm_client must be an LLMClient or FallbackLLMClient")
         if max_chunks < 1:
             raise ValueError("max_chunks must be >= 1")
         self.llm_client = llm_client

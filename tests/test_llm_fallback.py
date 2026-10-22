@@ -148,6 +148,17 @@ class TestFallbackGenerate(unittest.TestCase):
         self.assertEqual(len(a.calls), 0)
 
 
+class TestFallbackAcceptedByConsumers(unittest.TestCase):
+    def test_reformulator_and_answer_generator_accept_fallback(self):
+        from reformulation.answer_generator import AnswerGenerator
+        from reformulation.reformulator import QueryReformulator
+
+        llm = FallbackLLMClient([_client("a", reply='{"reformulations": ["leave carry forward rules"]}')])
+        self.assertEqual(QueryReformulator(llm).generate_variants("leave carry policy"),
+                         ["Leave carry forward rules"])
+        AnswerGenerator(llm)
+
+
 class TestTemperatureOmitted(unittest.TestCase):
     def test_payload_without_temperature(self):
         client = LLMClient(LLMConfig(provider="openai", model="m", api_key="k", base_url="http://x", temperature=None))

@@ -23,6 +23,7 @@ from .exceptions import ReformulationParseError, ReformulationError
 # The LLM client lives in the ``reformulation.llm`` package.  Import lazily
 # to avoid pulling in heavy dependencies unless actually used.
 from .llm.client import LLMClient
+from .llm.fallback import FallbackLLMClient
 
 __all__ = ["QueryReformulator"]
 
@@ -79,8 +80,8 @@ class QueryReformulator:
     )
 
     def __init__(self, llm_client: LLMClient, glossary: Optional[str] = None):
-        if not isinstance(llm_client, LLMClient):
-            raise TypeError("llm_client must be an instance of LLMClient")
+        if not isinstance(llm_client, (LLMClient, FallbackLLMClient)):
+            raise TypeError("llm_client must be an LLMClient or FallbackLLMClient")
         self.llm_client = llm_client
         self.glossary = glossary.strip() if glossary and glossary.strip() else None
 
