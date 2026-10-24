@@ -465,6 +465,41 @@
         "HealthDesk",
         "UniCampus ERP"
       ]
+    },
+    {
+      "department_id": "DEPT-IRO",
+      "name": "Office of International Relations",
+      "short_code": "IRO",
+      "type": "Administrative / International",
+      "head_role": "Dean of International Relations",
+      "building_location": "Chanakya Bhavan, Ground Floor, Wing C",
+      "mission": "Manage semester exchange programmes, international dual degree partnerships, and inbound and outbound student mobility.",
+      "subunits": [
+        "Exchange Programmes Desk",
+        "Dual Degree Partnerships Cell"
+      ],
+      "primary_systems": [
+        "UniCampus ERP"
+      ]
+    },
+    {
+      "department_id": "DEPT-REG",
+      "name": "Registrar Secretariat",
+      "short_code": "REG",
+      "type": "Administrative / Governance",
+      "head_role": "University Registrar",
+      "building_location": "Chanakya Bhavan, 1st Floor, Wing B",
+      "mission": "Administer university governance bodies, administrative staffing and staff service rules.",
+      "subunits": [
+        "Governance Secretariat",
+        "Administrative Establishment Section",
+        "Human Resources Section"
+      ],
+      "primary_systems": [
+        "UniCampus ERP",
+        "ResolveDesk",
+        "Staff LMS Portal"
+      ]
     }
   ],
   "schools": [

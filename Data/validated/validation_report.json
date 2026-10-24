@@ -1,18 +1,18 @@
 {
-  "run_id": "validation-20260920-174725-6265dc",
-  "timestamp": "2026-09-20T17:47:26.718641Z",
+  "run_id": "validation-20261023-141545-b724a2",
+  "timestamp": "2026-10-23T14:15:46.359643Z",
   "summary": {
-    "total_documents": 159,
-    "valid_documents": 157,
-    "rejected_documents": 2,
-    "warnings": 6,
-    "errors": 1,
-    "infos": 200
+    "total_documents": 158,
+    "valid_documents": 158,
+    "rejected_documents": 0,
+    "warnings": 0,
+    "errors": 0,
+    "infos": 187
   },
   "id_statistics": {
-    "total_documents": 159,
+    "total_documents": 158,
     "unique_document_ids": 158,
-    "duplicate_document_ids": 1,
+    "duplicate_document_ids": 0,
     "invalid_document_ids": 0
   },
   "duplicates": {
@@ -22,38 +22,25 @@
     "near_duplicate_pairs": []
   },
   "quality": {
-    "total_words": 57725,
-    "average_word_count": 363.05,
-    "median_word_count": 347.0,
+    "total_words": 57527,
+    "average_word_count": 364.09,
+    "median_word_count": 347.5,
     "min_word_count": 173,
     "max_word_count": 626,
-    "average_char_count": 2610.66,
-    "median_char_count": 2469.0,
+    "average_char_count": 2618.09,
+    "median_char_count": 2493.5,
     "min_char_count": 1242,
     "max_char_count": 4580
   },
   "distribution": {
     "departments": {
-      "Academic Affairs": 21,
-      "Academic Affairs & Admissions": 2,
-      "Academic Affairs & Finance Office": 1,
-      "Admissions Office / Registrar Records": 3,
+      "Academic Affairs": 29,
+      "Admissions Office": 6,
       "Department of Student Affairs": 4,
-      "Academic Affairs & Campus Health Centre": 1,
       "Examination Cell": 16,
       "Campus Safety, Vigilance and Security Department": 6,
-      "Admissions and Media Relations Office": 1,
-      "Administrative Office / Registrar Secretariat": 1,
-      "Admissions Office / International Wing": 1,
-      "Admissions Office": 1,
-      "Campus Health Centre": 3,
-      "University Governance / Registrar Secretariat": 1,
-      "Academic Affairs / Registrar Secretariat": 1,
-      "Academic Affairs & Career Development": 1,
-      "Human Resources / Administrative Office": 1,
-      "Internal Quality Assurance Cell (IQAC)": 1,
+      "Registrar Secretariat": 3,
       "Office of International Relations": 1,
-      "Academic Affairs & Student Affairs": 1,
       "Career Development Centre / Placement Office": 9,
       "Department of Computer Science and Engineering": 7,
       "Department of Electronics and Communication Engineering": 4,
@@ -66,16 +53,17 @@
       "Campus Mobility and Transportation Unit": 2,
       "Campus Operations, Estate and Facilities Management": 5,
       "Office of Sponsored Research and Innovation": 8,
+      "Campus Health Centre": 2,
       "Office of Student Welfare": 9,
       "Clubs and Student Activities Council": 1
     },
     "department_ids": {
       "DEPT-ACAD": 29,
-      "DEPT-ADM": 9,
+      "DEPT-ADM": 6,
       "DEPT-DSA": 4,
-      "DEPT-EXAM": 17,
+      "DEPT-EXAM": 16,
       "DEPT-SEC": 6,
-      "DEPT-HEALTH": 3,
+      "DEPT-REG": 3,
       "DEPT-IRO": 1,
       "DEPT-CDC": 9,
       "DEPT-CSE": 7,
@@ -84,11 +72,12 @@
       "DEPT-CIVIL": 2,
       "DEPT-FIN": 10,
       "DEPT-HSTL": 11,
-      "DEPT-IT": 13,
+      "DEPT-IT": 14,
       "DEPT-LIB": 7,
       "DEPT-TRANS": 2,
       "DEPT-OPS": 5,
       "DEPT-RES": 8,
+      "DEPT-HEALTH": 2,
       "DEPT-SW": 9,
       "DEPT-SAC": 1
     },
@@ -112,7 +101,6 @@
       "International Admissions SOP / Statutory Visa Compliance Manual": 1,
       "Institutional Policy / Certification Governance": 1,
       "Institutional Policy / Departure Governance": 1,
-      "Health & Attendance Policy / Clinical Absence Regulations": 1,
       "Statutory University Governance Act / Executive Board Charter": 1,
       "Statutory Governance Regulation / Academic Senate Charter": 1,
       "Academic Appeals Procedure / Governance Committee Charter": 1,
@@ -215,7 +203,7 @@
     },
     "domains": {
       "Academic": 18,
-      "Administrative Forms & General Administration": 24,
+      "Administrative Forms & General Administration": 23,
       "Career and Placement": 9,
       "Engineering": 16,
       "Examination": 15,
@@ -228,22 +216,22 @@
       "Student Affairs": 15
     },
     "statuses": {
-      "Active": 159
+      "Active": 158
     },
     "systems": {
-      "UniCampus ERP": 142,
-      "ResolveDesk": 90,
+      "UniCampus ERP": 141,
+      "ResolveDesk": 89,
       "PayVarsity": 50,
       "CampusPass": 37,
       "LearnSphere LMS": 35,
       "ExamShield Portal": 28,
-      "AttendEdge": 23,
+      "AttendEdge": 22,
       "DormTrack": 17,
       "LibNet": 12,
       "CareerHub": 10,
       "LabServer Forge": 9,
       "ResTrack Portal": 9,
-      "HealthDesk": 4,
+      "HealthDesk": 3,
       "TransPass": 3,
       "Turnitin / E-Shodh Hub": 3,
       "EDA Cloud Lab": 2,
@@ -254,13 +242,13 @@
       "Campus Wi-Fi (802.1X)": 1
     },
     "roles": {
-      "Dean of Academic Affairs": 43,
-      "Head of Department (HOD)": 39,
+      "Dean of Academic Affairs": 42,
+      "Head of Department (HOD)": 38,
       "Chief Finance Officer / Bursar": 36,
       "Course Instructor / Professor": 32,
       "Controller of Examinations (COE)": 30,
       "Chief Security Officer (CSO)": 28,
-      "Faculty Advisor / Mentor": 25,
+      "Faculty Advisor / Mentor": 24,
       "Director of IT Infrastructure": 18,
       "Dean of Student Welfare (DSW)": 17,
       "Academic Program Coordinator": 16,
@@ -282,86 +270,6 @@
     }
   },
   "issues": [
-    {
-      "category": "id",
-      "severity": "error",
-      "message": "Duplicate document ID detected: 'POL-MEDICAL-LEAVE' appears 2 times across corpus",
-      "document_id": "POL-MEDICAL-LEAVE",
-      "field": "document_id",
-      "details": {
-        "count": 2
-      }
-    },
-    {
-      "category": "content",
-      "severity": "warning",
-      "message": "Detected placeholder or boilerplate pattern: 'XXXX'",
-      "document_id": "SEC-SOP-001",
-      "field": "content",
-      "details": {
-        "pattern": "xxx+"
-      }
-    },
-    {
-      "category": "content",
-      "severity": "warning",
-      "message": "Detected placeholder or boilerplate pattern: 'XXXXX'",
-      "document_id": "STU-GUI-001",
-      "field": "content",
-      "details": {
-        "pattern": "xxx+"
-      }
-    },
-    {
-      "category": "entity",
-      "severity": "warning",
-      "message": "Department ID 'DEPT-ACAD' maps inconsistently to multiple department names: ['Academic Affairs', 'Academic Affairs & Admissions', 'Academic Affairs & Campus Health Centre', 'Academic Affairs & Career Development', 'Academic Affairs & Finance Office', 'Academic Affairs & Student Affairs', 'Academic Affairs / Registrar Secretariat', 'Internal Quality Assurance Cell (IQAC)']",
-      "field": "department",
-      "details": {
-        "department_id": "DEPT-ACAD",
-        "conflicting_names": [
-          "Academic Affairs",
-          "Academic Affairs & Admissions",
-          "Academic Affairs & Campus Health Centre",
-          "Academic Affairs & Career Development",
-          "Academic Affairs & Finance Office",
-          "Academic Affairs & Student Affairs",
-          "Academic Affairs / Registrar Secretariat",
-          "Internal Quality Assurance Cell (IQAC)"
-        ]
-      }
-    },
-    {
-      "category": "entity",
-      "severity": "warning",
-      "message": "Department ID 'DEPT-ADM' maps inconsistently to multiple department names: ['Administrative Office / Registrar Secretariat', 'Admissions Office', 'Admissions Office / International Wing', 'Admissions Office / Registrar Records', 'Admissions and Media Relations Office', 'Human Resources / Administrative Office', 'University Governance / Registrar Secretariat']",
-      "field": "department",
-      "details": {
-        "department_id": "DEPT-ADM",
-        "conflicting_names": [
-          "Administrative Office / Registrar Secretariat",
-          "Admissions Office",
-          "Admissions Office / International Wing",
-          "Admissions Office / Registrar Records",
-          "Admissions and Media Relations Office",
-          "Human Resources / Administrative Office",
-          "University Governance / Registrar Secretariat"
-        ]
-      }
-    },
-    {
-      "category": "entity",
-      "severity": "warning",
-      "message": "Department ID 'DEPT-EXAM' maps inconsistently to multiple department names: ['Examination Cell', 'Information Technology Services']",
-      "field": "department",
-      "details": {
-        "department_id": "DEPT-EXAM",
-        "conflicting_names": [
-          "Examination Cell",
-          "Information Technology Services"
-        ]
-      }
-    },
     {
       "category": "entity",
       "severity": "info",
@@ -1835,130 +1743,10 @@
     {
       "category": "coverage",
       "severity": "info",
-      "message": "Department 'Academic Affairs & Finance Office' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Academic Affairs & Finance Office",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Academic Affairs & Campus Health Centre' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Academic Affairs & Campus Health Centre",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Admissions and Media Relations Office' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Admissions and Media Relations Office",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Administrative Office / Registrar Secretariat' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Administrative Office / Registrar Secretariat",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Admissions Office / International Wing' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Admissions Office / International Wing",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Admissions Office' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Admissions Office",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'University Governance / Registrar Secretariat' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "University Governance / Registrar Secretariat",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Academic Affairs / Registrar Secretariat' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Academic Affairs / Registrar Secretariat",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Academic Affairs & Career Development' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Academic Affairs & Career Development",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Human Resources / Administrative Office' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Human Resources / Administrative Office",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Internal Quality Assurance Cell (IQAC)' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Internal Quality Assurance Cell (IQAC)",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
       "message": "Department 'Office of International Relations' has only 1 document(s) in the corpus",
       "field": "department",
       "details": {
         "department": "Office of International Relations",
-        "count": 1
-      }
-    },
-    {
-      "category": "coverage",
-      "severity": "info",
-      "message": "Department 'Academic Affairs & Student Affairs' has only 1 document(s) in the corpus",
-      "field": "department",
-      "details": {
-        "department": "Academic Affairs & Student Affairs",
         "count": 1
       }
     },
@@ -1985,31 +1773,11 @@
     {
       "category": "ground_truth",
       "severity": "info",
-      "message": "System 'HealthDesk' is not registered in authoritative world model systems catalog",
-      "document_id": "POL-MEDICAL-LEAVE",
-      "field": "systems",
-      "details": {
-        "system": "HealthDesk"
-      }
-    },
-    {
-      "category": "ground_truth",
-      "severity": "info",
       "message": "System 'Staff LMS Portal' is not registered in authoritative world model systems catalog",
       "document_id": "HR-POL-003",
       "field": "systems",
       "details": {
         "system": "Staff LMS Portal"
-      }
-    },
-    {
-      "category": "ground_truth",
-      "severity": "warning",
-      "message": "Department ID 'DEPT-IRO' is not in authoritative world model departments",
-      "document_id": "IRO-POL-001",
-      "field": "department_id",
-      "details": {
-        "department_id": "DEPT-IRO"
       }
     },
     {

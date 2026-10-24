@@ -4,7 +4,7 @@
     {
       "document_id": "STU-FRM-001",
       "title": "Application Form: General Bonafide Student Certificate Request",
-      "department": "Academic Affairs & Admissions",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Administrative Application Form / Student Request Form",
       "version": "3.0",
@@ -64,7 +64,7 @@
     {
       "document_id": "STU-FRM-002",
       "title": "Application Form: Education Loan Fee Estimation Statement",
-      "department": "Academic Affairs & Finance Office",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Administrative Application Form / Financial Documentation Request",
       "version": "3.0",
@@ -125,7 +125,7 @@
     {
       "document_id": "STU-FRM-003",
       "title": "Application Form: Transfer Certificate (TC) and Migration Certificate",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Statutory Discharge Form / Departure Application",
       "version": "3.1",
@@ -245,7 +245,7 @@
     {
       "document_id": "STU-FRM-005",
       "title": "Application Form: Attendance Shortage Medical Condonation",
-      "department": "Academic Affairs & Campus Health Centre",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Statutory Academic Condonation Form / Medical Exemption Request",
       "version": "3.1",
@@ -435,7 +435,7 @@
     {
       "document_id": "ADM-SOP-001",
       "title": "Comprehensive University Institutional No-Dues Clearance SOP",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Standard Operating Procedure / Cross-Department Clearance",
       "version": "3.5",
@@ -510,7 +510,7 @@
     {
       "document_id": "ACAD-SOP-002",
       "title": "Procedure for Requesting Bonafide Certificates and Proof of Study",
-      "department": "Academic Affairs & Admissions",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Standard Operating Procedure / Academic Documentation SOP",
       "version": "3.0",
@@ -570,7 +570,7 @@
     {
       "document_id": "ADM-POL-004",
       "title": "Procedure for Withdrawal, Transfer Certificate (TC), and Migration",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Discharge Policy / Student Departure SOP",
       "version": "3.2",
@@ -635,7 +635,7 @@
     {
       "document_id": "ADM-MED-001",
       "title": "Media Interaction and PR Press Release Protocol",
-      "department": "Admissions and Media Relations Office",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Media Policy / Public Relations Guidelines",
       "version": "2.0",
@@ -693,8 +693,8 @@
     {
       "document_id": "ADM-STF-002",
       "title": "Administrative Office Hierarchy and Staff Designations",
-      "department": "Administrative Office / Registrar Secretariat",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Organizational Charter / Administrative Hierarchy Manual",
       "version": "2.2",
       "effective_date": "2026-08-01",
@@ -752,7 +752,7 @@
     {
       "document_id": "ADM-INT-001",
       "title": "International Student Admissions, Visa Compliance, and FRRO Guidelines",
-      "department": "Admissions Office / International Wing",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "International Admissions SOP / Statutory Visa Compliance Manual",
       "version": "2.5",
@@ -927,70 +927,10 @@
       "content": "1. STATUTORY PURPOSE\nThis policy governs the termination of student enrollment, permanent record archiving, and the issuance of statutory Transfer Certificates (TC) and Inter-University Migration Certificates upon graduation or withdrawal from Demo University.\n\n2. REGULATORY REQUIREMENTS AND STATUTORY CONTENTS\n2.1 Mandatory Contents: In accordance with statutory education regulations, the Transfer Certificate records: Student Full Legal Name, Enrollment Number, Date of Initial Admission, Date of Leaving, Academic Degree Program, General Moral Conduct, and Reason for Departure;\n2.2 Mandatory No-Dues Clearance: Application for TC and Migration must be accompanied by comprehensive institutional No-Dues clearance across Library, Hostels, Laboratories, and Accounts (ADM-SOP-001);\n2.3 Issuance Timeline: Transfer and Migration certificates are prepared, sealed by the Registrar, and dispatched within seven (7) working days following successful No-Dues verification.\n\n3. DUPLICATE CERTIFICATE PROTOCOL\nBecause a Transfer Certificate is a definitive legal departure instrument, duplicate copies are issued only in bona fide cases of loss or destruction upon submission of a formal police non-traceable report and a sworn notary affidavit."
     },
     {
-      "document_id": "POL-MEDICAL-LEAVE",
-      "title": "Medical Leave and Health Absence Policy",
-      "department": "Campus Health Centre",
-      "department_id": "DEPT-HEALTH",
-      "document_type": "Health & Attendance Policy / Clinical Absence Regulations",
-      "version": "3.0",
-      "effective_date": "2026-08-01",
-      "status": "Active",
-      "audience": [
-        "All Students Experiencing Medical Illness",
-        "Campus Health Centre Medical Team",
-        "Faculty Advisors",
-        "Dean of Academic Affairs"
-      ],
-      "keywords": [
-        "medical leave policy",
-        "health absence regulations",
-        "illness reporting 48 hours",
-        "medical certificate verification within 3 days",
-        "prolonged illness 20 days semester break",
-        "Health Centre endorsement slip",
-        "fraudulent medical certificate penalty",
-        "Senior Chief Medical Officer"
-      ],
-      "retrieval_signals": [
-        "medical leave policy Demo University",
-        "reporting health absence 48 hours rules",
-        "how to submit medical certificate for missing class",
-        "private clinic medical certificate verification health centre",
-        "prolonged illness 20 days semester break policy",
-        "penalty for fake medical certificate",
-        "medical leave rules students",
-        "medcal leav policy",
-        "sick leave student rules",
-        "Medical Leave Policy + Health Centre verification",
-        "attendance exemption + medical certificate endorsement"
-      ],
-      "systems": [
-        "HealthDesk",
-        "ResolveDesk",
-        "UniCampus ERP",
-        "AttendEdge"
-      ],
-      "roles": [
-        "Senior Chief Medical Officer (ROLE-CMO)",
-        "Campus Physician",
-        "Dean of Academic Affairs",
-        "Faculty Advisor / Mentor",
-        "Head of Department (HOD)"
-      ],
-      "related_documents": [
-        "STU-FRM-005",
-        "ACAD-POL-003",
-        "STU-MED-001",
-        "POL-ATTEND",
-        "REL-004"
-      ],
-      "content": "1. PURPOSE AND HEALTH MANDATE\nThis policy establishes clinical reporting timelines, medical certificate verification protocols, hospitalization leaves, and psychiatric accommodations for students experiencing acute or chronic medical conditions.\n\n2. REPORTING PROTOCOLS AND TIMELINES\n2.1 48-Hour Reporting Rule: Any illness causing student absence for three (3) or more consecutive working days must be reported to the Campus Health Centre and assigned Faculty Advisor within forty-eight (48) hours of symptom onset;\n2.2 3-Day Verification Rule: Medical certificates issued by external private hospitals or physicians must be presented in person to the Senior Chief Medical Officer (Health & Wellness Pavilion) within three (3) working days of resuming campus attendance;\n2.3 University Medical Verification Slip: Following clinical review, the Chief Medical Officer issues an official University Medical Verification Slip with a unique endorsement code;\n2.4 Prolonged Illness and Semester Break: If severe illness exceeds twenty (20) instructional working days, the student may petition the Dean of Academic Affairs for a formal medical semester break (leave of absence) without academic penalty.\n\n3. PENALTIES FOR FRAUDULENT CERTIFICATION\nFabricating, altering, or purchasing fraudulent medical certificates constitutes severe academic dishonesty. Offenders face immediate semester suspension and referral to the Disciplinary Committee."
-    },
-    {
       "document_id": "GOV-ACT-001",
       "title": "Constitution and Powers of the Executive Council",
-      "department": "University Governance / Registrar Secretariat",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Statutory University Governance Act / Executive Board Charter",
       "version": "2.0",
       "effective_date": "2026-08-01",
@@ -1049,7 +989,7 @@
     {
       "document_id": "GOV-REG-002",
       "title": "Academic Council Mandate and Standing Committee Powers",
-      "department": "Academic Affairs / Registrar Secretariat",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Statutory Governance Regulation / Academic Senate Charter",
       "version": "2.0",
@@ -1166,7 +1106,7 @@
     {
       "document_id": "ACAD-GOV-006",
       "title": "Industry Advisory Board Composition and Mandate",
-      "department": "Academic Affairs & Career Development",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Institutional Governance Charter / Industry Advisory Guidelines",
       "version": "2.0",
@@ -1221,8 +1161,8 @@
     {
       "document_id": "HR-POL-003",
       "title": "Staff Leave Rules and Online LMS Portal Guide",
-      "department": "Human Resources / Administrative Office",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Human Resources Policy / Staff Leave Management Guide",
       "version": "2.2",
       "effective_date": "2026-08-01",
@@ -1277,7 +1217,7 @@
     {
       "document_id": "IQAC-REV-003",
       "title": "Annual Department Operational Review Guidelines",
-      "department": "Internal Quality Assurance Cell (IQAC)",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Quality Audit Guidelines / Institutional Review Manual",
       "version": "2.0",
@@ -1391,7 +1331,7 @@
     {
       "document_id": "ACAD-SOP-008",
       "title": "Safety and Approval Protocol for Student Field Trips (FT)",
-      "department": "Academic Affairs & Student Affairs",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Standard Operating Procedure / Excursion Safety Protocol",
       "version": "2.0",

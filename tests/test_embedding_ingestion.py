@@ -281,14 +281,18 @@ class TestEmbeddingAndIngestion(unittest.TestCase):
         pipeline = IngestionPipeline(config=cfg)
         # Mock encoder.encode_passages to keep unit test fast (norm = 1.0)
         unit_val = 1.0 / (384 ** 0.5)
+        with open(cfg.input_chunks_path, encoding="utf-8") as f:
+            chunks = [json.loads(line) for line in f if line.strip()]
+        n_chunks = len(chunks)
+        n_docs = len({c["document_id"] for c in chunks})
         with patch.object(pipeline.encoder, "encode_passages") as mock_encode:
-            mock_encode.return_value = [[unit_val] * 384] * 696
+            mock_encode.return_value = [[unit_val] * 384] * n_chunks
             res = pipeline.run()
 
         self.assertEqual(res["status"], "DRY_RUN_COMPLETED")
-        self.assertEqual(res["documents_count"], 157)
-        self.assertEqual(res["chunks_count"], 696)
-        self.assertEqual(res["embeddings_count"], 696)
+        self.assertEqual(res["documents_count"], n_docs)
+        self.assertEqual(res["chunks_count"], n_chunks)
+        self.assertEqual(res["embeddings_count"], n_chunks)
         self.assertEqual(res["dimension"], 384)
 
 

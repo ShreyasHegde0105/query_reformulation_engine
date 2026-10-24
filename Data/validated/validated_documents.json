@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "total_documents": 157,
-    "generated_from_run_id": "validation-20260920-174725-6265dc",
-    "timestamp": "2026-09-20T17:47:26.718641Z"
+    "total_documents": 158,
+    "generated_from_run_id": "validation-20261023-141545-b724a2",
+    "timestamp": "2026-10-23T14:15:46.359643Z"
   },
   "documents": [
     {
@@ -1075,7 +1075,7 @@
     {
       "document_id": "STU-FRM-001",
       "title": "Application Form: General Bonafide Student Certificate Request",
-      "department": "Academic Affairs & Admissions",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Administrative Application Form / Student Request Form",
       "version": "3.0",
@@ -1135,7 +1135,7 @@
     {
       "document_id": "STU-FRM-002",
       "title": "Application Form: Education Loan Fee Estimation Statement",
-      "department": "Academic Affairs & Finance Office",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Administrative Application Form / Financial Documentation Request",
       "version": "3.0",
@@ -1196,7 +1196,7 @@
     {
       "document_id": "STU-FRM-003",
       "title": "Application Form: Transfer Certificate (TC) and Migration Certificate",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Statutory Discharge Form / Departure Application",
       "version": "3.1",
@@ -1316,7 +1316,7 @@
     {
       "document_id": "STU-FRM-005",
       "title": "Application Form: Attendance Shortage Medical Condonation",
-      "department": "Academic Affairs & Campus Health Centre",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Statutory Academic Condonation Form / Medical Exemption Request",
       "version": "3.1",
@@ -1506,7 +1506,7 @@
     {
       "document_id": "ADM-SOP-001",
       "title": "Comprehensive University Institutional No-Dues Clearance SOP",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Standard Operating Procedure / Cross-Department Clearance",
       "version": "3.5",
@@ -1581,7 +1581,7 @@
     {
       "document_id": "ACAD-SOP-002",
       "title": "Procedure for Requesting Bonafide Certificates and Proof of Study",
-      "department": "Academic Affairs & Admissions",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Standard Operating Procedure / Academic Documentation SOP",
       "version": "3.0",
@@ -1641,7 +1641,7 @@
     {
       "document_id": "ADM-POL-004",
       "title": "Procedure for Withdrawal, Transfer Certificate (TC), and Migration",
-      "department": "Admissions Office / Registrar Records",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Discharge Policy / Student Departure SOP",
       "version": "3.2",
@@ -1706,7 +1706,7 @@
     {
       "document_id": "ADM-MED-001",
       "title": "Media Interaction and PR Press Release Protocol",
-      "department": "Admissions and Media Relations Office",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "Institutional Media Policy / Public Relations Guidelines",
       "version": "2.0",
@@ -1764,8 +1764,8 @@
     {
       "document_id": "ADM-STF-002",
       "title": "Administrative Office Hierarchy and Staff Designations",
-      "department": "Administrative Office / Registrar Secretariat",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Organizational Charter / Administrative Hierarchy Manual",
       "version": "2.2",
       "effective_date": "2026-08-01",
@@ -1823,7 +1823,7 @@
     {
       "document_id": "ADM-INT-001",
       "title": "International Student Admissions, Visa Compliance, and FRRO Guidelines",
-      "department": "Admissions Office / International Wing",
+      "department": "Admissions Office",
       "department_id": "DEPT-ADM",
       "document_type": "International Admissions SOP / Statutory Visa Compliance Manual",
       "version": "2.5",
@@ -2000,8 +2000,8 @@
     {
       "document_id": "GOV-ACT-001",
       "title": "Constitution and Powers of the Executive Council",
-      "department": "University Governance / Registrar Secretariat",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Statutory University Governance Act / Executive Board Charter",
       "version": "2.0",
       "effective_date": "2026-08-01",
@@ -2060,7 +2060,7 @@
     {
       "document_id": "GOV-REG-002",
       "title": "Academic Council Mandate and Standing Committee Powers",
-      "department": "Academic Affairs / Registrar Secretariat",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Statutory Governance Regulation / Academic Senate Charter",
       "version": "2.0",
@@ -2177,7 +2177,7 @@
     {
       "document_id": "ACAD-GOV-006",
       "title": "Industry Advisory Board Composition and Mandate",
-      "department": "Academic Affairs & Career Development",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Institutional Governance Charter / Industry Advisory Guidelines",
       "version": "2.0",
@@ -2232,8 +2232,8 @@
     {
       "document_id": "HR-POL-003",
       "title": "Staff Leave Rules and Online LMS Portal Guide",
-      "department": "Human Resources / Administrative Office",
-      "department_id": "DEPT-ADM",
+      "department": "Registrar Secretariat",
+      "department_id": "DEPT-REG",
       "document_type": "Human Resources Policy / Staff Leave Management Guide",
       "version": "2.2",
       "effective_date": "2026-08-01",
@@ -2288,7 +2288,7 @@
     {
       "document_id": "IQAC-REV-003",
       "title": "Annual Department Operational Review Guidelines",
-      "department": "Internal Quality Assurance Cell (IQAC)",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Quality Audit Guidelines / Institutional Review Manual",
       "version": "2.0",
@@ -2402,7 +2402,7 @@
     {
       "document_id": "ACAD-SOP-008",
       "title": "Safety and Approval Protocol for Student Field Trips (FT)",
-      "department": "Academic Affairs & Student Affairs",
+      "department": "Academic Affairs",
       "department_id": "DEPT-ACAD",
       "document_type": "Standard Operating Procedure / Excursion Safety Protocol",
       "version": "2.0",
@@ -6552,7 +6552,7 @@
       "document_id": "IT-SYS-003",
       "title": "ExamShield Portal Guide: Hall Ticket Download and Re-evaluation Filing",
       "department": "Information Technology Services",
-      "department_id": "DEPT-EXAM",
+      "department_id": "DEPT-IT",
       "document_type": "User Guide / System Manual",
       "version": "2.5",
       "effective_date": "2026-08-01",
@@ -8088,7 +8088,7 @@
         "OPS-EST-004",
         "STU-MED-001"
       ],
-      "content": "1. PURPOSE AND EMERGENCY SCOPE\nThis standard operating procedure establishes definitive operational directives, command hierarchies, evacuation pathways, communication chains, and assembly protocols for responding to major on-campus emergencies\u2014including structural fires, hazardous chemical leaks, laboratory explosions, natural disasters, or major infrastructure collapses. Enforced by DEPT-SEC in coordination with Campus Operations (DEPT-OPS) and the Campus Health Centre (DEPT-HEALTH).\n\n2. IMMEDIATE EMERGENCY DISCOVERY AND REPORTING\n2.1 Raising the Alarm: Any individual discovering a fire, smoke plume, or life-threatening hazard must immediately break the glass of the nearest Manual Call Point (MCP) fire alarm pull station located along corridor corridors and stairwell exits.\n2.2 Emergency Notification: Immediately contact the 24/7 Security Operations Centre Hotline (Extension 100 / Direct Campus Emergency Line: +91-XXXX-EMERG). State clearly:\n- Exact building name, floor number, and room/laboratory identifier;\n- Nature of the hazard (Electrical fire, Chemical spill, Structural failure);\n- Known human casualties or trapped personnel.\n2.3 Automated Alarm Transmission: Fire panel activation automatically triggers localized audible sirens, unlatches electromagnetic emergency exit doors, and notifies municipal fire dispatch.\n\n3. EVACUATION DIRECTIVES AND CODE OF CONDUCT\nUpon activation of the evacuation alarm, all building occupants must execute immediate, orderly evacuation:\n3.1 Cessation of Activity: Instructors, students, and staff must cease all laboratory apparatus, close chemical fume hoods, shut off primary gas valves, and leave personal baggage behind;\n3.2 Prohibition of Lifts/Elevators: Under no circumstances may elevators or freight lifts be utilized during a fire evacuation; all descent must occur via designated external fire escape stairwells;\n3.3 Orderly Movement: Move swiftly without running, pushing, or overtaking; assist individuals with physical disabilities or mobility impairments;\n3.4 Floor Safety Wardens: Appointed Department Safety Wardens sweep classrooms, restrooms, and research bays to ensure complete clearance before exiting last.\n\n4. DESIGNATED CAMPUS EMERGENCY ASSEMBLY POINTS\nEvacuees must proceed directly along marked exit pathways to designated open-air assembly zones:\n4.1 Assembly Area Alpha: Central Cricket Ground (For occupants of Ramanujan Block, Chanakya Bhavan, and Admin Wing);\n4.2 Assembly Area Beta: East Enclave Central Lawn (For occupants of all student residential hostels and East Dining Hall);\n4.3 Assembly Area Gamma: Student Activity Centre Plaza (For occupants of Turing Complex, Central Computing Centre, and Mechanical Workshops).\n\n5. INCIDENT COMMAND, HEADCOUNTS, AND MEDICAL TRIAGE\n5.1 Accountability Verification: Department Floor Wardens conduct rapid headcount reconciliations against active attendance rosters and report missing personnel to the Incident Commander (CSO) within ten (10) minutes of arrival.\n5.2 Emergency Medical Response: The Senior Chief Medical Officer (ROLE-CMO) coordinates emergency ambulance dispatch from the Campus Health Centre, establishing an on-site first-aid triage tent at the perimeter of the assembly area.\n5.3 All-Clear Authorization: Re-entry into evacuated buildings is strictly forbidden until the Chief Security Officer and Municipal Fire Chief formally declare an 'All-Clear' over the public address system.\n5.4 Mandatory Drills: Full-scale fire evacuation and disaster response drills are conducted semi-annually across all academic blocks and student residences."
+      "content": "1. PURPOSE AND EMERGENCY SCOPE\nThis standard operating procedure establishes definitive operational directives, command hierarchies, evacuation pathways, communication chains, and assembly protocols for responding to major on-campus emergencies\u2014including structural fires, hazardous chemical leaks, laboratory explosions, natural disasters, or major infrastructure collapses. Enforced by DEPT-SEC in coordination with Campus Operations (DEPT-OPS) and the Campus Health Centre (DEPT-HEALTH).\n\n2. IMMEDIATE EMERGENCY DISCOVERY AND REPORTING\n2.1 Raising the Alarm: Any individual discovering a fire, smoke plume, or life-threatening hazard must immediately break the glass of the nearest Manual Call Point (MCP) fire alarm pull station located along corridor corridors and stairwell exits.\n2.2 Emergency Notification: Immediately contact the 24/7 Security Operations Centre Hotline (Extension 100 / Direct Campus Emergency Line: +91-80-2345-0100). State clearly:\n- Exact building name, floor number, and room/laboratory identifier;\n- Nature of the hazard (Electrical fire, Chemical spill, Structural failure);\n- Known human casualties or trapped personnel.\n2.3 Automated Alarm Transmission: Fire panel activation automatically triggers localized audible sirens, unlatches electromagnetic emergency exit doors, and notifies municipal fire dispatch.\n\n3. EVACUATION DIRECTIVES AND CODE OF CONDUCT\nUpon activation of the evacuation alarm, all building occupants must execute immediate, orderly evacuation:\n3.1 Cessation of Activity: Instructors, students, and staff must cease all laboratory apparatus, close chemical fume hoods, shut off primary gas valves, and leave personal baggage behind;\n3.2 Prohibition of Lifts/Elevators: Under no circumstances may elevators or freight lifts be utilized during a fire evacuation; all descent must occur via designated external fire escape stairwells;\n3.3 Orderly Movement: Move swiftly without running, pushing, or overtaking; assist individuals with physical disabilities or mobility impairments;\n3.4 Floor Safety Wardens: Appointed Department Safety Wardens sweep classrooms, restrooms, and research bays to ensure complete clearance before exiting last.\n\n4. DESIGNATED CAMPUS EMERGENCY ASSEMBLY POINTS\nEvacuees must proceed directly along marked exit pathways to designated open-air assembly zones:\n4.1 Assembly Area Alpha: Central Cricket Ground (For occupants of Ramanujan Block, Chanakya Bhavan, and Admin Wing);\n4.2 Assembly Area Beta: East Enclave Central Lawn (For occupants of all student residential hostels and East Dining Hall);\n4.3 Assembly Area Gamma: Student Activity Centre Plaza (For occupants of Turing Complex, Central Computing Centre, and Mechanical Workshops).\n\n5. INCIDENT COMMAND, HEADCOUNTS, AND MEDICAL TRIAGE\n5.1 Accountability Verification: Department Floor Wardens conduct rapid headcount reconciliations against active attendance rosters and report missing personnel to the Incident Commander (CSO) within ten (10) minutes of arrival.\n5.2 Emergency Medical Response: The Senior Chief Medical Officer (ROLE-CMO) coordinates emergency ambulance dispatch from the Campus Health Centre, establishing an on-site first-aid triage tent at the perimeter of the assembly area.\n5.3 All-Clear Authorization: Re-entry into evacuated buildings is strictly forbidden until the Chief Security Officer and Municipal Fire Chief formally declare an 'All-Clear' over the public address system.\n5.4 Mandatory Drills: Full-scale fire evacuation and disaster response drills are conducted semi-annually across all academic blocks and student residences."
     },
     {
       "document_id": "SEC-SOP-003",
@@ -9185,6 +9185,77 @@
       "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nDemo University actively fosters holistic student development through participation in competitive athletic events, national hackathons, technical symposiums, research conferences, and cultural festivals. This policy establishes official regulations governing the sanction of On-Duty (OD) attendance exemptions, ceiling limits, procedural approval workflows, and automated attendance adjustments.\n\n2. JURISDICTION AND DEFINITIONS\n2.1 On-Duty (OD) Attendance Exemption: An authorized excused absence granted to a registered student officially selected to represent Demo University in sanctioned external or campus-wide co-curricular and extracurricular events.\n2.2 Attendance Factorization: Approved OD days are factored into AttendEdge attendance tracking engines as 'Excused Present', thereby safeguarding the candidate's statutory 75% attendance eligibility for Semester End Examinations (SEE).\n\n3. ELIGIBILITY CRITERIA AND SANCTIONED ACTIVITIES\n3.1 Permissible Categories: OD absence may be sanctioned exclusively for:\n  a) Inter-university sports tournaments endorsed by the University Sports Directorate.\n  b) National and international technical hackathons, design symposiums, and competitive collegiate coding contests endorsed by Department Heads.\n  c) Peer-reviewed academic conferences where the student is presenting an accepted research paper.\n  d) Authorized university cultural festivals, leadership summits, or inter-collegiate debates coordinated by the Student Activity Centre.\n3.2 Non-Permissible Categories: OD cannot be claimed for personal travel, family functions, private coaching, job interviews not coordinated through the Career Development Centre, or unapproved student-initiated trips.\n\n4. STATUTORY CEILINGS AND LIMITATIONS\n4.1 Semester Cap: On-Duty leave is strictly limited to a maximum of 10 working days per academic semester across all registered courses.\n4.2 Non-Extendable Threshold: Absences exceeding the 10-day statutory ceiling cannot be categorized as On-Duty and will be recorded as unexcused absences in AttendEdge.\n\n5. PROCEDURAL APPLICATION AND APPROVAL WORKFLOW (PROC-OD-SANCTION)\n5.1 Pre-Event Application: The student must log an official OD Request ticket on ResolveDesk at least 3 working days prior to the commencement of the event, attaching the formal invitation brochure, selection letter, and scheduled travel itinerary.\n5.2 Faculty Endorsement: The designated Faculty Coordinator (Sports Director, Club Mentor, or Project Guide) verifies the authenticity of the event and digitally endorses the application.\n5.3 Executive Approval: The Dean of Student Affairs (DSA) reviews institutional merit and grants formal administrative sanction.\n5.4 Post-Event Claim Submission: Within 5 working days of returning to campus, the student must upload the official Certificate of Participation / Attendance and a brief event report to the original ResolveDesk ticket.\n5.5 Automated System Reconciliation: Upon post-event verification, AttendEdge automatically adjusts course attendance records for the approved dates from absent to 'Excused OD'."
     },
     {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "title": "Medical Leave and Health Absence Policy",
+      "department": "Campus Health Centre",
+      "department_id": "DEPT-HEALTH",
+      "document_type": "Policy",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Experiencing Acute or Chronic Health Conditions",
+        "Faculty Advisors",
+        "Heads of Department",
+        "Senior Chief Medical Officer",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "medical leave",
+        "health absence",
+        "Medical Certificate",
+        "MC",
+        "Health Centre endorsement",
+        "hospitalization",
+        "3 consecutive days rule",
+        "48 hours reporting",
+        "3 days verification window",
+        "20 working days semester break",
+        "condonation 65% to 74.9%",
+        "Senior Medical Officer",
+        "HealthDesk",
+        "ResolveDesk"
+      ],
+      "retrieval_signals": [
+        "medical leave attendance",
+        "how to submit medical certificate for low attendance",
+        "medical leave certificate",
+        "where to submit MC for exam absence",
+        "can I get MC from outside private clinic approved",
+        "MC endorsement form at health centre",
+        "attendance shortage due to hospital admission",
+        "medical certificate submission deadline for exams",
+        "fever absent for 3 days medical leave procedure",
+        "hospitalized missed classes attendance condonation",
+        "prolonged illness semester break policy",
+        "fake medical certificate penalty",
+        "health centre verification slip",
+        "how many days medical leave allowed in college",
+        "medical leave reporting within 48 hours"
+      ],
+      "systems": [
+        "HealthDesk",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Senior Chief Medical Officer",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "STU-MED-001",
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "POL-DISCIPLINE",
+        "PROC-MED-COND"
+      ],
+      "content": "1. PURPOSE AND HEALTHCARE COMMITMENT\nDemo University recognizes that acute medical conditions, surgical emergencies, severe injuries, and chronic health challenges can temporarily disrupt academic continuity. This policy outlines statutory reporting protocols, medical certificate validation standards, health absence limits, and attendance condonation procedures.\n\n2. JURISDICTION AND ELIGIBILITY\nThis policy governs all undergraduate, postgraduate, and doctoral students experiencing genuine health emergencies that necessitate excused absence from lectures, practical laboratory sessions, or internal assessments.\n\n3. MANDATORY REPORTING TIMELINES AND CERTIFICATE ENDORSEMENT\n3.1 Acute Illness Threshold: Any illness or hospitalization resulting in absence for three or more consecutive working days must be formally notified to the Campus Health Centre and the candidate's Faculty Advisor within 48 hours of onset.\n3.2 External Medical Certificate Verification: Medical documentation issued by outside private hospitals, nursing homes, or medical practitioners must be presented in person by the student to the Senior Chief Medical Officer at the Campus Health Centre within three working days of resuming campus academic activities.\n3.3 Health Centre Endorsement: The Senior Medical Officer scrutinizes diagnostic records, lab investigation reports, and clinical discharge summaries. Upon authenticating bona fide medical necessity, an official University Medical Verification Slip bearing a unique digital endorsement code is generated in HealthDesk.\n\n4. ATTENDANCE CONDONATION AND EXAMINATION IMPLICATIONS (REL-004)\n4.1 Permissible Condonation Band: In strict conformity with institutional attendance policy POL-ATTEND, authenticated medical leave serves as the statutory foundation for attendance condonation strictly within the 65.0% to 74.9% range.\n4.2 Absolute Floor (65.0%): Absences reducing cumulative course attendance below 65.0% cannot be condoned under any medical ground. Candidates falling below 65.0% are detained ('W' or 'SA' grade) and must repeat the course.\n4.3 Submission via ResolveDesk: Endorsed medical verification slips must be uploaded to ResolveDesk under 'Medical Leave Submission' at least five working days prior to Semester End Examinations (SEE).\n\n5. PROLONGED MEDICAL LEAVE AND SEMESTER BREAK\n5.1 Severe Extended Illness: Where serious trauma, extensive surgery, contagious disease isolation, or psychiatric distress causes cumulative absence exceeding 20 working days in a semester, the student may petition for a formal Semester Break (Leave of Absence) without academic penalty.\n5.2 Resumption: Upon recovering and obtaining fitness certification ratified by the Senior Chief Medical Officer, the candidate re-enrolls in the respective semester during the subsequent academic cycle.\n\n6. INTEGRITY AND FABRICATION PENALTIES\nSubmission of falsified, forged, or purchased medical certificates constitutes a severe violation of campus ethics. Any case involving fabricated health records is summarily referred to the Proctorial Disciplinary Board, resulting in immediate one-semester academic suspension and permanent recording on the UniCampus ERP file."
+    },
+    {
       "document_id": "POL-GRIEVANCE",
       "title": "Student Grievance Redressal and Ombudsman Policy",
       "department": "Office of Student Welfare",
@@ -9920,7 +9991,7 @@
         "STU-POL-003",
         "PROC-GRIEVANCE-REDRESS"
       ],
-      "content": "1. PURPOSE AND PORTAL ACCESS\nThis procedural manual provides step-by-step instructions for matriculated students to submit, monitor, and escalate formal academic, administrative, facilities, and conduct grievances using the university's central ticketing platform, ResolveDesk (https://resolve.demo.edu.internal).\n\n2. STEP-BY-STEP SUBMISSION PROCEDURE\n2.1 Authentication: Log in to ResolveDesk using official Demo University single-sign-on credentials.\n2.2 Category Selection: From the primary dashboard, select 'Submit New Grievance' and choose the appropriate domain:\n  - Academic Grievance (grading discrepancies, attendance adjustments, syllabus coverage).\n  - Hostel & Residential Life (room maintenance, mess hygiene, curfew disputes).\n  - Finance & Accounts (scholarship adjustments, tuition refunds, fee holds).\n  - Harassment & Student Welfare (discrimination, bullying, unfair treatment).\n2.3 Docket Details: Fill out the structured grievance form:\n  - Detailed subject summary.\n  - Specific operational dates, involved personnel, course codes, or room numbers.\n  - Specific redress sought.\n2.4 Evidence Attachment: Attach supporting documentation (scanned marks sheets, payment receipts, correspondence, or photographs). File attachments are restricted to PDF, PNG, or JPEG formats up to 10 MB.\n2.5 Ticket Generation: Click 'Submit'. The system automatically issues a unique tracking code (e.g. `GRV-2026-XXXXX`) and starts the 5-day SLA countdown timer.\n\n3. TRACKING AND ESCALATION WORKFLOW (PROC-GRIEVANCE-REDRESS)\n3.1 Progress Monitoring: Students can view case updates, assigned officer comments, and request status directly from the 'My Tickets' dashboard.\n3.2 Escalation to Level 2: If the assigned Department Grievance Officer fails to resolve the issue within 5 working days, or if the student is dissatisfied with the proposed solution, the student must click the 'Escalate to Level 2' button within 48 hours of ticket closure. The ticket escalates directly to the Central Student Grievance Redressal Committee."
+      "content": "1. PURPOSE AND PORTAL ACCESS\nThis procedural manual provides step-by-step instructions for matriculated students to submit, monitor, and escalate formal academic, administrative, facilities, and conduct grievances using the university's central ticketing platform, ResolveDesk (https://resolve.demo.edu.internal).\n\n2. STEP-BY-STEP SUBMISSION PROCEDURE\n2.1 Authentication: Log in to ResolveDesk using official Demo University single-sign-on credentials.\n2.2 Category Selection: From the primary dashboard, select 'Submit New Grievance' and choose the appropriate domain:\n  - Academic Grievance (grading discrepancies, attendance adjustments, syllabus coverage).\n  - Hostel & Residential Life (room maintenance, mess hygiene, curfew disputes).\n  - Finance & Accounts (scholarship adjustments, tuition refunds, fee holds).\n  - Harassment & Student Welfare (discrimination, bullying, unfair treatment).\n2.3 Docket Details: Fill out the structured grievance form:\n  - Detailed subject summary.\n  - Specific operational dates, involved personnel, course codes, or room numbers.\n  - Specific redress sought.\n2.4 Evidence Attachment: Attach supporting documentation (scanned marks sheets, payment receipts, correspondence, or photographs). File attachments are restricted to PDF, PNG, or JPEG formats up to 10 MB.\n2.5 Ticket Generation: Click 'Submit'. The system automatically issues a unique tracking code (e.g. `GRV-2026-00417`) and starts the 5-day SLA countdown timer.\n\n3. TRACKING AND ESCALATION WORKFLOW (PROC-GRIEVANCE-REDRESS)\n3.1 Progress Monitoring: Students can view case updates, assigned officer comments, and request status directly from the 'My Tickets' dashboard.\n3.2 Escalation to Level 2: If the assigned Department Grievance Officer fails to resolve the issue within 5 working days, or if the student is dissatisfied with the proposed solution, the student must click the 'Escalate to Level 2' button within 48 hours of ticket closure. The ticket escalates directly to the Central Student Grievance Redressal Committee."
     },
     {
       "document_id": "STU-LDR-001",

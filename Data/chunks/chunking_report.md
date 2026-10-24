@@ -1,21 +1,21 @@
 # Enterprise Document Chunking Report
 
-- **Run ID:** `chunking-20260921-135956-f39fb0`
-- **Timestamp:** 2026-09-21 13:59:56 UTC
+- **Run ID:** `chunking-20261023-194558-07cc69`
+- **Timestamp:** 2026-10-23 19:45:58 UTC
 - **Status:** ✅ VALIDATED (Ready for Embeddings)
 
 ## 1. Chunking Summary
 
 | Metric | Value | Description |
 |---|---|---|
-| **Total Documents** | 157 | Validated input documents processed |
-| **Total Chunks Generated** | 696 | Semantic chunks created |
-| **Average Chunks / Document** | 4.43 | Mean chunk granularity |
-| **Average Chunk Tokens** | 106.7 | Mean token size |
+| **Total Documents** | 158 | Validated input documents processed |
+| **Total Chunks Generated** | 702 | Semantic chunks created |
+| **Average Chunks / Document** | 4.44 | Mean chunk granularity |
+| **Average Chunk Tokens** | 106.5 | Mean token size |
 | **Median Chunk Tokens** | 91.5 | Median token size |
 | **Min Chunk Tokens** | 21 | Smallest chunk token size |
 | **Max Chunk Tokens** | 552 | Largest chunk token size |
-| **Sections Detected** | 694 | Structural section headings identified |
+| **Sections Detected** | 700 | Structural section headings identified |
 | **Docs Without Headings** | 1 | Fallback paragraph chunked documents |
 | **Recursive Section Splits** | 1 | Sections requiring paragraph splitting |
 | **Sentence Fallbacks** | 0 | Oversized paragraphs split into sentences |
@@ -31,7 +31,7 @@
 
 | Department | Chunk Count |
 |---|---|
-| Academic Affairs | 123 |
+| Academic Affairs | 152 |
 | Examination Cell | 74 |
 | Information Technology Services | 54 |
 | Hostel Administration and Residence Life | 47 |
@@ -43,34 +43,22 @@
 | Office of Student Welfare | 33 |
 | Campus Safety, Vigilance and Security Department | 26 |
 | Campus Operations, Estate and Facilities Management | 24 |
+| Admissions Office | 21 |
 | Department of Electronics and Communication Engineering | 19 |
 | Department of Student Affairs | 16 |
-| Admissions Office / Registrar Records | 11 |
+| Registrar Secretariat | 12 |
 | Department of Mechanical Engineering | 10 |
+| Campus Health Centre | 10 |
 | Department of Civil Engineering | 9 |
 | Campus Mobility and Transportation Unit | 9 |
-| Academic Affairs & Admissions | 7 |
-| Academic Affairs & Finance Office | 4 |
-| Admissions and Media Relations Office | 4 |
-| Administrative Office / Registrar Secretariat | 4 |
-| University Governance / Registrar Secretariat | 4 |
-| Academic Affairs / Registrar Secretariat | 4 |
-| Academic Affairs & Career Development | 4 |
-| Human Resources / Administrative Office | 4 |
-| Internal Quality Assurance Cell (IQAC) | 4 |
 | Clubs and Student Activities Council | 4 |
-| Campus Health Centre | 4 |
-| Academic Affairs & Campus Health Centre | 3 |
-| Admissions Office / International Wing | 3 |
-| Admissions Office | 3 |
 | Office of International Relations | 3 |
-| Academic Affairs & Student Affairs | 3 |
 
 ## 4. Chunk Distribution by Document Type
 
 | Document Type | Chunk Count |
 |---|---|
-| Policy | 130 |
+| Policy | 136 |
 | Syllabus / Lab Guide | 36 |
 | Regulation | 26 |
 | Standard Operating Procedure (SOP) | 14 |

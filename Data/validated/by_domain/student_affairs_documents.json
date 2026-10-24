@@ -78,6 +78,77 @@
       "content": "1. PURPOSE AND INSTITUTIONAL MANDATE\nDemo University actively fosters holistic student development through participation in competitive athletic events, national hackathons, technical symposiums, research conferences, and cultural festivals. This policy establishes official regulations governing the sanction of On-Duty (OD) attendance exemptions, ceiling limits, procedural approval workflows, and automated attendance adjustments.\n\n2. JURISDICTION AND DEFINITIONS\n2.1 On-Duty (OD) Attendance Exemption: An authorized excused absence granted to a registered student officially selected to represent Demo University in sanctioned external or campus-wide co-curricular and extracurricular events.\n2.2 Attendance Factorization: Approved OD days are factored into AttendEdge attendance tracking engines as 'Excused Present', thereby safeguarding the candidate's statutory 75% attendance eligibility for Semester End Examinations (SEE).\n\n3. ELIGIBILITY CRITERIA AND SANCTIONED ACTIVITIES\n3.1 Permissible Categories: OD absence may be sanctioned exclusively for:\n  a) Inter-university sports tournaments endorsed by the University Sports Directorate.\n  b) National and international technical hackathons, design symposiums, and competitive collegiate coding contests endorsed by Department Heads.\n  c) Peer-reviewed academic conferences where the student is presenting an accepted research paper.\n  d) Authorized university cultural festivals, leadership summits, or inter-collegiate debates coordinated by the Student Activity Centre.\n3.2 Non-Permissible Categories: OD cannot be claimed for personal travel, family functions, private coaching, job interviews not coordinated through the Career Development Centre, or unapproved student-initiated trips.\n\n4. STATUTORY CEILINGS AND LIMITATIONS\n4.1 Semester Cap: On-Duty leave is strictly limited to a maximum of 10 working days per academic semester across all registered courses.\n4.2 Non-Extendable Threshold: Absences exceeding the 10-day statutory ceiling cannot be categorized as On-Duty and will be recorded as unexcused absences in AttendEdge.\n\n5. PROCEDURAL APPLICATION AND APPROVAL WORKFLOW (PROC-OD-SANCTION)\n5.1 Pre-Event Application: The student must log an official OD Request ticket on ResolveDesk at least 3 working days prior to the commencement of the event, attaching the formal invitation brochure, selection letter, and scheduled travel itinerary.\n5.2 Faculty Endorsement: The designated Faculty Coordinator (Sports Director, Club Mentor, or Project Guide) verifies the authenticity of the event and digitally endorses the application.\n5.3 Executive Approval: The Dean of Student Affairs (DSA) reviews institutional merit and grants formal administrative sanction.\n5.4 Post-Event Claim Submission: Within 5 working days of returning to campus, the student must upload the official Certificate of Participation / Attendance and a brief event report to the original ResolveDesk ticket.\n5.5 Automated System Reconciliation: Upon post-event verification, AttendEdge automatically adjusts course attendance records for the approved dates from absent to 'Excused OD'."
     },
     {
+      "document_id": "POL-MEDICAL-LEAVE",
+      "title": "Medical Leave and Health Absence Policy",
+      "department": "Campus Health Centre",
+      "department_id": "DEPT-HEALTH",
+      "document_type": "Policy",
+      "version": "2.2",
+      "effective_date": "2026-08-01",
+      "status": "Active",
+      "audience": [
+        "All Students Experiencing Acute or Chronic Health Conditions",
+        "Faculty Advisors",
+        "Heads of Department",
+        "Senior Chief Medical Officer",
+        "Dean of Academic Affairs"
+      ],
+      "keywords": [
+        "medical leave",
+        "health absence",
+        "Medical Certificate",
+        "MC",
+        "Health Centre endorsement",
+        "hospitalization",
+        "3 consecutive days rule",
+        "48 hours reporting",
+        "3 days verification window",
+        "20 working days semester break",
+        "condonation 65% to 74.9%",
+        "Senior Medical Officer",
+        "HealthDesk",
+        "ResolveDesk"
+      ],
+      "retrieval_signals": [
+        "medical leave attendance",
+        "how to submit medical certificate for low attendance",
+        "medical leave certificate",
+        "where to submit MC for exam absence",
+        "can I get MC from outside private clinic approved",
+        "MC endorsement form at health centre",
+        "attendance shortage due to hospital admission",
+        "medical certificate submission deadline for exams",
+        "fever absent for 3 days medical leave procedure",
+        "hospitalized missed classes attendance condonation",
+        "prolonged illness semester break policy",
+        "fake medical certificate penalty",
+        "health centre verification slip",
+        "how many days medical leave allowed in college",
+        "medical leave reporting within 48 hours"
+      ],
+      "systems": [
+        "HealthDesk",
+        "ResolveDesk",
+        "UniCampus ERP",
+        "AttendEdge"
+      ],
+      "roles": [
+        "Senior Chief Medical Officer",
+        "Faculty Advisor / Mentor",
+        "Head of Department (HOD)",
+        "Dean of Academic Affairs",
+        "Dean of Student Welfare (DSW)"
+      ],
+      "related_documents": [
+        "STU-MED-001",
+        "POL-ATTEND",
+        "ACAD-POL-003",
+        "POL-DISCIPLINE",
+        "PROC-MED-COND"
+      ],
+      "content": "1. PURPOSE AND HEALTHCARE COMMITMENT\nDemo University recognizes that acute medical conditions, surgical emergencies, severe injuries, and chronic health challenges can temporarily disrupt academic continuity. This policy outlines statutory reporting protocols, medical certificate validation standards, health absence limits, and attendance condonation procedures.\n\n2. JURISDICTION AND ELIGIBILITY\nThis policy governs all undergraduate, postgraduate, and doctoral students experiencing genuine health emergencies that necessitate excused absence from lectures, practical laboratory sessions, or internal assessments.\n\n3. MANDATORY REPORTING TIMELINES AND CERTIFICATE ENDORSEMENT\n3.1 Acute Illness Threshold: Any illness or hospitalization resulting in absence for three or more consecutive working days must be formally notified to the Campus Health Centre and the candidate's Faculty Advisor within 48 hours of onset.\n3.2 External Medical Certificate Verification: Medical documentation issued by outside private hospitals, nursing homes, or medical practitioners must be presented in person by the student to the Senior Chief Medical Officer at the Campus Health Centre within three working days of resuming campus academic activities.\n3.3 Health Centre Endorsement: The Senior Medical Officer scrutinizes diagnostic records, lab investigation reports, and clinical discharge summaries. Upon authenticating bona fide medical necessity, an official University Medical Verification Slip bearing a unique digital endorsement code is generated in HealthDesk.\n\n4. ATTENDANCE CONDONATION AND EXAMINATION IMPLICATIONS (REL-004)\n4.1 Permissible Condonation Band: In strict conformity with institutional attendance policy POL-ATTEND, authenticated medical leave serves as the statutory foundation for attendance condonation strictly within the 65.0% to 74.9% range.\n4.2 Absolute Floor (65.0%): Absences reducing cumulative course attendance below 65.0% cannot be condoned under any medical ground. Candidates falling below 65.0% are detained ('W' or 'SA' grade) and must repeat the course.\n4.3 Submission via ResolveDesk: Endorsed medical verification slips must be uploaded to ResolveDesk under 'Medical Leave Submission' at least five working days prior to Semester End Examinations (SEE).\n\n5. PROLONGED MEDICAL LEAVE AND SEMESTER BREAK\n5.1 Severe Extended Illness: Where serious trauma, extensive surgery, contagious disease isolation, or psychiatric distress causes cumulative absence exceeding 20 working days in a semester, the student may petition for a formal Semester Break (Leave of Absence) without academic penalty.\n5.2 Resumption: Upon recovering and obtaining fitness certification ratified by the Senior Chief Medical Officer, the candidate re-enrolls in the respective semester during the subsequent academic cycle.\n\n6. INTEGRITY AND FABRICATION PENALTIES\nSubmission of falsified, forged, or purchased medical certificates constitutes a severe violation of campus ethics. Any case involving fabricated health records is summarily referred to the Proctorial Disciplinary Board, resulting in immediate one-semester academic suspension and permanent recording on the UniCampus ERP file."
+    },
+    {
       "document_id": "POL-GRIEVANCE",
       "title": "Student Grievance Redressal and Ombudsman Policy",
       "department": "Office of Student Welfare",
@@ -813,7 +884,7 @@
         "STU-POL-003",
         "PROC-GRIEVANCE-REDRESS"
       ],
-      "content": "1. PURPOSE AND PORTAL ACCESS\nThis procedural manual provides step-by-step instructions for matriculated students to submit, monitor, and escalate formal academic, administrative, facilities, and conduct grievances using the university's central ticketing platform, ResolveDesk (https://resolve.demo.edu.internal).\n\n2. STEP-BY-STEP SUBMISSION PROCEDURE\n2.1 Authentication: Log in to ResolveDesk using official Demo University single-sign-on credentials.\n2.2 Category Selection: From the primary dashboard, select 'Submit New Grievance' and choose the appropriate domain:\n  - Academic Grievance (grading discrepancies, attendance adjustments, syllabus coverage).\n  - Hostel & Residential Life (room maintenance, mess hygiene, curfew disputes).\n  - Finance & Accounts (scholarship adjustments, tuition refunds, fee holds).\n  - Harassment & Student Welfare (discrimination, bullying, unfair treatment).\n2.3 Docket Details: Fill out the structured grievance form:\n  - Detailed subject summary.\n  - Specific operational dates, involved personnel, course codes, or room numbers.\n  - Specific redress sought.\n2.4 Evidence Attachment: Attach supporting documentation (scanned marks sheets, payment receipts, correspondence, or photographs). File attachments are restricted to PDF, PNG, or JPEG formats up to 10 MB.\n2.5 Ticket Generation: Click 'Submit'. The system automatically issues a unique tracking code (e.g. `GRV-2026-XXXXX`) and starts the 5-day SLA countdown timer.\n\n3. TRACKING AND ESCALATION WORKFLOW (PROC-GRIEVANCE-REDRESS)\n3.1 Progress Monitoring: Students can view case updates, assigned officer comments, and request status directly from the 'My Tickets' dashboard.\n3.2 Escalation to Level 2: If the assigned Department Grievance Officer fails to resolve the issue within 5 working days, or if the student is dissatisfied with the proposed solution, the student must click the 'Escalate to Level 2' button within 48 hours of ticket closure. The ticket escalates directly to the Central Student Grievance Redressal Committee."
+      "content": "1. PURPOSE AND PORTAL ACCESS\nThis procedural manual provides step-by-step instructions for matriculated students to submit, monitor, and escalate formal academic, administrative, facilities, and conduct grievances using the university's central ticketing platform, ResolveDesk (https://resolve.demo.edu.internal).\n\n2. STEP-BY-STEP SUBMISSION PROCEDURE\n2.1 Authentication: Log in to ResolveDesk using official Demo University single-sign-on credentials.\n2.2 Category Selection: From the primary dashboard, select 'Submit New Grievance' and choose the appropriate domain:\n  - Academic Grievance (grading discrepancies, attendance adjustments, syllabus coverage).\n  - Hostel & Residential Life (room maintenance, mess hygiene, curfew disputes).\n  - Finance & Accounts (scholarship adjustments, tuition refunds, fee holds).\n  - Harassment & Student Welfare (discrimination, bullying, unfair treatment).\n2.3 Docket Details: Fill out the structured grievance form:\n  - Detailed subject summary.\n  - Specific operational dates, involved personnel, course codes, or room numbers.\n  - Specific redress sought.\n2.4 Evidence Attachment: Attach supporting documentation (scanned marks sheets, payment receipts, correspondence, or photographs). File attachments are restricted to PDF, PNG, or JPEG formats up to 10 MB.\n2.5 Ticket Generation: Click 'Submit'. The system automatically issues a unique tracking code (e.g. `GRV-2026-00417`) and starts the 5-day SLA countdown timer.\n\n3. TRACKING AND ESCALATION WORKFLOW (PROC-GRIEVANCE-REDRESS)\n3.1 Progress Monitoring: Students can view case updates, assigned officer comments, and request status directly from the 'My Tickets' dashboard.\n3.2 Escalation to Level 2: If the assigned Department Grievance Officer fails to resolve the issue within 5 working days, or if the student is dissatisfied with the proposed solution, the student must click the 'Escalate to Level 2' button within 48 hours of ticket closure. The ticket escalates directly to the Central Student Grievance Redressal Committee."
     },
     {
       "document_id": "STU-LDR-001",

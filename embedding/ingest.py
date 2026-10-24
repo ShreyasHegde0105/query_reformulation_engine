@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import json
 import logging
 import sys
 import time
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from embedding.client import SupabaseRestClient
@@ -12,6 +14,18 @@ from embedding.mapper import DocumentMapper
 from embedding.validator import ChunkIngestionValidator
 
 logger = logging.getLogger("embedding.ingest")
+
+
+def expected_chunk_count(chunks_path: Path) -> int:
+    """Chunk count recorded by the chunker in ``chunking_report.json`` next to the chunks
+    file, so a truncated or stale ``chunks.jsonl`` is caught. 0 (no check) if there is no report."""
+    report_path = Path(chunks_path).parent / "chunking_report.json"
+    try:
+        with open(report_path, encoding="utf-8") as f:
+            return int(json.load(f)["statistics"]["total_chunks"])
+    except (OSError, ValueError, KeyError, TypeError):
+        logger.warning("No chunk count in '%s'; skipping the chunk count check.", report_path)
+        return 0
 
 
 class IngestionPipeline:
@@ -43,14 +57,14 @@ class IngestionPipeline:
         # 1. Load validated documents for cross-verification
         validated_docs_map = DocumentMapper.load_validated_documents(self.config.validated_docs_path)
         validated_doc_ids = set(validated_docs_map.keys())
-        expected_docs = len(validated_doc_ids) or 157
+        expected_docs = len(validated_doc_ids)
         logger.info("Loaded %d validated parent documents from '%s'.", len(validated_docs_map), self.config.validated_docs_path)
 
         # 2. Read and validate chunks.jsonl
         logger.info("Reading chunks...")
         chunks, val_errors = ChunkIngestionValidator.load_and_validate_jsonl(
             chunks_path=self.config.input_chunks_path,
-            expected_chunk_count=696,
+            expected_chunk_count=expected_chunk_count(self.config.input_chunks_path),
             expected_doc_count=expected_docs,
             validated_doc_ids=validated_doc_ids if validated_doc_ids else None,
         )
