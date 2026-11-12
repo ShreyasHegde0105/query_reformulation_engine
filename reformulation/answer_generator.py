@@ -14,6 +14,7 @@ from typing import Any, Dict, List, Sequence
 
 from retrieval.models import RetrievedChunk
 
+from .context_assembler import AssembledContext, RAGContextAssembler
 from .exceptions import ReformulationParseError
 from .llm.client import LLMClient
 from .llm.fallback import FallbackLLMClient
@@ -28,6 +29,9 @@ class Answer:
     text: str
     citations: List[str]
     answerable: bool
+    cited_documents: List[str] = dataclasses.field(default_factory=list)
+    missing_aspects: List[str] = dataclasses.field(default_factory=list)
+    context_token_count: int = 0
 
     def to_dict(self) -> Dict[str, Any]:
         return dataclasses.asdict(self)
@@ -50,7 +54,13 @@ class AnswerGenerator:
         "Sources:\n{sources}"
     )
 
-    def __init__(self, llm_client: LLMClient, max_chunks: int = 5, max_chars_per_chunk: int = 2000):
+    def __init__(
+        self,
+        llm_client: LLMClient,
+        max_chunks: int = 5,
+        max_chars_per_chunk: int = 2000,
+        context_assembler: Optional[RAGContextAssembler] = None,
+    ):
         if not isinstance(llm_client, (LLMClient, FallbackLLMClient)):
             raise TypeError("llm_client must be an LLMClient or FallbackLLMClient")
         if max_chunks < 1:
@@ -58,13 +68,19 @@ class AnswerGenerator:
         self.llm_client = llm_client
         self.max_chunks = max_chunks
         self.max_chars_per_chunk = max_chars_per_chunk
+        self.context_assembler = context_assembler
 
     def build_prompt(self, question: str, chunks: Sequence[RetrievedChunk]) -> str:
-        sources = []
-        for chunk in chunks[: self.max_chunks]:
-            header = f"[{chunk.chunk_id}] {chunk.title}" + (f" — {chunk.section}" if chunk.section else "")
-            sources.append(f"{header}\n{chunk.chunk_text[: self.max_chars_per_chunk]}")
-        return self._PROMPT_TEMPLATE.format(question=question.strip(), sources="\n\n".join(sources))
+        if self.context_assembler is not None:
+            assembled = self.context_assembler.assemble_context(question, chunks)
+            sources_text = assembled.formatted_sources
+        else:
+            sources = []
+            for chunk in chunks[: self.max_chunks]:
+                header = f"[{chunk.chunk_id}] {chunk.title}" + (f" — {chunk.section}" if chunk.section else "")
+                sources.append(f"{header}\n{chunk.chunk_text[: self.max_chars_per_chunk]}")
+            sources_text = "\n\n".join(sources)
+        return self._PROMPT_TEMPLATE.format(question=question.strip(), sources=sources_text)
 
     def generate(self, question: str, chunks: Sequence[RetrievedChunk]) -> Answer:
         """Answer ``question`` from ``chunks``.
@@ -76,11 +92,29 @@ class AnswerGenerator:
         """
         if not isinstance(question, str) or not question.strip():
             raise ValueError("question must be a non-empty string")
-        provided = [c.chunk_id for c in chunks[: self.max_chunks]]
+
+        if self.context_assembler is not None:
+            assembled = self.context_assembler.assemble_context(question, chunks)
+            selected_chunks = assembled.chunks
+            sources_text = assembled.formatted_sources
+            missing_aspects = assembled.missing_aspects
+            tokens_used = assembled.total_tokens
+        else:
+            selected_chunks = list(chunks[: self.max_chunks])
+            sources = []
+            for chunk in selected_chunks:
+                header = f"[{chunk.chunk_id}] {chunk.title}" + (f" — {chunk.section}" if chunk.section else "")
+                sources.append(f"{header}\n{chunk.chunk_text[: self.max_chars_per_chunk]}")
+            sources_text = "\n\n".join(sources)
+            missing_aspects = []
+            tokens_used = sum(len(c.chunk_text.split()) for c in selected_chunks)
+
+        provided = [c.chunk_id for c in selected_chunks]
         if not provided:
             return Answer(text=self._NOT_FOUND, citations=[], answerable=False)
 
-        raw = self.llm_client.generate(self.build_prompt(question, chunks))
+        prompt = self._PROMPT_TEMPLATE.format(question=question.strip(), sources=sources_text)
+        raw = self.llm_client.generate(prompt)
         payload = self._parse(raw)
 
         answerable = payload.get("answerable")
@@ -96,7 +130,18 @@ class AnswerGenerator:
         if not valid:
             # An "answer" that cites none of the provided sources is not grounded.
             return Answer(text=self._NOT_FOUND, citations=[], answerable=False)
-        return Answer(text=text.strip(), citations=valid, answerable=True)
+
+        chunk_to_doc = {c.chunk_id: c.document_id for c in selected_chunks}
+        cited_docs = sorted(list(set(chunk_to_doc[cid] for cid in valid if cid in chunk_to_doc)))
+
+        return Answer(
+            text=text.strip(),
+            citations=valid,
+            answerable=True,
+            cited_documents=cited_docs,
+            missing_aspects=missing_aspects,
+            context_token_count=tokens_used,
+        )
 
     @staticmethod
     def _parse(raw: str) -> Dict[str, Any]:
