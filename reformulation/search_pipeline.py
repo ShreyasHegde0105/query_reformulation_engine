@@ -86,6 +86,8 @@ class SearchPipeline:
         reformulation_cache_size: int = 256,
         spell_corrector: Optional[CorpusSpellCorrector] = None,
         intent_router: Optional[IntentRouter] = None,
+        multi_dense_single_bm25: bool = False,
+        fusion_strategy: str = "equal",
     ):
         """Initialize the pipeline with its required dependencies.
 
@@ -115,6 +117,8 @@ class SearchPipeline:
         self.hybrid_retriever = hybrid_retriever
         self.spell_corrector = spell_corrector
         self.intent_router = intent_router or IntentRouter.from_chunks_file()
+        self.multi_dense_single_bm25 = multi_dense_single_bm25
+        self.fusion_strategy = fusion_strategy
         self.max_workers = max_workers
         self.reformulation_cache_size = reformulation_cache_size
         self._reformulation_cache: "OrderedDict[tuple[str, int], List[str]]" = OrderedDict()
@@ -244,20 +248,40 @@ class SearchPipeline:
             final_queries = [normalized] + [q for q in final_queries if q != normalized]
             timings["filtering"] = (time.perf_counter() - t) * 1000
 
-        # 6 & 7 & 8. Hybrid Retrieval, Aggregation and Ranking
+        # 6 & 7 & 8. Retrieval, Aggregation and Ranking
         t = time.perf_counter()
         warnings: List[str] = []
-        results = self.aggregate_retrieval(
-            queries=final_queries,
-            vector_match_count=vector_match_count,
-            keyword_match_count=keyword_match_count,
-            filter_domain=filter_domain,
-            k=k,
-            final_k=final_k,
-            primary_query_weight=primary_query_weight,
-            candidate_k=candidate_k,
-            warnings=warnings,
-        )
+        if (
+            self.multi_dense_single_bm25
+            and len(final_queries) > 1
+            and route_res.action != RoutingAction.DIRECT
+            and hasattr(self.hybrid_retriever, "keyword_retriever")
+            and hasattr(self.hybrid_retriever, "vector_retriever")
+        ):
+            results = self.retrieve_multi_dense_single_bm25(
+                primary_query=normalized,
+                dense_queries=final_queries,
+                vector_match_count=vector_match_count,
+                keyword_match_count=keyword_match_count,
+                filter_domain=filter_domain,
+                k=k,
+                final_k=final_k,
+                primary_query_weight=primary_query_weight,
+                fusion_strategy=self.fusion_strategy,
+                warnings=warnings,
+            )
+        else:
+            results = self.aggregate_retrieval(
+                queries=final_queries,
+                vector_match_count=vector_match_count,
+                keyword_match_count=keyword_match_count,
+                filter_domain=filter_domain,
+                k=k,
+                final_k=final_k,
+                primary_query_weight=primary_query_weight,
+                candidate_k=candidate_k,
+                warnings=warnings,
+            )
         timings["retrieval"] = (time.perf_counter() - t) * 1000
         timings["total"] = (time.perf_counter() - t0) * 1000
 
@@ -398,3 +422,89 @@ class SearchPipeline:
         aggregated_results.sort(key=lambda c: (-c.score, c.chunk_id))
 
         return aggregated_results[:final_k]
+
+    def retrieve_multi_dense_single_bm25(
+        self,
+        primary_query: str,
+        dense_queries: List[str],
+        vector_match_count: int = 20,
+        keyword_match_count: int = 20,
+        filter_domain: Optional[str] = None,
+        k: int = 60,
+        final_k: int = 20,
+        primary_query_weight: float = 1.0,
+        fusion_strategy: Optional[str] = None,
+        warnings: Optional[List[str]] = None,
+    ) -> List[RetrievedChunk]:
+        """Execute BM25 retrieval only once on primary_query, while executing Dense
+        retrieval across all dense_queries, aggregating results with controlled RRF.
+        """
+        strategy = fusion_strategy or self.fusion_strategy
+
+        # 1. Lexical branch: Single BM25 on primary query
+        bm25_results: List[RetrievedChunk] = []
+        bm25_failed = False
+        if keyword_match_count > 0:
+            try:
+                bm25_results = self.hybrid_retriever.keyword_retriever.retrieve(
+                    query=primary_query,
+                    match_count=keyword_match_count,
+                    filter_domain=filter_domain,
+                )
+            except Exception as exc:
+                logger.error("BM25 retrieval failed for primary query '%s': %s", primary_query, exc)
+                bm25_failed = True
+                if warnings is not None:
+                    warnings.append(f"The keyword search branch failed: {exc}")
+
+        # 2. Dense branches: Vector retrieval across each variant
+        def retrieve_dense(q: str) -> Optional[List[RetrievedChunk]]:
+            try:
+                return self.hybrid_retriever.vector_retriever.retrieve(
+                    query=q,
+                    match_count=vector_match_count,
+                    filter_domain=filter_domain,
+                )
+            except Exception as exc:
+                logger.error("Dense vector retrieval failed for query '%s': %s", q, exc)
+                return None
+
+        if self.max_workers > 1 and len(dense_queries) > 1:
+            with ThreadPoolExecutor(max_workers=min(self.max_workers, len(dense_queries))) as pool:
+                dense_outcomes = list(pool.map(retrieve_dense, dense_queries))
+        else:
+            dense_outcomes = [retrieve_dense(q) for q in dense_queries]
+
+        failed_dense = sum(1 for res in dense_outcomes if res is None)
+        if failed_dense and warnings is not None:
+            warnings.append(f"Dense vector retrieval failed for {failed_dense} of {len(dense_queries)} queries.")
+
+        if bm25_failed and failed_dense == len(dense_queries):
+            raise RetrievalUnavailableError("Both BM25 and dense retrieval failed for all query variants")
+
+        # 3. Controlled RRF Fusion
+        list_weight_pairs: List[tuple[List[RetrievedChunk], float]] = []
+        if not bm25_failed and bm25_results:
+            bm25_weight = primary_query_weight if strategy == "weighted" else 1.0
+            list_weight_pairs.append((bm25_results, bm25_weight))
+
+        for idx, res in enumerate(dense_outcomes):
+            if res:
+                dense_weight = primary_query_weight if (strategy == "weighted" and idx == 0) else 1.0
+                list_weight_pairs.append((res, dense_weight))
+
+        fused: dict[str, RetrievedChunk] = {}
+        for chunk_list, weight in list_weight_pairs:
+            for rank, chunk in enumerate(chunk_list, start=1):
+                contrib = weight * (1.0 / (k + rank))
+                if chunk.chunk_id not in fused:
+                    fused[chunk.chunk_id] = dataclasses.replace(
+                        chunk, score=0.0, metadata=dict(chunk.metadata or {})
+                    )
+                fused[chunk.chunk_id].score += contrib
+                if chunk.metadata:
+                    fused[chunk.chunk_id].metadata.update(chunk.metadata)
+
+        aggregated = list(fused.values())
+        aggregated.sort(key=lambda c: (-c.score, c.chunk_id))
+        return aggregated[:final_k]
