@@ -12,6 +12,7 @@ from reformulation.normalizer import normalize_query
 from reformulation.reformulator import QueryReformulator
 from reformulation.semantic_similarity import SemanticSimilarity
 from reformulation.spelling import CorpusSpellCorrector
+from reformulation.cross_encoder import CrossEncoderReranker
 from reformulation.intent_router import IntentRouter, QueryIntent, RoutingAction
 from retrieval.hybrid_retriever import HybridRetriever
 from retrieval.models import RetrievedChunk
@@ -88,6 +89,8 @@ class SearchPipeline:
         intent_router: Optional[IntentRouter] = None,
         multi_dense_single_bm25: bool = False,
         fusion_strategy: str = "equal",
+        reranker: Optional[CrossEncoderReranker] = None,
+        rerank_top_k: int = 10,
     ):
         """Initialize the pipeline with its required dependencies.
 
@@ -119,6 +122,8 @@ class SearchPipeline:
         self.intent_router = intent_router or IntentRouter.from_chunks_file()
         self.multi_dense_single_bm25 = multi_dense_single_bm25
         self.fusion_strategy = fusion_strategy
+        self.reranker = reranker
+        self.rerank_top_k = rerank_top_k
         self.max_workers = max_workers
         self.reformulation_cache_size = reformulation_cache_size
         self._reformulation_cache: "OrderedDict[tuple[str, int], List[str]]" = OrderedDict()
@@ -283,6 +288,21 @@ class SearchPipeline:
                 warnings=warnings,
             )
         timings["retrieval"] = (time.perf_counter() - t) * 1000
+
+        # 9. Cross-Encoder Reranking (Phase 2.3)
+        if self.reranker is not None and self.reranker.enabled and results:
+            t_rerank = time.perf_counter()
+            try:
+                results = self.reranker.rerank(
+                    query=normalized,
+                    candidates=results,
+                    top_k=self.rerank_top_k,
+                )
+            except Exception as exc:
+                logger.error("Cross-encoder reranking failed: %s; keeping retrieval ranking", exc)
+                warnings.append(f"Cross-encoder reranking failed: {exc}")
+            timings["reranking"] = (time.perf_counter() - t_rerank) * 1000
+
         timings["total"] = (time.perf_counter() - t0) * 1000
 
         return SearchResult(
