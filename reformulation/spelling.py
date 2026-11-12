@@ -35,6 +35,17 @@ __all__ = ["CorpusSpellCorrector", "build_vocabulary"]
 _WORD_RE = re.compile(r"[a-z]+")
 _DEFAULT_CHUNKS_PATH = Path(__file__).resolve().parents[1] / "Data" / "chunks" / "chunks.jsonl"
 
+# Closed-class functional words and prepositions that should NEVER be spelling correction targets.
+# Search queries contain domain content; turning unknown terms or clipped abbreviations into
+# prepositions or stopwords (e.g. 'intl' -> 'into') destroys search intent.
+_NON_TARGET_STOPWORDS: frozenset[str] = frozenset({
+    "into", "from", "with", "that", "this", "they", "them", "then", "when",
+    "what", "some", "more", "most", "each", "both", "down", "over", "such",
+    "only", "onto", "upon", "than", "also", "were", "have", "been", "does",
+    "done", "will", "would", "could", "should", "your", "ours", "their",
+    "about", "above", "after", "here", "there", "where", "while", "which"
+})
+
 
 def build_vocabulary(texts: Iterable[str], min_length: int = 3) -> Counter:
     """Count lowercase alphabetic words of at least ``min_length`` letters."""
@@ -107,6 +118,8 @@ class CorpusSpellCorrector:
         best: list[tuple[int, int, str]] = []  # (distance, -frequency, word)
         for cand in self._by_first_letter.get(low[0], ()):
             if len(cand) < self.min_word_length:
+                continue
+            if cand in _NON_TARGET_STOPWORDS:
                 continue
             d = _edit_distance(low, cand, limit)
             if d <= limit:

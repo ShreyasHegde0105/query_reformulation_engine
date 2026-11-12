@@ -19,6 +19,12 @@ private_docs
 # Local-only docs
 Repo_Docs/
 
+# Local agent artifacts
+.agents/
+.claude/
+.pr-lens/
+skills-lock.json
+
 # Throwaway evaluation sample runs
 evaluation/results/sample/
 

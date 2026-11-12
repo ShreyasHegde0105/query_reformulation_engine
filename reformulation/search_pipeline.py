@@ -12,6 +12,7 @@ from reformulation.normalizer import normalize_query
 from reformulation.reformulator import QueryReformulator
 from reformulation.semantic_similarity import SemanticSimilarity
 from reformulation.spelling import CorpusSpellCorrector
+from reformulation.intent_router import IntentRouter, QueryIntent, RoutingAction
 from retrieval.hybrid_retriever import HybridRetriever
 from retrieval.models import RetrievedChunk
 
@@ -45,6 +46,10 @@ class SearchResult:
     # and the results were built from what remained.
     degraded: bool = False
     warnings: List[str] = dataclasses.field(default_factory=list)
+    detected_intent: Optional[str] = None
+    routing_decision: Optional[str] = None
+    routing_reason: Optional[str] = None
+    reformulation_invoked: bool = True
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -57,6 +62,10 @@ class SearchResult:
             "degraded": self.degraded,
             "warnings": self.warnings,
             "timings_ms": self.timings_ms,
+            "detected_intent": self.detected_intent,
+            "routing_decision": self.routing_decision,
+            "routing_reason": self.routing_reason,
+            "reformulation_invoked": self.reformulation_invoked,
             "results": [c.to_dict() for c in self.results],
         }
 
@@ -76,6 +85,7 @@ class SearchPipeline:
         max_workers: int = 4,
         reformulation_cache_size: int = 256,
         spell_corrector: Optional[CorpusSpellCorrector] = None,
+        intent_router: Optional[IntentRouter] = None,
     ):
         """Initialize the pipeline with its required dependencies.
 
@@ -104,6 +114,7 @@ class SearchPipeline:
         self.semantic_similarity = semantic_similarity
         self.hybrid_retriever = hybrid_retriever
         self.spell_corrector = spell_corrector
+        self.intent_router = intent_router or IntentRouter.from_chunks_file()
         self.max_workers = max_workers
         self.reformulation_cache_size = reformulation_cache_size
         self._reformulation_cache: "OrderedDict[tuple[str, int], List[str]]" = OrderedDict()
@@ -182,45 +193,56 @@ class SearchPipeline:
         validate_query(query)
         normalized = normalize_query(query, spell_corrector=self.spell_corrector)
 
-        # 3. Reformulation
-        t = time.perf_counter()
+        # 2b. Intent Routing
+        route_res = self.intent_router.route(query, normalized)
+        detected_intent = route_res.intent.value
+        routing_decision = route_res.action.value
+        routing_reason = route_res.reason
         reformulations: List[str] = []
         reformulation_error: Optional[str] = None
-        # Keyed on the normalized query so case/spacing variants share one LLM call.
-        cache_key = (normalized, max_variants)
-        cached = self._cached_reformulations(cache_key)
-        if cached is not None:
-            reformulations = cached
+        cached = False
+        reformulation_invoked = False
+
+        if route_res.action == RoutingAction.DIRECT:
+            timings["reformulation"] = 0.0
+            timings["filtering"] = 0.0
+            final_queries = [normalized]
         else:
+            reformulation_invoked = True
+            # 3. Reformulation
+            t = time.perf_counter()
+            cache_key = (normalized, max_variants)
+            cached_val = self._cached_reformulations(cache_key)
+            if cached_val is not None:
+                reformulations = cached_val
+                cached = True
+            else:
+                try:
+                    reformulations = self.reformulator.generate_variants(
+                        query, max_variants=max_variants
+                    )
+                    self._remember_reformulations(cache_key, reformulations)
+                except Exception as exc:
+                    logger.warning("Query reformulation failed, falling back to original query: %s", exc)
+                    reformulation_error = _public_reformulation_error(exc)
+                    reformulations = []
+            timings["reformulation"] = (time.perf_counter() - t) * 1000
+
+            # 4. Construct candidate queries list (Original + Reformulations)
+            candidate_queries = [normalized] + reformulations
+
+            # 5. Semantic Similarity Filtering
+            t = time.perf_counter()
             try:
-                reformulations = self.reformulator.generate_variants(
-                    query, max_variants=max_variants
+                final_queries = self.semantic_similarity.filter_redundant(
+                    candidate_queries, original_query=normalized
                 )
-                self._remember_reformulations(cache_key, reformulations)
             except Exception as exc:
-                # Fall back gracefully to just the original query on LLM/reformulation errors
-                logger.warning("Query reformulation failed, falling back to original query: %s", exc)
-                reformulation_error = _public_reformulation_error(exc)
-                reformulations = []
-        timings["reformulation"] = (time.perf_counter() - t) * 1000
+                logger.warning("Semantic similarity filtering failed, using unfiltered queries: %s", exc)
+                final_queries = candidate_queries
 
-        # 4. Construct candidate queries list (Original + Reformulations)
-        candidate_queries = [normalized] + reformulations
-
-        # 5. Semantic Similarity Filtering
-        t = time.perf_counter()
-        try:
-            final_queries = self.semantic_similarity.filter_redundant(
-                candidate_queries, original_query=normalized
-            )
-        except Exception as exc:
-            logger.warning("Semantic similarity filtering failed, using unfiltered queries: %s", exc)
-            final_queries = candidate_queries
-
-        # The user's own query is always searched, and always first: aggregation
-        # gives the first query the primary weight.
-        final_queries = [normalized] + [q for q in final_queries if q != normalized]
-        timings["filtering"] = (time.perf_counter() - t) * 1000
+            final_queries = [normalized] + [q for q in final_queries if q != normalized]
+            timings["filtering"] = (time.perf_counter() - t) * 1000
 
         # 6 & 7 & 8. Hybrid Retrieval, Aggregation and Ranking
         t = time.perf_counter()
@@ -247,9 +269,13 @@ class SearchPipeline:
             queries_used=list(final_queries),
             timings_ms={name: round(ms, 1) for name, ms in timings.items()},
             reformulation_error=reformulation_error,
-            reformulation_cached=cached is not None,
+            reformulation_cached=cached,
             degraded=bool(warnings),
             warnings=warnings,
+            detected_intent=detected_intent,
+            routing_decision=routing_decision,
+            routing_reason=routing_reason,
+            reformulation_invoked=reformulation_invoked,
         )
 
     def _cached_reformulations(self, key: tuple[str, int]) -> Optional[List[str]]:

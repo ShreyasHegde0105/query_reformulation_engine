@@ -78,6 +78,7 @@ _ABBREV_MAP: dict[str, str] = {
     "yrs":    "years",
     "approx": "approximately",
     "govt":   "government",
+    "intl":   "international",
 }
 
 # Curated typo corrections. Keys are lowercase misspellings.
