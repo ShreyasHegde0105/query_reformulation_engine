@@ -70,21 +70,37 @@ class AssembledContext:
 
 
 class RAGContextAssembler:
-    """Assembles diversity-aware RAG context from ranked retrieval candidates.
+    """Assembles relevance-first, diversity-aware RAG context from ranked candidates.
 
     Key capabilities:
-    1. Document Diversity: Prevents a single document from consuming all context slots.
-    2. Overlap Pruning: Deduplicates chunks with high token overlap (e.g. Jaccard >= 0.70).
+    1. Relevance-First Multi-Document Diversity: Dynamically balances document breadth
+       and chunk depth. When multiple documents contribute necessary evidence, slots are
+       reserved across documents. When a single document provides complete evidence,
+       multiple essential chunks are retained without forcing irrelevant documents into context.
+    2. Overlap Pruning: Deduplicates chunks with high token overlap (Jaccard >= threshold).
     3. Query Aspect Coverage: Identifies multiple query facets (e.g. eligibility vs process)
        and ensures chunks covering distinct aspects are retained.
-    4. Token Budgeting: Enforces a configurable maximum context token budget.
-    5. Provenance Retention: Preserves document title, section, and original retrieval rank.
+    4. Minimal Sufficient Context: Selects the smallest useful collection of evidence that
+       covers the user's information needs without polluting context with low-scoring junk.
+    5. Token Budgeting: Enforces a configurable maximum context token budget.
+    6. Provenance Retention: Preserves document title, section, and original retrieval rank.
     """
 
     _ASPECT_STOPWORDS = frozenset({
-        "what", "is", "are", "the", "for", "and", "or", "in", "of", "to", "how",
-        "do", "i", "can", "a", "an", "on", "about", "with", "explain", "describe",
-        "please", "give", "tell", "me", "rules", "policy", "guidelines"
+        "what", "when", "where", "which", "who", "whom", "whose", "why", "how",
+        "the", "a", "an", "is", "are", "was", "were", "be", "been", "being",
+        "have", "has", "had", "do", "does", "did", "can", "could", "should",
+        "would", "may", "might", "must", "shall", "will", "i", "my", "me",
+        "we", "our", "us", "you", "your", "they", "them", "their", "it", "its",
+        "this", "that", "these", "those", "for", "of", "in", "on", "at", "to",
+        "from", "by", "with", "about", "into", "through", "during", "before",
+        "after", "above", "below", "up", "down", "out", "off", "over", "under",
+        "again", "further", "then", "once", "here", "there", "all", "any", "both",
+        "each", "few", "more", "most", "other", "some", "such", "no", "nor",
+        "not", "only", "own", "same", "so", "than", "too", "very", "s", "t",
+        "just", "don", "shouldn", "now", "tell", "explain", "describe", "find",
+        "give", "show", "list", "need", "know", "please", "help", "rules", "policy",
+        "guidelines"
     })
 
     def __init__(
@@ -92,8 +108,11 @@ class RAGContextAssembler:
         max_tokens: int = 2000,
         max_total_chunks: int = 6,
         max_chunks_per_doc: int = 2,
+        max_dominant_doc_chunks: int = 4,
         redundancy_threshold: float = 0.70,
         max_chars_per_chunk: int = 1500,
+        strategy: str = "relevance_first",
+        dominant_score_margin: float = 4.0,
     ) -> None:
         if max_tokens < 100:
             raise ValueError("max_tokens must be >= 100")
@@ -101,12 +120,19 @@ class RAGContextAssembler:
             raise ValueError("max_total_chunks must be >= 1")
         if max_chunks_per_doc < 1:
             raise ValueError("max_chunks_per_doc must be >= 1")
+        if max_dominant_doc_chunks < max_chunks_per_doc:
+            raise ValueError("max_dominant_doc_chunks must be >= max_chunks_per_doc")
+        if strategy not in ("relevance_first", "diversity_capped", "legacy"):
+            raise ValueError(f"Unknown context assembly strategy: {strategy!r}")
 
         self.max_tokens = max_tokens
         self.max_total_chunks = max_total_chunks
         self.max_chunks_per_doc = max_chunks_per_doc
+        self.max_dominant_doc_chunks = max_dominant_doc_chunks
         self.redundancy_threshold = redundancy_threshold
         self.max_chars_per_chunk = max_chars_per_chunk
+        self.strategy = strategy
+        self.dominant_score_margin = dominant_score_margin
 
     def extract_query_aspects(self, query: str) -> List[str]:
         """Extract key information facets or sub-questions from the query."""
@@ -149,6 +175,56 @@ class RAGContextAssembler:
                 formatted_sources="",
             )
 
+        if self.strategy == "legacy":
+            return self._assemble_legacy(query, candidates)
+        elif self.strategy == "diversity_capped":
+            return self._assemble_diversity_capped(query, candidates)
+        else:
+            return self._assemble_relevance_first(query, candidates)
+
+    def _assemble_legacy(
+        self,
+        query: str,
+        candidates: Sequence[RetrievedChunk],
+    ) -> AssembledContext:
+        """Naive top-K slicing without document diversity or redundancy pruning."""
+        query_aspects = self.extract_query_aspects(query)
+        selected_chunks: List[ContextChunk] = []
+        covered_aspects_set: Set[str] = set()
+        total_tokens = 0
+
+        for rank, chunk in enumerate(candidates[: self.max_total_chunks], start=1):
+            chunk_text = (chunk.chunk_text or "").strip()
+            est_tokens = chunk.token_count if (chunk.token_count and chunk.token_count > 0) else self.estimate_tokens(chunk_text)
+            if total_tokens + est_tokens > self.max_tokens and selected_chunks:
+                continue
+
+            chunk_lower = (f"{chunk.title} {chunk.section or ''} {chunk_text}").lower()
+            chunk_aspects = [asp for asp in query_aspects if any(word in chunk_lower for word in asp.split())]
+            covered_aspects_set.update(chunk_aspects)
+
+            context_chunk = ContextChunk(
+                chunk_id=chunk.chunk_id,
+                document_id=chunk.document_id or "UNKNOWN_DOC",
+                title=chunk.title or "Untitled Document",
+                section=chunk.section,
+                chunk_text=chunk_text[: self.max_chars_per_chunk],
+                original_rank=rank,
+                score=chunk.score,
+                token_count=est_tokens,
+                covered_aspects=chunk_aspects,
+            )
+            selected_chunks.append(context_chunk)
+            total_tokens += est_tokens
+
+        return self._build_assembled_context(query, selected_chunks, query_aspects, covered_aspects_set, 0, total_tokens)
+
+    def _assemble_diversity_capped(
+        self,
+        query: str,
+        candidates: Sequence[RetrievedChunk],
+    ) -> AssembledContext:
+        """Rigid diversity-capped context assembly (Phase 2.4 behavior)."""
         query_aspects = self.extract_query_aspects(query)
         selected_chunks: List[ContextChunk] = []
         doc_chunk_counts: Dict[str, int] = {}
@@ -169,7 +245,6 @@ class RAGContextAssembler:
             if not chunk_text:
                 continue
 
-            # Check overlap against already selected chunks
             is_redundant = False
             for sel in selected_chunks:
                 if self.calculate_token_overlap(chunk_text, sel.chunk_text) >= self.redundancy_threshold:
@@ -179,12 +254,10 @@ class RAGContextAssembler:
             if is_redundant:
                 continue
 
-            # Check token budget
             est_tokens = chunk.token_count if (chunk.token_count and chunk.token_count > 0) else self.estimate_tokens(chunk_text)
             if total_tokens + est_tokens > self.max_tokens and selected_chunks:
                 continue
 
-            # Identify which query aspects this chunk addresses
             chunk_lower = (f"{chunk.title} {chunk.section or ''} {chunk_text}").lower()
             chunk_aspects = [asp for asp in query_aspects if any(word in chunk_lower for word in asp.split())]
             covered_aspects_set.update(chunk_aspects)
@@ -205,7 +278,135 @@ class RAGContextAssembler:
             doc_chunk_counts[doc_id] = current_doc_count + 1
             total_tokens += est_tokens
 
-        # Build formatted source block
+        return self._build_assembled_context(
+            query, selected_chunks, query_aspects, covered_aspects_set, len(pruned_chunk_ids), total_tokens
+        )
+
+    def _assemble_relevance_first(
+        self,
+        query: str,
+        candidates: Sequence[RetrievedChunk],
+    ) -> AssembledContext:
+        """Relevance-first multi-document context assembly (Phase 2.4.1)."""
+        query_aspects = self.extract_query_aspects(query)
+        selected_chunks: List[ContextChunk] = []
+        doc_chunk_counts: Dict[str, int] = {}
+        covered_aspects_set: Set[str] = set()
+        pruned_chunk_ids: Set[str] = set()
+        total_tokens = 0
+
+        # Extract scores safely from metadata or score attribute
+        def _get_chunk_score(c: RetrievedChunk) -> float:
+            if hasattr(c, "metadata") and c.metadata and "ce_score" in c.metadata:
+                try:
+                    return float(c.metadata["ce_score"])
+                except (ValueError, TypeError):
+                    pass
+            return float(c.score) if c.score is not None else 0.0
+
+        top_chunk = candidates[0]
+        top_doc = top_chunk.document_id or "UNKNOWN_DOC"
+        top_score = _get_chunk_score(top_chunk)
+
+        # Detect competitive secondary documents in top candidates
+        competitive_docs = {top_doc}
+        for c in candidates[1:7]:
+            score = _get_chunk_score(c)
+            if (top_score - score <= self.dominant_score_margin) and score > -1.0:
+                doc_id = c.document_id or "UNKNOWN_DOC"
+                competitive_docs.add(doc_id)
+
+        is_multi_doc = len(competitive_docs) > 1
+
+        # Adaptive budget: single-focus queries need at most max_dominant_doc_chunks,
+        # while multi-doc queries use max_total_chunks with base cap per document.
+        effective_max_total = self.max_total_chunks if is_multi_doc else min(self.max_dominant_doc_chunks, self.max_total_chunks)
+        base_cap = self.max_chunks_per_doc if is_multi_doc else self.max_dominant_doc_chunks
+
+        for rank, chunk in enumerate(candidates, start=1):
+            if len(selected_chunks) >= effective_max_total:
+                break
+
+            doc_id = chunk.document_id or "UNKNOWN_DOC"
+            count = doc_chunk_counts.get(doc_id, 0)
+            score = _get_chunk_score(chunk)
+            chunk_text = (chunk.chunk_text or "").strip()
+            if not chunk_text:
+                continue
+
+            chunk_lower = (f"{chunk.title} {chunk.section or ''} {chunk_text}").lower()
+            chunk_aspects = [asp for asp in query_aspects if any(word in chunk_lower for word in asp.split())]
+            new_aspects = [asp for asp in chunk_aspects if asp not in covered_aspects_set]
+
+            # Stop check for single-doc query: don't pollute with irrelevant docs if top doc has >= 3 chunks
+            if not is_multi_doc and len(selected_chunks) >= 3 and doc_id != top_doc and not new_aspects:
+                if score < 0.0 or rank > 4:
+                    break
+
+            # If single-doc query and chunk is from a secondary document, reject if score gap exceeds dominant margin
+            if not is_multi_doc and doc_id != top_doc and not new_aspects:
+                if (top_score - score) > self.dominant_score_margin:
+                    continue
+
+            # Admission filter for non-competitive documents on multi-doc queries
+            if is_multi_doc and doc_id not in competitive_docs and not new_aspects and score < -2.0 and rank > 6:
+                continue
+
+            # Capacity check
+            if count >= base_cap:
+                if new_aspects:
+                    pass
+                elif is_multi_doc and count < 3 and score > 2.0:
+                    pass
+                else:
+                    continue
+
+            # Check overlap against already selected chunks
+            is_redundant = False
+            for sel in selected_chunks:
+                if self.calculate_token_overlap(chunk_text, sel.chunk_text) >= self.redundancy_threshold:
+                    is_redundant = True
+                    pruned_chunk_ids.add(chunk.chunk_id)
+                    break
+            if is_redundant:
+                continue
+
+            # Check token budget
+            est_tokens = chunk.token_count if (chunk.token_count and chunk.token_count > 0) else self.estimate_tokens(chunk_text)
+            if total_tokens + est_tokens > self.max_tokens and selected_chunks:
+                continue
+
+            context_chunk = ContextChunk(
+                chunk_id=chunk.chunk_id,
+                document_id=doc_id,
+                title=chunk.title or "Untitled Document",
+                section=chunk.section,
+                chunk_text=chunk_text[: self.max_chars_per_chunk],
+                original_rank=rank,
+                score=score,
+                token_count=est_tokens,
+                covered_aspects=chunk_aspects,
+            )
+
+            selected_chunks.append(context_chunk)
+            doc_chunk_counts[doc_id] = count + 1
+            covered_aspects_set.update(chunk_aspects)
+            total_tokens += est_tokens
+
+        return self._build_assembled_context(
+            query, selected_chunks, query_aspects, covered_aspects_set, len(pruned_chunk_ids), total_tokens
+        )
+
+    def _build_assembled_context(
+        self,
+        query: str,
+        selected_chunks: List[ContextChunk],
+        query_aspects: List[str],
+        covered_aspects_set: Set[str],
+        duplicates_pruned: int,
+        total_tokens: int,
+    ) -> AssembledContext:
+        """Helper to build formatted source block and AssembledContext dataclass."""
         formatted_sources_list = []
         for c in selected_chunks:
             sec_header = f" — {c.section}" if c.section else ""
@@ -225,6 +426,6 @@ class RAGContextAssembler:
             query_aspects=query_aspects,
             covered_aspects=covered_aspects_list,
             missing_aspects=missing_aspects_list,
-            duplicate_chunks_pruned=len(pruned_chunk_ids),
+            duplicate_chunks_pruned=duplicates_pruned,
             formatted_sources=formatted_sources,
         )
