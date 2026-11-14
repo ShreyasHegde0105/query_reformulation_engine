@@ -27,7 +27,8 @@ the top 10 results instead of 87.5%, and the gain is statistically significant.
 
 ## 1. Results at a glance
 
-94 held-out test queries, written without looking at the documents and never used for tuning
+94 held-out queries, written without looking at the documents and not used to tune the reformulation
+pipeline measured here (it was later used while developing the router and reranker; see §Datasets)
 (`evaluation/heldout_queries.json`, full report in `evaluation/results/heldout_report.md`).
 Every row uses the same indexes; **only the handling of the query changes**.
 
