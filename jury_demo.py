@@ -9,8 +9,11 @@ Demonstrates the full end-to-end AI query reformulation and retrieval pipeline:
 5. Final Query Set
 6. Baseline Retrieval (original normalized query only)
 7. Reformulation Retrieval (multi-query hybrid retrieval fused with RRF)
-8. Result Comparison & Rank Movement (ground-truth ranking changes, MRR, NDCG)
-9. Cross-Encoder Reranking status (Phase 4 findings)
+8. Result Comparison & Rank Movement (labelled metrics only; nothing is judged without labels)
+9. Production reranking (optional, --enable-ce): contextual cross-encoder, logits shown as
+   uncalibrated ordering scores
+10. Answerability: what the system can and cannot tell
+11. Optional LLM judge diagnostics (--judge): evaluation-only, never ground truth, never a verdict
 """
 
 from __future__ import annotations
@@ -38,9 +41,10 @@ load_dotenv(override=True)
 
 from embedding.encoder import EmbeddingEncoder
 from evaluation.metrics import calculate_all_metrics
-from reformulation.cross_encoder import CrossEncoderReranker
+from reformulation.production_reranker import LOGIT_KEY, ProductionReranker, RerankerConfig
 from reformulation.llm.fallback import FallbackLLMClient
 from reformulation.normalizer import normalize_query
+from reformulation.spelling import CorpusSpellCorrector
 from reformulation.reformulator import QueryReformulator
 from reformulation.search_pipeline import SearchPipeline
 from reformulation.semantic_similarity import FilterDecision, SemanticSimilarity
@@ -55,8 +59,8 @@ GOLDEN_QUERIES_PATH = os.path.join(
 REFORMULATIONS_CACHE_PATH = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "evaluation", "cache", "reformulations.json"
 )
-# ms-marco cross-encoder logits: > 0 means the model judges the passage relevant
-JUDGE_RELEVANT_THRESHOLD = 0.0
+# Candidate pool per query for multi-query fusion, as in the production API.
+CANDIDATE_K = 50
 
 DEMO_MENU_OPTIONS = [
     {
@@ -100,9 +104,10 @@ DEMO_MENU_OPTIONS = [
 class PresentationDemo:
     """Orchestrates and displays the live production AI Query Reformulation & Retrieval Demo."""
 
-    def __init__(self, enable_ce: bool = False, use_cache: bool = False):
+    def __init__(self, enable_ce: bool = False, use_cache: bool = False, enable_judge: bool = False):
         print("Initializing production components...")
         self.use_cache = use_cache
+        self.enable_judge = enable_judge
         try:
             llm_client = FallbackLLMClient.from_env()
             print(f"LLM keys (fail-over order): {', '.join(llm_client.labels)}")
@@ -116,16 +121,18 @@ class PresentationDemo:
                 vector_retriever=self.vector_retriever,
                 keyword_retriever=self.keyword_retriever,
             )
+            # Same corpus spell corrector as the production API (api/app.py).
+            self.spell_corrector = CorpusSpellCorrector.from_chunks_file()
             self.pipeline = SearchPipeline(
                 reformulator=self.reformulator,
                 semantic_similarity=self.semantic_similarity,
                 hybrid_retriever=self.hybrid_retriever,
+                spell_corrector=self.spell_corrector,
             )
 
-            # Cross-encoder reranker
-            self.reranker = CrossEncoderReranker.from_env()
-            if enable_ce:
-                self.reranker.enabled = True
+            # Production reranker (contextual cross-encoder); off unless --enable-ce or RERANKER_ENABLED=true.
+            cfg = RerankerConfig.from_env()
+            self.reranker = ProductionReranker(dataclasses.replace(cfg, enabled=cfg.enabled or enable_ce))
 
         except Exception as e:
             print(f"Failed to initialize components: {e}")
@@ -181,130 +188,114 @@ class PresentationDemo:
 
         return None
 
-    def _judge_relevance(self, query: str, chunks: List[RetrievedChunk]) -> Dict[str, float]:
-        """Score chunks against the query with the cross-encoder (label-free relevance judge)."""
-        unique = list({c.chunk_id: c for c in chunks}.values())
-        try:
-            scores = self.reranker.score(query, unique)
-        except Exception as e:
-            print(f"[!] Relevance judge unavailable ({e}); showing overlap statistics only.")
-            print()
-            return {}
-        return {c.chunk_id: s for c, s in zip(unique, scores)}
+    @staticmethod
+    def _labelled_metrics(ranked: List[RetrievedChunk], gt: Dict[str, Any]) -> Dict[str, float]:
+        ids = [c.chunk_id for c in ranked]
+        rel = set(gt["relevant_chunks"])
+        m = calculate_all_metrics(ids, gt["relevant_chunks"], gt.get("graded_relevance"), k_list=[5, 10])
+        m["p@5"] = len(rel & set(ids[:5])) / 5
+        m["p@10"] = len(rel & set(ids[:10])) / 10
+        m["mrr@10"] = next((1 / i for i, c in enumerate(ids[:10], 1) if c in rel), 0.0)
+        return m
 
-    def _print_label_free_comparison(
-        self,
-        baseline_results: List[RetrievedChunk],
-        reform_results: List[RetrievedChunk],
-        judge_scores: Dict[str, float],
-    ) -> None:
-        """[7] for queries without ground truth: judge-based quality + diversity statistics."""
-        base_top10 = baseline_results[:10]
-        reform_top10 = reform_results[:10]
-
-        print("Ground truth: not labelled for this query — using label-free evaluation.")
-        if judge_scores:
-            print(f"Relevance judge: Cross-Encoder ({self.reranker.model_name})")
-            print(f"  Each result is scored against the query; score > {JUDGE_RELEVANT_THRESHOLD:.1f} counts as relevant.")
+    def _print_labelled_comparison(self, systems: Dict[str, List[RetrievedChunk]], gt: Dict[str, Any]) -> None:
+        """[7] Metrics from the query's labels only (labels: evaluation/golden_queries.json)."""
+        print(f"Labels: {gt['query_id']} in evaluation/golden_queries.json "
+              "(graded 0-3; label provenance is not recorded in the repository).")
+        if gt.get("description"):
+            print(f"Label note (evidence for the grades): {gt['description']}")
         print()
+        names = list(systems)
+        metrics = {n: self._labelled_metrics(r, gt) for n, r in systems.items()}
+        print(f"{'Metric':<14} | " + " | ".join(f"{n:<13}" for n in names))
+        print("-" * (17 + 16 * len(names)))
+        for key, label in (("p@5", "Precision@5"), ("p@10", "Precision@10"), ("recall@5", "Recall@5"),
+                           ("recall@10", "Recall@10"), ("mrr@10", "MRR@10"), ("ndcg@10", "NDCG@10")):
+            print(f"{label:<14} | " + " | ".join(f"{metrics[n][key]:<13.4f}" for n in names))
+        print()
+        print("One query cannot show that a system is better; see evaluation/results/ad_benchmark_*.md "
+              "for measured results over full query sets.")
+        graded = gt.get("graded_relevance") or {c: 2 for c in gt["relevant_chunks"]}
+        print()
+        print("Labelled grade of each top-5 result (- = not labelled):")
+        for n in names:
+            grades = [str(graded.get(c.chunk_id, "-")) for c in systems[n][:5]]
+            print(f"  {n:<13}: " + "  ".join(grades))
 
-        def judged(chunks: List[RetrievedChunk], k: int) -> List[float]:
-            return [judge_scores[c.chunk_id] for c in chunks[:k] if c.chunk_id in judge_scores]
-
-        def precision(chunks: List[RetrievedChunk], k: int) -> float:
-            s = judged(chunks, k)
-            return sum(x > JUDGE_RELEVANT_THRESHOLD for x in s) / k if s else 0.0
-
-        def mean(xs: List[float]) -> float:
-            return sum(xs) / len(xs) if xs else 0.0
-
-        rows: List[Tuple[str, str, str]] = []
-        if judge_scores:
-            rows += [
-                ("Judged relevant @5", f"{precision(base_top10, 5) * 5:.0f} / 5", f"{precision(reform_top10, 5) * 5:.0f} / 5"),
-                ("Judged relevant @10", f"{precision(base_top10, 10) * 10:.0f} / 10", f"{precision(reform_top10, 10) * 10:.0f} / 10"),
-                ("Mean judge score @5", f"{mean(judged(base_top10, 5)):+.3f}", f"{mean(judged(reform_top10, 5)):+.3f}"),
-                ("Mean judge score @10", f"{mean(judged(base_top10, 10)):+.3f}", f"{mean(judged(reform_top10, 10)):+.3f}"),
-                ("Top-1 judge score", f"{mean(judged(base_top10, 1)):+.3f}", f"{mean(judged(reform_top10, 1)):+.3f}"),
-            ]
-        rows.append((
-            "Distinct documents @10",
-            str(len({c.document_id for c in base_top10})),
-            str(len({c.document_id for c in reform_top10})),
-        ))
-
-        print(f"{'Metric':<25} | {'Original':<14} | {'Reformulated':<14}")
+    def _print_unlabelled_comparison(self, baseline: List[RetrievedChunk], reform: List[RetrievedChunk]) -> None:
+        """[7] for queries without labels: overlap and diversity only. Relevance is NOT judged."""
+        print("Relevance: NOT EVALUATED. This query has no labels, and no model score is used as a")
+        print("substitute (cross-encoder logits are uncalibrated and are not relevance judgments).")
+        print()
+        b10, r10 = baseline[:10], reform[:10]
+        b_ids, r_ids = {c.chunk_id for c in b10}, {c.chunk_id for c in r10}
+        print(f"{'Statistic':<28} | {'Original':<10} | {'Reformulated':<12}")
         print("-" * 58)
-        for name, b, r in rows:
-            print(f"{name:<25} | {b:<14} | {r:<14}")
+        print(f"{'Distinct documents in top 10':<28} | {len({c.document_id for c in b10}):<10} | "
+              f"{len({c.document_id for c in r10}):<12}")
         print("-" * 58)
+        print(f"Top-10 overlap: {len(b_ids & r_ids)}/10 shared; {len(r_ids - b_ids)} in the reformulated "
+              f"top 10 are not in the original top 10.")
 
-        base_ids = {c.chunk_id for c in base_top10}
-        reform_ids = {c.chunk_id for c in reform_top10}
-        overlap = len(base_ids & reform_ids)
-        print(f"Top-10 overlap            : {overlap}/10 chunks shared "
-              f"({len(reform_ids - base_ids)} new surfaced by reformulation)")
-
-        if judge_scores:
-            delta = mean(judged(reform_top10, 10)) - mean(judged(base_top10, 10))
-            if delta > 0.1:
-                verdict = f"▲ Reformulation improved judged relevance of the top-10 (+{delta:.3f})"
-            elif delta < -0.1:
-                verdict = f"▼ Reformulation reduced judged relevance of the top-10 ({delta:.3f})"
-            else:
-                verdict = f"— Comparable judged relevance ({delta:+.3f})"
-            print(f"Verdict                   : {verdict}")
-
-    def _print_label_free_rank_movement(
-        self,
-        baseline_results: List[RetrievedChunk],
-        reform_results: List[RetrievedChunk],
-        judge_scores: Dict[str, float],
-    ) -> None:
-        """[8] for queries without ground truth: how each top chunk moved between configurations."""
-        base_rank = {c.chunk_id: r for r, c in enumerate(baseline_results, start=1)}
-        reform_rank = {c.chunk_id: r for r, c in enumerate(reform_results, start=1)}
-
-        # Everything in either top-10, ordered by reformulated rank (absent ones last)
-        shown = list(dict.fromkeys([c.chunk_id for c in reform_results[:10]] + [c.chunk_id for c in baseline_results[:10]]))
+    @staticmethod
+    def _print_unlabelled_rank_movement(baseline: List[RetrievedChunk], reform: List[RetrievedChunk]) -> None:
+        """[8] for queries without labels: rank changes only (top-20 lists)."""
+        base_rank = {c.chunk_id: r for r, c in enumerate(baseline, start=1)}
+        reform_rank = {c.chunk_id: r for r, c in enumerate(reform, start=1)}
+        shown = list(dict.fromkeys([c.chunk_id for c in reform[:10]] + [c.chunk_id for c in baseline[:10]]))
         shown.sort(key=lambda cid: (reform_rank.get(cid, 999), base_rank.get(cid, 999)))
-
-        def fmt(r: Optional[int]) -> str:
-            return str(r) if r is not None else ">20"
-
-        promoted = demoted = new = dropped = 0
-        print(f"{'Chunk ID':<28} | {'Original':>8} → {'Reform':<6} | {'Movement':<14} | {'Judge':>7}")
-        print("-" * 78)
+        counts = {"promoted": 0, "demoted": 0, "new": 0, "dropped": 0}
+        print(f"{'Chunk ID':<28} | {'Original':>8} -> {'Reform':<6} | Movement")
+        print("-" * 64)
         for cid in shown:
             rb, rr = base_rank.get(cid), reform_rank.get(cid)
             if rb is None:
-                move, new = "★ NEW", new + 1
+                move = "NEW (not in original top 20)"
+                counts["new"] += 1
             elif rr is None:
-                move, dropped = "✗ DROPPED", dropped + 1
+                move = "DROPPED (not in reformulated top 20)"
+                counts["dropped"] += 1
             elif rb > rr:
-                move, promoted = f"▲ +{rb - rr}", promoted + 1
+                move = f"up {rb - rr}"
+                counts["promoted"] += 1
             elif rb < rr:
-                move, demoted = f"▼ -{rr - rb}", demoted + 1
+                move = f"down {rr - rb}"
+                counts["demoted"] += 1
             else:
-                move = "— same"
-            js = judge_scores.get(cid)
-            js_str = f"{js:+.2f}" if js is not None else "n/a"
-            if js is not None and js > JUDGE_RELEVANT_THRESHOLD:
-                js_str += " ✓"
-            print(f"{cid:<28} | {fmt(rb):>8} → {fmt(rr):<6} | {move:<14} | {js_str:>7}")
-        print("-" * 78)
-        print(f"Summary: {promoted} promoted, {demoted} demoted, {new} newly surfaced, {dropped} dropped out of top-20")
-        if judge_scores:
-            new_rel = sum(
-                1 for cid in shown
-                if cid not in base_rank and judge_scores.get(cid, -99) > JUDGE_RELEVANT_THRESHOLD
-            )
-            lost_rel = sum(
-                1 for cid in shown
-                if cid not in reform_rank and judge_scores.get(cid, -99) > JUDGE_RELEVANT_THRESHOLD
-            )
-            print(f"         {new_rel} judged-relevant chunk(s) gained, {lost_rel} judged-relevant chunk(s) lost")
+                move = "same"
+            print(f"{cid:<28} | {str(rb) if rb else '>20':>8} -> {str(rr) if rr else '>20':<6} | {move}")
+        print("-" * 64)
+        print(f"Summary (top-20 lists): {counts['promoted']} promoted, {counts['demoted']} demoted, "
+              f"{counts['new']} new, {counts['dropped']} dropped.")
+        print("Rank movement is not evidence of better or worse relevance.")
         print()
+
+    def _print_llm_judge(self, query: str, query_id: str, pools: Dict[str, List[RetrievedChunk]]) -> None:
+        """[11] Optional evaluation-only LLM judge. Diagnostic; never ground truth, never a verdict."""
+        try:
+            from evaluation.judge import JudgeConfig, LLMRelevanceJudge
+            cfg = JudgeConfig.from_env()
+            judge = LLMRelevanceJudge(cfg.build_client(), cfg)
+        except Exception as e:
+            print(f"LLM judge unavailable ({e}).")
+            return
+        pool = list({c.chunk_id: c for lst in pools.values() for c in lst[:5]}.values())
+        res = judge.judge(query_id, query, pool)
+        print(f"Judge: {judge.provider}/{judge.model} | rubric {res.rubric_version} | prompt {res.prompt_version} | "
+              "blind to which list each passage came from.")
+        if res.status != "ok":
+            print(f"Judgment rejected ({res.error}); no grades shown.")
+            return
+        grades = {j.chunk_id: j for j in res.judgments}
+        print(f"Intents: {res.query_intents} | answerability among these passages: {res.answerability}")
+        for name, lst in pools.items():
+            print(f"  {name:<13}: " + "  ".join(str(grades[c.chunk_id].grade) if c.chunk_id in grades else "-"
+                                              for c in lst[:5]))
+        for j in res.judgments:
+            if j.grade > 0:
+                print(f"  {j.chunk_id} grade {j.grade}: evidence '{j.evidence[0][:100]}'")
+        print("These grades are an LLM opinion for diagnosis only. They are not labels and do not show")
+        print("that either list is better.")
 
     def execute_demo_query(self, query: str, golden_id: Optional[str] = None) -> List[RetrievedChunk]:
         """Run the full presentation flow for a single query.
@@ -332,24 +323,20 @@ class PresentationDemo:
         print("[1] NORMALIZATION")
         print("-" * 60)
         print()
-        normalized = normalize_query(query)
+        rules_only = normalize_query(query)
+        # The query used for retrieval, as in the API: rules + corpus spelling correction.
+        normalized = normalize_query(query, spell_corrector=self.spell_corrector)
         print("Original:")
         print(f"  {query}")
         print()
-        print("Normalized:")
-        print(f"  {normalized}")
-        print()
-
-        is_changed = query.strip() != normalized.strip()
-        if is_changed:
-            changes = []
-            if query.strip().lower() != normalized.strip().lower():
-                changes.append("spelling correction")
-            if query.strip() != normalized.strip():
-                changes.append("casing / whitespace / punctuation normalization")
-            print(f"Status: CHANGED ({' & '.join(changes)})")
+        print("Normalized (rules):")
+        print(f"  {rules_only}")
+        if normalized != rules_only:
+            print("Corrected (corpus spelling, used for retrieval):")
+            print(f"  {normalized}")
         else:
-            print("Status: UNCHANGED (query was already in canonical normalized form)")
+            print("Corrected: no corpus spelling correction applied (the corrector only fixes words one edit")
+            print("  away from a corpus word; longer typos are left to the LLM rewrites).")
         print()
 
         # ------------------------------------------------------------
@@ -474,17 +461,23 @@ class PresentationDemo:
         print("Top retrieved results:")
         print()
 
+        t_base = time.perf_counter()
         try:
-            baseline_results = self.hybrid_retriever.retrieve(
+            # Candidate pool of CANDIDATE_K (as in the API); the top 20 are shown and compared.
+            baseline_pool = self.hybrid_retriever.retrieve(
                 query=normalized,
                 vector_match_count=20,
                 keyword_match_count=20,
                 k=60,
-                final_k=20,
+                final_k=CANDIDATE_K,
             )
         except Exception as e:
             print(f"[!] Baseline retrieval failed: {e}")
-            baseline_results = []
+            baseline_pool = []
+        baseline_ms = (time.perf_counter() - t_base) * 1000
+        baseline_results = baseline_pool[:20]
+        print(f"Retrieval latency: {baseline_ms:.0f} ms")
+        print()
 
         for rank, chunk in enumerate(baseline_results[:5], start=1):
             is_gt = chunk.chunk_id in relevant_set
@@ -526,17 +519,23 @@ class PresentationDemo:
         print("Top retrieved results:")
         print()
 
+        t_ref = time.perf_counter()
         try:
-            reform_results = self.pipeline.aggregate_retrieval(
+            reform_pool = self.pipeline.aggregate_retrieval(
                 queries=final_queries,
                 vector_match_count=20,
                 keyword_match_count=20,
                 k=60,
-                final_k=20,
+                final_k=CANDIDATE_K,
+                candidate_k=CANDIDATE_K,
             )
         except Exception as e:
             print(f"[!] Reformulation retrieval failed: {e}")
-            reform_results = []
+            reform_pool = []
+        reform_ms = (time.perf_counter() - t_ref) * 1000
+        reform_results = reform_pool[:20]
+        print(f"Retrieval latency: {reform_ms:.0f} ms (excludes the LLM rewrite call above)")
+        print()
 
         for rank, chunk in enumerate(reform_results[:5], start=1):
             is_gt = chunk.chunk_id in relevant_set
@@ -565,52 +564,27 @@ class PresentationDemo:
         # ------------------------------------------------------------
         # [7] RESULT COMPARISON
         # ------------------------------------------------------------
+        # Production reranking (computed first so section [7] can include it).
+        reranked_results: List[RetrievedChunk] = []
+        rerank_outcome = None
+        if self.reranker.enabled:
+            rerank_outcome = self.reranker.rerank(normalized, reform_pool, final_k=20)
+            reranked_results = rerank_outcome.results
+
         print("-" * 60)
         print("[7] RESULT COMPARISON")
         print("-" * 60)
         print()
-        judge_scores: Dict[str, float] = {}
-        if not gt:
-            judge_scores = self._judge_relevance(normalized, baseline_results[:10] + reform_results[:10])
-            self._print_label_free_comparison(baseline_results, reform_results, judge_scores)
+        systems = {"Original": baseline_results, "Reformulated": reform_results}
+        if reranked_results:
+            systems["Reranked"] = reranked_results
+        if gt:
+            self._print_labelled_comparison(systems, gt)
         else:
-            base_top10 = baseline_results[:10]
-            reform_top10 = reform_results[:10]
-            base_ids = [c.chunk_id for c in base_top10]
-            reform_ids = [c.chunk_id for c in reform_top10]
-
-            m_base = calculate_all_metrics(
-                base_ids, gt["relevant_chunks"], gt.get("graded_relevance"), k_list=[5, 10]
-            )
-            m_reform = calculate_all_metrics(
-                reform_ids, gt["relevant_chunks"], gt.get("graded_relevance"), k_list=[5, 10]
-            )
-
-            base_hit_ranks = [
-                r for r, c in enumerate(baseline_results, start=1) if c.chunk_id in relevant_set
-            ]
-            reform_hit_ranks = [
-                r for r, c in enumerate(reform_results, start=1) if c.chunk_id in relevant_set
-            ]
-
-            base_rank_str = str(base_hit_ranks[0]) if base_hit_ranks else "Not in top 20"
-            reform_rank_str = str(reform_hit_ranks[0]) if reform_hit_ranks else "Not in top 20"
-
-            f5_base = "YES" if m_base["recall@5"] > 0 else "NO"
-            f5_ref = "YES" if m_reform["recall@5"] > 0 else "NO"
-            f10_base = "YES" if m_base["recall@10"] > 0 else "NO"
-            f10_ref = "YES" if m_reform["recall@10"] > 0 else "NO"
-
-            print(f"{'Metric':<25} | {'Original':<14} | {'Reformulated':<14}")
-            print("-" * 58)
-            print(f"{'Relevant found @5':<25} | {f5_base:<14} | {f5_ref:<14}")
-            print(f"{'Relevant found @10':<25} | {f10_base:<14} | {f10_ref:<14}")
-            print(f"{'First relevant rank':<25} | {base_rank_str:<14} | {reform_rank_str:<14}")
-            print(f"{'MRR@10':<25} | {m_base['mrr']:<14.4f} | {m_reform['mrr']:<14.4f}")
-            print(f"{'NDCG@5':<25} | {m_base['ndcg@5']:<14.4f} | {m_reform['ndcg@5']:<14.4f}")
-            print(f"{'NDCG@10':<25} | {m_base['ndcg@10']:<14.4f} | {m_reform['ndcg@10']:<14.4f}")
-            print(f"{'Recall@10':<25} | {m_base['recall@10']:<14.4f} | {m_reform['recall@10']:<14.4f}")
-            print("-" * 58)
+            self._print_unlabelled_comparison(baseline_results, reform_results)
+        print()
+        print(f"Latency: original retrieval {baseline_ms:.0f} ms | reformulated retrieval {reform_ms:.0f} ms"
+              + (f" | reranking {rerank_outcome.latency_ms:.0f} ms" if rerank_outcome else ""))
         print()
 
         # ------------------------------------------------------------
@@ -621,100 +595,71 @@ class PresentationDemo:
         print("-" * 60)
         print()
         if not gt:
-            self._print_label_free_rank_movement(baseline_results, reform_results, judge_scores)
+            self._print_unlabelled_rank_movement(baseline_results, reform_results)
         else:
             for target_chunk in gt["relevant_chunks"]:
-                r_base = next(
-                    (r for r, c in enumerate(baseline_results, start=1) if c.chunk_id == target_chunk),
-                    None,
-                )
-                r_reform = next(
-                    (r for r, c in enumerate(reform_results, start=1) if c.chunk_id == target_chunk),
-                    None,
-                )
-
-                print(f"Target Relevant Chunk: {target_chunk}")
-                base_str = str(r_base) if r_base is not None else "Absent (>20)"
-                reform_str = str(r_reform) if r_reform is not None else "Absent (>20)"
-                print(f"  Original query rank     : {base_str}")
-                print(f"  Reformulated query rank : {reform_str}")
-
-                if r_base is not None and r_reform is not None:
-                    delta = r_base - r_reform
-                    if delta > 0:
-                        print(f"  Rank movement           : {r_base} → {r_reform}")
-                        print(f"  Improvement             : ▲ +{delta} positions")
-                    elif delta < 0:
-                        print(f"  Rank movement           : {r_base} → {r_reform}")
-                        print(f"  Regression              : ▼ {delta} positions")
-                    else:
-                        print(f"  Rank movement           : {r_base} → {r_reform}")
-                        print(f"  Movement delta          : — Unchanged")
-                elif r_base is None and r_reform is not None:
-                    print(f"  Rank movement           : Absent (>20) → {r_reform}")
-                    print(f"  Improvement             : ▲ Recovered into top results at Rank {r_reform}")
-                elif r_base is not None and r_reform is None:
-                    print(f"  Rank movement           : {r_base} → Absent (>20)")
-                    print(f"  Regression              : ▼ Dropped outside top results")
-                else:
-                    print(f"  Rank movement           : Absent (>20) → Absent (>20)")
-                    print(f"  Status                  : Not retrieved in top-20 by either configuration")
+                ranks = {name: next((r for r, c in enumerate(lst, start=1) if c.chunk_id == target_chunk), None)
+                         for name, lst in systems.items()}
+                print(f"Labelled relevant chunk: {target_chunk}")
+                for name, r in ranks.items():
+                    print(f"  {name:<13} rank: {r if r is not None else 'not in top 20'}")
                 print()
 
         # ------------------------------------------------------------
-        # [9] CROSS-ENCODER RERANKING
+        # [9] PRODUCTION RERANKING
         # ------------------------------------------------------------
         print("-" * 60)
-        print("[9] CROSS-ENCODER RERANKING")
+        print("[9] PRODUCTION RERANKING")
         print("-" * 60)
         print()
-        if self.reranker.enabled:
-            print("Status: ENABLED (live second-stage reranking active)")
-            print(f"Model          : {self.reranker.model_name}")
-            print("Candidate pool : K = 30")
+        if rerank_outcome is not None:
+            print(f"Model: {self.reranker.config.model_name} | candidates scored: {rerank_outcome.candidates_scored} "
+                  f"| latency: {rerank_outcome.latency_ms:.0f} ms")
+            print("Scores below are raw cross-encoder logits: they order results for THIS query only.")
+            print("They are not probabilities and no relevance threshold is applied.")
+            if rerank_outcome.error:
+                print(f"[!] Reranking failed ({rerank_outcome.error}); retrieval order kept.")
             print()
-            print("Stage Distinction:")
-            print("  Stage 1: Multi-Query Hybrid RRF Candidate Generation")
-            print("  Stage 2: Cross-Encoder Deep Relevance Reranking")
-            print()
-            try:
-                candidate_pool = self.pipeline.aggregate_retrieval(
-                    queries=final_queries,
-                    vector_match_count=20,
-                    keyword_match_count=20,
-                    k=60,
-                    final_k=30,
-                )
-                ce_ranked = self.reranker.rerank(query, candidate_pool)
-
-                print(
-                    f"{'Final Rank':<11} | {'RRF Rank':<9} | {'Chunk ID':<25} | {'CE Score':<10} | {'Ground Truth':<12}"
-                )
-                print("-" * 75)
-                for ce_rank, chunk in enumerate(ce_ranked[:10], start=1):
-                    rrf_rank = next(
-                        (idx for idx, c in enumerate(candidate_pool, start=1) if c.chunk_id == chunk.chunk_id),
-                        "N/A",
-                    )
-                    ce_score = chunk.metadata.get("ce_score")
-                    ce_str = f"{ce_score:+.4f}" if ce_score is not None else "N/A"
-                    is_gt = "✓ YES" if chunk.chunk_id in relevant_set else "no"
-                    print(f"{ce_rank:<11} | {str(rrf_rank):<9} | {chunk.chunk_id:<25} | {ce_str:<10} | {is_gt:<12}")
-                print()
-            except Exception as e:
-                print(f"[!] Cross-Encoder reranking failed: {e}")
+            pool_rank = {c.chunk_id: r for r, c in enumerate(reform_pool, start=1)}
+            graded = (gt.get("graded_relevance") or {}) if gt else {}
+            print(f"{'Rank':<5} | {'Fusion rank':<11} | {'Chunk ID':<28} | {'Logit':>8} | Labelled grade")
+            print("-" * 75)
+            for r, c in enumerate(reranked_results[:10], start=1):
+                logit = (c.metadata or {}).get(LOGIT_KEY)
+                lab = str(graded.get(c.chunk_id, "-")) if gt else "no labels"
+                print(f"{r:<5} | {pool_rank.get(c.chunk_id, '?'):<11} | {c.chunk_id:<28} | "
+                      f"{(f'{logit:+.2f}' if logit is not None else 'n/a'):>8} | {lab}")
         else:
-            print("Status: DISABLED in production pipeline configuration (RERANKER_ENABLED=false)")
-            print()
-            print("Benchmark Findings (50 golden queries):")
-            print("  • Phase 4: pure Cross-Encoder reranking lowered Recall@10 (0.69 → 0.62) and MRR (0.56 → 0.53);")
-            print("    14 queries improved, 17 regressed. Cost: ~4.0s CPU per query for 50 candidates.")
-            print("  • Phase 5: contextual embeddings + BM25 raised candidate Recall@50 from 87% to 96%")
-            print("    and the full pipeline to Recall@10 0.87, MRR 0.670 (from 0.69 / 0.561).")
-            print("  • Re-tested on the Phase 5 pool: every reranking setup tied or lost to plain RRF")
-            print("    (best fusion: Recall@10 0.85 vs 0.87 RRF) at ~7.5s per query.")
-            print("  • Conclusion: left off by default; available for demos via --enable-ce.")
+            print("Status: DISABLED (RERANKER_ENABLED=false; enable for this demo with --enable-ce).")
+            print("Measured results: evaluation/results/ad_benchmark_*.md (configurations A-D). The reranker")
+            print("stays off in production until a benchmark shows a repeatable benefit.")
         print()
+
+        # ------------------------------------------------------------
+        # [10] ANSWERABILITY
+        # ------------------------------------------------------------
+        print("-" * 60)
+        print("[10] ANSWERABILITY")
+        print("-" * 60)
+        print()
+        if gt and not gt.get("relevant_chunks"):
+            print("Labels mark this query as unanswerable from the corpus.")
+        print("Unanswerable-query detection: NOT AVAILABLE. The system has no calibrated way to tell that the")
+        print("corpus does not answer a query; it always returns its best-matching chunks. Reranker logits")
+        print("are uncalibrated and are not used as a no-answer signal. Treat results for questions about")
+        print("topics the corpus may not cover with care.")
+        print()
+
+        # ------------------------------------------------------------
+        # [11] OPTIONAL LLM JUDGE (evaluation diagnostics only)
+        # ------------------------------------------------------------
+        if self.enable_judge:
+            print("-" * 60)
+            print("[11] LLM JUDGE (evaluation diagnostic, not ground truth)")
+            print("-" * 60)
+            print()
+            self._print_llm_judge(normalized, (gt or {}).get("query_id", "DEMO"), systems)
+            print()
 
         return reform_results
 
@@ -770,9 +715,11 @@ def main():
     parser.add_argument("--query", "-q", type=str, default=None, help="Directly run a single query demo")
     parser.add_argument("--enable-ce", "--reranker", action="store_true", help="Enable live Cross-Encoder reranking")
     parser.add_argument("--use-cache", action="store_true", help="Use pre-generated benchmark reformulations cache")
+    parser.add_argument("--judge", action="store_true",
+                        help="Show evaluation-only LLM judge grades (diagnostic; never ground truth)")
     args = parser.parse_args()
 
-    demo = PresentationDemo(enable_ce=args.enable_ce, use_cache=args.use_cache)
+    demo = PresentationDemo(enable_ce=args.enable_ce, use_cache=args.use_cache, enable_judge=args.judge)
     if args.query:
         demo.execute_demo_query(args.query)
     else:

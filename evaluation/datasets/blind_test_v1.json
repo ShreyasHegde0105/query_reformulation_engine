@@ -1,0 +1,816 @@
+{
+ "version": "blind_test_v1",
+ "authoring": {
+  "query_author": "AI assistant (Claude) during the 2026-11-13 audit",
+  "author_saw_corpus": true,
+  "note": "Not blind-authored: the author had read the corpus. Human annotators should review, replace or extend these queries before freezing."
+ },
+ "labels": "NONE - awaiting human annotation",
+ "queries": [
+  {
+   "query_id": "BT001",
+   "query": "Does the university provide any scholarship for purchasing a laptop?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "laptop scholarship": 0,
+    "laptop loan": 0,
+    "laptop grant": 0,
+    "laptop subsidy": 0
+   }
+  },
+  {
+   "query_id": "BT002",
+   "query": "How do I book the campus swimming pool?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "swimming": 0
+   }
+  },
+  {
+   "query_id": "BT003",
+   "query": "Can I keep a pet dog in my hostel room?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "pet": 0,
+    "pets": 0,
+    "dog": 0,
+    "dogs": 0
+   }
+  },
+  {
+   "query_id": "BT004",
+   "query": "Is flying a drone allowed on campus?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "drone": 0,
+    "drones": 0,
+    "uav": 0
+   }
+  },
+  {
+   "query_id": "BT005",
+   "query": "What is the maternity leave policy for faculty?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "maternity": 0
+   }
+  },
+  {
+   "query_id": "BT006",
+   "query": "How many days of paternity leave can staff take?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "paternity": 0
+   }
+  },
+  {
+   "query_id": "BT007",
+   "query": "When is the annual sports day held?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "sports day": 0
+   }
+  },
+  {
+   "query_id": "BT008",
+   "query": "Where can I rent a convocation gown?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "gown": 0,
+    "gowns": 0
+   }
+  },
+  {
+   "query_id": "BT009",
+   "query": "What are the canteen food prices?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "menu price": 0,
+    "food price": 0,
+    "meal price": 0,
+    "price list": 0
+   }
+  },
+  {
+   "query_id": "BT010",
+   "query": "Is there a campus ATM?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "atm": 0
+   }
+  },
+  {
+   "query_id": "BT011",
+   "query": "How do I get my printing quota increased?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "printing quota": 0,
+    "print quota": 0
+   }
+  },
+  {
+   "query_id": "BT012",
+   "query": "What is the COVID-19 vaccination requirement for students?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "covid": 0,
+    "vaccination": 0,
+    "vaccine": 0
+   }
+  },
+  {
+   "query_id": "BT013",
+   "query": "What are the criteria for faculty promotion to full professor?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "promotion to professor": 0,
+    "faculty promotion": 0,
+    "career advancement scheme": 0
+   }
+  },
+  {
+   "query_id": "BT014",
+   "query": "When is the faculty salary credited each month?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "salary credit": 0,
+    "payroll date": 0,
+    "pay day": 0,
+    "payday": 0
+   }
+  },
+  {
+   "query_id": "BT015",
+   "query": "Can students do part-time jobs off campus during the semester?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "part-time job": 0,
+    "part time job": 0,
+    "part-time employment": 0,
+    "off-campus employment": 0
+   }
+  },
+  {
+   "query_id": "BT016",
+   "query": "How do I book the music practice room?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "music room": 0,
+    "music practice": 0
+   }
+  },
+  {
+   "query_id": "BT017",
+   "query": "Can my parents stay overnight in the hostel guest room?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "guest room": 0,
+    "guest house": 0
+   }
+  },
+  {
+   "query_id": "BT018",
+   "query": "What is the dress code for students on campus?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "dress code": 0
+   }
+  },
+  {
+   "query_id": "BT019",
+   "query": "Does the university have a creche or day care for staff children?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "creche": 0,
+    "day care": 0,
+    "daycare": 0
+   }
+  },
+  {
+   "query_id": "BT020",
+   "query": "How do I transfer credits from a MOOC like Coursera?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "mooc": 0,
+    "coursera": 0,
+    "nptel": 0,
+    "swayam": 0
+   }
+  },
+  {
+   "query_id": "BT021",
+   "query": "What is the fee for a duplicate parking sticker?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "parking sticker": 0,
+    "parking permit": 0
+   }
+  },
+  {
+   "query_id": "BT022",
+   "query": "Can I bring my car to the hostel?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "car parking": 0,
+    "four-wheeler": 0,
+    "four wheeler": 0
+   }
+  },
+  {
+   "query_id": "BT023",
+   "query": "What is the procedure to change my name on the degree certificate after marriage?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "name change": 0,
+    "change of name": 0
+   }
+  },
+  {
+   "query_id": "BT024",
+   "query": "Is there a quota for sports students in admission?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "sports quota": 0
+   }
+  },
+  {
+   "query_id": "BT025",
+   "query": "How do I join the university NCC unit?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "ncc": 0,
+    "national cadet corps": 0
+   }
+  },
+  {
+   "query_id": "BT026",
+   "query": "What is the refund policy for the campus bookstore?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "bookstore": 0,
+    "book store": 0
+   }
+  },
+  {
+   "query_id": "BT027",
+   "query": "Are there any scholarships for students from Nepal?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "nepal": 0
+   }
+  },
+  {
+   "query_id": "BT028",
+   "query": "What is the night shuttle bus timing?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "night shuttle": 0
+   }
+  },
+  {
+   "query_id": "BT029",
+   "query": "Can I get a refund for unused mess coupons?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "mess coupon": 0,
+    "coupons": 0
+   }
+  },
+  {
+   "query_id": "BT030",
+   "query": "Does the library lend board games?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "board game": 0,
+    "board games": 0
+   }
+  },
+  {
+   "query_id": "BT031",
+   "query": "Are yoga classes free for students?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "yoga": 0
+   }
+  },
+  {
+   "query_id": "BT032",
+   "query": "Does the campus have a movie theatre?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "movie": 0,
+    "cinema": 0,
+    "theatre": 0,
+    "theater": 0
+   }
+  },
+  {
+   "query_id": "BT033",
+   "query": "Is there a barber shop or salon on campus?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "barber": 0,
+    "salon": 0
+   }
+  },
+  {
+   "query_id": "BT034",
+   "query": "What is the fine for plucking flowers in the campus garden?",
+   "category": "unanswerable",
+   "split": "blind_test",
+   "proposed_answerability": "proposed_unanswerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null,
+   "absence_check": {
+    "flowers": 0,
+    "garden": 0
+   }
+  },
+  {
+   "query_id": "BT035",
+   "query": "hosetl gaurd pass for overnite leave",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT036",
+   "query": "scolorship renewel critera",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT037",
+   "query": "libary fien for lost buk",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT038",
+   "query": "atendance condonaton medicl certificat",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT039",
+   "query": "revaluaton of answr sheet fee",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT040",
+   "query": "plcement eligiblity cgpa cutof",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT041",
+   "query": "wifi pasword resett for hostle",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT042",
+   "query": "examm hall tiket downlod",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT043",
+   "query": "bonafied certificat for bank loan",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT044",
+   "query": "migratoin certifcate procesing time",
+   "category": "typo_heavy",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT045",
+   "query": "hostel fee refund and library fine payment",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT046",
+   "query": "how to apply for medical leave and who approves it",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT047",
+   "query": "bus pass renewal and route change",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT048",
+   "query": "exam revaluation fee and when results come out",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT049",
+   "query": "placement eligibility and internship credit rules",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT050",
+   "query": "ragging complaint process and punishment for ragging",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT051",
+   "query": "transfer certificate and no dues clearance steps",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT052",
+   "query": "wifi login for hostel and lab computer access",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT053",
+   "query": "scholarship renewal criteria and how it is credited to the fee account",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT054",
+   "query": "add drop deadline and late registration fine",
+   "category": "multi_intent",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT055",
+   "query": "ECE204 course outline",
+   "category": "precise_course_code",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT056",
+   "query": "MEC201 lab experiments",
+   "category": "precise_course_code",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT057",
+   "query": "CIV201 surveying practicals",
+   "category": "precise_course_code",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT058",
+   "query": "CSE580 research methods",
+   "category": "precise_course_code",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT059",
+   "query": "HSTL-REG-002",
+   "category": "precise_document_id",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT060",
+   "query": "FIN-POL-003 refund rules",
+   "category": "precise_document_id",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT061",
+   "query": "STU-FRM-006 form submission",
+   "category": "precise_document_id",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT062",
+   "query": "IT-SYS-004",
+   "category": "precise_document_id",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT063",
+   "query": "DormTrack room change request",
+   "category": "precise_named_system",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT064",
+   "query": "ExamShield proctoring rules",
+   "category": "precise_named_system",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT065",
+   "query": "LearnSphere assignment upload problem",
+   "category": "precise_named_system",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  },
+  {
+   "query_id": "BT066",
+   "query": "CareerHub registration for placements",
+   "category": "precise_named_system",
+   "split": "blind_test",
+   "proposed_answerability": "expected_answerable",
+   "label_status": "unlabelled",
+   "relevant_chunks": null,
+   "graded_relevance": null
+  }
+ ]
+}

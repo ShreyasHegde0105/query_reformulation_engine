@@ -42,7 +42,10 @@ class SearchHit(BaseModel):
     title: str
     section: Optional[str]
     domain: str
-    score: float
+    score: float = Field(..., description="Retrieval fusion (RRF) score; a ranking score, not a probability.")
+    reranker_logit: Optional[float] = Field(
+        None, description="Uncalibrated cross-encoder logit used only to order results; not a probability "
+                          "or relevance label. Present only when the production reranker is enabled.")
     text: str
 
 
@@ -83,6 +86,7 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
     from embedding.encoder import EmbeddingEncoder
     from reformulation.answer_generator import AnswerGenerator
     from reformulation.llm.fallback import FallbackLLMClient
+    from reformulation.production_reranker import ProductionReranker, RerankerConfig
     from reformulation.reformulator import QueryReformulator
     from reformulation.semantic_similarity import SemanticSimilarity
     from reformulation.spelling import CorpusSpellCorrector
@@ -106,11 +110,17 @@ def build_pipeline() -> tuple[SearchPipeline, Optional[Any], Dict[str, Any]]:
 
     encoder = EmbeddingEncoder()
     bm25 = BM25Retriever()
+    # Production reranker: independently configurable, off unless RERANKER_ENABLED=true.
+    reranker_config = RerankerConfig.from_env()
+    reranker = ProductionReranker(reranker_config) if reranker_config.enabled else None
+    info["reranker"] = (f"{reranker_config.model_name} (candidates={reranker_config.candidate_limit})"
+                        if reranker else "disabled")
     pipeline = SearchPipeline(
         reformulator=reformulator,
         semantic_similarity=SemanticSimilarity(embed_fn=encoder.embed_query),
         hybrid_retriever=HybridRetriever(vector_retriever=VectorRetriever(encoder=encoder), keyword_retriever=bm25),
         spell_corrector=CorpusSpellCorrector.from_chunks_file(),
+        reranker=reranker,
     )
     info["vector"] = "supabase"
     info["spelling"] = "corpus"
@@ -169,6 +179,7 @@ def create_app(
                 section=c.section,
                 domain=c.domain,
                 score=c.score,
+                reranker_logit=(c.metadata or {}).get("reranker_logit"),
                 text=c.chunk_text,
             )
             for i, c in enumerate(result.results, start=1)

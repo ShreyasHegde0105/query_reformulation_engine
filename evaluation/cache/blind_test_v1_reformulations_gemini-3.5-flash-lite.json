@@ -1,0 +1,424 @@
+{
+ "reformulations": {
+  "BT001": [
+   "University laptop grant",
+   "Student laptop financial aid",
+   "University computer purchase scholarship",
+   "Laptop subsidy for students"
+  ],
+  "BT002": [
+   "Campus swimming pool reservation",
+   "Book campus pool",
+   "Reserve campus swimming pool",
+   "Swimming pool booking instructions"
+  ],
+  "BT003": [
+   "Pet dog hostel room policy",
+   "Are dogs allowed in hostel rooms",
+   "Hostel pet regulations dogs",
+   "Keeping a dog in student accommodation",
+   "Hostel pet policy dogs allowed"
+  ],
+  "BT004": [
+   "Drone policy campus",
+   "Are drones allowed on university property",
+   "Campus UAS regulations",
+   "Flying unmanned aerial vehicles campus rules",
+   "Drone usage guidelines university"
+  ],
+  "BT005": [
+   "Faculty maternity leave policy",
+   "Maternity leave guidelines faculty members",
+   "Faculty parental leave policy",
+   "Maternity leave benefits faculty"
+  ],
+  "BT006": [
+   "Paternity leave duration staff",
+   "How many days paternity leave employees",
+   "Paternity leave policy entitlement days",
+   "Staff paternity leave length"
+  ],
+  "BT007": [
+   "Annual sports day date",
+   "Sports day schedule",
+   "When is sports day",
+   "Annual sports day timing",
+   "Sports day event date"
+  ],
+  "BT008": [
+   "Convocation gown rental",
+   "Rent graduation gown",
+   "Graduation gown hire location",
+   "Where to rent academic dress",
+   "Convocation robe rental service"
+  ],
+  "BT009": [
+   "Canteen menu prices",
+   "Cafeteria food cost",
+   "Dining hall price list",
+   "Food prices in canteen"
+  ],
+  "BT010": [
+   "ATM location on campus",
+   "Campus ATM machines",
+   "Where is the ATM",
+   "Campus cash machine availability"
+  ],
+  "BT011": [
+   "Increase printing quota",
+   "Print quota limit increase request",
+   "How to request more print credits",
+   "Printer quota extension",
+   "Add printing allowance"
+  ],
+  "BT012": [
+   "COVID-19 vaccination policy students",
+   "Student vaccine requirements COVID-19",
+   "COVID-19 immunization mandate students",
+   "Student COVID-19 vaccination rules",
+   "University school COVID-19 vaccine requirement"
+  ],
+  "BT013": [
+   "Faculty promotion criteria full professor",
+   "Full professor promotion requirements",
+   "Guidelines for promotion to full professor",
+   "Faculty advancement criteria full professor",
+   "Promotion standards full professor"
+  ],
+  "BT014": [
+   "Faculty monthly salary credit date",
+   "When are faculty salaries paid",
+   "Monthly faculty payroll deposit schedule",
+   "Faculty salary payment date each month"
+  ],
+  "BT015": [
+   "Off-campus part-time employment rules students semester",
+   "Students working off campus during semester policy",
+   "Part-time jobs off campus international students semester guidelines",
+   "Can students work off-campus during academic term"
+  ],
+  "BT016": [
+   "Reserve music practice room",
+   "Book music room",
+   "Music practice room reservation",
+   "How to schedule music practice room",
+   "Music room booking process"
+  ],
+  "BT017": [
+   "Hostel guest room parent overnight stay policy",
+   "Are parents allowed overnight in hostel guest rooms",
+   "Hostel guest room visitor rules family overnight",
+   "Can family members stay overnight in hostel guest accommodation"
+  ],
+  "BT018": [
+   "Student dress code campus guidelines",
+   "Campus attire policy for students",
+   "Student clothing rules campus",
+   "Dress code requirements students university"
+  ],
+  "BT019": [
+   "University childcare facilities staff children",
+   "Campus day care creche employee kids",
+   "Staff childcare services university policy",
+   "Workplace nursery day care eligibility staff"
+  ],
+  "BT020": [
+   "Transfer MOOC credits Coursera",
+   "Coursera credit transfer process",
+   "How to get college credit for Coursera courses",
+   "MOOC credit transfer guide",
+   "Transferring online course credits university"
+  ],
+  "BT021": [
+   "Duplicate parking sticker fee",
+   "Cost for replacement parking decal",
+   "Parking permit duplicate charge",
+   "Fee to replace lost parking sticker"
+  ],
+  "BT022": [
+   "Hostel car parking policy",
+   "Bringing vehicle to hostel",
+   "Hostel parking availability",
+   "Can I park my car at the hostel"
+  ],
+  "BT023": [
+   "Name change procedure on degree certificate after marriage",
+   "How to update name on diploma post marriage",
+   "Degree certificate name change process marriage",
+   "Updating surname on university degree after marriage",
+   "Name amendment in degree certificate due to marriage"
+  ],
+  "BT024": [
+   "Sports quota admission policy",
+   "Sports category reservation in admissions",
+   "Sports quota eligibility criteria",
+   "Admission seats for sports persons",
+   "Sports quota application process"
+  ],
+  "BT025": [
+   "University NCC unit enrollment process",
+   "How to join campus NCC",
+   "NCC cadet registration university",
+   "University National Cadet Corps membership"
+  ],
+  "BT026": [
+   "Campus bookstore refund policy",
+   "Bookstore return policy guidelines",
+   "How to return items to campus bookstore",
+   "Bookstore refund and exchange rules"
+  ],
+  "BT027": [
+   "Scholarships for Nepalese students",
+   "Nepal student scholarship grants",
+   "Financial aid international students Nepal",
+   "Scholarship opportunities for citizens of Nepal"
+  ],
+  "BT028": [
+   "Night shuttle bus schedule",
+   "Evening shuttle bus timing",
+   "Night shuttle departure times",
+   "Late night bus hours",
+   "Night shuttle timetable"
+  ],
+  "BT029": [
+   "Mess coupon refund policy",
+   "Unused mess coupons reimbursement",
+   "Refund for remaining mess tickets",
+   "How to get refund on unused mess coupons"
+  ],
+  "BT030": [
+   "Board game lending policy",
+   "Can I borrow board games from the library",
+   "Library board games check out",
+   "Board games available for checkout"
+  ],
+  "BT031": [
+   "Free student yoga classes",
+   "Yoga class pricing students",
+   "Are student yoga sessions free",
+   "Complimentary yoga for students"
+  ],
+  "BT032": [
+   "Campus movie theatre location",
+   "On campus cinema",
+   "Does campus have a movie theater",
+   "Campus movie theater facilities"
+  ],
+  "BT033": [
+   "Barber shop location on campus",
+   "Hair salon on campus",
+   "Campus barber shop and salon",
+   "Where is the campus hair salon"
+  ],
+  "BT034": [
+   "Campus garden flower plucking fine",
+   "Penalty for picking flowers on campus",
+   "Botanical garden flower removal penalty",
+   "Fine for damaging campus flora",
+   "Unauthorized flower picking fee"
+  ],
+  "BT035": [
+   "Hostel guard pass overnight leave",
+   "Hostel night leave security pass",
+   "Overnight leave pass hostel warden",
+   "Hostel late stay pass request"
+  ],
+  "BT036": [
+   "Scholarship renewal criteria",
+   "Scholarship renewal requirements",
+   "Criteria to renew scholarship",
+   "Scholarship extension guidelines"
+  ],
+  "BT037": [
+   "Library fine lost book",
+   "Lost book library fee",
+   "Library penalty missing book",
+   "Fee for lost library book"
+  ],
+  "BT038": [
+   "Attendance condonation medical certificate",
+   "Medical certificate for attendance condonation",
+   "Condonation of shortage of attendance medical proof",
+   "Medical leave attendance condonation"
+  ],
+  "BT039": [
+   "Answer sheet revaluation fee",
+   "Fee for revaluating answer script",
+   "Answer paper rechecking charges",
+   "Revaluation charges for answer sheets"
+  ],
+  "BT040": [
+   "Placement eligibility CGPA cutoff",
+   "Minimum CGPA requirement for placement",
+   "Placement CGPA criteria",
+   "CGPA cutoff for campus placements"
+  ],
+  "BT041": [
+   "Hostel wifi password reset",
+   "Reset wifi password accommodation",
+   "Hostel wireless network password change",
+   "How to reset wifi password hostel"
+  ],
+  "BT042": [
+   "Exam hall ticket download",
+   "Download exam hall ticket",
+   "Hall ticket download",
+   "Exam admit card download"
+  ],
+  "BT043": [
+   "Bona fide certificate for bank loan",
+   "Bonafide certificate bank loan application",
+   "Bank loan bonafide letter",
+   "Study certificate for bank loan",
+   "Bonafide certificate format for educational loan"
+  ],
+  "BT044": [
+   "Migration certificate processing time",
+   "Processing time for migration certificate",
+   "Migration cert processing duration",
+   "Migration certificate turnaround time"
+  ],
+  "BT045": [
+   "Hostel fee refund library fine payment",
+   "Request hostel refund pay library fine",
+   "Hostel deposit reimbursement and library dues",
+   "Library fine payment process hostel fee refund"
+  ],
+  "BT046": [
+   "Medical leave application process and approval workflow",
+   "How to request medical leave manager approval",
+   "Medical leave policy application steps and approver",
+   "Submit medical leave request approval chain"
+  ],
+  "BT047": [
+   "Renew bus pass and modify route",
+   "Bus pass renewal route update",
+   "Change route for existing bus pass",
+   "Renew transit pass change commute route"
+  ],
+  "BT048": [
+   "Exam revaluation fee and results timeline",
+   "Recheck fee and result announcement date",
+   "Supplementary exam revaluation cost and results schedule"
+  ],
+  "BT049": [
+   "Internship credit requirements and placement eligibility",
+   "Rules for internship credits and job placement eligibility",
+   "Eligibility criteria for placement and academic internship credit",
+   "Internship academic credit policy and placement qualification",
+   "Placement rules and internship credit guidelines"
+  ],
+  "BT050": [
+   "Ragging complaint procedure and penalties",
+   "How to report ragging and disciplinary actions",
+   "Anti-ragging grievance process and punishment guidelines",
+   "Ragging reporting mechanism and consequences"
+  ],
+  "BT051": [
+   "TC and no dues clearance procedure",
+   "How to get transfer certificate and no dues",
+   "Transfer certificate application steps and no dues clearance",
+   "No dues certificate and TC process"
+  ],
+  "BT052": [
+   "Hostel lab wifi login credentials",
+   "Wifi access for hostel and lab computers",
+   "Hostel network and lab PC wifi sign in",
+   "Connect to wifi in hostel and lab computers",
+   "Lab computer and hostel wifi authentication"
+  ],
+  "BT053": [
+   "Scholarship renewal requirements fee credit process",
+   "How to renew scholarship and fee account crediting",
+   "Scholarship continuation criteria fee application",
+   "Renewing scholarships student account credit policy"
+  ],
+  "BT054": [
+   "Drop deadline late registration fee",
+   "Add course drop date and late registration penalty",
+   "Course drop deadline late registration charges",
+   "Registration deadline and late fee add"
+  ],
+  "BT055": [
+   "ECE 204 syllabus",
+   "ECE204 course description",
+   "ECE 204 curriculum",
+   "ECE204 course schedule"
+  ],
+  "BT056": [
+   "MEC201 laboratory experiments",
+   "MEC201 practical sessions",
+   "MEC201 lab tasks",
+   "MEC201 experiments guide"
+  ],
+  "BT057": [
+   "CIV201 practical surveying",
+   "CIV201 surveying lab",
+   "CIV201 surveying practical sessions",
+   "CIV201 land surveying practical"
+  ],
+  "BT058": [
+   "CSE 580 research methods course",
+   "CSE580 research methods syllabus",
+   "CSE 580 research methods class"
+  ],
+  "BT059": [
+   "Hstl reg 002",
+   "Hstlreg002",
+   "Regulation HSTL-REG-002",
+   "HSTL-REG-002 document"
+  ],
+  "BT060": [
+   "FIN-POL-003 refund policy",
+   "Refund guidelines FIN-POL-003",
+   "FIN-POL-003 return procedure",
+   "FIN-POL-003 reimbursement rules"
+  ],
+  "BT061": [
+   "STU-FRM-006 submit",
+   "STU-FRM-006 filing",
+   "Submit STU-FRM-006 form",
+   "STU-FRM-006 application"
+  ],
+  "BT062": [
+   "It sys 004",
+   "ITSYS004",
+   "IT-SYS-004 ticket",
+   "IT-SYS-004 error",
+   "IT-SYS-004 issue"
+  ],
+  "BT063": [
+   "DormTrack room change",
+   "DormTrack submit room swap",
+   "DormTrack housing transfer request",
+   "Room change request DormTrack form"
+  ],
+  "BT064": [
+   "ExamShield proctoring guidelines",
+   "ExamShield supervision rules",
+   "ExamShield monitoring policy",
+   "ExamShield proctoring regulations"
+  ],
+  "BT065": [
+   "LearnSphere assignment upload error",
+   "LearnSphere upload assignment failing",
+   "LearnSphere submission upload issue",
+   "LearnSphere cannot upload assignment"
+  ],
+  "BT066": [
+   "CareerHub placement registration",
+   "Register for placements on CareerHub",
+   "CareerHub campus placement sign up",
+   "CareerHub placement portal registration"
+  ]
+ },
+ "parse_errors": {},
+ "metadata": {
+  "model": "gemini-3.5-flash-lite",
+  "provider": "gemini",
+  "max_variants": 5,
+  "prompt": "generic-v1",
+  "queries_file": "../../../AppData/Local/Temp/claude/5caeabfc459e119f/27e65de4-4dce-450e-927b-421e9beea813/scratchpad/blind_test_v1.json",
+  "started": "2026-11-13T15:16:57.322381+00:00"
+ }
+}

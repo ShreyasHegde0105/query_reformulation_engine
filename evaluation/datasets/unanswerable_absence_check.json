@@ -1,0 +1,629 @@
+[
+ {
+  "query": "Does the university provide any scholarship for purchasing a laptop?",
+  "term_counts": {
+   "laptop scholarship": {
+    "chunks": 0,
+    "examples": []
+   },
+   "laptop loan": {
+    "chunks": 0,
+    "examples": []
+   },
+   "laptop grant": {
+    "chunks": 0,
+    "examples": []
+   },
+   "laptop subsidy": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I book the campus swimming pool?",
+  "term_counts": {
+   "swimming": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the gym membership fee?",
+  "term_counts": {
+   "gym": {
+    "chunks": 0,
+    "examples": []
+   },
+   "gymnasium": {
+    "chunks": 2,
+    "examples": [
+     "ACAD-REG-001_CHUNK_007",
+     "ACAD-GOV-004_CHUNK_002"
+    ]
+   },
+   "fitness centre": {
+    "chunks": 0,
+    "examples": []
+   },
+   "fitness center": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "Can I keep a pet dog in my hostel room?",
+  "term_counts": {
+   "pet": {
+    "chunks": 0,
+    "examples": []
+   },
+   "pets": {
+    "chunks": 0,
+    "examples": []
+   },
+   "dog": {
+    "chunks": 0,
+    "examples": []
+   },
+   "dogs": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Is flying a drone allowed on campus?",
+  "term_counts": {
+   "drone": {
+    "chunks": 0,
+    "examples": []
+   },
+   "drones": {
+    "chunks": 0,
+    "examples": []
+   },
+   "uav": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the maternity leave policy for faculty?",
+  "term_counts": {
+   "maternity": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How many days of paternity leave can staff take?",
+  "term_counts": {
+   "paternity": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "When is the annual sports day held?",
+  "term_counts": {
+   "sports day": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Where can I rent a convocation gown?",
+  "term_counts": {
+   "gown": {
+    "chunks": 0,
+    "examples": []
+   },
+   "gowns": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What are the canteen food prices?",
+  "term_counts": {
+   "menu price": {
+    "chunks": 0,
+    "examples": []
+   },
+   "food price": {
+    "chunks": 0,
+    "examples": []
+   },
+   "meal price": {
+    "chunks": 0,
+    "examples": []
+   },
+   "price list": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Is there a campus ATM?",
+  "term_counts": {
+   "atm": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I get my printing quota increased?",
+  "term_counts": {
+   "printing quota": {
+    "chunks": 0,
+    "examples": []
+   },
+   "print quota": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Does the university offer a bicycle sharing scheme?",
+  "term_counts": {
+   "bicycle": {
+    "chunks": 1,
+    "examples": [
+     "SEC-SOP-003_CHUNK_003"
+    ]
+   },
+   "cycle sharing": {
+    "chunks": 0,
+    "examples": []
+   },
+   "bike sharing": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "What is the COVID-19 vaccination requirement for students?",
+  "term_counts": {
+   "covid": {
+    "chunks": 0,
+    "examples": []
+   },
+   "vaccination": {
+    "chunks": 0,
+    "examples": []
+   },
+   "vaccine": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I apply for a sabbatical as a professor?",
+  "term_counts": {
+   "sabbatical": {
+    "chunks": 1,
+    "examples": [
+     "ACAD-POL-006_CHUNK_006"
+    ]
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "What are the criteria for faculty promotion to full professor?",
+  "term_counts": {
+   "promotion to professor": {
+    "chunks": 0,
+    "examples": []
+   },
+   "faculty promotion": {
+    "chunks": 0,
+    "examples": []
+   },
+   "career advancement scheme": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "When is the faculty salary credited each month?",
+  "term_counts": {
+   "salary credit": {
+    "chunks": 0,
+    "examples": []
+   },
+   "payroll date": {
+    "chunks": 0,
+    "examples": []
+   },
+   "pay day": {
+    "chunks": 0,
+    "examples": []
+   },
+   "payday": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Can students do part-time jobs off campus during the semester?",
+  "term_counts": {
+   "part-time job": {
+    "chunks": 0,
+    "examples": []
+   },
+   "part time job": {
+    "chunks": 0,
+    "examples": []
+   },
+   "part-time employment": {
+    "chunks": 0,
+    "examples": []
+   },
+   "off-campus employment": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I book the music practice room?",
+  "term_counts": {
+   "music room": {
+    "chunks": 0,
+    "examples": []
+   },
+   "music practice": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Is there a laundry service in the hostel?",
+  "term_counts": {
+   "laundry": {
+    "chunks": 1,
+    "examples": [
+     "HSTL-POL-003_CHUNK_002"
+    ]
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "Can my parents stay overnight in the hostel guest room?",
+  "term_counts": {
+   "guest room": {
+    "chunks": 0,
+    "examples": []
+   },
+   "guest house": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the dress code for students on campus?",
+  "term_counts": {
+   "dress code": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Does the university have a creche or day care for staff children?",
+  "term_counts": {
+   "creche": {
+    "chunks": 0,
+    "examples": []
+   },
+   "day care": {
+    "chunks": 0,
+    "examples": []
+   },
+   "daycare": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I transfer credits from a MOOC like Coursera?",
+  "term_counts": {
+   "mooc": {
+    "chunks": 0,
+    "examples": []
+   },
+   "coursera": {
+    "chunks": 0,
+    "examples": []
+   },
+   "nptel": {
+    "chunks": 0,
+    "examples": []
+   },
+   "swayam": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the fee for a duplicate parking sticker?",
+  "term_counts": {
+   "parking sticker": {
+    "chunks": 0,
+    "examples": []
+   },
+   "parking permit": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Can I bring my car to the hostel?",
+  "term_counts": {
+   "car parking": {
+    "chunks": 0,
+    "examples": []
+   },
+   "four-wheeler": {
+    "chunks": 0,
+    "examples": []
+   },
+   "four wheeler": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the procedure to change my name on the degree certificate after marriage?",
+  "term_counts": {
+   "name change": {
+    "chunks": 0,
+    "examples": []
+   },
+   "change of name": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Is there a quota for sports students in admission?",
+  "term_counts": {
+   "sports quota": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I join the university NCC unit?",
+  "term_counts": {
+   "ncc": {
+    "chunks": 0,
+    "examples": []
+   },
+   "national cadet corps": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the refund policy for the campus bookstore?",
+  "term_counts": {
+   "bookstore": {
+    "chunks": 0,
+    "examples": []
+   },
+   "book store": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Are there any scholarships for students from Nepal?",
+  "term_counts": {
+   "nepal": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "How do I apply for an education loan through the university bank tie-up?",
+  "term_counts": {
+   "education loan": {
+    "chunks": 6,
+    "examples": [
+     "STU-FRM-002_CHUNK_001",
+     "STU-FRM-002_CHUNK_002",
+     "STU-FRM-002_CHUNK_003"
+    ]
+   },
+   "bank tie-up": {
+    "chunks": 0,
+    "examples": []
+   },
+   "loan scheme": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "What is the night shuttle bus timing?",
+  "term_counts": {
+   "night shuttle": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Can I get a refund for unused mess coupons?",
+  "term_counts": {
+   "mess coupon": {
+    "chunks": 0,
+    "examples": []
+   },
+   "coupons": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Does the library lend board games?",
+  "term_counts": {
+   "board game": {
+    "chunks": 0,
+    "examples": []
+   },
+   "board games": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Are yoga classes free for students?",
+  "term_counts": {
+   "yoga": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Does the campus have a movie theatre?",
+  "term_counts": {
+   "movie": {
+    "chunks": 0,
+    "examples": []
+   },
+   "cinema": {
+    "chunks": 0,
+    "examples": []
+   },
+   "theatre": {
+    "chunks": 0,
+    "examples": []
+   },
+   "theater": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "Can I use e-cigarettes in designated smoking zones?",
+  "term_counts": {
+   "e-cigarette": {
+    "chunks": 0,
+    "examples": []
+   },
+   "e-cigarettes": {
+    "chunks": 1,
+    "examples": [
+     "HSTL-REG-003_CHUNK_003"
+    ]
+   },
+   "vaping": {
+    "chunks": 0,
+    "examples": []
+   },
+   "vape": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": false
+ },
+ {
+  "query": "Is there a barber shop or salon on campus?",
+  "term_counts": {
+   "barber": {
+    "chunks": 0,
+    "examples": []
+   },
+   "salon": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ },
+ {
+  "query": "What is the fine for plucking flowers in the campus garden?",
+  "term_counts": {
+   "flowers": {
+    "chunks": 0,
+    "examples": []
+   },
+   "garden": {
+    "chunks": 0,
+    "examples": []
+   }
+  },
+  "all_terms_absent": true
+ }
+]
