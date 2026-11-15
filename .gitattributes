@@ -1,0 +1,4 @@
+# Datasets and manifests are hashed byte-for-byte (evaluation/datasets/manifest.json),
+# so check them out with LF on every OS.
+*.json text eol=lf
+*.jsonl text eol=lf

@@ -16,14 +16,14 @@
   },
   "validation_contaminated": {
    "queries_file": "evaluation/heldout_queries.json",
-   "queries_sha256": "b06d44a6c72a0eacacd4d5fe5b5ea1d2a93b3b6ae9eedea0baa7452a91577d01",
+   "queries_sha256": "3fe5e46a1c97d9aee668900788cc0e8d7ef238e76166e35b2dc56816de3aa78f",
    "labels": "inline (relevant_chunks, graded_relevance)",
    "label_provenance": "UNRECORDED: evaluation/README.md describes separate assessors, but no annotator records exist",
    "status": "development-contaminated validation set"
   },
   "blind_test": {
    "queries_file": "evaluation/datasets/blind_test_v1.json",
-   "queries_sha256": "90d0593294373c697abac364975033b2d7879e7b8b626897be95d81e1b3d5cd1",
+   "queries_sha256": "62a5351e79c42e3c6125dfb448605379cb296c7f231d0ebf27b40dd2c82fb8d0",
    "labels_file": "evaluation/datasets/blind_test_v1_labels.json",
    "labels_sha256": null,
    "frozen": false,
