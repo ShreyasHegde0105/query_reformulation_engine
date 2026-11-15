@@ -112,7 +112,8 @@ class RAGContextAssembler:
         redundancy_threshold: float = 0.70,
         max_chars_per_chunk: int = 1500,
         strategy: str = "relevance_first",
-        dominant_score_margin: float = 4.0,
+        dominant_score_margin: float = 5.2,
+        lookahead_window: int = 8,
     ) -> None:
         if max_tokens < 100:
             raise ValueError("max_tokens must be >= 100")
@@ -122,7 +123,7 @@ class RAGContextAssembler:
             raise ValueError("max_chunks_per_doc must be >= 1")
         if max_dominant_doc_chunks < max_chunks_per_doc:
             raise ValueError("max_dominant_doc_chunks must be >= max_chunks_per_doc")
-        if strategy not in ("relevance_first", "diversity_capped", "legacy"):
+        if strategy not in ("relevance_first", "calibrated_relative", "diversity_capped", "legacy"):
             raise ValueError(f"Unknown context assembly strategy: {strategy!r}")
 
         self.max_tokens = max_tokens
@@ -133,6 +134,7 @@ class RAGContextAssembler:
         self.max_chars_per_chunk = max_chars_per_chunk
         self.strategy = strategy
         self.dominant_score_margin = dominant_score_margin
+        self.lookahead_window = lookahead_window
 
     def extract_query_aspects(self, query: str) -> List[str]:
         """Extract key information facets or sub-questions from the query."""
@@ -308,11 +310,11 @@ class RAGContextAssembler:
         top_doc = top_chunk.document_id or "UNKNOWN_DOC"
         top_score = _get_chunk_score(top_chunk)
 
-        # Detect competitive secondary documents in top candidates
+        # Detect competitive secondary documents in top candidates using pure relative margin
         competitive_docs = {top_doc}
-        for c in candidates[1:7]:
+        for c in candidates[1: self.lookahead_window]:
             score = _get_chunk_score(c)
-            if (top_score - score <= self.dominant_score_margin) and score > -1.0:
+            if (top_score - score) <= self.dominant_score_margin:
                 doc_id = c.document_id or "UNKNOWN_DOC"
                 competitive_docs.add(doc_id)
 
@@ -330,6 +332,7 @@ class RAGContextAssembler:
             doc_id = chunk.document_id or "UNKNOWN_DOC"
             count = doc_chunk_counts.get(doc_id, 0)
             score = _get_chunk_score(chunk)
+            score_gap = top_score - score
             chunk_text = (chunk.chunk_text or "").strip()
             if not chunk_text:
                 continue
@@ -340,23 +343,28 @@ class RAGContextAssembler:
 
             # Stop check for single-doc query: don't pollute with irrelevant docs if top doc has >= 3 chunks
             if not is_multi_doc and len(selected_chunks) >= 3 and doc_id != top_doc and not new_aspects:
-                if score < 0.0 or rank > 4:
+                if score_gap > self.dominant_score_margin or rank > 4:
                     break
 
             # If single-doc query and chunk is from a secondary document, reject if score gap exceeds dominant margin
             if not is_multi_doc and doc_id != top_doc and not new_aspects:
-                if (top_score - score) > self.dominant_score_margin:
+                if score_gap > self.dominant_score_margin:
                     continue
 
             # Admission filter for non-competitive documents on multi-doc queries
-            if is_multi_doc and doc_id not in competitive_docs and not new_aspects and score < -2.0 and rank > 6:
-                continue
+            if is_multi_doc and doc_id not in competitive_docs:
+                if not new_aspects:
+                    continue
+                elif score_gap > (self.dominant_score_margin + 2.5):
+                    continue
 
             # Capacity check
             if count >= base_cap:
                 if new_aspects:
                     pass
-                elif is_multi_doc and count < 3 and score > 2.0:
+                elif is_multi_doc and doc_id == top_doc and count < 3 and score_gap <= 2.5:
+                    pass
+                elif is_multi_doc and count < 3 and score_gap <= 1.5:
                     pass
                 else:
                     continue

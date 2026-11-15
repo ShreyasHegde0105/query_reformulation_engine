@@ -51,6 +51,9 @@ class SearchResult:
     routing_decision: Optional[str] = None
     routing_reason: Optional[str] = None
     reformulation_invoked: bool = True
+    # Production reranker outcome (None when no reranker ran). Logits are uncalibrated
+    # ranking scores, never probabilities or relevance labels.
+    reranking: Optional[Dict[str, Any]] = None
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -67,6 +70,7 @@ class SearchResult:
             "routing_decision": self.routing_decision,
             "routing_reason": self.routing_reason,
             "reformulation_invoked": self.reformulation_invoked,
+            "reranking": self.reranking,
             "results": [c.to_dict() for c in self.results],
         }
 
@@ -256,6 +260,15 @@ class SearchPipeline:
         # 6 & 7 & 8. Retrieval, Aggregation and Ranking
         t = time.perf_counter()
         warnings: List[str] = []
+        # A production reranker rescores a candidate pool that is deeper than the output,
+        # so retrieval is asked for max(final_k, candidate_limit) chunks first.
+        production_reranker = (
+            self.reranker if (self.reranker is not None and getattr(self.reranker, "enabled", False)
+                              and hasattr(self.reranker, "candidate_limit")) else None
+        )
+        retrieval_k = max(final_k, production_reranker.candidate_limit) if production_reranker else final_k
+        if production_reranker is not None and candidate_k is not None:
+            candidate_k = max(candidate_k, retrieval_k)
         if (
             self.multi_dense_single_bm25
             and len(final_queries) > 1
@@ -270,7 +283,7 @@ class SearchPipeline:
                 keyword_match_count=keyword_match_count,
                 filter_domain=filter_domain,
                 k=k,
-                final_k=final_k,
+                final_k=retrieval_k,
                 primary_query_weight=primary_query_weight,
                 fusion_strategy=self.fusion_strategy,
                 warnings=warnings,
@@ -282,15 +295,27 @@ class SearchPipeline:
                 keyword_match_count=keyword_match_count,
                 filter_domain=filter_domain,
                 k=k,
-                final_k=final_k,
+                final_k=retrieval_k,
                 primary_query_weight=primary_query_weight,
                 candidate_k=candidate_k,
                 warnings=warnings,
             )
         timings["retrieval"] = (time.perf_counter() - t) * 1000
 
-        # 9. Cross-Encoder Reranking (Phase 2.3)
-        if self.reranker is not None and self.reranker.enabled and results:
+        # 9. Reranking
+        reranking_info: Optional[Dict[str, Any]] = None
+        if production_reranker is not None:
+            outcome = production_reranker.rerank(normalized, results, final_k=final_k)
+            results = outcome.results
+            timings["reranking"] = outcome.latency_ms
+            reranking_info = {
+                "model": outcome.model_name, "reranked": outcome.reranked,
+                "candidates_scored": outcome.candidates_scored, "error": outcome.error,
+                "score_type": "uncalibrated cross-encoder logit (ranking only)",
+            }
+            if outcome.error:
+                warnings.append(f"Reranking failed ({outcome.error}); retrieval order kept.")
+        elif self.reranker is not None and self.reranker.enabled and results:  # legacy CrossEncoderReranker
             t_rerank = time.perf_counter()
             try:
                 results = self.reranker.rerank(
@@ -303,6 +328,7 @@ class SearchPipeline:
                 warnings.append(f"Cross-encoder reranking failed: {exc}")
             timings["reranking"] = (time.perf_counter() - t_rerank) * 1000
 
+        results = results[:final_k]
         timings["total"] = (time.perf_counter() - t0) * 1000
 
         return SearchResult(
@@ -320,6 +346,7 @@ class SearchPipeline:
             routing_decision=routing_decision,
             routing_reason=routing_reason,
             reformulation_invoked=reformulation_invoked,
+            reranking=reranking_info,
         )
 
     def _cached_reformulations(self, key: tuple[str, int]) -> Optional[List[str]]:

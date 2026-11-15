@@ -14,10 +14,12 @@ venv/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-private_docs
 
-# Local-only docs
+# Local-only docs, audits, benchmarks, scratch scripts (see Private_Docs/)
+Private_Docs/
+private_docs/
 Repo_Docs/
+audit/
 
 # Local agent artifacts
 .agents/
@@ -30,3 +32,13 @@ evaluation/results/sample/
 
 # Downloaded benchmark datasets and cached embeddings
 Data/beir/
+
+# Regenerated evaluation outputs (headline .md reports stay tracked)
+evaluation/results/*.json
+evaluation/results/ad_benchmark_*
+evaluation/phase3/cache/
+evaluation/phase3/phase3_*_answers.json
+evaluation/phase3/phase3_*_metrics.json
+evaluation/phase3/phase3_per_query_comparison.json
+evaluation/phase3/phase3_human_audit_sample.json
+evaluation/cache/*.npy

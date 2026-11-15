@@ -208,6 +208,92 @@ class TestRAGContextAssembler(unittest.TestCase):
         self.assertIn("scholarship eligibility", context.covered_aspects)
         self.assertIn("application deadline", context.missing_aspects)
 
+    def test_multi_document_query_requiring_three_or_more_documents(self):
+        """Multi-document query spanning three competitive documents selects chunks from all three."""
+        chunks = [
+            _make_chunk("C1", "DOC_LIB", text="Library fine is 10 rupees per day past due date.", ce_score=8.5),
+            _make_chunk("C2", "DOC_FIN", text="Tuition fee refund schedule specifies 80% in week 1.", ce_score=7.8),
+            _make_chunk("C3", "DOC_HSTL", text="Hostel quiet hours start at 10 PM on weekdays.", ce_score=7.0),
+            _make_chunk("C4", "DOC_IRR", text="Placement registration portal username format.", ce_score=-4.0),
+        ]
+        query = "library fine tuition refund and hostel quiet hours"
+        context = self.assembler.assemble_context(query, chunks)
+        self.assertIn("DOC_LIB", context.document_ids)
+        self.assertIn("DOC_FIN", context.document_ids)
+        self.assertIn("DOC_HSTL", context.document_ids)
+        self.assertNotIn("DOC_IRR", context.document_ids)
+        self.assertEqual(len(context.document_ids), 3)
+
+    def test_query_requiring_several_chunks_from_one_document_and_one_from_another(self):
+        """Allows 3 chunks from dominant primary document and 1 chunk from secondary document."""
+        chunks = [
+            _make_chunk("C1", "DOC_PRIMARY", text="Course drop deadline is the third Friday.", ce_score=9.0),
+            _make_chunk("C2", "DOC_PRIMARY", text="Course withdrawal grade recorded as W.", ce_score=8.5),
+            _make_chunk("C3", "DOC_PRIMARY", text="Course drop fee refund schedule.", ce_score=8.0),
+            _make_chunk("C4", "DOC_SECONDARY", text="Hostel vacancy rules upon withdrawal.", ce_score=7.2),
+        ]
+        query = "course drop withdrawal deadline refund and hostel status"
+        context = self.assembler.assemble_context(query, chunks)
+        primary_chunks = [c for c in context.chunks if c.document_id == "DOC_PRIMARY"]
+        secondary_chunks = [c for c in context.chunks if c.document_id == "DOC_SECONDARY"]
+        self.assertEqual(len(primary_chunks), 3)
+        self.assertEqual(len(secondary_chunks), 1)
+
+    def test_secondary_document_with_lower_score_retained_within_margin(self):
+        """Retains secondary document candidate when score difference is within dominant_score_margin."""
+        chunks = [
+            _make_chunk("C1", "DOC_EXAM", text="End semester exam hall ticket rules.", ce_score=8.0),
+            _make_chunk("C2", "DOC_EXAM", text="Prohibited electronic devices in exam halls.", ce_score=7.5),
+            _make_chunk("C3", "DOC_DISCIPLINE", text="Malpractice disciplinary committee penalties.", ce_score=3.5),
+        ]
+        # Score difference is 8.0 - 3.5 = 4.5, which is <= margin (5.2)
+        query = "exam hall ticket rules and malpractice penalties"
+        context = self.assembler.assemble_context(query, chunks)
+        self.assertIn("DOC_EXAM", context.document_ids)
+        self.assertIn("DOC_DISCIPLINE", context.document_ids)
+        self.assertEqual(len(context.document_ids), 2)
+
+    def test_single_document_query_with_misleading_external_documents(self):
+        """Excludes external document with score gap exceeding dominant margin on single-doc query."""
+        chunks = [
+            _make_chunk("C1", "DOC_TRANS", text="Bus route number 12 morning schedule.", ce_score=7.0),
+            _make_chunk("C2", "DOC_TRANS", text="Bus pass fee payment through student portal.", ce_score=6.5),
+            _make_chunk("C3", "DOC_HOSTEL", text="Hostel guest room booking procedures.", ce_score=1.0),
+        ]
+        # Score gap for DOC_HOSTEL is 7.0 - 1.0 = 6.0 > 5.2 margin
+        query = "bus route morning schedule and pass fee"
+        context = self.assembler.assemble_context(query, chunks)
+        self.assertEqual(context.document_ids, ["DOC_TRANS"])
+        self.assertEqual(len(context.chunks), 2)
+
+    def test_token_budget_prevents_inclusion_of_all_candidates(self):
+        """Enforces token budget strictly, stopping selection when capacity is reached."""
+        assembler = RAGContextAssembler(max_tokens=120, max_total_chunks=6)
+        chunks = [
+            _make_chunk("C1", "DOC1", text="Chunk one text.", token_count=50, ce_score=8.0),
+            _make_chunk("C2", "DOC1", text="Chunk two text.", token_count=50, ce_score=7.0),
+            _make_chunk("C3", "DOC2", text="Chunk three text.", token_count=50, ce_score=6.0),
+        ]
+        context = assembler.assemble_context("test token budget", chunks)
+        self.assertEqual(len(context.chunks), 2)
+        self.assertEqual(context.total_tokens, 100)
+        self.assertLessEqual(context.total_tokens, 120)
+
+    def test_citation_preservation_after_selection(self):
+        """Preserves chunk provenance, document IDs, ranks, and produces valid formatted sources."""
+        chunks = [
+            _make_chunk("C1", "DOC_A", title="Doc A Title", section="Sec 1", text="Content A", ce_score=8.0),
+            _make_chunk("C2", "DOC_B", title="Doc B Title", section="Sec 2", text="Content B", ce_score=7.0),
+        ]
+        context = self.assembler.assemble_context("query A and B", chunks)
+        self.assertEqual(len(context.chunks), 2)
+        self.assertEqual(context.chunks[0].chunk_id, "C1")
+        self.assertEqual(context.chunks[0].original_rank, 1)
+        self.assertEqual(context.chunks[1].chunk_id, "C2")
+        self.assertEqual(context.chunks[1].original_rank, 2)
+        self.assertIn("[C1] Doc A Title", context.formatted_sources)
+        self.assertIn("[C2] Doc B Title", context.formatted_sources)
+
 
 class TestAnswerGeneratorWithAssembler(unittest.TestCase):
     """Tests integration of RAGContextAssembler with AnswerGenerator."""

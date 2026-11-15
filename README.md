@@ -22,12 +22,14 @@ the top 10 results instead of 87.5%, and the gain is statistically significant.
 8. [Setup and usage](#8-setup-and-usage)
 9. [Project structure](#9-project-structure)
 10. [Known limitations](#10-known-limitations)
+11. [Evaluation judge vs production reranker](#11-evaluation-judge-vs-production-reranker)
 
 ---
 
 ## 1. Results at a glance
 
-94 held-out test queries, written without looking at the documents and never used for tuning
+94 held-out queries, written without looking at the documents and not used to tune the reformulation
+pipeline measured here (it was later used while developing the router and reranker; see §Datasets)
 (`evaluation/heldout_queries.json`, full report in `evaluation/results/heldout_report.md`).
 Every row uses the same indexes; **only the handling of the query changes**.
 
@@ -556,7 +558,7 @@ because they did not help. Reports are kept in `evaluation/results/`.
 
 | Idea | Result | Why it was rejected |
 |:---|:---|:---|
-| **Cross-encoder reranker** (`ms-marco-MiniLM-L-6-v2`) on the top 50 (`phase4_report.md`) | Recall@10 0.69 → 0.62 (pure reranker); 0.69 → 0.67 (mixed with RRF) | The model is trained on web search, and here it often preferred a chunk whose title matched the query over the chunk with the answer (e.g. a course outline's header chunk over its lab chunk, query Q024). Code kept, off by default (`RERANKER_ENABLED=false`). |
+| **Cross-encoder reranker** (`ms-marco-MiniLM-L-6-v2`) on the top 50 (`phase4_report.md`) | Recall@10 0.69 → 0.62 (pure reranker); 0.69 → 0.67 (mixed with RRF) | The model is trained on web search, and here it often preferred a chunk whose title matched the query over the chunk with the answer (e.g. a course outline's header chunk over its lab chunk, query Q024). Code kept, off by default (`RERANKER_ENABLED=false`). Re-measured with the contextual production reranker on the development set (`evaluation/results/AD_BENCHMARK_REPORT.md`): MRR@10 up, Recall@10 not, nothing significant after correction, ~5 s/query on CPU; still off. |
 | **Organisation glossary in the LLM prompt** (department, system and document names) (`tune_glossary_report.md`) | Recall@10 0.87 → 0.78, NDCG@10 0.646 → 0.562 | The LLM copied document titles instead of restating the user's need; a title matches every chunk of a document and pushes the answering chunk down. |
 | **Extra weight for the original query** in fusion, $w_1 = 1.5$ or $2$ (`rrf_weight_analysis.md`) | changes ≤ 0.01 on every metric | No measurable effect. |
 | **Two-edit spelling correction** | `revalution` → `resolution` | Too many wrong corrections; 1 edit only. |
@@ -639,7 +641,7 @@ sample) against a non-LLM expansion baseline (RM3); see the script's docstring f
 ### Tests
 
 ```bash
-python -m pytest             # 468 offline tests; Supabase and the LLM are mocked
+python -m pytest             # offline tests (569 as of 2026-11-13); Supabase and the LLM are mocked
 ```
 
 CI runs them on every push (`.github/workflows/tests.yml`).
@@ -684,3 +686,54 @@ tests/                  test suite
   has no endpoint that returns a whole document.
 - **LLM quota.** Each new query needs an LLM call; on free tiers the rewrites are often skipped, which
   falls back to plain hybrid search.
+
+---
+
+## 11. Evaluation judge vs production reranker
+
+The project keeps **ranking** and **judging** strictly apart. Details are in
+`docs/EVALUATION_AND_RANKING_ARCHITECTURE.md`.
+
+| | Production reranker | Evaluation judge |
+|:---|:---|:---|
+| Code | `reformulation/production_reranker.py` | `evaluation/judge/` |
+| Job | Reorder hybrid-retrieval candidates shown to users | Grade retrieved passages offline, for diagnosis |
+| Model | Cross-encoder (`ms-marco-MiniLM-L-6-v2` by default), contextual `Title / Section / Content` passages | An LLM on its own key (default Groq `openai/gpt-oss-120b`), not the reformulation model |
+| Output | Reordered chunks; the raw logit is returned as `reranker_logit` | 0–3 grades with verbatim evidence quotes, query intents, answerability among the judged passages |
+| Meaning | An **uncalibrated ordering score for one query**: not a probability, never thresholded, never a relevance label | An **LLM opinion** under a fixed, versioned rubric (`relevance-rubric-v1`): not ground truth |
+| Status | **Off by default** (`RERANKER_ENABLED=false`) | Never imported by the API (enforced by `tests/test_component_separation.py`) |
+
+**Ground truth is human labels.** The judge never changes rankings, never writes label files and never declares an
+improvement. The reranker never sees judge grades, and the judge never sees reranker or fusion scores.
+
+**Configuration**
+
+| Variable | Default | Meaning |
+|:---|:---|:---|
+| `RERANKER_ENABLED` | `false` | Enable production reranking in the API |
+| `RERANKER_MODEL` | `cross-encoder/ms-marco-MiniLM-L-6-v2` | Cross-encoder to load (local files only by default) |
+| `RERANKER_CANDIDATE_LIMIT` | `50` | Candidates fetched from hybrid retrieval and rescored (e.g. 20, 50, 100) |
+| `RERANKER_REVISION` | unset | Pin a model snapshot |
+| `JUDGE_PROVIDER` / `JUDGE_MODEL` | `groq` / provider default | Evaluation judge only |
+
+**Benchmarking.** `evaluation/run_ad_benchmark.py` runs four configurations under identical conditions (same corpus, labels, branch depth, candidate pool and output depth):
+- **A:** original query, no reranker;
+- **B:** reformulated, no reranker;
+- **C:** original query + reranker;
+- **D:** reformulated + reranker.
+
+It records the git commit, corpus/query/rewrite-cache hashes, model and prompt versions, latencies and paired tests. Measured results are in `evaluation/results/AD_BENCHMARK_REPORT.md`.
+
+**Datasets.** `evaluation/datasets/manifest.json` separates three sets:
+- the **development** set;
+- the **contaminated validation** set: the old held-out set, used while developing the router and reranker, so it is not a blind test;
+- a **blind test** of 66 queries (34 proposed-unanswerable, typo-heavy, multi-intent, precise), whose metrics stay **NOT EVALUATED** until human labels are frozen.
+
+See `evaluation/datasets/README.md`.
+
+**Demo.** `jury_demo.py`:
+- shows labelled metrics only for queries that have labels;
+- for unlabelled queries, prints "Relevance: NOT EVALUATED" instead of a model-score verdict;
+- shows reranker logits as uncalibrated ordering scores;
+- states that no calibrated unanswerable-query detector exists;
+- `--judge` adds LLM-judge grades with evidence, clearly marked as a diagnostic.
